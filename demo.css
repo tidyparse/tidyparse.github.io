@@ -43,36 +43,37 @@ h1, p{
     overflow: auto;
 }
 
-#mlscript-input {
+#tidyparse-input {
     resize: none;
     outline: none;
 }
 
-#mlscript-output {
+#tidyparse-output {
     width: 130%;
+    white-space: pre-wrap;
 }
 
-#mlscript-output > table {
+#tidyparse-output > table {
     border-collapse: collapse;
 }
 
-#mlscript-output > table > thead {
+#tidyparse-output > table > thead {
     font-weight: bold;
 }
 
-#mlscript-output td {
+#tidyparse-output td {
     padding: 0.25rem 0.5rem;
     border: 1px solid white;
 }
 
-#mlscript-output td.name {
+#tidyparse-output td.name {
     color: var(--name-color);
 }
 
-#mlscript-output td.type {
+#tidyparse-output td.type {
     color: var(--type-color);
 }
 
-#mlscript-output td.no-value {
+#tidyparse-output td.no-value {
     color: var(--no-value-color);
 }

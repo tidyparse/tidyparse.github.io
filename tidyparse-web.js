@@ -5547,7 +5547,6 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
   var get_language = kotlin_ai_hypergraph_galoisenne.$_$.l;
   var contains = kotlin_ai_hypergraph_galoisenne.$_$.g;
   var enumSeqSmart = kotlin_ai_hypergraph_galoisenne.$_$.h;
-  var distinct = kotlin_kotlin.$_$.l7;
   var containsHole = kotlin_ai_hypergraph_galoisenne.$_$.f;
   var indexOf = kotlin_kotlin.$_$.e8;
   var LinkedHashSet_init_$Create$ = kotlin_kotlin.$_$.j;
@@ -5950,15 +5949,15 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
       return this.d19(ensureNotNull(this.a19_1.h2(workHash)));
     var tmp_0;
     if (containsHole(sanitized)) {
-      var tmp_1 = distinct(enumSeqSmart(cfg, tokens));
+      var tmp_1 = enumSeqSmart(cfg, tokens);
       var tmp_2 = TidyEditor$handleInput$lambda(tokens);
       var tmp_3 = TidyEditor$handleInput$shouldContinue$ref(this, workHash, timer);
       var tmp_4 = TidyEditor$handleInput$finally$ref(this, workHash, timer);
       this.m19(tmp_1, VOID, tmp_2, tmp_3, VOID, tmp_4, TidyEditor$continuation$ref(this));
       tmp_0 = Unit_instance;
     } else if (contains(get_language(cfg), tokens)) {
-      var tmp0_safe_receiver = parse(cfg, sanitized);
-      var parseTree = tmp0_safe_receiver == null ? null : tmp0_safe_receiver.h15();
+      var tmp1_safe_receiver = parse(cfg, sanitized);
+      var parseTree = tmp1_safe_receiver == null ? null : tmp1_safe_receiver.h15();
       this.d19('\u2705 Current line parses! Tree:\n\n' + parseTree);
       tmp_0 = Unit_instance;
     } else {
@@ -8876,8 +8875,8 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
   };
   protoOf(FrozenCFG).equals = function (other) {
     var tmp;
-    var tmp23_safe_receiver = other instanceof FrozenCFG ? other : null;
-    if ((tmp23_safe_receiver == null ? null : tmp23_safe_receiver.u11_1) === this.u11_1) {
+    var tmp2_safe_receiver = other instanceof FrozenCFG ? other : null;
+    if ((tmp2_safe_receiver == null ? null : tmp2_safe_receiver.u11_1) === this.u11_1) {
       tmp = true;
     } else {
       tmp = equals((!(other == null) ? isInterface(other, Set) : false) ? other : null, this.t11_1);
@@ -9141,8 +9140,8 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
   }
   function originalForm$delegate$lambda($this$cache) {
     _init_properties_CFG_kt__oelqcy();
-    var tmp24_safe_receiver = get_rewriteHistory().h2($this$cache);
-    var tmp0_elvis_lhs = tmp24_safe_receiver == null ? null : tmp24_safe_receiver.m(0);
+    var tmp3_safe_receiver = get_rewriteHistory().h2($this$cache);
+    var tmp0_elvis_lhs = tmp3_safe_receiver == null ? null : tmp3_safe_receiver.m(0);
     return tmp0_elvis_lhs == null ? $this$cache : tmp0_elvis_lhs;
   }
   function nonparametricForm$delegate$lambda($this$cache) {
@@ -12045,15 +12044,15 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
         if (!(item === get_HOLE_MARKER())) {
           tmp = PSingleton(item);
         } else {
-          var tmp31_safe_receiver = get_bimap(_this__u8e3s4).i11().h2(element);
+          var tmp5_safe_receiver = get_bimap(_this__u8e3s4).i11().h2(element);
           var tmp_0;
-          if (tmp31_safe_receiver == null) {
+          if (tmp5_safe_receiver == null) {
             tmp_0 = null;
           } else {
             // Inline function 'kotlin.collections.map' call
             // Inline function 'kotlin.collections.mapTo' call
-            var destination_0 = ArrayList_init_$Create$(collectionSizeOrDefault(tmp31_safe_receiver, 10));
-            var tmp0_iterator_1 = tmp31_safe_receiver.h();
+            var destination_0 = ArrayList_init_$Create$(collectionSizeOrDefault(tmp5_safe_receiver, 10));
+            var tmp0_iterator_1 = tmp5_safe_receiver.h();
             while (tmp0_iterator_1.i()) {
               var item_0 = tmp0_iterator_1.j();
               // Inline function 'ai.hypergraph.kaliningraph.parsing.initPForestMat.<anonymous>.<anonymous>.<anonymous>' call
@@ -12062,8 +12061,8 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
             }
             tmp_0 = destination_0;
           }
-          var tmp32_safe_receiver = tmp_0;
-          var tmp0_elvis_lhs = tmp32_safe_receiver == null ? null : flatten(tmp32_safe_receiver);
+          var tmp6_safe_receiver = tmp_0;
+          var tmp0_elvis_lhs = tmp6_safe_receiver == null ? null : flatten(tmp6_safe_receiver);
           var tmp_1;
           if (tmp0_elvis_lhs == null) {
             // Inline function 'kotlin.collections.listOf' call
@@ -12217,23 +12216,23 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
     return toMap(destination_2);
   }
   function enumSeqSmart(_this__u8e3s4, tokens) {
-    var tmp36_safe_receiver = startPTree(_this__u8e3s4, tokens);
+    var tmp10_safe_receiver = startPTree(_this__u8e3s4, tokens);
     var tmp;
-    if (tmp36_safe_receiver == null) {
+    if (tmp10_safe_receiver == null) {
       tmp = null;
     } else {
       // Inline function 'kotlin.let' call
       // Inline function 'kotlin.contracts.contract' call
       // Inline function 'ai.hypergraph.kaliningraph.parsing.enumSeqSmart.<anonymous>' call
       var tmp_0;
-      if (Companion_getInstance().qn_1.fq(tmp36_safe_receiver.j14()) < 0) {
+      if (Companion_getInstance().qn_1.fq(tmp10_safe_receiver.j14()) < 0) {
         var tmp_1;
-        if (tmp36_safe_receiver.r13().fq(BigInteger_init_$Create$(maxTrees)) < 0) {
-          println('Small number of parse trees (' + tmp36_safe_receiver.r13() + '), sampling without replacement!');
-          tmp_1 = tmp36_safe_receiver.m14();
+        if (tmp10_safe_receiver.r13().fq(BigInteger_init_$Create$(maxTrees)) < 0) {
+          println('Small number of parse trees (' + tmp10_safe_receiver.r13() + '), sampling without replacement!');
+          tmp_1 = tmp10_safe_receiver.m14();
         } else {
-          println('Large number of parse trees (' + tmp36_safe_receiver.r13() + '), sampling with replacement!');
-          tmp_1 = tmp36_safe_receiver.n14();
+          println('Large number of parse trees (' + tmp10_safe_receiver.r13() + '), sampling with replacement!');
+          tmp_1 = tmp10_safe_receiver.n14();
         }
         tmp_0 = tmp_1;
       } else {
@@ -12283,8 +12282,8 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
     return this_0.yk_1;
   }
   function enumSWOR(_this__u8e3s4, tokens) {
-    var tmp39_safe_receiver = startPTree(_this__u8e3s4, tokens);
-    var tmp0_elvis_lhs = tmp39_safe_receiver == null ? null : tmp39_safe_receiver.o14();
+    var tmp13_safe_receiver = startPTree(_this__u8e3s4, tokens);
+    var tmp0_elvis_lhs = tmp13_safe_receiver == null ? null : tmp13_safe_receiver.o14();
     return tmp0_elvis_lhs == null ? sequenceOf([]) : tmp0_elvis_lhs;
   }
   function initPForestMat$lambda($this$of, x, y) {
@@ -15793,15 +15792,15 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
     return this_0.e2();
   };
   protoOf(Vertex).equals = function (other) {
-    var tmp67_safe_receiver = other instanceof Vertex ? other : null;
+    var tmp22_safe_receiver = other instanceof Vertex ? other : null;
     var tmp;
-    if (tmp67_safe_receiver == null) {
+    if (tmp22_safe_receiver == null) {
       tmp = null;
     } else {
       // Inline function 'kotlin.let' call
       // Inline function 'kotlin.contracts.contract' call
       // Inline function 'ai.hypergraph.kaliningraph.types.Vertex.equals.<anonymous>' call
-      tmp = this.f10() === tmp67_safe_receiver.f10();
+      tmp = this.f10() === tmp22_safe_receiver.f10();
     }
     var tmp0_elvis_lhs = tmp;
     return tmp0_elvis_lhs == null ? false : tmp0_elvis_lhs;
@@ -15858,12 +15857,12 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
     if (this === other) {
       tmp = true;
     } else {
-      var tmp65_safe_receiver = other instanceof Graph ? other : null;
+      var tmp20_safe_receiver = other instanceof Graph ? other : null;
       var tmp_0;
-      if (tmp65_safe_receiver == null) {
+      if (tmp20_safe_receiver == null) {
         tmp_0 = null;
       } else {
-        tmp_0 = tmp65_safe_receiver.rz(this instanceof Graph ? this : THROW_CCE());
+        tmp_0 = tmp20_safe_receiver.rz(this instanceof Graph ? this : THROW_CCE());
       }
       var tmp0_elvis_lhs = tmp_0;
       tmp = tmp0_elvis_lhs == null ? false : tmp0_elvis_lhs;
@@ -16503,7 +16502,7 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
   //endregion
   //region block: init
   Companion_instance_0 = new Companion_0();
-  maxTrees = 100000;
+  maxTrees = 50000;
   MAX_SORT_CAPACITY = 50;
   Companion_instance_1 = new Companion_1();
   Companion_instance_2 = new Companion_2();
@@ -16595,22 +16594,6 @@ if (typeof Array.prototype.fill === 'undefined') {
     Object.defineProperty(TypedArray.prototype, 'fill', {value: Array.prototype.fill});
   }
 });
-if (typeof Math.clz32 === 'undefined') {
-  Math.clz32 = function (log, LN2) {
-    return function (x) {
-      var asUint = x >>> 0;
-      if (asUint === 0) {
-        return 32;
-      }
-      return 31 - (log(asUint) / LN2 | 0) | 0; // the "| 0" acts like math.floor
-    };
-  }(Math.log, Math.LN2);
-}
-if (typeof Math.log2 === 'undefined') {
-  Math.log2 = function (x) {
-    return Math.log(x) * Math.LOG2E;
-  };
-}
 if (typeof Math.tanh === 'undefined') {
   var epsilon = 2.220446049250313E-16;
   var taylor_2_bound = Math.sqrt(epsilon);
@@ -16628,10 +16611,26 @@ if (typeof Math.tanh === 'undefined') {
     }
   };
 }
+if (typeof Math.log2 === 'undefined') {
+  Math.log2 = function (x) {
+    return Math.log(x) * Math.LOG2E;
+  };
+}
 if (typeof Math.log10 === 'undefined') {
   Math.log10 = function (x) {
     return Math.log(x) * Math.LOG10E;
   };
+}
+if (typeof Math.clz32 === 'undefined') {
+  Math.clz32 = function (log, LN2) {
+    return function (x) {
+      var asUint = x >>> 0;
+      if (asUint === 0) {
+        return 32;
+      }
+      return 31 - (log(asUint) / LN2 | 0) | 0; // the "| 0" acts like math.floor
+    };
+  }(Math.log, Math.LN2);
 }
 if (typeof String.prototype.startsWith === 'undefined') {
   Object.defineProperty(String.prototype, 'startsWith', {value: function (searchString, position) {
@@ -16681,23 +16680,23 @@ if (typeof String.prototype.startsWith === 'undefined') {
   initMetadataForInterface(RandomAccess, 'RandomAccess');
   initMetadataForClass(asList$1, VOID, VOID, AbstractList, [AbstractList, RandomAccess]);
   initMetadataForInterface(Comparator, 'Comparator');
-  initMetadataForClass(AbstractMutableCollection, 'AbstractMutableCollection', VOID, AbstractCollection, [AbstractCollection, MutableIterable, Collection]);
+  initMetadataForClass(AbstractMutableCollection, 'AbstractMutableCollection', VOID, AbstractCollection, [AbstractCollection, Collection, MutableIterable]);
   initMetadataForClass(IteratorImpl, 'IteratorImpl');
   initMetadataForClass(ListIteratorImpl, 'ListIteratorImpl', VOID, IteratorImpl);
-  initMetadataForClass(AbstractMutableList, 'AbstractMutableList', VOID, AbstractMutableCollection, [AbstractMutableCollection, List, MutableIterable, Collection]);
+  initMetadataForClass(AbstractMutableList, 'AbstractMutableList', VOID, AbstractMutableCollection, [AbstractMutableCollection, List, Collection, MutableIterable]);
   initMetadataForClass(SubList, 'SubList', VOID, AbstractMutableList, [AbstractMutableList, RandomAccess]);
   initMetadataForClass(AbstractMap, 'AbstractMap', VOID, VOID, [Map_0]);
   initMetadataForClass(AbstractMutableMap, 'AbstractMutableMap', VOID, AbstractMap, [AbstractMap, Map_0]);
-  initMetadataForClass(AbstractMutableSet, 'AbstractMutableSet', VOID, AbstractMutableCollection, [AbstractMutableCollection, MutableIterable, Set, Collection]);
+  initMetadataForClass(AbstractMutableSet, 'AbstractMutableSet', VOID, AbstractMutableCollection, [AbstractMutableCollection, Collection, Set, MutableIterable]);
   initMetadataForCompanion(Companion_2);
-  initMetadataForClass(ArrayList, 'ArrayList', ArrayList_init_$Create$, AbstractMutableList, [AbstractMutableList, List, MutableIterable, Collection, RandomAccess]);
+  initMetadataForClass(ArrayList, 'ArrayList', ArrayList_init_$Create$, AbstractMutableList, [AbstractMutableList, List, Collection, MutableIterable, RandomAccess]);
   initMetadataForClass(HashMap, 'HashMap', HashMap_init_$Create$, AbstractMutableMap, [AbstractMutableMap, Map_0]);
-  initMetadataForClass(HashMapValues, 'HashMapValues', VOID, AbstractMutableCollection, [MutableIterable, Collection, AbstractMutableCollection]);
-  initMetadataForClass(HashMapEntrySetBase, 'HashMapEntrySetBase', VOID, AbstractMutableSet, [MutableIterable, Set, Collection, AbstractMutableSet]);
+  initMetadataForClass(HashMapValues, 'HashMapValues', VOID, AbstractMutableCollection, [Collection, MutableIterable, AbstractMutableCollection]);
+  initMetadataForClass(HashMapEntrySetBase, 'HashMapEntrySetBase', VOID, AbstractMutableSet, [Collection, Set, MutableIterable, AbstractMutableSet]);
   initMetadataForClass(HashMapEntrySet, 'HashMapEntrySet', VOID, HashMapEntrySetBase);
   initMetadataForClass(HashMapValuesDefault$iterator$1);
   initMetadataForClass(HashMapValuesDefault, 'HashMapValuesDefault', VOID, AbstractMutableCollection);
-  initMetadataForClass(HashSet, 'HashSet', HashSet_init_$Create$, AbstractMutableSet, [AbstractMutableSet, MutableIterable, Set, Collection]);
+  initMetadataForClass(HashSet, 'HashSet', HashSet_init_$Create$, AbstractMutableSet, [AbstractMutableSet, Collection, Set, MutableIterable]);
   initMetadataForCompanion(Companion_3);
   initMetadataForClass(Itr, 'Itr');
   initMetadataForClass(KeysItr, 'KeysItr', VOID, Itr);
@@ -16743,7 +16742,7 @@ if (typeof String.prototype.startsWith === 'undefined') {
   initMetadataForInterface(InternalMap, 'InternalMap');
   initMetadataForClass(InternalHashMap, 'InternalHashMap', InternalHashMap_init_$Create$, VOID, [InternalMap]);
   initMetadataForClass(LinkedHashMap, 'LinkedHashMap', LinkedHashMap_init_$Create$, HashMap, [HashMap, Map_0]);
-  initMetadataForClass(LinkedHashSet, 'LinkedHashSet', LinkedHashSet_init_$Create$, HashSet, [HashSet, MutableIterable, Set, Collection]);
+  initMetadataForClass(LinkedHashSet, 'LinkedHashSet', LinkedHashSet_init_$Create$, HashSet, [HashSet, Collection, Set, MutableIterable]);
   initMetadataForClass(BaseOutput, 'BaseOutput');
   initMetadataForClass(NodeJsOutput, 'NodeJsOutput', VOID, BaseOutput);
   initMetadataForClass(BufferedOutput, 'BufferedOutput', BufferedOutput, BaseOutput);

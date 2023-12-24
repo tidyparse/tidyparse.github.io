@@ -33,14 +33,14 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
   var VOID = kotlin_kotlin.$_$.c;
   var initMetadataForInterface = kotlin_kotlin.$_$.g6;
   var Unit_instance = kotlin_kotlin.$_$.g2;
-  var Enum = kotlin_kotlin.$_$.h9;
+  var Enum = kotlin_kotlin.$_$.i9;
   var initMetadataForClass = kotlin_kotlin.$_$.e6;
   var toLong = kotlin_kotlin.$_$.v6;
   var RuntimeException_init_$Create$ = kotlin_kotlin.$_$.t;
-  var Pair = kotlin_kotlin.$_$.l9;
-  var Long = kotlin_kotlin.$_$.j9;
+  var Pair = kotlin_kotlin.$_$.m9;
+  var Long = kotlin_kotlin.$_$.k9;
   var ArithmeticException_init_$Create$ = kotlin_kotlin.$_$.m;
-  var ensureNotNull = kotlin_kotlin.$_$.u9;
+  var ensureNotNull = kotlin_kotlin.$_$.v9;
   var get_lastIndex = kotlin_kotlin.$_$.h8;
   var charSequenceGet = kotlin_kotlin.$_$.t5;
   var _Char___init__impl__6a9atx = kotlin_kotlin.$_$.y;
@@ -49,21 +49,21 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
   var charArrayOf = kotlin_kotlin.$_$.s5;
   var split = kotlin_kotlin.$_$.r8;
   var listOf = kotlin_kotlin.$_$.s3;
-  var toLong_0 = kotlin_kotlin.$_$.y8;
+  var toLong_0 = kotlin_kotlin.$_$.z8;
   var numberToLong = kotlin_kotlin.$_$.s6;
   var initMetadataForCompanion = kotlin_kotlin.$_$.f6;
-  var noWhenBranchMatchedException = kotlin_kotlin.$_$.w9;
-  var Triple = kotlin_kotlin.$_$.n9;
+  var noWhenBranchMatchedException = kotlin_kotlin.$_$.x9;
+  var Triple = kotlin_kotlin.$_$.o9;
   var numberToDouble = kotlin_kotlin.$_$.q6;
   var until = kotlin_kotlin.$_$.g7;
-  var substring = kotlin_kotlin.$_$.w8;
-  var THROW_CCE = kotlin_kotlin.$_$.m9;
+  var substring = kotlin_kotlin.$_$.x8;
+  var THROW_CCE = kotlin_kotlin.$_$.n9;
   var abs = kotlin_kotlin.$_$.y6;
   var isNumber = kotlin_kotlin.$_$.l6;
   var getKClassFromExpression = kotlin_kotlin.$_$.a;
   var abs_0 = kotlin_kotlin.$_$.x6;
   var StringBuilder_init_$Create$ = kotlin_kotlin.$_$.l;
-  var Comparable = kotlin_kotlin.$_$.f9;
+  var Comparable = kotlin_kotlin.$_$.g9;
   var getKClass = kotlin_kotlin.$_$.b;
   var PrimitiveClasses_getInstance = kotlin_kotlin.$_$.e2;
   var objectCreate = kotlin_kotlin.$_$.t6;
@@ -72,18 +72,18 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
   var IllegalArgumentException_init_$Create$ = kotlin_kotlin.$_$.o;
   var _ULongArray___get_size__impl__ju6dtr = kotlin_kotlin.$_$.a2;
   var equals = kotlin_kotlin.$_$.x5;
-  var ULongArray = kotlin_kotlin.$_$.r9;
+  var ULongArray = kotlin_kotlin.$_$.s9;
   var numberToInt = kotlin_kotlin.$_$.r6;
-  var UByte = kotlin_kotlin.$_$.o9;
-  var UShort = kotlin_kotlin.$_$.t9;
-  var UInt = kotlin_kotlin.$_$.q9;
-  var ULong = kotlin_kotlin.$_$.s9;
+  var UByte = kotlin_kotlin.$_$.p9;
+  var UShort = kotlin_kotlin.$_$.u9;
+  var UInt = kotlin_kotlin.$_$.r9;
+  var ULong = kotlin_kotlin.$_$.t9;
   var ULongArray__iterator_impl_cq4d2h = kotlin_kotlin.$_$.y1;
   var ULong__hashCode_impl_6hv2lb = kotlin_kotlin.$_$.s1;
   var ULongArray__get_impl_pr71q9 = kotlin_kotlin.$_$.v1;
   var _ULong___get_data__impl__fggpzb = kotlin_kotlin.$_$.r1;
   var hashCode = kotlin_kotlin.$_$.d6;
-  var UIntArray = kotlin_kotlin.$_$.p9;
+  var UIntArray = kotlin_kotlin.$_$.q9;
   var UIntArray__hashCode_impl_hr7ost = kotlin_kotlin.$_$.k1;
   var getBooleanHashCode = kotlin_kotlin.$_$.z5;
   var _ULong___init__impl__c78o9k = kotlin_kotlin.$_$.q1;
@@ -96,15 +96,15 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
   var UIntArray__get_impl_gp5kza = kotlin_kotlin.$_$.j1;
   var _UIntArray___get_storage__impl__92a0v0 = kotlin_kotlin.$_$.p1;
   var copyOfRange = kotlin_kotlin.$_$.w2;
-  var uintCompare = kotlin_kotlin.$_$.aa;
+  var uintCompare = kotlin_kotlin.$_$.ba;
   var UIntArray__set_impl_7f2zu2 = kotlin_kotlin.$_$.n1;
   var println = kotlin_kotlin.$_$.p5;
   var ArrayList_init_$Create$ = kotlin_kotlin.$_$.f;
   var UIntArray__iterator_impl_tkdv7k = kotlin_kotlin.$_$.m1;
-  var uintDivide = kotlin_kotlin.$_$.ba;
-  var uintRemainder = kotlin_kotlin.$_$.ca;
-  var ulongDivide = kotlin_kotlin.$_$.ea;
-  var ulongCompare = kotlin_kotlin.$_$.da;
+  var uintDivide = kotlin_kotlin.$_$.ca;
+  var uintRemainder = kotlin_kotlin.$_$.da;
+  var ulongDivide = kotlin_kotlin.$_$.fa;
+  var ulongCompare = kotlin_kotlin.$_$.ea;
   var initMetadataForObject = kotlin_kotlin.$_$.i6;
   var ULongArray__hashCode_impl_aze4wa = kotlin_kotlin.$_$.w1;
   var longArrayOf = kotlin_kotlin.$_$.m6;
@@ -119,9 +119,9 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
   var toULongArray = kotlin_kotlin.$_$.h5;
   var slice = kotlin_kotlin.$_$.o4;
   var _ULongArray___init__impl__twm1l3_0 = kotlin_kotlin.$_$.t1;
-  var ulongRemainder = kotlin_kotlin.$_$.fa;
+  var ulongRemainder = kotlin_kotlin.$_$.ga;
   var copyOf = kotlin_kotlin.$_$.y2;
-  var toString_0 = kotlin_kotlin.$_$.a9;
+  var toString_0 = kotlin_kotlin.$_$.b9;
   var isCharSequence = kotlin_kotlin.$_$.j6;
   var reversed = kotlin_kotlin.$_$.q8;
   var _UShort___get_data__impl__g0245 = kotlin_kotlin.$_$.c2;
@@ -5518,7 +5518,7 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
   var levenshteinAlign = kotlin_ai_hypergraph_galoisenne.$_$.z;
   var paintDiffs = kotlin_ai_hypergraph_galoisenne.$_$.b1;
   var binarySearch = kotlin_kotlin.$_$.q2;
-  var to = kotlin_kotlin.$_$.z9;
+  var to = kotlin_kotlin.$_$.aa;
   var removeLast = kotlin_kotlin.$_$.i4;
   var last = kotlin_kotlin.$_$.q3;
   var levenshtein = kotlin_ai_hypergraph_galoisenne.$_$.a1;
@@ -5529,7 +5529,7 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
   var protoOf = kotlin_kotlin.$_$.u6;
   var parseCFG = kotlin_ai_hypergraph_galoisenne.$_$.p;
   var freeze = kotlin_ai_hypergraph_galoisenne.$_$.j;
-  var Exception = kotlin_kotlin.$_$.i9;
+  var Exception = kotlin_kotlin.$_$.j9;
   var Monotonic_instance = kotlin_kotlin.$_$.f2;
   var isBlank = kotlin_kotlin.$_$.f8;
   var ArrayList_init_$Create$_0 = kotlin_kotlin.$_$.f;
@@ -5538,10 +5538,10 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
   var CFGCFG = kotlin_ai_hypergraph_galoisenne.$_$.c;
   var getStringHashCode = kotlin_kotlin.$_$.c6;
   var hashCode = kotlin_kotlin.$_$.d6;
-  var THROW_CCE = kotlin_kotlin.$_$.m9;
+  var THROW_CCE = kotlin_kotlin.$_$.n9;
   var Map = kotlin_kotlin.$_$.j2;
   var isInterface = kotlin_kotlin.$_$.k6;
-  var ensureNotNull = kotlin_kotlin.$_$.u9;
+  var ensureNotNull = kotlin_kotlin.$_$.v9;
   var fastRepairSeq = kotlin_ai_hypergraph_galoisenne.$_$.i;
   var parse = kotlin_ai_hypergraph_galoisenne.$_$.q;
   var get_language = kotlin_ai_hypergraph_galoisenne.$_$.l;
@@ -5913,6 +5913,7 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
     return tmp;
   };
   protoOf(TidyEditor).k19 = function () {
+    println('Current line is ' + this.e19());
     var timer = Monotonic_instance.jc();
     var currentLine = this.e19();
     if (isBlank(currentLine))
@@ -5956,8 +5957,8 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
       this.m19(tmp_1, VOID, tmp_2, tmp_3, VOID, tmp_4, TidyEditor$continuation$ref(this));
       tmp_0 = Unit_instance;
     } else if (contains(get_language(cfg), tokens)) {
-      var tmp1_safe_receiver = parse(cfg, sanitized);
-      var parseTree = tmp1_safe_receiver == null ? null : tmp1_safe_receiver.h15();
+      var tmp0_safe_receiver = parse(cfg, sanitized);
+      var parseTree = tmp0_safe_receiver == null ? null : tmp0_safe_receiver.h15();
       this.d19('\u2705 Current line parses! Tree:\n\n' + parseTree);
       tmp_0 = Unit_instance;
     } else {
@@ -6078,14 +6079,13 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
   var indexOf = kotlin_kotlin.$_$.e8;
   var set_TIMEOUT_MS = kotlin_ai_hypergraph_galoisenne.$_$.e;
   var Unit_instance = kotlin_kotlin.$_$.g2;
-  var THROW_CCE = kotlin_kotlin.$_$.m9;
+  var THROW_CCE = kotlin_kotlin.$_$.n9;
   var KProperty0 = kotlin_kotlin.$_$.i7;
   var getPropertyCallableRef = kotlin_kotlin.$_$.b6;
-  var to = kotlin_kotlin.$_$.z9;
-  var lazy = kotlin_kotlin.$_$.v9;
-  var ensureNotNull = kotlin_kotlin.$_$.u9;
-  var split = kotlin_kotlin.$_$.s8;
-  var last = kotlin_kotlin.$_$.q3;
+  var to = kotlin_kotlin.$_$.aa;
+  var lazy = kotlin_kotlin.$_$.w9;
+  var ensureNotNull = kotlin_kotlin.$_$.v9;
+  var substringAfterLast = kotlin_kotlin.$_$.u8;
   var protoOf = kotlin_kotlin.$_$.u6;
   var initMetadataForCompanion = kotlin_kotlin.$_$.f6;
   var preparseParseableLines = kotlin_ai_hypergraph_galoisenne.$_$.r;
@@ -6242,7 +6242,18 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
     main();
   }
   function getEndOfLineIdx(_this__u8e3s4, $this) {
-    return indexOf(_this__u8e3s4.value, '\n', ensureNotNull(_this__u8e3s4.selectionStart));
+    // Inline function 'kotlin.takeIf' call
+    var this_0 = indexOf(_this__u8e3s4.value, '\n', ensureNotNull(_this__u8e3s4.selectionStart));
+    // Inline function 'kotlin.contracts.contract' call
+    var tmp;
+    // Inline function 'Companion.getEndOfLineIdx.<anonymous>' call
+    if (!(this_0 === -1)) {
+      tmp = this_0;
+    } else {
+      tmp = null;
+    }
+    var tmp0_elvis_lhs = tmp;
+    return tmp0_elvis_lhs == null ? _this__u8e3s4.value.length : tmp0_elvis_lhs;
   }
   function getCurrentLine(_this__u8e3s4, $this) {
     // Inline function 'kotlin.text.substring' call
@@ -6250,7 +6261,7 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
     var endIndex = getEndOfLineIdx(_this__u8e3s4, $this);
     // Inline function 'kotlin.js.asDynamic' call
     var tmp$ret$1 = this_0.substring(0, endIndex);
-    return last(split(tmp$ret$1, ['\n']));
+    return substringAfterLast(tmp$ret$1, '\n');
   }
   function Companion() {
   }
@@ -6527,7 +6538,7 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
   var Collection = kotlin_kotlin.$_$.h2;
   var isInterface = kotlin_kotlin.$_$.k6;
   var KClass = kotlin_kotlin.$_$.h7;
-  var NotImplementedError = kotlin_kotlin.$_$.k9;
+  var NotImplementedError = kotlin_kotlin.$_$.l9;
   var getKClassFromExpression = kotlin_kotlin.$_$.a;
   var toString = kotlin_kotlin.$_$.w6;
   var IllegalArgumentException_init_$Create$ = kotlin_kotlin.$_$.o;
@@ -6537,9 +6548,9 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
   var _Char___init__impl__6a9atx = kotlin_kotlin.$_$.y;
   var charArrayOf = kotlin_kotlin.$_$.s5;
   var split = kotlin_kotlin.$_$.r8;
-  var THROW_CCE = kotlin_kotlin.$_$.m9;
+  var THROW_CCE = kotlin_kotlin.$_$.n9;
   var isCharSequence = kotlin_kotlin.$_$.j6;
-  var trim = kotlin_kotlin.$_$.b9;
+  var trim = kotlin_kotlin.$_$.c9;
   var Regex_init_$Create$ = kotlin_kotlin.$_$.k;
   var replace = kotlin_kotlin.$_$.o8;
   var lines = kotlin_kotlin.$_$.k8;
@@ -6547,7 +6558,7 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
   var NoSuchElementException_init_$Create$ = kotlin_kotlin.$_$.q;
   var compareTo = kotlin_kotlin.$_$.v5;
   var until = kotlin_kotlin.$_$.g7;
-  var ensureNotNull = kotlin_kotlin.$_$.u9;
+  var ensureNotNull = kotlin_kotlin.$_$.v9;
   var joinToString = kotlin_kotlin.$_$.o3;
   var equals = kotlin_kotlin.$_$.x5;
   var fillArrayVal = kotlin_kotlin.$_$.y5;
@@ -6558,20 +6569,20 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
   var compareBy = kotlin_kotlin.$_$.l5;
   var sortedWith = kotlin_kotlin.$_$.p4;
   var numberToInt = kotlin_kotlin.$_$.r6;
-  var to = kotlin_kotlin.$_$.z9;
+  var to = kotlin_kotlin.$_$.aa;
   var numberRangeToNumber = kotlin_kotlin.$_$.p6;
   var checkIndexOverflow = kotlin_kotlin.$_$.s2;
   var drop = kotlin_kotlin.$_$.c8;
   var dropLast = kotlin_kotlin.$_$.b8;
-  var toString_0 = kotlin_kotlin.$_$.y9;
+  var toString_0 = kotlin_kotlin.$_$.z9;
   var charSequenceLength = kotlin_kotlin.$_$.u5;
-  var substringBefore = kotlin_kotlin.$_$.v8;
+  var substringBefore = kotlin_kotlin.$_$.w8;
   var padStart = kotlin_kotlin.$_$.m8;
-  var substringAfter = kotlin_kotlin.$_$.u8;
+  var substringAfter = kotlin_kotlin.$_$.v8;
   var padEnd = kotlin_kotlin.$_$.l8;
-  var toCharArray = kotlin_kotlin.$_$.x8;
+  var toCharArray = kotlin_kotlin.$_$.y8;
   var toSet = kotlin_kotlin.$_$.g5;
-  var Exception = kotlin_kotlin.$_$.i9;
+  var Exception = kotlin_kotlin.$_$.j9;
   var LinkedHashMap_init_$Create$_0 = kotlin_kotlin.$_$.i;
   var protoOf = kotlin_kotlin.$_$.u6;
   var initMetadataForClass = kotlin_kotlin.$_$.e6;
@@ -6583,13 +6594,13 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
   var toSet_0 = kotlin_kotlin.$_$.e5;
   var initMetadataForInterface = kotlin_kotlin.$_$.g6;
   var charSequenceGet = kotlin_kotlin.$_$.t5;
-  var Char = kotlin_kotlin.$_$.e9;
+  var Char = kotlin_kotlin.$_$.f9;
   var mapCapacity = kotlin_kotlin.$_$.t3;
   var LinkedHashMap_init_$Create$_1 = kotlin_kotlin.$_$.g;
   var flatten = kotlin_kotlin.$_$.k3;
   var toMutableSet = kotlin_kotlin.$_$.d5;
   var retainAll = kotlin_kotlin.$_$.j4;
-  var lazy = kotlin_kotlin.$_$.v9;
+  var lazy = kotlin_kotlin.$_$.w9;
   var toList = kotlin_kotlin.$_$.x4;
   var get_indices = kotlin_kotlin.$_$.m3;
   var toMap = kotlin_kotlin.$_$.a5;
@@ -6602,14 +6613,14 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
   var contains = kotlin_kotlin.$_$.z7;
   var toMutableMap = kotlin_kotlin.$_$.c5;
   var listOf = kotlin_kotlin.$_$.s3;
-  var Triple = kotlin_kotlin.$_$.n9;
+  var Triple = kotlin_kotlin.$_$.o9;
   var addAll = kotlin_kotlin.$_$.l2;
   var hashCode = kotlin_kotlin.$_$.d6;
-  var Pair = kotlin_kotlin.$_$.l9;
+  var Pair = kotlin_kotlin.$_$.m9;
   var Set = kotlin_kotlin.$_$.k2;
   var plus_3 = kotlin_kotlin.$_$.a4;
   var copyToArray = kotlin_kotlin.$_$.z2;
-  var Comparator = kotlin_kotlin.$_$.g9;
+  var Comparator = kotlin_kotlin.$_$.h9;
   var compareValues = kotlin_kotlin.$_$.m5;
   var minus_0 = kotlin_kotlin.$_$.w3;
   var listOf_0 = kotlin_kotlin.$_$.r3;
@@ -6630,7 +6641,7 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
   var mutableSetOf = kotlin_kotlin.$_$.y3;
   var toSet_2 = kotlin_kotlin.$_$.y7;
   var StringBuilder_init_$Create$ = kotlin_kotlin.$_$.l;
-  var substring = kotlin_kotlin.$_$.w8;
+  var substring = kotlin_kotlin.$_$.x8;
   var get_lastIndex = kotlin_kotlin.$_$.p3;
   var first_0 = kotlin_kotlin.$_$.i3;
   var startsWith = kotlin_kotlin.$_$.t8;
@@ -6642,8 +6653,8 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
   var toBigInteger = kotlin_com_ionspin_kotlin_bignum.$_$.a;
   var Monotonic_instance = kotlin_kotlin.$_$.f2;
   var ValueTimeMark__elapsedNow_impl_eonqvs = kotlin_kotlin.$_$.x;
-  var TimedValue = kotlin_kotlin.$_$.d9;
-  var Duration = kotlin_kotlin.$_$.c9;
+  var TimedValue = kotlin_kotlin.$_$.e9;
+  var Duration = kotlin_kotlin.$_$.d9;
   var shuffled = kotlin_kotlin.$_$.n4;
   var UnsupportedOperationException_init_$Create$ = kotlin_kotlin.$_$.u;
   var Companion_getInstance = kotlin_com_ionspin_kotlin_bignum.$_$.c;
@@ -6689,13 +6700,13 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
   var sum = kotlin_kotlin.$_$.r4;
   var filterIndexed = kotlin_kotlin.$_$.m7;
   var shuffled_0 = kotlin_kotlin.$_$.v7;
-  var toString_2 = kotlin_kotlin.$_$.z8;
-  var Long = kotlin_kotlin.$_$.j9;
+  var toString_2 = kotlin_kotlin.$_$.a9;
+  var Long = kotlin_kotlin.$_$.k9;
   var _ULong___init__impl__c78o9k = kotlin_kotlin.$_$.q1;
   var _ULong___get_data__impl__fggpzb = kotlin_kotlin.$_$.r1;
   var ULongRange = kotlin_kotlin.$_$.c7;
   var nextULong = kotlin_kotlin.$_$.b7;
-  var ULong = kotlin_kotlin.$_$.s9;
+  var ULong = kotlin_kotlin.$_$.t9;
   var toLong = kotlin_kotlin.$_$.v6;
   var mapOf = kotlin_kotlin.$_$.u3;
   var plus_6 = kotlin_kotlin.$_$.z3;
@@ -6712,7 +6723,7 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
   var toDoubleArray_0 = kotlin_kotlin.$_$.u4;
   var contentEquals = kotlin_kotlin.$_$.v2;
   var newThrowable = kotlin_kotlin.$_$.o6;
-  var stackTraceToString = kotlin_kotlin.$_$.x9;
+  var stackTraceToString = kotlin_kotlin.$_$.y9;
   var round = kotlin_kotlin.$_$.z6;
   //endregion
   //region block: pre-declaration
@@ -16584,6 +16595,22 @@ if (typeof Array.prototype.fill === 'undefined') {
     Object.defineProperty(TypedArray.prototype, 'fill', {value: Array.prototype.fill});
   }
 });
+if (typeof Math.clz32 === 'undefined') {
+  Math.clz32 = function (log, LN2) {
+    return function (x) {
+      var asUint = x >>> 0;
+      if (asUint === 0) {
+        return 32;
+      }
+      return 31 - (log(asUint) / LN2 | 0) | 0; // the "| 0" acts like math.floor
+    };
+  }(Math.log, Math.LN2);
+}
+if (typeof Math.log2 === 'undefined') {
+  Math.log2 = function (x) {
+    return Math.log(x) * Math.LOG2E;
+  };
+}
 if (typeof Math.tanh === 'undefined') {
   var epsilon = 2.220446049250313E-16;
   var taylor_2_bound = Math.sqrt(epsilon);
@@ -16599,22 +16626,6 @@ if (typeof Math.tanh === 'undefined') {
       var a = Math.exp(+x), b = Math.exp(-x);
       return a === Infinity ? 1 : b === Infinity ? -1 : (a - b) / (a + b);
     }
-  };
-}
-if (typeof Math.clz32 === 'undefined') {
-  Math.clz32 = function (log, LN2) {
-    return function (x) {
-      var asUint = x >>> 0;
-      if (asUint === 0) {
-        return 32;
-      }
-      return 31 - (log(asUint) / LN2 | 0) | 0; // the "| 0" acts like math.floor
-    };
-  }(Math.log, Math.LN2);
-}
-if (typeof Math.log2 === 'undefined') {
-  Math.log2 = function (x) {
-    return Math.log(x) * Math.LOG2E;
   };
 }
 if (typeof Math.log10 === 'undefined') {
@@ -16673,13 +16684,13 @@ if (typeof String.prototype.startsWith === 'undefined') {
   initMetadataForClass(AbstractMutableCollection, 'AbstractMutableCollection', VOID, AbstractCollection, [AbstractCollection, MutableIterable, Collection]);
   initMetadataForClass(IteratorImpl, 'IteratorImpl');
   initMetadataForClass(ListIteratorImpl, 'ListIteratorImpl', VOID, IteratorImpl);
-  initMetadataForClass(AbstractMutableList, 'AbstractMutableList', VOID, AbstractMutableCollection, [AbstractMutableCollection, MutableIterable, List, Collection]);
+  initMetadataForClass(AbstractMutableList, 'AbstractMutableList', VOID, AbstractMutableCollection, [AbstractMutableCollection, List, MutableIterable, Collection]);
   initMetadataForClass(SubList, 'SubList', VOID, AbstractMutableList, [AbstractMutableList, RandomAccess]);
   initMetadataForClass(AbstractMap, 'AbstractMap', VOID, VOID, [Map_0]);
   initMetadataForClass(AbstractMutableMap, 'AbstractMutableMap', VOID, AbstractMap, [AbstractMap, Map_0]);
   initMetadataForClass(AbstractMutableSet, 'AbstractMutableSet', VOID, AbstractMutableCollection, [AbstractMutableCollection, MutableIterable, Set, Collection]);
   initMetadataForCompanion(Companion_2);
-  initMetadataForClass(ArrayList, 'ArrayList', ArrayList_init_$Create$, AbstractMutableList, [AbstractMutableList, MutableIterable, List, Collection, RandomAccess]);
+  initMetadataForClass(ArrayList, 'ArrayList', ArrayList_init_$Create$, AbstractMutableList, [AbstractMutableList, List, MutableIterable, Collection, RandomAccess]);
   initMetadataForClass(HashMap, 'HashMap', HashMap_init_$Create$, AbstractMutableMap, [AbstractMutableMap, Map_0]);
   initMetadataForClass(HashMapValues, 'HashMapValues', VOID, AbstractMutableCollection, [MutableIterable, Collection, AbstractMutableCollection]);
   initMetadataForClass(HashMapEntrySetBase, 'HashMapEntrySetBase', VOID, AbstractMutableSet, [MutableIterable, Set, Collection, AbstractMutableSet]);
@@ -26332,6 +26343,21 @@ if (typeof String.prototype.startsWith === 'undefined') {
     }
     return tmp;
   }
+  function substringAfterLast(_this__u8e3s4, delimiter, missingDelimiterValue) {
+    missingDelimiterValue = missingDelimiterValue === VOID ? _this__u8e3s4 : missingDelimiterValue;
+    var index = lastIndexOf(_this__u8e3s4, delimiter);
+    var tmp;
+    if (index === -1) {
+      tmp = missingDelimiterValue;
+    } else {
+      // Inline function 'kotlin.text.substring' call
+      var startIndex = index + delimiter.length | 0;
+      var endIndex = _this__u8e3s4.length;
+      // Inline function 'kotlin.js.asDynamic' call
+      tmp = _this__u8e3s4.substring(startIndex, endIndex);
+    }
+    return tmp;
+  }
   function regionMatchesImpl(_this__u8e3s4, thisOffset, other, otherOffset, length, ignoreCase) {
     if (((otherOffset < 0 ? true : thisOffset < 0) ? true : thisOffset > (charSequenceLength(_this__u8e3s4) - length | 0)) ? true : otherOffset > (charSequenceLength(other) - length | 0)) {
       return false;
@@ -26514,6 +26540,25 @@ if (typeof String.prototype.startsWith === 'undefined') {
       }
     }
     return charSequenceSubSequence(_this__u8e3s4, startIndex, endIndex + 1 | 0);
+  }
+  function lastIndexOf(_this__u8e3s4, string, startIndex, ignoreCase) {
+    startIndex = startIndex === VOID ? get_lastIndex_1(_this__u8e3s4) : startIndex;
+    ignoreCase = ignoreCase === VOID ? false : ignoreCase;
+    var tmp;
+    var tmp_0;
+    if (ignoreCase) {
+      tmp_0 = true;
+    } else {
+      tmp_0 = !(typeof _this__u8e3s4 === 'string');
+    }
+    if (tmp_0) {
+      tmp = indexOf_4(_this__u8e3s4, string, startIndex, 0, ignoreCase, true);
+    } else {
+      // Inline function 'kotlin.text.nativeLastIndexOf' call
+      // Inline function 'kotlin.js.asDynamic' call
+      tmp = _this__u8e3s4.lastIndexOf(string, startIndex);
+    }
+    return tmp;
   }
   function indexOfAny(_this__u8e3s4, chars, startIndex, ignoreCase) {
     startIndex = startIndex === VOID ? 0 : startIndex;
@@ -26712,25 +26757,6 @@ if (typeof String.prototype.startsWith === 'undefined') {
     limit = limit === VOID ? 0 : limit;
     var tmp = rangesDelimitedBy_0(_this__u8e3s4, delimiters, VOID, ignoreCase, limit);
     return map(tmp, splitToSequence$lambda(_this__u8e3s4));
-  }
-  function lastIndexOf(_this__u8e3s4, string, startIndex, ignoreCase) {
-    startIndex = startIndex === VOID ? get_lastIndex_1(_this__u8e3s4) : startIndex;
-    ignoreCase = ignoreCase === VOID ? false : ignoreCase;
-    var tmp;
-    var tmp_0;
-    if (ignoreCase) {
-      tmp_0 = true;
-    } else {
-      tmp_0 = !(typeof _this__u8e3s4 === 'string');
-    }
-    if (tmp_0) {
-      tmp = indexOf_4(_this__u8e3s4, string, startIndex, 0, ignoreCase, true);
-    } else {
-      // Inline function 'kotlin.text.nativeLastIndexOf' call
-      // Inline function 'kotlin.js.asDynamic' call
-      tmp = _this__u8e3s4.lastIndexOf(string, startIndex);
-    }
-    return tmp;
   }
   function rangesDelimitedBy$lambda($delimiters, $ignoreCase) {
     return function ($this$$receiver, currentIndex) {
@@ -28411,44 +28437,45 @@ if (typeof String.prototype.startsWith === 'undefined') {
   _.$_$.r8 = split;
   _.$_$.s8 = split_0;
   _.$_$.t8 = startsWith;
-  _.$_$.u8 = substringAfter;
-  _.$_$.v8 = substringBefore;
-  _.$_$.w8 = substring;
-  _.$_$.x8 = toCharArray;
-  _.$_$.y8 = toLong_0;
-  _.$_$.z8 = toString_2;
-  _.$_$.a9 = toString_4;
-  _.$_$.b9 = trim;
-  _.$_$.c9 = Duration;
-  _.$_$.d9 = TimedValue;
-  _.$_$.e9 = Char;
-  _.$_$.f9 = Comparable;
-  _.$_$.g9 = Comparator;
-  _.$_$.h9 = Enum;
-  _.$_$.i9 = Exception;
-  _.$_$.j9 = Long;
-  _.$_$.k9 = NotImplementedError;
-  _.$_$.l9 = Pair;
-  _.$_$.m9 = THROW_CCE;
-  _.$_$.n9 = Triple;
-  _.$_$.o9 = UByte;
-  _.$_$.p9 = UIntArray;
-  _.$_$.q9 = UInt;
-  _.$_$.r9 = ULongArray;
-  _.$_$.s9 = ULong;
-  _.$_$.t9 = UShort;
-  _.$_$.u9 = ensureNotNull;
-  _.$_$.v9 = lazy;
-  _.$_$.w9 = noWhenBranchMatchedException;
-  _.$_$.x9 = stackTraceToString;
-  _.$_$.y9 = toString_0;
-  _.$_$.z9 = to;
-  _.$_$.aa = uintCompare;
-  _.$_$.ba = uintDivide;
-  _.$_$.ca = uintRemainder;
-  _.$_$.da = ulongCompare;
-  _.$_$.ea = ulongDivide;
-  _.$_$.fa = ulongRemainder;
+  _.$_$.u8 = substringAfterLast;
+  _.$_$.v8 = substringAfter;
+  _.$_$.w8 = substringBefore;
+  _.$_$.x8 = substring;
+  _.$_$.y8 = toCharArray;
+  _.$_$.z8 = toLong_0;
+  _.$_$.a9 = toString_2;
+  _.$_$.b9 = toString_4;
+  _.$_$.c9 = trim;
+  _.$_$.d9 = Duration;
+  _.$_$.e9 = TimedValue;
+  _.$_$.f9 = Char;
+  _.$_$.g9 = Comparable;
+  _.$_$.h9 = Comparator;
+  _.$_$.i9 = Enum;
+  _.$_$.j9 = Exception;
+  _.$_$.k9 = Long;
+  _.$_$.l9 = NotImplementedError;
+  _.$_$.m9 = Pair;
+  _.$_$.n9 = THROW_CCE;
+  _.$_$.o9 = Triple;
+  _.$_$.p9 = UByte;
+  _.$_$.q9 = UIntArray;
+  _.$_$.r9 = UInt;
+  _.$_$.s9 = ULongArray;
+  _.$_$.t9 = ULong;
+  _.$_$.u9 = UShort;
+  _.$_$.v9 = ensureNotNull;
+  _.$_$.w9 = lazy;
+  _.$_$.x9 = noWhenBranchMatchedException;
+  _.$_$.y9 = stackTraceToString;
+  _.$_$.z9 = toString_0;
+  _.$_$.aa = to;
+  _.$_$.ba = uintCompare;
+  _.$_$.ca = uintDivide;
+  _.$_$.da = uintRemainder;
+  _.$_$.ea = ulongCompare;
+  _.$_$.fa = ulongDivide;
+  _.$_$.ga = ulongRemainder;
   //endregion
   return _;
 }));

@@ -7577,7 +7577,7 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
     var bPathRev = ArrayList_init_$Create$_0();
     var i_0 = a.k();
     var j_1 = b.k();
-    while (!(i_0 === 0) ? !(j_1 === 0) : false) {
+    while (i_0 > 0 ? j_1 > 0 : false) {
       var temp_0 = costs[i_0 - 1 | 0][j_1 - 1 | 0] + (equals(a.m(i_0 - 1 | 0), b.m(j_1 - 1 | 0)) ? 0 : 1) | 0;
       var tmp0_subject = costs[i_0][j_1];
       if (tmp0_subject === temp_0) {
@@ -7595,7 +7595,19 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
         bPathRev.e(b.m(j_1));
       }
     }
-    return zip(reversed(aPathRev), reversed(bPathRev));
+    while (i_0 > 0) {
+      i_0 = i_0 - 1 | 0;
+      aPathRev.e(a.m(i_0));
+      bPathRev.e(null);
+    }
+    while (j_1 > 0) {
+      aPathRev.e(null);
+      j_1 = j_1 - 1 | 0;
+      bPathRev.e(b.m(j_1));
+    }
+    var revPathA = reversed(aPathRev);
+    var revPathB = reversed(bPathRev);
+    return zip(revPathA, revPathB);
   }
   function removeEpsilon(_this__u8e3s4) {
     _init_properties_StringUtils_kt__hudgtq();
@@ -16594,23 +16606,6 @@ if (typeof Array.prototype.fill === 'undefined') {
     Object.defineProperty(TypedArray.prototype, 'fill', {value: Array.prototype.fill});
   }
 });
-if (typeof Math.tanh === 'undefined') {
-  var epsilon = 2.220446049250313E-16;
-  var taylor_2_bound = Math.sqrt(epsilon);
-  var taylor_n_bound = Math.sqrt(taylor_2_bound);
-  Math.tanh = function (x) {
-    if (Math.abs(x) < taylor_n_bound) {
-      var result = x;
-      if (Math.abs(x) > taylor_2_bound) {
-        result -= x * x * x / 3;
-      }
-      return result;
-    } else {
-      var a = Math.exp(+x), b = Math.exp(-x);
-      return a === Infinity ? 1 : b === Infinity ? -1 : (a - b) / (a + b);
-    }
-  };
-}
 if (typeof Math.log2 === 'undefined') {
   Math.log2 = function (x) {
     return Math.log(x) * Math.LOG2E;
@@ -16631,6 +16626,23 @@ if (typeof Math.clz32 === 'undefined') {
       return 31 - (log(asUint) / LN2 | 0) | 0; // the "| 0" acts like math.floor
     };
   }(Math.log, Math.LN2);
+}
+if (typeof Math.tanh === 'undefined') {
+  var epsilon = 2.220446049250313E-16;
+  var taylor_2_bound = Math.sqrt(epsilon);
+  var taylor_n_bound = Math.sqrt(taylor_2_bound);
+  Math.tanh = function (x) {
+    if (Math.abs(x) < taylor_n_bound) {
+      var result = x;
+      if (Math.abs(x) > taylor_2_bound) {
+        result -= x * x * x / 3;
+      }
+      return result;
+    } else {
+      var a = Math.exp(+x), b = Math.exp(-x);
+      return a === Infinity ? 1 : b === Infinity ? -1 : (a - b) / (a + b);
+    }
+  };
 }
 if (typeof String.prototype.startsWith === 'undefined') {
   Object.defineProperty(String.prototype, 'startsWith', {value: function (searchString, position) {
@@ -16687,16 +16699,16 @@ if (typeof String.prototype.startsWith === 'undefined') {
   initMetadataForClass(SubList, 'SubList', VOID, AbstractMutableList, [AbstractMutableList, RandomAccess]);
   initMetadataForClass(AbstractMap, 'AbstractMap', VOID, VOID, [Map_0]);
   initMetadataForClass(AbstractMutableMap, 'AbstractMutableMap', VOID, AbstractMap, [AbstractMap, Map_0]);
-  initMetadataForClass(AbstractMutableSet, 'AbstractMutableSet', VOID, AbstractMutableCollection, [AbstractMutableCollection, Collection, Set, MutableIterable]);
+  initMetadataForClass(AbstractMutableSet, 'AbstractMutableSet', VOID, AbstractMutableCollection, [AbstractMutableCollection, Set, Collection, MutableIterable]);
   initMetadataForCompanion(Companion_2);
   initMetadataForClass(ArrayList, 'ArrayList', ArrayList_init_$Create$, AbstractMutableList, [AbstractMutableList, List, Collection, MutableIterable, RandomAccess]);
   initMetadataForClass(HashMap, 'HashMap', HashMap_init_$Create$, AbstractMutableMap, [AbstractMutableMap, Map_0]);
   initMetadataForClass(HashMapValues, 'HashMapValues', VOID, AbstractMutableCollection, [Collection, MutableIterable, AbstractMutableCollection]);
-  initMetadataForClass(HashMapEntrySetBase, 'HashMapEntrySetBase', VOID, AbstractMutableSet, [Collection, Set, MutableIterable, AbstractMutableSet]);
+  initMetadataForClass(HashMapEntrySetBase, 'HashMapEntrySetBase', VOID, AbstractMutableSet, [Set, Collection, MutableIterable, AbstractMutableSet]);
   initMetadataForClass(HashMapEntrySet, 'HashMapEntrySet', VOID, HashMapEntrySetBase);
   initMetadataForClass(HashMapValuesDefault$iterator$1);
   initMetadataForClass(HashMapValuesDefault, 'HashMapValuesDefault', VOID, AbstractMutableCollection);
-  initMetadataForClass(HashSet, 'HashSet', HashSet_init_$Create$, AbstractMutableSet, [AbstractMutableSet, Collection, Set, MutableIterable]);
+  initMetadataForClass(HashSet, 'HashSet', HashSet_init_$Create$, AbstractMutableSet, [AbstractMutableSet, Set, Collection, MutableIterable]);
   initMetadataForCompanion(Companion_3);
   initMetadataForClass(Itr, 'Itr');
   initMetadataForClass(KeysItr, 'KeysItr', VOID, Itr);
@@ -16742,7 +16754,7 @@ if (typeof String.prototype.startsWith === 'undefined') {
   initMetadataForInterface(InternalMap, 'InternalMap');
   initMetadataForClass(InternalHashMap, 'InternalHashMap', InternalHashMap_init_$Create$, VOID, [InternalMap]);
   initMetadataForClass(LinkedHashMap, 'LinkedHashMap', LinkedHashMap_init_$Create$, HashMap, [HashMap, Map_0]);
-  initMetadataForClass(LinkedHashSet, 'LinkedHashSet', LinkedHashSet_init_$Create$, HashSet, [HashSet, Collection, Set, MutableIterable]);
+  initMetadataForClass(LinkedHashSet, 'LinkedHashSet', LinkedHashSet_init_$Create$, HashSet, [HashSet, Set, Collection, MutableIterable]);
   initMetadataForClass(BaseOutput, 'BaseOutput');
   initMetadataForClass(NodeJsOutput, 'NodeJsOutput', VOID, BaseOutput);
   initMetadataForClass(BufferedOutput, 'BufferedOutput', BufferedOutput, BaseOutput);

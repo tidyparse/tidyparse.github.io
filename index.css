@@ -92,6 +92,13 @@ u {
     color: var(--no-value-color);
 }
 
+#check1, #check2 {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+    margin-right: -90px;
+}
+
 /* TextareaDecorator.css
  * written by Colin Kuebler 2012
  * Part of LDT, dual licensed under GPLv3 and MIT

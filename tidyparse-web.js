@@ -5818,25 +5818,25 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
   var get_terminals = kotlin_ai_hypergraph_galoisenne.$_$.b1;
   var ValueTimeMark__elapsedNow_impl_eonqvs = kotlin_kotlin.$_$.n1;
   var _Duration___get_inWholeMilliseconds__impl__msfiry = kotlin_kotlin.$_$.h1;
-  var get_TIMEOUT_MS = kotlin_ai_hypergraph_galoisenne.$_$.e1;
+  var get_TIMEOUT_MS = kotlin_ai_hypergraph_galoisenne.$_$.g1;
   var toLong = kotlin_kotlin.$_$.u8;
   var LinkedHashSet_init_$Create$ = kotlin_kotlin.$_$.n;
   var ArrayList_init_$Create$_0 = kotlin_kotlin.$_$.i;
   var Monotonic_instance = kotlin_kotlin.$_$.d3;
   var DurationUnit_SECONDS_getInstance = kotlin_kotlin.$_$.e;
   var Duration__toDouble_impl_a56y2b = kotlin_kotlin.$_$.l1;
-  var round = kotlin_ai_hypergraph_galoisenne.$_$.n1;
+  var round = kotlin_ai_hypergraph_galoisenne.$_$.p1;
   var charSequenceLength = kotlin_kotlin.$_$.r7;
   var println = kotlin_kotlin.$_$.j7;
-  var tokenizeByWhitespace = kotlin_ai_hypergraph_galoisenne.$_$.l1;
+  var tokenizeByWhitespace = kotlin_ai_hypergraph_galoisenne.$_$.n1;
   var levenshteinAlign = kotlin_ai_hypergraph_galoisenne.$_$.p;
-  var paintDiffs = kotlin_ai_hypergraph_galoisenne.$_$.j1;
+  var paintDiffs = kotlin_ai_hypergraph_galoisenne.$_$.l1;
   var binarySearch = kotlin_kotlin.$_$.r3;
   var to = kotlin_kotlin.$_$.oc;
   var removeLast = kotlin_kotlin.$_$.l5;
   var last = kotlin_kotlin.$_$.s4;
   var prettyPrint = kotlin_ai_hypergraph_galoisenne.$_$.z;
-  var carveSeams = kotlin_ai_hypergraph_galoisenne.$_$.i1;
+  var carveSeams = kotlin_ai_hypergraph_galoisenne.$_$.k1;
   var escapeHTML = kotlin_ai_hypergraph_galoisenne.$_$.a;
   var CoroutineImpl = kotlin_kotlin.$_$.h7;
   var protoOf = kotlin_kotlin.$_$.t8;
@@ -5852,12 +5852,13 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
   var initMetadataForLambda = kotlin_kotlin.$_$.f8;
   var blockBackward = kotlin_ai_hypergraph_galoisenne.$_$.i;
   var padStart = kotlin_kotlin.$_$.qa;
-  var get_MAX_RADIUS = kotlin_ai_hypergraph_galoisenne.$_$.d1;
+  var get_MAX_RADIUS = kotlin_ai_hypergraph_galoisenne.$_$.f1;
   var get_bindex = kotlin_ai_hypergraph_galoisenne.$_$.h;
   var get_bimap = kotlin_ai_hypergraph_galoisenne.$_$.g;
   var get_tripleIntProds = kotlin_ai_hypergraph_galoisenne.$_$.c1;
   var until = kotlin_kotlin.$_$.i9;
   var makeLevFSA = kotlin_ai_hypergraph_galoisenne.$_$.r;
+  var get_LED_BUFFER = kotlin_ai_hypergraph_galoisenne.$_$.d1;
   var get_START_SYMBOL = kotlin_ai_hypergraph_galoisenne.$_$.f;
   var fillArrayVal = kotlin_kotlin.$_$.v7;
   var ensureNotNull = kotlin_kotlin.$_$.ic;
@@ -5876,13 +5877,13 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
   var booleanArray = kotlin_kotlin.$_$.n7;
   var KProperty1 = kotlin_kotlin.$_$.l9;
   var getPropertyCallableRef = kotlin_kotlin.$_$.y7;
-  var cache = kotlin_ai_hypergraph_galoisenne.$_$.h1;
+  var cache = kotlin_ai_hypergraph_galoisenne.$_$.j1;
   var flatMap = kotlin_kotlin.$_$.r9;
   var CoroutineScope = kotlin_org_jetbrains_kotlinx_kotlinx_coroutines_core.$_$.b;
   var levenshtein = kotlin_ai_hypergraph_galoisenne.$_$.q;
   var abs = kotlin_kotlin.$_$.w8;
   var contains_0 = kotlin_ai_hypergraph_galoisenne.$_$.l;
-  var minimizeFix = kotlin_ai_hypergraph_galoisenne.$_$.g1;
+  var minimizeFix = kotlin_ai_hypergraph_galoisenne.$_$.i1;
   var LinkedHashMap_init_$Create$ = kotlin_kotlin.$_$.l;
   var parseCFG = kotlin_ai_hypergraph_galoisenne.$_$.w;
   var get_noNonterminalStubs = kotlin_ai_hypergraph_galoisenne.$_$.s;
@@ -6353,7 +6354,7 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
           case 7:
             this.v1s_1 = this.p1s_1;
             this.w1s_1 = this.v1s_1 == null ? this.i1s_1 : this.v1s_1;
-            this.x1s_1 = makeLevFSA(this.f1s_1, this.w1s_1 + 1 | 0, this.j1s_1);
+            this.x1s_1 = makeLevFSA(this.f1s_1, this.w1s_1 + get_LED_BUFFER() | 0, this.j1s_1);
             this.y1s_1 = this.x1s_1.y1e();
             this.z1s_1 = this.k1s_1.x1e(get_START_SYMBOL());
             var tmp_2 = this;
@@ -7280,11 +7281,13 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
 }(function (_, kotlin_ai_hypergraph_galoisenne, kotlin_kotlin, kotlin_ai_hypergraph_tidyparse_core) {
   'use strict';
   //region block: imports
-  var PlatformVars_instance = kotlin_ai_hypergraph_galoisenne.$_$.m1;
+  var PlatformVars_instance = kotlin_ai_hypergraph_galoisenne.$_$.o1;
   var indexOf = kotlin_kotlin.$_$.ha;
-  var set_TIMEOUT_MS = kotlin_ai_hypergraph_galoisenne.$_$.f1;
   var Unit_instance = kotlin_kotlin.$_$.f3;
   var THROW_CCE = kotlin_kotlin.$_$.xb;
+  var toInt = kotlin_kotlin.$_$.eb;
+  var set_LED_BUFFER = kotlin_ai_hypergraph_galoisenne.$_$.e1;
+  var set_TIMEOUT_MS = kotlin_ai_hypergraph_galoisenne.$_$.h1;
   var VOID = kotlin_kotlin.$_$.c;
   var parseCFG = kotlin_ai_hypergraph_galoisenne.$_$.w;
   var get_noNonterminalStubs = kotlin_ai_hypergraph_galoisenne.$_$.s;
@@ -7312,9 +7315,8 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
   var isCharSequence = kotlin_kotlin.$_$.h8;
   var trim = kotlin_kotlin.$_$.jb;
   var toString = kotlin_kotlin.$_$.v8;
-  var toInt = kotlin_kotlin.$_$.eb;
   var substringAfter = kotlin_kotlin.$_$.ab;
-  var tokenizeByWhitespace = kotlin_ai_hypergraph_galoisenne.$_$.l1;
+  var tokenizeByWhitespace = kotlin_ai_hypergraph_galoisenne.$_$.n1;
   var joinToString = kotlin_kotlin.$_$.p4;
   var noWhenBranchMatchedException = kotlin_kotlin.$_$.kc;
   var collectionSizeOrDefault = kotlin_kotlin.$_$.v3;
@@ -7328,7 +7330,7 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
   var LinkedHashMap_init_$Create$ = kotlin_kotlin.$_$.k;
   var Regex_init_$Create$ = kotlin_kotlin.$_$.q;
   var objectCreate = kotlin_kotlin.$_$.s8;
-  var tokenizeByWhitespaceAndKeepDelimiters = kotlin_ai_hypergraph_galoisenne.$_$.k1;
+  var tokenizeByWhitespaceAndKeepDelimiters = kotlin_ai_hypergraph_galoisenne.$_$.m1;
   var escapeHTML = kotlin_ai_hypergraph_galoisenne.$_$.a;
   var get_segmentationCacheHTML = kotlin_ai_hypergraph_galoisenne.$_$.a1;
   var hashCode = kotlin_kotlin.$_$.a8;
@@ -7395,12 +7397,27 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
     return tmp0.i2();
   }
   var ntscheck$delegate;
+  function get_timeout() {
+    _init_properties_Client_kt__a2ryqz();
+    var tmp0 = timeout$delegate;
+    // Inline function 'kotlin.getValue' call
+    timeout$factory();
+    return tmp0.i2();
+  }
+  var timeout$delegate;
+  function get_maxEdits() {
+    _init_properties_Client_kt__a2ryqz();
+    var tmp0 = maxEdits$delegate;
+    // Inline function 'kotlin.getValue' call
+    maxEdits$factory();
+    return tmp0.i2();
+  }
+  var maxEdits$delegate;
   function main() {
     _init_properties_Client_kt__a2ryqz();
     if (!(indexOf(window.navigator.userAgent, 'hrome') === -1)) {
       PlatformVars_instance.k1r_1 = 4;
     }
-    set_TIMEOUT_MS(3000);
     get_jsEditor().p1y();
     var tmp = window;
     tmp.onload = main$lambda;
@@ -7414,6 +7431,10 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
     tmp_3.addEventListener('change', main$lambda_3);
     var tmp_4 = get_ntscheck();
     tmp_4.addEventListener('change', main$lambda_4);
+    var tmp_5 = get_timeout();
+    tmp_5.addEventListener('change', main$lambda_5);
+    var tmp_6 = get_timeout();
+    tmp_6.addEventListener('change', main$lambda_6);
   }
   function decorator$delegate$lambda() {
     _init_properties_Client_kt__a2ryqz();
@@ -7443,9 +7464,21 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
     var tmp = document.getElementById('ntstubs-checkbox');
     return tmp instanceof HTMLInputElement ? tmp : THROW_CCE();
   }
+  function timeout$delegate$lambda() {
+    _init_properties_Client_kt__a2ryqz();
+    var tmp = document.getElementById('timeout');
+    return tmp instanceof HTMLInputElement ? tmp : THROW_CCE();
+  }
+  function maxEdits$delegate$lambda() {
+    _init_properties_Client_kt__a2ryqz();
+    var tmp = document.getElementById('max-edits');
+    return tmp instanceof HTMLInputElement ? tmp : THROW_CCE();
+  }
   function main$lambda(it) {
     _init_properties_Client_kt__a2ryqz();
     get_jsEditor().u1y();
+    set_LED_BUFFER(toInt(get_maxEdits().value));
+    set_TIMEOUT_MS(toInt(get_timeout().value));
     return Unit_instance;
   }
   function main$lambda_0(it) {
@@ -7497,6 +7530,16 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
     get_jsEditor().u1y();
     return Unit_instance;
   }
+  function main$lambda_5(it) {
+    _init_properties_Client_kt__a2ryqz();
+    set_LED_BUFFER(toInt(get_maxEdits().value));
+    return Unit_instance;
+  }
+  function main$lambda_6(it) {
+    _init_properties_Client_kt__a2ryqz();
+    set_TIMEOUT_MS(toInt(get_timeout().value));
+    return Unit_instance;
+  }
   function decorator$factory() {
     return getPropertyCallableRef('decorator', 0, KProperty0, function () {
       return get_decorator();
@@ -7527,6 +7570,16 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
       return get_ntscheck();
     }, null);
   }
+  function timeout$factory() {
+    return getPropertyCallableRef('timeout', 0, KProperty0, function () {
+      return get_timeout();
+    }, null);
+  }
+  function maxEdits$factory() {
+    return getPropertyCallableRef('maxEdits', 0, KProperty0, function () {
+      return get_maxEdits();
+    }, null);
+  }
   var properties_initialized_Client_kt_4npn83;
   function _init_properties_Client_kt__a2ryqz() {
     if (!properties_initialized_Client_kt_4npn83) {
@@ -7538,6 +7591,8 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
       outputField$delegate = lazy(outputField$delegate$lambda);
       mincheck$delegate = lazy(mincheck$delegate$lambda);
       ntscheck$delegate = lazy(ntscheck$delegate$lambda);
+      timeout$delegate = lazy(timeout$delegate$lambda);
+      maxEdits$delegate = lazy(maxEdits$delegate$lambda);
     }
   }
   function mainWrapper() {
@@ -17244,6 +17299,15 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
     return MAX_RADIUS;
   }
   var MAX_RADIUS;
+  function set_LED_BUFFER(_set____db54di) {
+    _init_properties_SyntaxRepair_kt__jnbhn4();
+    LED_BUFFER = _set____db54di;
+  }
+  function get_LED_BUFFER() {
+    _init_properties_SyntaxRepair_kt__jnbhn4();
+    return LED_BUFFER;
+  }
+  var LED_BUFFER;
   function set_TIMEOUT_MS(_set____db54di) {
     _init_properties_SyntaxRepair_kt__jnbhn4();
     TIMEOUT_MS = _set____db54di;
@@ -17283,6 +17347,7 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
       MAX_TOKENS = 100;
       MIN_TOKENS = 3;
       MAX_RADIUS = 3;
+      LED_BUFFER = 1;
       TIMEOUT_MS = 10000;
       MAX_REPAIR = 2;
       impossibleBigrams$delegate = cache_0(VOID, impossibleBigrams$delegate$lambda);
@@ -20711,17 +20776,19 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
   _.$_$.a1 = get_segmentationCacheHTML;
   _.$_$.b1 = get_terminals;
   _.$_$.c1 = get_tripleIntProds;
-  _.$_$.d1 = get_MAX_RADIUS;
-  _.$_$.e1 = get_TIMEOUT_MS;
-  _.$_$.f1 = set_TIMEOUT_MS;
-  _.$_$.g1 = minimizeFix;
-  _.$_$.h1 = cache_0;
-  _.$_$.i1 = carveSeams;
-  _.$_$.j1 = paintDiffs;
-  _.$_$.k1 = tokenizeByWhitespaceAndKeepDelimiters;
-  _.$_$.l1 = tokenizeByWhitespace;
-  _.$_$.m1 = PlatformVars_instance;
-  _.$_$.n1 = round_0;
+  _.$_$.d1 = get_LED_BUFFER;
+  _.$_$.e1 = set_LED_BUFFER;
+  _.$_$.f1 = get_MAX_RADIUS;
+  _.$_$.g1 = get_TIMEOUT_MS;
+  _.$_$.h1 = set_TIMEOUT_MS;
+  _.$_$.i1 = minimizeFix;
+  _.$_$.j1 = cache_0;
+  _.$_$.k1 = carveSeams;
+  _.$_$.l1 = paintDiffs;
+  _.$_$.m1 = tokenizeByWhitespaceAndKeepDelimiters;
+  _.$_$.n1 = tokenizeByWhitespace;
+  _.$_$.o1 = PlatformVars_instance;
+  _.$_$.p1 = round_0;
   //endregion
   return _;
 }));
@@ -20784,11 +20851,6 @@ if (typeof Array.prototype.fill === 'undefined') {
     Object.defineProperty(TypedArray.prototype, 'fill', {value: Array.prototype.fill});
   }
 });
-if (typeof Math.log10 === 'undefined') {
-  Math.log10 = function (x) {
-    return Math.log(x) * Math.LOG10E;
-  };
-}
 if (typeof Math.clz32 === 'undefined') {
   Math.clz32 = function (log, LN2) {
     return function (x) {
@@ -20799,6 +20861,11 @@ if (typeof Math.clz32 === 'undefined') {
       return 31 - (log(asUint) / LN2 | 0) | 0; // the "| 0" acts like math.floor
     };
   }(Math.log, Math.LN2);
+}
+if (typeof Math.log10 === 'undefined') {
+  Math.log10 = function (x) {
+    return Math.log(x) * Math.LOG10E;
+  };
 }
 if (typeof Math.tanh === 'undefined') {
   var epsilon = 2.220446049250313E-16;
@@ -20867,26 +20934,26 @@ if (typeof String.prototype.startsWith === 'undefined') {
   initMetadataForClass(asList$1, VOID, VOID, AbstractList, [AbstractList, RandomAccess]);
   initMetadataForInterface(Comparator, 'Comparator');
   initMetadataForObject(Unit, 'Unit');
-  initMetadataForClass(AbstractMutableCollection, 'AbstractMutableCollection', VOID, AbstractCollection, [AbstractCollection, MutableIterable, Collection]);
+  initMetadataForClass(AbstractMutableCollection, 'AbstractMutableCollection', VOID, AbstractCollection, [AbstractCollection, Collection, MutableIterable]);
   initMetadataForClass(IteratorImpl, 'IteratorImpl');
   initMetadataForClass(ListIteratorImpl, 'ListIteratorImpl', VOID, IteratorImpl);
   initMetadataForClass(AbstractMutableList, 'AbstractMutableList', VOID, AbstractMutableCollection, [AbstractMutableCollection, MutableIterable, KtList, Collection]);
   initMetadataForClass(SubList, 'SubList', VOID, AbstractMutableList, [AbstractMutableList, RandomAccess]);
   initMetadataForClass(AbstractMap, 'AbstractMap', VOID, VOID, [KtMap]);
   initMetadataForClass(AbstractMutableMap, 'AbstractMutableMap', VOID, AbstractMap, [AbstractMap, KtMap]);
-  initMetadataForClass(AbstractMutableSet, 'AbstractMutableSet', VOID, AbstractMutableCollection, [AbstractMutableCollection, KtSet, MutableIterable, Collection]);
+  initMetadataForClass(AbstractMutableSet, 'AbstractMutableSet', VOID, AbstractMutableCollection, [AbstractMutableCollection, MutableIterable, Collection, KtSet]);
   initMetadataForCompanion(Companion_2);
   initMetadataForClass(ArrayList, 'ArrayList', ArrayList_init_$Create$, AbstractMutableList, [AbstractMutableList, MutableIterable, KtList, Collection, RandomAccess]);
   initMetadataForClass(HashMap, 'HashMap', HashMap_init_$Create$, AbstractMutableMap, [AbstractMutableMap, KtMap]);
-  initMetadataForClass(HashMapKeys, 'HashMapKeys', VOID, AbstractMutableSet, [KtSet, MutableIterable, Collection, AbstractMutableSet]);
-  initMetadataForClass(HashMapValues, 'HashMapValues', VOID, AbstractMutableCollection, [MutableIterable, Collection, AbstractMutableCollection]);
-  initMetadataForClass(HashMapEntrySetBase, 'HashMapEntrySetBase', VOID, AbstractMutableSet, [KtSet, MutableIterable, Collection, AbstractMutableSet]);
+  initMetadataForClass(HashMapKeys, 'HashMapKeys', VOID, AbstractMutableSet, [MutableIterable, Collection, KtSet, AbstractMutableSet]);
+  initMetadataForClass(HashMapValues, 'HashMapValues', VOID, AbstractMutableCollection, [Collection, MutableIterable, AbstractMutableCollection]);
+  initMetadataForClass(HashMapEntrySetBase, 'HashMapEntrySetBase', VOID, AbstractMutableSet, [MutableIterable, Collection, KtSet, AbstractMutableSet]);
   initMetadataForClass(HashMapEntrySet, 'HashMapEntrySet', VOID, HashMapEntrySetBase);
   initMetadataForClass(HashMapKeysDefault$iterator$1);
   initMetadataForClass(HashMapKeysDefault, 'HashMapKeysDefault', VOID, AbstractMutableSet);
   initMetadataForClass(HashMapValuesDefault$iterator$1);
   initMetadataForClass(HashMapValuesDefault, 'HashMapValuesDefault', VOID, AbstractMutableCollection);
-  initMetadataForClass(HashSet, 'HashSet', HashSet_init_$Create$, AbstractMutableSet, [AbstractMutableSet, KtSet, MutableIterable, Collection]);
+  initMetadataForClass(HashSet, 'HashSet', HashSet_init_$Create$, AbstractMutableSet, [AbstractMutableSet, MutableIterable, Collection, KtSet]);
   initMetadataForCompanion(Companion_3);
   initMetadataForClass(Itr, 'Itr');
   initMetadataForClass(KeysItr, 'KeysItr', VOID, Itr);
@@ -20932,7 +20999,7 @@ if (typeof String.prototype.startsWith === 'undefined') {
   initMetadataForInterface(InternalMap, 'InternalMap');
   initMetadataForClass(InternalHashMap, 'InternalHashMap', InternalHashMap_init_$Create$, VOID, [InternalMap]);
   initMetadataForClass(LinkedHashMap, 'LinkedHashMap', LinkedHashMap_init_$Create$, HashMap, [HashMap, KtMap]);
-  initMetadataForClass(LinkedHashSet, 'LinkedHashSet', LinkedHashSet_init_$Create$, HashSet, [HashSet, KtSet, MutableIterable, Collection]);
+  initMetadataForClass(LinkedHashSet, 'LinkedHashSet', LinkedHashSet_init_$Create$, HashSet, [HashSet, MutableIterable, Collection, KtSet]);
   initMetadataForClass(BaseOutput, 'BaseOutput');
   initMetadataForClass(NodeJsOutput, 'NodeJsOutput', VOID, BaseOutput);
   initMetadataForClass(BufferedOutput, 'BufferedOutput', BufferedOutput, BaseOutput);

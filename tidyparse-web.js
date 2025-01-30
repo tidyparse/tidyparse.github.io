@@ -7362,7 +7362,7 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
     // Inline function 'kotlin.let' call
     // Inline function 'ai.hypergraph.tidyparse.TidyEditor.enumerateInteractively.<anonymous>' call
     var tmp;
-    if (!this.i2t_1) {
+    if (!this.i2t_1 || tokens.x('_')) {
       tmp = _this__u8e3s4;
     } else {
       tmp = flatMap(_this__u8e3s4, TidyEditor$enumerateInteractively$lambda_2(tokens, this));
@@ -8192,7 +8192,7 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
     this.i2u_1 = editor;
     this.j2u_1 = output;
     this.k2u_1 = 0;
-    this.l2u_1 = new ModInt(0, get_toTake());
+    this.l2u_1 = new ModInt(2, get_toTake());
   }
   protoOf(JSTidyEditor).s2v = function () {
     return this.i2u_1;
@@ -8258,32 +8258,35 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
     var this_0 = substringAfterLast_0(substringBefore(lines_0.q(htmlIndex), '.)'), _Char___init__impl__6a9atx(62));
     var tmp$ret$2 = toString(trim(isCharSequence(this_0) ? this_0 : THROW_CCE()));
     var currentIdx = toInt(tmp$ret$2);
-    var tmp_0 = this;
-    var tmp3 = get_toTake();
-    // Inline function 'kotlin.comparisons.minOf' call
-    var b = lines_0.k() - 4 | 0;
-    var tmp$ret$3 = Math.min(tmp3, b);
-    var tmp_1 = new ModInt(currentIdx, tmp$ret$3);
-    var tmp_2;
     switch (key.w2_1) {
       case 0:
-        var selection = substringAfter(lines(this.v2v()).q(this.l2u_1.m2v_1 + 2 | 0), '.) ');
-        println('SEL: ' + selection);
+        var selection = substringAfter(lines(this.v2v()).q(currentIdx + 2 | 0), '.) ');
         this.u2v(joinToString(tokenizeByWhitespace(selection), ' '));
         this.z2t();
         this.n2t(JSTidyEditor$navUpdate$lambda(this));
         return Unit_instance;
       case 1:
-        tmp_2 = 1;
+        var tmp_0 = this;
+        var tmp3 = get_toTake();
+        // Inline function 'kotlin.comparisons.minOf' call
+
+        var b = lines_0.k() - 4 | 0;
+        var tmp$ret$3 = Math.min(tmp3, b);
+        tmp_0.l2u_1 = (new ModInt(currentIdx, tmp$ret$3)).t1r(1);
         break;
       case 2:
-        tmp_2 = -1;
+        var tmp_1 = this;
+        var tmp5 = get_toTake();
+        // Inline function 'kotlin.comparisons.minOf' call
+
+        var b_0 = lines_0.k() - 4 | 0;
+        var tmp$ret$4 = Math.min(tmp5, b_0);
+        tmp_1.l2u_1 = (new ModInt(currentIdx, tmp$ret$4)).t1r(-1);
         break;
       default:
         noWhenBranchMatchedException();
         break;
     }
-    tmp_0.l2u_1 = tmp_1.t1r(tmp_2);
     // Inline function 'kotlin.collections.mapIndexed' call
     // Inline function 'kotlin.collections.mapIndexedTo' call
     var destination = ArrayList_init_$Create$(collectionSizeOrDefault(lines_0, 10));
@@ -8295,8 +8298,8 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
       index_0 = _unary__edvuaz + 1 | 0;
       // Inline function 'JSTidyEditor.navUpdate.<anonymous>' call
       var i = checkIndexOverflow(_unary__edvuaz);
-      var tmp$ret$4 = i === htmlIndex ? dropLast(drop(item_0, 6), 7) : i === (this.l2u_1.m2v_1 + 2 | 0) ? '<mark>' + item_0 + '<\/mark>' : item_0;
-      destination.e(tmp$ret$4);
+      var tmp$ret$5 = i === htmlIndex ? dropLast(drop(item_0, 6), 7) : i === (this.l2u_1.m2v_1 + 2 | 0) ? '<mark>' + item_0 + '<\/mark>' : item_0;
+      destination.e(tmp$ret$5);
     }
     this.o2t(joinToString(destination, '\n'));
   };
@@ -27245,17 +27248,6 @@ if (typeof Array.prototype.fill === 'undefined') {
     Object.defineProperty(TypedArray.prototype, 'fill', {value: Array.prototype.fill});
   }
 });
-if (typeof Math.clz32 === 'undefined') {
-  Math.clz32 = function (log, LN2) {
-    return function (x) {
-      var asUint = x >>> 0;
-      if (asUint === 0) {
-        return 32;
-      }
-      return 31 - (log(asUint) / LN2 | 0) | 0; // the "| 0" acts like math.floor
-    };
-  }(Math.log, Math.LN2);
-}
 if (typeof Math.log10 === 'undefined') {
   Math.log10 = function (x) {
     return Math.log(x) * Math.LOG10E;
@@ -27277,6 +27269,17 @@ if (typeof Math.tanh === 'undefined') {
       return a === Infinity ? 1 : b === Infinity ? -1 : (a - b) / (a + b);
     }
   };
+}
+if (typeof Math.clz32 === 'undefined') {
+  Math.clz32 = function (log, LN2) {
+    return function (x) {
+      var asUint = x >>> 0;
+      if (asUint === 0) {
+        return 32;
+      }
+      return 31 - (log(asUint) / LN2 | 0) | 0; // the "| 0" acts like math.floor
+    };
+  }(Math.log, Math.LN2);
 }
 if (typeof String.prototype.startsWith === 'undefined') {
   Object.defineProperty(String.prototype, 'startsWith', {value: function (searchString, position) {

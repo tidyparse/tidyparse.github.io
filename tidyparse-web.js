@@ -7533,11 +7533,9 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
   var collectionSizeOrDefault = kotlin_kotlin.$_$.c4;
   var ArrayList_init_$Create$ = kotlin_kotlin.$_$.g;
   var checkIndexOverflow = kotlin_kotlin.$_$.a4;
-  var drop = kotlin_kotlin.$_$.cb;
-  var dropLast = kotlin_kotlin.$_$.bb;
   var isValidProd = kotlin_ai_hypergraph_galoisenne.$_$.n;
   var replace = kotlin_kotlin.$_$.sb;
-  var dropLast_0 = kotlin_kotlin.$_$.o4;
+  var dropLast = kotlin_kotlin.$_$.o4;
   var levenshteinAlign = kotlin_ai_hypergraph_galoisenne.$_$.p;
   var get_pythonStatementCNF = kotlin_ai_hypergraph_galoisenne.$_$.l1;
   var preparseParseableLines_0 = kotlin_ai_hypergraph_galoisenne.$_$.z;
@@ -7566,7 +7564,7 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
   var toList = kotlin_kotlin.$_$.p6;
   //endregion
   //region block: pre-declaration
-  initMetadataForLambda(handleSelect$slambda, CoroutineImpl, VOID, [1]);
+  initMetadataForLambda(fetchSelectedExample$slambda, CoroutineImpl, VOID, [1]);
   initMetadataForCompanion(Companion);
   initMetadataForClass(ModInt, 'ModInt');
   initMetadataForClass(SelectorAction, 'SelectorAction', VOID, Enum);
@@ -7582,14 +7580,14 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
     return parser;
   }
   var parser;
-  function get_selectElement() {
+  function get_exSelector() {
     _init_properties_Client_kt__a2ryqz();
-    var tmp0 = selectElement$delegate;
+    var tmp0 = exSelector$delegate;
     // Inline function 'kotlin.getValue' call
-    selectElement$factory();
+    exSelector$factory();
     return tmp0.o2();
   }
-  var selectElement$delegate;
+  var exSelector$delegate;
   function get_decorator() {
     _init_properties_Client_kt__a2ryqz();
     var tmp0 = decorator$delegate;
@@ -7684,22 +7682,18 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
     tmp_0.addEventListener('input', defaultSetup$lambda_0);
     var tmp_1 = get_inputField();
     tmp_1.addEventListener('input', defaultSetup$lambda_1);
-    var tmp0_safe_receiver = get_selectElement();
-    if (tmp0_safe_receiver == null)
-      null;
-    else {
-      tmp0_safe_receiver.addEventListener('change', defaultSetup$lambda_2);
-    }
-    var tmp_2 = get_inputField();
-    tmp_2.addEventListener('keydown', defaultSetup$lambda_3);
-    var tmp_3 = get_mincheck();
-    tmp_3.addEventListener('change', defaultSetup$lambda_4);
-    var tmp_4 = get_ntscheck();
-    tmp_4.addEventListener('change', defaultSetup$lambda_5);
-    var tmp_5 = get_timeout();
-    tmp_5.addEventListener('change', defaultSetup$lambda_6);
+    var tmp_2 = get_exSelector();
+    tmp_2.addEventListener('change', defaultSetup$lambda_2);
+    var tmp_3 = get_inputField();
+    tmp_3.addEventListener('keydown', defaultSetup$lambda_3);
+    var tmp_4 = get_mincheck();
+    tmp_4.addEventListener('change', defaultSetup$lambda_4);
+    var tmp_5 = get_ntscheck();
+    tmp_5.addEventListener('change', defaultSetup$lambda_5);
     var tmp_6 = get_timeout();
-    tmp_6.addEventListener('change', defaultSetup$lambda_7);
+    tmp_6.addEventListener('change', defaultSetup$lambda_6);
+    var tmp_7 = get_timeout();
+    tmp_7.addEventListener('change', defaultSetup$lambda_7);
   }
   function pythonSetup() {
     _init_properties_Client_kt__a2ryqz();
@@ -7719,15 +7713,15 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
     var tmp_5 = get_timeout();
     tmp_5.addEventListener('change', pythonSetup$lambda_5);
   }
-  function handleSelect() {
+  function fetchSelectedExample() {
     _init_properties_Client_kt__a2ryqz();
     var tmp = MainScope();
-    launch(tmp, VOID, VOID, handleSelect$slambda_0(null));
+    return launch(tmp, VOID, VOID, fetchSelectedExample$slambda_0(null));
   }
-  function selectElement$delegate$lambda() {
+  function exSelector$delegate$lambda() {
     _init_properties_Client_kt__a2ryqz();
     var tmp = document.getElementById('ex-selector');
-    return tmp instanceof HTMLSelectElement ? tmp : null;
+    return tmp instanceof HTMLSelectElement ? tmp : THROW_CCE();
   }
   function decorator$delegate$lambda() {
     _init_properties_Client_kt__a2ryqz();
@@ -7773,7 +7767,7 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
   }
   function defaultSetup$lambda(it) {
     _init_properties_Client_kt__a2ryqz();
-    handleSelect();
+    fetchSelectedExample();
     get_jsEditor().r2t();
     get_jsEditor().x2t();
     set_LED_BUFFER(toInt(get_maxEdits().value));
@@ -7801,7 +7795,7 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
   }
   function defaultSetup$lambda_2(it) {
     _init_properties_Client_kt__a2ryqz();
-    handleSelect();
+    fetchSelectedExample();
     return Unit_instance;
   }
   function defaultSetup$lambda_3(event) {
@@ -7892,25 +7886,25 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
     set_TIMEOUT_MS(toInt(get_timeout().value));
     return Unit_instance;
   }
-  function handleSelect$slambda$lambda($$this$apply) {
+  function fetchSelectedExample$slambda$lambda($$this$apply) {
     return function () {
       $$this$apply.scrollIntoView({behavior: 'instant', block: 'end'});
       return Unit_instance;
     };
   }
-  function handleSelect$slambda(resultContinuation) {
+  function fetchSelectedExample$slambda(resultContinuation) {
     CoroutineImpl.call(this, resultContinuation);
   }
-  protoOf(handleSelect$slambda).a2t = function ($this$launch, $completion) {
+  protoOf(fetchSelectedExample$slambda).a2t = function ($this$launch, $completion) {
     var tmp = this.b2t($this$launch, $completion);
     tmp.l9_1 = Unit_instance;
     tmp.m9_1 = null;
     return tmp.r9();
   };
-  protoOf(handleSelect$slambda).ba = function (p1, $completion) {
+  protoOf(fetchSelectedExample$slambda).ba = function (p1, $completion) {
     return this.a2t((!(p1 == null) ? isInterface(p1, CoroutineScope) : false) ? p1 : THROW_CCE(), $completion);
   };
-  protoOf(handleSelect$slambda).r9 = function () {
+  protoOf(fetchSelectedExample$slambda).r9 = function () {
     var suspendResult = this.l9_1;
     $sm: do
       try {
@@ -7919,7 +7913,7 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
           case 0:
             this.k9_1 = 4;
             this.j9_1 = 1;
-            suspendResult = await_0(window.fetch(ensureNotNull(get_selectElement()).value), this);
+            suspendResult = await_0(window.fetch(ensureNotNull(get_exSelector()).value), this);
             if (suspendResult === get_COROUTINE_SUSPENDED()) {
               return suspendResult;
             }
@@ -7945,7 +7939,7 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
             var $this$apply = get_inputField();
             $this$apply.value = text;
             var tmp_0 = window;
-            tmp_0.setTimeout(handleSelect$slambda$lambda($this$apply), 1);
+            tmp_0.setTimeout(fetchSelectedExample$slambda$lambda($this$apply), 1);
             get_jsEditor().x2t();
             this.j9_1 = 3;
             continue $sm;
@@ -7965,22 +7959,22 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
       }
      while (true);
   };
-  protoOf(handleSelect$slambda).b2t = function ($this$launch, completion) {
-    var i = new handleSelect$slambda(completion);
+  protoOf(fetchSelectedExample$slambda).b2t = function ($this$launch, completion) {
+    var i = new fetchSelectedExample$slambda(completion);
     i.h2v_1 = $this$launch;
     return i;
   };
-  function handleSelect$slambda_0(resultContinuation) {
-    var i = new handleSelect$slambda(resultContinuation);
+  function fetchSelectedExample$slambda_0(resultContinuation) {
+    var i = new fetchSelectedExample$slambda(resultContinuation);
     var l = function ($this$launch, $completion) {
       return i.a2t($this$launch, $completion);
     };
     l.$arity = 1;
     return l;
   }
-  function selectElement$factory() {
-    return getPropertyCallableRef('selectElement', 0, KProperty0, function () {
-      return get_selectElement();
+  function exSelector$factory() {
+    return getPropertyCallableRef('exSelector', 0, KProperty0, function () {
+      return get_exSelector();
     }, null);
   }
   function decorator$factory() {
@@ -8033,7 +8027,7 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
     if (!properties_initialized_Client_kt_4npn83) {
       properties_initialized_Client_kt_4npn83 = true;
       parser = Parser_init_$Create$([to('whitespace', '\\s+'), to('blue', '---'), to('gray', '->|_|\\|'), to('green', 'START'), to('other', '\\S')]);
-      selectElement$delegate = lazy(selectElement$delegate$lambda);
+      exSelector$delegate = lazy(exSelector$delegate$lambda);
       decorator$delegate = lazy(decorator$delegate$lambda);
       jsEditor$delegate = lazy(jsEditor$delegate$lambda);
       jsPyEditor$delegate = lazy(jsPyEditor$delegate$lambda);
@@ -8298,8 +8292,19 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
       index_0 = _unary__edvuaz + 1 | 0;
       // Inline function 'JSTidyEditor.navUpdate.<anonymous>' call
       var i = checkIndexOverflow(_unary__edvuaz);
-      var tmp$ret$5 = i === htmlIndex ? dropLast(drop(item_0, 6), 7) : i === (this.j2u_1.k2v_1 + 2 | 0) ? '<mark>' + item_0 + '<\/mark>' : item_0;
-      destination.e(tmp$ret$5);
+      var tmp_2;
+      if (i === htmlIndex) {
+        // Inline function 'kotlin.text.substring' call
+        var endIndex = item_0.length - 7 | 0;
+        // Inline function 'kotlin.js.asDynamic' call
+        tmp_2 = item_0.substring(6, endIndex);
+      } else if (i === (this.j2u_1.k2v_1 + 2 | 0)) {
+        tmp_2 = '<mark>' + item_0 + '<\/mark>';
+      } else {
+        tmp_2 = item_0;
+      }
+      var tmp$ret$7 = tmp_2;
+      destination.e(tmp$ret$7);
     }
     this.m2t(joinToString(destination, '\n'));
   };
@@ -8317,11 +8322,15 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
     }
   };
   function JSTidyPyEditor$handleInput$slambda$lambda(it) {
-    return replace(dropLast(it, 8), 'OR', '|');
+    // Inline function 'kotlin.text.substring' call
+    var endIndex = it.length - 8 | 0;
+    // Inline function 'kotlin.js.asDynamic' call
+    var tmp$ret$1 = it.substring(0, endIndex);
+    return replace(tmp$ret$1, 'OR', '|');
   }
   function JSTidyPyEditor$handleInput$slambda$lambda_0($tokens, $pcs) {
     return function (it) {
-      var levAlign = levenshteinAlign(dropLast_0($tokens, 1), tokenizeByWhitespace(it));
+      var levAlign = levenshteinAlign(dropLast($tokens, 1), tokenizeByWhitespace(it));
       return $pcs.x2v(levAlign);
     };
   }
@@ -8376,7 +8385,7 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
           case 1:
             var ARGUMENT = suspendResult;
             var ARGUMENT_0 = map(ARGUMENT, JSTidyPyEditor$handleInput$slambda$lambda);
-            var tmp_0 = dropLast_0(this.h2w_1, 1);
+            var tmp_0 = dropLast(this.h2w_1, 1);
             this.g2w_1.j2t(ARGUMENT_0, this.i2w_1, tmp_0, VOID, VOID, VOID, JSTidyPyEditor$handleInput$slambda$lambda_0(this.h2w_1, this.j2w_1));
             return Unit_instance;
           case 2:
@@ -8445,7 +8454,7 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
       return Unit_instance;
     var pcs = new PyCodeSnippet(currentLine);
     var tokens = tokenizeByWhitespace(pcs.l2w());
-    println('Repairing: ' + joinToString(dropLast_0(tokens, 1), ' '));
+    println('Repairing: ' + joinToString(dropLast(tokens, 1), ' '));
     var containsUnk = false;
     // Inline function 'kotlin.collections.map' call
     // Inline function 'kotlin.collections.mapTo' call
@@ -8829,9 +8838,9 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
   var ArrayList_init_$Create$_1 = kotlin_kotlin.$_$.g;
   var UnsupportedOperationException_init_$Create$ = kotlin_kotlin.$_$.n1;
   var UnsupportedOperationException_init_$Create$_0 = kotlin_kotlin.$_$.m1;
-  var KtSet = kotlin_kotlin.$_$.s3;
   var MutableIterable = kotlin_kotlin.$_$.r3;
   var Collection = kotlin_kotlin.$_$.o3;
+  var KtSet = kotlin_kotlin.$_$.s3;
   var IllegalStateException_init_$Create$_0 = kotlin_kotlin.$_$.a1;
   var noWhenBranchMatchedException = kotlin_kotlin.$_$.pd;
   var copyOfRange = kotlin_kotlin.$_$.h4;
@@ -8890,12 +8899,12 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
   initMetadataForClass(ATN, 'ATN');
   initMetadataForCompanion(Companion_6);
   initMetadataForClass(ATNConfig, 'ATNConfig');
-  initMetadataForClass(Array2DHashSet, 'Array2DHashSet', Array2DHashSet, VOID, [KtSet, MutableIterable, Collection]);
+  initMetadataForClass(Array2DHashSet, 'Array2DHashSet', Array2DHashSet, VOID, [MutableIterable, Collection, KtSet]);
   initMetadataForClass(AbstractConfigHashSet, 'AbstractConfigHashSet', VOID, Array2DHashSet);
   initMetadataForClass(ConfigHashSet, 'ConfigHashSet', ConfigHashSet, AbstractConfigHashSet);
   initMetadataForClass(AbstractEqualityComparator, 'AbstractEqualityComparator');
   initMetadataForObject(ConfigEqualityComparator, 'ConfigEqualityComparator', VOID, AbstractEqualityComparator);
-  initMetadataForClass(ATNConfigSet, 'ATNConfigSet', ATNConfigSet, VOID, [KtSet, MutableIterable, Collection]);
+  initMetadataForClass(ATNConfigSet, 'ATNConfigSet', ATNConfigSet, VOID, [MutableIterable, Collection, KtSet]);
   initMetadataForCompanion(Companion_7);
   initMetadataForClass(ATNDeserializationOptions, 'ATNDeserializationOptions', ATNDeserializationOptions_init_$Create$);
   initMetadataForCompanion(Companion_8);
@@ -27217,22 +27226,6 @@ if (typeof Array.prototype.fill === 'undefined') {
     Object.defineProperty(TypedArray.prototype, 'fill', {value: Array.prototype.fill});
   }
 });
-if (typeof Math.log10 === 'undefined') {
-  Math.log10 = function (x) {
-    return Math.log(x) * Math.LOG10E;
-  };
-}
-if (typeof Math.clz32 === 'undefined') {
-  Math.clz32 = function (log, LN2) {
-    return function (x) {
-      var asUint = x >>> 0;
-      if (asUint === 0) {
-        return 32;
-      }
-      return 31 - (log(asUint) / LN2 | 0) | 0; // the "| 0" acts like math.floor
-    };
-  }(Math.log, Math.LN2);
-}
 if (typeof Math.tanh === 'undefined') {
   var epsilon = 2.220446049250313E-16;
   var taylor_2_bound = Math.sqrt(epsilon);
@@ -27249,6 +27242,22 @@ if (typeof Math.tanh === 'undefined') {
       return a === Infinity ? 1 : b === Infinity ? -1 : (a - b) / (a + b);
     }
   };
+}
+if (typeof Math.log10 === 'undefined') {
+  Math.log10 = function (x) {
+    return Math.log(x) * Math.LOG10E;
+  };
+}
+if (typeof Math.clz32 === 'undefined') {
+  Math.clz32 = function (log, LN2) {
+    return function (x) {
+      var asUint = x >>> 0;
+      if (asUint === 0) {
+        return 32;
+      }
+      return 31 - (log(asUint) / LN2 | 0) | 0; // the "| 0" acts like math.floor
+    };
+  }(Math.log, Math.LN2);
 }
 if (typeof String.prototype.startsWith === 'undefined') {
   Object.defineProperty(String.prototype, 'startsWith', {value: function (searchString, position) {
@@ -27308,19 +27317,19 @@ if (typeof String.prototype.startsWith === 'undefined') {
   initMetadataForClass(SubList, 'SubList', VOID, AbstractMutableList, [AbstractMutableList, RandomAccess]);
   initMetadataForClass(AbstractMap, 'AbstractMap', VOID, VOID, [KtMap]);
   initMetadataForClass(AbstractMutableMap, 'AbstractMutableMap', VOID, AbstractMap, [AbstractMap, KtMap]);
-  initMetadataForClass(AbstractMutableSet, 'AbstractMutableSet', VOID, AbstractMutableCollection, [AbstractMutableCollection, KtSet, MutableIterable, Collection]);
+  initMetadataForClass(AbstractMutableSet, 'AbstractMutableSet', VOID, AbstractMutableCollection, [AbstractMutableCollection, MutableIterable, Collection, KtSet]);
   initMetadataForCompanion(Companion_2);
   initMetadataForClass(ArrayList, 'ArrayList', ArrayList_init_$Create$, AbstractMutableList, [AbstractMutableList, KtList, MutableIterable, Collection, RandomAccess]);
   initMetadataForClass(HashMap, 'HashMap', HashMap_init_$Create$, AbstractMutableMap, [AbstractMutableMap, KtMap]);
-  initMetadataForClass(HashMapKeys, 'HashMapKeys', VOID, AbstractMutableSet, [KtSet, MutableIterable, Collection, AbstractMutableSet]);
+  initMetadataForClass(HashMapKeys, 'HashMapKeys', VOID, AbstractMutableSet, [MutableIterable, Collection, KtSet, AbstractMutableSet]);
   initMetadataForClass(HashMapValues, 'HashMapValues', VOID, AbstractMutableCollection, [Collection, MutableIterable, AbstractMutableCollection]);
-  initMetadataForClass(HashMapEntrySetBase, 'HashMapEntrySetBase', VOID, AbstractMutableSet, [KtSet, MutableIterable, Collection, AbstractMutableSet]);
+  initMetadataForClass(HashMapEntrySetBase, 'HashMapEntrySetBase', VOID, AbstractMutableSet, [MutableIterable, Collection, KtSet, AbstractMutableSet]);
   initMetadataForClass(HashMapEntrySet, 'HashMapEntrySet', VOID, HashMapEntrySetBase);
   initMetadataForClass(HashMapKeysDefault$iterator$1);
   initMetadataForClass(HashMapKeysDefault, 'HashMapKeysDefault', VOID, AbstractMutableSet);
   initMetadataForClass(HashMapValuesDefault$iterator$1);
   initMetadataForClass(HashMapValuesDefault, 'HashMapValuesDefault', VOID, AbstractMutableCollection);
-  initMetadataForClass(HashSet, 'HashSet', HashSet_init_$Create$, AbstractMutableSet, [AbstractMutableSet, KtSet, MutableIterable, Collection]);
+  initMetadataForClass(HashSet, 'HashSet', HashSet_init_$Create$, AbstractMutableSet, [AbstractMutableSet, MutableIterable, Collection, KtSet]);
   initMetadataForCompanion(Companion_3);
   initMetadataForClass(Itr, 'Itr');
   initMetadataForClass(KeysItr, 'KeysItr', VOID, Itr);
@@ -27366,7 +27375,7 @@ if (typeof String.prototype.startsWith === 'undefined') {
   initMetadataForInterface(InternalMap, 'InternalMap');
   initMetadataForClass(InternalHashMap, 'InternalHashMap', InternalHashMap_init_$Create$, VOID, [InternalMap]);
   initMetadataForClass(LinkedHashMap, 'LinkedHashMap', LinkedHashMap_init_$Create$, HashMap, [HashMap, KtMap]);
-  initMetadataForClass(LinkedHashSet, 'LinkedHashSet', LinkedHashSet_init_$Create$, HashSet, [HashSet, KtSet, MutableIterable, Collection]);
+  initMetadataForClass(LinkedHashSet, 'LinkedHashSet', LinkedHashSet_init_$Create$, HashSet, [HashSet, MutableIterable, Collection, KtSet]);
   initMetadataForClass(BaseOutput, 'BaseOutput');
   initMetadataForClass(NodeJsOutput, 'NodeJsOutput', VOID, BaseOutput);
   initMetadataForClass(BufferedOutput, 'BufferedOutput', BufferedOutput, BaseOutput);

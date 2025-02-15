@@ -6964,15 +6964,20 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
       return paintDiffs(levenshteinAlign(joinToString($origTks, ' '), it));
     };
   }
-  function TidyEditor$enumerateInteractively$lambda$lambda(this$0) {
-    return function ($this$minimizeFix) {
-      return contains(get_language(this$0.g2v()), $this$minimizeFix);
+  function TidyEditor$enumerateInteractively$lambda_2(this$0) {
+    return function (it) {
+      return contains(get_language(this$0.g2v()), it);
     };
   }
-  function TidyEditor$enumerateInteractively$lambda_2($origTks, this$0) {
+  function TidyEditor$enumerateInteractively$lambda$lambda($recognizer) {
+    return function ($this$minimizeFix) {
+      return $recognizer($this$minimizeFix);
+    };
+  }
+  function TidyEditor$enumerateInteractively$lambda_3($origTks, $recognizer) {
     return function (it) {
       var tmp = tokenizeByWhitespace(it);
-      return minimizeFix($origTks, tmp, TidyEditor$enumerateInteractively$lambda$lambda(this$0));
+      return minimizeFix($origTks, tmp, TidyEditor$enumerateInteractively$lambda$lambda($recognizer));
     };
   }
   function TidyEditor$continuation$ref($boundThis) {
@@ -6982,13 +6987,13 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
     l.callableName = 'continuation';
     return l;
   }
-  function TidyEditor$enumerateInteractively$lambda_3(this$0) {
+  function TidyEditor$enumerateInteractively$lambda_4(this$0) {
     return function (it) {
       this$0.i2v('\u274C Current line invalid, possible fixes:\n\n' + it);
       return Unit_instance;
     };
   }
-  function TidyEditor$enumerateInteractively$lambda_4(this$0, $workHash, $timer) {
+  function TidyEditor$enumerateInteractively$lambda_5(this$0, $workHash, $timer) {
     return function (it) {
       var tmp;
       if (this$0.a2v_1 === $workHash) {
@@ -7100,8 +7105,14 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
     var firstPlaceholder = this.s2v().sc(line, coerceAtMost((this.l2v().c1_1 - lineIdx | 0) + 1 | 0, line.length));
     if (firstPlaceholder == null)
       firstPlaceholder = this.s2v().sc(line, 0);
-    if (firstPlaceholder == null)
+    if (firstPlaceholder == null) {
+      // Inline function 'kotlin.let' call
+      // Inline function 'ai.hypergraph.tidyparse.TidyEditor.handleTab.<anonymous>' call
+      var it = lineIdx + line.length | 0;
+      var tmp$ret$1 = numberRangeToNumber(it, it);
+      this.o2v(tmp$ret$1);
       return Unit_instance;
+    }
     this.o2v(numberRangeToNumber(lineIdx + firstPlaceholder.zc().c1_1 | 0, (lineIdx + firstPlaceholder.zc().d1_1 | 0) + 1 | 0));
     this.u2v();
   };
@@ -7207,22 +7218,22 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
       tmp_1.d2v_1 = launch(tmp_2, VOID, VOID, TidyEditor$handleInput$slambda_0(this, tokens, cfg, workHash, null));
     }
   };
-  protoOf(TidyEditor).x2v = function (_this__u8e3s4, workHash, origTks, timer, metric, shouldContinue, customDiff) {
+  protoOf(TidyEditor).x2v = function (_this__u8e3s4, workHash, origTks, timer, metric, shouldContinue, customDiff, recognizer) {
     // Inline function 'kotlin.let' call
     // Inline function 'ai.hypergraph.tidyparse.TidyEditor.enumerateInteractively.<anonymous>' call
     var tmp;
     if (!this.b2v_1 || origTks.x('_')) {
       tmp = _this__u8e3s4;
     } else {
-      tmp = flatMap(_this__u8e3s4, TidyEditor$enumerateInteractively$lambda_2(origTks, this));
+      tmp = flatMap(_this__u8e3s4, TidyEditor$enumerateInteractively$lambda_3(origTks, recognizer));
     }
     var tmp0_$receiver = tmp;
     var tmp1_localContinuation = TidyEditor$continuation$ref(this);
-    var tmp_0 = TidyEditor$enumerateInteractively$lambda_3(this);
-    enumerateCompletionsInteractively(tmp0_$receiver, VOID, metric, shouldContinue, tmp_0, TidyEditor$enumerateInteractively$lambda_4(this, workHash, timer), tmp1_localContinuation, customDiff);
+    var tmp_0 = TidyEditor$enumerateInteractively$lambda_4(this);
+    enumerateCompletionsInteractively(tmp0_$receiver, VOID, metric, shouldContinue, tmp_0, TidyEditor$enumerateInteractively$lambda_5(this, workHash, timer), tmp1_localContinuation, customDiff);
     return Unit_instance;
   };
-  protoOf(TidyEditor).f2v = function (_this__u8e3s4, workHash, origTks, timer, metric, shouldContinue, customDiff, $super) {
+  protoOf(TidyEditor).f2v = function (_this__u8e3s4, workHash, origTks, timer, metric, shouldContinue, customDiff, recognizer, $super) {
     timer = timer === VOID ? Monotonic_instance.be() : timer;
     var tmp;
     if (metric === VOID) {
@@ -7246,13 +7257,20 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
     }
     customDiff = tmp_1;
     var tmp_2;
-    if ($super === VOID) {
-      this.x2v(_this__u8e3s4, workHash, origTks, timer, metric, shouldContinue, customDiff);
-      tmp_2 = Unit_instance;
+    if (recognizer === VOID) {
+      tmp_2 = TidyEditor$enumerateInteractively$lambda_2(this);
     } else {
-      tmp_2 = $super.x2v.call(this, _this__u8e3s4, workHash, origTks, new ValueTimeMark(timer), metric, shouldContinue, customDiff);
+      tmp_2 = recognizer;
     }
-    return tmp_2;
+    recognizer = tmp_2;
+    var tmp_3;
+    if ($super === VOID) {
+      this.x2v(_this__u8e3s4, workHash, origTks, timer, metric, shouldContinue, customDiff, recognizer);
+      tmp_3 = Unit_instance;
+    } else {
+      tmp_3 = $super.x2v.call(this, _this__u8e3s4, workHash, origTks, new ValueTimeMark(timer), metric, shouldContinue, customDiff, recognizer);
+    }
+    return tmp_3;
   };
   protoOf(TidyEditor).w2v = function () {
     // Inline function 'kotlin.let' call
@@ -7390,6 +7408,8 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
   var numberToInt = kotlin_kotlin.$_$.k9;
   var dropLast = kotlin_kotlin.$_$.o4;
   var levenshteinAlign = kotlin_ai_hypergraph_galoisenne.$_$.n;
+  var get_language = kotlin_ai_hypergraph_galoisenne.$_$.m;
+  var contains = kotlin_ai_hypergraph_galoisenne.$_$.i;
   var listOf = kotlin_kotlin.$_$.i5;
   var preparseParseableLines_0 = kotlin_ai_hypergraph_galoisenne.$_$.x;
   var firstOrNull = kotlin_kotlin.$_$.u4;
@@ -7397,8 +7417,6 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
   var Companion_getInstance = kotlin_kotlin.$_$.i3;
   var initiateSuspendableRepair = kotlin_ai_hypergraph_tidyparse_core.$_$.d;
   var map = kotlin_kotlin.$_$.ra;
-  var get_language = kotlin_ai_hypergraph_galoisenne.$_$.m;
-  var contains = kotlin_ai_hypergraph_galoisenne.$_$.i;
   var LinkedHashMap_init_$Create$ = kotlin_kotlin.$_$.m;
   var Regex_init_$Create$ = kotlin_kotlin.$_$.r;
   var get_pythonStatementCNFAllProds = kotlin_ai_hypergraph_galoisenne.$_$.n1;
@@ -8349,6 +8367,11 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
       return $pcs.t2y(levAlign);
     };
   }
+  function JSTidyPyEditor$handleInput$slambda$lambda_2(this$0) {
+    return function (it) {
+      return contains(get_language(this$0.g2v()), replace(it + ' NEWLINE', '|', 'OR'));
+    };
+  }
   function Companion_0() {
     Companion_instance_0 = this;
     this.u2y_1 = listOf(['BOS', 'NEWLINE']);
@@ -8389,9 +8412,9 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
       return Unit_instance;
     };
   }
-  function JSTidyPyEditor$handleInput$slambda(this$0, $tokens, $workHash, $pcs, resultContinuation) {
-    this.e2z_1 = this$0;
-    this.f2z_1 = $tokens;
+  function JSTidyPyEditor$handleInput$slambda($tokens, this$0, $workHash, $pcs, resultContinuation) {
+    this.e2z_1 = $tokens;
+    this.f2z_1 = this$0;
     this.g2z_1 = $workHash;
     this.h2z_1 = $pcs;
     CoroutineImpl.call(this, resultContinuation);
@@ -8414,7 +8437,7 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
           case 0:
             this.k9_1 = 2;
             this.j9_1 = 1;
-            suspendResult = initiateSuspendableRepair(this.f2z_1, this.e2z_1.g2v(), this.e2z_1.c2x_1, this);
+            suspendResult = initiateSuspendableRepair(this.e2z_1, this.f2z_1.g2v(), this.f2z_1.c2x_1, this);
             if (suspendResult === get_COROUTINE_SUSPENDED()) {
               return suspendResult;
             }
@@ -8422,10 +8445,11 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
             continue $sm;
           case 1:
             var ARGUMENT = suspendResult;
-            var ARGUMENT_0 = map(ARGUMENT, JSTidyPyEditor$handleInput$slambda$lambda);
-            var tmp_0 = dropLast(this.f2z_1, 1);
-            var tmp_1 = JSTidyPyEditor$handleInput$slambda$lambda_0(this.e2z_1);
-            this.e2z_1.f2v(ARGUMENT_0, this.g2z_1, tmp_0, VOID, tmp_1, VOID, JSTidyPyEditor$handleInput$slambda$lambda_1(this.f2z_1, this.h2z_1));
+            var tmp0_$receiver = map(ARGUMENT, JSTidyPyEditor$handleInput$slambda$lambda);
+            var tmp1_origTks = dropLast(this.e2z_1, 1);
+            var tmp_0 = JSTidyPyEditor$handleInput$slambda$lambda_0(this.f2z_1);
+            var tmp_1 = JSTidyPyEditor$handleInput$slambda$lambda_1(this.e2z_1, this.h2z_1);
+            this.f2z_1.f2v(tmp0_$receiver, this.g2z_1, tmp1_origTks, VOID, tmp_0, VOID, tmp_1, JSTidyPyEditor$handleInput$slambda$lambda_2(this.f2z_1));
             return Unit_instance;
           case 2:
             throw this.m9_1;
@@ -8446,8 +8470,8 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
     i.i2z_1 = $this$launch;
     return i;
   };
-  function JSTidyPyEditor$handleInput$slambda_0(this$0, $tokens, $workHash, $pcs, resultContinuation) {
-    var i = new JSTidyPyEditor$handleInput$slambda(this$0, $tokens, $workHash, $pcs, resultContinuation);
+  function JSTidyPyEditor$handleInput$slambda_0($tokens, this$0, $workHash, $pcs, resultContinuation) {
+    var i = new JSTidyPyEditor$handleInput$slambda($tokens, this$0, $workHash, $pcs, resultContinuation);
     var l = function ($this$launch, $completion) {
       return i.v2u($this$launch, $completion);
     };
@@ -8456,7 +8480,7 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
   }
   function JSTidyPyEditor$redecorateLines$decorate$lambda($decCFG) {
     return function (it) {
-      return contains(get_language($decCFG), (new PyCodeSnippet(it)).j2z());
+      return contains(get_language($decCFG), replace((new PyCodeSnippet(it)).j2z(), '|', 'OR'));
     };
   }
   function JSTidyPyEditor(editor, output) {
@@ -8532,35 +8556,46 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
     if (isBlank(currentLine))
       return Unit_instance;
     var pcs = new PyCodeSnippet(currentLine);
-    var tokens = tokenizeByWhitespace(pcs.j2z());
+    // Inline function 'kotlin.collections.map' call
+    var this_1 = tokenizeByWhitespace(pcs.j2z());
+    // Inline function 'kotlin.collections.mapTo' call
+    var destination = ArrayList_init_$Create$(collectionSizeOrDefault(this_1, 10));
+    var _iterator__ex2g4s = this_1.h();
+    while (_iterator__ex2g4s.i()) {
+      var item = _iterator__ex2g4s.j();
+      // Inline function 'JSTidyPyEditor.handleInput.<anonymous>' call
+      var tmp$ret$1 = item === '|' ? 'OR' : item;
+      destination.e(tmp$ret$1);
+    }
+    var tokens = destination;
     println('Repairing: ' + joinToString(dropLast(tokens, 1), ' '));
     var containsUnk = false;
     // Inline function 'kotlin.collections.map' call
     // Inline function 'kotlin.collections.mapTo' call
-    var destination = ArrayList_init_$Create$(collectionSizeOrDefault(tokens, 10));
-    var _iterator__ex2g4s = tokens.h();
-    while (_iterator__ex2g4s.i()) {
-      var item = _iterator__ex2g4s.j();
+    var destination_0 = ArrayList_init_$Create$(collectionSizeOrDefault(tokens, 10));
+    var _iterator__ex2g4s_0 = tokens.h();
+    while (_iterator__ex2g4s_0.i()) {
+      var item_0 = _iterator__ex2g4s_0.j();
       // Inline function 'JSTidyPyEditor.handleInput.<anonymous>' call
       var tmp;
-      if (get_terminals(this.g2v()).x(item)) {
-        tmp = item;
+      if (get_terminals(this.g2v()).x(item_0)) {
+        tmp = item_0;
       } else {
         containsUnk = true;
         tmp = '_';
       }
-      var tmp$ret$1 = tmp;
-      destination.e(tmp$ret$1);
+      var tmp$ret$4 = tmp;
+      destination_0.e(tmp$ret$4);
     }
-    var abstractUnk = destination;
+    var abstractUnk = destination_0;
     var workHash = hashCode(abstractUnk) + hashCode(this.g2v()) | 0;
     if (workHash === this.a2v_1)
       return Unit_instance;
     this.a2v_1 = workHash;
     // Inline function 'kotlin.collections.contains' call
     // Inline function 'kotlin.collections.containsKey' call
-    var this_1 = this.z2u_1;
-    if ((isInterface(this_1, KtMap) ? this_1 : THROW_CCE()).p2(workHash))
+    var this_2 = this.z2u_1;
+    if ((isInterface(this_2, KtMap) ? this_2 : THROW_CCE()).p2(workHash))
       return this.i2v(ensureNotNull(this.z2u_1.r2(workHash)));
     var tmp0_safe_receiver = this.d2v_1;
     if (tmp0_safe_receiver == null)
@@ -8570,17 +8605,17 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
     }
     if (!containsUnk && contains_0(get_language(this.g2v()), tokens)) {
       // Inline function 'kotlin.also' call
-      var this_2 = '\u2705 ' + joinToString(dropLast(tokens, 1), ' ');
+      var this_3 = '\u2705 ' + joinToString(dropLast(tokens, 1), ' ');
       // Inline function 'JSTidyPyEditor.handleInput.<anonymous>' call
       // Inline function 'kotlin.collections.set' call
-      this.z2u_1.o5(workHash, this_2);
-      this.i2v(this_2);
+      this.z2u_1.o5(workHash, this_3);
+      this.i2v(this_3);
     } else {
       // Inline function 'kotlin.also' call
       // Inline function 'JSTidyPyEditor.handleInput.<anonymous>' call
       var tmp_0 = this;
       var tmp_1 = MainScope();
-      tmp_0.d2v_1 = launch(tmp_1, VOID, VOID, JSTidyPyEditor$handleInput$slambda_0(this, tokens, workHash, pcs, null));
+      tmp_0.d2v_1 = launch(tmp_1, VOID, VOID, JSTidyPyEditor$handleInput$slambda_0(tokens, this, workHash, pcs, null));
     }
   };
   function order$factory() {
@@ -8919,9 +8954,9 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
   var ArrayList_init_$Create$_1 = kotlin_kotlin.$_$.g;
   var UnsupportedOperationException_init_$Create$ = kotlin_kotlin.$_$.m1;
   var UnsupportedOperationException_init_$Create$_0 = kotlin_kotlin.$_$.l1;
+  var Collection = kotlin_kotlin.$_$.o3;
   var MutableIterable = kotlin_kotlin.$_$.r3;
   var KtSet = kotlin_kotlin.$_$.s3;
-  var Collection = kotlin_kotlin.$_$.o3;
   var IllegalStateException_init_$Create$_0 = kotlin_kotlin.$_$.a1;
   var noWhenBranchMatchedException = kotlin_kotlin.$_$.rd;
   var copyOfRange = kotlin_kotlin.$_$.h4;
@@ -8980,12 +9015,12 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
   initMetadataForClass(ATN, 'ATN');
   initMetadataForCompanion(Companion_6);
   initMetadataForClass(ATNConfig, 'ATNConfig');
-  initMetadataForClass(Array2DHashSet, 'Array2DHashSet', Array2DHashSet, VOID, [MutableIterable, KtSet, Collection]);
+  initMetadataForClass(Array2DHashSet, 'Array2DHashSet', Array2DHashSet, VOID, [Collection, MutableIterable, KtSet]);
   initMetadataForClass(AbstractConfigHashSet, 'AbstractConfigHashSet', VOID, Array2DHashSet);
   initMetadataForClass(ConfigHashSet, 'ConfigHashSet', ConfigHashSet, AbstractConfigHashSet);
   initMetadataForClass(AbstractEqualityComparator, 'AbstractEqualityComparator');
   initMetadataForObject(ConfigEqualityComparator, 'ConfigEqualityComparator', VOID, AbstractEqualityComparator);
-  initMetadataForClass(ATNConfigSet, 'ATNConfigSet', ATNConfigSet, VOID, [MutableIterable, KtSet, Collection]);
+  initMetadataForClass(ATNConfigSet, 'ATNConfigSet', ATNConfigSet, VOID, [Collection, MutableIterable, KtSet]);
   initMetadataForCompanion(Companion_7);
   initMetadataForClass(ATNDeserializationOptions, 'ATNDeserializationOptions', ATNDeserializationOptions_init_$Create$);
   initMetadataForCompanion(Companion_8);
@@ -24816,7 +24851,7 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
     return destination;
   }
   function apply(_this__u8e3s4, indices, separator) {
-    separator = separator === VOID ? '' : separator;
+    separator = separator === VOID ? ' ' : separator;
     _init_properties_PatchUtils_kt__lzf73d();
     // Inline function 'kotlin.collections.mapIndexed' call
     // Inline function 'kotlin.collections.mapIndexedTo' call
@@ -28508,22 +28543,6 @@ if (typeof Array.prototype.fill === 'undefined') {
     Object.defineProperty(TypedArray.prototype, 'fill', {value: Array.prototype.fill});
   }
 });
-if (typeof Math.log10 === 'undefined') {
-  Math.log10 = function (x) {
-    return Math.log(x) * Math.LOG10E;
-  };
-}
-if (typeof Math.clz32 === 'undefined') {
-  Math.clz32 = function (log, LN2) {
-    return function (x) {
-      var asUint = x >>> 0;
-      if (asUint === 0) {
-        return 32;
-      }
-      return 31 - (log(asUint) / LN2 | 0) | 0; // the "| 0" acts like math.floor
-    };
-  }(Math.log, Math.LN2);
-}
 if (typeof Math.tanh === 'undefined') {
   var epsilon = 2.220446049250313E-16;
   var taylor_2_bound = Math.sqrt(epsilon);
@@ -28539,6 +28558,22 @@ if (typeof Math.tanh === 'undefined') {
       var a = Math.exp(+x), b = Math.exp(-x);
       return a === Infinity ? 1 : b === Infinity ? -1 : (a - b) / (a + b);
     }
+  };
+}
+if (typeof Math.clz32 === 'undefined') {
+  Math.clz32 = function (log, LN2) {
+    return function (x) {
+      var asUint = x >>> 0;
+      if (asUint === 0) {
+        return 32;
+      }
+      return 31 - (log(asUint) / LN2 | 0) | 0; // the "| 0" acts like math.floor
+    };
+  }(Math.log, Math.LN2);
+}
+if (typeof Math.log10 === 'undefined') {
+  Math.log10 = function (x) {
+    return Math.log(x) * Math.LOG10E;
   };
 }
 if (typeof String.prototype.startsWith === 'undefined') {
@@ -28592,26 +28627,26 @@ if (typeof String.prototype.startsWith === 'undefined') {
   initMetadataForClass(asList$1, VOID, VOID, AbstractList, [AbstractList, RandomAccess]);
   initMetadataForInterface(Comparator, 'Comparator');
   initMetadataForObject(Unit, 'Unit');
-  initMetadataForClass(AbstractMutableCollection, 'AbstractMutableCollection', VOID, AbstractCollection, [AbstractCollection, MutableIterable, Collection]);
+  initMetadataForClass(AbstractMutableCollection, 'AbstractMutableCollection', VOID, AbstractCollection, [AbstractCollection, Collection, MutableIterable]);
   initMetadataForClass(IteratorImpl, 'IteratorImpl');
   initMetadataForClass(ListIteratorImpl, 'ListIteratorImpl', VOID, IteratorImpl);
-  initMetadataForClass(AbstractMutableList, 'AbstractMutableList', VOID, AbstractMutableCollection, [AbstractMutableCollection, MutableIterable, Collection, KtList]);
+  initMetadataForClass(AbstractMutableList, 'AbstractMutableList', VOID, AbstractMutableCollection, [AbstractMutableCollection, Collection, KtList, MutableIterable]);
   initMetadataForClass(SubList, 'SubList', VOID, AbstractMutableList, [AbstractMutableList, RandomAccess]);
   initMetadataForClass(AbstractMap, 'AbstractMap', VOID, VOID, [KtMap]);
   initMetadataForClass(AbstractMutableMap, 'AbstractMutableMap', VOID, AbstractMap, [AbstractMap, KtMap]);
-  initMetadataForClass(AbstractMutableSet, 'AbstractMutableSet', VOID, AbstractMutableCollection, [AbstractMutableCollection, MutableIterable, KtSet, Collection]);
+  initMetadataForClass(AbstractMutableSet, 'AbstractMutableSet', VOID, AbstractMutableCollection, [AbstractMutableCollection, Collection, MutableIterable, KtSet]);
   initMetadataForCompanion(Companion_2);
-  initMetadataForClass(ArrayList, 'ArrayList', ArrayList_init_$Create$, AbstractMutableList, [AbstractMutableList, MutableIterable, Collection, KtList, RandomAccess]);
+  initMetadataForClass(ArrayList, 'ArrayList', ArrayList_init_$Create$, AbstractMutableList, [AbstractMutableList, Collection, KtList, MutableIterable, RandomAccess]);
   initMetadataForClass(HashMap, 'HashMap', HashMap_init_$Create$, AbstractMutableMap, [AbstractMutableMap, KtMap]);
-  initMetadataForClass(HashMapKeys, 'HashMapKeys', VOID, AbstractMutableSet, [MutableIterable, KtSet, Collection, AbstractMutableSet]);
-  initMetadataForClass(HashMapValues, 'HashMapValues', VOID, AbstractMutableCollection, [MutableIterable, Collection, AbstractMutableCollection]);
-  initMetadataForClass(HashMapEntrySetBase, 'HashMapEntrySetBase', VOID, AbstractMutableSet, [MutableIterable, KtSet, Collection, AbstractMutableSet]);
+  initMetadataForClass(HashMapKeys, 'HashMapKeys', VOID, AbstractMutableSet, [Collection, MutableIterable, KtSet, AbstractMutableSet]);
+  initMetadataForClass(HashMapValues, 'HashMapValues', VOID, AbstractMutableCollection, [Collection, MutableIterable, AbstractMutableCollection]);
+  initMetadataForClass(HashMapEntrySetBase, 'HashMapEntrySetBase', VOID, AbstractMutableSet, [Collection, MutableIterable, KtSet, AbstractMutableSet]);
   initMetadataForClass(HashMapEntrySet, 'HashMapEntrySet', VOID, HashMapEntrySetBase);
   initMetadataForClass(HashMapKeysDefault$iterator$1);
   initMetadataForClass(HashMapKeysDefault, 'HashMapKeysDefault', VOID, AbstractMutableSet);
   initMetadataForClass(HashMapValuesDefault$iterator$1);
   initMetadataForClass(HashMapValuesDefault, 'HashMapValuesDefault', VOID, AbstractMutableCollection);
-  initMetadataForClass(HashSet, 'HashSet', HashSet_init_$Create$, AbstractMutableSet, [AbstractMutableSet, MutableIterable, KtSet, Collection]);
+  initMetadataForClass(HashSet, 'HashSet', HashSet_init_$Create$, AbstractMutableSet, [AbstractMutableSet, Collection, MutableIterable, KtSet]);
   initMetadataForCompanion(Companion_3);
   initMetadataForClass(Itr, 'Itr');
   initMetadataForClass(KeysItr, 'KeysItr', VOID, Itr);
@@ -28657,7 +28692,7 @@ if (typeof String.prototype.startsWith === 'undefined') {
   initMetadataForInterface(InternalMap, 'InternalMap');
   initMetadataForClass(InternalHashMap, 'InternalHashMap', InternalHashMap_init_$Create$, VOID, [InternalMap]);
   initMetadataForClass(LinkedHashMap, 'LinkedHashMap', LinkedHashMap_init_$Create$, HashMap, [HashMap, KtMap]);
-  initMetadataForClass(LinkedHashSet, 'LinkedHashSet', LinkedHashSet_init_$Create$, HashSet, [HashSet, MutableIterable, KtSet, Collection]);
+  initMetadataForClass(LinkedHashSet, 'LinkedHashSet', LinkedHashSet_init_$Create$, HashSet, [HashSet, Collection, MutableIterable, KtSet]);
   initMetadataForClass(BaseOutput, 'BaseOutput');
   initMetadataForClass(NodeJsOutput, 'NodeJsOutput', VOID, BaseOutput);
   initMetadataForClass(BufferedOutput, 'BufferedOutput', BufferedOutput, BaseOutput);
@@ -43237,9 +43272,9 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
   var getKClassFromExpression = kotlin_kotlin.$_$.a;
   var Exception_init_$Create$ = kotlin_kotlin.$_$.x;
   var removeFirstOrNull = kotlin_kotlin.$_$.z5;
-  var MutableIterable = kotlin_kotlin.$_$.r3;
   var Collection = kotlin_kotlin.$_$.o3;
   var KtList = kotlin_kotlin.$_$.p3;
+  var MutableIterable = kotlin_kotlin.$_$.r3;
   var coerceIn = kotlin_kotlin.$_$.aa;
   var CancellationException_init_$Init$ = kotlin_kotlin.$_$.q;
   var ensureNotNull = kotlin_kotlin.$_$.pd;
@@ -43318,7 +43353,7 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
   initMetadataForClass(Symbol, 'Symbol');
   initMetadataForClass(SetTimeoutBasedDispatcher, 'SetTimeoutBasedDispatcher', VOID, CoroutineDispatcher, [CoroutineDispatcher, Delay], [1]);
   initMetadataForObject(NodeDispatcher, 'NodeDispatcher', VOID, SetTimeoutBasedDispatcher, VOID, [1]);
-  initMetadataForClass(MessageQueue, 'MessageQueue', VOID, VOID, [MutableIterable, Collection, KtList]);
+  initMetadataForClass(MessageQueue, 'MessageQueue', VOID, VOID, [Collection, KtList, MutableIterable]);
   initMetadataForClass(ScheduledMessageQueue, 'ScheduledMessageQueue', VOID, MessageQueue);
   initMetadataForClass(WindowMessageQueue, 'WindowMessageQueue', VOID, MessageQueue);
   initMetadataForClass(UnconfinedEventLoop, 'UnconfinedEventLoop', UnconfinedEventLoop, EventLoop);

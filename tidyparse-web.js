@@ -9402,7 +9402,7 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
     tmp_0.u30_1 = lazy(JSTidyPyEditor$order$delegate$lambda(this));
     var tmp_1 = this;
     tmp_1.v30_1 = lazy(JSTidyPyEditor$normalizingConst$delegate$lambda(this));
-    this.w30_1 = true;
+    this.w30_1 = false;
     this.x30_1 = 10000.0;
     var tmp_2 = this;
     tmp_2.y30_1 = lazy(JSTidyPyEditor$ngramTensor$delegate$lambda(this));
@@ -12076,9 +12076,9 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
   var ArrayList_init_$Create$_1 = kotlin_kotlin.$_$.g;
   var UnsupportedOperationException_init_$Create$ = kotlin_kotlin.$_$.n1;
   var UnsupportedOperationException_init_$Create$_0 = kotlin_kotlin.$_$.m1;
-  var MutableIterable = kotlin_kotlin.$_$.u3;
   var KtSet = kotlin_kotlin.$_$.v3;
   var Collection = kotlin_kotlin.$_$.r3;
+  var MutableIterable = kotlin_kotlin.$_$.u3;
   var IllegalStateException_init_$Create$_0 = kotlin_kotlin.$_$.a1;
   var noWhenBranchMatchedException = kotlin_kotlin.$_$.be;
   var copyOfRange = kotlin_kotlin.$_$.m4;
@@ -12137,12 +12137,12 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
   initMetadataForClass(ATN, 'ATN');
   initMetadataForCompanion(Companion_6);
   initMetadataForClass(ATNConfig, 'ATNConfig');
-  initMetadataForClass(Array2DHashSet, 'Array2DHashSet', Array2DHashSet, VOID, [MutableIterable, KtSet, Collection]);
+  initMetadataForClass(Array2DHashSet, 'Array2DHashSet', Array2DHashSet, VOID, [KtSet, Collection, MutableIterable]);
   initMetadataForClass(AbstractConfigHashSet, 'AbstractConfigHashSet', VOID, Array2DHashSet);
   initMetadataForClass(ConfigHashSet, 'ConfigHashSet', ConfigHashSet, AbstractConfigHashSet);
   initMetadataForClass(AbstractEqualityComparator, 'AbstractEqualityComparator');
   initMetadataForObject(ConfigEqualityComparator, 'ConfigEqualityComparator', VOID, AbstractEqualityComparator);
-  initMetadataForClass(ATNConfigSet, 'ATNConfigSet', ATNConfigSet, VOID, [MutableIterable, KtSet, Collection]);
+  initMetadataForClass(ATNConfigSet, 'ATNConfigSet', ATNConfigSet, VOID, [KtSet, Collection, MutableIterable]);
   initMetadataForCompanion(Companion_7);
   initMetadataForClass(ATNDeserializationOptions, 'ATNDeserializationOptions', ATNDeserializationOptions_init_$Create$);
   initMetadataForCompanion(Companion_8);
@@ -31136,6 +31136,11 @@ if (typeof Math.clz32 === 'undefined') {
     };
   }(Math.log, Math.LN2);
 }
+if (typeof Math.log10 === 'undefined') {
+  Math.log10 = function (x) {
+    return Math.log(x) * Math.LOG10E;
+  };
+}
 if (typeof Math.tanh === 'undefined') {
   var epsilon = 2.220446049250313E-16;
   var taylor_2_bound = Math.sqrt(epsilon);
@@ -31151,11 +31156,6 @@ if (typeof Math.tanh === 'undefined') {
       var a = Math.exp(+x), b = Math.exp(-x);
       return a === Infinity ? 1 : b === Infinity ? -1 : (a - b) / (a + b);
     }
-  };
-}
-if (typeof Math.log10 === 'undefined') {
-  Math.log10 = function (x) {
-    return Math.log(x) * Math.LOG10E;
   };
 }
 if (typeof String.prototype.startsWith === 'undefined') {
@@ -31210,26 +31210,26 @@ if (typeof String.prototype.startsWith === 'undefined') {
   initMetadataForClass(asList$2, VOID, VOID, AbstractList, [AbstractList, RandomAccess]);
   initMetadataForInterface(Comparator, 'Comparator');
   initMetadataForObject(Unit, 'Unit');
-  initMetadataForClass(AbstractMutableCollection, 'AbstractMutableCollection', VOID, AbstractCollection, [AbstractCollection, MutableIterable, Collection]);
+  initMetadataForClass(AbstractMutableCollection, 'AbstractMutableCollection', VOID, AbstractCollection, [AbstractCollection, Collection, MutableIterable]);
   initMetadataForClass(IteratorImpl, 'IteratorImpl');
   initMetadataForClass(ListIteratorImpl, 'ListIteratorImpl', VOID, IteratorImpl);
-  initMetadataForClass(AbstractMutableList, 'AbstractMutableList', VOID, AbstractMutableCollection, [AbstractMutableCollection, MutableIterable, Collection, KtList]);
+  initMetadataForClass(AbstractMutableList, 'AbstractMutableList', VOID, AbstractMutableCollection, [AbstractMutableCollection, KtList, Collection, MutableIterable]);
   initMetadataForClass(SubList, 'SubList', VOID, AbstractMutableList, [AbstractMutableList, RandomAccess]);
   initMetadataForClass(AbstractMap, 'AbstractMap', VOID, VOID, [KtMap]);
   initMetadataForClass(AbstractMutableMap, 'AbstractMutableMap', VOID, AbstractMap, [AbstractMap, KtMap]);
-  initMetadataForClass(AbstractMutableSet, 'AbstractMutableSet', VOID, AbstractMutableCollection, [AbstractMutableCollection, MutableIterable, KtSet, Collection]);
+  initMetadataForClass(AbstractMutableSet, 'AbstractMutableSet', VOID, AbstractMutableCollection, [AbstractMutableCollection, KtSet, Collection, MutableIterable]);
   initMetadataForCompanion(Companion_2);
-  initMetadataForClass(ArrayList, 'ArrayList', ArrayList_init_$Create$, AbstractMutableList, [AbstractMutableList, MutableIterable, Collection, KtList, RandomAccess]);
+  initMetadataForClass(ArrayList, 'ArrayList', ArrayList_init_$Create$, AbstractMutableList, [AbstractMutableList, KtList, Collection, MutableIterable, RandomAccess]);
   initMetadataForClass(HashMap, 'HashMap', HashMap_init_$Create$, AbstractMutableMap, [AbstractMutableMap, KtMap]);
-  initMetadataForClass(HashMapKeys, 'HashMapKeys', VOID, AbstractMutableSet, [MutableIterable, KtSet, Collection, AbstractMutableSet]);
-  initMetadataForClass(HashMapValues, 'HashMapValues', VOID, AbstractMutableCollection, [MutableIterable, Collection, AbstractMutableCollection]);
-  initMetadataForClass(HashMapEntrySetBase, 'HashMapEntrySetBase', VOID, AbstractMutableSet, [MutableIterable, KtSet, Collection, AbstractMutableSet]);
+  initMetadataForClass(HashMapKeys, 'HashMapKeys', VOID, AbstractMutableSet, [KtSet, Collection, MutableIterable, AbstractMutableSet]);
+  initMetadataForClass(HashMapValues, 'HashMapValues', VOID, AbstractMutableCollection, [Collection, MutableIterable, AbstractMutableCollection]);
+  initMetadataForClass(HashMapEntrySetBase, 'HashMapEntrySetBase', VOID, AbstractMutableSet, [KtSet, Collection, MutableIterable, AbstractMutableSet]);
   initMetadataForClass(HashMapEntrySet, 'HashMapEntrySet', VOID, HashMapEntrySetBase);
   initMetadataForClass(HashMapKeysDefault$iterator$1);
   initMetadataForClass(HashMapKeysDefault, 'HashMapKeysDefault', VOID, AbstractMutableSet);
   initMetadataForClass(HashMapValuesDefault$iterator$1);
   initMetadataForClass(HashMapValuesDefault, 'HashMapValuesDefault', VOID, AbstractMutableCollection);
-  initMetadataForClass(HashSet, 'HashSet', HashSet_init_$Create$, AbstractMutableSet, [AbstractMutableSet, MutableIterable, KtSet, Collection]);
+  initMetadataForClass(HashSet, 'HashSet', HashSet_init_$Create$, AbstractMutableSet, [AbstractMutableSet, KtSet, Collection, MutableIterable]);
   initMetadataForCompanion(Companion_3);
   initMetadataForClass(Itr, 'Itr');
   initMetadataForClass(KeysItr, 'KeysItr', VOID, Itr);
@@ -31274,7 +31274,7 @@ if (typeof String.prototype.startsWith === 'undefined') {
   initMetadataForInterface(InternalMap, 'InternalMap');
   initMetadataForClass(InternalHashMap, 'InternalHashMap', InternalHashMap_init_$Create$, VOID, [InternalMap]);
   initMetadataForClass(LinkedHashMap, 'LinkedHashMap', LinkedHashMap_init_$Create$, HashMap, [HashMap, KtMap]);
-  initMetadataForClass(LinkedHashSet, 'LinkedHashSet', LinkedHashSet_init_$Create$, HashSet, [HashSet, MutableIterable, KtSet, Collection]);
+  initMetadataForClass(LinkedHashSet, 'LinkedHashSet', LinkedHashSet_init_$Create$, HashSet, [HashSet, KtSet, Collection, MutableIterable]);
   initMetadataForClass(BaseOutput, 'BaseOutput');
   initMetadataForClass(NodeJsOutput, 'NodeJsOutput', VOID, BaseOutput);
   initMetadataForClass(BufferedOutput, 'BufferedOutput', BufferedOutput, BaseOutput);
@@ -46852,9 +46852,9 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
   var getKClassFromExpression = kotlin_kotlin.$_$.a;
   var Exception_init_$Create$ = kotlin_kotlin.$_$.x;
   var removeFirstOrNull = kotlin_kotlin.$_$.g6;
-  var MutableIterable = kotlin_kotlin.$_$.u3;
-  var Collection = kotlin_kotlin.$_$.r3;
   var KtList = kotlin_kotlin.$_$.s3;
+  var Collection = kotlin_kotlin.$_$.r3;
+  var MutableIterable = kotlin_kotlin.$_$.u3;
   var coerceIn = kotlin_kotlin.$_$.ha;
   var CancellationException_init_$Init$ = kotlin_kotlin.$_$.q;
   var ensureNotNull = kotlin_kotlin.$_$.zd;
@@ -46936,7 +46936,7 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
   initMetadataForClass(Symbol, 'Symbol');
   initMetadataForClass(SetTimeoutBasedDispatcher, 'SetTimeoutBasedDispatcher', VOID, CoroutineDispatcher, [CoroutineDispatcher, Delay], [1]);
   initMetadataForObject(NodeDispatcher, 'NodeDispatcher', VOID, SetTimeoutBasedDispatcher, VOID, [1]);
-  initMetadataForClass(MessageQueue, 'MessageQueue', VOID, VOID, [MutableIterable, Collection, KtList]);
+  initMetadataForClass(MessageQueue, 'MessageQueue', VOID, VOID, [KtList, Collection, MutableIterable]);
   initMetadataForClass(ScheduledMessageQueue, 'ScheduledMessageQueue', VOID, MessageQueue);
   initMetadataForClass(WindowMessageQueue, 'WindowMessageQueue', VOID, MessageQueue);
   initMetadataForClass(UnconfinedEventLoop, 'UnconfinedEventLoop', UnconfinedEventLoop, EventLoop);

@@ -10146,8 +10146,8 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
   }
   function $readIntsCOROUTINE$15(_this__u8e3s4, _this__u8e3s4_0, resultContinuation) {
     CoroutineImpl.call(this, resultContinuation);
-    this.g3a_1 = _this__u8e3s4;
-    this.h3a_1 = _this__u8e3s4_0;
+    this.n3a_1 = _this__u8e3s4;
+    this.o3a_1 = _this__u8e3s4_0;
   }
   protoOf($readIntsCOROUTINE$15).x9 = function () {
     var suspendResult = this.r9_1;
@@ -10157,14 +10157,14 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
         switch (tmp) {
           case 0:
             this.q9_1 = 2;
-            this.i3a_1 = this.g3a_1.m3a(numberToInt(this.h3a_1.size), 9);
-            this.j3a_1 = get_gpu().createCommandEncoder();
-            this.j3a_1.copyBufferToBuffer(this.h3a_1, 0.0, this.i3a_1, 0.0, this.h3a_1.size);
+            this.p3a_1 = this.n3a_1.t3a(numberToInt(this.o3a_1.size), 9);
+            this.q3a_1 = get_gpu().createCommandEncoder();
+            this.q3a_1.copyBufferToBuffer(this.o3a_1, 0.0, this.p3a_1, 0.0, this.o3a_1.size);
             var tmp_0 = get_gpu().queue;
-            var this_0 = [this.j3a_1.finish()];
+            var this_0 = [this.q3a_1.finish()];
             tmp_0.submit(this_0);
             this.p9_1 = 1;
-            var tmp_1 = this.i3a_1.mapAsync(1);
+            var tmp_1 = this.p3a_1.mapAsync(1);
             suspendResult = await_0(tmp_1 instanceof Promise ? tmp_1 : THROW_CCE(), this);
             if (suspendResult === get_COROUTINE_SUSPENDED()) {
               return suspendResult;
@@ -10172,8 +10172,8 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
 
             continue $sm;
           case 1:
-            var t = toIntArray(asList(new Int32Array(this.i3a_1.getMappedRange())));
-            this.i3a_1.destroy();
+            var t = toIntArray(asList(new Int32Array(this.p3a_1.getMappedRange())));
+            this.p3a_1.destroy();
             return t;
           case 2:
             throw this.s9_1;
@@ -10191,9 +10191,9 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
   };
   function $readIndicesCOROUTINE$16(_this__u8e3s4, _this__u8e3s4_0, indices, resultContinuation) {
     CoroutineImpl.call(this, resultContinuation);
-    this.v3a_1 = _this__u8e3s4;
-    this.w3a_1 = _this__u8e3s4_0;
-    this.x3a_1 = indices;
+    this.c3b_1 = _this__u8e3s4;
+    this.d3b_1 = _this__u8e3s4_0;
+    this.e3b_1 = indices;
   }
   protoOf($readIndicesCOROUTINE$16).x9 = function () {
     var suspendResult = this.r9_1;
@@ -10203,24 +10203,24 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
         switch (tmp) {
           case 0:
             this.q9_1 = 2;
-            this.y3a_1 = Monotonic_instance.he();
-            this.z3a_1 = this.v3a_1.m3a(numberToLong(this.x3a_1.n()).e3(new Long(4, 0)), 9);
-            this.a3b_1 = get_gpu().createCommandEncoder();
+            this.f3b_1 = Monotonic_instance.he();
+            this.g3b_1 = this.c3b_1.t3a(numberToLong(this.e3b_1.n()).e3(new Long(4, 0)), 9);
+            this.h3b_1 = get_gpu().createCommandEncoder();
             var index = 0;
-            var _iterator__ex2g4s = this.x3a_1.k();
+            var _iterator__ex2g4s = this.e3b_1.k();
             while (_iterator__ex2g4s.l()) {
               var item = _iterator__ex2g4s.m();
               var _unary__edvuaz = index;
               index = _unary__edvuaz + 1 | 0;
               var i = checkIndexOverflow(_unary__edvuaz);
-              this.a3b_1.copyBufferToBuffer(this.w3a_1, item * 4, this.z3a_1, i * 4, 4.0);
+              this.h3b_1.copyBufferToBuffer(this.d3b_1, item * 4, this.g3b_1, i * 4, 4.0);
             }
 
             var tmp_0 = get_gpu().queue;
-            var this_0 = [this.a3b_1.finish()];
+            var this_0 = [this.h3b_1.finish()];
             tmp_0.submit(this_0);
             this.p9_1 = 1;
-            var tmp_1 = this.z3a_1.mapAsync(1);
+            var tmp_1 = this.g3b_1.mapAsync(1);
             suspendResult = await_0(tmp_1 instanceof Promise ? tmp_1 : THROW_CCE(), this);
             if (suspendResult === get_COROUTINE_SUSPENDED()) {
               return suspendResult;
@@ -10228,10 +10228,10 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
 
             continue $sm;
           case 1:
-            var this_1 = toList_0(toIntArray(asList(new Int32Array(this.z3a_1.getMappedRange()))));
-            this.z3a_1.destroy();
+            var this_1 = toList_0(toIntArray(asList(new Int32Array(this.g3b_1.getMappedRange()))));
+            this.g3b_1.destroy();
             var t = this_1;
-            println('Read ' + this.x3a_1.n() + '/' + numberToInt(this.w3a_1.size) + ' bytes in ' + Duration__toString_impl_8d916b(ValueTimeMark__elapsedNow_impl_eonqvs(this.y3a_1)));
+            println('Read ' + this.e3b_1.n() + '/' + numberToInt(this.d3b_1.size) + ' bytes in ' + Duration__toString_impl_8d916b(ValueTimeMark__elapsedNow_impl_eonqvs(this.f3b_1)));
             return t;
           case 2:
             throw this.s9_1;
@@ -10249,9 +10249,9 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
   };
   function $prefixSumGPUCOROUTINE$17(_this__u8e3s4, inputBuf, length, resultContinuation) {
     CoroutineImpl.call(this, resultContinuation);
-    this.j3b_1 = _this__u8e3s4;
-    this.k3b_1 = inputBuf;
-    this.l3b_1 = length;
+    this.q3b_1 = _this__u8e3s4;
+    this.r3b_1 = inputBuf;
+    this.s3b_1 = length;
   }
   protoOf($prefixSumGPUCOROUTINE$17).x9 = function () {
     var suspendResult = this.r9_1;
@@ -10261,42 +10261,42 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
         switch (tmp) {
           case 0:
             this.q9_1 = 3;
-            this.m3b_1 = ((this.l3b_1 + 256 | 0) - 1 | 0) / 256 | 0;
-            this.n3b_1 = 65535;
-            this.o3b_1 = ((this.m3b_1 + this.n3b_1 | 0) - 1 | 0) / this.n3b_1 | 0;
-            this.p3b_1 = this.j3b_1.m3a(numberToInt(this.k3b_1.size), 140);
-            this.q3b_1 = this.j3b_1.m3a(imul(this.m3b_1, 4), 140);
+            this.t3b_1 = ((this.s3b_1 + 256 | 0) - 1 | 0) / 256 | 0;
+            this.u3b_1 = 65535;
+            this.v3b_1 = ((this.t3b_1 + this.u3b_1 | 0) - 1 | 0) / this.u3b_1 | 0;
+            this.w3b_1 = this.q3b_1.t3a(numberToInt(this.r3b_1.size), 140);
+            this.x3b_1 = this.q3b_1.t3a(imul(this.t3b_1, 4), 140);
             var tmp_0 = this;
-            var elements = new Int32Array([this.l3b_1, this.m3b_1, this.n3b_1]);
-            tmp_0.r3b_1 = this.j3b_1.t3b(elements, 72);
-            get_prefix_sum_p1().u3b([this.k3b_1, this.p3b_1, this.q3b_1, this.r3b_1]).x3b(this.n3b_1, this.o3b_1);
-            if (this.m3b_1 > 1) {
+            var elements = new Int32Array([this.s3b_1, this.t3b_1, this.u3b_1]);
+            tmp_0.y3b_1 = this.q3b_1.a3c(elements, 72);
+            get_prefix_sum_p1().b3c([this.r3b_1, this.w3b_1, this.x3b_1, this.y3b_1]).e3c(this.u3b_1, this.v3b_1);
+            if (this.t3b_1 > 1) {
               this.p9_1 = 1;
-              suspendResult = this.j3b_1.y3b(this.q3b_1, this.m3b_1, this);
+              suspendResult = this.q3b_1.f3c(this.x3b_1, this.t3b_1, this);
               if (suspendResult === get_COROUTINE_SUSPENDED()) {
                 return suspendResult;
               }
               continue $sm;
             } else {
-              this.s3b_1 = this.q3b_1;
+              this.z3b_1 = this.x3b_1;
               this.p9_1 = 2;
               continue $sm;
             }
 
           case 1:
-            this.s3b_1 = suspendResult;
+            this.z3b_1 = suspendResult;
             this.p9_1 = 2;
             continue $sm;
           case 2:
-            var scannedBlockSumsBuf = this.s3b_1;
-            get_prefix_sum_p2().u3b([this.p3b_1, scannedBlockSumsBuf, this.r3b_1]).x3b(this.n3b_1, this.o3b_1);
-            if (!(scannedBlockSumsBuf === this.q3b_1)) {
+            var scannedBlockSumsBuf = this.z3b_1;
+            get_prefix_sum_p2().b3c([this.w3b_1, scannedBlockSumsBuf, this.y3b_1]).e3c(this.u3b_1, this.v3b_1);
+            if (!(scannedBlockSumsBuf === this.x3b_1)) {
               scannedBlockSumsBuf.destroy();
             }
 
-            this.q3b_1.destroy();
-            this.r3b_1.destroy();
-            return this.p3b_1;
+            this.x3b_1.destroy();
+            this.y3b_1.destroy();
+            return this.w3b_1;
           case 3:
             throw this.s9_1;
         }
@@ -10313,9 +10313,9 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
   };
   function $packMetadataCOROUTINE$18(_this__u8e3s4, cfg, fsa, resultContinuation) {
     CoroutineImpl.call(this, resultContinuation);
-    this.h3c_1 = _this__u8e3s4;
-    this.i3c_1 = cfg;
-    this.j3c_1 = fsa;
+    this.o3c_1 = _this__u8e3s4;
+    this.p3c_1 = cfg;
+    this.q3c_1 = fsa;
   }
   protoOf($packMetadataCOROUTINE$18).x9 = function () {
     var suspendResult = this.r9_1;
@@ -10325,9 +10325,9 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
         switch (tmp) {
           case 0:
             this.q9_1 = 3;
-            this.k3c_1 = Monotonic_instance.he();
+            this.r3c_1 = Monotonic_instance.he();
             var tmp_0 = this;
-            var this_0 = get_vindex(this.i3c_1);
+            var this_0 = get_vindex(this.p3c_1);
             var destination = ArrayList_init_$Create$_0(this_0.length);
             var inductionVariable = 0;
             var last_0 = this_0.length;
@@ -10337,9 +10337,9 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
               destination.e(toList_0(item));
             }
 
-            tmp_0.l3c_1 = this.h3c_1.q3c(flatten(destination));
+            tmp_0.s3c_1 = this.o3c_1.x3c(flatten(destination));
             var tmp_1 = this;
-            var this_1 = get_vindex(this.i3c_1);
+            var this_1 = get_vindex(this.p3c_1);
             var destination_0 = ArrayList_init_$Create$_0(this_1.length);
             var inductionVariable_0 = 0;
             var last_1 = this_1.length;
@@ -10357,22 +10357,22 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
               accumulator = plus_0(acc, last(acc) + element | 0);
             }
 
-            tmp_1.m3c_1 = this.h3c_1.q3c(accumulator);
-            println('Encoded grammar in ' + Duration__toString_impl_8d916b(ValueTimeMark__elapsedNow_impl_eonqvs(this.k3c_1)));
+            tmp_1.t3c_1 = this.o3c_1.x3c(accumulator);
+            println('Encoded grammar in ' + Duration__toString_impl_8d916b(ValueTimeMark__elapsedNow_impl_eonqvs(this.r3c_1)));
             this.p9_1 = 1;
-            suspendResult = get_dag_reach().r3c(this.j3c_1, this);
+            suspendResult = get_dag_reach().y3c(this.q3c_1, this);
             if (suspendResult === get_COROUTINE_SUSPENDED()) {
               return suspendResult;
             }
 
             continue $sm;
           case 1:
-            this.n3c_1 = suspendResult;
-            this.o3c_1 = this.n3c_1.dg();
-            this.p3c_1 = this.n3c_1.eg();
-            println('DAG fixpoint in ' + Duration__toString_impl_8d916b(ValueTimeMark__elapsedNow_impl_eonqvs(this.k3c_1)));
+            this.u3c_1 = suspendResult;
+            this.v3c_1 = this.u3c_1.dg();
+            this.w3c_1 = this.u3c_1.eg();
+            println('DAG fixpoint in ' + Duration__toString_impl_8d916b(ValueTimeMark__elapsedNow_impl_eonqvs(this.r3c_1)));
             this.p9_1 = 2;
-            suspendResult = this.h3c_1.s3c(this.j3c_1.s23(), this.o3c_1, this);
+            suspendResult = this.o3c_1.z3c(this.q3c_1.s23(), this.v3c_1, this);
             if (suspendResult === get_COROUTINE_SUSPENDED()) {
               return suspendResult;
             }
@@ -10382,9 +10382,9 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
             var _destruct__k2r9zo = suspendResult;
             var allFSAPairsFlattened = _destruct__k2r9zo.dg();
             var allFSAPairsOffsets = _destruct__k2r9zo.eg();
-            println('Sparse reachability took ' + Duration__toString_impl_8d916b(ValueTimeMark__elapsedNow_impl_eonqvs(this.k3c_1)) + ' / (' + 4 * (allFSAPairsFlattened.size + allFSAPairsOffsets.size) + ' bytes)');
-            var metaBuf = packStruct(listOf([this.j3c_1.s23(), get_nonterminals(this.i3c_1).n()]), [allFSAPairsFlattened, allFSAPairsOffsets, this.h3c_1.q3c(this.j3c_1.o25()), this.l3c_1, this.m3c_1]);
-            println('Packed metadata in ' + Duration__toString_impl_8d916b(ValueTimeMark__elapsedNow_impl_eonqvs(this.k3c_1)));
+            println('Sparse reachability took ' + Duration__toString_impl_8d916b(ValueTimeMark__elapsedNow_impl_eonqvs(this.r3c_1)) + ' / (' + 4 * (allFSAPairsFlattened.size + allFSAPairsOffsets.size) + ' bytes)');
+            var metaBuf = packStruct(listOf([this.q3c_1.s23(), get_nonterminals(this.p3c_1).n()]), [allFSAPairsFlattened, allFSAPairsOffsets, this.o3c_1.x3c(this.q3c_1.o25()), this.s3c_1, this.t3c_1]);
+            println('Packed metadata in ' + Duration__toString_impl_8d916b(ValueTimeMark__elapsedNow_impl_eonqvs(this.r3c_1)));
             return metaBuf;
           case 3:
             throw this.s9_1;
@@ -10402,9 +10402,9 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
   };
   function $buildMidpointsGPUCOROUTINE$19(_this__u8e3s4, states, reachBuf, resultContinuation) {
     CoroutineImpl.call(this, resultContinuation);
-    this.b3d_1 = _this__u8e3s4;
-    this.c3d_1 = states;
-    this.d3d_1 = reachBuf;
+    this.i3d_1 = _this__u8e3s4;
+    this.j3d_1 = states;
+    this.k3d_1 = reachBuf;
   }
   protoOf($buildMidpointsGPUCOROUTINE$19).x9 = function () {
     var suspendResult = this.r9_1;
@@ -10414,32 +10414,32 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
         switch (tmp) {
           case 0:
             this.q9_1 = 4;
-            this.e3d_1 = imul(this.c3d_1, this.c3d_1);
-            this.f3d_1 = this.b3d_1.m3a(imul(this.e3d_1, 4), 140);
-            this.g3d_1 = this.b3d_1.l3d(this.c3d_1, 72);
-            get_mdpt_count().u3b([this.d3d_1, this.f3d_1, this.g3d_1]).x3b(this.c3d_1, this.c3d_1);
+            this.l3d_1 = imul(this.j3d_1, this.j3d_1);
+            this.m3d_1 = this.i3d_1.t3a(imul(this.l3d_1, 4), 140);
+            this.n3d_1 = this.i3d_1.s3d(this.j3d_1, 72);
+            get_mdpt_count().b3c([this.k3d_1, this.m3d_1, this.n3d_1]).e3c(this.j3d_1, this.j3d_1);
             this.p9_1 = 1;
-            suspendResult = this.b3d_1.y3b(this.f3d_1, this.e3d_1, this);
+            suspendResult = this.i3d_1.f3c(this.m3d_1, this.l3d_1, this);
             if (suspendResult === get_COROUTINE_SUSPENDED()) {
               return suspendResult;
             }
 
             continue $sm;
           case 1:
-            this.h3d_1 = suspendResult;
-            this.i3d_1 = listOf_0(this.e3d_1 - 1 | 0);
+            this.o3d_1 = suspendResult;
+            this.p3d_1 = listOf_0(this.l3d_1 - 1 | 0);
             this.p9_1 = 2;
-            suspendResult = this.b3d_1.m3d(this.h3d_1, this.i3d_1, this);
+            suspendResult = this.i3d_1.t3d(this.o3d_1, this.p3d_1, this);
             if (suspendResult === get_COROUTINE_SUSPENDED()) {
               return suspendResult;
             }
 
             continue $sm;
           case 2:
-            this.j3d_1 = suspendResult;
-            this.k3d_1 = this.j3d_1.q(0);
+            this.q3d_1 = suspendResult;
+            this.r3d_1 = this.q3d_1.q(0);
             this.p9_1 = 3;
-            suspendResult = this.b3d_1.m3d(this.f3d_1, this.i3d_1, this);
+            suspendResult = this.i3d_1.t3d(this.m3d_1, this.p3d_1, this);
             if (suspendResult === get_COROUTINE_SUSPENDED()) {
               return suspendResult;
             }
@@ -10448,12 +10448,12 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
           case 3:
             var ARGUMENT = suspendResult;
             var ARGUMENT_0 = ARGUMENT.q(0);
-            var totalM = this.k3d_1 + ARGUMENT_0 | 0;
-            var flatBuf = this.b3d_1.m3a(imul(totalM, 4), 140);
-            get_mdpt_write().u3b([this.d3d_1, this.h3d_1, flatBuf, this.g3d_1]).x3b(this.c3d_1, this.c3d_1);
-            this.g3d_1.destroy();
-            this.f3d_1.destroy();
-            return to(flatBuf, this.h3d_1);
+            var totalM = this.r3d_1 + ARGUMENT_0 | 0;
+            var flatBuf = this.i3d_1.t3a(imul(totalM, 4), 140);
+            get_mdpt_write().b3c([this.k3d_1, this.o3d_1, flatBuf, this.n3d_1]).e3c(this.j3d_1, this.j3d_1);
+            this.n3d_1.destroy();
+            this.m3d_1.destroy();
+            return to(flatBuf, this.o3d_1);
           case 4:
             throw this.s9_1;
         }
@@ -10470,11 +10470,11 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
   };
   function $buildBackpointersCOROUTINE$20(_this__u8e3s4, numStates, numNTs, dpIn, metaBuf, resultContinuation) {
     CoroutineImpl.call(this, resultContinuation);
-    this.v3d_1 = _this__u8e3s4;
-    this.w3d_1 = numStates;
-    this.x3d_1 = numNTs;
-    this.y3d_1 = dpIn;
-    this.z3d_1 = metaBuf;
+    this.c3e_1 = _this__u8e3s4;
+    this.d3e_1 = numStates;
+    this.e3e_1 = numNTs;
+    this.f3e_1 = dpIn;
+    this.g3e_1 = metaBuf;
   }
   protoOf($buildBackpointersCOROUTINE$20).x9 = function () {
     var suspendResult = this.r9_1;
@@ -10484,32 +10484,32 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
         switch (tmp) {
           case 0:
             this.q9_1 = 4;
-            this.a3e_1 = imul(imul(this.w3d_1, this.w3d_1), this.x3d_1);
-            this.b3e_1 = this.v3d_1.m3a(imul(this.a3e_1, 4), 140);
-            println('Total cells: ' + this.a3e_1 + ' = ' + this.w3d_1 + '^2 * ' + this.x3d_1);
-            get_bp_count().u3b([this.y3d_1, this.b3e_1, this.z3d_1]).g3e(this.w3d_1, this.w3d_1, this.x3d_1);
+            this.h3e_1 = imul(imul(this.d3e_1, this.d3e_1), this.e3e_1);
+            this.i3e_1 = this.c3e_1.t3a(imul(this.h3e_1, 4), 140);
+            println('Total cells: ' + this.h3e_1 + ' = ' + this.d3e_1 + '^2 * ' + this.e3e_1);
+            get_bp_count().b3c([this.f3e_1, this.i3e_1, this.g3e_1]).n3e(this.d3e_1, this.d3e_1, this.e3e_1);
             this.p9_1 = 1;
-            suspendResult = this.v3d_1.y3b(this.b3e_1, this.a3e_1, this);
+            suspendResult = this.c3e_1.f3c(this.i3e_1, this.h3e_1, this);
             if (suspendResult === get_COROUTINE_SUSPENDED()) {
               return suspendResult;
             }
 
             continue $sm;
           case 1:
-            this.c3e_1 = suspendResult;
-            this.d3e_1 = listOf_0(this.a3e_1 - 1 | 0);
+            this.j3e_1 = suspendResult;
+            this.k3e_1 = listOf_0(this.h3e_1 - 1 | 0);
             this.p9_1 = 2;
-            suspendResult = this.v3d_1.m3d(this.c3e_1, this.d3e_1, this);
+            suspendResult = this.c3e_1.t3d(this.j3e_1, this.k3e_1, this);
             if (suspendResult === get_COROUTINE_SUSPENDED()) {
               return suspendResult;
             }
 
             continue $sm;
           case 2:
-            this.e3e_1 = suspendResult;
-            this.f3e_1 = this.e3e_1.q(0);
+            this.l3e_1 = suspendResult;
+            this.m3e_1 = this.l3e_1.q(0);
             this.p9_1 = 3;
-            suspendResult = this.v3d_1.m3d(this.b3e_1, this.d3e_1, this);
+            suspendResult = this.c3e_1.t3d(this.i3e_1, this.k3e_1, this);
             if (suspendResult === get_COROUTINE_SUSPENDED()) {
               return suspendResult;
             }
@@ -10518,11 +10518,11 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
           case 3:
             var ARGUMENT = suspendResult;
             var ARGUMENT_0 = ARGUMENT.q(0);
-            var totalExpansions = this.f3e_1 + ARGUMENT_0 | 0;
+            var totalExpansions = this.m3e_1 + ARGUMENT_0 | 0;
             println('Total expansions: ' + totalExpansions);
-            var bpStorageBuf = this.v3d_1.m3a(imul(imul(totalExpansions, 2), 4), 140);
-            get_bp_write().u3b([this.y3d_1, this.c3e_1, bpStorageBuf, this.z3d_1]).g3e(this.w3d_1, this.w3d_1, this.x3d_1);
-            return new Triple(this.b3e_1, this.c3e_1, bpStorageBuf);
+            var bpStorageBuf = this.c3e_1.t3a(imul(imul(totalExpansions, 2), 4), 140);
+            get_bp_write().b3c([this.f3e_1, this.j3e_1, bpStorageBuf, this.g3e_1]).n3e(this.d3e_1, this.d3e_1, this.e3e_1);
+            return new Triple(this.i3e_1, this.j3e_1, bpStorageBuf);
           case 4:
             throw this.s9_1;
         }
@@ -10538,10 +10538,10 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
      while (true);
   };
   function Companion_1() {
-    this.k3a_1 = 256;
-    this.l3a_1 = 65535;
+    this.r3a_1 = 256;
+    this.s3a_1 = 65535;
   }
-  protoOf(Companion_1).h3e = function (_this__u8e3s4, buffers) {
+  protoOf(Companion_1).o3e = function (_this__u8e3s4, buffers) {
     // Inline function 'kotlin.collections.mapIndexed' call
     // Inline function 'kotlin.collections.mapIndexedTo' call
     var destination = ArrayList_init_$Create$_0(buffers.length);
@@ -10569,47 +10569,47 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
     var tmp$ret$9 = {layout: _this__u8e3s4.getBindGroupLayout(0), entries: ent};
     return tmp.createBindGroup(tmp$ret$9);
   };
-  protoOf(Companion_1).i3e = function (_this__u8e3s4, $completion) {
+  protoOf(Companion_1).p3e = function (_this__u8e3s4, $completion) {
     var tmp = new $readIntsCOROUTINE$15(this, _this__u8e3s4, $completion);
     tmp.r9_1 = Unit_instance;
     tmp.s9_1 = null;
     return tmp.x9();
   };
-  protoOf(Companion_1).m3d = function (_this__u8e3s4, indices, $completion) {
+  protoOf(Companion_1).t3d = function (_this__u8e3s4, indices, $completion) {
     var tmp = new $readIndicesCOROUTINE$16(this, _this__u8e3s4, indices, $completion);
     tmp.r9_1 = Unit_instance;
     tmp.s9_1 = null;
     return tmp.x9();
   };
-  protoOf(Companion_1).j3e = function (usage, totalSizeInInts) {
+  protoOf(Companion_1).q3e = function (usage, totalSizeInInts) {
     var tmp0 = toLong(totalSizeInInts);
     // Inline function 'kotlin.Long.times' call
     var other = Int32Array.BYTES_PER_ELEMENT;
     var outputByteSize = tmp0.e3(toLong(other));
-    return this.m3a(outputByteSize, usage | 128 | 8);
+    return this.t3a(outputByteSize, usage | 128 | 8);
   };
-  protoOf(Companion_1).k3e = function (_this__u8e3s4, n) {
+  protoOf(Companion_1).r3e = function (_this__u8e3s4, n) {
     var outputByteSize = imul(imul(n, n), Int32Array.BYTES_PER_ELEMENT);
-    var outputBuffer = this.m3a(outputByteSize, 140);
-    var sparseDataBuffer = this.l3e(_this__u8e3s4);
+    var outputBuffer = this.t3a(outputByteSize, 140);
+    var sparseDataBuffer = this.s3e(_this__u8e3s4);
     // Inline function 'kotlin.math.ceil' call
     var x = _this__u8e3s4.length / 2.0 / 256;
     var tmp$ret$0 = Math.ceil(x);
     var numWorkgroups = numberToInt(tmp$ret$0);
-    get_sparse_mat_load().u3b([sparseDataBuffer, outputBuffer]).x3b(numWorkgroups);
+    get_sparse_mat_load().b3c([sparseDataBuffer, outputBuffer]).e3c(numWorkgroups);
     sparseDataBuffer.destroy();
     return outputBuffer;
   };
-  protoOf(Companion_1).m3e = function (_this__u8e3s4, usage) {
+  protoOf(Companion_1).t3e = function (_this__u8e3s4, usage) {
     // Inline function 'kotlin.collections.toTypedArray' call
     var tmp$ret$0 = copyToArray(_this__u8e3s4);
-    return this.n3e(tmp$ret$0, usage);
+    return this.u3e(tmp$ret$0, usage);
   };
-  protoOf(Companion_1).q3c = function (_this__u8e3s4, usage, $super) {
+  protoOf(Companion_1).x3c = function (_this__u8e3s4, usage, $super) {
     usage = usage === VOID ? 140 : usage;
-    return $super === VOID ? this.m3e(_this__u8e3s4, usage) : $super.m3e.call(this, _this__u8e3s4, usage);
+    return $super === VOID ? this.t3e(_this__u8e3s4, usage) : $super.t3e.call(this, _this__u8e3s4, usage);
   };
-  protoOf(Companion_1).o3e = function (_this__u8e3s4, usage) {
+  protoOf(Companion_1).v3e = function (_this__u8e3s4, usage) {
     // Inline function 'kotlin.collections.map' call
     // Inline function 'kotlin.collections.mapTo' call
     var destination = ArrayList_init_$Create$_0(collectionSizeOrDefault(_this__u8e3s4, 10));
@@ -10623,39 +10623,39 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
     }
     // Inline function 'kotlin.collections.toTypedArray' call
     var tmp$ret$4 = copyToArray(destination);
-    return this.n3e(tmp$ret$4, usage);
+    return this.u3e(tmp$ret$4, usage);
   };
-  protoOf(Companion_1).p3e = function (_this__u8e3s4, usage, $super) {
+  protoOf(Companion_1).w3e = function (_this__u8e3s4, usage, $super) {
     usage = usage === VOID ? 140 : usage;
-    return $super === VOID ? this.o3e(_this__u8e3s4, usage) : $super.o3e.call(this, _this__u8e3s4, usage);
+    return $super === VOID ? this.v3e(_this__u8e3s4, usage) : $super.v3e.call(this, _this__u8e3s4, usage);
   };
-  protoOf(Companion_1).t3b = function (_this__u8e3s4, usage) {
+  protoOf(Companion_1).a3c = function (_this__u8e3s4, usage) {
     var tmp = imul(_this__u8e3s4.length, 4);
     // Inline function 'kotlin.js.unsafeCast' call
     // Inline function 'kotlin.js.asDynamic' call
-    return this.q3e(tmp, usage, _this__u8e3s4);
+    return this.x3e(tmp, usage, _this__u8e3s4);
   };
-  protoOf(Companion_1).l3e = function (_this__u8e3s4, usage, $super) {
+  protoOf(Companion_1).s3e = function (_this__u8e3s4, usage, $super) {
     usage = usage === VOID ? 136 : usage;
-    return $super === VOID ? this.t3b(_this__u8e3s4, usage) : $super.t3b.call(this, _this__u8e3s4, usage);
+    return $super === VOID ? this.a3c(_this__u8e3s4, usage) : $super.a3c.call(this, _this__u8e3s4, usage);
   };
-  protoOf(Companion_1).l3d = function (_this__u8e3s4, usage) {
+  protoOf(Companion_1).s3d = function (_this__u8e3s4, usage) {
     // Inline function 'kotlin.intArrayOf' call
     var tmp$ret$0 = new Int32Array([_this__u8e3s4]);
-    return this.t3b(tmp$ret$0, usage);
+    return this.a3c(tmp$ret$0, usage);
   };
-  protoOf(Companion_1).r3e = function (_this__u8e3s4, usage, $super) {
+  protoOf(Companion_1).y3e = function (_this__u8e3s4, usage, $super) {
     usage = usage === VOID ? 140 : usage;
-    return $super === VOID ? this.l3d(_this__u8e3s4, usage) : $super.l3d.call(this, _this__u8e3s4, usage);
+    return $super === VOID ? this.s3d(_this__u8e3s4, usage) : $super.s3d.call(this, _this__u8e3s4, usage);
   };
-  protoOf(Companion_1).n3e = function (_this__u8e3s4, usage) {
+  protoOf(Companion_1).u3e = function (_this__u8e3s4, usage) {
     // Inline function 'kotlin.apply' call
     var this_0 = new Int32Array(_this__u8e3s4.length);
     this_0.set(_this__u8e3s4, 0);
     // Inline function 'kotlin.let' call
-    return Companion_instance_1.q3e(imul(_this__u8e3s4.length, 4), usage, this_0);
+    return Companion_instance_1.x3e(imul(_this__u8e3s4.length, 4), usage, this_0);
   };
-  protoOf(Companion_1).q3e = function (byteSize, us, data) {
+  protoOf(Companion_1).x3e = function (byteSize, us, data) {
     var tmp = get_gpu();
     // Inline function 'web.gpu.GPUBufferDescriptor.Companion.invoke' call
     // Inline function 'web.gpu.web_gpu_GPUBufferDescriptor_Companion_ukpgo3_invoke_jkqnwo' call
@@ -10667,44 +10667,44 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
     }
     return this_0;
   };
-  protoOf(Companion_1).m3a = function (byteSize, us, data, $super) {
+  protoOf(Companion_1).t3a = function (byteSize, us, data, $super) {
     data = data === VOID ? null : data;
-    return $super === VOID ? this.q3e(byteSize, us, data) : $super.q3e.call(this, byteSize, us, data);
+    return $super === VOID ? this.x3e(byteSize, us, data) : $super.x3e.call(this, byteSize, us, data);
   };
-  protoOf(Companion_1).y3b = function (inputBuf, length, $completion) {
+  protoOf(Companion_1).f3c = function (inputBuf, length, $completion) {
     var tmp = new $prefixSumGPUCOROUTINE$17(this, inputBuf, length, $completion);
     tmp.r9_1 = Unit_instance;
     tmp.s9_1 = null;
     return tmp.x9();
   };
-  protoOf(Companion_1).s3e = function (cfg, fsa, $completion) {
+  protoOf(Companion_1).z3e = function (cfg, fsa, $completion) {
     var tmp = new $packMetadataCOROUTINE$18(this, cfg, fsa, $completion);
     tmp.r9_1 = Unit_instance;
     tmp.s9_1 = null;
     return tmp.x9();
   };
-  protoOf(Companion_1).s3c = function (states, reachBuf, $completion) {
+  protoOf(Companion_1).z3c = function (states, reachBuf, $completion) {
     var tmp = new $buildMidpointsGPUCOROUTINE$19(this, states, reachBuf, $completion);
     tmp.r9_1 = Unit_instance;
     tmp.s9_1 = null;
     return tmp.x9();
   };
-  protoOf(Companion_1).t3e = function (numStates, numNTs, dpIn, metaBuf, $completion) {
+  protoOf(Companion_1).a3f = function (numStates, numNTs, dpIn, metaBuf, $completion) {
     var tmp = new $buildBackpointersCOROUTINE$20(this, numStates, numNTs, dpIn, metaBuf, $completion);
     tmp.r9_1 = Unit_instance;
     tmp.s9_1 = null;
     return tmp.x9();
   };
-  protoOf(Companion_1).u3e = function (nStates, nNT, dpIn, metaBuf, tmBuf) {
+  protoOf(Companion_1).b3f = function (nStates, nNT, dpIn, metaBuf, tmBuf) {
     var totalCells = imul(imul(nStates, nStates), nNT);
-    var lsDenseBuf = this.m3a(imul(totalCells, 4), 140);
+    var lsDenseBuf = this.t3a(imul(totalCells, 4), 140);
     var inductionVariable = 1;
     if (inductionVariable < nStates)
       do {
         var span = inductionVariable;
         inductionVariable = inductionVariable + 1 | 0;
-        var spanBuf = this.l3d(span, 72);
-        get_ls_dense().u3b([dpIn, lsDenseBuf, metaBuf, tmBuf, spanBuf]).g3e(nStates - span | 0, 1, nNT);
+        var spanBuf = this.s3d(span, 72);
+        get_ls_dense().b3c([dpIn, lsDenseBuf, metaBuf, tmBuf, spanBuf]).n3e(nStates - span | 0, 1, nNT);
       }
        while (inductionVariable < nStates);
     return lsDenseBuf;
@@ -10714,34 +10714,34 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
     return Companion_instance_1;
   }
   function DispatchStrategy(gce, gcpe) {
-    this.v3b_1 = gce;
-    this.w3b_1 = gcpe;
+    this.c3c_1 = gce;
+    this.d3c_1 = gcpe;
   }
-  protoOf(DispatchStrategy).g3e = function (x, y, z) {
-    this.w3b_1.dispatchWorkgroups(x, y, z);
-    this.w3b_1.end();
+  protoOf(DispatchStrategy).n3e = function (x, y, z) {
+    this.d3c_1.dispatchWorkgroups(x, y, z);
+    this.d3c_1.end();
     var tmp = get_gpu().queue;
     // Inline function 'kotlin.arrayOf' call
     // Inline function 'kotlin.js.unsafeCast' call
     // Inline function 'kotlin.js.asDynamic' call
-    var tmp$ret$2 = [this.v3b_1.finish()];
+    var tmp$ret$2 = [this.c3c_1.finish()];
     tmp.submit(tmp$ret$2);
   };
-  protoOf(DispatchStrategy).x3b = function (x, y, z, $super) {
+  protoOf(DispatchStrategy).e3c = function (x, y, z, $super) {
     y = y === VOID ? 1 : y;
     z = z === VOID ? 1 : z;
     var tmp;
     if ($super === VOID) {
-      this.g3e(x, y, z);
+      this.n3e(x, y, z);
       tmp = Unit_instance;
     } else {
-      tmp = $super.g3e.call(this, x, y, z);
+      tmp = $super.n3e.call(this, x, y, z);
     }
     return tmp;
   };
   function $bindCOROUTINE$14(_this__u8e3s4, resultContinuation) {
     CoroutineImpl.call(this, resultContinuation);
-    this.d3f_1 = _this__u8e3s4;
+    this.k3f_1 = _this__u8e3s4;
   }
   protoOf($bindCOROUTINE$14).x9 = function () {
     var suspendResult = this.r9_1;
@@ -10755,19 +10755,19 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
             var tmp_0 = this;
             var tmp_1 = get_gpu();
             var tmp_2 = get_gpu();
-            var code = this.d3f_1.b35_1;
+            var code = this.k3f_1.b35_1;
             var compute = {entryPoint: 'main', module: tmp_2.createShaderModule({code: code})};
-            tmp_0.f3f_1 = tmp_1.createComputePipelineAsync({layout: 'auto', compute: compute});
-            this.g3f_1 = this.f3f_1;
+            tmp_0.m3f_1 = tmp_1.createComputePipelineAsync({layout: 'auto', compute: compute});
+            this.n3f_1 = this.m3f_1;
             this.p9_1 = 1;
-            suspendResult = awaitPromiseLike(this.g3f_1, this);
+            suspendResult = awaitPromiseLike(this.n3f_1, this);
             if (suspendResult === get_COROUTINE_SUSPENDED()) {
               return suspendResult;
             }
 
             continue $sm;
           case 1:
-            this.e3f_1 = suspendResult;
+            this.l3f_1 = suspendResult;
             this.q9_1 = 4;
             this.p9_1 = 3;
             continue $sm;
@@ -10785,8 +10785,8 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
 
           case 3:
             this.q9_1 = 4;
-            var ARGUMENT = this.e3f_1;
-            this.d3f_1.d35_1 = ARGUMENT;
+            var ARGUMENT = this.l3f_1;
+            this.k3f_1.d35_1 = ARGUMENT;
             return Unit_instance;
           case 4:
             throw this.s9_1;
@@ -10804,11 +10804,11 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
   };
   function $invokeCFLFixpointCOROUTINE$21(_this__u8e3s4, numStates, numNTs, dpIn, metaBuf, resultContinuation) {
     CoroutineImpl.call(this, resultContinuation);
-    this.p3f_1 = _this__u8e3s4;
-    this.q3f_1 = numStates;
-    this.r3f_1 = numNTs;
-    this.s3f_1 = dpIn;
-    this.t3f_1 = metaBuf;
+    this.w3f_1 = _this__u8e3s4;
+    this.x3f_1 = numStates;
+    this.y3f_1 = numNTs;
+    this.z3f_1 = dpIn;
+    this.a3g_1 = metaBuf;
   }
   protoOf($invokeCFLFixpointCOROUTINE$21).x9 = function () {
     var suspendResult = this.r9_1;
@@ -10818,21 +10818,21 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
         switch (tmp) {
           case 0:
             this.q9_1 = 5;
-            this.u3f_1 = -1;
-            this.v3f_1 = until(0, this.q3f_1).k();
+            this.b3g_1 = -1;
+            this.c3g_1 = until(0, this.x3f_1).k();
             this.p9_1 = 1;
             continue $sm;
           case 1:
-            if (!this.v3f_1.l()) {
+            if (!this.c3g_1.l()) {
               this.p9_1 = 4;
               continue $sm;
             }
 
-            this.w3f_1 = this.v3f_1.m();
-            this.x3f_1 = Companion_instance_1.r3e(0);
-            get_cfl_mul_upper().u3b([this.s3f_1, this.t3f_1, this.x3f_1]).g3e(this.q3f_1, this.q3f_1, this.r3f_1);
+            this.d3g_1 = this.c3g_1.m();
+            this.e3g_1 = Companion_instance_1.y3e(0);
+            get_cfl_mul_upper().b3c([this.z3f_1, this.a3g_1, this.e3g_1]).n3e(this.x3f_1, this.x3f_1, this.y3f_1);
             this.p9_1 = 2;
-            suspendResult = Companion_instance_1.i3e(this.x3f_1, this);
+            suspendResult = Companion_instance_1.p3e(this.e3g_1, this);
             if (suspendResult === get_COROUTINE_SUSPENDED()) {
               return suspendResult;
             }
@@ -10841,8 +10841,8 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
           case 2:
             var ARGUMENT = suspendResult;
             var changesThisRound = ARGUMENT[0];
-            this.x3f_1.destroy();
-            if (changesThisRound === this.u3f_1) {
+            this.e3g_1.destroy();
+            if (changesThisRound === this.b3g_1) {
               this.p9_1 = 4;
               continue $sm;
             } else {
@@ -10851,7 +10851,7 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
             }
 
           case 3:
-            this.u3f_1 = changesThisRound;
+            this.b3g_1 = changesThisRound;
             this.p9_1 = 1;
             continue $sm;
           case 4:
@@ -10872,8 +10872,8 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
   };
   function $invokeDAGFixpointCOROUTINE$22(_this__u8e3s4, fsa, resultContinuation) {
     CoroutineImpl.call(this, resultContinuation);
-    this.g3g_1 = _this__u8e3s4;
-    this.h3g_1 = fsa;
+    this.n3g_1 = _this__u8e3s4;
+    this.o3g_1 = fsa;
   }
   protoOf($invokeDAGFixpointCOROUTINE$22).x9 = function () {
     var suspendResult = this.r9_1;
@@ -10883,24 +10883,24 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
         switch (tmp) {
           case 0:
             this.q9_1 = 5;
-            this.i3g_1 = this.h3g_1.d25();
-            this.j3g_1 = this.h3g_1.s23();
-            this.k3g_1 = Companion_instance_1.k3e(this.i3g_1, this.j3g_1);
-            this.l3g_1 = -1;
-            this.m3g_1 = until(0, this.j3g_1).k();
+            this.p3g_1 = this.o3g_1.d25();
+            this.q3g_1 = this.o3g_1.s23();
+            this.r3g_1 = Companion_instance_1.r3e(this.p3g_1, this.q3g_1);
+            this.s3g_1 = -1;
+            this.t3g_1 = until(0, this.q3g_1).k();
             this.p9_1 = 1;
             continue $sm;
           case 1:
-            if (!this.m3g_1.l()) {
+            if (!this.t3g_1.l()) {
               this.p9_1 = 4;
               continue $sm;
             }
 
-            this.n3g_1 = this.m3g_1.m();
-            this.o3g_1 = Companion_instance_1.r3e(0);
-            get_dag_reach().u3b([this.k3g_1, this.o3g_1]).x3b(this.j3g_1, this.j3g_1);
+            this.u3g_1 = this.t3g_1.m();
+            this.v3g_1 = Companion_instance_1.y3e(0);
+            get_dag_reach().b3c([this.r3g_1, this.v3g_1]).e3c(this.q3g_1, this.q3g_1);
             this.p9_1 = 2;
-            suspendResult = Companion_instance_1.i3e(this.o3g_1, this);
+            suspendResult = Companion_instance_1.p3e(this.v3g_1, this);
             if (suspendResult === get_COROUTINE_SUSPENDED()) {
               return suspendResult;
             }
@@ -10909,8 +10909,8 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
           case 2:
             var ARGUMENT = suspendResult;
             var changesThisRound = ARGUMENT[0];
-            this.o3g_1.destroy();
-            if (changesThisRound === this.l3g_1) {
+            this.v3g_1.destroy();
+            if (changesThisRound === this.s3g_1) {
               this.p9_1 = 4;
               continue $sm;
             } else {
@@ -10919,11 +10919,11 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
             }
 
           case 3:
-            this.l3g_1 = changesThisRound;
+            this.s3g_1 = changesThisRound;
             this.p9_1 = 1;
             continue $sm;
           case 4:
-            return to(this.k3g_1, this.l3g_1);
+            return to(this.r3g_1, this.s3g_1);
           case 5:
             throw this.s9_1;
         }
@@ -10941,7 +10941,7 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
   function Shader(src) {
     this.b35_1 = src;
   }
-  protoOf(Shader).p3g = function () {
+  protoOf(Shader).w3g = function () {
     var tmp = this.d35_1;
     if (!(tmp == null))
       return tmp;
@@ -10949,7 +10949,7 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
       throwUninitializedPropertyAccessException('pipeline');
     }
   };
-  protoOf(Shader).q3g = function ($completion) {
+  protoOf(Shader).x3g = function ($completion) {
     var tmp = new $bindCOROUTINE$14(this, $completion);
     tmp.r9_1 = Unit_instance;
     tmp.s9_1 = null;
@@ -10960,25 +10960,25 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
     this.c35_1 = property.callableName;
     return this;
   };
-  protoOf(Shader).r3g = function (numStates, numNTs, dpIn, metaBuf, $completion) {
+  protoOf(Shader).y3g = function (numStates, numNTs, dpIn, metaBuf, $completion) {
     var tmp = new $invokeCFLFixpointCOROUTINE$21(this, numStates, numNTs, dpIn, metaBuf, $completion);
     tmp.r9_1 = Unit_instance;
     tmp.s9_1 = null;
     return tmp.x9();
   };
-  protoOf(Shader).r3c = function (fsa, $completion) {
+  protoOf(Shader).y3c = function (fsa, $completion) {
     var tmp = new $invokeDAGFixpointCOROUTINE$22(this, fsa, $completion);
     tmp.r9_1 = Unit_instance;
     tmp.s9_1 = null;
     return tmp.x9();
   };
-  protoOf(Shader).u3b = function (inputs) {
+  protoOf(Shader).b3c = function (inputs) {
     // Inline function 'kotlin.let' call
     var gce = get_gpu().createCommandEncoder();
     // Inline function 'kotlin.let' call
     var gcpe = gce.beginComputePass();
-    gcpe.setPipeline(this.p3g());
-    gcpe.setBindGroup(0, Companion_instance_1.h3e(this.p3g(), inputs.slice()));
+    gcpe.setPipeline(this.w3g());
+    gcpe.setBindGroup(0, Companion_instance_1.o3e(this.w3g(), inputs.slice()));
     return new DispatchStrategy(gce, gcpe);
   };
   function packStruct(constants, buffers) {
@@ -11043,7 +11043,7 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
     var headerBytes = imul(headerInts.n(), 4);
     var payloadBytes = imul(sum_0(lens), 4);
     var totalBytes = headerBytes + payloadBytes | 0;
-    var metaBuf = Companion_instance_1.m3a(totalBytes, 140);
+    var metaBuf = Companion_instance_1.t3a(totalBytes, 140);
     var tmp = get_gpu().queue;
     // Inline function 'kotlin.apply' call
     var this_2 = new Int32Array(headerInts.n());
@@ -11254,19 +11254,19 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
     // Inline function 'kotlin.js.asDynamic' call
     arrayCopy(tmp_3, destination, 1, 0, endIndex);
     println('Done');
-    return Companion_instance_1.p3e(asList_0(flat));
+    return Companion_instance_1.w3e(asList_0(flat));
   }
   function sam$kotlin_Comparator$0(function_0) {
-    this.s3g_1 = function_0;
+    this.z3g_1 = function_0;
   }
   protoOf(sam$kotlin_Comparator$0).xd = function (a, b) {
-    return this.s3g_1(a, b);
+    return this.z3g_1(a, b);
   };
   protoOf(sam$kotlin_Comparator$0).compare = function (a, b) {
     return this.xd(a, b);
   };
   protoOf(sam$kotlin_Comparator$0).s3 = function () {
-    return this.s3g_1;
+    return this.z3g_1;
   };
   protoOf(sam$kotlin_Comparator$0).equals = function (other) {
     var tmp;
@@ -11352,7 +11352,7 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
       var tmp$ret$6 = item_1.n();
       destination_1.e(tmp$ret$6);
     }
-    var nt_tm_lens = tmp_0.q3c(destination_1);
+    var nt_tm_lens = tmp_0.x3c(destination_1);
     var tmp_1 = Companion_instance_1;
     // Inline function 'kotlin.collections.scan' call
     var tmp$ret$9;
@@ -11377,8 +11377,8 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
       tmp$ret$9 = result;
     }
     var tmp$ret$13 = tmp$ret$9;
-    var nt_tm_offsets = tmp_1.q3c(dropLast(tmp$ret$13, 1));
-    var all_tm = Companion_instance_1.q3c(flatten(terminalLists));
+    var nt_tm_offsets = tmp_1.x3c(dropLast(tmp$ret$13, 1));
+    var all_tm = Companion_instance_1.x3c(flatten(terminalLists));
     return packStruct(emptyList(), [nt_tm_lens, nt_tm_offsets, all_tm]);
   }
   function tryBootstrappingGPU$lambda(e) {
@@ -11518,7 +11518,7 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
             tmp_13.p36_1 = this.o36_1;
             this.q36_1 = this.p36_1;
             this.p9_1 = 8;
-            suspendResult = this.q36_1.q3g(this);
+            suspendResult = this.q36_1.x3g(this);
             if (suspendResult === get_COROUTINE_SUSPENDED()) {
               return suspendResult;
             }
@@ -11658,7 +11658,7 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
             this.w37_1 = this.u37_1.eg();
             println('FSA(|Q|=' + this.v37_1 + ', |\u03B4|=' + this.p37_1.l25().n() + '), ' + ('CFG(|\u03A3|=' + get_terminals(this.o37_1).n() + ', |V|=' + this.w37_1 + ', |P|=' + get_nonterminalProductions(this.o37_1).n() + ')'));
             this.p9_1 = 1;
-            suspendResult = Companion_instance_1.s3e(this.o37_1, this.p37_1, this);
+            suspendResult = Companion_instance_1.z3e(this.o37_1, this.p37_1, this);
             if (suspendResult === get_COROUTINE_SUSPENDED()) {
               return suspendResult;
             }
@@ -11667,13 +11667,13 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
           case 1:
             this.x37_1 = suspendResult;
             this.y37_1 = get_termBuf(this.o37_1);
-            this.z37_1 = Companion_instance_1.l3e(this.s37_1);
+            this.z37_1 = Companion_instance_1.s3e(this.s37_1);
             this.a38_1 = imul(imul(this.v37_1, this.v37_1), this.w37_1);
-            this.b38_1 = Companion_instance_1.j3e(140, this.a38_1);
-            get_init_chart().u3b([this.b38_1, this.z37_1, this.x37_1, this.y37_1]).g3e(this.v37_1, this.v37_1, this.w37_1);
+            this.b38_1 = Companion_instance_1.q3e(140, this.a38_1);
+            get_init_chart().b3c([this.b38_1, this.z37_1, this.x37_1, this.y37_1]).n3e(this.v37_1, this.v37_1, this.w37_1);
             println('Chart construction took: ' + Duration__toString_impl_8d916b(ValueTimeMark__elapsedNow_impl_eonqvs(this.t37_1)));
             this.p9_1 = 2;
-            suspendResult = get_cfl_mul_upper().r3g(this.v37_1, this.w37_1, this.b38_1, this.x37_1, this);
+            suspendResult = get_cfl_mul_upper().y3g(this.v37_1, this.w37_1, this.b38_1, this.x37_1, this);
             if (suspendResult === get_COROUTINE_SUSPENDED()) {
               return suspendResult;
             }
@@ -11698,7 +11698,7 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
             tmp_1.g38_1 = this.f38_1;
             this.h38_1 = this.g38_1;
             this.p9_1 = 3;
-            suspendResult = Companion_instance_1.m3d(this.b38_1, this.h38_1, this);
+            suspendResult = Companion_instance_1.t3d(this.b38_1, this.h38_1, this);
             if (suspendResult === get_COROUTINE_SUSPENDED()) {
               return suspendResult;
             }
@@ -11737,7 +11737,7 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
             }
 
             this.p9_1 = 4;
-            suspendResult = Companion_instance_1.t3e(this.v37_1, this.w37_1, this.b38_1, this.x37_1, this);
+            suspendResult = Companion_instance_1.a3f(this.v37_1, this.w37_1, this.b38_1, this.x37_1, this);
             if (suspendResult === get_COROUTINE_SUSPENDED()) {
               return suspendResult;
             }
@@ -11805,22 +11805,26 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
               return this_5;
             }
 
-            this.v38_1 = Companion_instance_1.u3e(this.v37_1, this.w37_1, this.b38_1, this.x37_1, this.y37_1);
+            this.v38_1 = Companion_instance_1.b3f(this.v37_1, this.w37_1, this.b38_1, this.x37_1, this.y37_1);
             this.w38_1 = numberToInt(this.p38_1.size) / 8 | 0;
-            this.x38_1 = Companion_instance_1.m3a(imul(this.w38_1, 4), 140);
-            get_ls_cdf().u3b([this.b38_1, this.v38_1, this.o38_1, this.x38_1, this.x37_1, this.y37_1]).g3e(this.v37_1, this.v37_1, this.w37_1);
+            this.x38_1 = Companion_instance_1.t3a(imul(this.w38_1, 4), 140);
+            get_ls_cdf().b3c([this.b38_1, this.v38_1, this.o38_1, this.x38_1, this.x37_1, this.y37_1]).n3e(this.v37_1, this.v37_1, this.w37_1);
             this.v38_1.destroy();
+            this.y38_1 = 65535;
             var tmp_8 = this;
-            tmp_8.y38_1 = new Int32Array([0, this.u38_1, this.w37_1, this.v37_1]);
-            this.z38_1 = packStruct(toList_0(this.y38_1), [Companion_instance_1.q3c(this.t38_1)]);
+            tmp_8.z38_1 = new Int32Array([0, this.u38_1, this.w37_1, this.v37_1, this.y38_1, 250000]);
+            this.a39_1 = packStruct(toList_0(this.z38_1), [Companion_instance_1.x3c(this.t38_1)]);
             println('Pairing function construction took: ' + Duration__toString_impl_8d916b(ValueTimeMark__elapsedNow_impl_eonqvs(this.q38_1)));
-            this.a39_1 = Companion_instance_1.m3a(imul(imul(65535, this.u38_1), 4), 140);
-            get_sample_words_wor().u3b([this.b38_1, this.n38_1, this.o38_1, this.p38_1, this.a39_1, this.y37_1, this.z38_1, this.x38_1]).x3b(65535);
+            this.b39_1 = Monotonic_instance.he();
+            this.c39_1 = Companion_instance_1.t3a(imul(imul(250000, this.u38_1), 4), 140);
+            this.d39_1 = ((250000 + this.y38_1 | 0) - 1 | 0) / this.y38_1 | 0;
+            get_sample_words_wor().b3c([this.b38_1, this.n38_1, this.o38_1, this.p38_1, this.c39_1, this.y37_1, this.a39_1, this.x38_1]).e3c(this.y38_1, this.d39_1);
+            println('Sampled WOR into ' + this.c39_1.size + '-byte buffer in ' + Duration__toString_impl_8d916b(ValueTimeMark__elapsedNow_impl_eonqvs(this.b39_1)));
             if (this.r37_1 == null) {
               var tmp_9 = this;
-              tmp_9.b39_1 = LinkedHashMap_init_$Create$_0();
+              tmp_9.e39_1 = LinkedHashMap_init_$Create$_0();
               this.p9_1 = 7;
-              suspendResult = Companion_instance_1.i3e(this.a39_1, this);
+              suspendResult = Companion_instance_1.p3e(this.c39_1, this);
               if (suspendResult === get_COROUTINE_SUSPENDED()) {
                 return suspendResult;
               }
@@ -11831,9 +11835,9 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
             }
 
           case 5:
-            this.c39_1 = imul(20, get_MAX_DISP_RESULTS());
+            this.f39_1 = imul(20, get_MAX_DISP_RESULTS());
             this.p9_1 = 6;
-            suspendResult = scoreSelectGather(this.a39_1, this.r37_1, this.z38_1, 65535, this.u38_1, this.c39_1, this);
+            suspendResult = scoreSelectGather(this.c39_1, this.r37_1, this.a39_1, 250000, this.u38_1, this.f39_1, this);
             if (suspendResult === get_COROUTINE_SUSPENDED()) {
               return suspendResult;
             }
@@ -11841,7 +11845,7 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
             continue $sm;
           case 6:
             var topK = suspendResult;
-            var _iterator__ex2g4s_5 = listOf([this.a39_1, this.x37_1, this.b38_1, this.z38_1, this.x38_1, this.n38_1, this.o38_1, this.p38_1]).k();
+            var _iterator__ex2g4s_5 = listOf([this.c39_1, this.x37_1, this.b38_1, this.a39_1, this.x38_1, this.n38_1, this.o38_1, this.p38_1]).k();
             while (_iterator__ex2g4s_5.l()) {
               var element_1 = _iterator__ex2g4s_5.m();
               element_1.destroy();
@@ -11850,7 +11854,7 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
             var t4 = Monotonic_instance.he();
             var result = ArrayList_init_$Create$();
             var inductionVariable = 0;
-            var last = this.c39_1;
+            var last = this.f39_1;
             if (inductionVariable < last)
               $l$loop: do {
                 var i = inductionVariable;
@@ -11867,7 +11871,7 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
           case 7:
             var allResults = suspendResult;
             var inductionVariable_0 = 0;
-            if (inductionVariable_0 < 65535)
+            if (inductionVariable_0 < 250000)
               $l$loop_0: do {
                 var i_0 = inductionVariable_0;
                 inductionVariable_0 = inductionVariable_0 + 1 | 0;
@@ -11879,7 +11883,7 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
                   tmp_10 = tmp0_elvis_lhs;
                 }
                 var t_0 = tmp_10;
-                var tmp27 = this.b39_1;
+                var tmp27 = this.e39_1;
                 var key = t_0.lg_1;
                 var value = tmp27.r2(key);
                 var tmp_11;
@@ -11892,8 +11896,8 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
                 }
                 tmp_11.e(t_0.mg_1);
               }
-               while (inductionVariable_0 < 65535);
-            var this_6 = this.b39_1;
+               while (inductionVariable_0 < 250000);
+            var this_6 = this.e39_1;
             var destination_5 = ArrayList_init_$Create$_0(this_6.n());
             var _iterator__ex2g4s_6 = this_6.u2().k();
             while (_iterator__ex2g4s_6.l()) {
@@ -11919,12 +11923,12 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
   };
   function $scoreSelectGatherCOROUTINE$13(packets, ngrams, indexUniformsBuf, maxSamples, stride, k, resultContinuation) {
     CoroutineImpl.call(this, resultContinuation);
-    this.l39_1 = packets;
-    this.m39_1 = ngrams;
-    this.n39_1 = indexUniformsBuf;
-    this.o39_1 = maxSamples;
-    this.p39_1 = stride;
-    this.q39_1 = k;
+    this.o39_1 = packets;
+    this.p39_1 = ngrams;
+    this.q39_1 = indexUniformsBuf;
+    this.r39_1 = maxSamples;
+    this.s39_1 = stride;
+    this.t39_1 = k;
   }
   protoOf($scoreSelectGatherCOROUTINE$13).x9 = function () {
     var suspendResult = this.r9_1;
@@ -11934,44 +11938,48 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
         switch (tmp) {
           case 0:
             this.q9_1 = 2;
-            this.r39_1 = Monotonic_instance.he();
-            get_markov_score().u3b([this.l39_1, this.m39_1, this.n39_1]).x3b(this.o39_1);
+            this.u39_1 = Monotonic_instance.he();
+            this.v39_1 = 65535;
+            this.w39_1 = ((this.r39_1 + this.v39_1 | 0) - 1 | 0) / this.v39_1 | 0;
+            get_markov_score().b3c([this.o39_1, this.p39_1, this.q39_1]).e3c(this.v39_1, this.w39_1);
+            this.x39_1 = 65535;
+            this.y39_1 = (this.r39_1 + 255 | 0) / 256 | 0;
+            this.z39_1 = ((this.y39_1 + this.x39_1 | 0) - 1 | 0) / this.x39_1 | 0;
             var tmp_0 = this;
             var tmp_1 = Companion_instance_1;
-            var elements = new Int32Array([this.o39_1, this.q39_1, this.p39_1]);
-            tmp_0.s39_1 = tmp_1.t3b(elements, 72);
+            var elements = new Int32Array([this.r39_1, this.t39_1, this.s39_1, this.x39_1]);
+            tmp_0.a3a_1 = tmp_1.a3c(elements, 72);
             var tmp_2 = this;
             var tmp_3 = Companion_instance_1;
             var tmp_4 = 0;
-            var tmp_5 = this.q39_1;
+            var tmp_5 = this.t39_1;
             var tmp_6 = new Int32Array(tmp_5);
             while (tmp_4 < tmp_5) {
               tmp_6[tmp_4] = 2147483647;
               tmp_4 = tmp_4 + 1 | 0;
             }
 
-            tmp_2.t39_1 = tmp_3.t3b(tmp_6, 140);
+            tmp_2.b3a_1 = tmp_3.a3c(tmp_6, 140);
             var tmp_7 = this;
             var tmp_8 = Companion_instance_1;
             var tmp_9 = 0;
-            var tmp_10 = this.q39_1;
+            var tmp_10 = this.t39_1;
             var tmp_11 = new Int32Array(tmp_10);
             while (tmp_9 < tmp_10) {
               tmp_11[tmp_9] = 2147483647;
               tmp_9 = tmp_9 + 1 | 0;
             }
 
-            tmp_7.u39_1 = tmp_8.t3b(tmp_11, 140);
-            this.v39_1 = (this.o39_1 + 255 | 0) / 256 | 0;
-            get_select_top_k().u3b([this.s39_1, this.l39_1, this.t39_1, this.u39_1]).x3b(this.v39_1);
+            tmp_7.c3a_1 = tmp_8.a3c(tmp_11, 140);
+            get_select_top_k().b3c([this.a3a_1, this.o39_1, this.b3a_1, this.c3a_1]).e3c(this.x39_1, this.z39_1);
             var tmp_12 = this;
             var tmp_13 = Companion_instance_1;
-            var elements_0 = new Int32Array([this.p39_1, this.q39_1]);
-            tmp_12.w39_1 = tmp_13.t3b(elements_0, 72);
-            this.x39_1 = Companion_instance_1.m3a(imul(imul(this.q39_1, this.p39_1), 4), 140);
-            get_gather_top_k().u3b([this.w39_1, this.l39_1, this.t39_1, this.x39_1]).x3b(this.q39_1);
+            var elements_0 = new Int32Array([this.s39_1, this.t39_1]);
+            tmp_12.d3a_1 = tmp_13.a3c(elements_0, 72);
+            this.e3a_1 = Companion_instance_1.t3a(imul(imul(this.t39_1, this.s39_1), 4), 140);
+            get_gather_top_k().b3c([this.d3a_1, this.o39_1, this.b3a_1, this.e3a_1]).e3c(this.t39_1);
             this.p9_1 = 1;
-            suspendResult = Companion_instance_1.i3e(this.x39_1, this);
+            suspendResult = Companion_instance_1.p3e(this.e3a_1, this);
             if (suspendResult === get_COROUTINE_SUSPENDED()) {
               return suspendResult;
             }
@@ -11979,8 +11987,8 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
             continue $sm;
           case 1:
             var topK = suspendResult;
-            println('Score/select/gather read ' + topK.length + ' = ' + this.q39_1 + 'x' + this.p39_1 + 'x4 bytes in ' + Duration__toString_impl_8d916b(ValueTimeMark__elapsedNow_impl_eonqvs(this.r39_1)));
-            var _iterator__ex2g4s = listOf([this.s39_1, this.t39_1, this.u39_1, this.w39_1, this.x39_1]).k();
+            println('Score/select/gather read ' + topK.length + ' = ' + this.t39_1 + 'x' + this.s39_1 + 'x4 bytes in ' + Duration__toString_impl_8d916b(ValueTimeMark__elapsedNow_impl_eonqvs(this.u39_1)));
+            var _iterator__ex2g4s = listOf([this.a3a_1, this.b3a_1, this.c3a_1, this.d3a_1, this.e3a_1]).k();
             while (_iterator__ex2g4s.l()) {
               var element = _iterator__ex2g4s.m();
               element.destroy();
@@ -12097,20 +12105,20 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
       properties_initialized_WGPU_kt_8qwup5 = true;
       gpuAvailable = false;
       termBuf$delegate = cache(VOID, termBuf$delegate$lambda);
-      init_chart$delegate = new Shader('struct CFLStruct { // Carries metadata about the CFL + NFA intersection\n             numStates : u32,      numNonterminals : u32,\n\n           mdptsOffset : u32,            mdptsSize : u32,\n    mdptsOffsetsOffset : u32,     mdptsOffsetsSize : u32,\n    acceptStatesOffset : u32,     acceptStatesSize : u32,\ngrammarFlattenedOffset : u32, grammarFlattenedSize : u32,\n  grammarOffsetsOffset : u32,   grammarOffsetsSize : u32,\n\n               payload : array<u32>\n};\n\n         fn getMdpt(index: u32) -> u32 { return cs.payload[cs.mdptsOffset + index]; }\n   fn getMdptOffset(index: u32) -> u32 { return cs.payload[cs.mdptsOffsetsOffset + index]; }\nfn getGrammarSymbol(index: u32) -> u32 { return cs.payload[cs.grammarFlattenedOffset + index]; }\nfn getGrammarOffset(index: u32) -> u32 { return cs.payload[cs.grammarOffsetsOffset + index]; } \nstruct Terminals { // Mappings from nonterminals to terminals in CFG\n    nt_tm_lens_offset : u32,    nt_tm_lens_size : u32,\n       offsets_offset : u32,       offsets_size : u32,\n       all_tms_offset : u32,       all_tms_size : u32,\n       \n       payload : array<u32>\n};\n\nstruct IndexUniforms {  // Indices of all accepting states in the parse chart\n    targetCnt       : atomic<u32>,  // global counter (LFSR advances on host)\n    maxWordLen      : u32,\n    numNonterminals : u32,\n    numStates       : u32,\n    \n    startIdxOffset  : u32, numStartIndices : u32,\n    startIndices    : array<u32> // Contains alternating (1) start index and (2) edit distance\n};\nfn pack_rc(row_j: u32, col_i: u32) -> u32 { return (row_j << 16u) | (col_i & 0xffffu); }\nfn unpack_row_j(packed: u32) -> u32 { return packed >> 16u; }\nfn unpack_col_i(packed: u32) -> u32 { return packed & 0xffffu; }\n\nfn tpl(x: i32) -> i32 { let y: i32 = max(x, 0); return (y * (y + 1)) / 2; }\n\nfn prefix_count(s_sum: i32, num_j_values: i32, num_i_values: i32) -> i32 {\n    return tpl(s_sum) - tpl(s_sum - num_j_values) - tpl(s_sum - num_i_values) + tpl(s_sum - num_j_values - num_i_values);\n}\n\nfn find_target_sum(rank_k: u32, max_j_idx: u32, max_i_idx: u32) -> i32 {\n    var target_s: i32 = 0;\n    var low: i32 = 0;\n    var high: i32 = i32(max_j_idx + max_i_idx);\n    let num_j_vals = i32(max_j_idx + 1u);\n    let num_i_vals = i32(max_i_idx + 1u);\n\n    while(low <= high) {\n        let mid_s = low + (high - low) / 2;\n        if (prefix_count(mid_s, num_j_vals, num_i_vals) <= i32(rank_k)) {\n            target_s = mid_s;\n            low = mid_s + 1;\n        } else {\n            high = mid_s - 1;\n        }\n    }\n    return target_s;\n}\n\n// unrank_to_coords(rank_idx, max_j_idx, max_i_idx) -> packed_coords(j,i)\n// Primary sort: s = i+j (ascending)\n// Secondary sort: i (string position, ascending). For fixed s, as i increases, j decreases.\nfn unrank_to_coords(rank_idx: u32, max_j_idx: u32, max_i_idx: u32) -> u32 {\n    let num_j_vals = i32(max_j_idx + 1u);\n    let num_i_vals = i32(max_i_idx + 1u);\n\n    let s_sum: i32 = find_target_sum(rank_idx, max_j_idx, max_i_idx);\n    let elements_before_this_sum_group: i32 = prefix_count(s_sum, num_j_vals, num_i_vals);\n    let offset_in_sum_group: i32 = i32(rank_idx) - elements_before_this_sum_group;\n\n    let i_start_for_sum: i32 = max(0, s_sum - i32(max_j_idx));\n    let i_final: u32 = u32(i_start_for_sum + offset_in_sum_group);\n    let j_final: u32 = u32(s_sum - i32(i_final));\n\n    return pack_rc(j_final, i_final);\n}\n\nfn letter_at(idx : u32, wd_len : u32) -> u32 { return select(word[idx], 0xffffffffu, idx >= wd_len); }\n\nconst LIT_ALL : u32 = 0x7ffffffeu;\nconst NEG_BIT : u32 = 1073741824u;\n\nfn encode_pos_literal(A_nt_idx : u32, sigma_token : u32) -> u32 {\n    if (sigma_token == 0xffffffffu) { return 0u; }\n    let ntLen = get_nt_tm_lens(A_nt_idx);\n    let ntOff = get_offsets(A_nt_idx);\n    for (var k : u32 = 0u; k < ntLen; k = k + 1u) {\n        if (get_all_tms(ntOff + k) == sigma_token) { return ((k + 1u) << 1u); }\n    }\n    return 0u;\n}\n\nfn encode_neg_literal(A_nt_idx : u32, sigma_token : u32) -> u32 {\n    var s_is_in_Sigma_A = false;\n    var k_idx_of_s_in_Sigma_A : u32 = 0u;\n    if (sigma_token != 0xffffffffu) {\n        let ntLen = get_nt_tm_lens(A_nt_idx);\n        let ntOff = get_offsets(A_nt_idx);\n        for (var k : u32 = 0u; k < ntLen; k = k + 1u) {\n            if (get_all_tms(ntOff + k) == sigma_token) {\n                s_is_in_Sigma_A = true;\n                k_idx_of_s_in_Sigma_A = k;\n                break;\n            }\n        }\n    }\n    if (s_is_in_Sigma_A) { return NEG_BIT | ((k_idx_of_s_in_Sigma_A + 1u) << 1u); }\n    else { return LIT_ALL; }\n}\n\nconst MAX_J_IDX_CONST : u32 = 5u; // Max index for j (edit distance)\n\n// Let \u03A3_A denote the subset of \u03A3 s.t. for all a \u2208 \u03A3_A \u22A2 (A -> a) \u2208 P\nfn get_nt_tm_lens(nt : u32) -> u32 { return terminals.payload[terminals.nt_tm_lens_offset + nt]; } // |\u03A3_A|\n// Offsets of the nonterminal in the following Map<...> structure\nfn get_offsets(nt : u32) -> u32    { return terminals.payload[terminals.offsets_offset + nt];    } // offset of \u03A3_A\n// Flattened index of Map<NT, List<TM-id>> values\nfn get_all_tms(i : u32) -> u32     { return terminals.payload[terminals.all_tms_offset + i];     } // \u03C3 \u2192 TM\u2011id\n\n@group(0) @binding(0) var<storage, read_write> dp_in : array<u32>;\n@group(0) @binding(1) var<storage, read>        word : array<u32>;\n@group(0) @binding(2) var<storage, read>          cs : CFLStruct;\n@group(0) @binding(3) var<storage, read>   terminals : Terminals;\n\n@compute @workgroup_size(1,1,1) fn main(@builtin(global_invocation_id) gid : vec3<u32>) {\n    let q1_rank = gid.x;\n    let q2_rank = gid.y;\n    let A_idx  = gid.z;\n    let nts = cs.numNonterminals;\n\n    let dpIdx = q1_rank * cs.numStates * nts + q2_rank * nts + A_idx;\n\n    let current_word_len = arrayLength(&word); // Max i is current_word_len (0 to N for string of length N)\n\n    let packed_q1_ji = unrank_to_coords(q1_rank, MAX_J_IDX_CONST, current_word_len);\n    let j1 = unpack_row_j(packed_q1_ji);\n    let i1 = unpack_col_i(packed_q1_ji);\n\n    let packed_q2_ji = unrank_to_coords(q2_rank, MAX_J_IDX_CONST, current_word_len);\n    let j2 = unpack_row_j(packed_q2_ji);\n    let i2 = unpack_col_i(packed_q2_ji);\n\n    let di = i32(i2) - i32(i1);\n    let dj = i32(j2) - i32(j1);\n\n    var encoded_predicate_val : u32 = 0u;\n    var should_write_to_dp_in : bool = false;\n    let num_prods_for_A = get_nt_tm_lens(A_idx);\n    \n    // (1) UP ARC (Insertion): q1=(i,j-1) -> q2=(i,j). Predicate: [!=word[i1]]\n    if (di == 0 && dj == 1) {\n        if (j1 < MAX_J_IDX_CONST && i1 <= current_word_len) {\n            let s_char = letter_at(i1, current_word_len);\n            encoded_predicate_val = encode_neg_literal(A_idx, s_char);\n            if (encoded_predicate_val == LIT_ALL) { should_write_to_dp_in = (num_prods_for_A > 0u); }\n            else if ((encoded_predicate_val & NEG_BIT) != 0u) { should_write_to_dp_in = (num_prods_for_A > 1u); }\n        }\n    }\n    // (2) RIGHT ARC (Match): q1=(i-1,j) -> q2=(i,j). Predicate: word[i1]\n    else if (di == 1 && dj == 0) {\n        if (i1 < current_word_len) {\n            let s_char = letter_at(i1, current_word_len);\n            encoded_predicate_val = encode_pos_literal(A_idx, s_char);\n            if (encoded_predicate_val != 0u) { should_write_to_dp_in = true; }\n        }\n    }\n    // (3) DIAG ARC (Substitution): q1=(i-1,j-1) -> q2=(i,j). Predicate: [!=word[i1]]\n    else if (di == 1 && dj == 1) {\n        if (i1 < current_word_len && j1 < MAX_J_IDX_CONST) {\n            let s_char = letter_at(i1, current_word_len);\n            encoded_predicate_val = encode_neg_literal(A_idx, s_char);\n            if (encoded_predicate_val == LIT_ALL) { should_write_to_dp_in = (num_prods_for_A > 0u); }\n            else if ((encoded_predicate_val & NEG_BIT) != 0u) { should_write_to_dp_in = (num_prods_for_A > 1u); }\n        }\n    }\n    // (4) "KNIGHT" ARC (Deletion): q1=(i,j) -> q2=(i+d+1,j+d). Predicate: word[i1+d]\n    else if (dj >= 1 && di == dj + 1) {\n        let d_val = u32(dj);\n        if (i1 + d_val < current_word_len) {\n            if ( (i1 + d_val + 1u <= current_word_len) && (j1 + d_val <= MAX_J_IDX_CONST) ) {\n                let s_char = letter_at(i1 + d_val, current_word_len);\n                encoded_predicate_val = encode_pos_literal(A_idx, s_char);\n                if (encoded_predicate_val != 0u) { should_write_to_dp_in = true; }\n            }\n        }\n    }\n\n    if (should_write_to_dp_in) { dp_in[dpIdx] = encoded_predicate_val; }\n}');
+      init_chart$delegate = new Shader('struct CFLStruct { // Carries metadata about the CFL + NFA intersection\n             numStates : u32,      numNonterminals : u32,\n\n           mdptsOffset : u32,            mdptsSize : u32,\n    mdptsOffsetsOffset : u32,     mdptsOffsetsSize : u32,\n    acceptStatesOffset : u32,     acceptStatesSize : u32,\ngrammarFlattenedOffset : u32, grammarFlattenedSize : u32,\n  grammarOffsetsOffset : u32,   grammarOffsetsSize : u32,\n\n               payload : array<u32>\n};\n\n         fn getMdpt(index: u32) -> u32 { return cs.payload[cs.mdptsOffset + index]; }\n   fn getMdptOffset(index: u32) -> u32 { return cs.payload[cs.mdptsOffsetsOffset + index]; }\nfn getGrammarSymbol(index: u32) -> u32 { return cs.payload[cs.grammarFlattenedOffset + index]; }\nfn getGrammarOffset(index: u32) -> u32 { return cs.payload[cs.grammarOffsetsOffset + index]; } \nstruct Terminals { // Mappings from nonterminals to terminals in CFG\n    nt_tm_lens_offset : u32,    nt_tm_lens_size : u32,\n       offsets_offset : u32,       offsets_size : u32,\n       all_tms_offset : u32,       all_tms_size : u32,\n       \n       payload : array<u32>\n};\n\nstruct IndexUniforms {  // Indices of all accepting states in the parse chart\n    targetCnt       : atomic<u32>,  // global counter (LFSR advances on host)\n    maxWordLen      : u32,\n    numNonterminals : u32,\n    numStates       : u32,\n    grid_dim_x      : u32,\n    max_samples     : u32,\n    \n    startIdxOffset  : u32, numStartIndices : u32,\n    startIndices    : array<u32> // Contains alternating (1) start index and (2) edit distance\n};\nfn pack_rc(row_j: u32, col_i: u32) -> u32 { return (row_j << 16u) | (col_i & 0xffffu); }\nfn unpack_row_j(packed: u32) -> u32 { return packed >> 16u; }\nfn unpack_col_i(packed: u32) -> u32 { return packed & 0xffffu; }\n\nfn tpl(x: i32) -> i32 { let y: i32 = max(x, 0); return (y * (y + 1)) / 2; }\n\nfn prefix_count(s_sum: i32, num_j_values: i32, num_i_values: i32) -> i32 {\n    return tpl(s_sum) - tpl(s_sum - num_j_values) - tpl(s_sum - num_i_values) + tpl(s_sum - num_j_values - num_i_values);\n}\n\nfn find_target_sum(rank_k: u32, max_j_idx: u32, max_i_idx: u32) -> i32 {\n    var target_s: i32 = 0;\n    var low: i32 = 0;\n    var high: i32 = i32(max_j_idx + max_i_idx);\n    let num_j_vals = i32(max_j_idx + 1u);\n    let num_i_vals = i32(max_i_idx + 1u);\n\n    while(low <= high) {\n        let mid_s = low + (high - low) / 2;\n        if (prefix_count(mid_s, num_j_vals, num_i_vals) <= i32(rank_k)) {\n            target_s = mid_s;\n            low = mid_s + 1;\n        } else {\n            high = mid_s - 1;\n        }\n    }\n    return target_s;\n}\n\n// unrank_to_coords(rank_idx, max_j_idx, max_i_idx) -> packed_coords(j,i)\n// Primary sort: s = i+j (ascending)\n// Secondary sort: i (string position, ascending). For fixed s, as i increases, j decreases.\nfn unrank_to_coords(rank_idx: u32, max_j_idx: u32, max_i_idx: u32) -> u32 {\n    let num_j_vals = i32(max_j_idx + 1u);\n    let num_i_vals = i32(max_i_idx + 1u);\n\n    let s_sum: i32 = find_target_sum(rank_idx, max_j_idx, max_i_idx);\n    let elements_before_this_sum_group: i32 = prefix_count(s_sum, num_j_vals, num_i_vals);\n    let offset_in_sum_group: i32 = i32(rank_idx) - elements_before_this_sum_group;\n\n    let i_start_for_sum: i32 = max(0, s_sum - i32(max_j_idx));\n    let i_final: u32 = u32(i_start_for_sum + offset_in_sum_group);\n    let j_final: u32 = u32(s_sum - i32(i_final));\n\n    return pack_rc(j_final, i_final);\n}\n\nfn letter_at(idx : u32, wd_len : u32) -> u32 { return select(word[idx], 0xffffffffu, idx >= wd_len); }\n\nconst LIT_ALL : u32 = 0x7ffffffeu;\nconst NEG_BIT : u32 = 1073741824u;\n\nfn encode_pos_literal(A_nt_idx : u32, sigma_token : u32) -> u32 {\n    if (sigma_token == 0xffffffffu) { return 0u; }\n    let ntLen = get_nt_tm_lens(A_nt_idx);\n    let ntOff = get_offsets(A_nt_idx);\n    for (var k : u32 = 0u; k < ntLen; k = k + 1u) {\n        if (get_all_tms(ntOff + k) == sigma_token) { return ((k + 1u) << 1u); }\n    }\n    return 0u;\n}\n\nfn encode_neg_literal(A_nt_idx : u32, sigma_token : u32) -> u32 {\n    var s_is_in_Sigma_A = false;\n    var k_idx_of_s_in_Sigma_A : u32 = 0u;\n    if (sigma_token != 0xffffffffu) {\n        let ntLen = get_nt_tm_lens(A_nt_idx);\n        let ntOff = get_offsets(A_nt_idx);\n        for (var k : u32 = 0u; k < ntLen; k = k + 1u) {\n            if (get_all_tms(ntOff + k) == sigma_token) {\n                s_is_in_Sigma_A = true;\n                k_idx_of_s_in_Sigma_A = k;\n                break;\n            }\n        }\n    }\n    if (s_is_in_Sigma_A) { return NEG_BIT | ((k_idx_of_s_in_Sigma_A + 1u) << 1u); }\n    else { return LIT_ALL; }\n}\n\nconst MAX_J_IDX_CONST : u32 = 5u; // Max index for j (edit distance)\n\n// Let \u03A3_A denote the subset of \u03A3 s.t. for all a \u2208 \u03A3_A \u22A2 (A -> a) \u2208 P\nfn get_nt_tm_lens(nt : u32) -> u32 { return terminals.payload[terminals.nt_tm_lens_offset + nt]; } // |\u03A3_A|\n// Offsets of the nonterminal in the following Map<...> structure\nfn get_offsets(nt : u32) -> u32    { return terminals.payload[terminals.offsets_offset + nt];    } // offset of \u03A3_A\n// Flattened index of Map<NT, List<TM-id>> values\nfn get_all_tms(i : u32) -> u32     { return terminals.payload[terminals.all_tms_offset + i];     } // \u03C3 \u2192 TM\u2011id\n\n@group(0) @binding(0) var<storage, read_write> dp_in : array<u32>;\n@group(0) @binding(1) var<storage, read>        word : array<u32>;\n@group(0) @binding(2) var<storage, read>          cs : CFLStruct;\n@group(0) @binding(3) var<storage, read>   terminals : Terminals;\n\n@compute @workgroup_size(1,1,1) fn main(@builtin(global_invocation_id) gid : vec3<u32>) {\n    let q1_rank = gid.x;\n    let q2_rank = gid.y;\n    let A_idx  = gid.z;\n    let nts = cs.numNonterminals;\n\n    let dpIdx = q1_rank * cs.numStates * nts + q2_rank * nts + A_idx;\n\n    let current_word_len = arrayLength(&word); // Max i is current_word_len (0 to N for string of length N)\n\n    let packed_q1_ji = unrank_to_coords(q1_rank, MAX_J_IDX_CONST, current_word_len);\n    let j1 = unpack_row_j(packed_q1_ji);\n    let i1 = unpack_col_i(packed_q1_ji);\n\n    let packed_q2_ji = unrank_to_coords(q2_rank, MAX_J_IDX_CONST, current_word_len);\n    let j2 = unpack_row_j(packed_q2_ji);\n    let i2 = unpack_col_i(packed_q2_ji);\n\n    let di = i32(i2) - i32(i1);\n    let dj = i32(j2) - i32(j1);\n\n    var encoded_predicate_val : u32 = 0u;\n    var should_write_to_dp_in : bool = false;\n    let num_prods_for_A = get_nt_tm_lens(A_idx);\n    \n    // (1) UP ARC (Insertion): q1=(i,j-1) -> q2=(i,j). Predicate: [!=word[i1]]\n    if (di == 0 && dj == 1) {\n        if (j1 < MAX_J_IDX_CONST && i1 <= current_word_len) {\n            let s_char = letter_at(i1, current_word_len);\n            encoded_predicate_val = encode_neg_literal(A_idx, s_char);\n            if (encoded_predicate_val == LIT_ALL) { should_write_to_dp_in = (num_prods_for_A > 0u); }\n            else if ((encoded_predicate_val & NEG_BIT) != 0u) { should_write_to_dp_in = (num_prods_for_A > 1u); }\n        }\n    }\n    // (2) RIGHT ARC (Match): q1=(i-1,j) -> q2=(i,j). Predicate: word[i1]\n    else if (di == 1 && dj == 0) {\n        if (i1 < current_word_len) {\n            let s_char = letter_at(i1, current_word_len);\n            encoded_predicate_val = encode_pos_literal(A_idx, s_char);\n            if (encoded_predicate_val != 0u) { should_write_to_dp_in = true; }\n        }\n    }\n    // (3) DIAG ARC (Substitution): q1=(i-1,j-1) -> q2=(i,j). Predicate: [!=word[i1]]\n    else if (di == 1 && dj == 1) {\n        if (i1 < current_word_len && j1 < MAX_J_IDX_CONST) {\n            let s_char = letter_at(i1, current_word_len);\n            encoded_predicate_val = encode_neg_literal(A_idx, s_char);\n            if (encoded_predicate_val == LIT_ALL) { should_write_to_dp_in = (num_prods_for_A > 0u); }\n            else if ((encoded_predicate_val & NEG_BIT) != 0u) { should_write_to_dp_in = (num_prods_for_A > 1u); }\n        }\n    }\n    // (4) "KNIGHT" ARC (Deletion): q1=(i,j) -> q2=(i+d+1,j+d). Predicate: word[i1+d]\n    else if (dj >= 1 && di == dj + 1) {\n        let d_val = u32(dj);\n        if (i1 + d_val < current_word_len) {\n            if ( (i1 + d_val + 1u <= current_word_len) && (j1 + d_val <= MAX_J_IDX_CONST) ) {\n                let s_char = letter_at(i1 + d_val, current_word_len);\n                encoded_predicate_val = encode_pos_literal(A_idx, s_char);\n                if (encoded_predicate_val != 0u) { should_write_to_dp_in = true; }\n            }\n        }\n    }\n\n    if (should_write_to_dp_in) { dp_in[dpIdx] = encoded_predicate_val; }\n}');
       dag_reach$delegate = new Shader('struct AtomicChange { count: atomic<u32> };\n@group(0) @binding(0) var<storage, read_write>   input : array<u32>;\n@group(0) @binding(1) var<storage, read_write> changes : AtomicChange;\n\n@compute @workgroup_size(1,1,1) fn main(@builtin(global_invocation_id) gid : vec3<u32>) {\n    let x = gid.x;\n    let y = gid.y;\n    if (x >= y) { return; }\n    let width = u32(sqrt(f32(arrayLength(&input))));\n//    if (x == y) { input[x * width + y] = 1u; atomicAdd(&changes.count, 1u); return; }\n    if (input[x * width + y] == 1u) { atomicAdd(&changes.count, 1u); return; }\n\n    for (var k = 0u; k < width; k = k + 1u) {\n        if (input[x * width + k] == 1u && input[k * width + y] == 1u) {\n            input[x * width + y] = 1u;\n            atomicAdd(&changes.count, 1u);\n            return;\n        }\n    }\n}');
       mdpt_count$delegate = new Shader('struct Uni { n : u32 };\n@group(0) @binding(0) var<storage, read>       reach  : array<u32>;   // N\xD7N upper\u2011tri (0/1)\n@group(0) @binding(1) var<storage, read_write> counts : array<u32>;   // N\xD7N (aoi\u20111 \u2192 #midpts)\n@group(0) @binding(2) var<uniform>             uni    : Uni;\n\n@compute @workgroup_size(1,1,1) fn main(@builtin(global_invocation_id) gid:vec3<u32>) {\n    let r = gid.y;  let c = gid.x;  let N = uni.n;\n    if (r >= N || c >= N || c <= r) { return; }\n\n    let idx = r*N + c;\n    if (reach[idx]==0u) { counts[idx]=0u; return; }\n\n    var cnt = 0u;\n    for (var v=0u; v<N; v++) { if (reach[r*N+v]==1u && reach[v*N+c]==1u) { cnt++; } }\n    counts[idx] = cnt;\n}');
       mdpt_write$delegate = new Shader('struct Uni { n : u32 };\n@group(0) @binding(0) var<storage, read>       reach   : array<u32>;\n@group(0) @binding(1) var<storage, read>       offsets : array<u32>; // exclusive scan of counts\n@group(0) @binding(2) var<storage, read_write> flat_mp : array<u32>; // flattened mid\u2011points\n@group(0) @binding(3) var<uniform>             uni     : Uni;\n\n@compute @workgroup_size(1,1,1) fn main(@builtin(global_invocation_id) gid:vec3<u32>) {\n    let r = gid.y;  let c = gid.x;  let N = uni.n;\n    if (r >= N || c >= N || c <= r) { return; }\n\n    let idx = r*N + c;\n    if (reach[idx]==0u) { return; }\n\n    var out = offsets[idx];\n    for (var v=0u; v<N; v++) { if (reach[r*N+v]==1u && reach[v*N+c]==1u) { flat_mp[out] = v; out++; } }\n}');
       cfl_mul_upper$delegate = new Shader('struct CFLStruct { // Carries metadata about the CFL + NFA intersection\n             numStates : u32,      numNonterminals : u32,\n\n           mdptsOffset : u32,            mdptsSize : u32,\n    mdptsOffsetsOffset : u32,     mdptsOffsetsSize : u32,\n    acceptStatesOffset : u32,     acceptStatesSize : u32,\ngrammarFlattenedOffset : u32, grammarFlattenedSize : u32,\n  grammarOffsetsOffset : u32,   grammarOffsetsSize : u32,\n\n               payload : array<u32>\n};\n\n         fn getMdpt(index: u32) -> u32 { return cs.payload[cs.mdptsOffset + index]; }\n   fn getMdptOffset(index: u32) -> u32 { return cs.payload[cs.mdptsOffsetsOffset + index]; }\nfn getGrammarSymbol(index: u32) -> u32 { return cs.payload[cs.grammarFlattenedOffset + index]; }\nfn getGrammarOffset(index: u32) -> u32 { return cs.payload[cs.grammarOffsetsOffset + index]; }\nstruct AtomicChange { count: atomic<u32> };\n\n@group(0) @binding(0) var<storage, read_write>    dp_in : array<u32>;\n@group(0) @binding(1) var<storage, read>             cs : CFLStruct;\n@group(0) @binding(2) var<storage, read_write>  changes : AtomicChange;\n\n@compute @workgroup_size(1,1,1) fn main(@builtin(global_invocation_id) gid : vec3<u32>) {\n    \nlet r = gid.x;\nlet c = gid.y;\nif (c <= r) { return; }\nlet A = gid.z;\n\nlet N  = cs.numStates;\nlet NT = cs.numNonterminals;\n\nlet snt     = N * NT;\nlet dpIdx   = r*snt + c*NT + A;\nlet startGC = getGrammarOffset(A);\nvar endGC: u32;\nif (A + 1u < NT) { endGC = getGrammarOffset(A + 1u); } else { endGC = cs.grammarFlattenedSize; }\nlet aoi            = r*N + c + 1u;\nlet pairOffset     = getMdptOffset(aoi - 1u);\nvar pairOffsetNext: u32;\nif (aoi < cs.mdptsOffsetsSize) { pairOffsetNext = getMdptOffset(aoi); } \nelse { pairOffsetNext = cs.mdptsSize; }\n\n    \n    let dpVal = dp_in[dpIdx];\n    if (dpVal != 0) {\n        atomicAdd(&changes.count, 1u);\n        if ((dpVal & 0x01) != 0) { return; }\n    }\n\n    for (var pairIdx = pairOffset; pairIdx < pairOffsetNext; pairIdx++) {\n        let mdpt = getMdpt(pairIdx); for (var g = startGC; g < endGC; g+= 2u) {\n            let B = getGrammarSymbol(g); let C = getGrammarSymbol(g + 1u);\n\n            let idxBM = r*snt + mdpt*NT + B;\n            let idxMC = mdpt*snt + c*NT + C;\n\n            if ((dp_in[idxBM] != 0) && (dp_in[idxMC] != 0)) {\n                dp_in[dpIdx] |= 0x01;\n                atomicAdd(&changes.count, 1u);\n                return;\n            }\n        }\n    }\n}');
       bp_count$delegate = new Shader('struct CFLStruct { // Carries metadata about the CFL + NFA intersection\n             numStates : u32,      numNonterminals : u32,\n\n           mdptsOffset : u32,            mdptsSize : u32,\n    mdptsOffsetsOffset : u32,     mdptsOffsetsSize : u32,\n    acceptStatesOffset : u32,     acceptStatesSize : u32,\ngrammarFlattenedOffset : u32, grammarFlattenedSize : u32,\n  grammarOffsetsOffset : u32,   grammarOffsetsSize : u32,\n\n               payload : array<u32>\n};\n\n         fn getMdpt(index: u32) -> u32 { return cs.payload[cs.mdptsOffset + index]; }\n   fn getMdptOffset(index: u32) -> u32 { return cs.payload[cs.mdptsOffsetsOffset + index]; }\nfn getGrammarSymbol(index: u32) -> u32 { return cs.payload[cs.grammarFlattenedOffset + index]; }\nfn getGrammarOffset(index: u32) -> u32 { return cs.payload[cs.grammarOffsetsOffset + index]; }\n@group(0) @binding(0) var<storage, read>           dp_in : array<u32>;\n@group(0) @binding(1) var<storage, read_write>  bp_count : array<u32>;\n@group(0) @binding(2) var<storage, read>              cs : CFLStruct;\n\n@compute @workgroup_size(1,1,1) fn main(@builtin(global_invocation_id) gid : vec3<u32>) {\n    \nlet r = gid.x;\nlet c = gid.y;\nif (c <= r) { return; }\nlet A = gid.z;\n\nlet N  = cs.numStates;\nlet NT = cs.numNonterminals;\n\nlet snt     = N * NT;\nlet dpIdx   = r*snt + c*NT + A;\nlet startGC = getGrammarOffset(A);\nvar endGC: u32;\nif (A + 1u < NT) { endGC = getGrammarOffset(A + 1u); } else { endGC = cs.grammarFlattenedSize; }\nlet aoi            = r*N + c + 1u;\nlet pairOffset     = getMdptOffset(aoi - 1u);\nvar pairOffsetNext: u32;\nif (aoi < cs.mdptsOffsetsSize) { pairOffsetNext = getMdptOffset(aoi); } \nelse { pairOffsetNext = cs.mdptsSize; }\n\n    \n    if ((dp_in[dpIdx] & 0x01u) == 0u) { bp_count[dpIdx] = 0; return; }\n    \n    var count = 0u;\n    for (var pairIdx = pairOffset; pairIdx < pairOffsetNext; pairIdx++) {\n        let mdpt = getMdpt(pairIdx); for (var g = startGC; g < endGC; g+= 2u) {\n            let B = getGrammarSymbol(g);\n            let C = getGrammarSymbol(g + 1u);\n\n            let idxBM = r*snt + mdpt*NT + B;\n            let idxMC = mdpt*snt + c*NT + C;\n\n            if (dp_in[idxBM] != 0u && dp_in[idxMC] != 0u) { count++; }\n        }\n    }\n\n    bp_count[dpIdx] = count;\n}');
       bp_write$delegate = new Shader('struct CFLStruct { // Carries metadata about the CFL + NFA intersection\n             numStates : u32,      numNonterminals : u32,\n\n           mdptsOffset : u32,            mdptsSize : u32,\n    mdptsOffsetsOffset : u32,     mdptsOffsetsSize : u32,\n    acceptStatesOffset : u32,     acceptStatesSize : u32,\ngrammarFlattenedOffset : u32, grammarFlattenedSize : u32,\n  grammarOffsetsOffset : u32,   grammarOffsetsSize : u32,\n\n               payload : array<u32>\n};\n\n         fn getMdpt(index: u32) -> u32 { return cs.payload[cs.mdptsOffset + index]; }\n   fn getMdptOffset(index: u32) -> u32 { return cs.payload[cs.mdptsOffsetsOffset + index]; }\nfn getGrammarSymbol(index: u32) -> u32 { return cs.payload[cs.grammarFlattenedOffset + index]; }\nfn getGrammarOffset(index: u32) -> u32 { return cs.payload[cs.grammarOffsetsOffset + index]; }\n@group(0) @binding(0) var<storage, read>             dp_in : array<u32>;\n@group(0) @binding(1) var<storage, read_write>   bp_offset : array<u32>;\n@group(0) @binding(2) var<storage, read_write>  bp_storage : array<u32>;\n@group(0) @binding(3) var<storage, read>                cs : CFLStruct;\n\n@compute @workgroup_size(1,1,1) fn main(@builtin(global_invocation_id) gid: vec3<u32>) {\n    \nlet r = gid.x;\nlet c = gid.y;\nif (c <= r) { return; }\nlet A = gid.z;\n\nlet N  = cs.numStates;\nlet NT = cs.numNonterminals;\n\nlet snt     = N * NT;\nlet dpIdx   = r*snt + c*NT + A;\nlet startGC = getGrammarOffset(A);\nvar endGC: u32;\nif (A + 1u < NT) { endGC = getGrammarOffset(A + 1u); } else { endGC = cs.grammarFlattenedSize; }\nlet aoi            = r*N + c + 1u;\nlet pairOffset     = getMdptOffset(aoi - 1u);\nvar pairOffsetNext: u32;\nif (aoi < cs.mdptsOffsetsSize) { pairOffsetNext = getMdptOffset(aoi); } \nelse { pairOffsetNext = cs.mdptsSize; }\n\n    \n    if ((dp_in[dpIdx] & 0x01u) == 0u) { return; }\n\n    var outPos = bp_offset[dpIdx];\n\n    for (var pairIdx = pairOffset; pairIdx < pairOffsetNext; pairIdx = pairIdx + 1u) {\n        let mdpt = getMdpt(pairIdx); for (var g = startGC; g < endGC; g += 2u) {\n            let B = getGrammarSymbol(g);\n            let C = getGrammarSymbol(g + 1u);\n\n            let idxBM = r*snt + mdpt*NT + B;\n            let idxMC = mdpt*snt + c*NT + C;\n\n            if (dp_in[idxBM] != 0u && dp_in[idxMC] != 0u) {\n                bp_storage[outPos * 2u + 0u] = idxBM;\n                bp_storage[outPos * 2u + 1u] = idxMC;\n                outPos++;\n            }\n        }\n    }\n}');
-      ls_dense$delegate = new Shader('struct CFLStruct { // Carries metadata about the CFL + NFA intersection\n             numStates : u32,      numNonterminals : u32,\n\n           mdptsOffset : u32,            mdptsSize : u32,\n    mdptsOffsetsOffset : u32,     mdptsOffsetsSize : u32,\n    acceptStatesOffset : u32,     acceptStatesSize : u32,\ngrammarFlattenedOffset : u32, grammarFlattenedSize : u32,\n  grammarOffsetsOffset : u32,   grammarOffsetsSize : u32,\n\n               payload : array<u32>\n};\n\n         fn getMdpt(index: u32) -> u32 { return cs.payload[cs.mdptsOffset + index]; }\n   fn getMdptOffset(index: u32) -> u32 { return cs.payload[cs.mdptsOffsetsOffset + index]; }\nfn getGrammarSymbol(index: u32) -> u32 { return cs.payload[cs.grammarFlattenedOffset + index]; }\nfn getGrammarOffset(index: u32) -> u32 { return cs.payload[cs.grammarOffsetsOffset + index]; } \nstruct Terminals { // Mappings from nonterminals to terminals in CFG\n    nt_tm_lens_offset : u32,    nt_tm_lens_size : u32,\n       offsets_offset : u32,       offsets_size : u32,\n       all_tms_offset : u32,       all_tms_size : u32,\n       \n       payload : array<u32>\n};\n\nstruct IndexUniforms {  // Indices of all accepting states in the parse chart\n    targetCnt       : atomic<u32>,  // global counter (LFSR advances on host)\n    maxWordLen      : u32,\n    numNonterminals : u32,\n    numStates       : u32,\n    \n    startIdxOffset  : u32, numStartIndices : u32,\n    startIndices    : array<u32> // Contains alternating (1) start index and (2) edit distance\n};\nstruct SpanUni { span : u32 };\n@group(0) @binding(0) var<storage, read>           dp_in : array<u32>;\n@group(0) @binding(1) var<storage, read_write>  ls_dense : array<u32>;\n@group(0) @binding(2) var<storage, read>              cs : CFLStruct;\n@group(0) @binding(3) var<storage, read>       terminals : Terminals;\n@group(0) @binding(4) var<uniform>                    su : SpanUni;\n\n// Let \u03A3_A denote the subset of \u03A3 s.t. for all a \u2208 \u03A3_A \u22A2 (A -> a) \u2208 P\nfn get_nt_tm_lens(nt : u32) -> u32 { return terminals.payload[terminals.nt_tm_lens_offset + nt]; } // |\u03A3_A|\n\n@compute @workgroup_size(1,1,1) fn main(@builtin(global_invocation_id) gid : vec3<u32>) {\n    let r = gid.x;\n    let c = r + su.span;\n    if (c >= cs.numStates) { return; }\n    let A = gid.z;\n    \n    \nlet N  = cs.numStates;\nlet NT = cs.numNonterminals;\n\nlet snt     = N * NT;\nlet dpIdx   = r*snt + c*NT + A;\nlet startGC = getGrammarOffset(A);\nvar endGC: u32;\nif (A + 1u < NT) { endGC = getGrammarOffset(A + 1u); } else { endGC = cs.grammarFlattenedSize; }\nlet aoi            = r*N + c + 1u;\nlet pairOffset     = getMdptOffset(aoi - 1u);\nvar pairOffsetNext: u32;\nif (aoi < cs.mdptsOffsetsSize) { pairOffsetNext = getMdptOffset(aoi); } \nelse { pairOffsetNext = cs.mdptsSize; }\n\n    \n    let val = dp_in[dpIdx];\n    if (val == 0u) { return; }\n\n    let hasLiteral = ((val >> 1u) != 0u);           // bit\u2011packed literal present?\n    let negLit     = (val & 1073741824u) != 0u;     // negative\u2011literal flag\n    let litCount   =\n        select(0u,\n            select(1u,                                // positive literal \u21D2 exactly 1\n                    max(1u, get_nt_tm_lens(A) - 1u),  // negative \u21D2 |\u03A3_A|\u20111\n                    negLit),\n            hasLiteral);\n\n    if ((val & 0x01u) == 0u) { ls_dense[dpIdx] = max(litCount, 1u); return; }\n\n    var total: u32 = litCount;\n\n    for (var p = pairOffset; p < pairOffsetNext; p = p + 1u) {\n        let m = getMdpt(p);\n\n        for (var g = startGC; g < endGC; g = g + 2u) {\n            let B = getGrammarSymbol(g);\n            let C = getGrammarSymbol(g + 1u);\n\n            let idxBM = r*snt + m*NT + B;\n            let idxMC = m*snt + c*NT + C;\n\n            // only add if both children are present\n            if (dp_in[idxBM] != 0u && dp_in[idxMC] != 0u) { total += ls_dense[idxBM] * ls_dense[idxMC]; }\n        }\n    }\n    ls_dense[dpIdx] = max(total, 1u);  // total==0 should not happen, but guard anyway\n}');
-      ls_cdf$delegate = new Shader('struct CFLStruct { // Carries metadata about the CFL + NFA intersection\n             numStates : u32,      numNonterminals : u32,\n\n           mdptsOffset : u32,            mdptsSize : u32,\n    mdptsOffsetsOffset : u32,     mdptsOffsetsSize : u32,\n    acceptStatesOffset : u32,     acceptStatesSize : u32,\ngrammarFlattenedOffset : u32, grammarFlattenedSize : u32,\n  grammarOffsetsOffset : u32,   grammarOffsetsSize : u32,\n\n               payload : array<u32>\n};\n\n         fn getMdpt(index: u32) -> u32 { return cs.payload[cs.mdptsOffset + index]; }\n   fn getMdptOffset(index: u32) -> u32 { return cs.payload[cs.mdptsOffsetsOffset + index]; }\nfn getGrammarSymbol(index: u32) -> u32 { return cs.payload[cs.grammarFlattenedOffset + index]; }\nfn getGrammarOffset(index: u32) -> u32 { return cs.payload[cs.grammarOffsetsOffset + index]; } \nstruct Terminals { // Mappings from nonterminals to terminals in CFG\n    nt_tm_lens_offset : u32,    nt_tm_lens_size : u32,\n       offsets_offset : u32,       offsets_size : u32,\n       all_tms_offset : u32,       all_tms_size : u32,\n       \n       payload : array<u32>\n};\n\nstruct IndexUniforms {  // Indices of all accepting states in the parse chart\n    targetCnt       : atomic<u32>,  // global counter (LFSR advances on host)\n    maxWordLen      : u32,\n    numNonterminals : u32,\n    numStates       : u32,\n    \n    startIdxOffset  : u32, numStartIndices : u32,\n    startIndices    : array<u32> // Contains alternating (1) start index and (2) edit distance\n};\n@group(0) @binding(0) var<storage, read>             dp_in : array<u32>;\n@group(0) @binding(1) var<storage, read>          ls_dense : array<u32>;\n@group(0) @binding(2) var<storage, read>         bp_offset : array<u32>;\n@group(0) @binding(3) var<storage, read_write>   ls_sparse : array<u32>;\n@group(0) @binding(4) var<storage, read>                cs : CFLStruct;\n@group(0) @binding(5) var<storage, read>         terminals : Terminals;\n\n// Let \u03A3_A denote the subset of \u03A3 s.t. for all a \u2208 \u03A3_A \u22A2 (A -> a) \u2208 P\nfn get_nt_tm_lens(nt : u32) -> u32 { return terminals.payload[terminals.nt_tm_lens_offset + nt]; } // |\u03A3_A|\n\n@compute @workgroup_size(1,1,1) fn main(@builtin(global_invocation_id) gid : vec3<u32>) {\n    \nlet r = gid.x;\nlet c = gid.y;\nif (c <= r) { return; }\nlet A = gid.z;\n\nlet N  = cs.numStates;\nlet NT = cs.numNonterminals;\n\nlet snt     = N * NT;\nlet dpIdx   = r*snt + c*NT + A;\nlet startGC = getGrammarOffset(A);\nvar endGC: u32;\nif (A + 1u < NT) { endGC = getGrammarOffset(A + 1u); } else { endGC = cs.grammarFlattenedSize; }\nlet aoi            = r*N + c + 1u;\nlet pairOffset     = getMdptOffset(aoi - 1u);\nvar pairOffsetNext: u32;\nif (aoi < cs.mdptsOffsetsSize) { pairOffsetNext = getMdptOffset(aoi); } \nelse { pairOffsetNext = cs.mdptsSize; }\n\n\n    let val = dp_in[dpIdx];\n    if (val == 0u) { return; }\n\n    var acc    : u32 = 0u;\n    var outPos : u32 = bp_offset[dpIdx];\n    \n    let hasLiteral = ((val >> 1u) != 0u);           // bit\u2011packed literal present?\n    let negLit     = (val & 1073741824u) != 0u;     // negative\u2011literal flag \n    let litCount   = select(0u,\n                            select(1u,                               // positive literal \u21D2 exactly 1\n                                    max(1u, get_nt_tm_lens(A) - 1u), // negative \u21D2 |\u03A3_A|\u20111\n                                    negLit),\n                            hasLiteral);\n\n    for (var p = pairOffset; p < pairOffsetNext; p = p + 1u) {\n        let m = getMdpt(p);\n\n        for (var g = startGC; g < endGC; g = g + 2u) {\n            let B = getGrammarSymbol(g);\n            let C = getGrammarSymbol(g + 1u);\n\n            let idxBM = r*snt + m*NT + B;\n            let idxMC = m*snt + c*NT + C;\n\n            if (dp_in[idxBM] != 0u && dp_in[idxMC] != 0u) {\n                acc += ls_dense[idxBM] * ls_dense[idxMC];\n                ls_sparse[outPos] = acc + litCount;\n                outPos += 1u;\n            }\n        }\n    }\n}');
+      ls_dense$delegate = new Shader('struct CFLStruct { // Carries metadata about the CFL + NFA intersection\n             numStates : u32,      numNonterminals : u32,\n\n           mdptsOffset : u32,            mdptsSize : u32,\n    mdptsOffsetsOffset : u32,     mdptsOffsetsSize : u32,\n    acceptStatesOffset : u32,     acceptStatesSize : u32,\ngrammarFlattenedOffset : u32, grammarFlattenedSize : u32,\n  grammarOffsetsOffset : u32,   grammarOffsetsSize : u32,\n\n               payload : array<u32>\n};\n\n         fn getMdpt(index: u32) -> u32 { return cs.payload[cs.mdptsOffset + index]; }\n   fn getMdptOffset(index: u32) -> u32 { return cs.payload[cs.mdptsOffsetsOffset + index]; }\nfn getGrammarSymbol(index: u32) -> u32 { return cs.payload[cs.grammarFlattenedOffset + index]; }\nfn getGrammarOffset(index: u32) -> u32 { return cs.payload[cs.grammarOffsetsOffset + index]; } \nstruct Terminals { // Mappings from nonterminals to terminals in CFG\n    nt_tm_lens_offset : u32,    nt_tm_lens_size : u32,\n       offsets_offset : u32,       offsets_size : u32,\n       all_tms_offset : u32,       all_tms_size : u32,\n       \n       payload : array<u32>\n};\n\nstruct IndexUniforms {  // Indices of all accepting states in the parse chart\n    targetCnt       : atomic<u32>,  // global counter (LFSR advances on host)\n    maxWordLen      : u32,\n    numNonterminals : u32,\n    numStates       : u32,\n    grid_dim_x      : u32,\n    max_samples     : u32,\n    \n    startIdxOffset  : u32, numStartIndices : u32,\n    startIndices    : array<u32> // Contains alternating (1) start index and (2) edit distance\n};\nstruct SpanUni { span : u32 };\n@group(0) @binding(0) var<storage, read>           dp_in : array<u32>;\n@group(0) @binding(1) var<storage, read_write>  ls_dense : array<u32>;\n@group(0) @binding(2) var<storage, read>              cs : CFLStruct;\n@group(0) @binding(3) var<storage, read>       terminals : Terminals;\n@group(0) @binding(4) var<uniform>                    su : SpanUni;\n\n// Let \u03A3_A denote the subset of \u03A3 s.t. for all a \u2208 \u03A3_A \u22A2 (A -> a) \u2208 P\nfn get_nt_tm_lens(nt : u32) -> u32 { return terminals.payload[terminals.nt_tm_lens_offset + nt]; } // |\u03A3_A|\n\n@compute @workgroup_size(1,1,1) fn main(@builtin(global_invocation_id) gid : vec3<u32>) {\n    let r = gid.x;\n    let c = r + su.span;\n    if (c >= cs.numStates) { return; }\n    let A = gid.z;\n    \n    \nlet N  = cs.numStates;\nlet NT = cs.numNonterminals;\n\nlet snt     = N * NT;\nlet dpIdx   = r*snt + c*NT + A;\nlet startGC = getGrammarOffset(A);\nvar endGC: u32;\nif (A + 1u < NT) { endGC = getGrammarOffset(A + 1u); } else { endGC = cs.grammarFlattenedSize; }\nlet aoi            = r*N + c + 1u;\nlet pairOffset     = getMdptOffset(aoi - 1u);\nvar pairOffsetNext: u32;\nif (aoi < cs.mdptsOffsetsSize) { pairOffsetNext = getMdptOffset(aoi); } \nelse { pairOffsetNext = cs.mdptsSize; }\n\n    \n    let val = dp_in[dpIdx];\n    if (val == 0u) { return; }\n\n    let hasLiteral = ((val >> 1u) != 0u);           // bit\u2011packed literal present?\n    let negLit     = (val & 1073741824u) != 0u;     // negative\u2011literal flag\n    let litCount   =\n        select(0u,\n            select(1u,                                // positive literal \u21D2 exactly 1\n                    max(1u, get_nt_tm_lens(A) - 1u),  // negative \u21D2 |\u03A3_A|\u20111\n                    negLit),\n            hasLiteral);\n\n    if ((val & 0x01u) == 0u) { ls_dense[dpIdx] = max(litCount, 1u); return; }\n\n    var total: u32 = litCount;\n\n    for (var p = pairOffset; p < pairOffsetNext; p = p + 1u) {\n        let m = getMdpt(p);\n\n        for (var g = startGC; g < endGC; g = g + 2u) {\n            let B = getGrammarSymbol(g);\n            let C = getGrammarSymbol(g + 1u);\n\n            let idxBM = r*snt + m*NT + B;\n            let idxMC = m*snt + c*NT + C;\n\n            // only add if both children are present\n            if (dp_in[idxBM] != 0u && dp_in[idxMC] != 0u) { total += ls_dense[idxBM] * ls_dense[idxMC]; }\n        }\n    }\n    ls_dense[dpIdx] = max(total, 1u);  // total==0 should not happen, but guard anyway\n}');
+      ls_cdf$delegate = new Shader('struct CFLStruct { // Carries metadata about the CFL + NFA intersection\n             numStates : u32,      numNonterminals : u32,\n\n           mdptsOffset : u32,            mdptsSize : u32,\n    mdptsOffsetsOffset : u32,     mdptsOffsetsSize : u32,\n    acceptStatesOffset : u32,     acceptStatesSize : u32,\ngrammarFlattenedOffset : u32, grammarFlattenedSize : u32,\n  grammarOffsetsOffset : u32,   grammarOffsetsSize : u32,\n\n               payload : array<u32>\n};\n\n         fn getMdpt(index: u32) -> u32 { return cs.payload[cs.mdptsOffset + index]; }\n   fn getMdptOffset(index: u32) -> u32 { return cs.payload[cs.mdptsOffsetsOffset + index]; }\nfn getGrammarSymbol(index: u32) -> u32 { return cs.payload[cs.grammarFlattenedOffset + index]; }\nfn getGrammarOffset(index: u32) -> u32 { return cs.payload[cs.grammarOffsetsOffset + index]; } \nstruct Terminals { // Mappings from nonterminals to terminals in CFG\n    nt_tm_lens_offset : u32,    nt_tm_lens_size : u32,\n       offsets_offset : u32,       offsets_size : u32,\n       all_tms_offset : u32,       all_tms_size : u32,\n       \n       payload : array<u32>\n};\n\nstruct IndexUniforms {  // Indices of all accepting states in the parse chart\n    targetCnt       : atomic<u32>,  // global counter (LFSR advances on host)\n    maxWordLen      : u32,\n    numNonterminals : u32,\n    numStates       : u32,\n    grid_dim_x      : u32,\n    max_samples     : u32,\n    \n    startIdxOffset  : u32, numStartIndices : u32,\n    startIndices    : array<u32> // Contains alternating (1) start index and (2) edit distance\n};\n@group(0) @binding(0) var<storage, read>             dp_in : array<u32>;\n@group(0) @binding(1) var<storage, read>          ls_dense : array<u32>;\n@group(0) @binding(2) var<storage, read>         bp_offset : array<u32>;\n@group(0) @binding(3) var<storage, read_write>   ls_sparse : array<u32>;\n@group(0) @binding(4) var<storage, read>                cs : CFLStruct;\n@group(0) @binding(5) var<storage, read>         terminals : Terminals;\n\n// Let \u03A3_A denote the subset of \u03A3 s.t. for all a \u2208 \u03A3_A \u22A2 (A -> a) \u2208 P\nfn get_nt_tm_lens(nt : u32) -> u32 { return terminals.payload[terminals.nt_tm_lens_offset + nt]; } // |\u03A3_A|\n\n@compute @workgroup_size(1,1,1) fn main(@builtin(global_invocation_id) gid : vec3<u32>) {\n    \nlet r = gid.x;\nlet c = gid.y;\nif (c <= r) { return; }\nlet A = gid.z;\n\nlet N  = cs.numStates;\nlet NT = cs.numNonterminals;\n\nlet snt     = N * NT;\nlet dpIdx   = r*snt + c*NT + A;\nlet startGC = getGrammarOffset(A);\nvar endGC: u32;\nif (A + 1u < NT) { endGC = getGrammarOffset(A + 1u); } else { endGC = cs.grammarFlattenedSize; }\nlet aoi            = r*N + c + 1u;\nlet pairOffset     = getMdptOffset(aoi - 1u);\nvar pairOffsetNext: u32;\nif (aoi < cs.mdptsOffsetsSize) { pairOffsetNext = getMdptOffset(aoi); } \nelse { pairOffsetNext = cs.mdptsSize; }\n\n\n    let val = dp_in[dpIdx];\n    if (val == 0u) { return; }\n\n    var acc    : u32 = 0u;\n    var outPos : u32 = bp_offset[dpIdx];\n    \n    let hasLiteral = ((val >> 1u) != 0u);           // bit\u2011packed literal present?\n    let negLit     = (val & 1073741824u) != 0u;     // negative\u2011literal flag \n    let litCount   = select(0u,\n                            select(1u,                               // positive literal \u21D2 exactly 1\n                                    max(1u, get_nt_tm_lens(A) - 1u), // negative \u21D2 |\u03A3_A|\u20111\n                                    negLit),\n                            hasLiteral);\n\n    for (var p = pairOffset; p < pairOffsetNext; p = p + 1u) {\n        let m = getMdpt(p);\n\n        for (var g = startGC; g < endGC; g = g + 2u) {\n            let B = getGrammarSymbol(g);\n            let C = getGrammarSymbol(g + 1u);\n\n            let idxBM = r*snt + m*NT + B;\n            let idxMC = m*snt + c*NT + C;\n\n            if (dp_in[idxBM] != 0u && dp_in[idxMC] != 0u) {\n                acc += ls_dense[idxBM] * ls_dense[idxMC];\n                ls_sparse[outPos] = acc + litCount;\n                outPos += 1u;\n            }\n        }\n    }\n}');
       prefix_sum_p1$delegate = new Shader('struct PrefixSumUni { n : u32, numBlocks : u32, groupsX : u32 };\n@group(0) @binding(0) var<storage, read>         inputBuf : array<u32>;\n@group(0) @binding(1) var<storage, read_write>  outputBuf : array<u32>;\n@group(0) @binding(2) var<storage, read_write>  blockSums : array<u32>;\n@group(0) @binding(3) var<uniform>              prefixUni : PrefixSumUni;\n\nconst WORKGROUP_SIZE: u32 = 256u;\n\nvar<workgroup> tile: array<u32, WORKGROUP_SIZE>;\n\n@compute @workgroup_size(WORKGROUP_SIZE) fn main(\n  @builtin(workgroup_id)        groupId : vec3<u32>,\n  @builtin(local_invocation_id) localId : vec3<u32>\n) {\n    let N       = prefixUni.n;\n    let block = groupId.x + groupId.y * prefixUni.groupsX;\n    if (block >= prefixUni.numBlocks) { return; }\n    \n    let lid  = localId.x;\n    let gid  = block * WORKGROUP_SIZE + lid;   // global element index\n\n    // 1) Load data from inputBuf into shared workgroup array `tile`.\n    if (gid < N) { tile[lid] = inputBuf[gid]; } else { tile[lid] = 0u; }\n    workgroupBarrier();\n\n    // 2) Up-sweep: build partial sums in place.\n    //    Offsets go 1, 2, 4, 8, ...\n    var offset = 1u;\n    while (offset < WORKGROUP_SIZE) {\n        // index = (lid+1)*offset*2 - 1\n        let idx = ((lid + 1u) * offset * 2u) - 1u;\n        if (idx < WORKGROUP_SIZE) { tile[idx] = tile[idx] + tile[idx - offset]; }\n        workgroupBarrier();\n        offset = offset * 2u;\n    }\n\n    // 3) The last element of `tile` now has the total sum of this block.\n    //    Save that to blockSums, then zero it out so this becomes an EXCLUSIVE scan.\n    if (lid == 0u) {\n        blockSums[block] = tile[WORKGROUP_SIZE - 1u];\n        tile[WORKGROUP_SIZE - 1u] = 0u;\n    }\n    workgroupBarrier();\n\n    // 4) Down-sweep: push each partial sum back down the tree to build the exclusive scan.\n    //    Offsets go (256 >> 1), (256 >> 2), ...\n    offset = WORKGROUP_SIZE / 2u;\n    while (offset > 0u) {\n        let idx = ((lid + 1u) * offset * 2u) - 1u;\n        if (idx < WORKGROUP_SIZE) {\n            let tmp = tile[idx - offset];\n            tile[idx - offset] = tile[idx];\n            tile[idx] = tile[idx] + tmp;\n        }\n        workgroupBarrier();\n        offset = offset / 2u;\n    }\n\n    // 5) Write the per-element results back out to outputBuf.\n    if (gid < N) { outputBuf[gid] = tile[lid]; }\n}');
       prefix_sum_p2$delegate = new Shader('struct PrefixSumUni { n : u32, numBlocks : u32, groupsX : u32 };\n@group(0) @binding(0) var<storage, read_write>          dataBuf : array<u32>;\n@group(0) @binding(1) var<storage, read>       scannedBlockSums : array<u32>;\n@group(0) @binding(2) var<uniform>                    prefixUni : PrefixSumUni;\n\n@compute @workgroup_size(256) fn main(\n    @builtin(workgroup_id)        groupId : vec3<u32>,\n    @builtin(local_invocation_id) localId : vec3<u32>\n) {\n    let block = groupId.x + groupId.y * prefixUni.groupsX;\n    if (block >= prefixUni.numBlocks) { return; }\n\n    let gid = block * 256u + localId.x;\n    if (gid >= prefixUni.n) { return; }\n\n    let offset = scannedBlockSums[block];\n    dataBuf[gid] = dataBuf[gid] + offset;\n}');
       SENTINEL = _UInt___init__impl__l7qpdl(-1);
       HASH_MUL = _UInt___init__impl__l7qpdl(506832829);
-      sample_words_wor$delegate = new Shader('\nstruct Terminals { // Mappings from nonterminals to terminals in CFG\n    nt_tm_lens_offset : u32,    nt_tm_lens_size : u32,\n       offsets_offset : u32,       offsets_size : u32,\n       all_tms_offset : u32,       all_tms_size : u32,\n       \n       payload : array<u32>\n};\n\nstruct IndexUniforms {  // Indices of all accepting states in the parse chart\n    targetCnt       : atomic<u32>,  // global counter (LFSR advances on host)\n    maxWordLen      : u32,\n    numNonterminals : u32,\n    numStates       : u32,\n    \n    startIdxOffset  : u32, numStartIndices : u32,\n    startIndices    : array<u32> // Contains alternating (1) start index and (2) edit distance\n};\n@group(0) @binding(0) var<storage, read>              dp_in : array<u32>;\n@group(0) @binding(1) var<storage, read>           bp_count : array<u32>;\n@group(0) @binding(2) var<storage, read>          bp_offset : array<u32>;\n@group(0) @binding(3) var<storage, read>         bp_storage : array<u32>;\n@group(0) @binding(4) var<storage, read_write> sampledWords : array<u32>;\n@group(0) @binding(5) var<storage, read>          terminals : Terminals;\n@group(0) @binding(6) var<storage, read_write>      idx_uni : IndexUniforms;\n@group(0) @binding(7) var<storage, read>          ls_sparse : array<u32>;\n\n/* ----------------------------- helpers ------------------------------------------ */\nfn getStartIdx(i : u32) -> u32 { return idx_uni.startIndices[i * 2]; }\nfn getEditDist(i : u32) -> u32 { return idx_uni.startIndices[i * 2 + 1]; }\n// Let \u03A3_A denote the subset of \u03A3 s.t. for all a \u2208 \u03A3_A \u22A2 (A -> a) \u2208 P\nfn get_nt_tm_lens(nt : u32) -> u32 { return terminals.payload[terminals.nt_tm_lens_offset + nt]; } // |\u03A3_A|\n// Offsets of the nonterminal in the following Map<...> structure\nfn get_offsets(nt : u32) -> u32    { return terminals.payload[terminals.offsets_offset + nt];    } // offset of \u03A3_A\n// Flattened index of Map<NT, List<TM-id>> values\nfn get_all_tms(i : u32) -> u32     { return terminals.payload[terminals.all_tms_offset + i];     } // \u03C3 \u2192 TM\u2011id\n\nfn binarySearchCDF(base: u32, len: u32, needle: u32) -> u32 {\n    var lo: u32 = 0u;\n    var hi: u32 = len;\n    loop {\n        if (lo >= hi) { return base + lo; }\n        let mid = (lo + hi) >> 1u;\n        if (needle < ls_sparse[base + mid]) { hi = mid; } else { lo = mid + 1u; }\n    }\n}\n\n/* ---------- size of the language rooted at any DP\u2011cell ------------------------- */\nfn langSize(dpIdx : u32) -> u32 {\n    /* literal domain */\n    let val    = dp_in[dpIdx];\n    let hasLit = ((val >> 1u) != 0u);\n    let negLit = (val & 1073741824u) != 0u;\n    let litCnt =\n        select(0u,\n               select(1u,\n                      max(1u, get_nt_tm_lens(dpIdx % idx_uni.numNonterminals) - 1u),\n                      negLit),\n               hasLit);\n\n    /* expansion domain */\n    let expCnt = bp_count[dpIdx];\n    if (expCnt == 0u) { return litCnt; }\n\n    let base   = bp_offset[dpIdx];\n    let cdfLast = ls_sparse[base + expCnt - 1u];   // inclusive CDF\n    return litCnt + cdfLast;\n}\n\n/* ---------- literal decoder ----------------------------------------------------- */\nfn decodeLiteral(\n    nt          : u32,   // non\u2011terminal\n    litEnc      : u32,   // encoded literal (1\u2011based)\n    negLit      : bool,  // negative\u2011literal flag\n    variant     : u32,   // rank inside the literal domain\n    word        : ptr<function, array<u32, 512>>,\n    wordLen     : ptr<function, u32>\n) {\n    let numTms = get_nt_tm_lens(nt);\n    let ntOff  = get_offsets(nt);\n\n    if (negLit) { // choose any terminal \u2260 (litEnc\u20111)\n        let excl = litEnc - 1u;\n        let idx  = select(variant, variant + 1u, variant >= excl);\n        (*word)[*wordLen] = get_all_tms(ntOff + idx) + 1u;\n    } else {      // positive literal \u2192 single choice\n        (*word)[*wordLen] = get_all_tms(ntOff + (litEnc - 1u)) + 1u;\n    }\n    *wordLen = *wordLen + 1u;\n}\n\n/* ---------- stack frame --------------------------------------------------------- */\nstruct Frame { dp : u32, rk : u32 };\n\nfn lcg_permute(x : u32) -> u32 { return 1664525u * x + 1013904223u; }\n\nfn lcg_rand(stateRef: ptr<function, u32>, range: u32) -> u32 { \n  let newVal = (1664525u * (*stateRef)) + 1013904223u;\n  *stateRef = newVal;\n  return select(newVal % range, 0u, range == 0u); \n}\n\nfn min_u32(a: u32, b: u32) -> u32 { return select(a, b, a > b); }\n\n/* ---------- temperature knob ---------------------------------------------------- */\nconst TEMPERATURE : f32 = 1.1; // 1.0 = unmodified;  \u221E \u2248 uniform\nfn weight(sz: u32) -> u32 { return max(1u, u32(pow(f32(sz), 1.0 / TEMPERATURE))); }\n/* -------------------------------------------------------------------------------- */\n\n@compute @workgroup_size(1) fn main(@builtin(global_invocation_id) gid : vec3<u32>) {\n    /* ---- unique global rank ---------------------------------------------------- */\n//    let seqId : u32 = atomicAdd(&idx_uni.targetCnt, 1u);\n    let gRank : u32 = gid.x; //lcg_permute(seqId + 0x9E3779B9u * gid.x);\n\n    let numStartIdxs = idx_uni.numStartIndices / 2u;\n    \n    /* ---- total tempered weight over all accepting states ----------------------- */\n    var total : u32 = 0u;\n    for (var i = 0u; i < numStartIdxs; i = i + 1u) { total += weight(langSize(getStartIdx(i))); }\n    var rank : u32 = gRank % total;\n\n    /* ---- pick a root in proportion to its tempered weight ---------------------- */\n    var rootIdx : u32 = 0u;\n    var levDist : u32 = 0u;\n    for (var i = 0u; i < numStartIdxs; i = i + 1u) {\n        let w = weight(langSize(getStartIdx(i)));\n        if (rank < w) { rootIdx = getStartIdx(i); levDist = getEditDist(i); break; }\n        rank -= w;\n    }\n    \n    /* ---- DFS stack ------------------------------------------------------------- */\n    var stack : array<Frame, 512>;\n    var top   : u32 = 0u;\n    stack[top] = Frame(rootIdx, rank);   top++;\n\n    var word  : array<u32, 512>;\n    var wLen  : u32 = 0u;\n\n    /* ---------------- depth\u2011first enumeration without replacement --------------- */\n    loop {\n        if (top == 0u) { break; }\n        top = top - 1u;\n        var fr     = stack[top];\n        var dpIdx  = fr.dp;\n        var rk     = fr.rk;\n\n        /* --- literal vs expansion ---------------------------------------------- */\n        let val      = dp_in[dpIdx];\n        let hasLit   = ((val >> 1u) != 0u);\n        let negLit   = (val & 1073741824u) != 0u;\n        let litCnt   =\n            select(0u,\n                   select(1u,                     // positive\n                          max(1u, get_nt_tm_lens(dpIdx % idx_uni.numNonterminals) - 1u),\n                          negLit),\n                   hasLit);\n\n        let expCnt   = bp_count[dpIdx];\n        let base     = bp_offset[dpIdx];\n        let totSize  = litCnt + select(0u, ls_sparse[base + expCnt - 1u], expCnt != 0u);\n\n        rk = rk % totSize;                     // residual rank at this node\n\n        /* --- literal branch ----------------------------------------------------- */\n        if (rk < litCnt) {\n            decodeLiteral(dpIdx % idx_uni.numNonterminals, (val >> 1u) & 0x1fffffffu, negLit, rk, &word, &wLen);\n            continue;\n        }\n        rk = rk - litCnt;                      // shift into expansion domain\n\n        /* --- expansion branch --------------------------------------------------- */\n        let choiceIdx   = binarySearchCDF(base, expCnt, rk);\n        let prevCDF     = select(0u, ls_sparse[choiceIdx - 1u], choiceIdx != base);\n        let insidePair  = rk - prevCDF;\n\n        let idxBM = bp_storage[2u*choiceIdx + 0u];\n        let idxMC = bp_storage[2u*choiceIdx + 1u];\n\n        let sizeC = langSize(idxMC);           // |L(C)|\n        let rkB   = insidePair / sizeC;        // quotient  \u2192 rank for B\n        let rkC   = insidePair % sizeC;        // remainder \u2192 rank for C\n\n        /* push right child first so left child is processed first (DFS order) */\n        stack[top] = Frame(idxMC, rkC); top++;\n        stack[top] = Frame(idxBM, rkB); top++;\n    }\n\n    /* ---- write the resulting word to the output buffer ------------------------- */\n    let outBase = gid.x * idx_uni.maxWordLen;\n    sampledWords[outBase] = levDist;\n    for (var i = 0u; i < wLen; i++) { sampledWords[outBase + i + 2u] = word[i]; }\n}');
+      sample_words_wor$delegate = new Shader('\nstruct Terminals { // Mappings from nonterminals to terminals in CFG\n    nt_tm_lens_offset : u32,    nt_tm_lens_size : u32,\n       offsets_offset : u32,       offsets_size : u32,\n       all_tms_offset : u32,       all_tms_size : u32,\n       \n       payload : array<u32>\n};\n\nstruct IndexUniforms {  // Indices of all accepting states in the parse chart\n    targetCnt       : atomic<u32>,  // global counter (LFSR advances on host)\n    maxWordLen      : u32,\n    numNonterminals : u32,\n    numStates       : u32,\n    grid_dim_x      : u32,\n    max_samples     : u32,\n    \n    startIdxOffset  : u32, numStartIndices : u32,\n    startIndices    : array<u32> // Contains alternating (1) start index and (2) edit distance\n};\n@group(0) @binding(0) var<storage, read>              dp_in : array<u32>;\n@group(0) @binding(1) var<storage, read>           bp_count : array<u32>;\n@group(0) @binding(2) var<storage, read>          bp_offset : array<u32>;\n@group(0) @binding(3) var<storage, read>         bp_storage : array<u32>;\n@group(0) @binding(4) var<storage, read_write> sampledWords : array<u32>;\n@group(0) @binding(5) var<storage, read>          terminals : Terminals;\n@group(0) @binding(6) var<storage, read_write>      idx_uni : IndexUniforms;\n@group(0) @binding(7) var<storage, read>          ls_sparse : array<u32>;\n\n/* ----------------------------- helpers ------------------------------------------ */\nfn getStartIdx(i : u32) -> u32 { return idx_uni.startIndices[i * 2]; }\nfn getEditDist(i : u32) -> u32 { return idx_uni.startIndices[i * 2 + 1]; }\n// Let \u03A3_A denote the subset of \u03A3 s.t. for all a \u2208 \u03A3_A \u22A2 (A -> a) \u2208 P\nfn get_nt_tm_lens(nt : u32) -> u32 { return terminals.payload[terminals.nt_tm_lens_offset + nt]; } // |\u03A3_A|\n// Offsets of the nonterminal in the following Map<...> structure\nfn get_offsets(nt : u32) -> u32    { return terminals.payload[terminals.offsets_offset + nt];    } // offset of \u03A3_A\n// Flattened index of Map<NT, List<TM-id>> values\nfn get_all_tms(i : u32) -> u32     { return terminals.payload[terminals.all_tms_offset + i];     } // \u03C3 \u2192 TM\u2011id\n\nfn binarySearchCDF(base: u32, len: u32, needle: u32) -> u32 {\n    var lo: u32 = 0u;\n    var hi: u32 = len;\n    loop {\n        if (lo >= hi) { return base + lo; }\n        let mid = (lo + hi) >> 1u;\n        if (needle < ls_sparse[base + mid]) { hi = mid; } else { lo = mid + 1u; }\n    }\n}\n\n/* ---------- size of the language rooted at any DP\u2011cell ------------------------- */\nfn langSize(dpIdx : u32) -> u32 {\n    /* literal domain */\n    let val    = dp_in[dpIdx];\n    let hasLit = ((val >> 1u) != 0u);\n    let negLit = (val & 1073741824u) != 0u;\n    let litCnt =\n        select(0u,\n               select(1u,\n                      max(1u, get_nt_tm_lens(dpIdx % idx_uni.numNonterminals) - 1u),\n                      negLit),\n               hasLit);\n\n    /* expansion domain */\n    let expCnt = bp_count[dpIdx];\n    if (expCnt == 0u) { return litCnt; }\n\n    let base   = bp_offset[dpIdx];\n    let cdfLast = ls_sparse[base + expCnt - 1u];   // inclusive CDF\n    return litCnt + cdfLast;\n}\n\n/* ---------- literal decoder ----------------------------------------------------- */\nfn decodeLiteral(\n    nt          : u32,   // non\u2011terminal\n    litEnc      : u32,   // encoded literal (1\u2011based)\n    negLit      : bool,  // negative\u2011literal flag\n    variant     : u32,   // rank inside the literal domain\n    word        : ptr<function, array<u32, 512>>,\n    wordLen     : ptr<function, u32>\n) {\n    let numTms = get_nt_tm_lens(nt);\n    let ntOff  = get_offsets(nt);\n\n    if (negLit) { // choose any terminal \u2260 (litEnc\u20111)\n        let excl = litEnc - 1u;\n        let idx  = select(variant, variant + 1u, variant >= excl);\n        (*word)[*wordLen] = get_all_tms(ntOff + idx) + 1u;\n    } else {      // positive literal \u2192 single choice\n        (*word)[*wordLen] = get_all_tms(ntOff + (litEnc - 1u)) + 1u;\n    }\n    *wordLen = *wordLen + 1u;\n}\n\n/* ---------- stack frame --------------------------------------------------------- */\nstruct Frame { dp : u32, rk : u32 };\n\nfn lcg_permute(x : u32) -> u32 { return 1664525u * x + 1013904223u; }\n\nfn lcg_rand(stateRef: ptr<function, u32>, range: u32) -> u32 { \n  let newVal = (1664525u * (*stateRef)) + 1013904223u;\n  *stateRef = newVal;\n  return select(newVal % range, 0u, range == 0u); \n}\n\nfn min_u32(a: u32, b: u32) -> u32 { return select(a, b, a > b); }\n\n/* ---------- temperature knob ---------------------------------------------------- */\nconst TEMPERATURE : f32 = 1.1; // 1.0 = unmodified;  \u221E \u2248 uniform\nfn weight(sz: u32) -> u32 { return max(1u, u32(pow(f32(sz), 1.0 / TEMPERATURE))); }\n/* -------------------------------------------------------------------------------- */\n\n@compute @workgroup_size(1, 1, 1) fn main(@builtin(global_invocation_id) gid : vec3<u32>) {\n    /* ---- unique global rank ---------------------------------------------------- */\n    let gRank = gid.x + gid.y * idx_uni.grid_dim_x;\n    if (gRank >= idx_uni.max_samples) { return; }\n\n    let numStartIdxs = idx_uni.numStartIndices / 2u;\n    \n    /* ---- total tempered weight over all accepting states ----------------------- */\n    var total : u32 = 0u;\n    for (var i = 0u; i < numStartIdxs; i = i + 1u) { total += weight(langSize(getStartIdx(i))); }\n    var rank : u32 = gRank % total;\n\n    /* ---- pick a root in proportion to its tempered weight ---------------------- */\n    var rootIdx : u32 = 0u;\n    var levDist : u32 = 0u;\n    for (var i = 0u; i < numStartIdxs; i = i + 1u) {\n        let w = weight(langSize(getStartIdx(i)));\n        if (rank < w) { rootIdx = getStartIdx(i); levDist = getEditDist(i); break; }\n        rank -= w;\n    }\n    \n    /* ---- DFS stack ------------------------------------------------------------- */\n    var stack : array<Frame, 512>;\n    var top   : u32 = 0u;\n    stack[top] = Frame(rootIdx, rank);   top++;\n\n    var word  : array<u32, 512>;\n    var wLen  : u32 = 0u;\n\n    /* ---------------- depth\u2011first enumeration without replacement --------------- */\n    loop {\n        if (top == 0u) { break; }\n        top = top - 1u;\n        var fr     = stack[top];\n        var dpIdx  = fr.dp;\n        var rk     = fr.rk;\n\n        /* --- literal vs expansion ---------------------------------------------- */\n        let val      = dp_in[dpIdx];\n        let hasLit   = ((val >> 1u) != 0u);\n        let negLit   = (val & 1073741824u) != 0u;\n        let litCnt   =\n            select(0u,\n                   select(1u,                     // positive\n                          max(1u, get_nt_tm_lens(dpIdx % idx_uni.numNonterminals) - 1u),\n                          negLit),\n                   hasLit);\n\n        let expCnt   = bp_count[dpIdx];\n        let base     = bp_offset[dpIdx];\n        let totSize  = litCnt + select(0u, ls_sparse[base + expCnt - 1u], expCnt != 0u);\n\n        rk = rk % totSize;                     // residual rank at this node\n\n        /* --- literal branch ----------------------------------------------------- */\n        if (rk < litCnt) {\n            decodeLiteral(dpIdx % idx_uni.numNonterminals, (val >> 1u) & 0x1fffffffu, negLit, rk, &word, &wLen);\n            continue;\n        }\n        rk = rk - litCnt;                      // shift into expansion domain\n\n        /* --- expansion branch --------------------------------------------------- */\n        let choiceIdx   = binarySearchCDF(base, expCnt, rk);\n        let prevCDF     = select(0u, ls_sparse[choiceIdx - 1u], choiceIdx != base);\n        let insidePair  = rk - prevCDF;\n\n        let idxBM = bp_storage[2u*choiceIdx + 0u];\n        let idxMC = bp_storage[2u*choiceIdx + 1u];\n\n        let sizeC = langSize(idxMC);           // |L(C)|\n        let rkB   = insidePair / sizeC;        // quotient  \u2192 rank for B\n        let rkC   = insidePair % sizeC;        // remainder \u2192 rank for C\n\n        /* push right child first so left child is processed first (DFS order) */\n        stack[top] = Frame(idxMC, rkC); top++;\n        stack[top] = Frame(idxBM, rkB); top++;\n    }\n\n    /* ---- write the resulting word to the output buffer ------------------------- */\n    let outBase = gRank * idx_uni.maxWordLen;\n    sampledWords[outBase] = levDist;\n    for (var i = 0u; i < wLen; i++) { sampledWords[outBase + i + 2u] = word[i]; }\n}');
       // Inline function 'kotlin.text.toHexString' call
       var this_0 = get_SENTINEL();
       var format = Companion_getInstance_1().hn_1;
@@ -12119,8 +12127,8 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
       var this_1 = get_HASH_MUL();
       var format_0 = Companion_getInstance_1().hn_1;
       var tmp$ret$1 = toHexString(_UInt___get_data__impl__f0vqqw(this_1), format_0);
-      markov_score$delegate = new Shader('\nstruct Terminals { // Mappings from nonterminals to terminals in CFG\n    nt_tm_lens_offset : u32,    nt_tm_lens_size : u32,\n       offsets_offset : u32,       offsets_size : u32,\n       all_tms_offset : u32,       all_tms_size : u32,\n       \n       payload : array<u32>\n};\n\nstruct IndexUniforms {  // Indices of all accepting states in the parse chart\n    targetCnt       : atomic<u32>,  // global counter (LFSR advances on host)\n    maxWordLen      : u32,\n    numNonterminals : u32,\n    numStates       : u32,\n    \n    startIdxOffset  : u32, numStartIndices : u32,\n    startIndices    : array<u32> // Contains alternating (1) start index and (2) edit distance\n};\n@group(0) @binding(0) var<storage, read_write>  packets : array<u32>; // sampledWords/outBuf\n@group(0) @binding(1) var<storage, read>          ngram : array<u32>; // hash table\n@group(0) @binding(2) var<storage, read_write>  idx_uni : IndexUniforms;\n\nconst PKT_HDR_LEN  : u32 = 2u;\nconst SENTINEL_KEY : u32 = 0x' + tmp + 'u;\nconst HASH_MUL     : u32 = 0x' + tmp$ret$1 + 'u;      // same multiplier as CPU side\nconst BOS_ID       : u32 = 2u;\nconst NEWLINE_ID   : u32 = 1u;\nconst EOS_ID       : u32 = 3u;\n\nfn packGram(a : u32, b : u32, c : u32,d : u32) -> u32 { return (a<<21u)|(b<<14u)|(c<<7u)|d; }\n\nfn hash32(x : u32, pow : u32) -> u32 { return (x * HASH_MUL) >> (32u - pow); }\n\nfn lookupScore(key: u32) -> u32 {\n    let pow   : u32 = ngram[0];\n    let mask  : u32 = (1u << pow) - 1u;\n    var slot  : u32 = hash32(key, pow) & mask;\n\n    loop {                                       // \u2264 8 probes when load \u2264 0.75\n        let idx      = 1u + slot * 2u;           // 1-word header \u2192 slot*2\n        let stored   = ngram[idx];\n        if (stored == key)          { return ngram[idx + 1u]; } // hit\n        if (stored == SENTINEL_KEY) { return 1u; }              // empty\n        slot = (slot + 1u) & mask;                              // linear probe\n    }\n}\n\n@compute @workgroup_size(1) fn main(@builtin(global_invocation_id) gid : vec3<u32>) {\n    let sid    : u32 = gid.x;\n    let stride : u32 = idx_uni.maxWordLen;\n    let base   : u32 = sid * stride;\n\n    var t0 : u32 = BOS_ID     - 1u;\n    var t1 : u32 = NEWLINE_ID - 1u;\n\n    // -- pre-fetch the guaranteed first real token -----------\n    var pos : u32 = 1u;\n    let w1  : u32 = packets[base + PKT_HDR_LEN];\n    var t2  : u32 = w1 - 1u;\n\n    var score       : u32 = 0u;\n    var doneSuffix  : u32 = 0u;\n\n    loop {\n        // ----- next token or synthetic suffix ---------------\n        var tok : u32;\n        if (pos < stride - PKT_HDR_LEN && packets[base + PKT_HDR_LEN + pos] != 0u) {\n            tok = packets[base + PKT_HDR_LEN + pos];\n            pos += 1u;\n        } else {\n            // two\u2011token suffix: NEWLINE , EOS\n            tok = select(EOS_ID, NEWLINE_ID, doneSuffix == 0u);\n            doneSuffix += 1u;\n            if (doneSuffix > 2u) { break; }\n        }\n\n        // ----- accumulate n-gram score ----------------------\n        let key = packGram(t0, t1, t2, tok - 1u);\n        score  += lookupScore(key);\n\n        t0 = t1; t1 = t2; t2 = tok - 1u;\n    }\n\n    packets[base + 1u] = score + (packets[base] + 1u) * 10000000u;\n}');
-      select_top_k$delegate = new Shader('struct Params { n: u32, k: u32, stride: u32 };\n\n@group(0) @binding(0) var<uniform>                  prm : Params;\n@group(0) @binding(1) var<storage, read>        packets : array<u32>;\n@group(0) @binding(2) var<storage, read_write>   topIdx : array<atomic<u32>>;\n@group(0) @binding(3) var<storage, read_write> topScore : array<atomic<u32>>;\n\nconst UINT_MAX : u32 = 0xFFFFFFFFu;\n\n@compute @workgroup_size(256) fn main(@builtin(global_invocation_id) gid : vec3<u32>) {\n    let i = gid.x;\n    if (i >= prm.n || prm.k == 0u) { return; }\n\n    let score : u32 = packets[i * prm.stride + 1u];\n\n    loop {\n        var worstPos : u32 = 0u;\n        var worstVal : u32 = atomicLoad(&topScore[0]);\n        var duplicate : bool = (worstVal == score);\n        for (var j : u32 = 1u; j < prm.k; j = j + 1u) {\n            let v = atomicLoad(&topScore[j]);\n            if (v == score) { duplicate = true; }\n            if (v > worstVal) { worstVal = v; worstPos = j; }\n        }\n\n        if (duplicate || score >= worstVal) { return; }\n        let old = atomicCompareExchangeWeak(&topScore[worstPos], worstVal, score);\n        if (old.exchanged) { atomicStore(&topIdx[worstPos], i); return; }\n    }\n}');
+      markov_score$delegate = new Shader('\nstruct Terminals { // Mappings from nonterminals to terminals in CFG\n    nt_tm_lens_offset : u32,    nt_tm_lens_size : u32,\n       offsets_offset : u32,       offsets_size : u32,\n       all_tms_offset : u32,       all_tms_size : u32,\n       \n       payload : array<u32>\n};\n\nstruct IndexUniforms {  // Indices of all accepting states in the parse chart\n    targetCnt       : atomic<u32>,  // global counter (LFSR advances on host)\n    maxWordLen      : u32,\n    numNonterminals : u32,\n    numStates       : u32,\n    grid_dim_x      : u32,\n    max_samples     : u32,\n    \n    startIdxOffset  : u32, numStartIndices : u32,\n    startIndices    : array<u32> // Contains alternating (1) start index and (2) edit distance\n};\n@group(0) @binding(0) var<storage, read_write>  packets : array<u32>; // sampledWords/outBuf\n@group(0) @binding(1) var<storage, read>          ngram : array<u32>; // hash table\n@group(0) @binding(2) var<storage, read_write>  idx_uni : IndexUniforms;\n\nconst PKT_HDR_LEN  : u32 = 2u;\nconst SENTINEL_KEY : u32 = 0x' + tmp + 'u;\nconst HASH_MUL     : u32 = 0x' + tmp$ret$1 + 'u;      // same multiplier as CPU side\nconst BOS_ID       : u32 = 2u;\nconst NEWLINE_ID   : u32 = 1u;\nconst EOS_ID       : u32 = 3u;\n\nfn packGram(a : u32, b : u32, c : u32,d : u32) -> u32 { return (a<<21u)|(b<<14u)|(c<<7u)|d; }\n\nfn hash32(x : u32, pow : u32) -> u32 { return (x * HASH_MUL) >> (32u - pow); }\n\nfn lookupScore(key: u32) -> u32 {\n    let pow   : u32 = ngram[0];\n    let mask  : u32 = (1u << pow) - 1u;\n    var slot  : u32 = hash32(key, pow) & mask;\n\n    loop {                                       // \u2264 8 probes when load \u2264 0.75\n        let idx      = 1u + slot * 2u;           // 1-word header \u2192 slot*2\n        let stored   = ngram[idx];\n        if (stored == key)          { return ngram[idx + 1u]; } // hit\n        if (stored == SENTINEL_KEY) { return 1u; }              // empty\n        slot = (slot + 1u) & mask;                              // linear probe\n    }\n}\n\n@compute @workgroup_size(1, 1, 1) fn main(@builtin(global_invocation_id) gid : vec3<u32>) {\n    let sid = gid.x + gid.y * idx_uni.grid_dim_x;\n    if (sid >= idx_uni.max_samples) { return; }\n\n    let stride : u32 = idx_uni.maxWordLen;\n    let base   : u32 = sid * stride;\n\n    var t0 : u32 = BOS_ID     - 1u;\n    var t1 : u32 = NEWLINE_ID - 1u;\n\n    // -- pre-fetch the guaranteed first real token -----------\n    var pos : u32 = 1u;\n    let w1  : u32 = packets[base + PKT_HDR_LEN];\n    var t2  : u32 = w1 - 1u;\n\n    var score       : u32 = 0u;\n    var doneSuffix  : u32 = 0u;\n\n    loop {\n        // ----- next token or synthetic suffix ---------------\n        var tok : u32;\n        if (pos < stride - PKT_HDR_LEN && packets[base + PKT_HDR_LEN + pos] != 0u) {\n            tok = packets[base + PKT_HDR_LEN + pos];\n            pos += 1u;\n        } else {\n            // two\u2011token suffix: NEWLINE , EOS\n            tok = select(EOS_ID, NEWLINE_ID, doneSuffix == 0u);\n            doneSuffix += 1u;\n            if (doneSuffix > 2u) { break; }\n        }\n\n        // ----- accumulate n-gram score ----------------------\n        let key = packGram(t0, t1, t2, tok - 1u);\n        score  += lookupScore(key);\n\n        t0 = t1; t1 = t2; t2 = tok - 1u;\n    }\n\n    packets[base + 1u] = score + (packets[base] + 1u) * 10000000u;\n}');
+      select_top_k$delegate = new Shader('struct Params { n: u32, k: u32, stride: u32, groupsX: u32 };\n\n@group(0) @binding(0) var<uniform>                  prm : Params;\n@group(0) @binding(1) var<storage, read>        packets : array<u32>;\n@group(0) @binding(2) var<storage, read_write>   topIdx : array<atomic<u32>>;\n@group(0) @binding(3) var<storage, read_write> topScore : array<atomic<u32>>;\n\nconst UINT_MAX : u32 = 0xFFFFFFFFu;\n\n@compute @workgroup_size(256) fn main(\n    @builtin(workgroup_id)        workgroup_id : vec3<u32>,\n    @builtin(local_invocation_id) local_id     : vec3<u32>\n) {\n    let workgroup_linear_id = workgroup_id.x + workgroup_id.y * prm.groupsX;\n    let i = workgroup_linear_id * 256u + local_id.x;\n    if (i >= prm.n || prm.k == 0u) { return; }\n\n    let score : u32 = packets[i * prm.stride + 1u];\n\n    loop {\n        var worstPos : u32 = 0u;\n        var worstVal : u32 = atomicLoad(&topScore[0]);\n        var duplicate : bool = (worstVal == score);\n        for (var j : u32 = 1u; j < prm.k; j = j + 1u) {\n            let v = atomicLoad(&topScore[j]);\n            if (v == score) { duplicate = true; }\n            if (v > worstVal) { worstVal = v; worstPos = j; }\n        }\n\n        if (duplicate || score >= worstVal) { return; }\n        let old = atomicCompareExchangeWeak(&topScore[worstPos], worstVal, score);\n        if (old.exchanged) { atomicStore(&topIdx[worstPos], i); return; }\n    }\n}');
       gather_top_k$delegate = new Shader('struct Gather { stride: u32, k: u32 };\n@group(0) @binding(0) var<uniform>                  g : Gather;\n@group(0) @binding(1) var<storage, read>      packets : array<u32>;  // full outBuf\n@group(0) @binding(2) var<storage, read>       topIdx : array<u32>;  // k indices\n@group(0) @binding(3) var<storage, read_write> bestPk : array<u32>;  // compacted result\n\n@compute @workgroup_size(1) fn main(@builtin(global_invocation_id) gid : vec3<u32>) {\n    let j : u32 = gid.x;\n    if (j >= g.k) { return; }\n\n    let srcIdx : u32 = topIdx[j];\n    if (srcIdx == 0xFFFFFFFFu) { return; } \n\n    let stride : u32 = g.stride;\n    let srcOff : u32 = srcIdx * stride;\n    let dstOff : u32 = j      * stride;\n\n    for (var t: u32 = 0u; t < stride; t = t + 1u) { bestPk[dstOff + t] = packets[srcOff + t]; }\n}');
       sparse_load$delegate = new Shader('\nstruct SparseElement { r: u32, c: u32, v: u32, i: u32 };\nstruct Coeffs { rowCoeff: u32, colCoeff: u32 };\n\n@group(0) @binding(0) var<storage, read>     sparse_elements : array<SparseElement>;\n@group(0) @binding(1) var<storage, read_write> output_buffer : array<u32>;\n@group(0) @binding(2) var<uniform>                    coeffs : Coeffs;\n\n// Define workgroup size (must match constant in Kotlin code)\nconst WORKGROUP_SIZE: u32 = 256u;\n\n@compute @workgroup_size(WORKGROUP_SIZE) fn main(@builtin(global_invocation_id) global_id: vec3<u32>) {\n    let index = global_id.x;\n    let num_elements = arrayLength(&sparse_elements);\n    let output_size = arrayLength(&output_buffer);\n    if (index >= num_elements) { return; }\n    let element = sparse_elements[index];\n    let target_index = element.r * coeffs.rowCoeff + element.c * coeffs.colCoeff + element.v;\n    if (target_index < output_size) { output_buffer[target_index] = element.i; }\n}');
       sparse_mat_load$delegate = new Shader('struct SparseElement { r: u32, c: u32 };\n@group(0) @binding(0) var<storage, read>     sparse_elements : array<SparseElement>;\n@group(0) @binding(1) var<storage, read_write> output_buffer : array<u32>;\n\nconst WORKGROUP_SIZE: u32 = 256u;\n\n@compute @workgroup_size(WORKGROUP_SIZE) fn main(@builtin(global_invocation_id) global_id: vec3<u32>) {\n    let index = global_id.x;\n    let num_elements = arrayLength(&sparse_elements);\n    let output_size = arrayLength(&output_buffer);\n    if (index >= num_elements) { return; }\n    let element = sparse_elements[index];\n    let width = u32(sqrt(f32(output_size)));\n    let target_index = element.r * width + element.c;\n    if (target_index < output_size) { output_buffer[target_index] = 1; }\n}');
@@ -12203,9 +12211,9 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
   var ArrayList_init_$Create$_1 = kotlin_kotlin.$_$.g;
   var UnsupportedOperationException_init_$Create$ = kotlin_kotlin.$_$.n1;
   var UnsupportedOperationException_init_$Create$_0 = kotlin_kotlin.$_$.m1;
-  var Collection = kotlin_kotlin.$_$.r3;
   var MutableIterable = kotlin_kotlin.$_$.u3;
   var KtSet = kotlin_kotlin.$_$.v3;
+  var Collection = kotlin_kotlin.$_$.r3;
   var IllegalStateException_init_$Create$_0 = kotlin_kotlin.$_$.a1;
   var noWhenBranchMatchedException = kotlin_kotlin.$_$.be;
   var copyOfRange = kotlin_kotlin.$_$.m4;
@@ -12264,12 +12272,12 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
   initMetadataForClass(ATN, 'ATN');
   initMetadataForCompanion(Companion_6);
   initMetadataForClass(ATNConfig, 'ATNConfig');
-  initMetadataForClass(Array2DHashSet, 'Array2DHashSet', Array2DHashSet, VOID, [Collection, MutableIterable, KtSet]);
+  initMetadataForClass(Array2DHashSet, 'Array2DHashSet', Array2DHashSet, VOID, [MutableIterable, KtSet, Collection]);
   initMetadataForClass(AbstractConfigHashSet, 'AbstractConfigHashSet', VOID, Array2DHashSet);
   initMetadataForClass(ConfigHashSet, 'ConfigHashSet', ConfigHashSet, AbstractConfigHashSet);
   initMetadataForClass(AbstractEqualityComparator, 'AbstractEqualityComparator');
   initMetadataForObject(ConfigEqualityComparator, 'ConfigEqualityComparator', VOID, AbstractEqualityComparator);
-  initMetadataForClass(ATNConfigSet, 'ATNConfigSet', ATNConfigSet, VOID, [Collection, MutableIterable, KtSet]);
+  initMetadataForClass(ATNConfigSet, 'ATNConfigSet', ATNConfigSet, VOID, [MutableIterable, KtSet, Collection]);
   initMetadataForCompanion(Companion_7);
   initMetadataForClass(ATNDeserializationOptions, 'ATNDeserializationOptions', ATNDeserializationOptions_init_$Create$);
   initMetadataForCompanion(Companion_8);
@@ -31240,6 +31248,22 @@ if (typeof Array.prototype.fill === 'undefined') {
     Object.defineProperty(TypedArray.prototype, 'fill', {value: Array.prototype.fill});
   }
 });
+if (typeof Math.log10 === 'undefined') {
+  Math.log10 = function (x) {
+    return Math.log(x) * Math.LOG10E;
+  };
+}
+if (typeof Math.clz32 === 'undefined') {
+  Math.clz32 = function (log, LN2) {
+    return function (x) {
+      var asUint = x >>> 0;
+      if (asUint === 0) {
+        return 32;
+      }
+      return 31 - (log(asUint) / LN2 | 0) | 0; // the "| 0" acts like math.floor
+    };
+  }(Math.log, Math.LN2);
+}
 if (typeof Math.tanh === 'undefined') {
   var epsilon = 2.220446049250313E-16;
   var taylor_2_bound = Math.sqrt(epsilon);
@@ -31255,22 +31279,6 @@ if (typeof Math.tanh === 'undefined') {
       var a = Math.exp(+x), b = Math.exp(-x);
       return a === Infinity ? 1 : b === Infinity ? -1 : (a - b) / (a + b);
     }
-  };
-}
-if (typeof Math.clz32 === 'undefined') {
-  Math.clz32 = function (log, LN2) {
-    return function (x) {
-      var asUint = x >>> 0;
-      if (asUint === 0) {
-        return 32;
-      }
-      return 31 - (log(asUint) / LN2 | 0) | 0; // the "| 0" acts like math.floor
-    };
-  }(Math.log, Math.LN2);
-}
-if (typeof Math.log10 === 'undefined') {
-  Math.log10 = function (x) {
-    return Math.log(x) * Math.LOG10E;
   };
 }
 if (typeof String.prototype.startsWith === 'undefined') {
@@ -31325,26 +31333,26 @@ if (typeof String.prototype.startsWith === 'undefined') {
   initMetadataForClass(asList$2, VOID, VOID, AbstractList, [AbstractList, RandomAccess]);
   initMetadataForInterface(Comparator, 'Comparator');
   initMetadataForObject(Unit, 'Unit');
-  initMetadataForClass(AbstractMutableCollection, 'AbstractMutableCollection', VOID, AbstractCollection, [AbstractCollection, Collection, MutableIterable]);
+  initMetadataForClass(AbstractMutableCollection, 'AbstractMutableCollection', VOID, AbstractCollection, [AbstractCollection, MutableIterable, Collection]);
   initMetadataForClass(IteratorImpl, 'IteratorImpl');
   initMetadataForClass(ListIteratorImpl, 'ListIteratorImpl', VOID, IteratorImpl);
-  initMetadataForClass(AbstractMutableList, 'AbstractMutableList', VOID, AbstractMutableCollection, [AbstractMutableCollection, Collection, MutableIterable, KtList]);
+  initMetadataForClass(AbstractMutableList, 'AbstractMutableList', VOID, AbstractMutableCollection, [AbstractMutableCollection, MutableIterable, KtList, Collection]);
   initMetadataForClass(SubList, 'SubList', VOID, AbstractMutableList, [AbstractMutableList, RandomAccess]);
   initMetadataForClass(AbstractMap, 'AbstractMap', VOID, VOID, [KtMap]);
   initMetadataForClass(AbstractMutableMap, 'AbstractMutableMap', VOID, AbstractMap, [AbstractMap, KtMap]);
-  initMetadataForClass(AbstractMutableSet, 'AbstractMutableSet', VOID, AbstractMutableCollection, [AbstractMutableCollection, Collection, MutableIterable, KtSet]);
+  initMetadataForClass(AbstractMutableSet, 'AbstractMutableSet', VOID, AbstractMutableCollection, [AbstractMutableCollection, MutableIterable, KtSet, Collection]);
   initMetadataForCompanion(Companion_2);
-  initMetadataForClass(ArrayList, 'ArrayList', ArrayList_init_$Create$, AbstractMutableList, [AbstractMutableList, Collection, MutableIterable, KtList, RandomAccess]);
+  initMetadataForClass(ArrayList, 'ArrayList', ArrayList_init_$Create$, AbstractMutableList, [AbstractMutableList, MutableIterable, KtList, Collection, RandomAccess]);
   initMetadataForClass(HashMap, 'HashMap', HashMap_init_$Create$, AbstractMutableMap, [AbstractMutableMap, KtMap]);
-  initMetadataForClass(HashMapKeys, 'HashMapKeys', VOID, AbstractMutableSet, [Collection, MutableIterable, KtSet, AbstractMutableSet]);
-  initMetadataForClass(HashMapValues, 'HashMapValues', VOID, AbstractMutableCollection, [Collection, MutableIterable, AbstractMutableCollection]);
-  initMetadataForClass(HashMapEntrySetBase, 'HashMapEntrySetBase', VOID, AbstractMutableSet, [Collection, MutableIterable, KtSet, AbstractMutableSet]);
+  initMetadataForClass(HashMapKeys, 'HashMapKeys', VOID, AbstractMutableSet, [MutableIterable, KtSet, Collection, AbstractMutableSet]);
+  initMetadataForClass(HashMapValues, 'HashMapValues', VOID, AbstractMutableCollection, [MutableIterable, Collection, AbstractMutableCollection]);
+  initMetadataForClass(HashMapEntrySetBase, 'HashMapEntrySetBase', VOID, AbstractMutableSet, [MutableIterable, KtSet, Collection, AbstractMutableSet]);
   initMetadataForClass(HashMapEntrySet, 'HashMapEntrySet', VOID, HashMapEntrySetBase);
   initMetadataForClass(HashMapKeysDefault$iterator$1);
   initMetadataForClass(HashMapKeysDefault, 'HashMapKeysDefault', VOID, AbstractMutableSet);
   initMetadataForClass(HashMapValuesDefault$iterator$1);
   initMetadataForClass(HashMapValuesDefault, 'HashMapValuesDefault', VOID, AbstractMutableCollection);
-  initMetadataForClass(HashSet, 'HashSet', HashSet_init_$Create$, AbstractMutableSet, [AbstractMutableSet, Collection, MutableIterable, KtSet]);
+  initMetadataForClass(HashSet, 'HashSet', HashSet_init_$Create$, AbstractMutableSet, [AbstractMutableSet, MutableIterable, KtSet, Collection]);
   initMetadataForCompanion(Companion_3);
   initMetadataForClass(Itr, 'Itr');
   initMetadataForClass(KeysItr, 'KeysItr', VOID, Itr);
@@ -31389,7 +31397,7 @@ if (typeof String.prototype.startsWith === 'undefined') {
   initMetadataForInterface(InternalMap, 'InternalMap');
   initMetadataForClass(InternalHashMap, 'InternalHashMap', InternalHashMap_init_$Create$, VOID, [InternalMap]);
   initMetadataForClass(LinkedHashMap, 'LinkedHashMap', LinkedHashMap_init_$Create$, HashMap, [HashMap, KtMap]);
-  initMetadataForClass(LinkedHashSet, 'LinkedHashSet', LinkedHashSet_init_$Create$, HashSet, [HashSet, Collection, MutableIterable, KtSet]);
+  initMetadataForClass(LinkedHashSet, 'LinkedHashSet', LinkedHashSet_init_$Create$, HashSet, [HashSet, MutableIterable, KtSet, Collection]);
   initMetadataForClass(BaseOutput, 'BaseOutput');
   initMetadataForClass(NodeJsOutput, 'NodeJsOutput', VOID, BaseOutput);
   initMetadataForClass(BufferedOutput, 'BufferedOutput', BufferedOutput, BaseOutput);
@@ -46971,9 +46979,9 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
   var getKClassFromExpression = kotlin_kotlin.$_$.a;
   var Exception_init_$Create$ = kotlin_kotlin.$_$.x;
   var removeFirstOrNull = kotlin_kotlin.$_$.f6;
-  var Collection = kotlin_kotlin.$_$.r3;
   var MutableIterable = kotlin_kotlin.$_$.u3;
   var KtList = kotlin_kotlin.$_$.s3;
+  var Collection = kotlin_kotlin.$_$.r3;
   var coerceIn = kotlin_kotlin.$_$.ha;
   var CancellationException_init_$Init$ = kotlin_kotlin.$_$.q;
   var ensureNotNull = kotlin_kotlin.$_$.zd;
@@ -47055,7 +47063,7 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
   initMetadataForClass(Symbol, 'Symbol');
   initMetadataForClass(SetTimeoutBasedDispatcher, 'SetTimeoutBasedDispatcher', VOID, CoroutineDispatcher, [CoroutineDispatcher, Delay], [1]);
   initMetadataForObject(NodeDispatcher, 'NodeDispatcher', VOID, SetTimeoutBasedDispatcher, VOID, [1]);
-  initMetadataForClass(MessageQueue, 'MessageQueue', VOID, VOID, [Collection, MutableIterable, KtList]);
+  initMetadataForClass(MessageQueue, 'MessageQueue', VOID, VOID, [MutableIterable, KtList, Collection]);
   initMetadataForClass(ScheduledMessageQueue, 'ScheduledMessageQueue', VOID, MessageQueue);
   initMetadataForClass(WindowMessageQueue, 'WindowMessageQueue', VOID, MessageQueue);
   initMetadataForClass(UnconfinedEventLoop, 'UnconfinedEventLoop', UnconfinedEventLoop, EventLoop);

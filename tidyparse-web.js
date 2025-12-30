@@ -7036,6 +7036,7 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
   var trim = kotlin_kotlin.$_$.zd;
   var toString = kotlin_kotlin.$_$.oa;
   var substringAfter = kotlin_kotlin.$_$.gd;
+  var Regex_init_$Create$ = kotlin_kotlin.$_$.p;
   var checkIndexOverflow = kotlin_kotlin.$_$.c4;
   var isValidProd = kotlin_ai_hypergraph_galoisenne.$_$.m;
   var dropLast_0 = kotlin_kotlin.$_$.q4;
@@ -7062,7 +7063,6 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
   var filter = kotlin_kotlin.$_$.nb;
   var onEach = kotlin_kotlin.$_$.sb;
   var LinkedHashMap_init_$Create$ = kotlin_kotlin.$_$.k;
-  var Regex_init_$Create$ = kotlin_kotlin.$_$.p;
   var KProperty1 = kotlin_kotlin.$_$.hb;
   var get_pythonStatementCNFAllProds = kotlin_ai_hypergraph_galoisenne.$_$.m1;
   var drop = kotlin_kotlin.$_$.r4;
@@ -9608,9 +9608,14 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
     var currentIdx = toInt(tmp$ret$2);
     switch (key.u2_1) {
       case 0:
+        var tmp0 = replace(substringAfter(lines(this.y35()).s(currentIdx + 2 | 0), '.) '), '\u2003', '');
+        // Inline function 'kotlin.text.toRegex' call
+
+        // Inline function 'kotlin.text.replace' call
+
         // Inline function 'kotlin.text.trim' call
 
-        var this_1 = replace(substringAfter(lines(this.y35()).s(currentIdx + 2 | 0), '.) '), '\u2003', '');
+        var this_1 = Regex_init_$Create$('\\s+').lc(tmp0, ' ');
         var selection = toString(trim(isCharSequence(this_1) ? this_1 : THROW_CCE()));
         // Inline function 'kotlin.takeIf' call
 
@@ -9650,8 +9655,8 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
       var _unary__edvuaz = index_0;
       index_0 = _unary__edvuaz + 1 | 0;
       var i = checkIndexOverflow(_unary__edvuaz);
-      var tmp$ret$6 = i === htmlIndex ? substring(item_0, 6, item_0.length - 7 | 0) : i === (this.w31_1.u36_1 + 2 | 0) ? '<mark>' + item_0 + '<\/mark>' : item_0;
-      destination.g(tmp$ret$6);
+      var tmp$ret$8 = i === htmlIndex ? substring(item_0, 6, item_0.length - 7 | 0) : i === (this.w31_1.u36_1 + 2 | 0) ? '<mark>' + item_0 + '<\/mark>' : item_0;
+      destination.g(tmp$ret$8);
     }
     this.s2x(joinToString(destination, '\n'));
   };
@@ -33345,6 +33350,22 @@ if (typeof Array.prototype.fill === 'undefined') {
     Object.defineProperty(TypedArray.prototype, 'fill', {value: Array.prototype.fill});
   }
 });
+if (typeof Math.log2 === 'undefined') {
+  Math.log2 = function (x) {
+    return Math.log(x) * Math.LOG2E;
+  };
+}
+if (typeof Math.clz32 === 'undefined') {
+  Math.clz32 = function (log, LN2) {
+    return function (x) {
+      var asUint = x >>> 0;
+      if (asUint === 0) {
+        return 32;
+      }
+      return 31 - (log(asUint) / LN2 | 0) | 0; // the "| 0" acts like math.floor
+    };
+  }(Math.log, Math.LN2);
+}
 if (typeof Math.tanh === 'undefined') {
   var epsilon = 2.220446049250313E-16;
   var taylor_2_bound = Math.sqrt(epsilon);
@@ -33365,22 +33386,6 @@ if (typeof Math.tanh === 'undefined') {
 if (typeof Math.log10 === 'undefined') {
   Math.log10 = function (x) {
     return Math.log(x) * Math.LOG10E;
-  };
-}
-if (typeof Math.clz32 === 'undefined') {
-  Math.clz32 = function (log, LN2) {
-    return function (x) {
-      var asUint = x >>> 0;
-      if (asUint === 0) {
-        return 32;
-      }
-      return 31 - (log(asUint) / LN2 | 0) | 0; // the "| 0" acts like math.floor
-    };
-  }(Math.log, Math.LN2);
-}
-if (typeof Math.log2 === 'undefined') {
-  Math.log2 = function (x) {
-    return Math.log(x) * Math.LOG2E;
   };
 }
 if (typeof String.prototype.startsWith === 'undefined') {
@@ -33453,7 +33458,7 @@ if (typeof String.prototype.endsWith === 'undefined') {
   initMetadataForClass(asList$2, VOID, VOID, AbstractList, [AbstractList, RandomAccess]);
   initMetadataForInterface(Comparator, 'Comparator');
   initMetadataForObject(Unit, 'Unit');
-  initMetadataForClass(AbstractMutableCollection, 'AbstractMutableCollection', VOID, AbstractCollection, [AbstractCollection, Collection, MutableIterable]);
+  initMetadataForClass(AbstractMutableCollection, 'AbstractMutableCollection', VOID, AbstractCollection, [AbstractCollection, MutableIterable, Collection]);
   initMetadataForClass(IteratorImpl, 'IteratorImpl');
   initMetadataForClass(ListIteratorImpl, 'ListIteratorImpl', VOID, IteratorImpl);
   initMetadataForClass(AbstractMutableList, 'AbstractMutableList', VOID, AbstractMutableCollection, [AbstractMutableCollection, KtList, MutableIterable, Collection]);
@@ -33465,7 +33470,7 @@ if (typeof String.prototype.endsWith === 'undefined') {
   initMetadataForClass(ArrayList, 'ArrayList', ArrayList_init_$Create$, AbstractMutableList, [AbstractMutableList, KtList, MutableIterable, Collection, RandomAccess]);
   initMetadataForClass(HashMap, 'HashMap', HashMap_init_$Create$, AbstractMutableMap, [AbstractMutableMap, KtMap]);
   initMetadataForClass(HashMapKeys, 'HashMapKeys', VOID, AbstractMutableSet, [KtSet, MutableIterable, Collection, AbstractMutableSet]);
-  initMetadataForClass(HashMapValues, 'HashMapValues', VOID, AbstractMutableCollection, [Collection, MutableIterable, AbstractMutableCollection]);
+  initMetadataForClass(HashMapValues, 'HashMapValues', VOID, AbstractMutableCollection, [MutableIterable, Collection, AbstractMutableCollection]);
   initMetadataForClass(HashMapEntrySetBase, 'HashMapEntrySetBase', VOID, AbstractMutableSet, [KtSet, MutableIterable, Collection, AbstractMutableSet]);
   initMetadataForClass(HashMapEntrySet, 'HashMapEntrySet', VOID, HashMapEntrySetBase);
   initMetadataForClass(HashMapKeysDefault$iterator$1);

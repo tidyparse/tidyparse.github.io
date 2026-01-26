@@ -5791,9 +5791,9 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
   var KProperty1 = kotlin_kotlin.$_$.jb;
   var getPropertyCallableRef = kotlin_kotlin.$_$.t9;
   var emptySet = kotlin_kotlin.$_$.w4;
-  var get_originalForm = kotlin_ai_hypergraph_galoisenne.$_$.b1;
+  var get_originalForm = kotlin_ai_hypergraph_galoisenne.$_$.d1;
   var listOf = kotlin_kotlin.$_$.o5;
-  var get_nonparametricForm = kotlin_ai_hypergraph_galoisenne.$_$.z;
+  var get_nonparametricForm = kotlin_ai_hypergraph_galoisenne.$_$.b1;
   var emptyList = kotlin_kotlin.$_$.u4;
   var equals = kotlin_kotlin.$_$.q9;
   var plus = kotlin_kotlin.$_$.d6;
@@ -5801,23 +5801,23 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
   var lines = kotlin_kotlin.$_$.tc;
   var NoSuchElementException_init_$Create$ = kotlin_kotlin.$_$.g1;
   var compareTo = kotlin_kotlin.$_$.o9;
-  var get_nonterminals = kotlin_ai_hypergraph_galoisenne.$_$.a1;
-  var get_terminals = kotlin_ai_hypergraph_galoisenne.$_$.i1;
+  var get_nonterminals = kotlin_ai_hypergraph_galoisenne.$_$.c1;
+  var get_terminals = kotlin_ai_hypergraph_galoisenne.$_$.k1;
   var ArrayList_init_$Create$ = kotlin_kotlin.$_$.e;
   var ValueTimeMark__elapsedNow_impl_eonqvs = kotlin_kotlin.$_$.u1;
   var _Duration___get_inWholeMilliseconds__impl__msfiry = kotlin_kotlin.$_$.p1;
-  var get_TIMEOUT_MS = kotlin_ai_hypergraph_galoisenne.$_$.n1;
+  var get_TIMEOUT_MS = kotlin_ai_hypergraph_galoisenne.$_$.p1;
   var fromInt = kotlin_kotlin.$_$.w8;
   var compare = kotlin_kotlin.$_$.s8;
-  var prettyPrint = kotlin_ai_hypergraph_galoisenne.$_$.g1;
-  var carveSeams = kotlin_ai_hypergraph_galoisenne.$_$.s1;
+  var prettyPrint = kotlin_ai_hypergraph_galoisenne.$_$.i1;
+  var carveSeams = kotlin_ai_hypergraph_galoisenne.$_$.u1;
   var escapeHTML = kotlin_ai_hypergraph_galoisenne.$_$.b;
   var padStart = kotlin_kotlin.$_$.vc;
   var CoroutineImpl = kotlin_kotlin.$_$.h8;
-  var initiateSuspendableRepair = kotlin_ai_hypergraph_galoisenne.$_$.x1;
+  var initiateSuspendableRepair = kotlin_ai_hypergraph_galoisenne.$_$.z1;
   var get_COROUTINE_SUSPENDED = kotlin_kotlin.$_$.s7;
   var Monotonic_instance = kotlin_kotlin.$_$.l3;
-  var get_tmLst = kotlin_ai_hypergraph_galoisenne.$_$.j1;
+  var get_tmLst = kotlin_ai_hypergraph_galoisenne.$_$.l1;
   var emptySequence = kotlin_kotlin.$_$.mb;
   var initMetadataForCoroutine = kotlin_kotlin.$_$.y9;
   var Companion_getInstance = kotlin_kotlin.$_$.k3;
@@ -5828,29 +5828,28 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
   var ArrayList_init_$Create$_0 = kotlin_kotlin.$_$.f;
   var DurationUnit_SECONDS_getInstance = kotlin_kotlin.$_$.c;
   var Duration__toDouble_impl_a56y2b = kotlin_kotlin.$_$.s1;
-  var round = kotlin_ai_hypergraph_galoisenne.$_$.a2;
+  var round = kotlin_ai_hypergraph_galoisenne.$_$.c2;
   var charSequenceLength = kotlin_kotlin.$_$.n9;
-  var tokenizeByWhitespace = kotlin_ai_hypergraph_galoisenne.$_$.w1;
+  var tokenizeByWhitespace = kotlin_ai_hypergraph_galoisenne.$_$.y1;
   var binarySearch = kotlin_kotlin.$_$.c4;
   var to = kotlin_kotlin.$_$.jf;
   var removeLast = kotlin_kotlin.$_$.h6;
   var last = kotlin_kotlin.$_$.n5;
-  var cache = kotlin_ai_hypergraph_galoisenne.$_$.r1;
+  var cache = kotlin_ai_hypergraph_galoisenne.$_$.t1;
   var Enum = kotlin_kotlin.$_$.je;
   var THROW_CCE = kotlin_kotlin.$_$.re;
   var CoroutineScope = kotlin_org_jetbrains_kotlinx_kotlinx_coroutines_core.$_$.c;
   var isInterface = kotlin_kotlin.$_$.ea;
-  var noWhenBranchMatchedException = kotlin_kotlin.$_$.ff;
-  var parse = kotlin_ai_hypergraph_galoisenne.$_$.d1;
-  var enumSeqSmart = kotlin_ai_hypergraph_galoisenne.$_$.l;
-  var stripStub = kotlin_ai_hypergraph_galoisenne.$_$.u1;
-  var enumNTSmall = kotlin_ai_hypergraph_galoisenne.$_$.k;
-  var initMetadataForLambda = kotlin_kotlin.$_$.aa;
-  var levenshteinAlign = kotlin_ai_hypergraph_galoisenne.$_$.s;
-  var paintDiffs = kotlin_ai_hypergraph_galoisenne.$_$.t1;
-  var get_language = kotlin_ai_hypergraph_galoisenne.$_$.p;
-  var contains = kotlin_ai_hypergraph_galoisenne.$_$.j;
   var println = kotlin_kotlin.$_$.l8;
+  var parse = kotlin_ai_hypergraph_galoisenne.$_$.f1;
+  var enumSeqSmart = kotlin_ai_hypergraph_galoisenne.$_$.m;
+  var stripStub = kotlin_ai_hypergraph_galoisenne.$_$.w1;
+  var enumNTSmall = kotlin_ai_hypergraph_galoisenne.$_$.l;
+  var initMetadataForLambda = kotlin_kotlin.$_$.aa;
+  var levenshteinAlign = kotlin_ai_hypergraph_galoisenne.$_$.u;
+  var paintDiffs = kotlin_ai_hypergraph_galoisenne.$_$.v1;
+  var get_language = kotlin_ai_hypergraph_galoisenne.$_$.r;
+  var contains = kotlin_ai_hypergraph_galoisenne.$_$.k;
   var LinkedHashMap_init_$Create$ = kotlin_kotlin.$_$.l;
   var Regex_init_$Create$ = kotlin_kotlin.$_$.s;
   var NotImplementedError = kotlin_kotlin.$_$.oe;
@@ -5861,10 +5860,10 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
   var getStringHashCode = kotlin_kotlin.$_$.u9;
   var listOf_0 = kotlin_kotlin.$_$.p5;
   var hashCode = kotlin_kotlin.$_$.v9;
-  var parseCFG = kotlin_ai_hypergraph_galoisenne.$_$.c1;
-  var get_noEpsilon = kotlin_ai_hypergraph_galoisenne.$_$.w;
-  var get_noNonterminalStubs = kotlin_ai_hypergraph_galoisenne.$_$.y;
-  var get_noEpsilonOrNonterminalStubs = kotlin_ai_hypergraph_galoisenne.$_$.x;
+  var parseCFG = kotlin_ai_hypergraph_galoisenne.$_$.e1;
+  var get_noEpsilon = kotlin_ai_hypergraph_galoisenne.$_$.y;
+  var get_noNonterminalStubs = kotlin_ai_hypergraph_galoisenne.$_$.a1;
+  var get_noEpsilonOrNonterminalStubs = kotlin_ai_hypergraph_galoisenne.$_$.z;
   var Exception = kotlin_kotlin.$_$.le;
   var coerceAtMost = kotlin_kotlin.$_$.ab;
   var numberRangeToNumber = kotlin_kotlin.$_$.ja;
@@ -5872,13 +5871,13 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
   var toSet = kotlin_kotlin.$_$.f7;
   var CFGCFG = kotlin_ai_hypergraph_galoisenne.$_$.c;
   var collectionSizeOrDefault = kotlin_kotlin.$_$.g4;
-  var get_LED_BUFFER = kotlin_ai_hypergraph_galoisenne.$_$.l1;
+  var get_LED_BUFFER = kotlin_ai_hypergraph_galoisenne.$_$.n1;
   var KtMap = kotlin_kotlin.$_$.s3;
-  var contains_0 = kotlin_ai_hypergraph_galoisenne.$_$.i;
+  var contains_0 = kotlin_ai_hypergraph_galoisenne.$_$.j;
   var get_HOLE_MARKER = kotlin_ai_hypergraph_galoisenne.$_$.d;
   var MainScope = kotlin_org_jetbrains_kotlinx_kotlinx_coroutines_core.$_$.d;
   var launch = kotlin_org_jetbrains_kotlinx_kotlinx_coroutines_core.$_$.e;
-  var levAndLenMetric = kotlin_ai_hypergraph_galoisenne.$_$.q;
+  var levAndLenMetric = kotlin_ai_hypergraph_galoisenne.$_$.s;
   var ValueTimeMark = kotlin_kotlin.$_$.ce;
   var indexOf = kotlin_kotlin.$_$.kc;
   var substringBefore = kotlin_kotlin.$_$.jd;
@@ -6391,6 +6390,7 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
   var Scenario_COMPLETION_instance;
   var Scenario_PARSEABLE_instance;
   var Scenario_REPAIR_instance;
+  var Scenario_SUFFIX_COMPLETION_instance;
   var Scenario_entriesInitialized;
   function Scenario_initEntries() {
     if (Scenario_entriesInitialized)
@@ -6400,6 +6400,7 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
     Scenario_COMPLETION_instance = new Scenario('COMPLETION', 1, '___ Hole generation, possible completions:\n\n');
     Scenario_PARSEABLE_instance = new Scenario('PARSEABLE', 2, '\u2705 Current line parses! Tree:\n\n');
     Scenario_REPAIR_instance = new Scenario('REPAIR', 3, '\u274C Current line invalid, possible fixes:\n\n');
+    Scenario_SUFFIX_COMPLETION_instance = new Scenario('SUFFIX_COMPLETION', 4, '-> Forward completion, possible fixes:\n\n');
   }
   function Scenario(name, ordinal, reason) {
     Enum.call(this, name, ordinal);
@@ -6463,13 +6464,16 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
                     continue $sm;
                   } else {
                     var tmp_1 = this;
-                    noWhenBranchMatchedException();
+                    var this_1 = emptySequence();
+                    println('Unhandled scenario: ' + this.m2w_1.toString());
+                    tmp_1.t2w_1 = this_1;
+                    this.w8_1 = 2;
+                    continue $sm;
                   }
                 }
               }
             }
 
-            break;
           case 1:
             this.t2w_1 = suspendResult;
             this.w8_1 = 2;
@@ -6576,6 +6580,10 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
   function Scenario_REPAIR_getInstance() {
     Scenario_initEntries();
     return Scenario_REPAIR_instance;
+  }
+  function Scenario_SUFFIX_COMPLETION_getInstance() {
+    Scenario_initEntries();
+    return Scenario_SUFFIX_COMPLETION_instance;
   }
   function TidyEditor() {
     var tmp = this;
@@ -6845,9 +6853,10 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
   _.$_$.d = Scenario_PARSEABLE_getInstance;
   _.$_$.e = Scenario_REPAIR_getInstance;
   _.$_$.f = Scenario_STUB_getInstance;
-  _.$_$.g = pause;
-  _.$_$.h = sampleGREUntilTimeout;
-  _.$_$.i = Companion_getInstance_0;
+  _.$_$.g = Scenario_SUFFIX_COMPLETION_getInstance;
+  _.$_$.h = pause;
+  _.$_$.i = sampleGREUntilTimeout;
+  _.$_$.j = Companion_getInstance_0;
   //endregion
   return _;
 }));
@@ -6877,7 +6886,7 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
   var log2 = Math.log2;
   var KProperty0 = kotlin_kotlin.$_$.ib;
   var getPropertyCallableRef = kotlin_kotlin.$_$.t9;
-  var PlatformVars_instance = kotlin_ai_hypergraph_galoisenne.$_$.z1;
+  var PlatformVars_instance = kotlin_ai_hypergraph_galoisenne.$_$.b2;
   var indexOf = kotlin_kotlin.$_$.kc;
   var MainScope = kotlin_org_jetbrains_kotlinx_kotlinx_coroutines_core.$_$.d;
   var VOID = kotlin_kotlin.$_$.a;
@@ -6890,21 +6899,21 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
   var isInterface = kotlin_kotlin.$_$.ea;
   var get_COROUTINE_SUSPENDED = kotlin_kotlin.$_$.s7;
   var initMetadataForLambda = kotlin_kotlin.$_$.aa;
-  var tokenizeByWhitespace = kotlin_ai_hypergraph_galoisenne.$_$.w1;
-  var get_LED_BUFFER = kotlin_ai_hypergraph_galoisenne.$_$.l1;
+  var tokenizeByWhitespace = kotlin_ai_hypergraph_galoisenne.$_$.y1;
+  var get_LED_BUFFER = kotlin_ai_hypergraph_galoisenne.$_$.n1;
   var distinct = kotlin_kotlin.$_$.r4;
   var joinToString = kotlin_kotlin.$_$.h5;
   var await_0 = kotlin_org_jetbrains_kotlinx_kotlinx_coroutines_core.$_$.a;
-  var parseCFG = kotlin_ai_hypergraph_galoisenne.$_$.c1;
-  var get_noNonterminalStubs = kotlin_ai_hypergraph_galoisenne.$_$.y;
+  var parseCFG = kotlin_ai_hypergraph_galoisenne.$_$.e1;
+  var get_noNonterminalStubs = kotlin_ai_hypergraph_galoisenne.$_$.a1;
   var Exception = kotlin_kotlin.$_$.le;
   var toInt = kotlin_kotlin.$_$.td;
-  var set_LED_BUFFER = kotlin_ai_hypergraph_galoisenne.$_$.m1;
-  var set_TIMEOUT_MS = kotlin_ai_hypergraph_galoisenne.$_$.o1;
+  var set_LED_BUFFER = kotlin_ai_hypergraph_galoisenne.$_$.o1;
+  var set_TIMEOUT_MS = kotlin_ai_hypergraph_galoisenne.$_$.q1;
   var Monotonic_instance = kotlin_kotlin.$_$.l3;
   var ValueTimeMark__elapsedNow_impl_eonqvs = kotlin_kotlin.$_$.u1;
   var Duration__toString_impl_8d916b = kotlin_kotlin.$_$.t1;
-  var get_vanillaS2PCFG = kotlin_ai_hypergraph_galoisenne.$_$.q1;
+  var get_vanillaS2PCFG = kotlin_ai_hypergraph_galoisenne.$_$.s1;
   var initMetadataForCoroutine = kotlin_kotlin.$_$.y9;
   var lines = kotlin_kotlin.$_$.tc;
   var ArrayList_init_$Create$ = kotlin_kotlin.$_$.f;
@@ -6917,12 +6926,11 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
   var to = kotlin_kotlin.$_$.jf;
   var lazy = kotlin_kotlin.$_$.ef;
   var replace = kotlin_kotlin.$_$.xc;
-  var noWhenBranchMatchedException = kotlin_kotlin.$_$.ff;
-  var sampleGREUntilTimeout = kotlin_valueof_GradlePropertyValueSource__tidyparse_core.$_$.h;
+  var sampleGREUntilTimeout = kotlin_valueof_GradlePropertyValueSource__tidyparse_core.$_$.i;
   var dropLast = kotlin_kotlin.$_$.gc;
-  var enumSeqSmartSuspendable = kotlin_ai_hypergraph_galoisenne.$_$.y1;
-  var stripStub = kotlin_ai_hypergraph_galoisenne.$_$.u1;
-  var enumNTSmall = kotlin_ai_hypergraph_galoisenne.$_$.k;
+  var enumSeqSmartSuspendable = kotlin_ai_hypergraph_galoisenne.$_$.a2;
+  var stripStub = kotlin_ai_hypergraph_galoisenne.$_$.w1;
+  var enumNTSmall = kotlin_ai_hypergraph_galoisenne.$_$.l;
   var take = kotlin_kotlin.$_$.zb;
   var asSequence = kotlin_kotlin.$_$.b4;
   var map = kotlin_kotlin.$_$.sb;
@@ -6935,17 +6943,17 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
   var ArrayList_init_$Create$_0 = kotlin_kotlin.$_$.e;
   var Pair = kotlin_kotlin.$_$.pe;
   var toSet = kotlin_kotlin.$_$.f7;
-  var freeze = kotlin_ai_hypergraph_galoisenne.$_$.m;
+  var freeze = kotlin_ai_hypergraph_galoisenne.$_$.o;
   var charSequenceLength = kotlin_kotlin.$_$.n9;
-  var get_terminals = kotlin_ai_hypergraph_galoisenne.$_$.i1;
-  var get_TIMEOUT_MS = kotlin_ai_hypergraph_galoisenne.$_$.n1;
+  var get_terminals = kotlin_ai_hypergraph_galoisenne.$_$.k1;
+  var get_TIMEOUT_MS = kotlin_ai_hypergraph_galoisenne.$_$.p1;
   var listOf = kotlin_kotlin.$_$.p5;
   var hashCode = kotlin_kotlin.$_$.v9;
   var KtMap = kotlin_kotlin.$_$.s3;
   var Scenario_REPAIR_getInstance = kotlin_valueof_GradlePropertyValueSource__tidyparse_core.$_$.e;
   var Scenario_PARSEABLE_getInstance = kotlin_valueof_GradlePropertyValueSource__tidyparse_core.$_$.d;
-  var get_language = kotlin_ai_hypergraph_galoisenne.$_$.p;
-  var contains = kotlin_ai_hypergraph_galoisenne.$_$.i;
+  var get_language = kotlin_ai_hypergraph_galoisenne.$_$.r;
+  var contains = kotlin_ai_hypergraph_galoisenne.$_$.j;
   var Scenario_COMPLETION_getInstance = kotlin_valueof_GradlePropertyValueSource__tidyparse_core.$_$.c;
   var get_HOLE_MARKER = kotlin_ai_hypergraph_galoisenne.$_$.d;
   var Scenario_STUB_getInstance = kotlin_valueof_GradlePropertyValueSource__tidyparse_core.$_$.f;
@@ -6962,10 +6970,14 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
   var substring_0 = kotlin_kotlin.$_$.md;
   var initMetadataForCompanion = kotlin_kotlin.$_$.x9;
   var Enum = kotlin_kotlin.$_$.je;
-  var parse = kotlin_ai_hypergraph_galoisenne.$_$.d1;
-  var enumSeqSmart = kotlin_ai_hypergraph_galoisenne.$_$.l;
-  var levAndLenMetric = kotlin_ai_hypergraph_galoisenne.$_$.q;
-  var preparseParseableLines = kotlin_ai_hypergraph_galoisenne.$_$.f1;
+  var Scenario_SUFFIX_COMPLETION_getInstance = kotlin_valueof_GradlePropertyValueSource__tidyparse_core.$_$.g;
+  var admitsPrefix = kotlin_ai_hypergraph_galoisenne.$_$.f;
+  var noWhenBranchMatchedException = kotlin_kotlin.$_$.ff;
+  var parse = kotlin_ai_hypergraph_galoisenne.$_$.f1;
+  var enumSuffixes = kotlin_ai_hypergraph_galoisenne.$_$.n;
+  var enumSeqSmart = kotlin_ai_hypergraph_galoisenne.$_$.m;
+  var levAndLenMetric = kotlin_ai_hypergraph_galoisenne.$_$.s;
+  var preparseParseableLines = kotlin_ai_hypergraph_galoisenne.$_$.h1;
   var TidyEditor = kotlin_valueof_GradlePropertyValueSource__tidyparse_core.$_$.a;
   var setOf = kotlin_kotlin.$_$.l6;
   var CFGCFG = kotlin_ai_hypergraph_galoisenne.$_$.c;
@@ -6977,12 +6989,12 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
   var substringAfter = kotlin_kotlin.$_$.hd;
   var Regex_init_$Create$ = kotlin_kotlin.$_$.s;
   var checkIndexOverflow = kotlin_kotlin.$_$.e4;
-  var isValidProd = kotlin_ai_hypergraph_galoisenne.$_$.o;
+  var isValidProd = kotlin_ai_hypergraph_galoisenne.$_$.q;
   var dropLast_0 = kotlin_kotlin.$_$.s4;
-  var levenshtein = kotlin_ai_hypergraph_galoisenne.$_$.t;
+  var levenshtein = kotlin_ai_hypergraph_galoisenne.$_$.v;
   var numberToInt = kotlin_kotlin.$_$.ma;
-  var levenshteinAlign = kotlin_ai_hypergraph_galoisenne.$_$.r;
-  var contains_0 = kotlin_ai_hypergraph_galoisenne.$_$.j;
+  var levenshteinAlign = kotlin_ai_hypergraph_galoisenne.$_$.t;
+  var contains_0 = kotlin_ai_hypergraph_galoisenne.$_$.k;
   var compareValues = kotlin_kotlin.$_$.q7;
   var padEnd = kotlin_kotlin.$_$.uc;
   var maxOrNull = kotlin_kotlin.$_$.t5;
@@ -7002,7 +7014,7 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
   var onEach = kotlin_kotlin.$_$.tb;
   var HashMap_init_$Create$ = kotlin_kotlin.$_$.i;
   var KProperty1 = kotlin_kotlin.$_$.jb;
-  var get_pythonStatementCNFAllProds = kotlin_ai_hypergraph_galoisenne.$_$.p1;
+  var get_pythonStatementCNFAllProds = kotlin_ai_hypergraph_galoisenne.$_$.r1;
   var drop = kotlin_kotlin.$_$.t4;
   var plus = kotlin_kotlin.$_$.d6;
   var windowed = kotlin_kotlin.$_$.l7;
@@ -7012,14 +7024,14 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
   var coerceAtLeast = kotlin_kotlin.$_$.za;
   var LinkedHashMap_init_$Create$_0 = kotlin_kotlin.$_$.k;
   var objectCreate = kotlin_kotlin.$_$.na;
-  var tokenizeByWhitespaceAndKeepDelimiters = kotlin_ai_hypergraph_galoisenne.$_$.v1;
+  var tokenizeByWhitespaceAndKeepDelimiters = kotlin_ai_hypergraph_galoisenne.$_$.x1;
   var escapeHTML = kotlin_ai_hypergraph_galoisenne.$_$.b;
-  var get_segmentationCacheHTML = kotlin_ai_hypergraph_galoisenne.$_$.h1;
+  var get_segmentationCacheHTML = kotlin_ai_hypergraph_galoisenne.$_$.j1;
   var getStringHashCode = kotlin_kotlin.$_$.u9;
   var isArray = kotlin_kotlin.$_$.ca;
   var toMutableList = kotlin_kotlin.$_$.c7;
   var copyToArray = kotlin_kotlin.$_$.q4;
-  var Companion_getInstance_1 = kotlin_valueof_GradlePropertyValueSource__tidyparse_core.$_$.i;
+  var Companion_getInstance_1 = kotlin_valueof_GradlePropertyValueSource__tidyparse_core.$_$.j;
   var CharStreams_getInstance = kotlin_com_strumenta_antlr_kotlin_runtime.$_$.a;
   var Python3Lexer = kotlin_valueof_GradlePropertyValueSource__tidyparse_core.$_$.b;
   var toList = kotlin_kotlin.$_$.x6;
@@ -7029,24 +7041,30 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
   var ValueTimeMark = kotlin_kotlin.$_$.ce;
   var _Duration___get_inWholeMilliseconds__impl__msfiry = kotlin_kotlin.$_$.p1;
   var println = kotlin_kotlin.$_$.l8;
+  var makePorousFSA = kotlin_ai_hypergraph_galoisenne.$_$.x;
+  var porousToCodePoints = kotlin_ai_hypergraph_galoisenne.$_$.g1;
+  var get_nonterminals = kotlin_ai_hypergraph_galoisenne.$_$.c1;
+  var calcStats = kotlin_ai_hypergraph_galoisenne.$_$.i;
+  var get_bindex = kotlin_ai_hypergraph_galoisenne.$_$.h;
+  var get_START_SYMBOL = kotlin_ai_hypergraph_galoisenne.$_$.e;
+  var listOf_0 = kotlin_kotlin.$_$.o5;
+  var emptyList = kotlin_kotlin.$_$.u4;
+  var plus_0 = kotlin_kotlin.$_$.e6;
   var numberToLong = kotlin_kotlin.$_$.a9;
   var Long = kotlin_kotlin.$_$.ne;
   var multiply = kotlin_kotlin.$_$.y8;
   var asList = kotlin_org_jetbrains_kotlin_wrappers_kotlin_js.$_$.b;
   var toIntArray = kotlin_kotlin.$_$.v6;
   var toList_0 = kotlin_kotlin.$_$.w6;
-  var get_grammarEncoding = kotlin_ai_hypergraph_galoisenne.$_$.n;
-  var get_nonterminals = kotlin_ai_hypergraph_galoisenne.$_$.a1;
-  var listOf_0 = kotlin_kotlin.$_$.o5;
+  var get_grammarEncoding = kotlin_ai_hypergraph_galoisenne.$_$.p;
   var Triple = kotlin_kotlin.$_$.se;
   var fromInt = kotlin_kotlin.$_$.w8;
   var _UInt___get_data__impl__f0vqqw = kotlin_kotlin.$_$.g2;
   var numberToDouble = kotlin_kotlin.$_$.la;
   var until = kotlin_kotlin.$_$.eb;
-  var emptyList = kotlin_kotlin.$_$.u4;
   var IllegalStateException_init_$Create$ = kotlin_kotlin.$_$.c1;
   var sum_0 = kotlin_kotlin.$_$.r6;
-  var get_tmMap = kotlin_ai_hypergraph_galoisenne.$_$.k1;
+  var get_tmMap = kotlin_ai_hypergraph_galoisenne.$_$.m1;
   var roundToInt = kotlin_kotlin.$_$.sa;
   var _UInt___init__impl__l7qpdl = kotlin_kotlin.$_$.f2;
   var UInt = kotlin_kotlin.$_$.ve;
@@ -7059,32 +7077,26 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
   var _UIntArray___get_storage__impl__92a0v0 = kotlin_kotlin.$_$.p2;
   var arrayCopy = kotlin_kotlin.$_$.x3;
   var asList_0 = kotlin_kotlin.$_$.z3;
-  var get_bimap = kotlin_ai_hypergraph_galoisenne.$_$.f;
+  var get_bimap = kotlin_ai_hypergraph_galoisenne.$_$.g;
   var flatten = kotlin_kotlin.$_$.c5;
   var bitwiseAnd = kotlin_kotlin.$_$.p8;
   var awaitPromiseLike = kotlin_org_jetbrains_kotlin_wrappers_kotlin_js.$_$.a;
   var print = kotlin_kotlin.$_$.m8;
   var addEventListener = kotlin_org_jetbrains_kotlin_wrappers_kotlin_web.$_$.a;
   var printStackTrace = kotlin_kotlin.$_$.gf;
-  var makePorousFSA = kotlin_ai_hypergraph_galoisenne.$_$.v;
-  var porousToCodePoints = kotlin_ai_hypergraph_galoisenne.$_$.e1;
-  var calcStats = kotlin_ai_hypergraph_galoisenne.$_$.h;
-  var get_bindex = kotlin_ai_hypergraph_galoisenne.$_$.g;
-  var get_START_SYMBOL = kotlin_ai_hypergraph_galoisenne.$_$.e;
+  var makeLevFSA = kotlin_ai_hypergraph_galoisenne.$_$.w;
   var zip = kotlin_kotlin.$_$.o7;
-  var addAll = kotlin_kotlin.$_$.v3;
-  var makeLevFSA = kotlin_ai_hypergraph_galoisenne.$_$.u;
   var NoSuchElementException_init_$Create$ = kotlin_kotlin.$_$.g1;
   var compareTo = kotlin_kotlin.$_$.o9;
   var compare = kotlin_kotlin.$_$.s8;
   var convertToInt = kotlin_kotlin.$_$.t8;
   var toNumber = kotlin_kotlin.$_$.e9;
   var coerceAtLeast_0 = kotlin_kotlin.$_$.ya;
-  var get_tmLst = kotlin_ai_hypergraph_galoisenne.$_$.j1;
+  var get_tmLst = kotlin_ai_hypergraph_galoisenne.$_$.l1;
   var LinkedHashSet_init_$Create$ = kotlin_kotlin.$_$.o;
-  var pause = kotlin_valueof_GradlePropertyValueSource__tidyparse_core.$_$.g;
+  var pause = kotlin_valueof_GradlePropertyValueSource__tidyparse_core.$_$.h;
   var add = kotlin_kotlin.$_$.o8;
-  var cache = kotlin_ai_hypergraph_galoisenne.$_$.r1;
+  var cache = kotlin_ai_hypergraph_galoisenne.$_$.t1;
   var get_hexFmt = kotlin_ai_hypergraph_galoisenne.$_$.a;
   var toHexString = kotlin_kotlin.$_$.rd;
   //endregion
@@ -7119,6 +7131,8 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
   initMetadataForClass(PyTextareaDecorator, 'PyTextareaDecorator');
   initMetadataForClass(Paint, 'Paint', VOID, Enum);
   initMetadataForClass(PyCodeSnippet, 'PyCodeSnippet');
+  initMetadataForCoroutine($completeCodeCOROUTINE$, CoroutineImpl);
+  initMetadataForCoroutine($completePipelineCOROUTINE$, CoroutineImpl);
   initMetadataForCoroutine($readIndicesCOROUTINE$, CoroutineImpl);
   initMetadataForCoroutine($packMetadataCOROUTINE$, CoroutineImpl);
   initMetadataForCoroutine($buildMidpointsGPUCOROUTINE$, CoroutineImpl);
@@ -7131,15 +7145,12 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
   initMetadataForClass(Shader, 'Shader', VOID, VOID, VOID, [0, 4, 1]);
   initMetadataForClass(sam$kotlin_Comparator$0_0, 'sam$kotlin_Comparator$0', VOID, VOID, [Comparator, FunctionAdapter]);
   initMetadataForCoroutine($tryBootstrappingGPUCOROUTINE$, CoroutineImpl);
-  initMetadataForCoroutine($completeCodeCOROUTINE$, CoroutineImpl);
-  initMetadataForCoroutine($completePipelineCOROUTINE$, CoroutineImpl);
   initMetadataForCoroutine($repairCodeCOROUTINE$, CoroutineImpl);
   initMetadataForCoroutine($repairPipelineCOROUTINE$, CoroutineImpl);
   initMetadataForCoroutine($uniformDecoderCOROUTINE$, CoroutineImpl);
   initMetadataForCoroutine($readInt32ArrayCOROUTINE$, CoroutineImpl);
   initMetadataForCoroutine($ngramDecoderCOROUTINE$, CoroutineImpl);
   initMetadataForCoroutine($scoreSelectGatherCOROUTINE$, CoroutineImpl);
-  initMetadataForCoroutine($completePipeline$langIntSizeCOROUTINE$, CoroutineImpl);
   initMetadataForCoroutine($repairPipeline$langIntSizeCOROUTINE$, CoroutineImpl);
   //endregion
   function get_parser() {
@@ -8423,13 +8434,15 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
                     }
                   } else {
                     var tmp_1 = this;
-                    noWhenBranchMatchedException();
+                    log('Skipping ' + this.h34_1.toString() + ', unimplemented');
+                    tmp_1.p34_1 = Unit_instance;
+                    this.w8_1 = 9;
+                    continue $sm;
                   }
                 }
               }
             }
 
-            break;
           case 1:
             this.r34_1 = suspendResult;
             this.w8_1 = 3;
@@ -8650,6 +8663,7 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
         this.e2x('Stub completion...');
         break;
       default:
+        log('Unhandled scenario: ' + scenario.toString());
         break;
     }
     var i = {_v: 0};
@@ -9255,9 +9269,12 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
     SelectorAction_TAB_instance = new SelectorAction('TAB', 3);
   }
   function JSTidyEditor$handleInput$slambda$lambda(it) {
+    return it.p();
+  }
+  function JSTidyEditor$handleInput$slambda$lambda_0(it) {
     return 0;
   }
-  function JSTidyEditor$handleInput$slambda$lambda_0($t0) {
+  function JSTidyEditor$handleInput$slambda$lambda_1($t0) {
     return function () {
       return ', ' + Duration__toString_impl_8d916b(ValueTimeMark__elapsedNow_impl_eonqvs($t0)) + ' latency.';
     };
@@ -9294,11 +9311,11 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
   function SelectorAction(name, ordinal) {
     Enum.call(this, name, ordinal);
   }
-  function JSTidyEditor$handleInput$slambda($scenario, $cfg, $tokens, this$0, $workHash, $t0, resultContinuation) {
-    this.e37_1 = $scenario;
-    this.f37_1 = $cfg;
-    this.g37_1 = $tokens;
-    this.h37_1 = this$0;
+  function JSTidyEditor$handleInput$slambda($tokens, this$0, $containsUnkTok, $cfg, $workHash, $t0, resultContinuation) {
+    this.e37_1 = $tokens;
+    this.f37_1 = this$0;
+    this.g37_1 = $containsUnkTok;
+    this.h37_1 = $cfg;
     this.i37_1 = $workHash;
     this.j37_1 = $t0;
     CoroutineImpl.call(this, resultContinuation);
@@ -9320,58 +9337,65 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
         switch (tmp) {
           case 0:
             this.x8_1 = 9;
-            var tmp0 = this.e37_1.u2_1;
+            this.m37_1 = this.e37_1.p() === 1 && this.f37_1.q2x().gc(this.e37_1.s(0)) ? Scenario_STUB_getInstance() : this.e37_1.y(get_HOLE_MARKER()) ? Scenario_COMPLETION_getInstance() : !this.g37_1._v && contains(get_language(this.h37_1), this.e37_1) ? Scenario_PARSEABLE_getInstance() : !this.g37_1._v && admitsPrefix(this.h37_1, this.e37_1) ? Scenario_SUFFIX_COMPLETION_getInstance() : Scenario_REPAIR_getInstance();
+            var tmp0 = this.m37_1.u2_1;
             if (tmp0 === 0) {
-              this.m37_1 = take(enumNTSmall(this.f37_1, stripStub(this.g37_1.s(0))), 100);
+              this.n37_1 = take(enumNTSmall(this.h37_1, stripStub(this.e37_1.s(0))), 100);
               this.w8_1 = 6;
               continue $sm;
             } else {
               if (tmp0 === 1) {
                 if (!get_gpuAvailable()) {
-                  this.n37_1 = enumSeqSmart(this.f37_1, this.g37_1);
+                  this.o37_1 = enumSeqSmart(this.h37_1, this.e37_1);
                   this.w8_1 = 5;
                   continue $sm;
                 } else {
                   this.w8_1 = 4;
-                  suspendResult = completeCode(this.f37_1, this.g37_1, VOID, this);
+                  suspendResult = completeCode(this.h37_1, this.e37_1, VOID, this);
                   if (suspendResult === get_COROUTINE_SUSPENDED()) {
                     return suspendResult;
                   }
                   continue $sm;
                 }
               } else {
-                if (tmp0 === 2) {
-                  var tmp_0 = this;
-                  var tmp1_safe_receiver = parse(this.f37_1, joinToString(this.g37_1, ' '));
-                  var parseTree = tmp1_safe_receiver == null ? null : tmp1_safe_receiver.u1x();
-                  var this_0 = '\u2705 Current line parses! Tree:\n\n' + parseTree;
-                  var tmp0_0 = this.h37_1.y2w_1;
-                  var key = this.i37_1;
-                  tmp0_0.d5(key, this_0);
-                  this.h37_1.e2x(this_0);
-                  tmp_0.m37_1 = null;
+                if (tmp0 === 4) {
+                  this.n37_1 = enumSuffixes(this.h37_1, this.e37_1, 29);
                   this.w8_1 = 6;
                   continue $sm;
                 } else {
-                  if (tmp0 === 3) {
-                    if (!get_gpuAvailable()) {
-                      this.w8_1 = 2;
-                      suspendResult = sampleGREUntilTimeout(this.g37_1, this.f37_1, this);
-                      if (suspendResult === get_COROUTINE_SUSPENDED()) {
-                        return suspendResult;
-                      }
-                      continue $sm;
-                    } else {
-                      this.w8_1 = 1;
-                      suspendResult = repairCode(this.f37_1, this.g37_1, get_LED_BUFFER(), VOID, this);
-                      if (suspendResult === get_COROUTINE_SUSPENDED()) {
-                        return suspendResult;
-                      }
-                      continue $sm;
-                    }
+                  if (tmp0 === 2) {
+                    var tmp_0 = this;
+                    var tmp1_safe_receiver = parse(this.h37_1, joinToString(this.e37_1, ' '));
+                    var parseTree = tmp1_safe_receiver == null ? null : tmp1_safe_receiver.u1x();
+                    var this_0 = '\u2705 Current line parses! Tree:\n\n' + parseTree;
+                    var tmp0_0 = this.f37_1.y2w_1;
+                    var key = this.i37_1;
+                    tmp0_0.d5(key, this_0);
+                    this.f37_1.e2x(this_0);
+                    tmp_0.n37_1 = null;
+                    this.w8_1 = 6;
+                    continue $sm;
                   } else {
-                    var tmp_1 = this;
-                    noWhenBranchMatchedException();
+                    if (tmp0 === 3) {
+                      if (!get_gpuAvailable()) {
+                        this.w8_1 = 2;
+                        suspendResult = sampleGREUntilTimeout(this.e37_1, this.h37_1, this);
+                        if (suspendResult === get_COROUTINE_SUSPENDED()) {
+                          return suspendResult;
+                        }
+                        continue $sm;
+                      } else {
+                        this.w8_1 = 1;
+                        suspendResult = repairCode(this.h37_1, this.e37_1, get_LED_BUFFER(), VOID, this);
+                        if (suspendResult === get_COROUTINE_SUSPENDED()) {
+                          return suspendResult;
+                        }
+                        continue $sm;
+                      }
+                    } else {
+                      var tmp_1 = this;
+                      noWhenBranchMatchedException();
+                    }
                   }
                 }
               }
@@ -9380,43 +9404,49 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
             break;
           case 1:
             var ARGUMENT = suspendResult;
-            this.o37_1 = stripEpsilon(ARGUMENT);
+            this.p37_1 = stripEpsilon(ARGUMENT);
             this.w8_1 = 3;
             continue $sm;
           case 2:
-            this.o37_1 = suspendResult;
+            this.p37_1 = suspendResult;
             this.w8_1 = 3;
             continue $sm;
           case 3:
-            this.m37_1 = this.o37_1;
+            this.n37_1 = this.p37_1;
             this.w8_1 = 6;
             continue $sm;
           case 4:
             var ARGUMENT_0 = suspendResult;
-            this.n37_1 = stripEpsilon(ARGUMENT_0);
+            this.o37_1 = stripEpsilon(ARGUMENT_0);
             this.w8_1 = 5;
             continue $sm;
           case 5:
-            this.m37_1 = this.n37_1;
+            this.n37_1 = this.o37_1;
             this.w8_1 = 6;
             continue $sm;
           case 6:
-            var tmp2_safe_receiver = this.m37_1;
+            var tmp2_safe_receiver = this.n37_1;
             if (tmp2_safe_receiver == null) {
               this.l37_1 = null;
               this.w8_1 = 8;
               continue $sm;
             } else {
               var tmp_2;
-              if (this.e37_1.equals(Scenario_REPAIR_getInstance())) {
-                tmp_2 = levAndLenMetric(this.g37_1);
-              } else {
-                tmp_2 = JSTidyEditor$handleInput$slambda$lambda;
+              switch (this.m37_1.u2_1) {
+                case 3:
+                  tmp_2 = levAndLenMetric(this.e37_1);
+                  break;
+                case 4:
+                  tmp_2 = JSTidyEditor$handleInput$slambda$lambda;
+                  break;
+                default:
+                  tmp_2 = JSTidyEditor$handleInput$slambda$lambda_0;
+                  break;
               }
-              var tmp4_metric = tmp_2;
-              var tmp5_reason = this.e37_1.d2w_1;
+              var tmp5_metric = tmp_2;
+              var tmp6_reason = this.m37_1.d2w_1;
               this.w8_1 = 7;
-              suspendResult = this.h37_1.f2x(tmp2_safe_receiver, this.i37_1, this.g37_1, VOID, tmp4_metric, VOID, VOID, VOID, JSTidyEditor$handleInput$slambda$lambda_0(this.j37_1), tmp5_reason, this);
+              suspendResult = this.f37_1.f2x(tmp2_safe_receiver, this.i37_1, this.e37_1, VOID, tmp5_metric, VOID, VOID, VOID, JSTidyEditor$handleInput$slambda$lambda_1(this.j37_1), tmp6_reason, this);
               if (suspendResult === get_COROUTINE_SUSPENDED()) {
                 return suspendResult;
               }
@@ -9449,8 +9479,8 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
     i.k37_1 = $this$launch;
     return i;
   };
-  function JSTidyEditor$handleInput$slambda_0($scenario, $cfg, $tokens, this$0, $workHash, $t0, resultContinuation) {
-    var i = new JSTidyEditor$handleInput$slambda($scenario, $cfg, $tokens, this$0, $workHash, $t0, resultContinuation);
+  function JSTidyEditor$handleInput$slambda_0($tokens, this$0, $containsUnkTok, $cfg, $workHash, $t0, resultContinuation) {
+    var i = new JSTidyEditor$handleInput$slambda($tokens, this$0, $containsUnkTok, $cfg, $workHash, $t0, resultContinuation);
     var l = function ($this$launch, $completion) {
       return i.u2w($this$launch, $completion);
     };
@@ -9577,7 +9607,7 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
     var cfg = tmp;
     if (cfg.x())
       return Unit_instance;
-    var containsUnkTok = false;
+    var containsUnkTok = {_v: false};
     // Inline function 'kotlin.collections.map' call
     // Inline function 'kotlin.collections.mapTo' call
     var destination_0 = ArrayList_init_$Create$_0(collectionSizeOrDefault(tokens, 10));
@@ -9588,7 +9618,7 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
       if (get_terminals(cfg).y(item)) {
         tmp_0 = item;
       } else {
-        containsUnkTok = true;
+        containsUnkTok._v = true;
         tmp_0 = '_';
       }
       var tmp$ret$3 = tmp_0;
@@ -9605,16 +9635,17 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
     var this_0 = this.y2w_1;
     if ((isInterface(this_0, KtMap) ? this_0 : THROW_CCE()).n2(workHash))
       return this.e2x(ensureNotNull(this.y2w_1.p2(workHash)));
+    var tmp_1 = this;
+    // Inline function 'kotlin.also' call
+    var this_1 = MainScope();
     var tmp0_safe_receiver = this.c2x_1;
     if (tmp0_safe_receiver == null)
       null;
     else {
       tmp0_safe_receiver.o12();
     }
-    var scenario = tokens.p() === 1 && this.q2x().gc(tokens.s(0)) ? Scenario_STUB_getInstance() : tokens.y(get_HOLE_MARKER()) ? Scenario_COMPLETION_getInstance() : !containsUnkTok && contains(get_language(cfg), tokens) ? Scenario_PARSEABLE_getInstance() : Scenario_REPAIR_getInstance();
-    var tmp_1 = this;
-    var tmp_2 = MainScope();
-    tmp_1.c2x_1 = launch(tmp_2, VOID, VOID, JSTidyEditor$handleInput$slambda_0(scenario, cfg, tokens, this, workHash, t0, null));
+    var tmp_2 = this_1;
+    tmp_1.c2x_1 = launch(tmp_2, VOID, VOID, JSTidyEditor$handleInput$slambda_0(tokens, this, containsUnkTok, cfg, workHash, t0, null));
   };
   protoOf(JSTidyEditor).p35 = function (_this__u8e3s4) {
     switch (_this__u8e3s4) {
@@ -9727,7 +9758,7 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
     this.g32_1 = this.g32_1 + 1 | 0;
     var currentHash = this.g32_1;
     if (this.u2x()) {
-      get_decorator().p37();
+      get_decorator().q37();
     }
     if (!this.u2x()) {
       this.i32(JSTidyEditor$redecorateLines$lambda(currentHash, this));
@@ -9738,17 +9769,17 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
   };
   function JSTidyPyEditor$handleInput$slambda$lambda($tokens, this$0) {
     return function (it) {
-      return numberToInt(imul(levenshtein(dropLast_0($tokens, 1), it), 10000) + this$0.q37(it) * 1000.0);
+      return numberToInt(imul(levenshtein(dropLast_0($tokens, 1), it), 10000) + this$0.r37(it) * 1000.0);
     };
   }
   function JSTidyPyEditor$handleInput$slambda$lambda_0($tokens, this$0) {
     return function (it) {
-      return numberToInt(imul(levenshtein(dropLast_0($tokens, 1), it), 10000) + this$0.q37(it) * 1000.0);
+      return numberToInt(imul(levenshtein(dropLast_0($tokens, 1), it), 10000) + this$0.r37(it) * 1000.0);
     };
   }
   function JSTidyPyEditor$handleInput$slambda$lambda_1(this$0) {
     return function (it) {
-      return this$0.r37(dropLast(it, 8));
+      return this$0.s37(dropLast(it, 8));
     };
   }
   function JSTidyPyEditor$handleInput$slambda$lambda_2($total) {
@@ -9801,7 +9832,7 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
   function JSTidyPyEditor$handleInput$slambda$lambda_4($tokens, $pcs, this$0) {
     return function (it) {
       var levAlign = levenshteinAlign(dropLast_0($tokens, 1), tokenizeByWhitespace(it));
-      return $pcs.u37(levAlign, JSTidyPyEditor$handleInput$slambda$lambda$lambda(this$0));
+      return $pcs.v37(levAlign, JSTidyPyEditor$handleInput$slambda$lambda$lambda(this$0));
     };
   }
   function JSTidyPyEditor$handleInput$slambda$lambda_5(this$0) {
@@ -9846,8 +9877,8 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
   }
   function Companion_0() {
     Companion_instance_0 = this;
-    this.v37_1 = listOf(['BOS', 'NEWLINE']);
-    this.w37_1 = listOf(['NEWLINE', 'EOS']);
+    this.w37_1 = listOf(['BOS', 'NEWLINE']);
+    this.x37_1 = listOf(['NEWLINE', 'EOS']);
   }
   var Companion_instance_0;
   function Companion_getInstance_3() {
@@ -9874,16 +9905,16 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
     return toString(trim(isCharSequence(this_0) ? this_0 : THROW_CCE()));
   }
   function sam$kotlin_Comparator$0(function_0) {
-    this.x37_1 = function_0;
+    this.y37_1 = function_0;
   }
   protoOf(sam$kotlin_Comparator$0).ed = function (a, b) {
-    return this.x37_1(a, b);
+    return this.y37_1(a, b);
   };
   protoOf(sam$kotlin_Comparator$0).compare = function (a, b) {
     return this.ed(a, b);
   };
   protoOf(sam$kotlin_Comparator$0).d3 = function () {
-    return this.x37_1;
+    return this.y37_1;
   };
   protoOf(sam$kotlin_Comparator$0).equals = function (other) {
     var tmp;
@@ -9910,7 +9941,7 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
   }
   function JSTidyPyEditor$_get_order_$ref_htyzef() {
     return function (p0) {
-      return p0.y37();
+      return p0.z37();
     };
   }
   function JSTidyPyEditor$normalizingConst$delegate$lambda(this$0) {
@@ -9920,7 +9951,7 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
   }
   function JSTidyPyEditor$_get_normalizingConst_$ref_ismclg() {
     return function (p0) {
-      return p0.z37();
+      return p0.a38();
     };
   }
   function JSTidyPyEditor$ngramTensor$delegate$lambda(this$0) {
@@ -9965,7 +9996,7 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
       var value = this_0.p2(trimmed);
       var tmp_0;
       if (value == null) {
-        var answer = contains_0(get_language(decCFG), replace((new PyCodeSnippet(trimmed)).a38(), '|', 'OR'));
+        var answer = contains_0(get_language(decCFG), replace((new PyCodeSnippet(trimmed)).b38(), '|', 'OR'));
         this_0.d5(trimmed, answer);
         tmp_0 = answer;
       } else {
@@ -9978,10 +10009,10 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
         invalid.d5(ln, value_0);
       }
     }
-    get_pyDecorator().d38(invalid);
+    get_pyDecorator().e38(invalid);
     if (!(currentHash === this$0.g32_1))
       return Unit_instance;
-    get_pyDecorator().e38();
+    get_pyDecorator().f38();
   }
   function JSTidyPyEditor$redecorateLines$lambda($currentHash, this$0) {
     return function () {
@@ -9998,12 +10029,12 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
     };
   }
   function JSTidyPyEditor$handleInput$slambda(this$0, $tokens, $workHash, $errHst, $pcs, $t0, resultContinuation) {
-    this.n38_1 = this$0;
-    this.o38_1 = $tokens;
-    this.p38_1 = $workHash;
-    this.q38_1 = $errHst;
-    this.r38_1 = $pcs;
-    this.s38_1 = $t0;
+    this.o38_1 = this$0;
+    this.p38_1 = $tokens;
+    this.q38_1 = $workHash;
+    this.r38_1 = $errHst;
+    this.s38_1 = $pcs;
+    this.t38_1 = $t0;
     CoroutineImpl.call(this, resultContinuation);
   }
   protoOf(JSTidyPyEditor$handleInput$slambda).u2w = function ($this$launch, $completion) {
@@ -10024,14 +10055,14 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
           case 0:
             this.x8_1 = 5;
             var _destruct__k2r9zo = to(0, 0);
-            this.v38_1 = {_v: _destruct__k2r9zo.mf()};
-            this.u38_1 = {_v: _destruct__k2r9zo.nf()};
+            this.w38_1 = {_v: _destruct__k2r9zo.mf()};
+            this.v38_1 = {_v: _destruct__k2r9zo.nf()};
             var tmp_0 = this;
-            tmp_0.w38_1 = JSTidyPyEditor$handleInput$slambda$lambda(this.o38_1, this.n38_1);
+            tmp_0.x38_1 = JSTidyPyEditor$handleInput$slambda$lambda(this.p38_1, this.o38_1);
             if (get_gpuAvailable()) {
               log('Repairing on GPU...');
               this.w8_1 = 2;
-              suspendResult = repairCode(this.n38_1.g2x(), this.o38_1, get_LED_BUFFER(), this.n38_1.d33(), this);
+              suspendResult = repairCode(this.o38_1.g2x(), this.p38_1, get_LED_BUFFER(), this.o38_1.d33(), this);
               if (suspendResult === get_COROUTINE_SUSPENDED()) {
                 return suspendResult;
               }
@@ -10039,9 +10070,9 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
             } else {
               log('Repairing on CPU...');
               var tmp_1 = this;
-              tmp_1.w38_1 = JSTidyPyEditor$handleInput$slambda$lambda_0(this.o38_1, this.n38_1);
+              tmp_1.x38_1 = JSTidyPyEditor$handleInput$slambda$lambda_0(this.p38_1, this.o38_1);
               this.w8_1 = 1;
-              suspendResult = sampleGREUntilTimeout(this.o38_1, this.n38_1.g2x(), this);
+              suspendResult = sampleGREUntilTimeout(this.p38_1, this.o38_1.g2x(), this);
               if (suspendResult === get_COROUTINE_SUSPENDED()) {
                 return suspendResult;
               }
@@ -10049,33 +10080,33 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
             }
 
           case 1:
-            this.x38_1 = suspendResult;
+            this.y38_1 = suspendResult;
             this.w8_1 = 3;
             continue $sm;
           case 2:
             var ARGUMENT = suspendResult;
-            this.x38_1 = asSequence(ARGUMENT);
+            this.y38_1 = asSequence(ARGUMENT);
             this.w8_1 = 3;
             continue $sm;
           case 3:
-            var ARGUMENT_0 = this.x38_1;
-            var ARGUMENT_1 = map(ARGUMENT_0, JSTidyPyEditor$handleInput$slambda$lambda_1(this.n38_1));
+            var ARGUMENT_0 = this.y38_1;
+            var ARGUMENT_1 = map(ARGUMENT_0, JSTidyPyEditor$handleInput$slambda$lambda_1(this.o38_1));
             var it = distinct_0(ARGUMENT_1);
             var tmp_2;
-            if (this.n38_1.t30_1) {
-              tmp_2 = onEach(it, JSTidyPyEditor$handleInput$slambda$lambda_2(this.u38_1));
+            if (this.o38_1.t30_1) {
+              tmp_2 = onEach(it, JSTidyPyEditor$handleInput$slambda$lambda_2(this.v38_1));
             } else {
-              tmp_2 = filter(it, JSTidyPyEditor$handleInput$slambda$lambda_3(this.n38_1, this.q38_1, this.v38_1, this.u38_1));
+              tmp_2 = filter(it, JSTidyPyEditor$handleInput$slambda$lambda_3(this.o38_1, this.r38_1, this.w38_1, this.v38_1));
             }
 
             var tmp0_$receiver = tmp_2;
-            var tmp1_origTks = dropLast_0(this.o38_1, 1);
-            var tmp2_metric = this.w38_1;
+            var tmp1_origTks = dropLast_0(this.p38_1, 1);
+            var tmp2_metric = this.x38_1;
             var tmp3_reason = '\u274C Current line invalid, possible fixes:\n\n';
             this.w8_1 = 4;
-            var tmp_3 = JSTidyPyEditor$handleInput$slambda$lambda_4(this.o38_1, this.r38_1, this.n38_1);
-            var tmp_4 = JSTidyPyEditor$handleInput$slambda$lambda_5(this.n38_1);
-            suspendResult = this.n38_1.f2x(tmp0_$receiver, this.p38_1, tmp1_origTks, VOID, tmp2_metric, VOID, tmp_3, tmp_4, JSTidyPyEditor$handleInput$slambda$lambda_6(this.q38_1, this.v38_1, this.u38_1, this.s38_1), tmp3_reason, this);
+            var tmp_3 = JSTidyPyEditor$handleInput$slambda$lambda_4(this.p38_1, this.s38_1, this.o38_1);
+            var tmp_4 = JSTidyPyEditor$handleInput$slambda$lambda_5(this.o38_1);
+            suspendResult = this.o38_1.f2x(tmp0_$receiver, this.q38_1, tmp1_origTks, VOID, tmp2_metric, VOID, tmp_3, tmp_4, JSTidyPyEditor$handleInput$slambda$lambda_6(this.r38_1, this.w38_1, this.v38_1, this.t38_1), tmp3_reason, this);
             if (suspendResult === get_COROUTINE_SUSPENDED()) {
               return suspendResult;
             }
@@ -10098,8 +10129,8 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
      while (true);
   };
   protoOf(JSTidyPyEditor$handleInput$slambda).v2w = function ($this$launch, completion) {
-    var i = new JSTidyPyEditor$handleInput$slambda(this.n38_1, this.o38_1, this.p38_1, this.q38_1, this.r38_1, this.s38_1, completion);
-    i.t38_1 = $this$launch;
+    var i = new JSTidyPyEditor$handleInput$slambda(this.o38_1, this.p38_1, this.q38_1, this.r38_1, this.s38_1, this.t38_1, completion);
+    i.u38_1 = $this$launch;
     return i;
   };
   function JSTidyPyEditor$handleInput$slambda_0(this$0, $tokens, $workHash, $errHst, $pcs, $t0, resultContinuation) {
@@ -10139,14 +10170,14 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
   protoOf(JSTidyPyEditor).h35 = function () {
     return this.p30_1;
   };
-  protoOf(JSTidyPyEditor).y37 = function () {
+  protoOf(JSTidyPyEditor).z37 = function () {
     var tmp0 = this.r30_1;
     var tmp = KProperty1;
     // Inline function 'kotlin.getValue' call
     getPropertyCallableRef('order', 1, tmp, JSTidyPyEditor$_get_order_$ref_htyzef(), null);
     return tmp0.m2();
   };
-  protoOf(JSTidyPyEditor).z37 = function () {
+  protoOf(JSTidyPyEditor).a38 = function () {
     var tmp0 = this.s30_1;
     var tmp = KProperty1;
     // Inline function 'kotlin.getValue' call
@@ -10187,16 +10218,16 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
     }
     setCompletionsAndShow(dropLast_0(drop(destination, 2), 2));
   };
-  protoOf(JSTidyPyEditor).q37 = function (text) {
+  protoOf(JSTidyPyEditor).r37 = function (text) {
     // Inline function 'kotlin.collections.sumOf' call
     var sum = 0;
-    var _iterator__ex2g4s = windowed(plus(plus(Companion_getInstance_3().v37_1, text), Companion_getInstance_3().w37_1), this.y37(), 1).m();
+    var _iterator__ex2g4s = windowed(plus(plus(Companion_getInstance_3().w37_1, text), Companion_getInstance_3().x37_1), this.z37(), 1).m();
     while (_iterator__ex2g4s.n()) {
       var element = _iterator__ex2g4s.o();
       var tmp = sum;
       var tmp0_elvis_lhs = this.q30_1.p2(element);
       // Inline function 'kotlin.math.ln' call
-      var x = (tmp0_elvis_lhs == null ? 1.0 : tmp0_elvis_lhs) / this.z37();
+      var x = (tmp0_elvis_lhs == null ? 1.0 : tmp0_elvis_lhs) / this.a38();
       sum = tmp + Math.log(x);
     }
     return -sum;
@@ -10238,7 +10269,7 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
     }
     return tmp;
   };
-  protoOf(JSTidyPyEditor).r37 = function (_this__u8e3s4) {
+  protoOf(JSTidyPyEditor).s37 = function (_this__u8e3s4) {
     return replace(replace(replace(_this__u8e3s4, 'OR', '|'), 'not_in', 'not in'), 'is_not', 'is not');
   };
   protoOf(JSTidyPyEditor).s32 = function (event) {
@@ -10264,11 +10295,11 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
     getPropertyCallableRef('cme', 1, tmp, JSTidyPyEditor$_get_cme_$ref_5c9nh2(), null);
     return tmp0.m2();
   };
-  protoOf(JSTidyPyEditor).y38 = function (range) {
+  protoOf(JSTidyPyEditor).z38 = function (range) {
     return this.a31().setSelection(this.a31().posFromIndex(range.f1_1), this.a31().posFromIndex(range.g1_1));
   };
   protoOf(JSTidyPyEditor).m2x = function (range) {
-    return this.y38(range);
+    return this.z38(range);
   };
   protoOf(JSTidyPyEditor).s2x = function () {
     // Inline function 'kotlin.js.asDynamic' call
@@ -10293,7 +10324,7 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
       return Unit_instance;
     var pcs = new PyCodeSnippet(currentLine);
     // Inline function 'kotlin.collections.map' call
-    var this_1 = tokenizeByWhitespace(pcs.a38());
+    var this_1 = tokenizeByWhitespace(pcs.b38());
     // Inline function 'kotlin.collections.mapTo' call
     var destination = ArrayList_init_$Create$_0(collectionSizeOrDefault(this_1, 10));
     var _iterator__ex2g4s = this_1.m();
@@ -10342,7 +10373,7 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
     var errHst = LinkedHashMap_init_$Create$();
     if (!containsUnk && contains(get_language(this.g2x()), tokens)) {
       // Inline function 'kotlin.let' call
-      var tcm = this.f33(pcs.s37_1);
+      var tcm = this.f33(pcs.t37_1);
       var tmp_1;
       // Inline function 'kotlin.text.isEmpty' call
       var this_3 = getErrorType(this, tcm);
@@ -10390,15 +10421,15 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
     return it.ac_1;
   }
   function Parser(ruleMap) {
-    this.z38_1 = ruleMap;
+    this.a39_1 = ruleMap;
     var tmp = this;
-    var tmp_0 = this.z38_1.r2();
+    var tmp_0 = this.a39_1.r2();
     // Inline function 'kotlin.text.toRegex' call
     var this_0 = joinToString(tmp_0, '|', VOID, VOID, VOID, VOID, Parser$parseRE$lambda);
-    tmp.a39_1 = Regex_init_$Create$(this_0);
+    tmp.b39_1 = Regex_init_$Create$(this_0);
   }
-  protoOf(Parser).b39 = function (token) {
-    var tmp0 = this.z38_1.s2();
+  protoOf(Parser).c39 = function (token) {
+    var tmp0 = this.a39_1.s2();
     var tmp$ret$1;
     $l$block: {
       // Inline function 'kotlin.collections.firstOrNull' call
@@ -10422,7 +10453,7 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
   function TextareaDecorator$toColorfulHTML$lambda(this$0) {
     return function (token) {
       var escapedToken = escapeHTML(token);
-      var tmp0_safe_receiver = this$0.k35_1.b39(token);
+      var tmp0_safe_receiver = this$0.k35_1.c39(token);
       var tmp;
       if (tmp0_safe_receiver == null) {
         tmp = null;
@@ -10460,7 +10491,7 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
     this_0.spellcheck = false;
     this_0.wrap = 'off';
   }
-  protoOf(TextareaDecorator).p37 = function () {
+  protoOf(TextareaDecorator).q37 = function () {
     var sb = StringBuilder_init_$Create$();
     var lines_0;
     var maxLen = 0;
@@ -10515,22 +10546,22 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
     this.j35_1.rows = lines_0 + 2 | 0;
   };
   function lintCache($this) {
-    return $this.c39();
+    return $this.d39();
   }
   function clearGutterMarkers($this) {
-    if ($this.b38_1 == null)
+    if ($this.c38_1 == null)
       return Unit_instance;
-    var doc = $this.b38_1.getDoc();
+    var doc = $this.c38_1.getDoc();
     var tmp = doc.lineCount();
     var n = (!(tmp == null) ? typeof tmp === 'number' : false) ? tmp : THROW_CCE();
-    $this.b38_1.operation(PyTextareaDecorator$clearGutterMarkers$lambda(n, $this));
+    $this.c38_1.operation(PyTextareaDecorator$clearGutterMarkers$lambda(n, $this));
   }
   function setWarnMarker($this, lineNo, message) {
     var tmp = document.createElement('div');
     var marker = tmp instanceof HTMLElement ? tmp : THROW_CCE();
     marker.className = 'CodeMirror-lint-marker CodeMirror-lint-marker-warning';
     marker.setAttribute('title', message);
-    $this.b38_1.setGutterMarker(lineNo, $this.c38_1, marker);
+    $this.c38_1.setGutterMarker(lineNo, $this.d38_1, marker);
   }
   function PyTextareaDecorator$clearGutterMarkers$lambda($n, this$0) {
     return function () {
@@ -10540,7 +10571,7 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
         do {
           var ln = inductionVariable;
           inductionVariable = inductionVariable + 1 | 0;
-          this$0.b38_1.setGutterMarker(ln, this$0.c38_1, null);
+          this$0.c38_1.setGutterMarker(ln, this$0.d38_1, null);
         }
          while (inductionVariable < $n);
         tmp = Unit_instance;
@@ -10567,18 +10598,18 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
     };
   }
   function PyTextareaDecorator(cm) {
-    this.b38_1 = cm;
-    this.c38_1 = 'cm-warn-gutter';
+    this.c38_1 = cm;
+    this.d38_1 = 'cm-warn-gutter';
   }
-  protoOf(PyTextareaDecorator).c39 = function () {
+  protoOf(PyTextareaDecorator).d39 = function () {
     // Inline function 'kotlin.js.asDynamic' call
     var w = window;
     if (w.__tidyLint == null)
       w.__tidyLint = {version: 0, lines: new Map()};
     return w.__tidyLint;
   };
-  protoOf(PyTextareaDecorator).d38 = function (lines) {
-    var o = this.c39();
+  protoOf(PyTextareaDecorator).e38 = function (lines) {
+    var o = this.d39();
     var tmp = o.version;
     o.version = ((!(tmp == null) ? typeof tmp === 'number' : false) ? tmp : THROW_CCE()) + 1 | 0;
     o.lines.clear();
@@ -10594,17 +10625,17 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
       o.lines.set(ln, msg);
     }
   };
-  protoOf(PyTextareaDecorator).e38 = function () {
-    if (this.b38_1 == null)
+  protoOf(PyTextareaDecorator).f38 = function () {
+    if (this.c38_1 == null)
       return Unit_instance;
     try {
-      var tmp = this.b38_1.getOption('gutters');
+      var tmp = this.c38_1.getOption('gutters');
       var gutters = toMutableList((!(tmp == null) ? isArray(tmp) : false) ? tmp : THROW_CCE());
-      if (!gutters.y(this.c38_1)) {
-        gutters.g(this.c38_1);
+      if (!gutters.y(this.d38_1)) {
+        gutters.g(this.d38_1);
         // Inline function 'kotlin.collections.toTypedArray' call
         var tmp$ret$0 = copyToArray(gutters);
-        this.b38_1.setOption('gutters', tmp$ret$0);
+        this.c38_1.setOption('gutters', tmp$ret$0);
       }
     } catch ($p) {
       var _unused_var__etf5q3 = $p;
@@ -10626,7 +10657,7 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
       tmp_1 = tmp1_elvis_lhs;
     }
     var lines = tmp_1;
-    this.b38_1.operation(PyTextareaDecorator$fullDecorate$lambda(lines, this));
+    this.c38_1.operation(PyTextareaDecorator$fullDecorate$lambda(lines, this));
   };
   var Paint_NONE_instance;
   var Paint_GREEN_instance;
@@ -10689,10 +10720,10 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
     return Paint_GRAY_instance;
   }
   function PyCodeSnippet(rawCode) {
-    this.s37_1 = rawCode;
+    this.t37_1 = rawCode;
     var tmp = this;
     // Inline function 'kotlin.collections.filter' call
-    var tmp0 = (new Python3Lexer(CharStreams_getInstance().h23(this.s37_1))).s26();
+    var tmp0 = (new Python3Lexer(CharStreams_getInstance().h23(this.t37_1))).s26();
     // Inline function 'kotlin.collections.filterTo' call
     var destination = ArrayList_init_$Create$();
     var _iterator__ex2g4s = tmp0.m();
@@ -10719,12 +10750,12 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
         break $l$loop;
       list.g(item);
     }
-    tmp.t37_1 = toList(list);
+    tmp.u37_1 = toList(list);
   }
-  protoOf(PyCodeSnippet).a38 = function () {
-    return replace(replace(joinToString(this.t37_1, ' ', VOID, VOID, VOID, VOID, PyCodeSnippet$lexedTokens$lambda), "'", ''), 'NEWLINE', '') + ' NEWLINE';
+  protoOf(PyCodeSnippet).b38 = function () {
+    return replace(replace(joinToString(this.u37_1, ' ', VOID, VOID, VOID, VOID, PyCodeSnippet$lexedTokens$lambda), "'", ''), 'NEWLINE', '') + ' NEWLINE';
   };
-  protoOf(PyCodeSnippet).u37 = function (levAlignedPatch, format) {
+  protoOf(PyCodeSnippet).v37 = function (levAlignedPatch, format) {
     // Inline function 'kotlin.collections.mutableListOf' call
     var taggedStr = ArrayList_init_$Create$();
     var indexInOriginal = 0;
@@ -10742,7 +10773,7 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
       else if (!(oldToken == null) && !(newToken == null) && !(oldToken == newToken))
         taggedStr.g(to(Paint_ORANGE_getInstance(), newToken));
       else
-        taggedStr.g(to(Paint_NONE_getInstance(), ensureNotNull(this.t37_1.s(indexInOriginal).q24())));
+        taggedStr.g(to(Paint_NONE_getInstance(), ensureNotNull(this.u37_1.s(indexInOriginal).q24())));
       indexInOriginal = indexInOriginal + 1 | 0;
     }
     var tmp0 = format(joinToString(taggedStr, ' ', VOID, VOID, VOID, VOID, PyCodeSnippet$paintDiff$lambda));
@@ -10783,17 +10814,17 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
     return sb.toString();
   };
   protoOf(PyCodeSnippet).toString = function () {
-    return 'PyCodeSnippet(rawCode=' + this.s37_1 + ')';
+    return 'PyCodeSnippet(rawCode=' + this.t37_1 + ')';
   };
   protoOf(PyCodeSnippet).hashCode = function () {
-    return getStringHashCode(this.s37_1);
+    return getStringHashCode(this.t37_1);
   };
   protoOf(PyCodeSnippet).equals = function (other) {
     if (this === other)
       return true;
     if (!(other instanceof PyCodeSnippet))
       return false;
-    if (!(this.s37_1 === other.s37_1))
+    if (!(this.t37_1 === other.t37_1))
       return false;
     return true;
   };
@@ -10846,6 +10877,221 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
       return $cm.showHint({hint: window.fixedHtmlHint, completeSingle: false});
     };
   }
+  function get_active_nt_count() {
+    _init_properties_WGPUtils_kt__94oi27();
+    var tmp = KProperty0;
+    return active_nt_count$delegate.h39(null, getPropertyCallableRef('active_nt_count', 0, tmp, _get_active_nt_count_$ref_yzk41d(), null));
+  }
+  var active_nt_count$delegate;
+  function completeCode(cfg, porous, ngrams, $completion) {
+    ngrams = ngrams === VOID ? null : ngrams;
+    var tmp = new $completeCodeCOROUTINE$(cfg, porous, ngrams, $completion);
+    tmp.y8_1 = Unit_instance;
+    tmp.z8_1 = null;
+    return tmp.e9();
+  }
+  function completePipeline(cfg, fsa, ngrams, codePoints, $completion) {
+    var tmp = new $completePipelineCOROUTINE$(cfg, fsa, ngrams, codePoints, $completion);
+    tmp.y8_1 = Unit_instance;
+    tmp.z8_1 = null;
+    return tmp.e9();
+  }
+  function _get_active_nt_count_$ref_yzk41d() {
+    return function () {
+      return get_active_nt_count();
+    };
+  }
+  function $completeCodeCOROUTINE$(cfg, porous, ngrams, resultContinuation) {
+    CoroutineImpl.call(this, resultContinuation);
+    this.q39_1 = cfg;
+    this.r39_1 = porous;
+    this.s39_1 = ngrams;
+  }
+  protoOf($completeCodeCOROUTINE$).e9 = function () {
+    var suspendResult = this.y8_1;
+    $sm: do
+      try {
+        var tmp = this.w8_1;
+        switch (tmp) {
+          case 0:
+            this.x8_1 = 2;
+            this.t39_1 = Monotonic_instance.od();
+            var fsa = makePorousFSA(this.r39_1);
+            var codePoints = porousToCodePoints(this.q39_1, this.r39_1);
+            log('Made porousFSA(|Q|=' + fsa.h1f() + ', width=' + fsa.m1d_1 + ') in ' + Duration__toString_impl_8d916b(ValueTimeMark__elapsedNow_impl_eonqvs(this.t39_1)));
+            this.w8_1 = 1;
+            suspendResult = completePipeline(this.q39_1, fsa, this.s39_1, codePoints, this);
+            if (suspendResult === get_COROUTINE_SUSPENDED()) {
+              return suspendResult;
+            }
+
+            continue $sm;
+          case 1:
+            var this_0 = suspendResult;
+            log('Received: ' + this_0.p() + ' completions in ' + Duration__toString_impl_8d916b(ValueTimeMark__elapsedNow_impl_eonqvs(this.t39_1)) + ' (round trip)');
+            return this_0;
+          case 2:
+            throw this.z8_1;
+        }
+      } catch ($p) {
+        var e = $p;
+        if (this.x8_1 === 2) {
+          throw e;
+        } else {
+          this.w8_1 = this.x8_1;
+          this.z8_1 = e;
+        }
+      }
+     while (true);
+  };
+  function $completePipelineCOROUTINE$(cfg, fsa, ngrams, codePoints, resultContinuation) {
+    CoroutineImpl.call(this, resultContinuation);
+    this.c3a_1 = cfg;
+    this.d3a_1 = fsa;
+    this.e3a_1 = ngrams;
+    this.f3a_1 = codePoints;
+  }
+  protoOf($completePipelineCOROUTINE$).e9 = function () {
+    var suspendResult = this.y8_1;
+    $sm: do
+      try {
+        var tmp = this.w8_1;
+        switch (tmp) {
+          case 0:
+            this.x8_1 = 7;
+            this.w3a_1 = Monotonic_instance.od();
+            var _destruct__k2r9zo = to(this.d3a_1.h1f(), get_nonterminals(this.c3a_1).p());
+            this.u3a_1 = _destruct__k2r9zo.mf();
+            this.v3a_1 = _destruct__k2r9zo.nf();
+            log('Porous FSA(|Q|=' + this.u3a_1 + '), ' + calcStats(this.c3a_1));
+            this.w8_1 = 1;
+            suspendResult = Companion_instance_1.y3a(this.c3a_1, this.d3a_1, this);
+            if (suspendResult === get_COROUTINE_SUSPENDED()) {
+              return suspendResult;
+            }
+
+            continue $sm;
+          case 1:
+            this.m3a_1 = suspendResult;
+            this.s3a_1 = get_termBuf(this.c3a_1);
+            var wordBuf = Companion_instance_1.z3a(this.f3a_1);
+            var totalSize = imul(imul(this.u3a_1, this.u3a_1), this.v3a_1);
+            this.l3a_1 = Companion_instance_1.a3b(140, totalSize);
+            get_init_chart_line().b3b([this.l3a_1, wordBuf, this.m3a_1, this.s3a_1]).e3b(this.u3a_1, this.u3a_1, this.v3a_1);
+            log('Chart construction took: ' + Duration__toString_impl_8d916b(ValueTimeMark__elapsedNow_impl_eonqvs(this.w3a_1)) + ' / dpBuf: ' + this.l3a_1.size + ' bytes');
+            this.w8_1 = 2;
+            suspendResult = get_cfl_mul_upper().f3b(this.u3a_1, this.v3a_1, this.l3a_1, this.m3a_1, this);
+            if (suspendResult === get_COROUTINE_SUSPENDED()) {
+              return suspendResult;
+            }
+
+            continue $sm;
+          case 2:
+            log('Matrix closure reached in: ' + Duration__toString_impl_8d916b(ValueTimeMark__elapsedNow_impl_eonqvs(this.w3a_1)));
+            var startNT = get_bindex(this.c3a_1).n1j(get_START_SYMBOL());
+            var allStartIds = listOf_0(imul(this.d3a_1.t1f()[0], this.v3a_1) + startNT | 0);
+            if (allStartIds.x()) {
+              log('No valid completion found: dpComplete has no entries in final states!');
+              var _iterator__ex2g4s = listOf([this.m3a_1, this.l3a_1]).m();
+              while (_iterator__ex2g4s.n()) {
+                var element = _iterator__ex2g4s.o();
+                element.destroy();
+              }
+              return emptyList();
+            }
+
+            this.t3a_1 = plus_0(allStartIds, 0);
+            this.r3a_1 = this.d3a_1.m1d_1 + 10 | 0;
+            if (512 < this.r3a_1) {
+              log('Max completion length exceeded 512 (' + this.r3a_1 + ')');
+              var _iterator__ex2g4s_0 = listOf([this.m3a_1, this.l3a_1]).m();
+              while (_iterator__ex2g4s_0.n()) {
+                var element_0 = _iterator__ex2g4s_0.o();
+                element_0.destroy();
+              }
+              return emptyList();
+            }
+
+            this.w8_1 = 3;
+            suspendResult = Companion_instance_1.g3b(this.u3a_1, this.v3a_1, this.l3a_1, this.m3a_1, this);
+            if (suspendResult === get_COROUTINE_SUSPENDED()) {
+              return suspendResult;
+            }
+
+            continue $sm;
+          case 3:
+            var _destruct__k2r9zo_0 = suspendResult;
+            this.i3a_1 = _destruct__k2r9zo_0.mf();
+            this.h3a_1 = _destruct__k2r9zo_0.nf();
+            this.g3a_1 = _destruct__k2r9zo_0.fp();
+            var lsDense = Companion_instance_1.h3b(this.u3a_1, this.v3a_1, this.l3a_1, this.m3a_1, this.s3a_1);
+            var totalExp = numberToInt(this.g3a_1.size) / 8 | 0;
+            this.j3a_1 = Companion_instance_1.i3b(imul(totalExp, 4), 140);
+            get_ls_cdf().b3b([this.l3a_1, lsDense, this.h3a_1, this.j3a_1, this.m3a_1, this.s3a_1]).e3b(this.u3a_1, this.u3a_1, this.v3a_1);
+            lsDense.destroy();
+            var numRoots = this.t3a_1.p() / 2 | 0;
+            this.o3a_1 = Companion_instance_1.i3b(imul(numRoots, 4), 140);
+            this.k3a_1 = packStruct(listOf([0, this.r3a_1, this.v3a_1, this.u3a_1, 65535, 2000000]), [Companion_instance_1.j3b(this.t3a_1)]);
+            get_build_root_sizes().b3b([this.l3a_1, this.i3a_1, this.h3a_1, this.j3a_1, this.s3a_1, this.o3a_1, this.k3a_1]).k3b((numRoots + 255 | 0) / 256 | 0);
+            this.n3a_1 = Companion_instance_1.l3b(this.o3a_1, numRoots);
+            var toDecode = 100000;
+            Companion_instance_1.m3b(this.k3a_1, 5, toDecode);
+            this.p3a_1 = Companion_instance_1.i3b(imul(imul(toDecode, this.r3a_1), 4), 140);
+            get_enum_words_wor().b3b([this.l3a_1, this.i3a_1, this.h3a_1, this.g3a_1, this.j3a_1, this.s3a_1, this.k3a_1, this.o3a_1, this.n3a_1, this.p3a_1]).k3b(65535, ((toDecode + 65535 | 0) - 1 | 0) / 65535 | 0);
+            if (!(this.e3a_1 == null)) {
+              this.w8_1 = 5;
+              suspendResult = ngramDecoder(this.p3a_1, this.e3a_1, this.r3a_1, this.c3a_1, toDecode, this);
+              if (suspendResult === get_COROUTINE_SUSPENDED()) {
+                return suspendResult;
+              }
+              continue $sm;
+            } else {
+              this.w8_1 = 4;
+              suspendResult = uniformDecoder(this.p3a_1, this.c3a_1, this.r3a_1, toDecode, this);
+              if (suspendResult === get_COROUTINE_SUSPENDED()) {
+                return suspendResult;
+              }
+              continue $sm;
+            }
+
+          case 4:
+            this.q3a_1 = suspendResult;
+            this.w8_1 = 6;
+            continue $sm;
+          case 5:
+            this.q3a_1 = suspendResult;
+            this.w8_1 = 6;
+            continue $sm;
+          case 6:
+            var this_0 = this.q3a_1;
+            var _iterator__ex2g4s_1 = listOf([this.p3a_1, this.o3a_1, this.n3a_1, this.m3a_1, this.l3a_1, this.k3a_1, this.j3a_1, this.i3a_1, this.h3a_1, this.g3a_1]).m();
+            while (_iterator__ex2g4s_1.n()) {
+              var element_1 = _iterator__ex2g4s_1.o();
+              element_1.destroy();
+            }
+
+            return this_0;
+          case 7:
+            throw this.z8_1;
+        }
+      } catch ($p) {
+        var e = $p;
+        if (this.x8_1 === 7) {
+          throw e;
+        } else {
+          this.w8_1 = this.x8_1;
+          this.z8_1 = e;
+        }
+      }
+     while (true);
+  };
+  var properties_initialized_WGPUtils_kt_v3py37;
+  function _init_properties_WGPUtils_kt__94oi27() {
+    if (!properties_initialized_WGPUtils_kt_v3py37) {
+      properties_initialized_WGPUtils_kt_v3py37 = true;
+      active_nt_count$delegate = new Shader('struct Uni { n: u32, nt: u32 };\n\n@group(0) @binding(0) var<storage, read>       dp_in  : array<u32>;\n@group(0) @binding(1) var<storage, read_write> outCnt : array<u32>; // length n*n\n@group(0) @binding(2) var<uniform>             uni    : Uni;\n\n@compute @workgroup_size(8,8,1)\nfn main(@builtin(global_invocation_id) gid: vec3<u32>) {\n  let r = gid.x;\n  let c = gid.y;\n  let n = uni.n;\n  let nt = uni.nt;\n  if (r >= n || c >= n) { return; }\n  if (c <= r) { outCnt[r*n + c] = 0u; return; }\n  let base = r * n * nt + c * nt;\n  var k: u32 = 0u;\n  for (var a: u32 = 0u; a < nt; a = a + 1u) { if (dp_in[base + a] != 0u) { k = k + 1u; } }\n  outCnt[r*n + c] = k;\n}');
+    }
+  }
   function set_gpuAvailable(_set____db54di) {
     _init_properties_WGPUv1_kt__redrgw();
     gpuAvailable = _set____db54di;
@@ -10864,115 +11110,115 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
   function get_init_chart() {
     _init_properties_WGPUv1_kt__redrgw();
     var tmp = KProperty0;
-    return init_chart$delegate.g39(null, getPropertyCallableRef('init_chart', 0, tmp, _get_init_chart_$ref_n5sot1(), null));
+    return init_chart$delegate.h39(null, getPropertyCallableRef('init_chart', 0, tmp, _get_init_chart_$ref_n5sot1(), null));
   }
   var init_chart$delegate;
   function get_init_chart_line() {
     _init_properties_WGPUv1_kt__redrgw();
     var tmp = KProperty0;
-    return init_chart_line$delegate.g39(null, getPropertyCallableRef('init_chart_line', 0, tmp, _get_init_chart_line_$ref_5ksvcs(), null));
+    return init_chart_line$delegate.h39(null, getPropertyCallableRef('init_chart_line', 0, tmp, _get_init_chart_line_$ref_5ksvcs(), null));
   }
   var init_chart_line$delegate;
   function get_dag_reach() {
     _init_properties_WGPUv1_kt__redrgw();
     var tmp = KProperty0;
-    return dag_reach$delegate.g39(null, getPropertyCallableRef('dag_reach', 0, tmp, _get_dag_reach_$ref_8m660u(), null));
+    return dag_reach$delegate.h39(null, getPropertyCallableRef('dag_reach', 0, tmp, _get_dag_reach_$ref_8m660u(), null));
   }
   var dag_reach$delegate;
   function get_mdpt_count() {
     _init_properties_WGPUv1_kt__redrgw();
     var tmp = KProperty0;
-    return mdpt_count$delegate.g39(null, getPropertyCallableRef('mdpt_count', 0, tmp, _get_mdpt_count_$ref_8j1oof(), null));
+    return mdpt_count$delegate.h39(null, getPropertyCallableRef('mdpt_count', 0, tmp, _get_mdpt_count_$ref_8j1oof(), null));
   }
   var mdpt_count$delegate;
   function get_mdpt_write() {
     _init_properties_WGPUv1_kt__redrgw();
     var tmp = KProperty0;
-    return mdpt_write$delegate.g39(null, getPropertyCallableRef('mdpt_write', 0, tmp, _get_mdpt_write_$ref_f4mb1b(), null));
+    return mdpt_write$delegate.h39(null, getPropertyCallableRef('mdpt_write', 0, tmp, _get_mdpt_write_$ref_f4mb1b(), null));
   }
   var mdpt_write$delegate;
   function get_cfl_mul_upper() {
     _init_properties_WGPUv1_kt__redrgw();
     var tmp = KProperty0;
-    return cfl_mul_upper$delegate.g39(null, getPropertyCallableRef('cfl_mul_upper', 0, tmp, _get_cfl_mul_upper_$ref_wpikvl(), null));
+    return cfl_mul_upper$delegate.h39(null, getPropertyCallableRef('cfl_mul_upper', 0, tmp, _get_cfl_mul_upper_$ref_wpikvl(), null));
   }
   var cfl_mul_upper$delegate;
   function get_bp_count() {
     _init_properties_WGPUv1_kt__redrgw();
     var tmp = KProperty0;
-    return bp_count$delegate.g39(null, getPropertyCallableRef('bp_count', 0, tmp, _get_bp_count_$ref_rb1yas(), null));
+    return bp_count$delegate.h39(null, getPropertyCallableRef('bp_count', 0, tmp, _get_bp_count_$ref_rb1yas(), null));
   }
   var bp_count$delegate;
   function get_bp_write() {
     _init_properties_WGPUv1_kt__redrgw();
     var tmp = KProperty0;
-    return bp_write$delegate.g39(null, getPropertyCallableRef('bp_write', 0, tmp, _get_bp_write_$ref_kphbxw(), null));
+    return bp_write$delegate.h39(null, getPropertyCallableRef('bp_write', 0, tmp, _get_bp_write_$ref_kphbxw(), null));
   }
   var bp_write$delegate;
   function get_ls_dense() {
     _init_properties_WGPUv1_kt__redrgw();
     var tmp = KProperty0;
-    return ls_dense$delegate.g39(null, getPropertyCallableRef('ls_dense', 0, tmp, _get_ls_dense_$ref_jqln3n(), null));
+    return ls_dense$delegate.h39(null, getPropertyCallableRef('ls_dense', 0, tmp, _get_ls_dense_$ref_jqln3n(), null));
   }
   var ls_dense$delegate;
   function get_ls_cdf() {
     _init_properties_WGPUv1_kt__redrgw();
     var tmp = KProperty0;
-    return ls_cdf$delegate.g39(null, getPropertyCallableRef('ls_cdf', 0, tmp, _get_ls_cdf_$ref_nv4udv(), null));
+    return ls_cdf$delegate.h39(null, getPropertyCallableRef('ls_cdf', 0, tmp, _get_ls_cdf_$ref_nv4udv(), null));
   }
   var ls_cdf$delegate;
   function get_prefix_sum_p1() {
     _init_properties_WGPUv1_kt__redrgw();
     var tmp = KProperty0;
-    return prefix_sum_p1$delegate.g39(null, getPropertyCallableRef('prefix_sum_p1', 0, tmp, _get_prefix_sum_p1_$ref_ljgc8u(), null));
+    return prefix_sum_p1$delegate.h39(null, getPropertyCallableRef('prefix_sum_p1', 0, tmp, _get_prefix_sum_p1_$ref_ljgc8u(), null));
   }
   var prefix_sum_p1$delegate;
   function get_prefix_sum_p2() {
     _init_properties_WGPUv1_kt__redrgw();
     var tmp = KProperty0;
-    return prefix_sum_p2$delegate.g39(null, getPropertyCallableRef('prefix_sum_p2', 0, tmp, _get_prefix_sum_p2_$ref_m0hyn1(), null));
+    return prefix_sum_p2$delegate.h39(null, getPropertyCallableRef('prefix_sum_p2', 0, tmp, _get_prefix_sum_p2_$ref_m0hyn1(), null));
   }
   var prefix_sum_p2$delegate;
   function get_build_root_sizes() {
     _init_properties_WGPUv1_kt__redrgw();
     var tmp = KProperty0;
-    return build_root_sizes$delegate.g39(null, getPropertyCallableRef('build_root_sizes', 0, tmp, _get_build_root_sizes_$ref_lqum50(), null));
+    return build_root_sizes$delegate.h39(null, getPropertyCallableRef('build_root_sizes', 0, tmp, _get_build_root_sizes_$ref_lqum50(), null));
   }
   var build_root_sizes$delegate;
   function get_enum_words_wor() {
     _init_properties_WGPUv1_kt__redrgw();
     var tmp = KProperty0;
-    return enum_words_wor$delegate.g39(null, getPropertyCallableRef('enum_words_wor', 0, tmp, _get_enum_words_wor_$ref_1zjldg(), null));
+    return enum_words_wor$delegate.h39(null, getPropertyCallableRef('enum_words_wor', 0, tmp, _get_enum_words_wor_$ref_1zjldg(), null));
   }
   var enum_words_wor$delegate;
   function get_markov_score() {
     _init_properties_WGPUv1_kt__redrgw();
     var tmp = KProperty0;
-    return markov_score$delegate.g39(null, getPropertyCallableRef('markov_score', 0, tmp, _get_markov_score_$ref_wkofsd(), null));
+    return markov_score$delegate.h39(null, getPropertyCallableRef('markov_score', 0, tmp, _get_markov_score_$ref_wkofsd(), null));
   }
   var markov_score$delegate;
   function get_select_top_k() {
     _init_properties_WGPUv1_kt__redrgw();
     var tmp = KProperty0;
-    return select_top_k$delegate.g39(null, getPropertyCallableRef('select_top_k', 0, tmp, _get_select_top_k_$ref_ig3jpg(), null));
+    return select_top_k$delegate.h39(null, getPropertyCallableRef('select_top_k', 0, tmp, _get_select_top_k_$ref_ig3jpg(), null));
   }
   var select_top_k$delegate;
   function get_gather_top_k() {
     _init_properties_WGPUv1_kt__redrgw();
     var tmp = KProperty0;
-    return gather_top_k$delegate.g39(null, getPropertyCallableRef('gather_top_k', 0, tmp, _get_gather_top_k_$ref_ltgnoj(), null));
+    return gather_top_k$delegate.h39(null, getPropertyCallableRef('gather_top_k', 0, tmp, _get_gather_top_k_$ref_ltgnoj(), null));
   }
   var gather_top_k$delegate;
   function get_sparse_load() {
     _init_properties_WGPUv1_kt__redrgw();
     var tmp = KProperty0;
-    return sparse_load$delegate.g39(null, getPropertyCallableRef('sparse_load', 0, tmp, _get_sparse_load_$ref_abmbgb(), null));
+    return sparse_load$delegate.h39(null, getPropertyCallableRef('sparse_load', 0, tmp, _get_sparse_load_$ref_abmbgb(), null));
   }
   var sparse_load$delegate;
   function get_sparse_mat_load() {
     _init_properties_WGPUv1_kt__redrgw();
     var tmp = KProperty0;
-    return sparse_mat_load$delegate.g39(null, getPropertyCallableRef('sparse_mat_load', 0, tmp, _get_sparse_mat_load_$ref_hd7yjo(), null));
+    return sparse_mat_load$delegate.h39(null, getPropertyCallableRef('sparse_mat_load', 0, tmp, _get_sparse_mat_load_$ref_hd7yjo(), null));
   }
   var sparse_mat_load$delegate;
   function set_gpu(_set____db54di) {
@@ -10992,19 +11238,6 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
   function tryBootstrappingGPU(needsExtraMemory, $completion) {
     needsExtraMemory = needsExtraMemory === VOID ? false : needsExtraMemory;
     var tmp = new $tryBootstrappingGPUCOROUTINE$(needsExtraMemory, $completion);
-    tmp.y8_1 = Unit_instance;
-    tmp.z8_1 = null;
-    return tmp.e9();
-  }
-  function completeCode(cfg, porous, ngrams, $completion) {
-    ngrams = ngrams === VOID ? null : ngrams;
-    var tmp = new $completeCodeCOROUTINE$(cfg, porous, ngrams, $completion);
-    tmp.y8_1 = Unit_instance;
-    tmp.z8_1 = null;
-    return tmp.e9();
-  }
-  function completePipeline(cfg, fsa, ngrams, codePoints, $completion) {
-    var tmp = new $completePipelineCOROUTINE$(cfg, fsa, ngrams, codePoints, $completion);
     tmp.y8_1 = Unit_instance;
     tmp.z8_1 = null;
     return tmp.e9();
@@ -11081,9 +11314,9 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
   }
   function $readIndicesCOROUTINE$(_this__u8e3s4, _this__u8e3s4_0, indices, resultContinuation) {
     CoroutineImpl.call(this, resultContinuation);
-    this.x3f_1 = _this__u8e3s4;
-    this.y3f_1 = _this__u8e3s4_0;
-    this.z3f_1 = indices;
+    this.n3g_1 = _this__u8e3s4;
+    this.o3g_1 = _this__u8e3s4_0;
+    this.p3g_1 = indices;
   }
   protoOf($readIndicesCOROUTINE$).e9 = function () {
     var suspendResult = this.y8_1;
@@ -11093,24 +11326,24 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
         switch (tmp) {
           case 0:
             this.x8_1 = 2;
-            this.a3g_1 = Monotonic_instance.od();
-            this.b3g_1 = this.x3f_1.d3g(multiply(numberToLong(this.z3f_1.p()), new Long(4, 0)), 9);
+            this.q3g_1 = Monotonic_instance.od();
+            this.r3g_1 = this.n3g_1.i3b(multiply(numberToLong(this.p3g_1.p()), new Long(4, 0)), 9);
             var encoder = get_gpu().createCommandEncoder();
             var index = 0;
-            var _iterator__ex2g4s = this.z3f_1.m();
+            var _iterator__ex2g4s = this.p3g_1.m();
             while (_iterator__ex2g4s.n()) {
               var item = _iterator__ex2g4s.o();
               var _unary__edvuaz = index;
               index = _unary__edvuaz + 1 | 0;
               var i = checkIndexOverflow(_unary__edvuaz);
-              encoder.copyBufferToBuffer(this.y3f_1, item * 4, this.b3g_1, i * 4, 4.0);
+              encoder.copyBufferToBuffer(this.o3g_1, item * 4, this.r3g_1, i * 4, 4.0);
             }
 
             var tmp_0 = get_gpu().queue;
             var this_0 = [encoder.finish()];
             tmp_0.submit(this_0);
             this.w8_1 = 1;
-            var this_1 = this.b3g_1.mapAsync(1);
+            var this_1 = this.r3g_1.mapAsync(1);
             suspendResult = await_0(this_1, this);
             if (suspendResult === get_COROUTINE_SUSPENDED()) {
               return suspendResult;
@@ -11118,10 +11351,10 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
 
             continue $sm;
           case 1:
-            var this_2 = toList_0(toIntArray(asList(new Int32Array(this.b3g_1.getMappedRange()))));
-            this.b3g_1.destroy();
+            var this_2 = toList_0(toIntArray(asList(new Int32Array(this.r3g_1.getMappedRange()))));
+            this.r3g_1.destroy();
             var t = this_2;
-            log('Read ' + this.z3f_1.p() + '/' + numberToInt(this.y3f_1.size) + ' bytes in ' + Duration__toString_impl_8d916b(ValueTimeMark__elapsedNow_impl_eonqvs(this.a3g_1)));
+            log('Read ' + this.p3g_1.p() + '/' + numberToInt(this.o3g_1.size) + ' bytes in ' + Duration__toString_impl_8d916b(ValueTimeMark__elapsedNow_impl_eonqvs(this.q3g_1)));
             return t;
           case 2:
             throw this.z8_1;
@@ -11139,9 +11372,9 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
   };
   function $packMetadataCOROUTINE$(_this__u8e3s4, cfg, fsa, resultContinuation) {
     CoroutineImpl.call(this, resultContinuation);
-    this.m3g_1 = _this__u8e3s4;
-    this.n3g_1 = cfg;
-    this.o3g_1 = fsa;
+    this.a3h_1 = _this__u8e3s4;
+    this.b3h_1 = cfg;
+    this.c3h_1 = fsa;
   }
   protoOf($packMetadataCOROUTINE$).e9 = function () {
     var suspendResult = this.y8_1;
@@ -11151,16 +11384,16 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
         switch (tmp) {
           case 0:
             this.x8_1 = 3;
-            this.p3g_1 = Monotonic_instance.od();
-            var it = get_grammarEncoding(this.n3g_1);
+            this.d3h_1 = Monotonic_instance.od();
+            var it = get_grammarEncoding(this.b3h_1);
             var _destruct__k2r9zo = to(it.u1r_1, it.v1r_1);
             var gFlat = _destruct__k2r9zo.mf();
             var gOff = _destruct__k2r9zo.nf();
-            this.r3g_1 = this.m3g_1.s3g(gFlat, 140);
-            this.q3g_1 = this.m3g_1.s3g(gOff, 140);
-            log('Encoded grammar in ' + Duration__toString_impl_8d916b(ValueTimeMark__elapsedNow_impl_eonqvs(this.p3g_1)));
+            this.f3h_1 = this.a3h_1.g3h(gFlat, 140);
+            this.e3h_1 = this.a3h_1.g3h(gOff, 140);
+            log('Encoded grammar in ' + Duration__toString_impl_8d916b(ValueTimeMark__elapsedNow_impl_eonqvs(this.d3h_1)));
             this.w8_1 = 1;
-            suspendResult = get_dag_reach().t3g(this.o3g_1, this);
+            suspendResult = get_dag_reach().h3h(this.c3h_1, this);
             if (suspendResult === get_COROUTINE_SUSPENDED()) {
               return suspendResult;
             }
@@ -11168,9 +11401,9 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
             continue $sm;
           case 1:
             var reachBuf = suspendResult.mf();
-            log('DAG fixpoint in ' + Duration__toString_impl_8d916b(ValueTimeMark__elapsedNow_impl_eonqvs(this.p3g_1)));
+            log('DAG fixpoint in ' + Duration__toString_impl_8d916b(ValueTimeMark__elapsedNow_impl_eonqvs(this.d3h_1)));
             this.w8_1 = 2;
-            suspendResult = this.m3g_1.u3g(this.o3g_1.h1f(), reachBuf, this);
+            suspendResult = this.a3h_1.i3h(this.c3h_1.h1f(), reachBuf, this);
             if (suspendResult === get_COROUTINE_SUSPENDED()) {
               return suspendResult;
             }
@@ -11180,9 +11413,9 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
             var _destruct__k2r9zo_0 = suspendResult;
             var allFSAPairsFlattened = _destruct__k2r9zo_0.mf();
             var allFSAPairsOffsets = _destruct__k2r9zo_0.nf();
-            log('Sparse reachability took ' + Duration__toString_impl_8d916b(ValueTimeMark__elapsedNow_impl_eonqvs(this.p3g_1)) + ' / (' + 4 * (allFSAPairsFlattened.size + allFSAPairsOffsets.size) + ' bytes)');
-            var metaBuf = packStruct(listOf([this.o3g_1.h1f(), get_nonterminals(this.n3g_1).p()]), [allFSAPairsFlattened, allFSAPairsOffsets, this.m3g_1.v3g(this.o3g_1.u1f()), this.r3g_1, this.q3g_1]);
-            log('Packed metadata in ' + Duration__toString_impl_8d916b(ValueTimeMark__elapsedNow_impl_eonqvs(this.p3g_1)));
+            log('Sparse reachability took ' + Duration__toString_impl_8d916b(ValueTimeMark__elapsedNow_impl_eonqvs(this.d3h_1)) + ' / (' + 4 * (allFSAPairsFlattened.size + allFSAPairsOffsets.size) + ' bytes)');
+            var metaBuf = packStruct(listOf([this.c3h_1.h1f(), get_nonterminals(this.b3h_1).p()]), [allFSAPairsFlattened, allFSAPairsOffsets, this.a3h_1.j3h(this.c3h_1.u1f()), this.f3h_1, this.e3h_1]);
+            log('Packed metadata in ' + Duration__toString_impl_8d916b(ValueTimeMark__elapsedNow_impl_eonqvs(this.d3h_1)));
             return metaBuf;
           case 3:
             throw this.z8_1;
@@ -11200,9 +11433,9 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
   };
   function $buildMidpointsGPUCOROUTINE$(_this__u8e3s4, states, reachBuf, resultContinuation) {
     CoroutineImpl.call(this, resultContinuation);
-    this.e3h_1 = _this__u8e3s4;
-    this.f3h_1 = states;
-    this.g3h_1 = reachBuf;
+    this.s3h_1 = _this__u8e3s4;
+    this.t3h_1 = states;
+    this.u3h_1 = reachBuf;
   }
   protoOf($buildMidpointsGPUCOROUTINE$).e9 = function () {
     var suspendResult = this.y8_1;
@@ -11212,23 +11445,23 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
         switch (tmp) {
           case 0:
             this.x8_1 = 3;
-            var totalPairs = imul(this.f3h_1, this.f3h_1);
-            this.h3h_1 = this.e3h_1.d3g(imul(totalPairs, 4), 140);
-            this.i3h_1 = this.e3h_1.m3h(this.f3h_1, 72);
-            get_mdpt_count().n3h([this.g3h_1, this.h3h_1, this.i3h_1]).q3h(this.f3h_1, this.f3h_1);
-            this.j3h_1 = this.e3h_1.r3h(this.h3h_1, totalPairs);
-            this.l3h_1 = listOf_0(totalPairs - 1 | 0);
+            var totalPairs = imul(this.t3h_1, this.t3h_1);
+            this.v3h_1 = this.s3h_1.i3b(imul(totalPairs, 4), 140);
+            this.w3h_1 = this.s3h_1.a3i(this.t3h_1, 72);
+            get_mdpt_count().b3b([this.u3h_1, this.v3h_1, this.w3h_1]).k3b(this.t3h_1, this.t3h_1);
+            this.x3h_1 = this.s3h_1.l3b(this.v3h_1, totalPairs);
+            this.z3h_1 = listOf_0(totalPairs - 1 | 0);
             this.w8_1 = 1;
-            suspendResult = this.e3h_1.s3h(this.j3h_1, this.l3h_1, this);
+            suspendResult = this.s3h_1.b3i(this.x3h_1, this.z3h_1, this);
             if (suspendResult === get_COROUTINE_SUSPENDED()) {
               return suspendResult;
             }
 
             continue $sm;
           case 1:
-            this.k3h_1 = suspendResult.s(0);
+            this.y3h_1 = suspendResult.s(0);
             this.w8_1 = 2;
-            suspendResult = this.e3h_1.s3h(this.h3h_1, this.l3h_1, this);
+            suspendResult = this.s3h_1.b3i(this.v3h_1, this.z3h_1, this);
             if (suspendResult === get_COROUTINE_SUSPENDED()) {
               return suspendResult;
             }
@@ -11236,12 +11469,12 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
             continue $sm;
           case 2:
             var ARGUMENT = suspendResult.s(0);
-            var totalM = this.k3h_1 + ARGUMENT | 0;
-            var flatBuf = this.e3h_1.d3g(imul(totalM, 4), 140);
-            get_mdpt_write().n3h([this.g3h_1, this.j3h_1, flatBuf, this.i3h_1]).q3h(this.f3h_1, this.f3h_1);
-            var this_0 = to(flatBuf, this.j3h_1);
-            this.i3h_1.destroy();
-            this.h3h_1.destroy();
+            var totalM = this.y3h_1 + ARGUMENT | 0;
+            var flatBuf = this.s3h_1.i3b(imul(totalM, 4), 140);
+            get_mdpt_write().b3b([this.u3h_1, this.x3h_1, flatBuf, this.w3h_1]).k3b(this.t3h_1, this.t3h_1);
+            var this_0 = to(flatBuf, this.x3h_1);
+            this.w3h_1.destroy();
+            this.v3h_1.destroy();
             return this_0;
           case 3:
             throw this.z8_1;
@@ -11259,11 +11492,11 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
   };
   function $buildBackpointersCOROUTINE$(_this__u8e3s4, numStates, numNTs, dpIn, metaBuf, resultContinuation) {
     CoroutineImpl.call(this, resultContinuation);
-    this.b3i_1 = _this__u8e3s4;
-    this.c3i_1 = numStates;
-    this.d3i_1 = numNTs;
-    this.e3i_1 = dpIn;
-    this.f3i_1 = metaBuf;
+    this.k3i_1 = _this__u8e3s4;
+    this.l3i_1 = numStates;
+    this.m3i_1 = numNTs;
+    this.n3i_1 = dpIn;
+    this.o3i_1 = metaBuf;
   }
   protoOf($buildBackpointersCOROUTINE$).e9 = function () {
     var suspendResult = this.y8_1;
@@ -11273,23 +11506,23 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
         switch (tmp) {
           case 0:
             this.x8_1 = 3;
-            var totalCells = imul(imul(this.c3i_1, this.c3i_1), this.d3i_1);
-            this.h3i_1 = this.b3i_1.d3g(imul(totalCells, 4), 140);
-            log('Total cells: ' + totalCells + ' = ' + this.c3i_1 + '^2 * ' + this.d3i_1);
-            get_bp_count().n3h([this.e3i_1, this.h3i_1, this.f3i_1]).k3i(this.c3i_1, this.c3i_1, this.d3i_1);
-            this.g3i_1 = this.b3i_1.r3h(this.h3i_1, totalCells);
-            this.j3i_1 = listOf_0(totalCells - 1 | 0);
+            var totalCells = imul(imul(this.l3i_1, this.l3i_1), this.m3i_1);
+            this.q3i_1 = this.k3i_1.i3b(imul(totalCells, 4), 140);
+            log('Total cells: ' + totalCells + ' = ' + this.l3i_1 + '^2 * ' + this.m3i_1);
+            get_bp_count().b3b([this.n3i_1, this.q3i_1, this.o3i_1]).e3b(this.l3i_1, this.l3i_1, this.m3i_1);
+            this.p3i_1 = this.k3i_1.l3b(this.q3i_1, totalCells);
+            this.s3i_1 = listOf_0(totalCells - 1 | 0);
             this.w8_1 = 1;
-            suspendResult = this.b3i_1.s3h(this.g3i_1, this.j3i_1, this);
+            suspendResult = this.k3i_1.b3i(this.p3i_1, this.s3i_1, this);
             if (suspendResult === get_COROUTINE_SUSPENDED()) {
               return suspendResult;
             }
 
             continue $sm;
           case 1:
-            this.i3i_1 = suspendResult.s(0);
+            this.r3i_1 = suspendResult.s(0);
             this.w8_1 = 2;
-            suspendResult = this.b3i_1.s3h(this.h3i_1, this.j3i_1, this);
+            suspendResult = this.k3i_1.b3i(this.q3i_1, this.s3i_1, this);
             if (suspendResult === get_COROUTINE_SUSPENDED()) {
               return suspendResult;
             }
@@ -11297,11 +11530,11 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
             continue $sm;
           case 2:
             var ARGUMENT = suspendResult.s(0);
-            var totalExpansions = this.i3i_1 + ARGUMENT | 0;
+            var totalExpansions = this.r3i_1 + ARGUMENT | 0;
             log('Total expansions: ' + totalExpansions);
-            var bpStorageBuf = this.b3i_1.d3g(imul(imul(totalExpansions, 2), 4), 140);
-            get_bp_write().n3h([this.e3i_1, this.g3i_1, bpStorageBuf, this.f3i_1]).k3i(this.c3i_1, this.c3i_1, this.d3i_1);
-            return new Triple(this.h3i_1, this.g3i_1, bpStorageBuf);
+            var bpStorageBuf = this.k3i_1.i3b(imul(imul(totalExpansions, 2), 4), 140);
+            get_bp_write().b3b([this.n3i_1, this.p3i_1, bpStorageBuf, this.o3i_1]).e3b(this.l3i_1, this.l3i_1, this.m3i_1);
+            return new Triple(this.q3i_1, this.p3i_1, bpStorageBuf);
           case 3:
             throw this.z8_1;
         }
@@ -11317,9 +11550,9 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
      while (true);
   };
   function Companion_1() {
-    this.c3g_1 = 256;
+    this.x3a_1 = 256;
   }
-  protoOf(Companion_1).l3i = function (_this__u8e3s4, label, buffers) {
+  protoOf(Companion_1).t3i = function (_this__u8e3s4, label, buffers) {
     // Inline function 'kotlin.collections.mapIndexed' call
     // Inline function 'kotlin.collections.mapIndexedTo' call
     var destination = ArrayList_init_$Create$_0(buffers.length);
@@ -11347,7 +11580,7 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
     var tmp$ret$9 = {label: label, entries: ent, layout: _this__u8e3s4.getBindGroupLayout(0)};
     return tmp.createBindGroup(tmp$ret$9);
   };
-  protoOf(Companion_1).m3i = function (_this__u8e3s4, wordIndex, value) {
+  protoOf(Companion_1).m3b = function (_this__u8e3s4, wordIndex, value) {
     // Inline function 'kotlin.apply' call
     var this_0 = new Int32Array(1);
     // Inline function 'kotlin.arrayOf' call
@@ -11358,41 +11591,41 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
     var tmp = this_0;
     get_gpu().queue.writeBuffer(_this__u8e3s4, imul(wordIndex, 4), tmp);
   };
-  protoOf(Companion_1).s3h = function (_this__u8e3s4, indices, $completion) {
+  protoOf(Companion_1).b3i = function (_this__u8e3s4, indices, $completion) {
     var tmp = new $readIndicesCOROUTINE$(this, _this__u8e3s4, indices, $completion);
     tmp.y8_1 = Unit_instance;
     tmp.z8_1 = null;
     return tmp.e9();
   };
-  protoOf(Companion_1).n3i = function (usage, totalSizeInInts) {
+  protoOf(Companion_1).a3b = function (usage, totalSizeInInts) {
     var tmp0 = fromInt(totalSizeInInts);
     // Inline function 'kotlin.Long.times' call
     var other = Int32Array.BYTES_PER_ELEMENT;
     var outputByteSize = multiply(tmp0, fromInt(other));
-    return this.d3g(outputByteSize, usage | 128 | 8);
+    return this.i3b(outputByteSize, usage | 128 | 8);
   };
-  protoOf(Companion_1).o3i = function (_this__u8e3s4, n) {
+  protoOf(Companion_1).u3i = function (_this__u8e3s4, n) {
     var outputByteSize = imul(imul(n, n), Int32Array.BYTES_PER_ELEMENT);
-    var outputBuffer = this.d3g(outputByteSize, 140);
-    var sparseDataBuffer = this.p3i(_this__u8e3s4);
+    var outputBuffer = this.i3b(outputByteSize, 140);
+    var sparseDataBuffer = this.z3a(_this__u8e3s4);
     // Inline function 'kotlin.math.ceil' call
     var x = _this__u8e3s4.length / 2.0 / 256;
     var tmp$ret$0 = Math.ceil(x);
     var numWorkgroups = numberToInt(tmp$ret$0);
-    get_sparse_mat_load().n3h([sparseDataBuffer, outputBuffer]).q3h(numWorkgroups);
+    get_sparse_mat_load().b3b([sparseDataBuffer, outputBuffer]).k3b(numWorkgroups);
     sparseDataBuffer.destroy();
     return outputBuffer;
   };
-  protoOf(Companion_1).q3i = function (_this__u8e3s4, usage) {
+  protoOf(Companion_1).v3i = function (_this__u8e3s4, usage) {
     // Inline function 'kotlin.collections.toTypedArray' call
     var tmp$ret$0 = copyToArray(_this__u8e3s4);
-    return this.r3i(tmp$ret$0, usage);
+    return this.w3i(tmp$ret$0, usage);
   };
-  protoOf(Companion_1).s3i = function (_this__u8e3s4, usage, $super) {
+  protoOf(Companion_1).j3b = function (_this__u8e3s4, usage, $super) {
     usage = usage === VOID ? 140 : usage;
-    return $super === VOID ? this.q3i(_this__u8e3s4, usage) : $super.q3i.call(this, _this__u8e3s4, usage);
+    return $super === VOID ? this.v3i(_this__u8e3s4, usage) : $super.v3i.call(this, _this__u8e3s4, usage);
   };
-  protoOf(Companion_1).t3i = function (_this__u8e3s4, usage) {
+  protoOf(Companion_1).x3i = function (_this__u8e3s4, usage) {
     // Inline function 'kotlin.collections.map' call
     // Inline function 'kotlin.collections.mapTo' call
     var destination = ArrayList_init_$Create$_0(collectionSizeOrDefault(_this__u8e3s4, 10));
@@ -11406,43 +11639,43 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
     }
     // Inline function 'kotlin.collections.toTypedArray' call
     var tmp$ret$4 = copyToArray(destination);
-    return this.r3i(tmp$ret$4, usage);
+    return this.w3i(tmp$ret$4, usage);
   };
-  protoOf(Companion_1).u3i = function (_this__u8e3s4, usage, $super) {
+  protoOf(Companion_1).y3i = function (_this__u8e3s4, usage, $super) {
     usage = usage === VOID ? 140 : usage;
-    return $super === VOID ? this.t3i(_this__u8e3s4, usage) : $super.t3i.call(this, _this__u8e3s4, usage);
+    return $super === VOID ? this.x3i(_this__u8e3s4, usage) : $super.x3i.call(this, _this__u8e3s4, usage);
   };
-  protoOf(Companion_1).s3g = function (_this__u8e3s4, usage) {
+  protoOf(Companion_1).g3h = function (_this__u8e3s4, usage) {
     var tmp = imul(_this__u8e3s4.length, 4);
     // Inline function 'kotlin.js.unsafeCast' call
     // Inline function 'kotlin.js.asDynamic' call
-    return this.v3i(tmp, usage, _this__u8e3s4);
+    return this.z3i(tmp, usage, _this__u8e3s4);
   };
-  protoOf(Companion_1).p3i = function (_this__u8e3s4, usage, $super) {
+  protoOf(Companion_1).z3a = function (_this__u8e3s4, usage, $super) {
     usage = usage === VOID ? 136 : usage;
-    return $super === VOID ? this.s3g(_this__u8e3s4, usage) : $super.s3g.call(this, _this__u8e3s4, usage);
+    return $super === VOID ? this.g3h(_this__u8e3s4, usage) : $super.g3h.call(this, _this__u8e3s4, usage);
   };
-  protoOf(Companion_1).m3h = function (_this__u8e3s4, usage) {
+  protoOf(Companion_1).a3i = function (_this__u8e3s4, usage) {
     // Inline function 'kotlin.intArrayOf' call
     var tmp$ret$0 = new Int32Array([_this__u8e3s4]);
-    return this.s3g(tmp$ret$0, usage);
+    return this.g3h(tmp$ret$0, usage);
   };
-  protoOf(Companion_1).w3i = function (_this__u8e3s4, usage, $super) {
+  protoOf(Companion_1).a3j = function (_this__u8e3s4, usage, $super) {
     usage = usage === VOID ? 140 : usage;
-    return $super === VOID ? this.m3h(_this__u8e3s4, usage) : $super.m3h.call(this, _this__u8e3s4, usage);
+    return $super === VOID ? this.a3i(_this__u8e3s4, usage) : $super.a3i.call(this, _this__u8e3s4, usage);
   };
-  protoOf(Companion_1).r3i = function (_this__u8e3s4, usage) {
+  protoOf(Companion_1).w3i = function (_this__u8e3s4, usage) {
     // Inline function 'kotlin.apply' call
     var this_0 = new Int32Array(_this__u8e3s4.length);
     this_0.set(_this__u8e3s4, 0);
     // Inline function 'kotlin.let' call
-    return Companion_instance_1.v3i(imul(_this__u8e3s4.length, 4), usage, this_0);
+    return Companion_instance_1.z3i(imul(_this__u8e3s4.length, 4), usage, this_0);
   };
-  protoOf(Companion_1).v3g = function (_this__u8e3s4, usage, $super) {
+  protoOf(Companion_1).j3h = function (_this__u8e3s4, usage, $super) {
     usage = usage === VOID ? 140 : usage;
-    return $super === VOID ? this.r3i(_this__u8e3s4, usage) : $super.r3i.call(this, _this__u8e3s4, usage);
+    return $super === VOID ? this.w3i(_this__u8e3s4, usage) : $super.w3i.call(this, _this__u8e3s4, usage);
   };
-  protoOf(Companion_1).v3i = function (byteSize, us, data) {
+  protoOf(Companion_1).z3i = function (byteSize, us, data) {
     var tmp = get_gpu();
     // Inline function 'web.gpu.GPUBufferDescriptor.Companion.invoke' call
     // Inline function 'web.gpu.web_gpu_GPUBufferDescriptor_Companion_ukpgo3_invoke_jkqnwo' call
@@ -11454,62 +11687,62 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
     }
     return this_0;
   };
-  protoOf(Companion_1).d3g = function (byteSize, us, data, $super) {
+  protoOf(Companion_1).i3b = function (byteSize, us, data, $super) {
     data = data === VOID ? null : data;
-    return $super === VOID ? this.v3i(byteSize, us, data) : $super.v3i.call(this, byteSize, us, data);
+    return $super === VOID ? this.z3i(byteSize, us, data) : $super.z3i.call(this, byteSize, us, data);
   };
-  protoOf(Companion_1).r3h = function (inputBuf, length) {
+  protoOf(Companion_1).l3b = function (inputBuf, length) {
     var numBlocks = ((length + 256 | 0) - 1 | 0) / 256 | 0;
     var groupsX = 65535;
     var groupsY = ((numBlocks + groupsX | 0) - 1 | 0) / groupsX | 0;
-    var outputBuf = this.d3g(numberToInt(inputBuf.size), 140);
-    var blockSumsBuf = this.d3g(imul(numBlocks, 4), 140);
+    var outputBuf = this.i3b(numberToInt(inputBuf.size), 140);
+    var blockSumsBuf = this.i3b(imul(numBlocks, 4), 140);
     // Inline function 'kotlin.intArrayOf' call
     var tmp$ret$0 = new Int32Array([length, numBlocks, groupsX]);
-    var uniBuf = this.s3g(tmp$ret$0, 72);
-    get_prefix_sum_p1().n3h([inputBuf, outputBuf, blockSumsBuf, uniBuf]).q3h(groupsX, groupsY);
+    var uniBuf = this.g3h(tmp$ret$0, 72);
+    get_prefix_sum_p1().b3b([inputBuf, outputBuf, blockSumsBuf, uniBuf]).k3b(groupsX, groupsY);
     if (numBlocks === 1) {
       // Inline function 'kotlin.also' call
       blockSumsBuf.destroy();
       uniBuf.destroy();
       return outputBuf;
     }
-    var scannedBlockSumsBuf = this.r3h(blockSumsBuf, numBlocks);
-    get_prefix_sum_p2().n3h([outputBuf, scannedBlockSumsBuf, uniBuf]).q3h(groupsX, groupsY);
+    var scannedBlockSumsBuf = this.l3b(blockSumsBuf, numBlocks);
+    get_prefix_sum_p2().b3b([outputBuf, scannedBlockSumsBuf, uniBuf]).k3b(groupsX, groupsY);
     // Inline function 'kotlin.also' call
     scannedBlockSumsBuf.destroy();
     blockSumsBuf.destroy();
     uniBuf.destroy();
     return outputBuf;
   };
-  protoOf(Companion_1).x3i = function (cfg, fsa, $completion) {
+  protoOf(Companion_1).y3a = function (cfg, fsa, $completion) {
     var tmp = new $packMetadataCOROUTINE$(this, cfg, fsa, $completion);
     tmp.y8_1 = Unit_instance;
     tmp.z8_1 = null;
     return tmp.e9();
   };
-  protoOf(Companion_1).u3g = function (states, reachBuf, $completion) {
+  protoOf(Companion_1).i3h = function (states, reachBuf, $completion) {
     var tmp = new $buildMidpointsGPUCOROUTINE$(this, states, reachBuf, $completion);
     tmp.y8_1 = Unit_instance;
     tmp.z8_1 = null;
     return tmp.e9();
   };
-  protoOf(Companion_1).y3i = function (numStates, numNTs, dpIn, metaBuf, $completion) {
+  protoOf(Companion_1).g3b = function (numStates, numNTs, dpIn, metaBuf, $completion) {
     var tmp = new $buildBackpointersCOROUTINE$(this, numStates, numNTs, dpIn, metaBuf, $completion);
     tmp.y8_1 = Unit_instance;
     tmp.z8_1 = null;
     return tmp.e9();
   };
-  protoOf(Companion_1).z3i = function (nStates, nNT, dpIn, metaBuf, tmBuf) {
+  protoOf(Companion_1).h3b = function (nStates, nNT, dpIn, metaBuf, tmBuf) {
     var totalCells = imul(imul(nStates, nStates), nNT);
-    var lsDenseBuf = this.d3g(imul(totalCells, 4), 140);
+    var lsDenseBuf = this.i3b(imul(totalCells, 4), 140);
     var inductionVariable = 1;
     if (inductionVariable < nStates)
       do {
         var span = inductionVariable;
         inductionVariable = inductionVariable + 1 | 0;
-        var spanBuf = this.m3h(span, 72);
-        get_ls_dense().n3h([dpIn, lsDenseBuf, metaBuf, tmBuf, spanBuf]).k3i(nStates - span | 0, 1, nNT);
+        var spanBuf = this.a3i(span, 72);
+        get_ls_dense().b3b([dpIn, lsDenseBuf, metaBuf, tmBuf, spanBuf]).e3b(nStates - span | 0, 1, nNT);
       }
        while (inductionVariable < nStates);
     log('Size of lsDenseBuf: ' + lsDenseBuf.size + ' bytes  (|Q|=' + nStates + ', |V|=' + nNT + ')');
@@ -11520,34 +11753,34 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
     return Companion_instance_1;
   }
   function DispatchStrategy(gce, gcpe) {
-    this.o3h_1 = gce;
-    this.p3h_1 = gcpe;
+    this.c3b_1 = gce;
+    this.d3b_1 = gcpe;
   }
-  protoOf(DispatchStrategy).k3i = function (x, y, z) {
-    this.p3h_1.dispatchWorkgroups(x, y, z);
-    this.p3h_1.end();
+  protoOf(DispatchStrategy).e3b = function (x, y, z) {
+    this.d3b_1.dispatchWorkgroups(x, y, z);
+    this.d3b_1.end();
     var tmp = get_gpu().queue;
     // Inline function 'kotlin.arrayOf' call
     // Inline function 'kotlin.js.unsafeCast' call
     // Inline function 'kotlin.js.asDynamic' call
-    var tmp$ret$2 = [this.o3h_1.finish()];
+    var tmp$ret$2 = [this.c3b_1.finish()];
     tmp.submit(tmp$ret$2);
   };
-  protoOf(DispatchStrategy).q3h = function (x, y, z, $super) {
+  protoOf(DispatchStrategy).k3b = function (x, y, z, $super) {
     y = y === VOID ? 1 : y;
     z = z === VOID ? 1 : z;
     var tmp;
     if ($super === VOID) {
-      this.k3i(x, y, z);
+      this.e3b(x, y, z);
       tmp = Unit_instance;
     } else {
-      tmp = $super.k3i.call(this, x, y, z);
+      tmp = $super.e3b.call(this, x, y, z);
     }
     return tmp;
   };
   function $bindCOROUTINE$(_this__u8e3s4, resultContinuation) {
     CoroutineImpl.call(this, resultContinuation);
-    this.i3j_1 = _this__u8e3s4;
+    this.j3j_1 = _this__u8e3s4;
   }
   protoOf($bindCOROUTINE$).e9 = function () {
     var suspendResult = this.y8_1;
@@ -11560,8 +11793,8 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
             this.w8_1 = 1;
             var tmp_0 = get_gpu();
             var tmp_1 = get_gpu();
-            var tmp2 = this.i3j_1.j3j();
-            var code = this.i3j_1.d39_1;
+            var tmp2 = this.j3j_1.k3j();
+            var code = this.j3j_1.e39_1;
             var compute = {entryPoint: 'main', module: tmp_1.createShaderModule({label: tmp2, code: code})};
             var this_0 = tmp_0.createComputePipelineAsync({layout: 'auto', compute: compute});
             suspendResult = await_0(this_0, this);
@@ -11572,7 +11805,7 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
             continue $sm;
           case 1:
             var this_1 = suspendResult;
-            this.i3j_1.f39_1 = this_1;
+            this.j3j_1.g39_1 = this_1;
             return this_1;
           case 2:
             throw this.z8_1;
@@ -11590,11 +11823,11 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
   };
   function $invokeCFLFixpointCOROUTINE$(_this__u8e3s4, numStates, numNTs, dpIn, metaBuf, resultContinuation) {
     CoroutineImpl.call(this, resultContinuation);
-    this.s3j_1 = _this__u8e3s4;
-    this.t3j_1 = numStates;
-    this.u3j_1 = numNTs;
-    this.v3j_1 = dpIn;
-    this.w3j_1 = metaBuf;
+    this.t3j_1 = _this__u8e3s4;
+    this.u3j_1 = numStates;
+    this.v3j_1 = numNTs;
+    this.w3j_1 = dpIn;
+    this.x3j_1 = metaBuf;
   }
   protoOf($invokeCFLFixpointCOROUTINE$).e9 = function () {
     var suspendResult = this.y8_1;
@@ -11604,31 +11837,31 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
         switch (tmp) {
           case 0:
             this.x8_1 = 5;
-            this.x3j_1 = Monotonic_instance.od();
-            this.a3k_1 = -1;
-            this.c3k_1 = until(0, this.t3j_1).m();
+            this.y3j_1 = Monotonic_instance.od();
+            this.b3k_1 = -1;
+            this.d3k_1 = until(0, this.u3j_1).m();
             this.w8_1 = 1;
             continue $sm;
           case 1:
-            if (!this.c3k_1.n()) {
+            if (!this.d3k_1.n()) {
               this.w8_1 = 4;
               continue $sm;
             }
 
-            this.z3j_1 = this.c3k_1.o();
-            this.b3k_1 = Companion_instance_1.w3i(0);
-            get_cfl_mul_upper().n3h([this.v3j_1, this.w3j_1, this.b3k_1]).k3i(this.t3j_1, this.t3j_1, this.u3j_1);
+            this.a3k_1 = this.d3k_1.o();
+            this.c3k_1 = Companion_instance_1.a3j(0);
+            get_cfl_mul_upper().b3b([this.w3j_1, this.x3j_1, this.c3k_1]).e3b(this.u3j_1, this.u3j_1, this.v3j_1);
             this.w8_1 = 2;
-            suspendResult = Companion_instance_1.s3h(this.b3k_1, listOf_0(0), this);
+            suspendResult = Companion_instance_1.b3i(this.c3k_1, listOf_0(0), this);
             if (suspendResult === get_COROUTINE_SUSPENDED()) {
               return suspendResult;
             }
 
             continue $sm;
           case 2:
-            this.y3j_1 = suspendResult.s(0);
-            this.b3k_1.destroy();
-            if (this.y3j_1 === this.a3k_1) {
+            this.z3j_1 = suspendResult.s(0);
+            this.c3k_1.destroy();
+            if (this.z3j_1 === this.b3k_1) {
               this.w8_1 = 4;
               continue $sm;
             } else {
@@ -11637,12 +11870,12 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
             }
 
           case 3:
-            this.a3k_1 = this.y3j_1;
-            var tmp_0 = Duration__toString_impl_8d916b(ValueTimeMark__elapsedNow_impl_eonqvs(this.x3j_1));
-            var x = this.t3j_1 * this.u3j_1;
+            this.b3k_1 = this.z3j_1;
+            var tmp_0 = Duration__toString_impl_8d916b(ValueTimeMark__elapsedNow_impl_eonqvs(this.y3j_1));
+            var x = this.u3j_1 * this.v3j_1;
             var x_0 = log2(x);
-            log('Round=' + this.z3j_1 + ', changes=' + this.y3j_1 + ', time=' + tmp_0 + ', \u2308log(|Q|*|V|)\u2309=' + Math.ceil(x_0));
-            this.x3j_1 = Monotonic_instance.od();
+            log('Round=' + this.a3k_1 + ', changes=' + this.z3j_1 + ', time=' + tmp_0 + ', \u2308log(|Q|*|V|)\u2309=' + Math.ceil(x_0));
+            this.y3j_1 = Monotonic_instance.od();
             this.w8_1 = 1;
             continue $sm;
           case 4:
@@ -11663,8 +11896,8 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
   };
   function $invokeDAGFixpointCOROUTINE$(_this__u8e3s4, fsa, resultContinuation) {
     CoroutineImpl.call(this, resultContinuation);
-    this.l3k_1 = _this__u8e3s4;
-    this.m3k_1 = fsa;
+    this.m3k_1 = _this__u8e3s4;
+    this.n3k_1 = fsa;
   }
   protoOf($invokeDAGFixpointCOROUTINE$).e9 = function () {
     var suspendResult = this.y8_1;
@@ -11674,33 +11907,33 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
         switch (tmp) {
           case 0:
             this.x8_1 = 5;
-            var adjList = this.m3k_1.k1f();
-            this.r3k_1 = this.m3k_1.h1f();
-            this.o3k_1 = Companion_instance_1.o3i(adjList, this.r3k_1);
-            this.n3k_1 = -1;
-            this.s3k_1 = until(0, this.r3k_1).m();
+            var adjList = this.n3k_1.k1f();
+            this.s3k_1 = this.n3k_1.h1f();
+            this.p3k_1 = Companion_instance_1.u3i(adjList, this.s3k_1);
+            this.o3k_1 = -1;
+            this.t3k_1 = until(0, this.s3k_1).m();
             this.w8_1 = 1;
             continue $sm;
           case 1:
-            if (!this.s3k_1.n()) {
+            if (!this.t3k_1.n()) {
               this.w8_1 = 4;
               continue $sm;
             }
 
-            var round = this.s3k_1.o();
-            this.q3k_1 = Companion_instance_1.w3i(0);
-            get_dag_reach().n3h([this.o3k_1, this.q3k_1]).q3h(this.r3k_1, this.r3k_1);
+            var round = this.t3k_1.o();
+            this.r3k_1 = Companion_instance_1.a3j(0);
+            get_dag_reach().b3b([this.p3k_1, this.r3k_1]).k3b(this.s3k_1, this.s3k_1);
             this.w8_1 = 2;
-            suspendResult = Companion_instance_1.s3h(this.q3k_1, listOf_0(0), this);
+            suspendResult = Companion_instance_1.b3i(this.r3k_1, listOf_0(0), this);
             if (suspendResult === get_COROUTINE_SUSPENDED()) {
               return suspendResult;
             }
 
             continue $sm;
           case 2:
-            this.p3k_1 = suspendResult.s(0);
-            this.q3k_1.destroy();
-            if (this.p3k_1 === this.n3k_1) {
+            this.q3k_1 = suspendResult.s(0);
+            this.r3k_1.destroy();
+            if (this.q3k_1 === this.o3k_1) {
               this.w8_1 = 4;
               continue $sm;
             } else {
@@ -11709,11 +11942,11 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
             }
 
           case 3:
-            this.n3k_1 = this.p3k_1;
+            this.o3k_1 = this.q3k_1;
             this.w8_1 = 1;
             continue $sm;
           case 4:
-            return to(this.o3k_1, this.n3k_1);
+            return to(this.p3k_1, this.o3k_1);
           case 5:
             throw this.z8_1;
         }
@@ -11729,54 +11962,54 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
      while (true);
   };
   function Shader(src) {
-    this.d39_1 = src;
+    this.e39_1 = src;
   }
-  protoOf(Shader).j3j = function () {
-    var tmp = this.e39_1;
+  protoOf(Shader).k3j = function () {
+    var tmp = this.f39_1;
     if (!(tmp == null))
       return tmp;
     else {
       throwUninitializedPropertyAccessException('name');
     }
   };
-  protoOf(Shader).t3k = function () {
-    var tmp = this.f39_1;
+  protoOf(Shader).u3k = function () {
+    var tmp = this.g39_1;
     if (!(tmp == null))
       return tmp;
     else {
       throwUninitializedPropertyAccessException('pipeline');
     }
   };
-  protoOf(Shader).u3k = function ($completion) {
+  protoOf(Shader).v3k = function ($completion) {
     var tmp = new $bindCOROUTINE$(this, $completion);
     tmp.y8_1 = Unit_instance;
     tmp.z8_1 = null;
     return tmp.e9();
   };
-  protoOf(Shader).g39 = function (tr, property) {
+  protoOf(Shader).h39 = function (tr, property) {
     // Inline function 'kotlin.also' call
-    this.e39_1 = property.callableName;
+    this.f39_1 = property.callableName;
     return this;
   };
-  protoOf(Shader).v3k = function (numStates, numNTs, dpIn, metaBuf, $completion) {
+  protoOf(Shader).f3b = function (numStates, numNTs, dpIn, metaBuf, $completion) {
     var tmp = new $invokeCFLFixpointCOROUTINE$(this, numStates, numNTs, dpIn, metaBuf, $completion);
     tmp.y8_1 = Unit_instance;
     tmp.z8_1 = null;
     return tmp.e9();
   };
-  protoOf(Shader).t3g = function (fsa, $completion) {
+  protoOf(Shader).h3h = function (fsa, $completion) {
     var tmp = new $invokeDAGFixpointCOROUTINE$(this, fsa, $completion);
     tmp.y8_1 = Unit_instance;
     tmp.z8_1 = null;
     return tmp.e9();
   };
-  protoOf(Shader).n3h = function (inputs) {
+  protoOf(Shader).b3b = function (inputs) {
     // Inline function 'kotlin.let' call
     var gce = get_gpu().createCommandEncoder();
     // Inline function 'kotlin.let' call
     var gcpe = gce.beginComputePass();
-    gcpe.setPipeline(this.t3k());
-    gcpe.setBindGroup(0, Companion_instance_1.l3i(this.t3k(), this.j3j() + '.buffers', inputs.slice()));
+    gcpe.setPipeline(this.u3k());
+    gcpe.setBindGroup(0, Companion_instance_1.t3i(this.u3k(), this.k3j() + '.buffers', inputs.slice()));
     return new DispatchStrategy(gce, gcpe);
   };
   function packStruct(constants, buffers) {
@@ -11841,7 +12074,7 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
     var headerBytes = imul(headerInts.p(), 4);
     var payloadBytes = imul(sum_0(lens), 4);
     var totalBytes = headerBytes + payloadBytes | 0;
-    var metaBuf = Companion_instance_1.d3g(totalBytes, 140);
+    var metaBuf = Companion_instance_1.i3b(totalBytes, 140);
     var tmp = get_gpu().queue;
     // Inline function 'kotlin.apply' call
     var this_2 = new Int32Array(headerInts.p());
@@ -12053,7 +12286,7 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
     // Inline function 'kotlin.js.asDynamic' call
     arrayCopy(tmp_3, destination, 1, 0, endIndex);
     log('Done');
-    return Companion_instance_1.u3i(asList_0(flat));
+    return Companion_instance_1.y3i(asList_0(flat));
   }
   function sam$kotlin_Comparator$0_0(function_0) {
     this.w3k_1 = function_0;
@@ -12125,7 +12358,7 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
       var tmp$ret$6 = item_1.p();
       destination_1.g(tmp$ret$6);
     }
-    var nt_tm_lens = tmp_0.s3i(destination_1);
+    var nt_tm_lens = tmp_0.j3b(destination_1);
     var tmp_1 = Companion_instance_1;
     // Inline function 'kotlin.collections.scan' call
     var tmp$ret$9;
@@ -12150,8 +12383,8 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
       tmp$ret$9 = result;
     }
     var tmp$ret$13 = tmp$ret$9;
-    var nt_tm_offsets = tmp_1.s3i(dropLast_0(tmp$ret$13, 1));
-    var all_tm = Companion_instance_1.s3i(flatten(terminalLists));
+    var nt_tm_offsets = tmp_1.j3b(dropLast_0(tmp$ret$13, 1));
+    var all_tm = Companion_instance_1.j3b(flatten(terminalLists));
     return packStruct(emptyList(), [nt_tm_lens, nt_tm_offsets, all_tm]);
   }
   function _get_termBuf_$ref_cr9oc9() {
@@ -12259,20 +12492,6 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
     log('Uncaptured: ' + e.error.message);
     return Unit_instance;
   }
-  function completePipeline$langIntSize$u(x) {
-    // Inline function 'kotlin.toUInt' call
-    // Inline function 'kotlin.UInt.toLong' call
-    var this_0 = _UInt___init__impl__l7qpdl(x);
-    // Inline function 'kotlin.uintToLong' call
-    var value = _UInt___get_data__impl__f0vqqw(this_0);
-    return bitwiseAnd(fromInt(value), new Long(-1, 0));
-  }
-  function completePipeline$langIntSize(numRoots, rootSizes, rootCDF, $completion) {
-    var tmp = new $completePipeline$langIntSizeCOROUTINE$(numRoots, rootSizes, rootCDF, $completion);
-    tmp.y8_1 = Unit_instance;
-    tmp.z8_1 = null;
-    return tmp.e9();
-  }
   function repairPipeline$langIntSize$u(x) {
     // Inline function 'kotlin.toUInt' call
     // Inline function 'kotlin.UInt.toLong' call
@@ -12322,7 +12541,7 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
   }
   function $tryBootstrappingGPUCOROUTINE$(needsExtraMemory, resultContinuation) {
     CoroutineImpl.call(this, resultContinuation);
-    this.p39_1 = needsExtraMemory;
+    this.v3b_1 = needsExtraMemory;
   }
   protoOf($tryBootstrappingGPUCOROUTINE$).e9 = function () {
     var suspendResult = this.y8_1;
@@ -12335,7 +12554,7 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
             var tmp_0 = navigator.gpu;
             var tmp0_safe_receiver = tmp_0 instanceof GPU ? tmp_0 : null;
             if (tmp0_safe_receiver == null) {
-              this.v39_1 = null;
+              this.b3c_1 = null;
               this.w8_1 = 2;
               continue $sm;
             } else {
@@ -12349,19 +12568,19 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
             }
 
           case 1:
-            this.v39_1 = suspendResult;
+            this.b3c_1 = suspendResult;
             this.w8_1 = 2;
             continue $sm;
           case 2:
-            var tmp1_safe_receiver = this.v39_1;
+            var tmp1_safe_receiver = this.b3c_1;
             if (tmp1_safe_receiver == null) {
-              this.s39_1 = null;
+              this.y3b_1 = null;
               this.w8_1 = 6;
               continue $sm;
             } else {
-              this.t39_1 = tmp1_safe_receiver;
-              var it = this.t39_1;
-              if (this.p39_1) {
+              this.z3b_1 = tmp1_safe_receiver;
+              var it = this.z3b_1;
+              if (this.v3b_1) {
                 var descriptor = {requiredLimits: {maxBufferSize: 2000000000, maxStorageBufferBindingSize: 2000000000, maxStorageBuffersPerShaderStage: 10}};
                 var this_1 = it.requestDevice(descriptor);
                 this.w8_1 = 4;
@@ -12383,46 +12602,46 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
             }
 
           case 3:
-            this.u39_1 = suspendResult;
+            this.a3c_1 = suspendResult;
             this.w8_1 = 5;
             continue $sm;
           case 4:
-            this.u39_1 = suspendResult;
+            this.a3c_1 = suspendResult;
             this.w8_1 = 5;
             continue $sm;
           case 5:
-            var ARGUMENT = this.u39_1;
+            var ARGUMENT = this.a3c_1;
             set_gpu(ARGUMENT);
-            this.s39_1 = this.t39_1;
+            this.y3b_1 = this.z3b_1;
             this.w8_1 = 6;
             continue $sm;
           case 6:
-            var tmpDev = this.s39_1;
+            var tmpDev = this.y3b_1;
             if (!(tmpDev == null)) {
               var tmp_1 = get_gpu();
               var this_3 = 'uncapturederror';
               addEventListener(tmp_1, this_3, tryBootstrappingGPU$lambda);
               this.x8_1 = 12;
-              this.r39_1 = listOf([get_prefix_sum_p1(), get_prefix_sum_p2(), get_sparse_load(), get_sparse_mat_load(), get_init_chart(), get_init_chart_line(), get_dag_reach(), get_mdpt_count(), get_mdpt_write(), get_cfl_mul_upper(), get_bp_count(), get_bp_write(), get_ls_dense(), get_ls_cdf(), get_build_root_sizes(), get_enum_words_wor(), get_markov_score(), get_select_top_k(), get_gather_top_k()]).m();
+              this.x3b_1 = listOf([get_prefix_sum_p1(), get_prefix_sum_p2(), get_sparse_load(), get_sparse_mat_load(), get_active_nt_count(), get_init_chart(), get_init_chart_line(), get_dag_reach(), get_mdpt_count(), get_mdpt_write(), get_cfl_mul_upper(), get_bp_count(), get_bp_write(), get_ls_dense(), get_ls_cdf(), get_build_root_sizes(), get_enum_words_wor(), get_markov_score(), get_select_top_k(), get_gather_top_k()]).m();
               this.w8_1 = 7;
               continue $sm;
             } else {
               var tmp_2 = this;
               print('GPU not detected.');
-              tmp_2.q39_1 = Unit_instance;
+              tmp_2.w3b_1 = Unit_instance;
               this.w8_1 = 11;
               continue $sm;
             }
 
           case 7:
-            if (!this.r39_1.n()) {
+            if (!this.x3b_1.n()) {
               this.w8_1 = 9;
               continue $sm;
             }
 
-            var element = this.r39_1.o();
+            var element = this.x3b_1.o();
             this.w8_1 = 8;
-            suspendResult = element.u3k(this);
+            suspendResult = element.v3k(this);
             if (suspendResult === get_COROUTINE_SUSPENDED()) {
               return suspendResult;
             }
@@ -12454,7 +12673,7 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
               tmp_5 = tmp2_safe_receiver.appendChild(this_4);
             }
 
-            tmp_3.q39_1 = tmp_5;
+            tmp_3.w3b_1 = tmp_5;
             this.w8_1 = 11;
             continue $sm;
           case 11:
@@ -12484,252 +12703,12 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
       }
      while (true);
   };
-  function $completeCodeCOROUTINE$(cfg, porous, ngrams, resultContinuation) {
-    CoroutineImpl.call(this, resultContinuation);
-    this.e3a_1 = cfg;
-    this.f3a_1 = porous;
-    this.g3a_1 = ngrams;
-  }
-  protoOf($completeCodeCOROUTINE$).e9 = function () {
-    var suspendResult = this.y8_1;
-    $sm: do
-      try {
-        var tmp = this.w8_1;
-        switch (tmp) {
-          case 0:
-            this.x8_1 = 2;
-            this.h3a_1 = Monotonic_instance.od();
-            var fsa = makePorousFSA(this.f3a_1);
-            var codePoints = porousToCodePoints(this.e3a_1, this.f3a_1);
-            log('Made porousFSA(|Q|=' + fsa.h1f() + ', width=' + fsa.m1d_1 + ') in ' + Duration__toString_impl_8d916b(ValueTimeMark__elapsedNow_impl_eonqvs(this.h3a_1)));
-            this.w8_1 = 1;
-            suspendResult = completePipeline(this.e3a_1, fsa, this.g3a_1, codePoints, this);
-            if (suspendResult === get_COROUTINE_SUSPENDED()) {
-              return suspendResult;
-            }
-
-            continue $sm;
-          case 1:
-            var this_0 = suspendResult;
-            log('Received: ' + this_0.p() + ' completions in ' + Duration__toString_impl_8d916b(ValueTimeMark__elapsedNow_impl_eonqvs(this.h3a_1)) + ' (round trip)');
-            return this_0;
-          case 2:
-            throw this.z8_1;
-        }
-      } catch ($p) {
-        var e = $p;
-        if (this.x8_1 === 2) {
-          throw e;
-        } else {
-          this.w8_1 = this.x8_1;
-          this.z8_1 = e;
-        }
-      }
-     while (true);
-  };
-  function $completePipelineCOROUTINE$(cfg, fsa, ngrams, codePoints, resultContinuation) {
-    CoroutineImpl.call(this, resultContinuation);
-    this.q3a_1 = cfg;
-    this.r3a_1 = fsa;
-    this.s3a_1 = ngrams;
-    this.t3a_1 = codePoints;
-  }
-  protoOf($completePipelineCOROUTINE$).e9 = function () {
-    var suspendResult = this.y8_1;
-    $sm: do
-      try {
-        var tmp = this.w8_1;
-        switch (tmp) {
-          case 0:
-            this.x8_1 = 9;
-            this.l3b_1 = Monotonic_instance.od();
-            var _destruct__k2r9zo = to(this.r3a_1.h1f(), get_nonterminals(this.q3a_1).p());
-            this.i3b_1 = _destruct__k2r9zo.mf();
-            this.j3b_1 = _destruct__k2r9zo.nf();
-            log('Porous FSA(|Q|=' + this.i3b_1 + '), ' + calcStats(this.q3a_1));
-            this.w8_1 = 1;
-            suspendResult = Companion_instance_1.x3i(this.q3a_1, this.r3a_1, this);
-            if (suspendResult === get_COROUTINE_SUSPENDED()) {
-              return suspendResult;
-            }
-
-            continue $sm;
-          case 1:
-            this.a3b_1 = suspendResult;
-            this.g3b_1 = get_termBuf(this.q3a_1);
-            var wordBuf = Companion_instance_1.p3i(this.t3a_1);
-            var totalSize = imul(imul(this.i3b_1, this.i3b_1), this.j3b_1);
-            this.z3a_1 = Companion_instance_1.n3i(140, totalSize);
-            get_init_chart_line().n3h([this.z3a_1, wordBuf, this.a3b_1, this.g3b_1]).k3i(this.i3b_1, this.i3b_1, this.j3b_1);
-            log('Chart construction took: ' + Duration__toString_impl_8d916b(ValueTimeMark__elapsedNow_impl_eonqvs(this.l3b_1)) + ' / dpBuf: ' + this.z3a_1.size + ' bytes');
-            this.w8_1 = 2;
-            suspendResult = get_cfl_mul_upper().v3k(this.i3b_1, this.j3b_1, this.z3a_1, this.a3b_1, this);
-            if (suspendResult === get_COROUTINE_SUSPENDED()) {
-              return suspendResult;
-            }
-
-            continue $sm;
-          case 2:
-            log('Matrix closure reached in: ' + Duration__toString_impl_8d916b(ValueTimeMark__elapsedNow_impl_eonqvs(this.l3b_1)));
-            var startNT = get_bindex(this.q3a_1).n1j(get_START_SYMBOL());
-            var this_0 = this.r3a_1.t1f();
-            var destination = ArrayList_init_$Create$_0(this_0.length);
-            var inductionVariable = 0;
-            var last = this_0.length;
-            while (inductionVariable < last) {
-              var item = this_0[inductionVariable];
-              inductionVariable = inductionVariable + 1 | 0;
-              destination.g(imul(item, this.j3b_1) + startNT | 0);
-            }
-
-            this.k3b_1 = destination;
-            this.w8_1 = 3;
-            suspendResult = Companion_instance_1.s3h(this.z3a_1, this.k3b_1, this);
-            if (suspendResult === get_COROUTINE_SUSPENDED()) {
-              return suspendResult;
-            }
-
-            continue $sm;
-          case 3:
-            var ARGUMENT = suspendResult;
-            var tmp0 = zip(this.k3b_1, ARGUMENT);
-            var destination_0 = ArrayList_init_$Create$();
-            var _iterator__ex2g4s = tmp0.m();
-            while (_iterator__ex2g4s.n()) {
-              var element = _iterator__ex2g4s.o();
-              var v = element.nf();
-              if (!(v === 0)) {
-                destination_0.g(element);
-              }
-            }
-
-            var destination_1 = ArrayList_init_$Create$_0(collectionSizeOrDefault(destination_0, 10));
-            var _iterator__ex2g4s_0 = destination_0.m();
-            while (_iterator__ex2g4s_0.n()) {
-              var item_0 = _iterator__ex2g4s_0.o();
-              destination_1.g(item_0.uf_1);
-            }
-
-            var allStartIds = destination_1;
-            if (allStartIds.x()) {
-              log('No valid completion found: dpComplete has no entries in final states!');
-              var _iterator__ex2g4s_1 = listOf([this.a3b_1, this.z3a_1]).m();
-              while (_iterator__ex2g4s_1.n()) {
-                var element_0 = _iterator__ex2g4s_1.o();
-                element_0.destroy();
-              }
-              return emptyList();
-            }
-
-            var tmp_0 = this;
-            var destination_2 = ArrayList_init_$Create$();
-            var _iterator__ex2g4s_2 = allStartIds.m();
-            while (_iterator__ex2g4s_2.n()) {
-              var element_1 = _iterator__ex2g4s_2.o();
-              var list = listOf([element_1, 0]);
-              addAll(destination_2, list);
-            }
-
-            tmp_0.h3b_1 = destination_2;
-            this.f3b_1 = this.r3a_1.m1d_1 + 10 | 0;
-            if (512 < this.f3b_1) {
-              log('Max completion length exceeded 512 (' + this.f3b_1 + ')');
-              var _iterator__ex2g4s_3 = listOf([this.a3b_1, this.z3a_1]).m();
-              while (_iterator__ex2g4s_3.n()) {
-                var element_2 = _iterator__ex2g4s_3.o();
-                element_2.destroy();
-              }
-              return emptyList();
-            }
-
-            this.w8_1 = 4;
-            suspendResult = Companion_instance_1.y3i(this.i3b_1, this.j3b_1, this.z3a_1, this.a3b_1, this);
-            if (suspendResult === get_COROUTINE_SUSPENDED()) {
-              return suspendResult;
-            }
-
-            continue $sm;
-          case 4:
-            var _destruct__k2r9zo_0 = suspendResult;
-            this.w3a_1 = _destruct__k2r9zo_0.mf();
-            this.v3a_1 = _destruct__k2r9zo_0.nf();
-            this.u3a_1 = _destruct__k2r9zo_0.fp();
-            var lsDense = Companion_instance_1.z3i(this.i3b_1, this.j3b_1, this.z3a_1, this.a3b_1, this.g3b_1);
-            var totalExp = numberToInt(this.u3a_1.size) / 8 | 0;
-            this.x3a_1 = Companion_instance_1.d3g(imul(totalExp, 4), 140);
-            get_ls_cdf().n3h([this.z3a_1, lsDense, this.v3a_1, this.x3a_1, this.a3b_1, this.g3b_1]).k3i(this.i3b_1, this.i3b_1, this.j3b_1);
-            lsDense.destroy();
-            var numRoots = this.h3b_1.p() / 2 | 0;
-            this.c3b_1 = Companion_instance_1.d3g(imul(numRoots, 4), 140);
-            this.y3a_1 = packStruct(listOf([0, this.f3b_1, this.j3b_1, this.i3b_1, 65535, 2000000]), [Companion_instance_1.s3i(this.h3b_1)]);
-            get_build_root_sizes().n3h([this.z3a_1, this.w3a_1, this.v3a_1, this.x3a_1, this.g3b_1, this.c3b_1, this.y3a_1]).q3h((numRoots + 255 | 0) / 256 | 0);
-            this.b3b_1 = Companion_instance_1.r3h(this.c3b_1, numRoots);
-            this.w8_1 = 5;
-            suspendResult = completePipeline$langIntSize(numRoots, this.c3b_1, this.b3b_1, this);
-            if (suspendResult === get_COROUTINE_SUSPENDED()) {
-              return suspendResult;
-            }
-
-            continue $sm;
-          case 5:
-            var langSize = suspendResult;
-            var toDecode = 100000;
-            Companion_instance_1.m3i(this.y3a_1, 5, toDecode);
-            this.d3b_1 = Companion_instance_1.d3g(imul(imul(toDecode, this.f3b_1), 4), 140);
-            get_enum_words_wor().n3h([this.z3a_1, this.w3a_1, this.v3a_1, this.u3a_1, this.x3a_1, this.g3b_1, this.y3a_1, this.c3b_1, this.b3b_1, this.d3b_1]).q3h(65535, ((toDecode + 65535 | 0) - 1 | 0) / 65535 | 0);
-            if (!(this.s3a_1 == null)) {
-              this.w8_1 = 7;
-              suspendResult = ngramDecoder(this.d3b_1, this.s3a_1, this.f3b_1, this.q3a_1, toDecode, this);
-              if (suspendResult === get_COROUTINE_SUSPENDED()) {
-                return suspendResult;
-              }
-              continue $sm;
-            } else {
-              this.w8_1 = 6;
-              suspendResult = uniformDecoder(this.d3b_1, this.q3a_1, this.f3b_1, toDecode, this);
-              if (suspendResult === get_COROUTINE_SUSPENDED()) {
-                return suspendResult;
-              }
-              continue $sm;
-            }
-
-          case 6:
-            this.e3b_1 = suspendResult;
-            this.w8_1 = 8;
-            continue $sm;
-          case 7:
-            this.e3b_1 = suspendResult;
-            this.w8_1 = 8;
-            continue $sm;
-          case 8:
-            var this_1 = this.e3b_1;
-            var _iterator__ex2g4s_4 = listOf([this.d3b_1, this.c3b_1, this.b3b_1, this.a3b_1, this.z3a_1, this.y3a_1, this.x3a_1, this.w3a_1, this.v3a_1, this.u3a_1]).m();
-            while (_iterator__ex2g4s_4.n()) {
-              var element_3 = _iterator__ex2g4s_4.o();
-              element_3.destroy();
-            }
-
-            return this_1;
-          case 9:
-            throw this.z8_1;
-        }
-      } catch ($p) {
-        var e = $p;
-        if (this.x8_1 === 9) {
-          throw e;
-        } else {
-          this.w8_1 = this.x8_1;
-          this.z8_1 = e;
-        }
-      }
-     while (true);
-  };
   function $repairCodeCOROUTINE$(cfg, code, ledBuffer, ngrams, resultContinuation) {
     CoroutineImpl.call(this, resultContinuation);
-    this.u3b_1 = cfg;
-    this.v3b_1 = code;
-    this.w3b_1 = ledBuffer;
-    this.x3b_1 = ngrams;
+    this.k3c_1 = cfg;
+    this.l3c_1 = code;
+    this.m3c_1 = ledBuffer;
+    this.n3c_1 = ngrams;
   }
   protoOf($repairCodeCOROUTINE$).e9 = function () {
     var suspendResult = this.y8_1;
@@ -12739,23 +12718,23 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
         switch (tmp) {
           case 0:
             this.x8_1 = 2;
-            this.y3b_1 = Monotonic_instance.od();
-            var fsa = makeLevFSA(this.v3b_1, 5);
-            log('Made levFSA in ' + Duration__toString_impl_8d916b(ValueTimeMark__elapsedNow_impl_eonqvs(this.y3b_1)));
+            this.o3c_1 = Monotonic_instance.od();
+            var fsa = makeLevFSA(this.l3c_1, 5);
+            log('Made levFSA in ' + Duration__toString_impl_8d916b(ValueTimeMark__elapsedNow_impl_eonqvs(this.o3c_1)));
             var tmp_0 = 0;
-            var tmp_1 = this.v3b_1.p();
+            var tmp_1 = this.l3c_1.p();
             var tmp_2 = new Int32Array(tmp_1);
             while (tmp_0 < tmp_1) {
               var tmp_3 = tmp_0;
-              var tmp0_elvis_lhs = get_tmMap(this.u3b_1).p2(this.v3b_1.s(tmp_3));
+              var tmp0_elvis_lhs = get_tmMap(this.k3c_1).p2(this.l3c_1.s(tmp_3));
               tmp_2[tmp_3] = tmp0_elvis_lhs == null ? 0 : tmp0_elvis_lhs;
               tmp_0 = tmp_0 + 1 | 0;
             }
 
             var codePoints = tmp_2;
-            log('PREPROCESSING TOOK: ' + Duration__toString_impl_8d916b(ValueTimeMark__elapsedNow_impl_eonqvs(this.y3b_1)));
+            log('PREPROCESSING TOOK: ' + Duration__toString_impl_8d916b(ValueTimeMark__elapsedNow_impl_eonqvs(this.o3c_1)));
             this.w8_1 = 1;
-            suspendResult = repairPipeline(this.u3b_1, fsa, this.w3b_1, this.x3b_1, codePoints, this);
+            suspendResult = repairPipeline(this.k3c_1, fsa, this.m3c_1, this.n3c_1, codePoints, this);
             if (suspendResult === get_COROUTINE_SUSPENDED()) {
               return suspendResult;
             }
@@ -12763,7 +12742,7 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
             continue $sm;
           case 1:
             var words = suspendResult;
-            log('Received: ' + words.p() + ' words in ' + Duration__toString_impl_8d916b(ValueTimeMark__elapsedNow_impl_eonqvs(this.y3b_1)) + ' (round trip)');
+            log('Received: ' + words.p() + ' words in ' + Duration__toString_impl_8d916b(ValueTimeMark__elapsedNow_impl_eonqvs(this.o3c_1)) + ' (round trip)');
             return words;
           case 2:
             throw this.z8_1;
@@ -12781,11 +12760,11 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
   };
   function $repairPipelineCOROUTINE$(cfg, fsa, ledBuffer, ngrams, codePoints, resultContinuation) {
     CoroutineImpl.call(this, resultContinuation);
-    this.h3c_1 = cfg;
-    this.i3c_1 = fsa;
-    this.j3c_1 = ledBuffer;
-    this.k3c_1 = ngrams;
-    this.l3c_1 = codePoints;
+    this.x3c_1 = cfg;
+    this.y3c_1 = fsa;
+    this.z3c_1 = ledBuffer;
+    this.a3d_1 = ngrams;
+    this.b3d_1 = codePoints;
   }
   protoOf($repairPipelineCOROUTINE$).e9 = function () {
     var suspendResult = this.y8_1;
@@ -12795,50 +12774,50 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
         switch (tmp) {
           case 0:
             this.x8_1 = 9;
-            this.f3d_1 = Monotonic_instance.od();
-            var _destruct__k2r9zo = to(this.i3c_1.h1f(), get_nonterminals(this.h3c_1).p());
-            this.z3c_1 = _destruct__k2r9zo.mf();
-            this.a3d_1 = _destruct__k2r9zo.nf();
-            log('FSA(|Q|=' + this.z3c_1 + ', |\u03B4|=' + this.i3c_1.q1f().p() + '), ' + calcStats(this.h3c_1));
+            this.v3d_1 = Monotonic_instance.od();
+            var _destruct__k2r9zo = to(this.y3c_1.h1f(), get_nonterminals(this.x3c_1).p());
+            this.p3d_1 = _destruct__k2r9zo.mf();
+            this.q3d_1 = _destruct__k2r9zo.nf();
+            log('FSA(|Q|=' + this.p3d_1 + ', |\u03B4|=' + this.y3c_1.q1f().p() + '), ' + calcStats(this.x3c_1));
             this.w8_1 = 1;
-            suspendResult = Companion_instance_1.x3i(this.h3c_1, this.i3c_1, this);
+            suspendResult = Companion_instance_1.y3a(this.x3c_1, this.y3c_1, this);
             if (suspendResult === get_COROUTINE_SUSPENDED()) {
               return suspendResult;
             }
 
             continue $sm;
           case 1:
-            this.s3c_1 = suspendResult;
-            this.y3c_1 = get_termBuf(this.h3c_1);
-            var wordBuf = Companion_instance_1.p3i(this.l3c_1);
-            var totalSize = imul(imul(this.z3c_1, this.z3c_1), this.a3d_1);
-            this.r3c_1 = Companion_instance_1.n3i(140, totalSize);
-            get_init_chart().n3h([this.r3c_1, wordBuf, this.s3c_1, this.y3c_1]).k3i(this.z3c_1, this.z3c_1, this.a3d_1);
-            log('Chart construction took: ' + Duration__toString_impl_8d916b(ValueTimeMark__elapsedNow_impl_eonqvs(this.f3d_1)));
+            this.i3d_1 = suspendResult;
+            this.o3d_1 = get_termBuf(this.x3c_1);
+            var wordBuf = Companion_instance_1.z3a(this.b3d_1);
+            var totalSize = imul(imul(this.p3d_1, this.p3d_1), this.q3d_1);
+            this.h3d_1 = Companion_instance_1.a3b(140, totalSize);
+            get_init_chart().b3b([this.h3d_1, wordBuf, this.i3d_1, this.o3d_1]).e3b(this.p3d_1, this.p3d_1, this.q3d_1);
+            log('Chart construction took: ' + Duration__toString_impl_8d916b(ValueTimeMark__elapsedNow_impl_eonqvs(this.v3d_1)));
             this.w8_1 = 2;
-            suspendResult = get_cfl_mul_upper().v3k(this.z3c_1, this.a3d_1, this.r3c_1, this.s3c_1, this);
+            suspendResult = get_cfl_mul_upper().f3b(this.p3d_1, this.q3d_1, this.h3d_1, this.i3d_1, this);
             if (suspendResult === get_COROUTINE_SUSPENDED()) {
               return suspendResult;
             }
 
             continue $sm;
           case 2:
-            log('Matrix closure reached in: ' + Duration__toString_impl_8d916b(ValueTimeMark__elapsedNow_impl_eonqvs(this.f3d_1)));
-            this.d3d_1 = Monotonic_instance.od();
-            this.b3d_1 = get_bindex(this.h3c_1).n1j(get_START_SYMBOL());
-            var this_0 = this.i3c_1.u1f();
+            log('Matrix closure reached in: ' + Duration__toString_impl_8d916b(ValueTimeMark__elapsedNow_impl_eonqvs(this.v3d_1)));
+            this.t3d_1 = Monotonic_instance.od();
+            this.r3d_1 = get_bindex(this.x3c_1).n1j(get_START_SYMBOL());
+            var this_0 = this.y3c_1.u1f();
             var destination = ArrayList_init_$Create$_0(this_0.length);
             var inductionVariable = 0;
             var last = this_0.length;
             while (inductionVariable < last) {
               var item = this_0[inductionVariable];
               inductionVariable = inductionVariable + 1 | 0;
-              destination.g(imul(item, this.a3d_1) + this.b3d_1 | 0);
+              destination.g(imul(item, this.q3d_1) + this.r3d_1 | 0);
             }
 
-            this.e3d_1 = destination;
+            this.u3d_1 = destination;
             this.w8_1 = 3;
-            suspendResult = Companion_instance_1.s3h(this.r3c_1, this.e3d_1, this);
+            suspendResult = Companion_instance_1.b3i(this.h3d_1, this.u3d_1, this);
             if (suspendResult === get_COROUTINE_SUSPENDED()) {
               return suspendResult;
             }
@@ -12846,7 +12825,7 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
             continue $sm;
           case 3:
             var ARGUMENT = suspendResult;
-            var tmp0 = zip(this.e3d_1, ARGUMENT);
+            var tmp0 = zip(this.u3d_1, ARGUMENT);
             var destination_0 = ArrayList_init_$Create$();
             var _iterator__ex2g4s = tmp0.m();
             while (_iterator__ex2g4s.n()) {
@@ -12865,9 +12844,9 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
               destination_1.g(item_0.uf_1);
             }
 
-            tmp_0.c3d_1 = destination_1;
-            if (!this.c3d_1.x()) {
-              log('Valid parse found: dpComplete has ' + this.c3d_1.p() + ' start indices');
+            tmp_0.s3d_1 = destination_1;
+            if (!this.s3d_1.x()) {
+              log('Valid parse found: dpComplete has ' + this.s3d_1.p() + ' start indices');
             } else {
               var this_1 = emptyList();
               log('No valid parse found: dpComplete has no entries in final states!');
@@ -12875,7 +12854,7 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
             }
 
             this.w8_1 = 4;
-            suspendResult = Companion_instance_1.y3i(this.z3c_1, this.a3d_1, this.r3c_1, this.s3c_1, this);
+            suspendResult = Companion_instance_1.g3b(this.p3d_1, this.q3d_1, this.h3d_1, this.i3d_1, this);
             if (suspendResult === get_COROUTINE_SUSPENDED()) {
               return suspendResult;
             }
@@ -12883,17 +12862,17 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
             continue $sm;
           case 4:
             var _destruct__k2r9zo_0 = suspendResult;
-            this.o3c_1 = _destruct__k2r9zo_0.mf();
-            this.n3c_1 = _destruct__k2r9zo_0.nf();
-            this.m3c_1 = _destruct__k2r9zo_0.fp();
-            log('Built backpointers in ' + Duration__toString_impl_8d916b(ValueTimeMark__elapsedNow_impl_eonqvs(this.d3d_1)));
+            this.e3d_1 = _destruct__k2r9zo_0.mf();
+            this.d3d_1 = _destruct__k2r9zo_0.nf();
+            this.c3d_1 = _destruct__k2r9zo_0.fp();
+            log('Built backpointers in ' + Duration__toString_impl_8d916b(ValueTimeMark__elapsedNow_impl_eonqvs(this.t3d_1)));
             var t2 = Monotonic_instance.od();
-            var this_2 = this.c3d_1;
+            var this_2 = this.s3d_1;
             var destination_2 = ArrayList_init_$Create$_0(collectionSizeOrDefault(this_2, 10));
             var _iterator__ex2g4s_1 = this_2.m();
             while (_iterator__ex2g4s_1.n()) {
               var item_1 = _iterator__ex2g4s_1.o();
-              destination_2.g(to(item_1, ensureNotNull(this.i3c_1.w1f().p2((item_1 - this.b3d_1 | 0) / this.a3d_1 | 0)).vf_1));
+              destination_2.g(to(item_1, ensureNotNull(this.y3c_1.w1f().p2((item_1 - this.r3d_1 | 0) / this.q3d_1 | 0)).vf_1));
             }
 
             var statesToDist = destination_2;
@@ -12913,7 +12892,7 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
             var _iterator__ex2g4s_2 = statesToDist.m();
             while (_iterator__ex2g4s_2.n()) {
               var element_0 = _iterator__ex2g4s_2.o();
-              var containsUpper = led + this.j3c_1 | 0;
+              var containsUpper = led + this.z3c_1 | 0;
               var containsArg = element_0.vf_1;
               if (led <= containsArg ? containsArg <= containsUpper : false) {
                 destination_3.g(element_0);
@@ -12931,26 +12910,26 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
             var this_3 = sortedWith(destination_4, new sam$kotlin_Comparator$0_0(tmp_1));
             log('Start indices (LED=' + led + '): ' + toString(this_3));
             var startIdxs = flatten(this_3);
-            this.x3c_1 = (this.i3c_1.m1d_1 + this.i3c_1.l1d_1 | 0) + 10 | 0;
-            if (512 < this.x3c_1) {
+            this.n3d_1 = (this.y3c_1.m1d_1 + this.y3c_1.l1d_1 | 0) + 10 | 0;
+            if (512 < this.n3d_1) {
               var this_4 = emptyList();
-              log('Max repair length exceeded 512 (' + this.x3c_1 + ')');
+              log('Max repair length exceeded 512 (' + this.n3d_1 + ')');
               return this_4;
             }
 
-            var lsDense = Companion_instance_1.z3i(this.z3c_1, this.a3d_1, this.r3c_1, this.s3c_1, this.y3c_1);
-            var totalExp = numberToInt(this.m3c_1.size) / 8 | 0;
-            this.p3c_1 = Companion_instance_1.d3g(imul(totalExp, 4), 140);
-            get_ls_cdf().n3h([this.r3c_1, lsDense, this.n3c_1, this.p3c_1, this.s3c_1, this.y3c_1]).k3i(this.z3c_1, this.z3c_1, this.a3d_1);
+            var lsDense = Companion_instance_1.h3b(this.p3d_1, this.q3d_1, this.h3d_1, this.i3d_1, this.o3d_1);
+            var totalExp = numberToInt(this.c3d_1.size) / 8 | 0;
+            this.f3d_1 = Companion_instance_1.i3b(imul(totalExp, 4), 140);
+            get_ls_cdf().b3b([this.h3d_1, lsDense, this.d3d_1, this.f3d_1, this.i3d_1, this.o3d_1]).e3b(this.p3d_1, this.p3d_1, this.q3d_1);
             lsDense.destroy();
             log('Pairing function construction took: ' + Duration__toString_impl_8d916b(ValueTimeMark__elapsedNow_impl_eonqvs(t2)));
             var numRoots = startIdxs.p() / 2 | 0;
-            this.u3c_1 = Companion_instance_1.d3g(imul(numRoots, 4), 140);
-            this.q3c_1 = packStruct(listOf([0, this.x3c_1, this.a3d_1, this.z3c_1, 65535, 2000000]), [Companion_instance_1.s3i(startIdxs)]);
-            get_build_root_sizes().n3h([this.r3c_1, this.o3c_1, this.n3c_1, this.p3c_1, this.y3c_1, this.u3c_1, this.q3c_1]).q3h((numRoots + 255 | 0) / 256 | 0);
-            this.t3c_1 = Companion_instance_1.r3h(this.u3c_1, numRoots);
+            this.k3d_1 = Companion_instance_1.i3b(imul(numRoots, 4), 140);
+            this.g3d_1 = packStruct(listOf([0, this.n3d_1, this.q3d_1, this.p3d_1, 65535, 2000000]), [Companion_instance_1.j3b(startIdxs)]);
+            get_build_root_sizes().b3b([this.h3d_1, this.e3d_1, this.d3d_1, this.f3d_1, this.o3d_1, this.k3d_1, this.g3d_1]).k3b((numRoots + 255 | 0) / 256 | 0);
+            this.j3d_1 = Companion_instance_1.l3b(this.k3d_1, numRoots);
             this.w8_1 = 5;
-            suspendResult = repairPipeline$langIntSize(numRoots, this.u3c_1, this.t3c_1, this);
+            suspendResult = repairPipeline$langIntSize(numRoots, this.k3d_1, this.j3d_1, this);
             if (suspendResult === get_COROUTINE_SUSPENDED()) {
               return suspendResult;
             }
@@ -12962,19 +12941,19 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
             var toDecode = convertToInt(compare(a, langIntSize) <= 0 ? a : langIntSize);
             var pct = toDecode * 100.0 / coerceAtLeast_0(toNumber(langIntSize), 1.0);
             log('Langauge saturation: ' + pct + '% (' + toDecode + '/' + langIntSize.toString() + ')');
-            Companion_instance_1.m3i(this.q3c_1, 5, toDecode);
-            this.v3c_1 = Companion_instance_1.d3g(imul(imul(toDecode, this.x3c_1), 4), 140);
-            get_enum_words_wor().n3h([this.r3c_1, this.o3c_1, this.n3c_1, this.m3c_1, this.p3c_1, this.y3c_1, this.q3c_1, this.u3c_1, this.t3c_1, this.v3c_1]).q3h(65535, ((toDecode + 65535 | 0) - 1 | 0) / 65535 | 0);
-            if (!(this.k3c_1 == null)) {
+            Companion_instance_1.m3b(this.g3d_1, 5, toDecode);
+            this.l3d_1 = Companion_instance_1.i3b(imul(imul(toDecode, this.n3d_1), 4), 140);
+            get_enum_words_wor().b3b([this.h3d_1, this.e3d_1, this.d3d_1, this.c3d_1, this.f3d_1, this.o3d_1, this.g3d_1, this.k3d_1, this.j3d_1, this.l3d_1]).k3b(65535, ((toDecode + 65535 | 0) - 1 | 0) / 65535 | 0);
+            if (!(this.a3d_1 == null)) {
               this.w8_1 = 7;
-              suspendResult = ngramDecoder(this.v3c_1, this.k3c_1, this.x3c_1, this.h3c_1, toDecode, this);
+              suspendResult = ngramDecoder(this.l3d_1, this.a3d_1, this.n3d_1, this.x3c_1, toDecode, this);
               if (suspendResult === get_COROUTINE_SUSPENDED()) {
                 return suspendResult;
               }
               continue $sm;
             } else {
               this.w8_1 = 6;
-              suspendResult = uniformDecoder(this.v3c_1, this.h3c_1, this.x3c_1, toDecode, this);
+              suspendResult = uniformDecoder(this.l3d_1, this.x3c_1, this.n3d_1, toDecode, this);
               if (suspendResult === get_COROUTINE_SUSPENDED()) {
                 return suspendResult;
               }
@@ -12982,16 +12961,16 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
             }
 
           case 6:
-            this.w3c_1 = suspendResult;
+            this.m3d_1 = suspendResult;
             this.w8_1 = 8;
             continue $sm;
           case 7:
-            this.w3c_1 = suspendResult;
+            this.m3d_1 = suspendResult;
             this.w8_1 = 8;
             continue $sm;
           case 8:
-            var this_5 = this.w3c_1;
-            var _iterator__ex2g4s_4 = listOf([this.v3c_1, this.u3c_1, this.t3c_1, this.s3c_1, this.r3c_1, this.q3c_1, this.p3c_1, this.o3c_1, this.n3c_1, this.m3c_1]).m();
+            var this_5 = this.m3d_1;
+            var _iterator__ex2g4s_4 = listOf([this.l3d_1, this.k3d_1, this.j3d_1, this.i3d_1, this.h3d_1, this.g3d_1, this.f3d_1, this.e3d_1, this.d3d_1, this.c3d_1]).m();
             while (_iterator__ex2g4s_4.n()) {
               var element_1 = _iterator__ex2g4s_4.o();
               element_1.destroy();
@@ -13014,10 +12993,10 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
   };
   function $uniformDecoderCOROUTINE$(outBuf, cfg, maxRepairLen, samplesToDecode, resultContinuation) {
     CoroutineImpl.call(this, resultContinuation);
-    this.o3d_1 = outBuf;
-    this.p3d_1 = cfg;
-    this.q3d_1 = maxRepairLen;
-    this.r3d_1 = samplesToDecode;
+    this.e3e_1 = outBuf;
+    this.f3e_1 = cfg;
+    this.g3e_1 = maxRepairLen;
+    this.h3e_1 = samplesToDecode;
   }
   protoOf($uniformDecoderCOROUTINE$).e9 = function () {
     var suspendResult = this.y8_1;
@@ -13027,42 +13006,42 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
         switch (tmp) {
           case 0:
             this.x8_1 = 9;
-            this.w3d_1 = Monotonic_instance.od();
+            this.m3e_1 = Monotonic_instance.od();
             var tmp_0 = this;
-            tmp_0.v3d_1 = LinkedHashMap_init_$Create$();
+            tmp_0.l3e_1 = LinkedHashMap_init_$Create$();
             this.w8_1 = 1;
-            suspendResult = readInt32Array(this.o3d_1, this);
+            suspendResult = readInt32Array(this.e3e_1, this);
             if (suspendResult === get_COROUTINE_SUSPENDED()) {
               return suspendResult;
             }
 
             continue $sm;
           case 1:
-            this.y3d_1 = suspendResult;
-            this.z3d_1 = until(0, this.r3d_1).m();
+            this.o3e_1 = suspendResult;
+            this.p3e_1 = until(0, this.h3e_1).m();
             this.w8_1 = 2;
             continue $sm;
           case 2:
-            if (!this.z3d_1.n()) {
+            if (!this.p3e_1.n()) {
               this.w8_1 = 5;
               continue $sm;
             }
 
-            var i = this.z3d_1.o();
-            var tmp0_elvis_lhs = decodePacket(this.y3d_1, i, get_tmLst(this.p3d_1), this.q3d_1);
+            var i = this.p3e_1.o();
+            var tmp0_elvis_lhs = decodePacket(this.o3e_1, i, get_tmLst(this.f3e_1), this.g3e_1);
             if (tmp0_elvis_lhs == null) {
               this.w8_1 = 2;
               var tmp_1 = this;
               continue $sm;
             } else {
-              this.x3d_1 = tmp0_elvis_lhs;
+              this.n3e_1 = tmp0_elvis_lhs;
               this.w8_1 = 3;
               continue $sm;
             }
 
           case 3:
-            var t = this.x3d_1;
-            var tmp0 = this.v3d_1;
+            var t = this.n3e_1;
+            var tmp0 = this.l3e_1;
             var key = t.uf_1;
             var value = tmp0.p2(key);
             var tmp_2;
@@ -13086,33 +13065,33 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
             this.w8_1 = 2;
             continue $sm;
           case 5:
-            var _iterator__ex2g4s = this.v3d_1.s2().m();
+            var _iterator__ex2g4s = this.l3e_1.s2().m();
             while (_iterator__ex2g4s.n()) {
               var element = _iterator__ex2g4s.o();
               log('\u0394=' + element.l2() + ' -> |L|=' + element.m2().p());
             }
 
-            log('Sampled WOR into ' + this.o3d_1.size + '-byte buffer in ' + Duration__toString_impl_8d916b(ValueTimeMark__elapsedNow_impl_eonqvs(this.w3d_1)));
+            log('Sampled WOR into ' + this.e3e_1.size + '-byte buffer in ' + Duration__toString_impl_8d916b(ValueTimeMark__elapsedNow_impl_eonqvs(this.m3e_1)));
             var tmp_3 = this;
             var sum = 0;
-            var _iterator__ex2g4s_0 = this.v3d_1.r2().m();
+            var _iterator__ex2g4s_0 = this.l3e_1.r2().m();
             while (_iterator__ex2g4s_0.n()) {
               var element_0 = _iterator__ex2g4s_0.o();
               var tmp_4 = sum;
               sum = tmp_4 + element_0.p() | 0;
             }
 
-            tmp_3.s3d_1 = ArrayList_init_$Create$_0(sum);
-            this.u3d_1 = this.v3d_1.r2().m();
+            tmp_3.i3e_1 = ArrayList_init_$Create$_0(sum);
+            this.k3e_1 = this.l3e_1.r2().m();
             this.w8_1 = 6;
             continue $sm;
           case 6:
-            if (!this.u3d_1.n()) {
+            if (!this.k3e_1.n()) {
               this.w8_1 = 8;
               continue $sm;
             }
 
-            this.t3d_1 = this.u3d_1.o();
+            this.j3e_1 = this.k3e_1.o();
             this.w8_1 = 7;
             suspendResult = pause(100000, this);
             if (suspendResult === get_COROUTINE_SUSPENDED()) {
@@ -13121,11 +13100,11 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
 
             continue $sm;
           case 7:
-            this.s3d_1.q(this.t3d_1);
+            this.i3e_1.q(this.j3e_1);
             this.w8_1 = 6;
             continue $sm;
           case 8:
-            return this.s3d_1;
+            return this.i3e_1;
           case 9:
             throw this.z8_1;
         }
@@ -13142,7 +13121,7 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
   };
   function $readInt32ArrayCOROUTINE$(_this__u8e3s4, resultContinuation) {
     CoroutineImpl.call(this, resultContinuation);
-    this.i3e_1 = _this__u8e3s4;
+    this.y3e_1 = _this__u8e3s4;
   }
   protoOf($readInt32ArrayCOROUTINE$).e9 = function () {
     var suspendResult = this.y8_1;
@@ -13152,14 +13131,14 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
         switch (tmp) {
           case 0:
             this.x8_1 = 2;
-            this.j3e_1 = Companion_instance_1.d3g(numberToInt(this.i3e_1.size), 9);
+            this.z3e_1 = Companion_instance_1.i3b(numberToInt(this.y3e_1.size), 9);
             var cmd = get_gpu().createCommandEncoder();
-            cmd.copyBufferToBuffer(this.i3e_1, 0.0, this.j3e_1, 0.0, this.i3e_1.size);
+            cmd.copyBufferToBuffer(this.y3e_1, 0.0, this.z3e_1, 0.0, this.y3e_1.size);
             var tmp_0 = get_gpu().queue;
             var this_0 = [cmd.finish()];
             tmp_0.submit(this_0);
             this.w8_1 = 1;
-            var this_1 = this.j3e_1.mapAsync(1);
+            var this_1 = this.z3e_1.mapAsync(1);
             suspendResult = await_0(this_1, this);
             if (suspendResult === get_COROUTINE_SUSPENDED()) {
               return suspendResult;
@@ -13167,10 +13146,10 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
 
             continue $sm;
           case 1:
-            var mapped = this.j3e_1.getMappedRange();
+            var mapped = this.z3e_1.getMappedRange();
             var copied = mapped.slice(0, mapped.byteLength);
-            this.j3e_1.unmap();
-            this.j3e_1.destroy();
+            this.z3e_1.unmap();
+            this.z3e_1.destroy();
             return new Int32Array(copied);
           case 2:
             throw this.z8_1;
@@ -13188,11 +13167,11 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
   };
   function $ngramDecoderCOROUTINE$(outBuf, ngrams, maxRepairLen, cfg, samplesToDecode, resultContinuation) {
     CoroutineImpl.call(this, resultContinuation);
-    this.s3e_1 = outBuf;
-    this.t3e_1 = ngrams;
-    this.u3e_1 = maxRepairLen;
-    this.v3e_1 = cfg;
-    this.w3e_1 = samplesToDecode;
+    this.i3f_1 = outBuf;
+    this.j3f_1 = ngrams;
+    this.k3f_1 = maxRepairLen;
+    this.l3f_1 = cfg;
+    this.m3f_1 = samplesToDecode;
   }
   protoOf($ngramDecoderCOROUTINE$).e9 = function () {
     var suspendResult = this.y8_1;
@@ -13203,7 +13182,7 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
           case 0:
             this.x8_1 = 2;
             this.w8_1 = 1;
-            suspendResult = scoreSelectGather(this.s3e_1, this.t3e_1, this.w3e_1, this.u3e_1, 290, this);
+            suspendResult = scoreSelectGather(this.i3f_1, this.j3f_1, this.m3f_1, this.k3f_1, 290, this);
             if (suspendResult === get_COROUTINE_SUSPENDED()) {
               return suspendResult;
             }
@@ -13218,7 +13197,7 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
               $l$loop: do {
                 var i = inductionVariable;
                 inductionVariable = inductionVariable + 1 | 0;
-                var tmp0_safe_receiver = decodePacket(topK, i, get_tmLst(this.v3e_1), this.u3e_1);
+                var tmp0_safe_receiver = decodePacket(topK, i, get_tmLst(this.l3f_1), this.k3f_1);
                 var tmp1_elvis_lhs = tmp0_safe_receiver == null ? null : tmp0_safe_receiver.vf_1;
                 var tmp_0;
                 if (tmp1_elvis_lhs == null) {
@@ -13247,11 +13226,11 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
   };
   function $scoreSelectGatherCOROUTINE$(packets, ngrams, maxSamples, stride, k, resultContinuation) {
     CoroutineImpl.call(this, resultContinuation);
-    this.f3f_1 = packets;
-    this.g3f_1 = ngrams;
-    this.h3f_1 = maxSamples;
-    this.i3f_1 = stride;
-    this.j3f_1 = k;
+    this.v3f_1 = packets;
+    this.w3f_1 = ngrams;
+    this.x3f_1 = maxSamples;
+    this.y3f_1 = stride;
+    this.z3f_1 = k;
   }
   protoOf($scoreSelectGatherCOROUTINE$).e9 = function () {
     var suspendResult = this.y8_1;
@@ -13261,43 +13240,43 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
         switch (tmp) {
           case 0:
             this.x8_1 = 2;
-            this.o3f_1 = Monotonic_instance.od();
+            this.e3g_1 = Monotonic_instance.od();
             var threads = 65535;
-            var groupsY = ((this.h3f_1 + threads | 0) - 1 | 0) / threads | 0;
+            var groupsY = ((this.x3f_1 + threads | 0) - 1 | 0) / threads | 0;
             var tmp_0 = this;
             var tmp_1 = Companion_instance_1;
-            var elements = new Int32Array([this.h3f_1, this.j3f_1, this.i3f_1, threads]);
-            tmp_0.n3f_1 = tmp_1.s3g(elements, 72);
-            get_markov_score().n3h([this.f3f_1, this.g3f_1, this.n3f_1]).q3h(threads, groupsY);
-            var totalGroups = (this.h3f_1 + 255 | 0) / 256 | 0;
+            var elements = new Int32Array([this.x3f_1, this.z3f_1, this.y3f_1, threads]);
+            tmp_0.d3g_1 = tmp_1.g3h(elements, 72);
+            get_markov_score().b3b([this.v3f_1, this.w3f_1, this.d3g_1]).k3b(threads, groupsY);
+            var totalGroups = (this.x3f_1 + 255 | 0) / 256 | 0;
             var selGroupsY = ((totalGroups + threads | 0) - 1 | 0) / threads | 0;
             var tmp_2 = this;
             var tmp_3 = Companion_instance_1;
             var tmp_4 = 0;
-            var tmp_5 = this.j3f_1;
+            var tmp_5 = this.z3f_1;
             var tmp_6 = new Int32Array(tmp_5);
             while (tmp_4 < tmp_5) {
               tmp_6[tmp_4] = 2147483647;
               tmp_4 = tmp_4 + 1 | 0;
             }
 
-            tmp_2.m3f_1 = tmp_3.s3g(tmp_6, 140);
+            tmp_2.c3g_1 = tmp_3.g3h(tmp_6, 140);
             var tmp_7 = this;
             var tmp_8 = Companion_instance_1;
             var tmp_9 = 0;
-            var tmp_10 = this.j3f_1;
+            var tmp_10 = this.z3f_1;
             var tmp_11 = new Int32Array(tmp_10);
             while (tmp_9 < tmp_10) {
               tmp_11[tmp_9] = 2147483647;
               tmp_9 = tmp_9 + 1 | 0;
             }
 
-            tmp_7.l3f_1 = tmp_8.s3g(tmp_11, 140);
-            get_select_top_k().n3h([this.n3f_1, this.f3f_1, this.m3f_1, this.l3f_1]).q3h(threads, selGroupsY);
-            this.k3f_1 = Companion_instance_1.d3g(imul(imul(this.j3f_1, this.i3f_1), 4), 140);
-            get_gather_top_k().n3h([this.n3f_1, this.f3f_1, this.m3f_1, this.k3f_1]).q3h(this.j3f_1);
+            tmp_7.b3g_1 = tmp_8.g3h(tmp_11, 140);
+            get_select_top_k().b3b([this.d3g_1, this.v3f_1, this.c3g_1, this.b3g_1]).k3b(threads, selGroupsY);
+            this.a3g_1 = Companion_instance_1.i3b(imul(imul(this.z3f_1, this.y3f_1), 4), 140);
+            get_gather_top_k().b3b([this.d3g_1, this.v3f_1, this.c3g_1, this.a3g_1]).k3b(this.z3f_1);
             this.w8_1 = 1;
-            suspendResult = readInt32Array(this.k3f_1, this);
+            suspendResult = readInt32Array(this.a3g_1, this);
             if (suspendResult === get_COROUTINE_SUSPENDED()) {
               return suspendResult;
             }
@@ -13305,8 +13284,8 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
             continue $sm;
           case 1:
             var topK = suspendResult;
-            log('Score/select/gather read ' + topK.length + ' = ' + this.j3f_1 + 'x' + this.i3f_1 + 'x4 bytes in ' + Duration__toString_impl_8d916b(ValueTimeMark__elapsedNow_impl_eonqvs(this.o3f_1)));
-            var _iterator__ex2g4s = listOf([this.n3f_1, this.m3f_1, this.l3f_1, this.k3f_1]).m();
+            log('Score/select/gather read ' + topK.length + ' = ' + this.z3f_1 + 'x' + this.y3f_1 + 'x4 bytes in ' + Duration__toString_impl_8d916b(ValueTimeMark__elapsedNow_impl_eonqvs(this.e3g_1)));
+            var _iterator__ex2g4s = listOf([this.d3g_1, this.c3g_1, this.b3g_1, this.a3g_1]).m();
             while (_iterator__ex2g4s.n()) {
               var element = _iterator__ex2g4s.o();
               element.destroy();
@@ -13327,13 +13306,13 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
       }
      while (true);
   };
-  function $completePipeline$langIntSizeCOROUTINE$(numRoots, rootSizes, rootCDF, resultContinuation) {
+  function $repairPipeline$langIntSizeCOROUTINE$(numRoots, rootSizes, rootCDF, resultContinuation) {
     CoroutineImpl.call(this, resultContinuation);
     this.f3l_1 = numRoots;
     this.g3l_1 = rootSizes;
     this.h3l_1 = rootCDF;
   }
-  protoOf($completePipeline$langIntSizeCOROUTINE$).e9 = function () {
+  protoOf($repairPipeline$langIntSizeCOROUTINE$).e9 = function () {
     var suspendResult = this.y8_1;
     $sm: do
       try {
@@ -13344,7 +13323,7 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
             this.k3l_1 = this.f3l_1 - 1 | 0;
             if (this.f3l_1 > 0) {
               this.w8_1 = 1;
-              suspendResult = Companion_instance_1.s3h(this.g3l_1, listOf_0(this.k3l_1), this);
+              suspendResult = Companion_instance_1.b3i(this.g3l_1, listOf_0(this.k3l_1), this);
               if (suspendResult === get_COROUTINE_SUSPENDED()) {
                 return suspendResult;
               }
@@ -13363,7 +13342,7 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
             this.i3l_1 = this.l3l_1;
             if (this.f3l_1 > 0) {
               this.w8_1 = 3;
-              suspendResult = Companion_instance_1.s3h(this.h3l_1, listOf_0(this.k3l_1), this);
+              suspendResult = Companion_instance_1.b3i(this.h3l_1, listOf_0(this.k3l_1), this);
               if (suspendResult === get_COROUTINE_SUSPENDED()) {
                 return suspendResult;
               }
@@ -13380,75 +13359,7 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
             continue $sm;
           case 4:
             var lastCDF = this.j3l_1;
-            return this.f3l_1 > 0 ? add(completePipeline$langIntSize$u(lastCDF), completePipeline$langIntSize$u(this.i3l_1)) : new Long(0, 0);
-          case 5:
-            throw this.z8_1;
-        }
-      } catch ($p) {
-        var e = $p;
-        if (this.x8_1 === 5) {
-          throw e;
-        } else {
-          this.w8_1 = this.x8_1;
-          this.z8_1 = e;
-        }
-      }
-     while (true);
-  };
-  function $repairPipeline$langIntSizeCOROUTINE$(numRoots, rootSizes, rootCDF, resultContinuation) {
-    CoroutineImpl.call(this, resultContinuation);
-    this.u3l_1 = numRoots;
-    this.v3l_1 = rootSizes;
-    this.w3l_1 = rootCDF;
-  }
-  protoOf($repairPipeline$langIntSizeCOROUTINE$).e9 = function () {
-    var suspendResult = this.y8_1;
-    $sm: do
-      try {
-        var tmp = this.w8_1;
-        switch (tmp) {
-          case 0:
-            this.x8_1 = 5;
-            this.z3l_1 = this.u3l_1 - 1 | 0;
-            if (this.u3l_1 > 0) {
-              this.w8_1 = 1;
-              suspendResult = Companion_instance_1.s3h(this.v3l_1, listOf_0(this.z3l_1), this);
-              if (suspendResult === get_COROUTINE_SUSPENDED()) {
-                return suspendResult;
-              }
-              continue $sm;
-            } else {
-              this.a3m_1 = 0;
-              this.w8_1 = 2;
-              continue $sm;
-            }
-
-          case 1:
-            this.a3m_1 = suspendResult.s(0);
-            this.w8_1 = 2;
-            continue $sm;
-          case 2:
-            this.x3l_1 = this.a3m_1;
-            if (this.u3l_1 > 0) {
-              this.w8_1 = 3;
-              suspendResult = Companion_instance_1.s3h(this.w3l_1, listOf_0(this.z3l_1), this);
-              if (suspendResult === get_COROUTINE_SUSPENDED()) {
-                return suspendResult;
-              }
-              continue $sm;
-            } else {
-              this.y3l_1 = 0;
-              this.w8_1 = 4;
-              continue $sm;
-            }
-
-          case 3:
-            this.y3l_1 = suspendResult.s(0);
-            this.w8_1 = 4;
-            continue $sm;
-          case 4:
-            var lastCDF = this.y3l_1;
-            var total = this.u3l_1 > 0 ? add(repairPipeline$langIntSize$u(lastCDF), repairPipeline$langIntSize$u(this.x3l_1)) : new Long(0, 0);
+            var total = this.f3l_1 > 0 ? add(repairPipeline$langIntSize$u(lastCDF), repairPipeline$langIntSize$u(this.i3l_1)) : new Long(0, 0);
             return total;
           case 5:
             throw this.z8_1;
@@ -13579,8 +13490,8 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
   var ArrayList_init_$Create$_1 = kotlin_kotlin.$_$.e;
   var UnsupportedOperationException_init_$Create$ = kotlin_kotlin.$_$.o1;
   var UnsupportedOperationException_init_$Create$_0 = kotlin_kotlin.$_$.n1;
-  var MutableIterable = kotlin_kotlin.$_$.t3;
   var Collection = kotlin_kotlin.$_$.q3;
+  var MutableIterable = kotlin_kotlin.$_$.t3;
   var KtSet = kotlin_kotlin.$_$.u3;
   var IllegalStateException_init_$Create$_0 = kotlin_kotlin.$_$.b1;
   var noWhenBranchMatchedException = kotlin_kotlin.$_$.ff;
@@ -13639,12 +13550,12 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
   initMetadataForClass(ATN, 'ATN');
   initMetadataForCompanion(Companion_6);
   initMetadataForClass(ATNConfig, 'ATNConfig');
-  initMetadataForClass(Array2DHashSet, 'Array2DHashSet', Array2DHashSet, VOID, [MutableIterable, Collection, KtSet]);
+  initMetadataForClass(Array2DHashSet, 'Array2DHashSet', Array2DHashSet, VOID, [Collection, MutableIterable, KtSet]);
   initMetadataForClass(AbstractConfigHashSet, 'AbstractConfigHashSet', VOID, Array2DHashSet);
   initMetadataForClass(ConfigHashSet, 'ConfigHashSet', ConfigHashSet, AbstractConfigHashSet);
   initMetadataForClass(AbstractEqualityComparator, 'AbstractEqualityComparator');
   initMetadataForObject(ConfigEqualityComparator, 'ConfigEqualityComparator', VOID, AbstractEqualityComparator);
-  initMetadataForClass(ATNConfigSet, 'ATNConfigSet', ATNConfigSet, VOID, [MutableIterable, Collection, KtSet]);
+  initMetadataForClass(ATNConfigSet, 'ATNConfigSet', ATNConfigSet, VOID, [Collection, MutableIterable, KtSet]);
   initMetadataForCompanion(Companion_7);
   initMetadataForClass(ATNDeserializationOptions, 'ATNDeserializationOptions', ATNDeserializationOptions_init_$Create$);
   initMetadataForCompanion(Companion_8);
@@ -19057,6 +18968,8 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
   var flatMap = kotlin_kotlin.$_$.pb;
   var BigInteger_init_$Create$ = kotlin_com_ionspin_kotlin_bignum.$_$.b;
   var sequenceOf = kotlin_kotlin.$_$.vb;
+  var take = kotlin_kotlin.$_$.zb;
+  var distinct_0 = kotlin_kotlin.$_$.lb;
   var first_1 = kotlin_kotlin.$_$.jc;
   var last_0 = kotlin_kotlin.$_$.sc;
   var booleanArrayOf = kotlin_kotlin.$_$.h9;
@@ -19076,7 +18989,6 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
   var mapOf_0 = kotlin_kotlin.$_$.s5;
   var initMetadataForObject = kotlin_kotlin.$_$.ba;
   var plus_6 = kotlin_kotlin.$_$.c6;
-  var distinct_0 = kotlin_kotlin.$_$.lb;
   var joinToString_0 = kotlin_kotlin.$_$.i5;
   var toDoubleArray = kotlin_kotlin.$_$.u6;
   var sum = kotlin_kotlin.$_$.r6;
@@ -26153,19 +26065,19 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
     var i_0 = a.p();
     var j_1 = b.p();
     while (i_0 > 0 && j_1 > 0) {
-      var temp_0 = costs[i_0 - 1 | 0][j_1 - 1 | 0] + (equals(a.s(i_0 - 1 | 0), b.s(j_1 - 1 | 0)) ? 0 : 1) | 0;
+      var matchCost = costs[i_0 - 1 | 0][j_1 - 1 | 0] + (equals(a.s(i_0 - 1 | 0), b.s(j_1 - 1 | 0)) ? 0 : 1) | 0;
       var tmp0_subject = costs[i_0][j_1];
-      if (tmp0_subject === temp_0) {
-        i_0 = i_0 - 1 | 0;
-        aPathRev.g(a.s(i_0));
+      if (tmp0_subject === (1 + costs[i_0][j_1 - 1 | 0] | 0)) {
+        aPathRev.g(null);
         j_1 = j_1 - 1 | 0;
         bPathRev.g(b.s(j_1));
       } else if (tmp0_subject === (1 + costs[i_0 - 1 | 0][j_1] | 0)) {
         i_0 = i_0 - 1 | 0;
         aPathRev.g(a.s(i_0));
         bPathRev.g(null);
-      } else if (tmp0_subject === (1 + costs[i_0][j_1 - 1 | 0] | 0)) {
-        aPathRev.g(null);
+      } else if (tmp0_subject === matchCost) {
+        i_0 = i_0 - 1 | 0;
+        aPathRev.g(a.s(i_0));
         j_1 = j_1 - 1 | 0;
         bPathRev.g(b.s(j_1));
       }
@@ -29067,6 +28979,25 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
     tmp_0.z8_1 = null;
     return tmp_0.e9();
   }
+  function admitsPrefix(_this__u8e3s4, tokens) {
+    // Inline function 'kotlin.let' call
+    var l = get_language(_this__u8e3s4);
+    var tmp0 = suffixCompletions(tokens);
+    var tmp$ret$1;
+    $l$block: {
+      // Inline function 'kotlin.sequences.any' call
+      var _iterator__ex2g4s = tmp0.m();
+      while (_iterator__ex2g4s.n()) {
+        var element = _iterator__ex2g4s.o();
+        if (contains_2(l, element)) {
+          tmp$ret$1 = true;
+          break $l$block;
+        }
+      }
+      tmp$ret$1 = false;
+    }
+    return tmp$ret$1;
+  }
   function enumSeqSmart(_this__u8e3s4, tokens) {
     var tmp0_safe_receiver = startPTree(_this__u8e3s4, tokens);
     var tmp;
@@ -29094,6 +29025,10 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
     var tmp1_elvis_lhs = tmp;
     return tmp1_elvis_lhs == null ? sequenceOf([]) : tmp1_elvis_lhs;
   }
+  function enumSuffixes(_this__u8e3s4, tokens, toTake) {
+    var tmp = suffixCompletions(tokens);
+    return distinct_0(take(flatMap(tmp, enumSuffixes$lambda(_this__u8e3s4)), toTake));
+  }
   function startPTree(_this__u8e3s4, tokens, nt) {
     nt = nt === VOID ? get_START_SYMBOL() : nt;
     // Inline function 'kotlin.time.measureTimedValue' call
@@ -29118,6 +29053,16 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
     tmp_0.y8_1 = Unit_instance;
     tmp_0.z8_1 = null;
     return tmp_0.e9();
+  }
+  function suffixCompletions(tokens, len) {
+    len = len === VOID ? 10 : len;
+    var tmp = asSequence(numberRangeToNumber(1, len));
+    return map(tmp, suffixCompletions$lambda(tokens));
+  }
+  function enumSeq(_this__u8e3s4, tokens) {
+    var tmp0_safe_receiver = startPTree(_this__u8e3s4, tokens);
+    var tmp1_elvis_lhs = tmp0_safe_receiver == null ? null : tmp0_safe_receiver.k1v();
+    return tmp1_elvis_lhs == null ? sequenceOf([]) : tmp1_elvis_lhs;
   }
   function initPTreeListMat(_this__u8e3s4, tokens) {
     // Inline function 'kotlin.collections.map' call
@@ -29271,6 +29216,11 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
     l.$arity = 0;
     return l;
   }
+  function enumSuffixes$lambda($this_enumSuffixes) {
+    return function (it) {
+      return enumSeq($this_enumSuffixes, it);
+    };
+  }
   function startPTreeSuspendable$slambda(resultContinuation) {
     CoroutineImpl.call(this, resultContinuation);
   }
@@ -29310,6 +29260,23 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
     };
     l.$arity = 0;
     return l;
+  }
+  function suffixCompletions$lambda($tokens) {
+    return function (it) {
+      // Inline function 'kotlin.collections.List' call
+      // Inline function 'kotlin.collections.MutableList' call
+      var list = ArrayList_init_$Create$(it);
+      // Inline function 'kotlin.repeat' call
+      var inductionVariable = 0;
+      if (inductionVariable < it)
+        do {
+          var index = inductionVariable;
+          inductionVariable = inductionVariable + 1 | 0;
+          list.g('_');
+        }
+         while (inductionVariable < it);
+      return plus($tokens, list);
+    };
   }
   function $enumSeqSmartSuspendableCOROUTINE$(_this__u8e3s4, tokens, suspender, resultContinuation) {
     CoroutineImpl.call(this, resultContinuation);
@@ -34137,54 +34104,56 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
   _.$_$.c = CFGCFG;
   _.$_$.d = get_HOLE_MARKER;
   _.$_$.e = get_START_SYMBOL;
-  _.$_$.f = get_bimap;
-  _.$_$.g = get_bindex;
-  _.$_$.h = calcStats;
-  _.$_$.i = contains_2;
-  _.$_$.j = contains_1;
-  _.$_$.k = enumNTSmall;
-  _.$_$.l = enumSeqSmart;
-  _.$_$.m = freeze;
-  _.$_$.n = get_grammarEncoding;
-  _.$_$.o = isValidProd;
-  _.$_$.p = get_language;
-  _.$_$.q = levAndLenMetric;
-  _.$_$.r = levenshteinAlign;
-  _.$_$.s = levenshteinAlign_0;
-  _.$_$.t = levenshtein;
-  _.$_$.u = makeLevFSA;
-  _.$_$.v = makePorousFSA;
-  _.$_$.w = get_noEpsilon;
-  _.$_$.x = get_noEpsilonOrNonterminalStubs;
-  _.$_$.y = get_noNonterminalStubs;
-  _.$_$.z = get_nonparametricForm;
-  _.$_$.a1 = get_nonterminals;
-  _.$_$.b1 = get_originalForm;
-  _.$_$.c1 = parseCFG;
-  _.$_$.d1 = parse;
-  _.$_$.e1 = porousToCodePoints;
-  _.$_$.f1 = preparseParseableLines;
-  _.$_$.g1 = prettyPrint;
-  _.$_$.h1 = get_segmentationCacheHTML;
-  _.$_$.i1 = get_terminals;
-  _.$_$.j1 = get_tmLst;
-  _.$_$.k1 = get_tmMap;
-  _.$_$.l1 = get_LED_BUFFER;
-  _.$_$.m1 = set_LED_BUFFER;
-  _.$_$.n1 = get_TIMEOUT_MS;
-  _.$_$.o1 = set_TIMEOUT_MS;
-  _.$_$.p1 = get_pythonStatementCNFAllProds;
-  _.$_$.q1 = get_vanillaS2PCFG;
-  _.$_$.r1 = cache_0;
-  _.$_$.s1 = carveSeams;
-  _.$_$.t1 = paintDiffs;
-  _.$_$.u1 = stripStub;
-  _.$_$.v1 = tokenizeByWhitespaceAndKeepDelimiters;
-  _.$_$.w1 = tokenizeByWhitespace;
-  _.$_$.x1 = initiateSuspendableRepair;
-  _.$_$.y1 = enumSeqSmartSuspendable;
-  _.$_$.z1 = PlatformVars_instance;
-  _.$_$.a2 = round_0;
+  _.$_$.f = admitsPrefix;
+  _.$_$.g = get_bimap;
+  _.$_$.h = get_bindex;
+  _.$_$.i = calcStats;
+  _.$_$.j = contains_2;
+  _.$_$.k = contains_1;
+  _.$_$.l = enumNTSmall;
+  _.$_$.m = enumSeqSmart;
+  _.$_$.n = enumSuffixes;
+  _.$_$.o = freeze;
+  _.$_$.p = get_grammarEncoding;
+  _.$_$.q = isValidProd;
+  _.$_$.r = get_language;
+  _.$_$.s = levAndLenMetric;
+  _.$_$.t = levenshteinAlign;
+  _.$_$.u = levenshteinAlign_0;
+  _.$_$.v = levenshtein;
+  _.$_$.w = makeLevFSA;
+  _.$_$.x = makePorousFSA;
+  _.$_$.y = get_noEpsilon;
+  _.$_$.z = get_noEpsilonOrNonterminalStubs;
+  _.$_$.a1 = get_noNonterminalStubs;
+  _.$_$.b1 = get_nonparametricForm;
+  _.$_$.c1 = get_nonterminals;
+  _.$_$.d1 = get_originalForm;
+  _.$_$.e1 = parseCFG;
+  _.$_$.f1 = parse;
+  _.$_$.g1 = porousToCodePoints;
+  _.$_$.h1 = preparseParseableLines;
+  _.$_$.i1 = prettyPrint;
+  _.$_$.j1 = get_segmentationCacheHTML;
+  _.$_$.k1 = get_terminals;
+  _.$_$.l1 = get_tmLst;
+  _.$_$.m1 = get_tmMap;
+  _.$_$.n1 = get_LED_BUFFER;
+  _.$_$.o1 = set_LED_BUFFER;
+  _.$_$.p1 = get_TIMEOUT_MS;
+  _.$_$.q1 = set_TIMEOUT_MS;
+  _.$_$.r1 = get_pythonStatementCNFAllProds;
+  _.$_$.s1 = get_vanillaS2PCFG;
+  _.$_$.t1 = cache_0;
+  _.$_$.u1 = carveSeams;
+  _.$_$.v1 = paintDiffs;
+  _.$_$.w1 = stripStub;
+  _.$_$.x1 = tokenizeByWhitespaceAndKeepDelimiters;
+  _.$_$.y1 = tokenizeByWhitespace;
+  _.$_$.z1 = initiateSuspendableRepair;
+  _.$_$.a2 = enumSeqSmartSuspendable;
+  _.$_$.b2 = PlatformVars_instance;
+  _.$_$.c2 = round_0;
   //endregion
   return _;
 }));
@@ -34379,16 +34348,10 @@ if (typeof Array.prototype.fill === 'undefined') {
     Object.defineProperty(TypedArray.prototype, 'fill', {value: Array.prototype.fill});
   }
 });
-if (typeof Math.clz32 === 'undefined') {
-  Math.clz32 = function (log, LN2) {
-    return function (x) {
-      var asUint = x >>> 0;
-      if (asUint === 0) {
-        return 32;
-      }
-      return 31 - (log(asUint) / LN2 | 0) | 0; // the "| 0" acts like math.floor
-    };
-  }(Math.log, Math.LN2);
+if (typeof Math.log10 === 'undefined') {
+  Math.log10 = function (x) {
+    return Math.log(x) * Math.LOG10E;
+  };
 }
 if (typeof Math.tanh === 'undefined') {
   var epsilon = 2.220446049250313E-16;
@@ -34407,15 +34370,27 @@ if (typeof Math.tanh === 'undefined') {
     }
   };
 }
-if (typeof Math.log10 === 'undefined') {
-  Math.log10 = function (x) {
-    return Math.log(x) * Math.LOG10E;
-  };
+if (typeof Math.clz32 === 'undefined') {
+  Math.clz32 = function (log, LN2) {
+    return function (x) {
+      var asUint = x >>> 0;
+      if (asUint === 0) {
+        return 32;
+      }
+      return 31 - (log(asUint) / LN2 | 0) | 0; // the "| 0" acts like math.floor
+    };
+  }(Math.log, Math.LN2);
 }
 if (typeof Math.log2 === 'undefined') {
   Math.log2 = function (x) {
     return Math.log(x) * Math.LOG2E;
   };
+}
+if (typeof String.prototype.startsWith === 'undefined') {
+  Object.defineProperty(String.prototype, 'startsWith', {value: function (searchString, position) {
+    position = position || 0;
+    return this.lastIndexOf(searchString, position) === position;
+  }});
 }
 if (typeof String.prototype.endsWith === 'undefined') {
   Object.defineProperty(String.prototype, 'endsWith', {value: function (searchString, position) {
@@ -34426,12 +34401,6 @@ if (typeof String.prototype.endsWith === 'undefined') {
     position -= searchString.length;
     var lastIndex = subjectString.indexOf(searchString, position);
     return lastIndex !== -1 && lastIndex === position;
-  }});
-}
-if (typeof String.prototype.startsWith === 'undefined') {
-  Object.defineProperty(String.prototype, 'startsWith', {value: function (searchString, position) {
-    position = position || 0;
-    return this.lastIndexOf(searchString, position) === position;
   }});
 }
 //endregion
@@ -34490,23 +34459,23 @@ if (typeof String.prototype.startsWith === 'undefined') {
   initMetadataForClass(AbstractMutableCollection, 'AbstractMutableCollection', VOID, AbstractCollection, [AbstractCollection, MutableIterable, Collection]);
   initMetadataForClass(IteratorImpl, 'IteratorImpl');
   initMetadataForClass(ListIteratorImpl, 'ListIteratorImpl', VOID, IteratorImpl);
-  initMetadataForClass(AbstractMutableList, 'AbstractMutableList', VOID, AbstractMutableCollection, [AbstractMutableCollection, MutableIterable, Collection, KtList]);
+  initMetadataForClass(AbstractMutableList, 'AbstractMutableList', VOID, AbstractMutableCollection, [AbstractMutableCollection, Collection, MutableIterable, KtList]);
   initMetadataForClass(SubList, 'SubList', VOID, AbstractMutableList, [AbstractMutableList, RandomAccess]);
   initMetadataForClass(AbstractMap, 'AbstractMap', VOID, VOID, [KtMap]);
   initMetadataForClass(AbstractMutableMap, 'AbstractMutableMap', VOID, AbstractMap, [AbstractMap, KtMap]);
-  initMetadataForClass(AbstractMutableSet, 'AbstractMutableSet', VOID, AbstractMutableCollection, [AbstractMutableCollection, MutableIterable, Collection, KtSet]);
+  initMetadataForClass(AbstractMutableSet, 'AbstractMutableSet', VOID, AbstractMutableCollection, [AbstractMutableCollection, Collection, MutableIterable, KtSet]);
   initMetadataForCompanion(Companion_2);
-  initMetadataForClass(ArrayList, 'ArrayList', ArrayList_init_$Create$, AbstractMutableList, [AbstractMutableList, MutableIterable, Collection, KtList, RandomAccess]);
+  initMetadataForClass(ArrayList, 'ArrayList', ArrayList_init_$Create$, AbstractMutableList, [AbstractMutableList, Collection, MutableIterable, KtList, RandomAccess]);
   initMetadataForClass(HashMap, 'HashMap', HashMap_init_$Create$, AbstractMutableMap, [AbstractMutableMap, KtMap]);
-  initMetadataForClass(HashMapKeys, 'HashMapKeys', VOID, AbstractMutableSet, [MutableIterable, Collection, KtSet, AbstractMutableSet]);
+  initMetadataForClass(HashMapKeys, 'HashMapKeys', VOID, AbstractMutableSet, [Collection, MutableIterable, KtSet, AbstractMutableSet]);
   initMetadataForClass(HashMapValues, 'HashMapValues', VOID, AbstractMutableCollection, [MutableIterable, Collection, AbstractMutableCollection]);
-  initMetadataForClass(HashMapEntrySetBase, 'HashMapEntrySetBase', VOID, AbstractMutableSet, [MutableIterable, Collection, KtSet, AbstractMutableSet]);
+  initMetadataForClass(HashMapEntrySetBase, 'HashMapEntrySetBase', VOID, AbstractMutableSet, [Collection, MutableIterable, KtSet, AbstractMutableSet]);
   initMetadataForClass(HashMapEntrySet, 'HashMapEntrySet', VOID, HashMapEntrySetBase);
   initMetadataForClass(HashMapKeysDefault$iterator$1);
   initMetadataForClass(HashMapKeysDefault, 'HashMapKeysDefault', VOID, AbstractMutableSet);
   initMetadataForClass(HashMapValuesDefault$iterator$1);
   initMetadataForClass(HashMapValuesDefault, 'HashMapValuesDefault', VOID, AbstractMutableCollection);
-  initMetadataForClass(HashSet, 'HashSet', HashSet_init_$Create$, AbstractMutableSet, [AbstractMutableSet, MutableIterable, Collection, KtSet]);
+  initMetadataForClass(HashSet, 'HashSet', HashSet_init_$Create$, AbstractMutableSet, [AbstractMutableSet, Collection, MutableIterable, KtSet]);
   initMetadataForCompanion(Companion_3);
   initMetadataForClass(Itr, 'Itr');
   initMetadataForClass(KeysItr, 'KeysItr', VOID, Itr);
@@ -34551,7 +34520,7 @@ if (typeof String.prototype.startsWith === 'undefined') {
   initMetadataForInterface(InternalMap, 'InternalMap');
   initMetadataForClass(InternalHashMap, 'InternalHashMap', InternalHashMap_init_$Create$, VOID, [InternalMap]);
   initMetadataForClass(LinkedHashMap, 'LinkedHashMap', LinkedHashMap_init_$Create$, HashMap, [HashMap, KtMap]);
-  initMetadataForClass(LinkedHashSet, 'LinkedHashSet', LinkedHashSet_init_$Create$, HashSet, [HashSet, MutableIterable, Collection, KtSet]);
+  initMetadataForClass(LinkedHashSet, 'LinkedHashSet', LinkedHashSet_init_$Create$, HashSet, [HashSet, Collection, MutableIterable, KtSet]);
   initMetadataForClass(BaseOutput, 'BaseOutput');
   initMetadataForClass(NodeJsOutput, 'NodeJsOutput', VOID, BaseOutput);
   initMetadataForClass(BufferedOutput, 'BufferedOutput', BufferedOutput, BaseOutput);
@@ -49278,8 +49247,8 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
   var getKClassFromExpression = kotlin_kotlin.$_$.fb;
   var Exception_init_$Create$ = kotlin_kotlin.$_$.y;
   var removeFirstOrNull = kotlin_kotlin.$_$.g6;
-  var MutableIterable = kotlin_kotlin.$_$.t3;
   var Collection = kotlin_kotlin.$_$.q3;
+  var MutableIterable = kotlin_kotlin.$_$.t3;
   var KtList = kotlin_kotlin.$_$.r3;
   var coerceIn = kotlin_kotlin.$_$.bb;
   var convertToInt = kotlin_kotlin.$_$.t8;
@@ -49360,7 +49329,7 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
   initMetadataForClass(Symbol, 'Symbol');
   initMetadataForClass(SetTimeoutBasedDispatcher, 'SetTimeoutBasedDispatcher', VOID, CoroutineDispatcher, [CoroutineDispatcher, Delay], [1]);
   initMetadataForObject(NodeDispatcher, 'NodeDispatcher', VOID, SetTimeoutBasedDispatcher, VOID, [1]);
-  initMetadataForClass(MessageQueue, 'MessageQueue', VOID, VOID, [MutableIterable, Collection, KtList]);
+  initMetadataForClass(MessageQueue, 'MessageQueue', VOID, VOID, [Collection, MutableIterable, KtList]);
   initMetadataForClass(ScheduledMessageQueue, 'ScheduledMessageQueue', VOID, MessageQueue);
   initMetadataForClass(WindowMessageQueue, 'WindowMessageQueue', VOID, MessageQueue);
   initMetadataForClass(UnconfinedEventLoop, 'UnconfinedEventLoop', UnconfinedEventLoop, EventLoop);

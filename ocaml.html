@@ -1,0 +1,363 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>OCaml in browser (textarea + x-ocaml runner)</title>
+    <style>
+        body { font: 14px/1.4 system-ui, -apple-system, Segoe UI, Roboto, sans-serif; margin: 18px; }
+        textarea, pre { width: 100%; box-sizing: border-box; font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace; }
+        textarea { height: 220px; padding: 10px; border: 1px solid #cfcfcf; border-radius: 10px; }
+        pre { min-height: 140px; padding: 10px; border: 1px solid #cfcfcf; border-radius: 10px; background: #fafafa; white-space: pre-wrap; }
+        button { padding: 8px 12px; border-radius: 10px; border: 1px solid #cfcfcf; background: #fff; cursor: pointer; }
+        button:hover { background: #f6f6f6; }
+        button:disabled { opacity: 0.6; cursor: not-allowed; }
+        .label { color:#666; font-size: 12px; margin: 10px 0 6px; }
+        .row { margin-top:10px; display:flex; gap:10px; align-items:center; flex-wrap: wrap; }
+        .pill { font-size: 12px; color:#444; padding: 3px 8px; border: 1px solid #ddd; border-radius: 999px; background:#fff; }
+        .stderr { color:#b00020; }
+
+        /* Offscreen engine host: keeps layout stable while CodeMirror exists */
+        #engineHost {
+            position: absolute;
+            left: -10000px;
+            top: -10000px;
+            width: 900px;
+            height: 600px;
+            overflow: hidden;
+        }
+
+        /* Optional debug view */
+        #engineDebug { display:none; margin-top: 12px; }
+        #engineDebug.on { display:block; }
+        #engineDebug x-ocaml { display:block; max-width: 100%; }
+    </style>
+
+    <!-- x-ocaml webcomponent + worker (from the project's docs) -->
+    <script async
+            src="https://cdn.jsdelivr.net/gh/art-w/x-ocaml.js@6/x-ocaml.js"
+            src-worker="https://cdn.jsdelivr.net/gh/art-w/x-ocaml.js@6/x-ocaml.worker+effects.js"
+            integrity="sha256-3ITn2LRgP/8Rz6oqP5ZQTysesNaSi6/iEdbDvBfyCSE="
+            crossorigin="anonymous"
+            x-ocamlformat="
+      profile=default
+      margin=80
+    "
+    ></script>
+</head>
+
+<body>
+<h2>OCaml runner</h2>
+
+<div class="label">OCaml code (file-style snippet is OK)</div>
+<textarea id="src" spellcheck="false">(* Try an IDE-style snippet *)
+type user =
+  { id : int
+  ; name : string
+  ; email : string option
+  }
+
+let display_name u =
+  match u.email with
+  | Some e -> Printf.sprintf "%s <%s>" u.name e
+  | None -> u.name
+
+let () =
+  let u = { id = 7; name = "Ada"; email = Some "ada@example.com" } in
+  print_endline (display_name u)
+</textarea>
+
+<div class="row">
+    <button id="run">Run</button>
+    <button id="fmt">Format</button>
+    <button id="toggleDebug">Show engine</button>
+    <span id="status" class="label"></span>
+    <span id="engineStatus" class="pill">engine: loading…</span>
+</div>
+
+<div class="label">engine output (stdout / errors)</div>
+<pre id="out"></pre>
+
+<div class="label">debug / details</div>
+<pre id="ret"></pre>
+
+<!-- Offscreen execution engine -->
+<div id="engineHost">
+    <x-ocaml id="engineCell"></x-ocaml>
+</div>
+
+<!-- Optional on-page engine UI for debugging -->
+<div id="engineDebug">
+    <div class="label">Engine UI (x-ocaml) — useful for debugging if buttons aren’t found</div>
+    <x-ocaml id="engineCellDebug"></x-ocaml>
+</div>
+
+<script>
+    const $ = (id) => document.getElementById(id);
+    const src = $("src");
+    const out = $("out");
+    const ret = $("ret");
+    const status = $("status");
+    const engineStatus = $("engineStatus");
+    const runBtn = $("run");
+    const fmtBtn = $("fmt");
+
+    const engineCell = $("engineCell");
+    const engineCellDebug = $("engineCellDebug");
+    const engineDebug = $("engineDebug");
+
+    function setBusy(b, msg) {
+        runBtn.disabled = b;
+        fmtBtn.disabled = b;
+        status.textContent = msg || "";
+    }
+
+    // -------------------------------
+    // x-ocaml engine helpers
+    // -------------------------------
+    function sleep(ms) { return new Promise(r => setTimeout(r, ms)); }
+
+    async function waitForDefined() {
+        // Wait until the custom element is registered
+        if (window.customElements && customElements.whenDefined) {
+            await customElements.whenDefined("x-ocaml");
+        }
+    }
+
+    function getShadowRoot(elt) {
+        // Most webcomponents use open shadow roots; if this is null, use "Show engine" and interact manually.
+        return elt && elt.shadowRoot ? elt.shadowRoot : null;
+    }
+
+    function findCodeMirror(shadow) {
+        if (!shadow) return null;
+        const cmHost =
+            shadow.querySelector(".CodeMirror") ||
+            shadow.querySelector("[class*='CodeMirror']") ||
+            shadow.querySelector("[data-codemirror]");
+
+        // CodeMirror 5 often attaches the instance as `element.CodeMirror`
+        if (cmHost && cmHost.CodeMirror) return cmHost.CodeMirror;
+
+        // Sometimes the wrapper is inside another element
+        const maybe = shadow.querySelector(".CodeMirror-wrap, .CodeMirror-scroll, .CodeMirror-lines");
+        if (maybe && maybe.closest(".CodeMirror") && maybe.closest(".CodeMirror").CodeMirror) {
+            return maybe.closest(".CodeMirror").CodeMirror;
+        }
+        return null;
+    }
+
+    function setEngineCode(elt, code) {
+        const shadow = getShadowRoot(elt);
+        const cm = findCodeMirror(shadow);
+        if (cm && typeof cm.setValue === "function") {
+            cm.setValue(code);
+            return true;
+        }
+        // Fallback: set light DOM text (some implementations read initial textContent)
+        elt.textContent = code;
+        return false;
+    }
+
+    function getEngineCode(elt) {
+        const shadow = getShadowRoot(elt);
+        const cm = findCodeMirror(shadow);
+        if (cm && typeof cm.getValue === "function") return cm.getValue();
+        return (elt.textContent || "");
+    }
+
+    function allButtons(shadow) {
+        if (!shadow) return [];
+        return Array.from(shadow.querySelectorAll("button, [role='button']"));
+    }
+
+    function normalize(s) {
+        return String(s || "").toLowerCase().replace(/\s+/g, " ").trim();
+    }
+
+    function clickFirstButtonMatching(elt, wantWords) {
+        const shadow = getShadowRoot(elt);
+        const btns = allButtons(shadow);
+        const want = wantWords.map(normalize);
+
+        // Match against visible text + common attributes
+        for (const b of btns) {
+            const text = normalize(b.textContent);
+            const aria = normalize(b.getAttribute && b.getAttribute("aria-label"));
+            const title = normalize(b.getAttribute && b.getAttribute("title"));
+            const data  = normalize(b.getAttribute && b.getAttribute("data-action"));
+            const hay = [text, aria, title, data].join(" | ");
+            if (want.some(w => hay.includes(w))) {
+                b.click();
+                return true;
+            }
+        }
+        return false;
+    }
+
+    function extractOutputText(elt) {
+        const shadow = getShadowRoot(elt);
+        if (!shadow) return "";
+
+        // Try obvious output-ish containers first
+        const candidates = shadow.querySelectorAll("pre, .output, .stdout, .stderr, .result, .log");
+        for (let i = candidates.length - 1; i >= 0; i--) {
+            const t = (candidates[i].textContent || "").trim();
+            if (t) return t;
+        }
+
+        // As a fallback, return shadow text minus the editor area
+        // (best-effort heuristic)
+        const clone = shadow.cloneNode(true);
+        clone.querySelectorAll(".CodeMirror, textarea, button, [role='button']").forEach(n => n.remove());
+        return (clone.textContent || "").trim();
+    }
+
+    async function ensureEngineReady() {
+        await waitForDefined();
+
+        // The component is async; wait for its shadow root + CodeMirror to appear
+        for (let i = 0; i < 200; i++) {
+            const shadow = getShadowRoot(engineCell);
+            const cm = findCodeMirror(shadow);
+            if (shadow && cm) {
+                engineStatus.textContent = "engine: ready";
+                return true;
+            }
+            await sleep(50);
+        }
+
+        engineStatus.textContent = "engine: not ready (use Show engine)";
+        return false;
+    }
+
+    // Keep the debug cell in sync (optional)
+    async function syncDebugCellFromMain() {
+        if (!engineDebug.classList.contains("on")) return;
+        await ensureEngineReady();
+        // Make debug cell exist + ready too
+        for (let i = 0; i < 200; i++) {
+            const shadow = getShadowRoot(engineCellDebug);
+            const cm = findCodeMirror(shadow);
+            if (shadow && cm) break;
+            await sleep(50);
+        }
+        setEngineCode(engineCellDebug, src.value);
+    }
+
+    // -------------------------------
+    // Actions: Format / Run
+    // -------------------------------
+    async function doFormat() {
+        out.textContent = "";
+        ret.textContent = "";
+        setBusy(true, "Formatting…");
+
+        const ok = await ensureEngineReady();
+        if (!ok) {
+            ret.textContent = "Engine not ready. Click “Show engine” and see if the component loads (network/CORS/adblock can block CDNs).";
+            setBusy(false, "");
+            return;
+        }
+
+        // Push code into engine
+        setEngineCode(engineCell, src.value);
+
+        // Try to click a "format" button in the webcomponent UI
+        const clicked = clickFirstButtonMatching(engineCell, ["format", "ocamlformat", "prett"]);
+        if (!clicked) {
+            // Some UIs format on blur / run; try a run-triggered format as fallback.
+            clickFirstButtonMatching(engineCell, ["run", "eval", "execute", "▶"]);
+        }
+
+        // Wait a short while for the editor to update
+        const before = src.value;
+        for (let i = 0; i < 60; i++) {
+            await new Promise(r => requestAnimationFrame(r));
+            const after = getEngineCode(engineCell);
+            if (after && after !== before) {
+                src.value = after;
+                engineStatus.textContent = "engine: formatted";
+                setBusy(false, "");
+                await syncDebugCellFromMain();
+                return;
+            }
+        }
+
+        // If no change, keep the original text (maybe already formatted)
+        engineStatus.textContent = "engine: no change";
+        setBusy(false, "");
+        await syncDebugCellFromMain();
+    }
+
+    async function doRun() {
+        out.textContent = "";
+        ret.textContent = "";
+        setBusy(true, "Running…");
+
+        const ok = await ensureEngineReady();
+        if (!ok) {
+            ret.textContent = "Engine not ready. Click “Show engine” and see if the component loads (network/CORS/adblock can block CDNs).";
+            setBusy(false, "");
+            return;
+        }
+
+        // Push code into engine
+        setEngineCode(engineCell, src.value);
+
+        // Click run/eval
+        const clicked = clickFirstButtonMatching(engineCell, ["run", "eval", "execute", "▶"]);
+        if (!clicked) {
+            ret.textContent =
+                "Could not find the engine’s Run button via shadow DOM.\n" +
+                "Click “Show engine” and use its Run button directly; then tell me what the button text/label looks like and I’ll hardcode it.";
+            setBusy(false, "");
+            await syncDebugCellFromMain();
+            return;
+        }
+
+        // Poll for output text changes
+        let last = "";
+        for (let i = 0; i < 200; i++) {
+            await new Promise(r => requestAnimationFrame(r));
+            const t = extractOutputText(engineCell);
+            if (t && t !== last) {
+                last = t;
+                out.textContent = t;
+            }
+        }
+
+        if (!out.textContent.trim()) {
+            out.textContent = "(no output captured — use “Show engine” to view raw output)";
+        }
+
+        engineStatus.textContent = "engine: ran";
+        setBusy(false, "");
+        await syncDebugCellFromMain();
+    }
+
+    // -------------------------------
+    // UI hooks
+    // -------------------------------
+    $("run").addEventListener("click", (e) => { e.preventDefault(); doRun(); });
+    $("fmt").addEventListener("click", (e) => { e.preventDefault(); doFormat(); });
+
+    $("toggleDebug").addEventListener("click", async () => {
+        engineDebug.classList.toggle("on");
+        $("toggleDebug").textContent = engineDebug.classList.contains("on") ? "Hide engine" : "Show engine";
+        if (engineDebug.classList.contains("on")) {
+            // Keep debug cell synced and visible
+            await syncDebugCellFromMain();
+        }
+    });
+
+    // Kick initialization (no background promises to the user; just set UI state)
+    (async () => {
+        setBusy(true, "Loading engine…");
+        await ensureEngineReady();
+        setBusy(false, "");
+        // Initial sync: mirror textarea into engine so Format is immediate
+        setEngineCode(engineCell, src.value);
+    })();
+</script>
+</body>
+</html>

@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Kotlin runner (single HTML, fixed output capture)</title>
+    <style>
+        body { font: 14px/1.4 system-ui, -apple-system, Segoe UI, Roboto, sans-serif; margin: 18px; }
+        textarea, pre { width: 100%; box-sizing: border-box; font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace; }
+        textarea { height: 180px; padding: 10px; border: 1px solid #cfcfcf; border-radius: 10px; }
+        pre { min-height: 120px; padding: 10px; border: 1px solid #cfcfcf; border-radius: 10px; background: #fafafa; white-space: pre-wrap; }
+        button { padding: 8px 12px; border-radius: 10px; border: 1px solid #cfcfcf; background: #fff; cursor: pointer; }
+        button:hover { background: #f6f6f6; }
+        .label { color:#666; font-size: 12px; margin: 10px 0 6px; }
+        .runnerBox { border: 1px dashed #ddd; border-radius: 10px; padding: 10px; background: #fcfcfc; }
+        .err { color:#b00020; }
+    </style>
+</head>
+
+<body>
+<h2>Kotlin runner (evaluates code from a string)</h2>
+
+<div class="label">Kotlin program</div>
+<textarea id="src" spellcheck="false">fun main() {
+  val x = 2
+  val y = 3
+  println("x + y = ${x + y}")
+}</textarea>
+
+<div style="margin-top:10px; display:flex; gap:10px; align-items:center;">
+    <button id="run" disabled>Loading Kotlin Playground…</button>
+    <span id="status" class="label"></span>
+</div>
+
+<div class="label">Captured output</div>
+<pre id="out"></pre>
+
+<div class="label">Embedded Kotlin Playground (engine)</div>
+<div class="runnerBox">
+    <!-- data-target-platform="js" runs JS in the browser after compilation. :contentReference[oaicite:1]{index=1} -->
+    <div id="kp" class="kotlin-code" data-target-platform="js"></div>
+</div>
+
+<!-- One-script-tag import. :contentReference[oaicite:2]{index=2} -->
+<script src="https://unpkg.com/kotlin-playground@1"></script>
+
+<script>
+    const $ = (id) => document.getElementById(id);
+    const btn = $("run");
+    const status = $("status");
+    const out = $("out");
+    const src = $("src");
+    const kp = $("kp");
+
+    let instance = null;
+    let mountNode = null;
+
+    function sleep(ms) { return new Promise(r => setTimeout(r, ms)); }
+
+    // ✅ Key fix: only consider PREs that are NOT inside the CodeMirror editor.
+    function extractConsoleText(root, codeNow) {
+        if (!root) return "";
+
+        const pres = Array.from(root.querySelectorAll("pre"))
+            .filter(pre => !pre.closest(".CodeMirror")); // <-- this is the important line
+
+        // Prefer the last non-empty pre that doesn't just echo the code
+        const texts = pres
+            .map(pre => (pre.innerText || pre.textContent || "").trim())
+            .filter(t => t.length > 0)
+            .filter(t => t !== (codeNow || "").trim());
+
+        if (texts.length) return texts[texts.length - 1];
+
+        // Fallback: find any element that *looks* like a console/output container, still excluding CodeMirror
+        const els = Array.from(root.querySelectorAll("*"))
+            .filter(el => !el.closest(".CodeMirror"))
+            .map(el => ({ el, cls: (el.className || "").toString(), txt: (el.innerText || el.textContent || "").trim() }))
+            .filter(x => x.txt.length > 0);
+
+        els.sort((a, b) => {
+            const aBoost = /console|output|stdout|stderr/i.test(a.cls) ? 10000 : 0;
+            const bBoost = /console|output|stdout|stderr/i.test(b.cls) ? 10000 : 0;
+            return (bBoost + b.txt.length) - (aBoost + a.txt.length);
+        });
+
+        return els[0]?.txt || "";
+    }
+
+    async function runKotlin() {
+        out.textContent = "";
+        status.textContent = "";
+
+        if (!instance) {
+            status.textContent = "Runner not ready (init failed).";
+            return;
+        }
+
+        const code = src.value;
+
+        // Update the embedded editor content
+        try {
+            if (instance.codemirror && typeof instance.codemirror.setValue === "function") {
+                instance.codemirror.setValue(code);
+            } else {
+                kp.textContent = code;
+            }
+        } catch (_) {}
+
+        // Execute via instance API. :contentReference[oaicite:3]{index=3}
+        try {
+            const r = instance.execute();
+            if (r && typeof r.then === "function") await r;
+        } catch (e) {
+            status.textContent = "Execution threw.";
+            out.textContent = String(e?.stack || e);
+            return;
+        }
+
+        // Give the UI a moment to render the console
+        await sleep(6);
+
+        const text = extractConsoleText(mountNode, code);
+        out.textContent = text || "(No output found — ensure your program prints via println(...).)";
+        status.textContent = "OK";
+    }
+
+    function init() {
+        kp.textContent = src.value;
+
+        const KP = window.KotlinPlayground;
+        if (typeof KP !== "function") {
+            status.textContent = "KotlinPlayground global not found (CDN script blocked?).";
+            return;
+        }
+
+        // Initialize; capture mountNode and instance. :contentReference[oaicite:4]{index=4}
+        KP("#kp", {
+            callback: (targetNode, newMountNode) => { mountNode = newMountNode; },
+            getInstance: (inst) => { instance = inst; }
+        });
+
+        // Enable button once instance exists
+        const t0 = performance.now();
+        (async () => {
+            while (!instance && performance.now() - t0 < 8000) await sleep(50);
+            if (!instance) {
+                status.textContent = "Init timed out (network blocked?)";
+                return;
+            }
+            btn.disabled = false;
+            btn.textContent = "Run";
+            status.textContent = "Ready.";
+            btn.addEventListener("click", runKotlin);
+            runKotlin();
+        })();
+    }
+
+    window.addEventListener("error", (e) => {
+        status.textContent = "JS error";
+        out.textContent = String(e?.error?.stack || e?.message || e);
+    });
+
+    document.addEventListener("DOMContentLoaded", init);
+</script>
+</body>
+</html>

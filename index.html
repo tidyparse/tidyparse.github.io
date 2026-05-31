@@ -34,9 +34,6 @@
 
      • Use the [Tab] key to replace nonterminal stubs.
 
-   • Any symbol to the left of <span style="color: gray; ">-></span> is considered a nonterminal
-     and all other symbols are considered terminals in a CFG.
-
    • <span style="color: blue; ">---</span> and <span style="color: gray; ">-></span> are reserved for the following scenarios:
      • <span style="color: blue; ">---</span> is used to separate the CFG from the test cases.
      • <span style="color: gray; ">-></span> separates the left and right sides of a production.
@@ -65,7 +62,7 @@
   <div class="config-output-controls config-output-controls--split">
     <div id="gpuAvail"></div>
     <div class="config-control-group">
-      <label>Generation timeout:<input id="timeout" type="number" value="300" min="100" step="100">ms</label>
+      <label class="config-number-control"><span class="config-number-control__label">Generation timeout:</span><span class="timeout-input"><input id="timeout" type="number" value="300" min="100" step="100"><span class="timeout-input__suffix">ms</span></span></label>
       <label for="epsilon-checkbox">Add ε-productions&nbsp;</label>
       <input type="checkbox" id="epsilon-checkbox">
     </div>
@@ -73,7 +70,7 @@
   <div class="config-input-controls"></div>
   <div class="config-output-controls">
     <div class="config-control-group">
-      <label>Max edit distance: <a href="https://en.wikipedia.org/wiki/Edit_distance#Language_edit_distance">LED</a> + <input id="led-buffer" type="number" value="2" min="0" max="3" step="1"></label>
+      <label class="config-number-control"><span class="config-number-control__label">Max edit distance: <a href="https://en.wikipedia.org/wiki/Edit_distance#Language_edit_distance">LED</a> +</span><input id="led-buffer" type="number" value="2" min="0" max="3" step="1"></label>
       <label for="ntstubs-checkbox">Nonterminal stubs&nbsp;</label>
       <input type="checkbox" id="ntstubs-checkbox" checked>
     </div>

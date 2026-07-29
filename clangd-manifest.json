@@ -1,0 +1,21 @@
+{
+  "artifactVersion": "llvm-21.1.0-emsdk-4.0.22-wasi-29.0-r5-320c299143c9f0a92452e9360943954a72c40d021a545a0746cd599276fd73d6",
+  "recipeSha256": "320c299143c9f0a92452e9360943954a72c40d021a545a0746cd599276fd73d6",
+  "target": "wasm32-emscripten",
+  "clangdAsyncThreads": 4,
+  "llvm": { "version": "21.1.0", "commit": "3623fe661ae35c6c80ac221f14d85be76aa870f1" },
+  "emsdk": { "version": "4.0.22", "commit": "15915cad554b707837024dc2758b6a1c5b94b036" },
+  "wasiSysroot": { "version": "29.0", "sha256": "d99d5c4b277a725b7b56bf9d591609972ecac3207520a66408927280f191f6c7" },
+  "stdinPatchSha256": "956e1a2a79c6f71edc1177c511a552e5be6aaea835cb3f5bdbc50dd7d0461545",
+  "artifacts": {
+    "clangd.js": { "bytes": 94167, "sha256": "7483771283c5fb08eac0dd452a3d00b37ffa982a8e68893539c10a3a8d802036" },
+    "clangd.wasm": {
+      "path": "clangd.wasm.gz",
+      "compression": "gzip",
+      "uncompressedBytes": 33157295,
+      "uncompressedSha256": "ea1a8e3ed0971dea1574e516602dcf7996e6233bd4a85adf51d6c415c859448b",
+      "compressedBytes": 9666022,
+      "compressedSha256": "796b32057443fe2ad7718571fb5d2073c1e442e9fc48b5a6e0f79d0d6a5746c1"
+    }
+  }
+}

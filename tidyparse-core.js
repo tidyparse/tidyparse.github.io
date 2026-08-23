@@ -169,26 +169,26 @@ if (typeof String.prototype.startsWith === 'undefined') {
   initMetadataForClass(asList$2, VOID, VOID, AbstractList, [RandomAccess]);
   initMetadataForInterface(Comparator, 'Comparator');
   initMetadataForObject(Unit, 'Unit');
-  initMetadataForClass(AbstractMutableCollection, 'AbstractMutableCollection', VOID, AbstractCollection, [Collection, MutableIterable]);
+  initMetadataForClass(AbstractMutableCollection, 'AbstractMutableCollection', VOID, AbstractCollection, [MutableIterable, Collection]);
   initMetadataForClass(IteratorImpl, 'IteratorImpl');
   initMetadataForClass(ListIteratorImpl, 'ListIteratorImpl', VOID, IteratorImpl);
-  initMetadataForClass(AbstractMutableList, 'AbstractMutableList', VOID, AbstractMutableCollection, [Collection, MutableIterable, KtList]);
+  initMetadataForClass(AbstractMutableList, 'AbstractMutableList', VOID, AbstractMutableCollection, [KtList, Collection, MutableIterable]);
   initMetadataForClass(SubList, 'SubList', VOID, AbstractMutableList, [RandomAccess]);
   initMetadataForClass(AbstractMap, 'AbstractMap', VOID, VOID, [KtMap]);
   initMetadataForClass(AbstractMutableMap, 'AbstractMutableMap', VOID, AbstractMap, [KtMap]);
-  initMetadataForClass(AbstractMutableSet, 'AbstractMutableSet', VOID, AbstractMutableCollection, [Collection, MutableIterable, KtSet]);
+  initMetadataForClass(AbstractMutableSet, 'AbstractMutableSet', VOID, AbstractMutableCollection, [KtSet, Collection, MutableIterable]);
   initMetadataForCompanion(Companion_2);
-  initMetadataForClass(ArrayList, 'ArrayList', ArrayList_init_$Create$, AbstractMutableList, [Collection, MutableIterable, KtList, RandomAccess]);
+  initMetadataForClass(ArrayList, 'ArrayList', ArrayList_init_$Create$, AbstractMutableList, [KtList, Collection, MutableIterable, RandomAccess]);
   initMetadataForClass(HashMap, 'HashMap', HashMap_init_$Create$, AbstractMutableMap, [KtMap]);
-  initMetadataForClass(HashMapKeys, 'HashMapKeys', VOID, AbstractMutableSet, [Collection, MutableIterable, KtSet]);
-  initMetadataForClass(HashMapValues, 'HashMapValues', VOID, AbstractMutableCollection, [Collection, MutableIterable]);
-  initMetadataForClass(HashMapEntrySetBase, 'HashMapEntrySetBase', VOID, AbstractMutableSet, [Collection, MutableIterable, KtSet]);
+  initMetadataForClass(HashMapKeys, 'HashMapKeys', VOID, AbstractMutableSet, [KtSet, Collection, MutableIterable]);
+  initMetadataForClass(HashMapValues, 'HashMapValues', VOID, AbstractMutableCollection, [MutableIterable, Collection]);
+  initMetadataForClass(HashMapEntrySetBase, 'HashMapEntrySetBase', VOID, AbstractMutableSet, [KtSet, Collection, MutableIterable]);
   initMetadataForClass(HashMapEntrySet, 'HashMapEntrySet', VOID, HashMapEntrySetBase);
   initMetadataForClass(HashMapKeysDefault$iterator$1);
   initMetadataForClass(HashMapKeysDefault, 'HashMapKeysDefault', VOID, AbstractMutableSet);
   initMetadataForClass(HashMapValuesDefault$iterator$1);
   initMetadataForClass(HashMapValuesDefault, 'HashMapValuesDefault', VOID, AbstractMutableCollection);
-  initMetadataForClass(HashSet, 'HashSet', HashSet_init_$Create$, AbstractMutableSet, [Collection, MutableIterable, KtSet]);
+  initMetadataForClass(HashSet, 'HashSet', HashSet_init_$Create$, AbstractMutableSet, [KtSet, Collection, MutableIterable]);
   initMetadataForCompanion(Companion_3);
   initMetadataForClass(Itr, 'Itr');
   initMetadataForClass(KeysItr, 'KeysItr', VOID, Itr);
@@ -233,7 +233,7 @@ if (typeof String.prototype.startsWith === 'undefined') {
   initMetadataForInterface(InternalMap, 'InternalMap');
   initMetadataForClass(InternalHashMap, 'InternalHashMap', InternalHashMap_init_$Create$, VOID, [InternalMap]);
   initMetadataForClass(LinkedHashMap, 'LinkedHashMap', LinkedHashMap_init_$Create$, HashMap, [KtMap]);
-  initMetadataForClass(LinkedHashSet, 'LinkedHashSet', LinkedHashSet_init_$Create$, HashSet, [Collection, MutableIterable, KtSet]);
+  initMetadataForClass(LinkedHashSet, 'LinkedHashSet', LinkedHashSet_init_$Create$, HashSet, [KtSet, Collection, MutableIterable]);
   initMetadataForClass(BaseOutput, 'BaseOutput');
   initMetadataForClass(NodeJsOutput, 'NodeJsOutput', VOID, BaseOutput);
   initMetadataForClass(BufferedOutput, 'BufferedOutput', BufferedOutput, BaseOutput);
@@ -1052,7 +1052,7 @@ if (typeof String.prototype.startsWith === 'undefined') {
   initMetadataForClass(Symbol_0, 'Symbol');
   initMetadataForClass(SetTimeoutBasedDispatcher, 'SetTimeoutBasedDispatcher', VOID, CoroutineDispatcher, [Delay], [1]);
   initMetadataForObject(NodeDispatcher, 'NodeDispatcher', VOID, SetTimeoutBasedDispatcher, VOID, [1]);
-  initMetadataForClass(MessageQueue, 'MessageQueue', VOID, VOID, [Collection, MutableIterable, KtList]);
+  initMetadataForClass(MessageQueue, 'MessageQueue', VOID, VOID, [KtList, Collection, MutableIterable]);
   initMetadataForClass(ScheduledMessageQueue, 'ScheduledMessageQueue', VOID, MessageQueue);
   initMetadataForClass(WindowMessageQueue, 'WindowMessageQueue', VOID, MessageQueue);
   initMetadataForObject(Dispatchers, 'Dispatchers');
@@ -1094,12 +1094,12 @@ if (typeof String.prototype.startsWith === 'undefined') {
   initMetadataForClass(ATN, 'ATN');
   initMetadataForCompanion(Companion_40);
   initMetadataForClass(ATNConfig, 'ATNConfig');
-  initMetadataForClass(Array2DHashSet, 'Array2DHashSet', Array2DHashSet, VOID, [Collection, MutableIterable, KtSet]);
+  initMetadataForClass(Array2DHashSet, 'Array2DHashSet', Array2DHashSet, VOID, [KtSet, Collection, MutableIterable]);
   initMetadataForClass(AbstractConfigHashSet, 'AbstractConfigHashSet', VOID, Array2DHashSet);
   initMetadataForClass(ConfigHashSet, 'ConfigHashSet', ConfigHashSet, AbstractConfigHashSet);
   initMetadataForClass(AbstractEqualityComparator, 'AbstractEqualityComparator');
   initMetadataForObject(ConfigEqualityComparator, 'ConfigEqualityComparator', VOID, AbstractEqualityComparator);
-  initMetadataForClass(ATNConfigSet, 'ATNConfigSet', ATNConfigSet, VOID, [Collection, MutableIterable, KtSet]);
+  initMetadataForClass(ATNConfigSet, 'ATNConfigSet', ATNConfigSet, VOID, [KtSet, Collection, MutableIterable]);
   initMetadataForCompanion(Companion_41);
   initMetadataForClass(ATNDeserializationOptions, 'ATNDeserializationOptions', ATNDeserializationOptions_init_$Create$);
   initMetadataForCompanion(Companion_42);
@@ -1261,6 +1261,8 @@ if (typeof String.prototype.startsWith === 'undefined') {
   initMetadataForClass(SuffixSamplingGroup, 'SuffixSamplingGroup');
   initMetadataForClass(sam$kotlin_Comparator$0_9, 'sam$kotlin_Comparator$0', VOID, VOID, [Comparator, FunctionAdapter]);
   initMetadataForClass(sam$kotlin_Comparator$0_10, 'sam$kotlin_Comparator$0', VOID, VOID, [Comparator, FunctionAdapter]);
+  initMetadataForClass(sam$kotlin_Comparator$0_11, 'sam$kotlin_Comparator$0', VOID, VOID, [Comparator, FunctionAdapter]);
+  initMetadataForClass(sam$kotlin_Comparator$0_12, 'sam$kotlin_Comparator$0', VOID, VOID, [Comparator, FunctionAdapter]);
   initMetadataForLambda(gpuDiverseSuffixes$slambda, CoroutineImpl, VOID, [1]);
   initMetadataForLambda(gpuDiverseSuffixes$slambda_1, CoroutineImpl, VOID, [1]);
   initMetadataForCoroutine($selectSuffixPacketsCOROUTINE$, CoroutineImpl);
@@ -1278,7 +1280,7 @@ if (typeof String.prototype.startsWith === 'undefined') {
   initMetadataForCoroutine($invokeCFLFixpointCOROUTINE$, CoroutineImpl);
   initMetadataForCoroutine($invokeDAGFixpointCOROUTINE$, CoroutineImpl);
   initMetadataForClass(Shader, 'Shader', VOID, VOID, VOID, [0, 4, 1]);
-  initMetadataForClass(sam$kotlin_Comparator$0_11, 'sam$kotlin_Comparator$0', VOID, VOID, [Comparator, FunctionAdapter]);
+  initMetadataForClass(sam$kotlin_Comparator$0_13, 'sam$kotlin_Comparator$0', VOID, VOID, [Comparator, FunctionAdapter]);
   initMetadataForCoroutine($tryBootstrappingGPUCOROUTINE$, CoroutineImpl);
   initMetadataForCoroutine($repairCodeCOROUTINE$, CoroutineImpl);
   initMetadataForCoroutine($intersectionPipelineCOROUTINE$, CoroutineImpl);
@@ -1312,11 +1314,11 @@ if (typeof String.prototype.startsWith === 'undefined') {
   initMetadataForCoroutine($formatCodeAsyncCOROUTINE$, CoroutineImpl);
   initMetadataForCoroutine($initPyodideCOROUTINE$, CoroutineImpl);
   initMetadataForClass(JSTidyPyEditor, 'JSTidyPyEditor', VOID, JSTidyEditor, VOID, [1, 0, 2, 6, 10]);
-  initMetadataForClass(sam$kotlin_Comparator$0_12, 'sam$kotlin_Comparator$0', VOID, VOID, [Comparator, FunctionAdapter]);
+  initMetadataForClass(sam$kotlin_Comparator$0_14, 'sam$kotlin_Comparator$0', VOID, VOID, [Comparator, FunctionAdapter]);
   initMetadataForLambda(startPyodideWorkers$slambda, CoroutineImpl, VOID, [1]);
   initMetadataForCoroutine($installVendoredBlackCOROUTINE$, CoroutineImpl);
   initMetadataForCoroutine($pythonCompilerOutputCOROUTINE$, CoroutineImpl);
-  initMetadataForClass(sam$kotlin_Comparator$0_13, 'sam$kotlin_Comparator$0', VOID, VOID, [Comparator, FunctionAdapter]);
+  initMetadataForClass(sam$kotlin_Comparator$0_15, 'sam$kotlin_Comparator$0', VOID, VOID, [Comparator, FunctionAdapter]);
   initMetadataForLambda(RepairReranker$preload$slambda, CoroutineImpl, VOID, [1]);
   initMetadataForLambda(RepairReranker$net$slambda, CoroutineImpl, VOID, [1]);
   initMetadataForCoroutine($preloadAvailableCOROUTINE$, CoroutineImpl);
@@ -58079,8 +58081,8 @@ if (typeof String.prototype.startsWith === 'undefined') {
       return false;
     return true;
   };
-  function selectSuffixPackets(packets, cfg, stride, sampleCount, batch, limit, $completion) {
-    var tmp = new $selectSuffixPacketsCOROUTINE$(packets, cfg, stride, sampleCount, batch, limit, $completion);
+  function selectSuffixPackets(packets, cfg, stride, sampleCount, batch, rootCounts, limit, $completion) {
+    var tmp = new $selectSuffixPacketsCOROUTINE$(packets, cfg, stride, sampleCount, batch, rootCounts, limit, $completion);
     tmp.f9_1 = Unit_instance;
     tmp.g9_1 = null;
     return tmp.l9();
@@ -58294,7 +58296,7 @@ if (typeof String.prototype.startsWith === 'undefined') {
     var this_0 = map(tmp_0, logTimesheet$lambda_0);
     // Inline function 'kotlin.comparisons.compareByDescending' call
     var tmp_1 = logTimesheet$lambda_1;
-    var tmp$ret$1 = new sam$kotlin_Comparator$0_9(tmp_1);
+    var tmp$ret$1 = new sam$kotlin_Comparator$0_11(tmp_1);
     var tmp$ret$0 = sortedWith_0(this_0, tmp$ret$1);
     var bodyRows = toList_2(tmp$ret$0);
     var tmp_2;
@@ -58428,37 +58430,37 @@ if (typeof String.prototype.startsWith === 'undefined') {
       throw IllegalArgumentException_init_$Create$_0(toString_1(message_0));
     }
     var midpointCount = convertToInt(this_1);
-    var midpoints = Companion_instance_60.f3y(multiply(numberToLong(midpointCount), new Long(4, 0)), 140);
+    var midpoints = Companion_instance_60.g3y(multiply(numberToLong(midpointCount), new Long(4, 0)), 140);
     var tmp = Companion_instance_60;
     // Inline function 'kotlin.Long.times' call
     var this_2 = fromInt(states);
     // Inline function 'kotlin.Long.times' call
     var this_3 = multiply(this_2, fromInt(states));
     var tmp$ret$12 = multiply(this_3, fromInt(4));
-    var midpointOffsets = tmp.f3y(tmp$ret$12, 140);
-    var statesBuf = Companion_instance_60.g3y(states, 72);
-    get_line_mdpt_write().h3y([midpointOffsets, midpoints, statesBuf]).k3y(states, states);
+    var midpointOffsets = tmp.g3y(tmp$ret$12, 140);
+    var statesBuf = Companion_instance_60.h3y(states, 72);
+    get_line_mdpt_write().i3y([midpointOffsets, midpoints, statesBuf]).l3y(states, states);
     statesBuf.destroy();
     var tmp_0 = listOf_0([states, get_nonterminals(cfg).p(), activeWords]);
     var tmp_1 = Companion_instance_60;
     // Inline function 'kotlin.intArrayOf' call
     var tmp$ret$13 = new Int32Array([]);
     // Inline function 'kotlin.also' call
-    var this_4 = packStruct(tmp_0, [midpoints, midpointOffsets, tmp_1.l3y(tmp$ret$13, 140), Companion_instance_60.l3y(grammar.n3t_1, 140), Companion_instance_60.l3y(grammar.o3t_1, 140), Companion_instance_60.l3y(leftAdj.p3t_1, 140), Companion_instance_60.l3y(leftAdj.q3t_1, 140)]);
+    var this_4 = packStruct(tmp_0, [midpoints, midpointOffsets, tmp_1.m3y(tmp$ret$13, 140), Companion_instance_60.m3y(grammar.n3t_1, 140), Companion_instance_60.m3y(grammar.o3t_1, 140), Companion_instance_60.m3y(leftAdj.p3t_1, 140), Companion_instance_60.m3y(leftAdj.q3t_1, 140)]);
     log('Packed analytic line metadata in ' + Duration__toString_impl_8d916b(ValueTimeMark__elapsedNow_impl_eonqvs(started)) + ' (' + midpointCount + ' midpoints)');
     return this_4;
   }
   function sam$kotlin_Comparator$0_9(function_0) {
-    this.m3y_1 = function_0;
+    this.n3y_1 = function_0;
   }
   protoOf(sam$kotlin_Comparator$0_9).pd = function (a, b) {
-    return this.m3y_1(a, b);
+    return this.n3y_1(a, b);
   };
   protoOf(sam$kotlin_Comparator$0_9).compare = function (a, b) {
     return this.pd(a, b);
   };
   protoOf(sam$kotlin_Comparator$0_9).f3 = function () {
-    return this.m3y_1;
+    return this.n3y_1;
   };
   protoOf(sam$kotlin_Comparator$0_9).equals = function (other) {
     var tmp;
@@ -58479,16 +58481,16 @@ if (typeof String.prototype.startsWith === 'undefined') {
     return hashCode_0(this.f3());
   };
   function sam$kotlin_Comparator$0_10(function_0) {
-    this.n3y_1 = function_0;
+    this.o3y_1 = function_0;
   }
   protoOf(sam$kotlin_Comparator$0_10).pd = function (a, b) {
-    return this.n3y_1(a, b);
+    return this.o3y_1(a, b);
   };
   protoOf(sam$kotlin_Comparator$0_10).compare = function (a, b) {
     return this.pd(a, b);
   };
   protoOf(sam$kotlin_Comparator$0_10).f3 = function () {
-    return this.n3y_1;
+    return this.o3y_1;
   };
   protoOf(sam$kotlin_Comparator$0_10).equals = function (other) {
     var tmp;
@@ -58506,6 +58508,66 @@ if (typeof String.prototype.startsWith === 'undefined') {
     return tmp;
   };
   protoOf(sam$kotlin_Comparator$0_10).hashCode = function () {
+    return hashCode_0(this.f3());
+  };
+  function sam$kotlin_Comparator$0_11(function_0) {
+    this.p3y_1 = function_0;
+  }
+  protoOf(sam$kotlin_Comparator$0_11).pd = function (a, b) {
+    return this.p3y_1(a, b);
+  };
+  protoOf(sam$kotlin_Comparator$0_11).compare = function (a, b) {
+    return this.pd(a, b);
+  };
+  protoOf(sam$kotlin_Comparator$0_11).f3 = function () {
+    return this.p3y_1;
+  };
+  protoOf(sam$kotlin_Comparator$0_11).equals = function (other) {
+    var tmp;
+    if (!(other == null) ? isInterface(other, Comparator) : false) {
+      var tmp_0;
+      if (!(other == null) ? isInterface(other, FunctionAdapter) : false) {
+        tmp_0 = equals(this.f3(), other.f3());
+      } else {
+        tmp_0 = false;
+      }
+      tmp = tmp_0;
+    } else {
+      tmp = false;
+    }
+    return tmp;
+  };
+  protoOf(sam$kotlin_Comparator$0_11).hashCode = function () {
+    return hashCode_0(this.f3());
+  };
+  function sam$kotlin_Comparator$0_12(function_0) {
+    this.q3y_1 = function_0;
+  }
+  protoOf(sam$kotlin_Comparator$0_12).pd = function (a, b) {
+    return this.q3y_1(a, b);
+  };
+  protoOf(sam$kotlin_Comparator$0_12).compare = function (a, b) {
+    return this.pd(a, b);
+  };
+  protoOf(sam$kotlin_Comparator$0_12).f3 = function () {
+    return this.q3y_1;
+  };
+  protoOf(sam$kotlin_Comparator$0_12).equals = function (other) {
+    var tmp;
+    if (!(other == null) ? isInterface(other, Comparator) : false) {
+      var tmp_0;
+      if (!(other == null) ? isInterface(other, FunctionAdapter) : false) {
+        tmp_0 = equals(this.f3(), other.f3());
+      } else {
+        tmp_0 = false;
+      }
+      tmp = tmp_0;
+    } else {
+      tmp = false;
+    }
+    return tmp;
+  };
+  protoOf(sam$kotlin_Comparator$0_12).hashCode = function () {
     return hashCode_0(this.f3());
   };
   function groupedLeftAdjEncoding$delegate$lambda($this$cache) {
@@ -58713,12 +58775,28 @@ if (typeof String.prototype.startsWith === 'undefined') {
       return get_suffix_enum_words_wor();
     }, 0, 0, 131);
   }
+  function selectSuffixPackets$lambda($tmp2_sortedBy_this) {
+    return function (a, b) {
+      // Inline function 'kotlin.comparisons.compareValuesBy' call
+      var tmp = $tmp2_sortedBy_this.s(a);
+      var tmp$ret$2 = $tmp2_sortedBy_this.s(b);
+      return compareValues(tmp, tmp$ret$2);
+    };
+  }
+  function suffixIntersectionPipeline$lambda($rootLengths) {
+    return function (a, b) {
+      // Inline function 'kotlin.comparisons.compareValuesBy' call
+      var tmp = $rootLengths.s(a);
+      var tmp$ret$2 = $rootLengths.s(b);
+      return compareValues(tmp, tmp$ret$2);
+    };
+  }
   function gpuDiverseSuffixes$lambda(it) {
     _init_properties_WGPUtils_kt__94oi27();
     return Unit_instance;
   }
   function gpuDiverseSuffixes$slambda($decodedGroups, resultContinuation) {
-    this.w3y_1 = $decodedGroups;
+    this.z3y_1 = $decodedGroups;
     CoroutineImpl.call(this, resultContinuation);
   }
   protoOf(gpuDiverseSuffixes$slambda).z1m = function ($this$sequence, $completion) {
@@ -58738,11 +58816,11 @@ if (typeof String.prototype.startsWith === 'undefined') {
         switch (tmp) {
           case 0:
             this.e9_1 = 6;
-            this.y3y_1 = 0;
+            this.b3z_1 = 0;
             this.d9_1 = 1;
             continue $sm;
           case 1:
-            var tmp0 = this.w3y_1;
+            var tmp0 = this.z3y_1;
             var tmp$ret$0;
             l$ret$1: do {
               var tmp_0;
@@ -58758,7 +58836,7 @@ if (typeof String.prototype.startsWith === 'undefined') {
               var _iterator__ex2g4s = tmp0.m();
               while (_iterator__ex2g4s.n()) {
                 var element = _iterator__ex2g4s.o();
-                if (this.y3y_1 < element.p()) {
+                if (this.b3z_1 < element.p()) {
                   tmp$ret$0 = true;
                   break l$ret$1;
                 }
@@ -58771,24 +58849,24 @@ if (typeof String.prototype.startsWith === 'undefined') {
               continue $sm;
             }
 
-            this.a3z_1 = this.w3y_1.m();
+            this.d3z_1 = this.z3y_1.m();
             this.d9_1 = 2;
             continue $sm;
           case 2:
-            if (!this.a3z_1.n()) {
+            if (!this.d3z_1.n()) {
               this.d9_1 = 5;
               continue $sm;
             }
 
-            var element_0 = this.a3z_1.o();
-            var tmp0_safe_receiver = getOrNull_0(element_0, this.y3y_1);
+            var element_0 = this.d3z_1.o();
+            var tmp0_safe_receiver = getOrNull_0(element_0, this.b3z_1);
             if (tmp0_safe_receiver == null) {
-              this.z3y_1 = null;
+              this.c3z_1 = null;
               this.d9_1 = 4;
               continue $sm;
             } else {
               this.d9_1 = 3;
-              suspendResult = this.x3y_1.og(tmp0_safe_receiver, this);
+              suspendResult = this.a3z_1.og(tmp0_safe_receiver, this);
               if (suspendResult === get_COROUTINE_SUSPENDED()) {
                 return suspendResult;
               }
@@ -58797,14 +58875,14 @@ if (typeof String.prototype.startsWith === 'undefined') {
 
           case 3:
             var tmp_1 = this;
-            tmp_1.z3y_1 = Unit_instance;
+            tmp_1.c3z_1 = Unit_instance;
             this.d9_1 = 4;
             continue $sm;
           case 4:
             this.d9_1 = 2;
             continue $sm;
           case 5:
-            this.y3y_1 = this.y3y_1 + 1 | 0;
+            this.b3z_1 = this.b3z_1 + 1 | 0;
             this.d9_1 = 1;
             continue $sm;
           case 6:
@@ -58824,8 +58902,8 @@ if (typeof String.prototype.startsWith === 'undefined') {
      while (true);
   };
   protoOf(gpuDiverseSuffixes$slambda).a1n = function ($this$sequence, completion) {
-    var i = new gpuDiverseSuffixes$slambda(this.w3y_1, completion);
-    i.x3y_1 = $this$sequence;
+    var i = new gpuDiverseSuffixes$slambda(this.z3y_1, completion);
+    i.a3z_1 = $this$sequence;
     return i;
   };
   function gpuDiverseSuffixes$slambda_0($decodedGroups, resultContinuation) {
@@ -58835,8 +58913,8 @@ if (typeof String.prototype.startsWith === 'undefined') {
     }, 1);
   }
   function gpuDiverseSuffixes$slambda_1($batch, $fairDecoded, resultContinuation) {
-    this.j3z_1 = $batch;
-    this.k3z_1 = $fairDecoded;
+    this.m3z_1 = $batch;
+    this.n3z_1 = $fairDecoded;
     CoroutineImpl.call(this, resultContinuation);
   }
   protoOf(gpuDiverseSuffixes$slambda_1).z1m = function ($this$sequence, $completion) {
@@ -58857,7 +58935,7 @@ if (typeof String.prototype.startsWith === 'undefined') {
           case 0:
             this.e9_1 = 3;
             this.d9_1 = 1;
-            suspendResult = this.l3z_1.qg(this.j3z_1.b3o_1, this);
+            suspendResult = this.o3z_1.qg(this.m3z_1.b3o_1, this);
             if (suspendResult === get_COROUTINE_SUSPENDED()) {
               return suspendResult;
             }
@@ -58865,7 +58943,7 @@ if (typeof String.prototype.startsWith === 'undefined') {
             continue $sm;
           case 1:
             this.d9_1 = 2;
-            suspendResult = this.l3z_1.rg(this.k3z_1, this);
+            suspendResult = this.o3z_1.rg(this.n3z_1, this);
             if (suspendResult === get_COROUTINE_SUSPENDED()) {
               return suspendResult;
             }
@@ -58888,8 +58966,8 @@ if (typeof String.prototype.startsWith === 'undefined') {
      while (true);
   };
   protoOf(gpuDiverseSuffixes$slambda_1).a1n = function ($this$sequence, completion) {
-    var i = new gpuDiverseSuffixes$slambda_1(this.j3z_1, this.k3z_1, completion);
-    i.l3z_1 = $this$sequence;
+    var i = new gpuDiverseSuffixes$slambda_1(this.m3z_1, this.n3z_1, completion);
+    i.o3z_1 = $this$sequence;
     return i;
   };
   function gpuDiverseSuffixes$slambda_2($batch, $fairDecoded, resultContinuation) {
@@ -58947,14 +59025,15 @@ if (typeof String.prototype.startsWith === 'undefined') {
     var tmp$ret$2 = a.fg_1;
     return compareValues(tmp, tmp$ret$2);
   }
-  function $selectSuffixPacketsCOROUTINE$(packets, cfg, stride, sampleCount, batch, limit, resultContinuation) {
+  function $selectSuffixPacketsCOROUTINE$(packets, cfg, stride, sampleCount, batch, rootCounts, limit, resultContinuation) {
     CoroutineImpl.call(this, resultContinuation);
     this.z3t_1 = packets;
     this.a3u_1 = cfg;
     this.b3u_1 = stride;
     this.c3u_1 = sampleCount;
     this.d3u_1 = batch;
-    this.e3u_1 = limit;
+    this.e3u_1 = rootCounts;
+    this.f3u_1 = limit;
   }
   protoOf($selectSuffixPacketsCOROUTINE$).l9 = function () {
     var suspendResult = this.f9_1;
@@ -58975,57 +59054,77 @@ if (typeof String.prototype.startsWith === 'undefined') {
             var terminals = distinct(destination);
             if (terminals.x() || this.c3u_1 === 0)
               return Companion_getInstance_58().l3f_1;
-            var this_1 = withIndex(terminals);
-            var capacity = coerceAtLeast(mapCapacity(collectionSizeOrDefault(this_1, 10)), 16);
-            var destination_0 = LinkedHashMap_init_$Create$_0(capacity);
-            var _iterator__ex2g4s_0 = this_1.m();
+            if (!(this.e3u_1.length === terminals.p())) {
+              var message = 'Failed requirement.';
+              throw IllegalArgumentException_init_$Create$_0(toString_1(message));
+            }
+
+            var lexicalRanks = new Int32Array(get_tmLst(this.a3u_1).p());
+            var tmp0 = get_indices(get_tmLst(this.a3u_1));
+            var tmp2_sortedBy_this = get_tmLst(this.a3u_1);
+            var tmp_0 = selectSuffixPackets$lambda(tmp2_sortedBy_this);
+            var index = 0;
+            var _iterator__ex2g4s_0 = sortedWith(tmp0, new sam$kotlin_Comparator$0_9(tmp_0)).m();
             while (_iterator__ex2g4s_0.n()) {
-              var element = _iterator__ex2g4s_0.o();
-              var pair = to_0(element.q1_1, element.p1_1);
-              destination_0.i5(pair.eg_1, pair.fg_1);
+              var item_0 = _iterator__ex2g4s_0.o();
+              var _unary__edvuaz = index;
+              index = _unary__edvuaz + 1 | 0;
+              lexicalRanks[item_0] = checkIndexOverflow(_unary__edvuaz);
             }
 
-            var groupOf = destination_0;
-            var tmp0 = this.d3u_1.a3o_1;
-            var destination_1 = ArrayList_init_$Create$();
-            var _iterator__ex2g4s_1 = tmp0.m();
-            while (_iterator__ex2g4s_1.n()) {
-              var element_0 = _iterator__ex2g4s_1.o();
-              var list = listOf_0([getValue(get_tmMap(this.a3u_1), element_0.c3o_1) + 1 | 0, element_0.d3o_1, getValue(groupOf, element_0.c3o_1)]);
-              addAll(destination_1, list);
+            var perGroup = this.c3u_1 / terminals.p() | 0;
+            var b = coerceAtLeast(imul(this.f3u_1, 8), this.f3u_1);
+            var capacity = Math.min(perGroup, b);
+            var tmp0_0 = this.e3u_1;
+            var tmp$ret$0;
+            l$ret$1: do {
+              var inductionVariable = 0;
+              var last = tmp0_0.length;
+              while (inductionVariable < last) {
+                var element = tmp0_0[inductionVariable];
+                inductionVariable = inductionVariable + 1 | 0;
+                if (!(element <= Math.min(capacity, perGroup))) {
+                  tmp$ret$0 = false;
+                  break l$ret$1;
+                }
+              }
+              tmp$ret$0 = true;
+            }
+             while (false);
+            if (!tmp$ret$0) {
+              var message_0 = 'Conditioned suffix budget must retain every planned length root';
+              throw IllegalArgumentException_init_$Create$_0(toString_1(message_0));
             }
 
-            var pairs = toIntArray(destination_1);
-            var tmp0_0 = this.c3u_1;
-            var b = coerceAtLeast(imul(this.e3u_1, 8), this.e3u_1);
-            var capacity_0 = Math.min(tmp0_0, b);
-            this.l3u_1 = imul(terminals.p(), capacity_0);
-            var tmp_0 = this;
-            var tmp_1 = Companion_instance_60;
-            var elements = new Int32Array([this.c3u_1, this.b3u_1, this.d3u_1.z3n_1.p(), this.d3u_1.a3o_1.p(), capacity_0]);
-            tmp_0.k3u_1 = tmp_1.l3y(elements, 72);
-            this.j3u_1 = Companion_instance_60.l3y(pairs, 140);
-            this.i3u_1 = Companion_instance_60.l3y(new Int32Array(terminals.p()), 140);
-            var tmp_2 = this;
-            var tmp_3 = Companion_instance_60;
-            var tmp_4 = 0;
-            var tmp_5 = this.l3u_1;
-            var tmp_6 = new Int32Array(tmp_5);
-            while (tmp_4 < tmp_5) {
-              tmp_6[tmp_4] = -1;
-              tmp_4 = tmp_4 + 1 | 0;
+            var sortCapacity = 1;
+            while (sortCapacity < capacity)
+              sortCapacity = sortCapacity << 1;
+            this.l3u_1 = imul(terminals.p(), capacity);
+            var tmp_1 = this;
+            var tmp_2 = Companion_instance_60;
+            var elements = new Int32Array([this.c3u_1, this.b3u_1, this.d3u_1.z3n_1.p(), terminals.p(), capacity, sortCapacity, 0, 0]);
+            tmp_1.k3u_1 = tmp_2.m3y(elements, 72);
+            this.j3u_1 = Companion_instance_60.m3y(lexicalRanks, 140);
+            var tmp_3 = this;
+            var tmp_4 = Companion_instance_60;
+            var tmp_5 = 0;
+            var tmp_6 = imul(terminals.p(), sortCapacity);
+            var tmp_7 = new Int32Array(tmp_6);
+            while (tmp_5 < tmp_6) {
+              tmp_7[tmp_5] = -1;
+              tmp_5 = tmp_5 + 1 | 0;
             }
 
-            tmp_2.h3u_1 = tmp_3.l3y(tmp_6, 140);
-            get_suffix_group_select().h3y([this.k3u_1, this.z3t_1, this.j3u_1, this.i3u_1, this.h3u_1]).k3y((this.c3u_1 + 255 | 0) / 256 | 0);
-            var tmp_7 = this;
-            var tmp_8 = Companion_instance_60;
+            tmp_3.i3u_1 = tmp_4.m3y(tmp_7, 140);
+            get_suffix_group_select().i3y([this.k3u_1, this.z3t_1, this.j3u_1, this.i3u_1]).l3y(terminals.p());
+            var tmp_8 = this;
+            var tmp_9 = Companion_instance_60;
             var elements_0 = new Int32Array([this.c3u_1, this.l3u_1, this.b3u_1, 65535]);
-            tmp_7.g3u_1 = tmp_8.l3y(elements_0, 72);
-            this.f3u_1 = Companion_instance_60.f3y(imul(imul(this.l3u_1, this.b3u_1), 4), 140);
-            get_gather_top_k().h3y([this.g3u_1, this.z3t_1, this.h3u_1, this.f3u_1]).k3y(this.l3u_1);
+            tmp_8.h3u_1 = tmp_9.m3y(elements_0, 72);
+            this.g3u_1 = Companion_instance_60.g3y(imul(imul(this.l3u_1, this.b3u_1), 4), 140);
+            get_gather_top_k().i3y([this.h3u_1, this.z3t_1, this.i3u_1, this.g3u_1]).l3y(this.l3u_1);
             this.d9_1 = 1;
-            suspendResult = readJSIntArray(this.f3u_1, this);
+            suspendResult = readJSIntArray(this.g3u_1, this);
             if (suspendResult === get_COROUTINE_SUSPENDED()) {
               return suspendResult;
             }
@@ -59034,10 +59133,10 @@ if (typeof String.prototype.startsWith === 'undefined') {
           case 1:
             var ARGUMENT = suspendResult;
             var decoded = decodePackets(ARGUMENT, this.a3u_1, this.b3u_1, this.l3u_1);
-            var _iterator__ex2g4s_2 = listOf_0([this.k3u_1, this.j3u_1, this.i3u_1, this.h3u_1, this.g3u_1, this.f3u_1]).m();
-            while (_iterator__ex2g4s_2.n()) {
-              var element_1 = _iterator__ex2g4s_2.o();
-              element_1.destroy();
+            var _iterator__ex2g4s_1 = listOf_0([this.k3u_1, this.j3u_1, this.i3u_1, this.h3u_1, this.g3u_1]).m();
+            while (_iterator__ex2g4s_1.n()) {
+              var element_0 = _iterator__ex2g4s_1.o();
+              element_0.destroy();
             }
 
             return decoded;
@@ -59123,20 +59222,20 @@ if (typeof String.prototype.startsWith === 'undefined') {
             }
 
             var _destruct__k2r9zo = to_0(this.m3v_1.y15(), get_nonterminals(this.l3v_1).p());
-            this.n3w_1 = _destruct__k2r9zo.gg();
-            this.m3w_1 = _destruct__k2r9zo.hg();
-            log('FSA(|Q|=' + this.n3w_1 + ', |\u03B4|=' + this.m3v_1.h16().p() + '), ' + calcStats(this.l3v_1));
+            this.o3w_1 = _destruct__k2r9zo.gg();
+            this.n3w_1 = _destruct__k2r9zo.hg();
+            log('FSA(|Q|=' + this.o3w_1 + ', |\u03B4|=' + this.m3v_1.h16().p() + '), ' + calcStats(this.l3v_1));
             var metadataStarted = Monotonic_instance.zd();
-            this.s3v_1 = packLineMetadata(this.l3v_1, this.n3w_1);
+            this.s3v_1 = packLineMetadata(this.l3v_1, this.o3w_1);
             mark(this.q3v_1, 'pack metadata', new ValueTimeMark(metadataStarted));
-            this.k3w_1 = get_termBuf(this.l3v_1);
-            this.t3v_1 = Companion_instance_60.m3z(this.n3v_1);
-            var activeWords = (this.m3w_1 + 31 | 0) >>> 5 | 0;
-            this.r3v_1 = Companion_instance_60.n3z(140, imul(imul(this.n3w_1, this.n3w_1), this.m3w_1));
-            this.u3v_1 = Companion_instance_60.f3y(fromInt(imul(imul(imul(this.n3w_1, this.n3w_1), activeWords), 4)), 140);
-            this.a3x_1 = this.q3v_1;
-            this.z3w_1 = 'init chart';
-            this.b3x_1 = 'Init suffix chart';
+            this.l3w_1 = get_termBuf(this.l3v_1);
+            this.t3v_1 = Companion_instance_60.p3z(this.n3v_1);
+            var activeWords = (this.n3w_1 + 31 | 0) >>> 5 | 0;
+            this.r3v_1 = Companion_instance_60.q3z(140, imul(imul(this.o3w_1, this.o3w_1), this.n3w_1));
+            this.u3v_1 = Companion_instance_60.g3y(fromInt(imul(imul(imul(this.o3w_1, this.o3w_1), activeWords), 4)), 140);
+            this.b3x_1 = this.q3v_1;
+            this.a3x_1 = 'init chart';
+            this.c3x_1 = 'Init suffix chart';
             this.d9_1 = 1;
             suspendResult = awaitGPUQueue(this);
             if (suspendResult === get_COROUTINE_SUSPENDED()) {
@@ -59148,8 +59247,8 @@ if (typeof String.prototype.startsWith === 'undefined') {
             this.d9_1 = 2;
             continue $sm;
           case 2:
-            this.c3x_1 = Monotonic_instance.zd();
-            get_init_line_chart().h3y([this.r3v_1, this.u3v_1, this.t3v_1, this.s3v_1, this.k3w_1]).o3z(this.n3w_1, this.n3w_1, ((this.m3w_1 + 64 | 0) - 1 | 0) / 64 | 0);
+            this.d3x_1 = Monotonic_instance.zd();
+            get_init_line_chart().i3y([this.r3v_1, this.u3v_1, this.t3v_1, this.s3v_1, this.l3w_1]).r3z(this.o3w_1, this.o3w_1, ((this.n3w_1 + 64 | 0) - 1 | 0) / 64 | 0);
             this.d9_1 = 3;
             suspendResult = awaitGPUQueue(this);
             if (suspendResult === get_COROUTINE_SUSPENDED()) {
@@ -59161,23 +59260,23 @@ if (typeof String.prototype.startsWith === 'undefined') {
             this.d9_1 = 4;
             continue $sm;
           case 4:
-            var ms = convertToInt(_Duration___get_inWholeMilliseconds__impl__msfiry(ValueTimeMark__elapsedNow_impl_eonqvs(this.c3x_1)));
-            log(this.b3x_1 + ' in ' + ms + 'ms');
-            var this_0 = this.a3x_1;
-            var key = this.z3w_1;
+            var ms = convertToInt(_Duration___get_inWholeMilliseconds__impl__msfiry(ValueTimeMark__elapsedNow_impl_eonqvs(this.d3x_1)));
+            log(this.c3x_1 + ' in ' + ms + 'ms');
+            var this_0 = this.b3x_1;
+            var key = this.a3x_1;
             this_0.i5(key, ms);
-            this.y3w_1 = Monotonic_instance.zd();
+            this.z3w_1 = Monotonic_instance.zd();
             this.d9_1 = 5;
-            suspendResult = get_cfl_mul_upper().p3z(this.n3w_1, this.r3v_1, this.u3v_1, this.s3v_1, this);
+            suspendResult = get_cfl_mul_upper().s3z(this.o3w_1, this.r3v_1, this.u3v_1, this.s3v_1, this);
             if (suspendResult === get_COROUTINE_SUSPENDED()) {
               return suspendResult;
             }
 
             continue $sm;
           case 5:
-            mark(this.q3v_1, 'matrix closure', new ValueTimeMark(this.y3w_1));
-            this.w3w_1 = Monotonic_instance.zd();
-            this.p3w_1 = get_bindex(this.l3v_1).e1a(get_START_SYMBOL());
+            mark(this.q3v_1, 'matrix closure', new ValueTimeMark(this.z3w_1));
+            this.x3w_1 = Monotonic_instance.zd();
+            this.q3w_1 = get_bindex(this.l3v_1).e1a(get_START_SYMBOL());
             var tmp_0 = this;
             var this_1 = this.m3v_1.k16();
             var destination = ArrayList_init_$Create$_0(this_1.length);
@@ -59186,12 +59285,12 @@ if (typeof String.prototype.startsWith === 'undefined') {
             while (inductionVariable < last) {
               var item = this_1[inductionVariable];
               inductionVariable = inductionVariable + 1 | 0;
-              destination.g(imul(item, this.m3w_1) + this.p3w_1 | 0);
+              destination.g(imul(item, this.n3w_1) + this.q3w_1 | 0);
             }
 
-            tmp_0.x3w_1 = destination;
+            tmp_0.y3w_1 = destination;
             this.d9_1 = 6;
-            suspendResult = Companion_instance_60.q3z(this.r3v_1, this.x3w_1, this);
+            suspendResult = Companion_instance_60.t3z(this.r3v_1, this.y3w_1, this);
             if (suspendResult === get_COROUTINE_SUSPENDED()) {
               return suspendResult;
             }
@@ -59199,7 +59298,7 @@ if (typeof String.prototype.startsWith === 'undefined') {
             continue $sm;
           case 6:
             var ARGUMENT = suspendResult;
-            var tmp0 = zip(this.x3w_1, ARGUMENT);
+            var tmp0 = zip(this.y3w_1, ARGUMENT);
             var destination_0 = ArrayList_init_$Create$();
             var _iterator__ex2g4s = tmp0.m();
             while (_iterator__ex2g4s.n()) {
@@ -59218,16 +59317,16 @@ if (typeof String.prototype.startsWith === 'undefined') {
               destination_1.g(item_0.eg_1);
             }
 
-            tmp_1.q3w_1 = destination_1;
-            mark(this.q3v_1, 'read roots', new ValueTimeMark(this.w3w_1));
-            if (this.q3w_1.x()) {
+            tmp_1.r3w_1 = destination_1;
+            mark(this.q3v_1, 'read roots', new ValueTimeMark(this.x3w_1));
+            if (this.r3w_1.x()) {
               destroyAll([this.u3v_1, this.t3v_1, this.s3v_1, this.r3v_1]);
               return Companion_getInstance_58().l3f_1;
             }
 
-            this.v3w_1 = Monotonic_instance.zd();
+            this.w3w_1 = Monotonic_instance.zd();
             this.d9_1 = 7;
-            suspendResult = Companion_instance_60.r3z(this.n3w_1, this.m3w_1, this.r3v_1, this.s3v_1, this);
+            suspendResult = Companion_instance_60.u3z(this.o3w_1, this.n3w_1, this.r3v_1, this.s3v_1, this);
             if (suspendResult === get_COROUTINE_SUSPENDED()) {
               return suspendResult;
             }
@@ -59238,10 +59337,10 @@ if (typeof String.prototype.startsWith === 'undefined') {
             this.x3v_1 = _destruct__k2r9zo_0.gg();
             this.w3v_1 = _destruct__k2r9zo_0.hg();
             this.v3v_1 = _destruct__k2r9zo_0.aq();
-            mark(this.q3v_1, 'build backpointers', new ValueTimeMark(this.v3w_1));
+            mark(this.q3v_1, 'build backpointers', new ValueTimeMark(this.w3w_1));
             var rootsFiltered = Monotonic_instance.zd();
             var tmp_2 = this;
-            var tmp0_0 = this.q3w_1;
+            var tmp0_0 = this.r3w_1;
             var destination_2 = ArrayList_init_$Create$();
             var _iterator__ex2g4s_1 = tmp0_0.m();
             while (_iterator__ex2g4s_1.n()) {
@@ -59250,7 +59349,7 @@ if (typeof String.prototype.startsWith === 'undefined') {
               addAll(destination_2, list);
             }
 
-            tmp_2.o3w_1 = destination_2;
+            tmp_2.p3w_1 = destination_2;
             mark(this.q3v_1, 'filter roots', new ValueTimeMark(rootsFiltered));
             var tmp_3 = this;
             var b = (this.m3v_1.d14_1 + 2 | 0) + 1 | 0;
@@ -59261,12 +59360,12 @@ if (typeof String.prototype.startsWith === 'undefined') {
             }
 
             var sizesStarted = Monotonic_instance.zd();
-            this.l3w_1 = Companion_instance_60.s3z(this.n3w_1, this.m3w_1, this.r3v_1, this.s3v_1, this.k3w_1, this.x3v_1, this.w3v_1, this.v3v_1);
+            this.m3w_1 = Companion_instance_60.v3z(this.o3w_1, this.n3w_1, this.r3v_1, this.s3v_1, this.l3w_1, this.x3v_1, this.w3v_1, this.v3v_1);
             mark(this.q3v_1, 'build ls dense', new ValueTimeMark(sizesStarted));
-            this.y3v_1 = Companion_instance_60.f3y(this.v3v_1.size / 2, 140);
-            this.s3w_1 = this.q3v_1;
-            this.r3w_1 = 'build cdf';
-            this.t3w_1 = 'Build suffix CDF';
+            this.y3v_1 = Companion_instance_60.g3y(this.v3v_1.size / 2, 140);
+            this.t3w_1 = this.q3v_1;
+            this.s3w_1 = 'build cdf';
+            this.u3w_1 = 'Build suffix CDF';
             this.d9_1 = 8;
             suspendResult = awaitGPUQueue(this);
             if (suspendResult === get_COROUTINE_SUSPENDED()) {
@@ -59278,8 +59377,8 @@ if (typeof String.prototype.startsWith === 'undefined') {
             this.d9_1 = 9;
             continue $sm;
           case 9:
-            this.u3w_1 = Monotonic_instance.zd();
-            get_ls_cdf().h3y([this.r3v_1, this.l3w_1, this.w3v_1, this.y3v_1, this.s3v_1, this.k3w_1, this.x3v_1, this.v3v_1]).o3z(this.n3w_1, this.n3w_1, ((this.m3w_1 + 64 | 0) - 1 | 0) / 64 | 0);
+            this.v3w_1 = Monotonic_instance.zd();
+            get_ls_cdf().i3y([this.r3v_1, this.m3w_1, this.w3v_1, this.y3v_1, this.s3v_1, this.l3w_1, this.x3v_1, this.v3v_1]).r3z(this.o3w_1, this.o3w_1, ((this.n3w_1 + 64 | 0) - 1 | 0) / 64 | 0);
             this.d9_1 = 10;
             suspendResult = awaitGPUQueue(this);
             if (suspendResult === get_COROUTINE_SUSPENDED()) {
@@ -59291,10 +59390,10 @@ if (typeof String.prototype.startsWith === 'undefined') {
             this.d9_1 = 11;
             continue $sm;
           case 11:
-            var ms_0 = convertToInt(_Duration___get_inWholeMilliseconds__impl__msfiry(ValueTimeMark__elapsedNow_impl_eonqvs(this.u3w_1)));
-            log(this.t3w_1 + ' in ' + ms_0 + 'ms');
-            var this_2 = this.s3w_1;
-            var key_0 = this.r3w_1;
+            var ms_0 = convertToInt(_Duration___get_inWholeMilliseconds__impl__msfiry(ValueTimeMark__elapsedNow_impl_eonqvs(this.v3w_1)));
+            log(this.u3w_1 + ' in ' + ms_0 + 'ms');
+            var this_2 = this.t3w_1;
+            var key_0 = this.s3w_1;
             this_2.i5(key_0, ms_0);
             var tmp_4 = this;
             var tmp0_1 = this.o3v_1.a3o_1;
@@ -59332,59 +59431,67 @@ if (typeof String.prototype.startsWith === 'undefined') {
               destination_4.g(new SuffixSamplingGroup(tmp_6, destination_5));
             }
 
-            tmp_4.f3w_1 = destination_4;
-            var this_3 = this.q3w_1;
+            tmp_4.g3w_1 = destination_4;
+            var this_3 = this.r3w_1;
             var destination_6 = ArrayList_init_$Create$_0(collectionSizeOrDefault(this_3, 10));
             var _iterator__ex2g4s_5 = this_3.m();
             while (_iterator__ex2g4s_5.n()) {
               var item_3 = _iterator__ex2g4s_5.o();
-              var cell = (item_3 - this.p3w_1 | 0) / this.m3w_1 | 0;
+              var cell = (item_3 - this.q3w_1 | 0) / this.n3w_1 | 0;
               destination_6.g(getValue(this.m3v_1.n16(), cell).eg_1 - this.o3v_1.z3n_1.p() | 0);
             }
 
             var rootLengths = destination_6;
             var pairRoots = ArrayList_init_$Create$();
-            var groupOffsets = mutableListOf([0]);
-            var _iterator__ex2g4s_6 = this.f3w_1.m();
+            this.f3w_1 = mutableListOf([0]);
+            var _iterator__ex2g4s_6 = this.g3w_1.m();
             while (_iterator__ex2g4s_6.n()) {
               var element_2 = _iterator__ex2g4s_6.o();
-              var progression = get_indices(rootLengths);
-              var inductionVariable_0 = progression.f1_1;
-              var last_0 = progression.g1_1;
+              var tmp0_2 = get_indices(rootLengths);
+              var destination_7 = ArrayList_init_$Create$();
+              var inductionVariable_0 = tmp0_2.f1_1;
+              var last_0 = tmp0_2.g1_1;
               if (inductionVariable_0 <= last_0)
                 do {
                   var element_3 = inductionVariable_0;
                   inductionVariable_0 = inductionVariable_0 + 1 | 0;
                   var root = element_3;
                   if (element_2.c3v_1.y(rootLengths.s(root))) {
-                    pairRoots.g(element_3);
+                    destination_7.g(element_3);
                   }
                 }
                  while (!(element_3 === last_0));
-              var element_4 = pairRoots.p();
-              groupOffsets.g(element_4);
+              var tmp_7 = suffixIntersectionPipeline$lambda(rootLengths);
+              var _iterator__ex2g4s_7 = sortedWith(destination_7, new sam$kotlin_Comparator$0_10(tmp_7)).m();
+              while (_iterator__ex2g4s_7.n()) {
+                var element_4 = _iterator__ex2g4s_7.o();
+                pairRoots.g(element_4);
+              }
+              var tmp0_3 = this.f3w_1;
+              var element_5 = pairRoots.p();
+              tmp0_3.g(element_5);
             }
 
-            var tmp_7;
-            if (!this.f3w_1.x()) {
-              var tmp0_2 = zipWithNext(groupOffsets);
+            var tmp_8;
+            if (!this.g3w_1.x()) {
+              var tmp0_4 = zipWithNext(this.f3w_1);
               var tmp$ret$0;
               l$ret$1: do {
-                var tmp_8;
-                if (isInterface(tmp0_2, Collection)) {
-                  tmp_8 = tmp0_2.x();
+                var tmp_9;
+                if (isInterface(tmp0_4, Collection)) {
+                  tmp_9 = tmp0_4.x();
                 } else {
-                  tmp_8 = false;
+                  tmp_9 = false;
                 }
-                if (tmp_8) {
+                if (tmp_9) {
                   tmp$ret$0 = true;
                   break l$ret$1;
                 }
-                var _iterator__ex2g4s_7 = tmp0_2.m();
-                while (_iterator__ex2g4s_7.n()) {
-                  var element_5 = _iterator__ex2g4s_7.o();
-                  var a = element_5.gg();
-                  var b_0 = element_5.hg();
+                var _iterator__ex2g4s_8 = tmp0_4.m();
+                while (_iterator__ex2g4s_8.n()) {
+                  var element_6 = _iterator__ex2g4s_8.o();
+                  var a = element_6.gg();
+                  var b_0 = element_6.hg();
                   if (!(a < b_0)) {
                     tmp$ret$0 = false;
                     break l$ret$1;
@@ -59393,59 +59500,59 @@ if (typeof String.prototype.startsWith === 'undefined') {
                 tmp$ret$0 = true;
               }
                while (false);
-              tmp_7 = tmp$ret$0;
+              tmp_8 = tmp$ret$0;
             } else {
-              tmp_7 = false;
+              tmp_8 = false;
             }
 
-            if (!tmp_7) {
+            if (!tmp_8) {
               var message_0 = 'Failed requirement.';
               throw IllegalArgumentException_init_$Create$_0(toString_1(message_0));
             }
 
-            var tmp_9 = this;
-            var tmp_10 = listOf_0([0, this.e3w_1, this.m3w_1, this.n3w_1, 65535, 2000000, this.o3v_1.z3n_1.p(), this.f3w_1.p()]);
-            var tmp_11 = Companion_instance_60.t3z(this.o3w_1);
-            var tmp_12 = Companion_instance_60;
-            var this_4 = this.f3w_1;
-            var destination_7 = ArrayList_init_$Create$_0(collectionSizeOrDefault(this_4, 10));
-            var _iterator__ex2g4s_8 = this_4.m();
-            while (_iterator__ex2g4s_8.n()) {
-              var item_4 = _iterator__ex2g4s_8.o();
-              destination_7.g(item_4.b3v_1);
+            var tmp_10 = this;
+            var tmp_11 = listOf_0([0, this.e3w_1, this.n3w_1, this.o3w_1, 65535, 2000000, this.o3v_1.z3n_1.p(), this.g3w_1.p()]);
+            var tmp_12 = Companion_instance_60.w3z(this.p3w_1);
+            var tmp_13 = Companion_instance_60;
+            var this_4 = this.g3w_1;
+            var destination_8 = ArrayList_init_$Create$_0(collectionSizeOrDefault(this_4, 10));
+            var _iterator__ex2g4s_9 = this_4.m();
+            while (_iterator__ex2g4s_9.n()) {
+              var item_4 = _iterator__ex2g4s_9.o();
+              destination_8.g(item_4.b3v_1);
             }
 
-            tmp_9.z3v_1 = packStruct(tmp_10, [tmp_11, tmp_12.t3z(destination_7), Companion_instance_60.t3z(groupOffsets), Companion_instance_60.t3z(pairRoots)]);
-            var cutCells = multiply(add(numberToLong(this.o3v_1.z3n_1.p()), new Long(1, 0)), subtract(numberToLong(this.n3w_1 - this.o3v_1.z3n_1.p() | 0), new Long(1, 0)));
-            var tmp_13 = this;
-            var tmp_14 = Companion_instance_60;
-            var other = this.m3w_1;
-            var tmp0_3 = multiply(cutCells, fromInt(other));
-            var other_0 = this.f3w_1.p();
-            tmp_13.a3w_1 = tmp_14.f3y(multiply(multiply(tmp0_3, fromInt(other_0)), new Long(4, 0)), 140);
+            tmp_10.z3v_1 = packStruct(tmp_11, [tmp_12, tmp_13.w3z(destination_8), Companion_instance_60.w3z(this.f3w_1), Companion_instance_60.w3z(pairRoots)]);
+            var cutCells = multiply(add(numberToLong(this.o3v_1.z3n_1.p()), new Long(1, 0)), subtract(numberToLong(this.o3w_1 - this.o3v_1.z3n_1.p() | 0), new Long(1, 0)));
+            var tmp_14 = this;
+            var tmp_15 = Companion_instance_60;
+            var other = this.n3w_1;
+            var tmp0_5 = multiply(cutCells, fromInt(other));
+            var other_0 = this.g3w_1.p();
+            tmp_14.a3w_1 = tmp_15.g3y(multiply(multiply(tmp0_5, fromInt(other_0)), new Long(4, 0)), 140);
             var conditionedStarted = Monotonic_instance.zd();
             var inductionVariable_1 = 1;
-            var last_1 = this.n3w_1;
+            var last_1 = this.o3w_1;
             if (inductionVariable_1 < last_1)
               do {
                 var span = inductionVariable_1;
                 inductionVariable_1 = inductionVariable_1 + 1 | 0;
-                var spanBuf = Companion_instance_60.g3y(span, 72);
-                get_suffix_ls_dense().h3y([this.r3v_1, this.l3w_1, this.a3w_1, this.s3v_1, this.k3w_1, spanBuf, this.x3v_1, this.w3v_1, this.v3v_1, this.z3v_1]).o3z(this.n3w_1 - span | 0, 1, imul(this.m3w_1, this.f3w_1.p()));
+                var spanBuf = Companion_instance_60.h3y(span, 72);
+                get_suffix_ls_dense().i3y([this.r3v_1, this.m3w_1, this.a3w_1, this.s3v_1, this.l3w_1, spanBuf, this.x3v_1, this.w3v_1, this.v3v_1, this.z3v_1]).r3z(this.o3w_1 - span | 0, 1, imul(this.n3w_1, this.g3w_1.p()));
                 spanBuf.destroy();
               }
                while (inductionVariable_1 < last_1);
             mark(this.q3v_1, 'build suffix sizes', new ValueTimeMark(conditionedStarted));
-            this.l3w_1.destroy();
-            var tmp0_4 = 40000 / this.f3w_1.p() | 0;
+            this.m3w_1.destroy();
+            var tmp0_6 = 40000 / this.g3w_1.p() | 0;
             var b_1 = coerceAtLeast(imul(this.p3v_1, 8), this.p3v_1);
-            var perGroup = Math.min(tmp0_4, b_1);
-            this.d3w_1 = imul(perGroup, this.f3w_1.p());
-            Companion_instance_60.u3z(this.z3v_1, 5, this.d3w_1);
-            this.b3w_1 = Companion_instance_60.f3y(imul(imul(this.d3w_1, this.e3w_1), 4), 140);
-            this.h3w_1 = this.q3v_1;
-            this.g3w_1 = 'enumerate';
-            this.i3w_1 = 'Enumerate conditioned suffixes';
+            var perGroup = Math.min(tmp0_6, b_1);
+            this.d3w_1 = imul(perGroup, this.g3w_1.p());
+            Companion_instance_60.x3z(this.z3v_1, 5, this.d3w_1);
+            this.b3w_1 = Companion_instance_60.g3y(imul(imul(this.d3w_1, this.e3w_1), 4), 140);
+            this.i3w_1 = this.q3v_1;
+            this.h3w_1 = 'enumerate';
+            this.j3w_1 = 'Enumerate conditioned suffixes';
             this.d9_1 = 12;
             suspendResult = awaitGPUQueue(this);
             if (suspendResult === get_COROUTINE_SUSPENDED()) {
@@ -59457,8 +59564,8 @@ if (typeof String.prototype.startsWith === 'undefined') {
             this.d9_1 = 13;
             continue $sm;
           case 13:
-            this.j3w_1 = Monotonic_instance.zd();
-            get_suffix_enum_words_wor().h3y([this.r3v_1, this.x3v_1, this.w3v_1, this.v3v_1, this.y3v_1, this.k3w_1, this.z3v_1, this.a3w_1, this.b3w_1]).v3z(this.d3w_1);
+            this.k3w_1 = Monotonic_instance.zd();
+            get_suffix_enum_words_wor().i3y([this.r3v_1, this.x3v_1, this.w3v_1, this.v3v_1, this.y3v_1, this.l3w_1, this.z3v_1, this.a3w_1, this.b3w_1]).y3z(this.d3w_1);
             this.d9_1 = 14;
             suspendResult = awaitGPUQueue(this);
             if (suspendResult === get_COROUTINE_SUSPENDED()) {
@@ -59470,15 +59577,25 @@ if (typeof String.prototype.startsWith === 'undefined') {
             this.d9_1 = 15;
             continue $sm;
           case 15:
-            var ms_1 = convertToInt(_Duration___get_inWholeMilliseconds__impl__msfiry(ValueTimeMark__elapsedNow_impl_eonqvs(this.j3w_1)));
-            log(this.i3w_1 + ' in ' + ms_1 + 'ms');
-            var this_5 = this.h3w_1;
-            var key_2 = this.g3w_1;
+            var ms_1 = convertToInt(_Duration___get_inWholeMilliseconds__impl__msfiry(ValueTimeMark__elapsedNow_impl_eonqvs(this.k3w_1)));
+            log(this.j3w_1 + ' in ' + ms_1 + 'ms');
+            var this_5 = this.i3w_1;
+            var key_2 = this.h3w_1;
             this_5.i5(key_2, ms_1);
-            log('Conditioned suffix sampling: ' + this.f3w_1.p() + ' groups, lanes=' + this.d3w_1 + ', maxRepairLen=' + this.e3w_1);
+            log('Conditioned suffix sampling: ' + this.g3w_1.p() + ' groups, lanes=' + this.d3w_1 + ', maxRepairLen=' + this.e3w_1);
             this.c3w_1 = Monotonic_instance.zd();
+            var tmp_16 = 0;
+            var tmp_17 = this.g3w_1.p();
+            var tmp_18 = new Int32Array(tmp_17);
+            while (tmp_16 < tmp_17) {
+              var tmp_19 = tmp_16;
+              tmp_18[tmp_19] = this.f3w_1.s(tmp_19 + 1 | 0) - this.f3w_1.s(tmp_19) | 0;
+              tmp_16 = tmp_16 + 1 | 0;
+            }
+
+            var rootCounts = tmp_18;
             this.d9_1 = 16;
-            suspendResult = selectSuffixPackets(this.b3w_1, this.l3v_1, this.e3w_1, this.d3w_1, this.o3v_1, this.p3v_1, this);
+            suspendResult = selectSuffixPackets(this.b3w_1, this.l3v_1, this.e3w_1, this.d3w_1, this.o3v_1, rootCounts, this.p3v_1, this);
             if (suspendResult === get_COROUTINE_SUSPENDED()) {
               return suspendResult;
             }
@@ -59505,11 +59622,11 @@ if (typeof String.prototype.startsWith === 'undefined') {
   };
   function $gpuDiverseSuffixesCOROUTINE$(_this__u8e3s4, batch, limit, requestStarted, recordTimings, resultContinuation) {
     CoroutineImpl.call(this, resultContinuation);
-    this.l3x_1 = _this__u8e3s4;
-    this.m3x_1 = batch;
-    this.n3x_1 = limit;
-    this.o3x_1 = requestStarted;
-    this.p3x_1 = recordTimings;
+    this.m3x_1 = _this__u8e3s4;
+    this.n3x_1 = batch;
+    this.o3x_1 = limit;
+    this.p3x_1 = requestStarted;
+    this.q3x_1 = recordTimings;
   }
   protoOf($gpuDiverseSuffixesCOROUTINE$).l9 = function () {
     var suspendResult = this.f9_1;
@@ -59519,11 +59636,11 @@ if (typeof String.prototype.startsWith === 'undefined') {
         switch (tmp) {
           case 0:
             this.e9_1 = 2;
-            if (this.n3x_1 <= 0)
+            if (this.o3x_1 <= 0)
               return emptyList();
             var cacheStarted = Monotonic_instance.zd();
-            this.q3x_1 = new GPUSuffixKey(this.l3x_1, this.m3x_1, this.n3x_1);
-            var tmp0_safe_receiver = get_gpuSuffixCache().s2(this.q3x_1);
+            this.r3x_1 = new GPUSuffixKey(this.m3x_1, this.n3x_1, this.o3x_1);
+            var tmp0_safe_receiver = get_gpuSuffixCache().s2(this.r3x_1);
             if (tmp0_safe_receiver == null)
               null;
             else {
@@ -59532,13 +59649,13 @@ if (typeof String.prototype.startsWith === 'undefined') {
             }
 
             var cacheElapsed = ValueTimeMark__elapsedNow_impl_eonqvs(cacheStarted);
-            if (this.m3x_1.a3o_1.x()) {
+            if (this.n3x_1.a3o_1.x()) {
               log('Suffix CPU preprocessing (GPU handoff): no forest needed; cache lookup ' + Duration__toString_impl_8d916b(cacheElapsed));
-              return take(this.m3x_1.b3o_1, this.n3x_1);
+              return take(this.n3x_1.b3o_1, this.o3x_1);
             }
 
             var templateStarted = Monotonic_instance.zd();
-            var iterator = this.m3x_1.a3o_1.m();
+            var iterator = this.n3x_1.a3o_1.m();
             if (!iterator.n())
               throw NoSuchElementException_init_$Create$();
             var maxValue = iterator.o().d3o_1;
@@ -59559,29 +59676,29 @@ if (typeof String.prototype.startsWith === 'undefined') {
                 list.g(get_HOLE_MARKER());
               }
                while (inductionVariable < horizon);
-            var porous = plus_4(this.m3x_1.z3n_1, list);
+            var porous = plus_4(this.n3x_1.z3n_1, list);
             if (porous.p() >= 127) {
               log('Suffix CPU preprocessing (GPU handoff): template length ' + porous.p() + ' exceeds GPU limit');
               return null;
             }
 
-            var tmp0 = this.m3x_1.a3o_1;
+            var tmp0 = this.n3x_1.a3o_1;
             var destination = LinkedHashSet_init_$Create$();
             var _iterator__ex2g4s = tmp0.m();
             while (_iterator__ex2g4s.n()) {
               var item = _iterator__ex2g4s.o();
-              destination.g(this.m3x_1.z3n_1.p() + item.d3o_1 | 0);
+              destination.g(this.n3x_1.z3n_1.p() + item.d3o_1 | 0);
             }
 
             var acceptedLengths = destination;
             var fsa = makePorousFSA(porous, acceptedLengths);
-            var codePoints = porousToCodePoints(this.l3x_1, porous);
+            var codePoints = porousToCodePoints(this.m3x_1, porous);
             log('Suffix CPU preprocessing (GPU handoff): cache lookup ' + Duration__toString_impl_8d916b(cacheElapsed) + '; ' + ('porous FSA + token encoding ' + Duration__toString_impl_8d916b(ValueTimeMark__elapsedNow_impl_eonqvs(templateStarted)) + ' ') + ('(' + fsa.y15() + ' states, ' + acceptedLengths.p() + ' roots)'));
             var tmp_0 = this;
-            tmp_0.r3x_1 = LinkedHashMap_init_$Create$();
-            mark(this.r3x_1, 'preprocessing', this.o3x_1);
+            tmp_0.s3x_1 = LinkedHashMap_init_$Create$();
+            mark(this.s3x_1, 'preprocessing', this.p3x_1);
             this.d9_1 = 1;
-            suspendResult = suffixIntersectionPipeline(this.l3x_1, fsa, codePoints, this.m3x_1, this.n3x_1, this.r3x_1, this);
+            suspendResult = suffixIntersectionPipeline(this.m3x_1, fsa, codePoints, this.n3x_1, this.o3x_1, this.s3x_1, this);
             if (suspendResult === get_COROUTINE_SUSPENDED()) {
               return suspendResult;
             }
@@ -59590,7 +59707,7 @@ if (typeof String.prototype.startsWith === 'undefined') {
           case 1:
             var results = suspendResult;
             var filterStarted = Monotonic_instance.zd();
-            var tmp0_0 = this.m3x_1.a3o_1;
+            var tmp0_0 = this.n3x_1.a3o_1;
             var destination_0 = LinkedHashMap_init_$Create$();
             var _iterator__ex2g4s_0 = tmp0_0.m();
             while (_iterator__ex2g4s_0.n()) {
@@ -59620,7 +59737,7 @@ if (typeof String.prototype.startsWith === 'undefined') {
 
             var allowedLengths = destination_1;
             var groups = LinkedHashMap_init_$Create$();
-            var _iterator__ex2g4s_2 = this.m3x_1.a3o_1.m();
+            var _iterator__ex2g4s_2 = this.n3x_1.a3o_1.m();
             while (_iterator__ex2g4s_2.n()) {
               var element_1 = _iterator__ex2g4s_2.o();
               var key_0 = element_1.c3o_1;
@@ -59644,11 +59761,11 @@ if (typeof String.prototype.startsWith === 'undefined') {
                 inductionVariable_0 = inductionVariable_0 + 1 | 0;
                 var tmp0_1 = element_2;
                 l$ret$1: do {
-                  if (results.v3f(tmp0_1) <= this.m3x_1.z3n_1.p()) {
+                  if (results.v3f(tmp0_1) <= this.n3x_1.z3n_1.p()) {
                     break l$ret$1;
                   }
-                  var terminal = results.w3f(tmp0_1, this.m3x_1.z3n_1.p());
-                  var suffixLength = results.v3f(tmp0_1) - this.m3x_1.z3n_1.p() | 0;
+                  var terminal = results.w3f(tmp0_1, this.n3x_1.z3n_1.p());
+                  var suffixLength = results.v3f(tmp0_1) - this.n3x_1.z3n_1.p() | 0;
                   var tmp0_elvis_lhs = allowedLengths.s2(terminal);
                   if ((tmp0_elvis_lhs == null ? emptySet() : tmp0_elvis_lhs).y(suffixLength)) {
                     var tmp0_safe_receiver_0 = groups.s2(terminal);
@@ -59688,18 +59805,18 @@ if (typeof String.prototype.startsWith === 'undefined') {
 
             var decodedGroups = destination_2;
             var fairDecoded = sequence(gpuDiverseSuffixes$slambda_0(decodedGroups, null));
-            var completed = toList_2(take_0(distinct_0(sequence(gpuDiverseSuffixes$slambda_2(this.m3x_1, fairDecoded, null))), this.n3x_1));
-            var tmp0_2 = this.n3x_1;
-            var b = this.m3x_1.b3o_1.p() + this.m3x_1.a3o_1.p() | 0;
+            var completed = toList_2(take_0(distinct_0(sequence(gpuDiverseSuffixes$slambda_2(this.n3x_1, fairDecoded, null))), this.o3x_1));
+            var tmp0_2 = this.o3x_1;
+            var b = this.n3x_1.b3o_1.p() + this.n3x_1.a3o_1.p() | 0;
             var guaranteed = Math.min(tmp0_2, b);
             if (!(completed.p() >= guaranteed)) {
               var message_0 = 'Conditioned suffix sampler decoded ' + completed.p() + ' of at least ' + guaranteed + ' guaranteed rows';
               throw IllegalStateException_init_$Create$_0(toString_1(message_0));
             }
 
-            mark(this.r3x_1, 'filter suffixes', new ValueTimeMark(filterStarted));
-            this.p3x_1(toMap_0(this.r3x_1));
-            get_gpuSuffixCache().i5(this.q3x_1, completed);
+            mark(this.s3x_1, 'filter suffixes', new ValueTimeMark(filterStarted));
+            this.q3x_1(toMap_0(this.s3x_1));
+            get_gpuSuffixCache().i5(this.r3x_1, completed);
             return completed;
           case 2:
             throw this.g9_1;
@@ -59717,8 +59834,8 @@ if (typeof String.prototype.startsWith === 'undefined') {
   };
   function $debugWDFATokenIndexingCOROUTINE$(cfg, wdfaBuf, resultContinuation) {
     CoroutineImpl.call(this, resultContinuation);
-    this.a3y_1 = cfg;
-    this.b3y_1 = wdfaBuf;
+    this.b3y_1 = cfg;
+    this.c3y_1 = wdfaBuf;
   }
   protoOf($debugWDFATokenIndexingCOROUTINE$).l9 = function () {
     var suspendResult = this.f9_1;
@@ -59729,7 +59846,7 @@ if (typeof String.prototype.startsWith === 'undefined') {
           case 0:
             this.e9_1 = 2;
             log('Debugging WDFA token indexing...');
-            if (this.b3y_1 == null) {
+            if (this.c3y_1 == null) {
               log('WDFA rank testing skipped: buffer not loaded');
               return Unit_instance;
             }
@@ -59752,11 +59869,11 @@ if (typeof String.prototype.startsWith === 'undefined') {
               }
             }
 
-            tmp_0.e3y_1 = destination_0;
-            var packets = new Int32Array(imul(this.e3y_1.p(), 128));
+            tmp_0.f3y_1 = destination_0;
+            var packets = new Int32Array(imul(this.f3y_1.p(), 128));
             var decoded = ArrayList_init_$Create$();
             var index = 0;
-            var _iterator__ex2g4s_1 = this.e3y_1.m();
+            var _iterator__ex2g4s_1 = this.f3y_1.m();
             while (_iterator__ex2g4s_1.n()) {
               var item_0 = _iterator__ex2g4s_1.o();
               var _unary__edvuaz = index;
@@ -59767,7 +59884,7 @@ if (typeof String.prototype.startsWith === 'undefined') {
               var _iterator__ex2g4s_2 = tmp0.m();
               while (_iterator__ex2g4s_2.n()) {
                 var element_0 = _iterator__ex2g4s_2.o();
-                if (get_terminals(this.a3y_1).y(element_0)) {
+                if (get_terminals(this.b3y_1).y(element_0)) {
                   destination_1.g(element_0);
                 }
               }
@@ -59783,7 +59900,7 @@ if (typeof String.prototype.startsWith === 'undefined') {
                 var _unary__edvuaz_0 = index_0;
                 index_0 = _unary__edvuaz_0 + 1 | 0;
                 var j = checkIndexOverflow(_unary__edvuaz_0);
-                var tmp0_elvis_lhs = get_tmMap(this.a3y_1).s2(item_1);
+                var tmp0_elvis_lhs = get_tmMap(this.b3y_1).s2(item_1);
                 var tmp_1;
                 if (tmp0_elvis_lhs == null) {
                   var message = 'Token not in cfg.tmMap: ' + item_1 + ' from ' + item_0;
@@ -59797,14 +59914,14 @@ if (typeof String.prototype.startsWith === 'undefined') {
               packets[(base + 2 | 0) + toks.p() | 0] = 0;
             }
 
-            this.d3y_1 = Companion_instance_60.l3y(packets, 140);
+            this.e3y_1 = Companion_instance_60.m3y(packets, 140);
             var tmp_2 = this;
             var tmp_3 = Companion_instance_60;
-            var elements = new Int32Array([this.e3y_1.p(), this.e3y_1.p(), 128, 65535]);
-            tmp_2.c3y_1 = tmp_3.l3y(elements, 72);
-            get_wdfa_score_raw().h3y([this.d3y_1, this.b3y_1, this.c3y_1]).k3y(65535, 1);
+            var elements = new Int32Array([this.f3y_1.p(), this.f3y_1.p(), 128, 65535]);
+            tmp_2.d3y_1 = tmp_3.m3y(elements, 72);
+            get_wdfa_score_raw().i3y([this.e3y_1, this.c3y_1, this.d3y_1]).l3y(65535, 1);
             this.d9_1 = 1;
-            suspendResult = readJSIntArray(this.d3y_1, this);
+            suspendResult = readJSIntArray(this.e3y_1, this);
             if (suspendResult === get_COROUTINE_SUSPENDED()) {
               return suspendResult;
             }
@@ -59812,7 +59929,7 @@ if (typeof String.prototype.startsWith === 'undefined') {
             continue $sm;
           case 1:
             var scored = suspendResult;
-            var this_1 = get_indices(this.e3y_1);
+            var this_1 = get_indices(this.f3y_1);
             var destination_2 = ArrayList_init_$Create$_0(collectionSizeOrDefault(this_1, 10));
             var inductionVariable = this_1.f1_1;
             var last = this_1.g1_1;
@@ -59821,7 +59938,7 @@ if (typeof String.prototype.startsWith === 'undefined') {
                 var item_2 = inductionVariable;
                 inductionVariable = inductionVariable + 1 | 0;
                 var it = item_2;
-                var tmp_4 = this.e3y_1.s(it);
+                var tmp_4 = this.f3y_1.s(it);
                 var this_2 = scored[imul(it, 128) + 1 | 0];
                 var this_3 = _UInt___init__impl__l7qpdl(this_2);
                 var value = _UInt___get_data__impl__f0vqqw(this_3);
@@ -59830,7 +59947,7 @@ if (typeof String.prototype.startsWith === 'undefined') {
                while (!(item_2 === last));
             var rows = destination_2;
             var tmp_5 = debugWDFATokenIndexing$lambda;
-            var sorted = sortedWith(rows, new sam$kotlin_Comparator$0_10(tmp_5));
+            var sorted = sortedWith(rows, new sam$kotlin_Comparator$0_12(tmp_5));
             log('GPU WDFA sorted order:');
             var index_1 = 0;
             var _iterator__ex2g4s_4 = sorted.m();
@@ -59852,8 +59969,8 @@ if (typeof String.prototype.startsWith === 'undefined') {
 
             var got = destination_3;
             log('GPU WDFA ordering: ' + (equals(got, expected) ? 'PASS' : 'FAIL'));
+            this.e3y_1.destroy();
             this.d3y_1.destroy();
-            this.c3y_1.destroy();
             return Unit_instance;
           case 2:
             throw this.g9_1;
@@ -59876,7 +59993,7 @@ if (typeof String.prototype.startsWith === 'undefined') {
       groupedLeftAdjEncoding$delegate = cache_0(groupedLeftAdjEncoding$delegate$lambda);
       grammarEncoding$delegate = cache_0(grammarEncoding$delegate$lambda);
       active_nt_count$delegate = new Shader('\nstruct Uni { n: u32, activeWords: u32 };\n\n@group(0) @binding(0) var<storage, read>       active_nts : array<u32>;\n@group(0) @binding(1) var<storage, read_write> outCnt     : array<u32>; // length n*n\n@group(0) @binding(2) var<uniform>             uni        : Uni;\n\n@compute @workgroup_size(8,8,1)\nfn main(@builtin(global_invocation_id) gid: vec3<u32>) {\n  let r = gid.x;\n  let c = gid.y;\n  let n = uni.n;\n  let aw = uni.activeWords;\n\n  if (r >= n || c >= n) { return; }\n  if (c <= r) { outCnt[r*n + c] = 0u; return; }\n\n  let base = (r * n + c) * aw;\n  var k: u32 = 0u;\n  for (var w: u32 = 0u; w < aw; w = w + 1u) { k += countOneBits(active_nts[base + w]); }\n  outCnt[r*n + c] = k;\n}');
-      suffix_group_select$delegate = new Shader('\nstruct Params {\n  maxSamples : u32,\n  stride     : u32,\n  prefixSize : u32,\n  pairCount  : u32,\n  capacity   : u32\n};\n\n@group(0) @binding(0) var<uniform>                 prm     : Params;\n@group(0) @binding(1) var<storage, read>           packets : array<u32>;\n@group(0) @binding(2) var<storage, read>           pairs   : array<u32>; // token, length, group\n@group(0) @binding(3) var<storage, read_write>     counts  : array<atomic<u32>>;\n@group(0) @binding(4) var<storage, read_write>     selected: array<u32>;\n\nconst HEADER_LEN : u32 = 2u;\nconst TOKEN_MASK : u32 = 16777215u;\n\n@compute @workgroup_size(256) fn main(@builtin(global_invocation_id) gid: vec3<u32>) {\n  let sample = gid.x;\n  if (sample >= prm.maxSamples) { return; }\n\n  let base = sample * prm.stride;\n  var length: u32 = 0u;\n  loop {\n    if (HEADER_LEN + length >= prm.stride) { break; }\n    if (packets[base + HEADER_LEN + length] == 0u) { break; }\n    length = length + 1u;\n  }\n  if (length <= prm.prefixSize) { return; }\n\n  let terminal = packets[base + HEADER_LEN + prm.prefixSize] & TOKEN_MASK;\n  let suffixLength = length - prm.prefixSize;\n  for (var pair: u32 = 0u; pair < prm.pairCount; pair = pair + 1u) {\n    let offset = pair * 3u;\n    if (pairs[offset] != terminal || pairs[offset + 1u] != suffixLength) { continue; }\n    let group = pairs[offset + 2u];\n    let slot = atomicAdd(&counts[group], 1u);\n    // Interleave groups by rank: one candidate from every viable next token,\n    // then the second from every group, etc. Empty slots redistribute naturally.\n    if (slot < prm.capacity) { selected[slot * arrayLength(&counts) + group] = sample; }\n    return;\n  }\n}');
+      suffix_group_select$delegate = new Shader('\nstruct Params {\n  maxSamples : u32,\n  stride     : u32,\n  prefixSize : u32,\n  groupCount : u32,\n  capacity   : u32,\n  sortCapacity : u32,\n  padding0   : u32,\n  padding1   : u32\n};\n\n@group(0) @binding(0) var<uniform>             prm         : Params;\n@group(0) @binding(1) var<storage, read>       packets     : array<u32>;\n@group(0) @binding(2) var<storage, read>       lexicalRank : array<u32>;\n@group(0) @binding(3) var<storage, read_write> selected    : array<u32>;\n\nconst HEADER_LEN : u32 = 2u;\nconst TOKEN_MASK : u32 = 16777215u;\nconst SENTINEL   : u32 = 0xffffffffu;\n\nfn packetLength(sample: u32) -> u32 {\n  let base = sample * prm.stride;\n  var length: u32 = 0u;\n  loop {\n    if (HEADER_LEN + length >= prm.stride) { break; }\n    if (packets[base + HEADER_LEN + length] == 0u) { break; }\n    length = length + 1u;\n  }\n  return length;\n}\n\nfn tokenLexicalRank(sample: u32, position: u32) -> u32 {\n  let packed = packets[sample * prm.stride + HEADER_LEN + position];\n  let token = packed & TOKEN_MASK;\n  if (token == 0u) { return SENTINEL; }\n  return lexicalRank[token - 1u];\n}\n\nfn comesBefore(left: u32, right: u32) -> bool {\n  if (right == SENTINEL) { return left != SENTINEL; }\n  if (left == SENTINEL) { return false; }\n\n  let leftLength = packetLength(left);\n  let rightLength = packetLength(right);\n  let leftValid = leftLength > prm.prefixSize;\n  let rightValid = rightLength > prm.prefixSize;\n  if (leftValid != rightValid) { return leftValid; }\n  if (!leftValid) { return left < right; }\n\n  let leftSuffixLength = leftLength - prm.prefixSize;\n  let rightSuffixLength = rightLength - prm.prefixSize;\n  if (leftSuffixLength != rightSuffixLength) { return leftSuffixLength < rightSuffixLength; }\n\n  var position = prm.prefixSize;\n  while (position < leftLength) {\n    let leftToken = tokenLexicalRank(left, position);\n    let rightToken = tokenLexicalRank(right, position);\n    if (leftToken != rightToken) { return leftToken < rightToken; }\n    position = position + 1u;\n  }\n  return left < right;\n}\n\n@compute @workgroup_size(1) fn main(@builtin(global_invocation_id) gid: vec3<u32>) {\n  let group = gid.x;\n  if (group >= prm.groupCount || prm.groupCount == 0u) { return; }\n\n  let perGroup = prm.maxSamples / prm.groupCount;\n  let available = min(prm.capacity, perGroup);\n  for (var slot = 0u; slot < prm.sortCapacity; slot = slot + 1u) {\n    selected[slot * prm.groupCount + group] = SENTINEL;\n  }\n\n  // suffix_enum_words_wor assigns sid % groupCount to this group and emits a\n  // dense localSid prefix. Its first rootCount local IDs contain rank zero for\n  // every planned nonempty suffix length, so deterministic prefix selection\n  // retains those representatives before considering later samples.\n  for (var slot = 0u; slot < available; slot = slot + 1u) {\n    selected[slot * prm.groupCount + group] = slot * prm.groupCount + group;\n  }\n\n  // A group owns one strided selected[] column. A single invocation runs a\n  // bitonic network over its small power-of-two column without atomics, so\n  // scheduling cannot perturb ordering.\n  var width = 2u;\n  while (width <= prm.sortCapacity) {\n    var stride = width >> 1u;\n    while (stride > 0u) {\n      for (var leftSlot = 0u; leftSlot < prm.sortCapacity; leftSlot = leftSlot + 1u) {\n        let rightSlot = leftSlot ^ stride;\n        if (rightSlot > leftSlot) {\n          let leftOffset = leftSlot * prm.groupCount + group;\n          let rightOffset = rightSlot * prm.groupCount + group;\n          let left = selected[leftOffset];\n          let right = selected[rightOffset];\n          let ascending = (leftSlot & width) == 0u;\n          var swap = comesBefore(left, right);\n          if (ascending) { swap = comesBefore(right, left); }\n          if (swap) {\n            selected[leftOffset] = right;\n            selected[rightOffset] = left;\n          }\n        }\n      }\n      stride = stride >> 1u;\n    }\n    width = width << 1u;\n  }\n}');
       gpuSuffixCache = new LRUCache(128);
       // Inline function 'kotlin.collections.linkedMapOf' call
       timings = LinkedHashMap_init_$Create$();
@@ -60308,9 +60425,9 @@ if (typeof String.prototype.startsWith === 'undefined') {
   }
   function $readIndicesCOROUTINE$(_this__u8e3s4, _this__u8e3s4_0, indices, resultContinuation) {
     CoroutineImpl.call(this, resultContinuation);
-    this.j46_1 = _this__u8e3s4;
-    this.k46_1 = _this__u8e3s4_0;
-    this.l46_1 = indices;
+    this.m46_1 = _this__u8e3s4;
+    this.n46_1 = _this__u8e3s4_0;
+    this.o46_1 = indices;
   }
   protoOf($readIndicesCOROUTINE$).l9 = function () {
     var suspendResult = this.f9_1;
@@ -60320,24 +60437,24 @@ if (typeof String.prototype.startsWith === 'undefined') {
         switch (tmp) {
           case 0:
             this.e9_1 = 2;
-            this.m46_1 = Monotonic_instance.zd();
-            this.n46_1 = this.j46_1.f3y(multiply(numberToLong(this.l46_1.p()), new Long(4, 0)), 9);
+            this.p46_1 = Monotonic_instance.zd();
+            this.q46_1 = this.m46_1.g3y(multiply(numberToLong(this.o46_1.p()), new Long(4, 0)), 9);
             var encoder = get_gpu().createCommandEncoder();
             var index = 0;
-            var _iterator__ex2g4s = this.l46_1.m();
+            var _iterator__ex2g4s = this.o46_1.m();
             while (_iterator__ex2g4s.n()) {
               var item = _iterator__ex2g4s.o();
               var _unary__edvuaz = index;
               index = _unary__edvuaz + 1 | 0;
               var i = checkIndexOverflow(_unary__edvuaz);
-              encoder.copyBufferToBuffer(this.k46_1, item * 4, this.n46_1, i * 4, 4.0);
+              encoder.copyBufferToBuffer(this.n46_1, item * 4, this.q46_1, i * 4, 4.0);
             }
 
             var tmp_0 = get_gpu().queue;
             var this_0 = [encoder.finish()];
             tmp_0.submit(this_0);
             this.d9_1 = 1;
-            var this_1 = this.n46_1.mapAsync(GPUMapMode.READ);
+            var this_1 = this.q46_1.mapAsync(GPUMapMode.READ);
             suspendResult = await_0(this_1, this);
             if (suspendResult === get_COROUTINE_SUSPENDED()) {
               return suspendResult;
@@ -60345,10 +60462,10 @@ if (typeof String.prototype.startsWith === 'undefined') {
 
             continue $sm;
           case 1:
-            var this_2 = toList_0(toIntArray(asList_2(new Int32Array(this.n46_1.getMappedRange()))));
-            this.n46_1.destroy();
+            var this_2 = toList_0(toIntArray(asList_2(new Int32Array(this.q46_1.getMappedRange()))));
+            this.q46_1.destroy();
             var t = this_2;
-            log('Read ' + this.l46_1.p() + '/' + numberToInt(this.k46_1.size) + ' bytes in ' + Duration__toString_impl_8d916b(ValueTimeMark__elapsedNow_impl_eonqvs(this.m46_1)));
+            log('Read ' + this.o46_1.p() + '/' + numberToInt(this.n46_1.size) + ' bytes in ' + Duration__toString_impl_8d916b(ValueTimeMark__elapsedNow_impl_eonqvs(this.p46_1)));
             return t;
           case 2:
             throw this.g9_1;
@@ -60366,9 +60483,9 @@ if (typeof String.prototype.startsWith === 'undefined') {
   };
   function $packMetadataCOROUTINE$(_this__u8e3s4, cfg, fsa, resultContinuation) {
     CoroutineImpl.call(this, resultContinuation);
-    this.w46_1 = _this__u8e3s4;
-    this.x46_1 = cfg;
-    this.y46_1 = fsa;
+    this.z46_1 = _this__u8e3s4;
+    this.a47_1 = cfg;
+    this.b47_1 = fsa;
   }
   protoOf($packMetadataCOROUTINE$).l9 = function () {
     var suspendResult = this.f9_1;
@@ -60378,27 +60495,27 @@ if (typeof String.prototype.startsWith === 'undefined') {
         switch (tmp) {
           case 0:
             this.e9_1 = 3;
-            this.z46_1 = Monotonic_instance.zd();
-            var ge = get_grammarEncoding(this.x46_1);
-            this.d47_1 = this.w46_1.l3y(ge.n3t_1, 140);
-            this.c47_1 = this.w46_1.l3y(ge.o3t_1, 140);
-            var gle = get_groupedLeftAdjEncoding(this.x46_1);
-            this.b47_1 = this.w46_1.l3y(gle.p3t_1, 140);
-            this.a47_1 = this.w46_1.l3y(gle.q3t_1, 140);
-            this.e47_1 = (get_nonterminals(this.x46_1).p() + 31 | 0) >>> 5 | 0;
-            log('Encoded grammar in ' + Duration__toString_impl_8d916b(ValueTimeMark__elapsedNow_impl_eonqvs(this.z46_1)));
+            this.c47_1 = Monotonic_instance.zd();
+            var ge = get_grammarEncoding(this.a47_1);
+            this.g47_1 = this.z46_1.m3y(ge.n3t_1, 140);
+            this.f47_1 = this.z46_1.m3y(ge.o3t_1, 140);
+            var gle = get_groupedLeftAdjEncoding(this.a47_1);
+            this.e47_1 = this.z46_1.m3y(gle.p3t_1, 140);
+            this.d47_1 = this.z46_1.m3y(gle.q3t_1, 140);
+            this.h47_1 = (get_nonterminals(this.a47_1).p() + 31 | 0) >>> 5 | 0;
+            log('Encoded grammar in ' + Duration__toString_impl_8d916b(ValueTimeMark__elapsedNow_impl_eonqvs(this.c47_1)));
             this.d9_1 = 1;
-            suspendResult = get_dag_reach().g47(this.y46_1, this);
+            suspendResult = get_dag_reach().j47(this.b47_1, this);
             if (suspendResult === get_COROUTINE_SUSPENDED()) {
               return suspendResult;
             }
 
             continue $sm;
           case 1:
-            this.f47_1 = suspendResult.gg();
-            log('DAG fixpoint in ' + Duration__toString_impl_8d916b(ValueTimeMark__elapsedNow_impl_eonqvs(this.z46_1)));
+            this.i47_1 = suspendResult.gg();
+            log('DAG fixpoint in ' + Duration__toString_impl_8d916b(ValueTimeMark__elapsedNow_impl_eonqvs(this.c47_1)));
             this.d9_1 = 2;
-            suspendResult = this.w46_1.h47(this.y46_1.y15(), this.f47_1, this);
+            suspendResult = this.z46_1.k47(this.b47_1.y15(), this.i47_1, this);
             if (suspendResult === get_COROUTINE_SUSPENDED()) {
               return suspendResult;
             }
@@ -60406,12 +60523,12 @@ if (typeof String.prototype.startsWith === 'undefined') {
             continue $sm;
           case 2:
             var this_0 = suspendResult;
-            this.f47_1.destroy();
+            this.i47_1.destroy();
             var allFSAPairsFlattened = this_0.gg();
             var allFSAPairsOffsets = this_0.hg();
-            log('Sparse reachability took ' + Duration__toString_impl_8d916b(ValueTimeMark__elapsedNow_impl_eonqvs(this.z46_1)) + ' / (' + 4 * (allFSAPairsFlattened.size + allFSAPairsOffsets.size) + ' bytes)');
-            var metaBuf = packStruct(listOf_0([this.y46_1.y15(), get_nonterminals(this.x46_1).p(), this.e47_1]), [allFSAPairsFlattened, allFSAPairsOffsets, this.w46_1.i47(this.y46_1.l16()), this.d47_1, this.c47_1, this.b47_1, this.a47_1]);
-            log('Packed metadata in ' + Duration__toString_impl_8d916b(ValueTimeMark__elapsedNow_impl_eonqvs(this.z46_1)));
+            log('Sparse reachability took ' + Duration__toString_impl_8d916b(ValueTimeMark__elapsedNow_impl_eonqvs(this.c47_1)) + ' / (' + 4 * (allFSAPairsFlattened.size + allFSAPairsOffsets.size) + ' bytes)');
+            var metaBuf = packStruct(listOf_0([this.b47_1.y15(), get_nonterminals(this.a47_1).p(), this.h47_1]), [allFSAPairsFlattened, allFSAPairsOffsets, this.z46_1.l47(this.b47_1.l16()), this.g47_1, this.f47_1, this.e47_1, this.d47_1]);
+            log('Packed metadata in ' + Duration__toString_impl_8d916b(ValueTimeMark__elapsedNow_impl_eonqvs(this.c47_1)));
             return metaBuf;
           case 3:
             throw this.g9_1;
@@ -60429,9 +60546,9 @@ if (typeof String.prototype.startsWith === 'undefined') {
   };
   function $buildMidpointsGPUCOROUTINE$(_this__u8e3s4, states, reachBuf, resultContinuation) {
     CoroutineImpl.call(this, resultContinuation);
-    this.r47_1 = _this__u8e3s4;
-    this.s47_1 = states;
-    this.t47_1 = reachBuf;
+    this.u47_1 = _this__u8e3s4;
+    this.v47_1 = states;
+    this.w47_1 = reachBuf;
   }
   protoOf($buildMidpointsGPUCOROUTINE$).l9 = function () {
     var suspendResult = this.f9_1;
@@ -60441,23 +60558,23 @@ if (typeof String.prototype.startsWith === 'undefined') {
         switch (tmp) {
           case 0:
             this.e9_1 = 3;
-            var totalPairs = imul(this.s47_1, this.s47_1);
-            this.u47_1 = this.r47_1.f3y(imul(totalPairs, 4), 140);
-            this.v47_1 = this.r47_1.g3y(this.s47_1, 72);
-            get_mdpt_count().h3y([this.t47_1, this.u47_1, this.v47_1]).k3y(this.s47_1, this.s47_1);
-            this.w47_1 = this.r47_1.z47(this.u47_1, totalPairs);
-            this.y47_1 = listOf(totalPairs - 1 | 0);
+            var totalPairs = imul(this.v47_1, this.v47_1);
+            this.x47_1 = this.u47_1.g3y(imul(totalPairs, 4), 140);
+            this.y47_1 = this.u47_1.h3y(this.v47_1, 72);
+            get_mdpt_count().i3y([this.w47_1, this.x47_1, this.y47_1]).l3y(this.v47_1, this.v47_1);
+            this.z47_1 = this.u47_1.c48(this.x47_1, totalPairs);
+            this.b48_1 = listOf(totalPairs - 1 | 0);
             this.d9_1 = 1;
-            suspendResult = this.r47_1.q3z(this.w47_1, this.y47_1, this);
+            suspendResult = this.u47_1.t3z(this.z47_1, this.b48_1, this);
             if (suspendResult === get_COROUTINE_SUSPENDED()) {
               return suspendResult;
             }
 
             continue $sm;
           case 1:
-            this.x47_1 = suspendResult.s(0);
+            this.a48_1 = suspendResult.s(0);
             this.d9_1 = 2;
-            suspendResult = this.r47_1.q3z(this.u47_1, this.y47_1, this);
+            suspendResult = this.u47_1.t3z(this.x47_1, this.b48_1, this);
             if (suspendResult === get_COROUTINE_SUSPENDED()) {
               return suspendResult;
             }
@@ -60465,12 +60582,12 @@ if (typeof String.prototype.startsWith === 'undefined') {
             continue $sm;
           case 2:
             var ARGUMENT = suspendResult.s(0);
-            var totalM = this.x47_1 + ARGUMENT | 0;
-            var flatBuf = this.r47_1.f3y(imul(totalM, 4), 140);
-            get_mdpt_write().h3y([this.t47_1, this.w47_1, flatBuf, this.v47_1]).k3y(this.s47_1, this.s47_1);
-            var this_0 = to_0(flatBuf, this.w47_1);
-            this.v47_1.destroy();
-            this.u47_1.destroy();
+            var totalM = this.a48_1 + ARGUMENT | 0;
+            var flatBuf = this.u47_1.g3y(imul(totalM, 4), 140);
+            get_mdpt_write().i3y([this.w47_1, this.z47_1, flatBuf, this.y47_1]).l3y(this.v47_1, this.v47_1);
+            var this_0 = to_0(flatBuf, this.z47_1);
+            this.y47_1.destroy();
+            this.x47_1.destroy();
             return this_0;
           case 3:
             throw this.g9_1;
@@ -60488,11 +60605,11 @@ if (typeof String.prototype.startsWith === 'undefined') {
   };
   function $buildBackpointersCOROUTINE$(_this__u8e3s4, numStates, numNTs, dpIn, metaBuf, resultContinuation) {
     CoroutineImpl.call(this, resultContinuation);
-    this.i48_1 = _this__u8e3s4;
-    this.j48_1 = numStates;
-    this.k48_1 = numNTs;
-    this.l48_1 = dpIn;
-    this.m48_1 = metaBuf;
+    this.l48_1 = _this__u8e3s4;
+    this.m48_1 = numStates;
+    this.n48_1 = numNTs;
+    this.o48_1 = dpIn;
+    this.p48_1 = metaBuf;
   }
   protoOf($buildBackpointersCOROUTINE$).l9 = function () {
     var suspendResult = this.f9_1;
@@ -60502,24 +60619,24 @@ if (typeof String.prototype.startsWith === 'undefined') {
         switch (tmp) {
           case 0:
             this.e9_1 = 3;
-            var totalCells = imul(imul(this.j48_1, this.j48_1), this.k48_1);
-            this.o48_1 = this.i48_1.f3y(imul(totalCells, 4), 140);
-            this.p48_1 = ((this.k48_1 + 64 | 0) - 1 | 0) / 64 | 0;
-            log('Total cells: ' + totalCells + ' = ' + this.j48_1 + '^2 * ' + this.k48_1);
-            get_bp_count().h3y([this.l48_1, this.o48_1, this.m48_1]).o3z(this.j48_1, this.j48_1, this.p48_1);
-            this.n48_1 = this.i48_1.z47(this.o48_1, totalCells);
-            this.r48_1 = listOf(totalCells - 1 | 0);
+            var totalCells = imul(imul(this.m48_1, this.m48_1), this.n48_1);
+            this.r48_1 = this.l48_1.g3y(imul(totalCells, 4), 140);
+            this.s48_1 = ((this.n48_1 + 64 | 0) - 1 | 0) / 64 | 0;
+            log('Total cells: ' + totalCells + ' = ' + this.m48_1 + '^2 * ' + this.n48_1);
+            get_bp_count().i3y([this.o48_1, this.r48_1, this.p48_1]).r3z(this.m48_1, this.m48_1, this.s48_1);
+            this.q48_1 = this.l48_1.c48(this.r48_1, totalCells);
+            this.u48_1 = listOf(totalCells - 1 | 0);
             this.d9_1 = 1;
-            suspendResult = this.i48_1.q3z(this.n48_1, this.r48_1, this);
+            suspendResult = this.l48_1.t3z(this.q48_1, this.u48_1, this);
             if (suspendResult === get_COROUTINE_SUSPENDED()) {
               return suspendResult;
             }
 
             continue $sm;
           case 1:
-            this.q48_1 = suspendResult.s(0);
+            this.t48_1 = suspendResult.s(0);
             this.d9_1 = 2;
-            suspendResult = this.i48_1.q3z(this.o48_1, this.r48_1, this);
+            suspendResult = this.l48_1.t3z(this.r48_1, this.u48_1, this);
             if (suspendResult === get_COROUTINE_SUSPENDED()) {
               return suspendResult;
             }
@@ -60527,11 +60644,11 @@ if (typeof String.prototype.startsWith === 'undefined') {
             continue $sm;
           case 2:
             var ARGUMENT = suspendResult.s(0);
-            var totalExpansions = this.q48_1 + ARGUMENT | 0;
+            var totalExpansions = this.t48_1 + ARGUMENT | 0;
             log('Total expansions: ' + totalExpansions);
-            var bpStorageBuf = this.i48_1.f3y(imul(imul(totalExpansions, 2), 4), 140);
-            get_bp_write().h3y([this.l48_1, this.n48_1, bpStorageBuf, this.m48_1]).o3z(this.j48_1, this.j48_1, this.p48_1);
-            return new Triple(this.o48_1, this.n48_1, bpStorageBuf);
+            var bpStorageBuf = this.l48_1.g3y(imul(imul(totalExpansions, 2), 4), 140);
+            get_bp_write().i3y([this.o48_1, this.q48_1, bpStorageBuf, this.p48_1]).r3z(this.m48_1, this.m48_1, this.s48_1);
+            return new Triple(this.r48_1, this.q48_1, bpStorageBuf);
           case 3:
             throw this.g9_1;
         }
@@ -60549,7 +60666,7 @@ if (typeof String.prototype.startsWith === 'undefined') {
   function Companion_60() {
     this.e3f_1 = 256;
   }
-  protoOf(Companion_60).s48 = function (_this__u8e3s4, label, buffers) {
+  protoOf(Companion_60).v48 = function (_this__u8e3s4, label, buffers) {
     // Inline function 'kotlin.collections.mapIndexed' call
     // Inline function 'kotlin.collections.mapIndexedTo' call
     var destination = ArrayList_init_$Create$_0(buffers.length);
@@ -60577,7 +60694,7 @@ if (typeof String.prototype.startsWith === 'undefined') {
     var tmp$ret$8 = {label: label, entries: ent, layout: _this__u8e3s4.getBindGroupLayout(0)};
     return tmp.createBindGroup(tmp$ret$8);
   };
-  protoOf(Companion_60).u3z = function (_this__u8e3s4, wordIndex, value) {
+  protoOf(Companion_60).x3z = function (_this__u8e3s4, wordIndex, value) {
     // Inline function 'kotlin.apply' call
     var this_0 = new Int32Array(1);
     // Inline function 'kotlin.arrayOf' call
@@ -60588,41 +60705,41 @@ if (typeof String.prototype.startsWith === 'undefined') {
     var tmp = this_0;
     get_gpu().queue.writeBuffer(_this__u8e3s4, imul(wordIndex, 4), tmp);
   };
-  protoOf(Companion_60).q3z = function (_this__u8e3s4, indices, $completion) {
+  protoOf(Companion_60).t3z = function (_this__u8e3s4, indices, $completion) {
     var tmp = new $readIndicesCOROUTINE$(this, _this__u8e3s4, indices, $completion);
     tmp.f9_1 = Unit_instance;
     tmp.g9_1 = null;
     return tmp.l9();
   };
-  protoOf(Companion_60).n3z = function (usage, totalSizeInInts) {
+  protoOf(Companion_60).q3z = function (usage, totalSizeInInts) {
     var tmp0 = fromInt(totalSizeInInts);
     // Inline function 'kotlin.Long.times' call
     var other = Int32Array.BYTES_PER_ELEMENT;
     var outputByteSize = multiply(tmp0, fromInt(other));
-    return this.f3y(outputByteSize, usage | 128 | 8);
+    return this.g3y(outputByteSize, usage | 128 | 8);
   };
-  protoOf(Companion_60).t48 = function (_this__u8e3s4, n) {
+  protoOf(Companion_60).w48 = function (_this__u8e3s4, n) {
     var outputByteSize = imul(imul(n, n), Int32Array.BYTES_PER_ELEMENT);
-    var outputBuffer = this.f3y(outputByteSize, 140);
-    var sparseDataBuffer = this.m3z(_this__u8e3s4);
+    var outputBuffer = this.g3y(outputByteSize, 140);
+    var sparseDataBuffer = this.p3z(_this__u8e3s4);
     // Inline function 'kotlin.math.ceil' call
     var x = _this__u8e3s4.length / 2.0 / 256;
     var tmp$ret$0 = Math.ceil(x);
     var numWorkgroups = numberToInt(tmp$ret$0);
-    get_sparse_mat_load().h3y([sparseDataBuffer, outputBuffer]).k3y(numWorkgroups);
+    get_sparse_mat_load().i3y([sparseDataBuffer, outputBuffer]).l3y(numWorkgroups);
     sparseDataBuffer.destroy();
     return outputBuffer;
   };
-  protoOf(Companion_60).u48 = function (_this__u8e3s4, usage) {
+  protoOf(Companion_60).x48 = function (_this__u8e3s4, usage) {
     // Inline function 'kotlin.collections.toTypedArray' call
     var tmp$ret$0 = copyToArray(_this__u8e3s4);
-    return this.v48(tmp$ret$0, usage);
+    return this.y48(tmp$ret$0, usage);
   };
-  protoOf(Companion_60).t3z = function (_this__u8e3s4, usage, $super) {
+  protoOf(Companion_60).w3z = function (_this__u8e3s4, usage, $super) {
     usage = usage === VOID ? 140 : usage;
-    return $super === VOID ? this.u48(_this__u8e3s4, usage) : $super.u48.call(this, _this__u8e3s4, usage);
+    return $super === VOID ? this.x48(_this__u8e3s4, usage) : $super.x48.call(this, _this__u8e3s4, usage);
   };
-  protoOf(Companion_60).w48 = function (_this__u8e3s4, usage) {
+  protoOf(Companion_60).z48 = function (_this__u8e3s4, usage) {
     // Inline function 'kotlin.collections.map' call
     // Inline function 'kotlin.collections.mapTo' call
     var destination = ArrayList_init_$Create$_0(collectionSizeOrDefault(_this__u8e3s4, 10));
@@ -60636,41 +60753,41 @@ if (typeof String.prototype.startsWith === 'undefined') {
     }
     // Inline function 'kotlin.collections.toTypedArray' call
     var tmp$ret$4 = copyToArray(destination);
-    return this.v48(tmp$ret$4, usage);
+    return this.y48(tmp$ret$4, usage);
   };
-  protoOf(Companion_60).x48 = function (_this__u8e3s4, usage, $super) {
+  protoOf(Companion_60).a49 = function (_this__u8e3s4, usage, $super) {
     usage = usage === VOID ? 140 : usage;
-    return $super === VOID ? this.w48(_this__u8e3s4, usage) : $super.w48.call(this, _this__u8e3s4, usage);
+    return $super === VOID ? this.z48(_this__u8e3s4, usage) : $super.z48.call(this, _this__u8e3s4, usage);
   };
-  protoOf(Companion_60).l3y = function (_this__u8e3s4, usage) {
+  protoOf(Companion_60).m3y = function (_this__u8e3s4, usage) {
     var tmp = imul(_this__u8e3s4.length, 4);
     // Inline function 'kotlin.js.unsafeCast' call
     // Inline function 'kotlin.js.asDynamic' call
     return this.f3f(tmp, usage, _this__u8e3s4);
   };
-  protoOf(Companion_60).m3z = function (_this__u8e3s4, usage, $super) {
+  protoOf(Companion_60).p3z = function (_this__u8e3s4, usage, $super) {
     usage = usage === VOID ? 136 : usage;
-    return $super === VOID ? this.l3y(_this__u8e3s4, usage) : $super.l3y.call(this, _this__u8e3s4, usage);
+    return $super === VOID ? this.m3y(_this__u8e3s4, usage) : $super.m3y.call(this, _this__u8e3s4, usage);
   };
-  protoOf(Companion_60).g3y = function (_this__u8e3s4, usage) {
+  protoOf(Companion_60).h3y = function (_this__u8e3s4, usage) {
     // Inline function 'kotlin.intArrayOf' call
     var tmp$ret$0 = new Int32Array([_this__u8e3s4]);
-    return this.l3y(tmp$ret$0, usage);
+    return this.m3y(tmp$ret$0, usage);
   };
-  protoOf(Companion_60).y48 = function (_this__u8e3s4, usage, $super) {
+  protoOf(Companion_60).b49 = function (_this__u8e3s4, usage, $super) {
     usage = usage === VOID ? 140 : usage;
-    return $super === VOID ? this.g3y(_this__u8e3s4, usage) : $super.g3y.call(this, _this__u8e3s4, usage);
+    return $super === VOID ? this.h3y(_this__u8e3s4, usage) : $super.h3y.call(this, _this__u8e3s4, usage);
   };
-  protoOf(Companion_60).v48 = function (_this__u8e3s4, usage) {
+  protoOf(Companion_60).y48 = function (_this__u8e3s4, usage) {
     // Inline function 'kotlin.apply' call
     var this_0 = new Int32Array(_this__u8e3s4.length);
     this_0.set(_this__u8e3s4, 0);
     // Inline function 'kotlin.let' call
     return Companion_instance_60.f3f(imul(_this__u8e3s4.length, 4), usage, this_0);
   };
-  protoOf(Companion_60).i47 = function (_this__u8e3s4, usage, $super) {
+  protoOf(Companion_60).l47 = function (_this__u8e3s4, usage, $super) {
     usage = usage === VOID ? 140 : usage;
-    return $super === VOID ? this.v48(_this__u8e3s4, usage) : $super.v48.call(this, _this__u8e3s4, usage);
+    return $super === VOID ? this.y48(_this__u8e3s4, usage) : $super.y48.call(this, _this__u8e3s4, usage);
   };
   protoOf(Companion_60).f3f = function (byteSize, us, data) {
     var tmp = get_gpu();
@@ -60686,61 +60803,61 @@ if (typeof String.prototype.startsWith === 'undefined') {
     }
     return this_0;
   };
-  protoOf(Companion_60).f3y = function (byteSize, us, data, $super) {
+  protoOf(Companion_60).g3y = function (byteSize, us, data, $super) {
     data = data === VOID ? null : data;
     return $super === VOID ? this.f3f(byteSize, us, data) : $super.f3f.call(this, byteSize, us, data);
   };
-  protoOf(Companion_60).z47 = function (inputBuf, length) {
+  protoOf(Companion_60).c48 = function (inputBuf, length) {
     var numBlocks = ((length + 256 | 0) - 1 | 0) / 256 | 0;
     // Inline function 'kotlin.comparisons.minOf' call
     var groupsX = Math.min(numBlocks, 65535);
     var groupsY = ((numBlocks + groupsX | 0) - 1 | 0) / groupsX | 0;
-    var outputBuf = this.f3y(numberToInt(inputBuf.size), 140);
-    var blockSumsBuf = this.f3y(imul(numBlocks, 4), 140);
+    var outputBuf = this.g3y(numberToInt(inputBuf.size), 140);
+    var blockSumsBuf = this.g3y(imul(numBlocks, 4), 140);
     // Inline function 'kotlin.intArrayOf' call
     var tmp$ret$1 = new Int32Array([length, numBlocks, groupsX]);
-    var uniBuf = this.l3y(tmp$ret$1, 72);
-    get_prefix_sum_p1().h3y([inputBuf, outputBuf, blockSumsBuf, uniBuf]).k3y(groupsX, groupsY);
+    var uniBuf = this.m3y(tmp$ret$1, 72);
+    get_prefix_sum_p1().i3y([inputBuf, outputBuf, blockSumsBuf, uniBuf]).l3y(groupsX, groupsY);
     if (numBlocks === 1) {
       // Inline function 'kotlin.also' call
       blockSumsBuf.destroy();
       uniBuf.destroy();
       return outputBuf;
     }
-    var scannedBlockSumsBuf = this.z47(blockSumsBuf, numBlocks);
-    get_prefix_sum_p2().h3y([outputBuf, scannedBlockSumsBuf, uniBuf]).k3y(groupsX, groupsY);
+    var scannedBlockSumsBuf = this.c48(blockSumsBuf, numBlocks);
+    get_prefix_sum_p2().i3y([outputBuf, scannedBlockSumsBuf, uniBuf]).l3y(groupsX, groupsY);
     // Inline function 'kotlin.also' call
     destroyAll([scannedBlockSumsBuf, blockSumsBuf, uniBuf]);
     return outputBuf;
   };
-  protoOf(Companion_60).z48 = function (cfg, fsa, $completion) {
+  protoOf(Companion_60).c49 = function (cfg, fsa, $completion) {
     var tmp = new $packMetadataCOROUTINE$(this, cfg, fsa, $completion);
     tmp.f9_1 = Unit_instance;
     tmp.g9_1 = null;
     return tmp.l9();
   };
-  protoOf(Companion_60).h47 = function (states, reachBuf, $completion) {
+  protoOf(Companion_60).k47 = function (states, reachBuf, $completion) {
     var tmp = new $buildMidpointsGPUCOROUTINE$(this, states, reachBuf, $completion);
     tmp.f9_1 = Unit_instance;
     tmp.g9_1 = null;
     return tmp.l9();
   };
-  protoOf(Companion_60).r3z = function (numStates, numNTs, dpIn, metaBuf, $completion) {
+  protoOf(Companion_60).u3z = function (numStates, numNTs, dpIn, metaBuf, $completion) {
     var tmp = new $buildBackpointersCOROUTINE$(this, numStates, numNTs, dpIn, metaBuf, $completion);
     tmp.f9_1 = Unit_instance;
     tmp.g9_1 = null;
     return tmp.l9();
   };
-  protoOf(Companion_60).s3z = function (nStates, nNT, dpIn, metaBuf, tmBuf, bpCountBuf, bpOffsetBuf, bpStorageBuf) {
+  protoOf(Companion_60).v3z = function (nStates, nNT, dpIn, metaBuf, tmBuf, bpCountBuf, bpOffsetBuf, bpStorageBuf) {
     var totalCells = imul(imul(nStates, nStates), nNT);
-    var lsDenseBuf = this.f3y(imul(totalCells, 4), 140);
+    var lsDenseBuf = this.g3y(imul(totalCells, 4), 140);
     var inductionVariable = 1;
     if (inductionVariable < nStates)
       do {
         var span = inductionVariable;
         inductionVariable = inductionVariable + 1 | 0;
-        var spanBuf = this.g3y(span, 72);
-        get_ls_dense().h3y([dpIn, lsDenseBuf, metaBuf, tmBuf, spanBuf, bpCountBuf, bpOffsetBuf, bpStorageBuf]).o3z(nStates - span | 0, 1, nNT);
+        var spanBuf = this.h3y(span, 72);
+        get_ls_dense().i3y([dpIn, lsDenseBuf, metaBuf, tmBuf, spanBuf, bpCountBuf, bpOffsetBuf, bpStorageBuf]).r3z(nStates - span | 0, 1, nNT);
       }
        while (inductionVariable < nStates);
     log('Size of lsDenseBuf: ' + lsDenseBuf.size + ' bytes  (|Q|=' + nStates + ', |V|=' + nNT + ')');
@@ -60751,39 +60868,39 @@ if (typeof String.prototype.startsWith === 'undefined') {
     return Companion_instance_60;
   }
   function DispatchStrategy(gce, gcpe) {
-    this.i3y_1 = gce;
-    this.j3y_1 = gcpe;
+    this.j3y_1 = gce;
+    this.k3y_1 = gcpe;
   }
-  protoOf(DispatchStrategy).v3z = function (workgroups) {
+  protoOf(DispatchStrategy).y3z = function (workgroups) {
     // Inline function 'kotlin.comparisons.minOf' call
     var tmp$ret$0 = Math.min(workgroups, 65535);
-    return this.k3y(tmp$ret$0, ((workgroups + 65535 | 0) - 1 | 0) / 65535 | 0);
+    return this.l3y(tmp$ret$0, ((workgroups + 65535 | 0) - 1 | 0) / 65535 | 0);
   };
-  protoOf(DispatchStrategy).o3z = function (x, y, z) {
-    this.j3y_1.dispatchWorkgroups(x, y, z);
-    this.j3y_1.end();
+  protoOf(DispatchStrategy).r3z = function (x, y, z) {
+    this.k3y_1.dispatchWorkgroups(x, y, z);
+    this.k3y_1.end();
     var tmp = get_gpu().queue;
     // Inline function 'kotlin.arrayOf' call
     // Inline function 'kotlin.js.unsafeCast' call
     // Inline function 'kotlin.js.asDynamic' call
-    var tmp$ret$0 = [this.i3y_1.finish()];
+    var tmp$ret$0 = [this.j3y_1.finish()];
     tmp.submit(tmp$ret$0);
   };
-  protoOf(DispatchStrategy).k3y = function (x, y, z, $super) {
+  protoOf(DispatchStrategy).l3y = function (x, y, z, $super) {
     y = y === VOID ? 1 : y;
     z = z === VOID ? 1 : z;
     var tmp;
     if ($super === VOID) {
-      this.o3z(x, y, z);
+      this.r3z(x, y, z);
       tmp = Unit_instance;
     } else {
-      tmp = $super.o3z.call(this, x, y, z);
+      tmp = $super.r3z.call(this, x, y, z);
     }
     return tmp;
   };
   function $bindCOROUTINE$(_this__u8e3s4, resultContinuation) {
     CoroutineImpl.call(this, resultContinuation);
-    this.i49_1 = _this__u8e3s4;
+    this.l49_1 = _this__u8e3s4;
   }
   protoOf($bindCOROUTINE$).l9 = function () {
     var suspendResult = this.f9_1;
@@ -60796,8 +60913,8 @@ if (typeof String.prototype.startsWith === 'undefined') {
             this.d9_1 = 1;
             var tmp_0 = get_gpu();
             var tmp_1 = get_gpu();
-            var tmp2 = this.i49_1.j49();
-            var code = this.i49_1.j3t_1;
+            var tmp2 = this.l49_1.m49();
+            var code = this.l49_1.j3t_1;
             var compute = {entryPoint: 'main', module: tmp_1.createShaderModule({label: tmp2, code: code})};
             var this_0 = tmp_0.createComputePipelineAsync({layout: 'auto', compute: compute});
             suspendResult = await_0(this_0, this);
@@ -60808,7 +60925,7 @@ if (typeof String.prototype.startsWith === 'undefined') {
             continue $sm;
           case 1:
             var this_1 = suspendResult;
-            this.i49_1.l3t_1 = this_1;
+            this.l49_1.l3t_1 = this_1;
             return this_1;
           case 2:
             throw this.g9_1;
@@ -60826,11 +60943,11 @@ if (typeof String.prototype.startsWith === 'undefined') {
   };
   function $invokeCFLFixpointCOROUTINE$(_this__u8e3s4, numStates, dpIn, activeBuf, metaBuf, resultContinuation) {
     CoroutineImpl.call(this, resultContinuation);
-    this.s49_1 = _this__u8e3s4;
-    this.t49_1 = numStates;
-    this.u49_1 = dpIn;
-    this.v49_1 = activeBuf;
-    this.w49_1 = metaBuf;
+    this.v49_1 = _this__u8e3s4;
+    this.w49_1 = numStates;
+    this.x49_1 = dpIn;
+    this.y49_1 = activeBuf;
+    this.z49_1 = metaBuf;
   }
   protoOf($invokeCFLFixpointCOROUTINE$).l9 = function () {
     var suspendResult = this.f9_1;
@@ -60840,34 +60957,34 @@ if (typeof String.prototype.startsWith === 'undefined') {
         switch (tmp) {
           case 0:
             this.e9_1 = 5;
-            this.a4a_1 = Monotonic_instance.zd();
+            this.d4a_1 = Monotonic_instance.zd();
             var tmp_0 = this;
             var tmp_1 = Companion_instance_60;
             var elements = new Int32Array([0, 0]);
-            tmp_0.z49_1 = tmp_1.l3y(elements, 140);
-            this.y49_1 = Companion_instance_60.f3y(imul(imul(this.t49_1, this.t49_1), 4), 140);
-            this.x49_1 = Companion_instance_60.f3y(this.v49_1.size, 140);
-            this.c4a_1 = listOf(0);
-            this.e4a_1 = ((this.t49_1 + 16 | 0) - 1 | 0) / 16 | 0;
-            this.d4a_1 = ((this.t49_1 + 4 | 0) - 1 | 0) / 4 | 0;
-            this.f4a_1 = until(0, this.t49_1).m();
+            tmp_0.c4a_1 = tmp_1.m3y(elements, 140);
+            this.b4a_1 = Companion_instance_60.g3y(imul(imul(this.w49_1, this.w49_1), 4), 140);
+            this.a4a_1 = Companion_instance_60.g3y(this.y49_1.size, 140);
+            this.f4a_1 = listOf(0);
+            this.h4a_1 = ((this.w49_1 + 16 | 0) - 1 | 0) / 16 | 0;
+            this.g4a_1 = ((this.w49_1 + 4 | 0) - 1 | 0) / 4 | 0;
+            this.i4a_1 = until(0, this.w49_1).m();
             this.d9_1 = 1;
             continue $sm;
           case 1:
-            if (!this.f4a_1.n()) {
+            if (!this.i4a_1.n()) {
               this.d9_1 = 4;
               continue $sm;
             }
 
-            this.b4a_1 = this.f4a_1.o();
-            if (!(this.b4a_1 === 0)) {
-              Companion_instance_60.u3z(this.z49_1, 0, 0);
+            this.e4a_1 = this.i4a_1.o();
+            if (!(this.e4a_1 === 0)) {
+              Companion_instance_60.x3z(this.c4a_1, 0, 0);
             }
 
-            Companion_instance_60.u3z(this.z49_1, 1, this.b4a_1);
-            get_cfl_mul_upper().h3y([this.u49_1, this.v49_1, this.w49_1, this.z49_1, this.y49_1, this.x49_1]).k3y(this.e4a_1, this.d4a_1);
+            Companion_instance_60.x3z(this.c4a_1, 1, this.e4a_1);
+            get_cfl_mul_upper().i3y([this.x49_1, this.y49_1, this.z49_1, this.c4a_1, this.b4a_1, this.a4a_1]).l3y(this.h4a_1, this.g4a_1);
             this.d9_1 = 2;
-            suspendResult = Companion_instance_60.q3z(this.z49_1, this.c4a_1, this);
+            suspendResult = Companion_instance_60.t3z(this.c4a_1, this.f4a_1, this);
             if (suspendResult === get_COROUTINE_SUSPENDED()) {
               return suspendResult;
             }
@@ -60875,8 +60992,8 @@ if (typeof String.prototype.startsWith === 'undefined') {
             continue $sm;
           case 2:
             var changesThisRound = suspendResult.s(0);
-            log('Round=' + this.b4a_1 + ', changes=' + changesThisRound + ', time=' + Duration__toString_impl_8d916b(ValueTimeMark__elapsedNow_impl_eonqvs(this.a4a_1)));
-            this.a4a_1 = Monotonic_instance.zd();
+            log('Round=' + this.e4a_1 + ', changes=' + changesThisRound + ', time=' + Duration__toString_impl_8d916b(ValueTimeMark__elapsedNow_impl_eonqvs(this.d4a_1)));
+            this.d4a_1 = Monotonic_instance.zd();
             if (changesThisRound === 0) {
               this.d9_1 = 4;
               continue $sm;
@@ -60889,7 +61006,7 @@ if (typeof String.prototype.startsWith === 'undefined') {
             this.d9_1 = 1;
             continue $sm;
           case 4:
-            destroyAll([this.z49_1, this.y49_1, this.x49_1]);
+            destroyAll([this.c4a_1, this.b4a_1, this.a4a_1]);
             return Unit_instance;
           case 5:
             throw this.g9_1;
@@ -60907,8 +61024,8 @@ if (typeof String.prototype.startsWith === 'undefined') {
   };
   function $invokeDAGFixpointCOROUTINE$(_this__u8e3s4, fsa, resultContinuation) {
     CoroutineImpl.call(this, resultContinuation);
-    this.o4a_1 = _this__u8e3s4;
-    this.p4a_1 = fsa;
+    this.r4a_1 = _this__u8e3s4;
+    this.s4a_1 = fsa;
   }
   protoOf($invokeDAGFixpointCOROUTINE$).l9 = function () {
     var suspendResult = this.f9_1;
@@ -60918,33 +61035,33 @@ if (typeof String.prototype.startsWith === 'undefined') {
         switch (tmp) {
           case 0:
             this.e9_1 = 5;
-            var adjList = this.p4a_1.b16();
-            this.u4a_1 = this.p4a_1.y15();
-            this.r4a_1 = Companion_instance_60.t48(adjList, this.u4a_1);
-            this.q4a_1 = -1;
-            this.v4a_1 = until(0, this.u4a_1).m();
+            var adjList = this.s4a_1.b16();
+            this.x4a_1 = this.s4a_1.y15();
+            this.u4a_1 = Companion_instance_60.w48(adjList, this.x4a_1);
+            this.t4a_1 = -1;
+            this.y4a_1 = until(0, this.x4a_1).m();
             this.d9_1 = 1;
             continue $sm;
           case 1:
-            if (!this.v4a_1.n()) {
+            if (!this.y4a_1.n()) {
               this.d9_1 = 4;
               continue $sm;
             }
 
-            var round = this.v4a_1.o();
-            this.t4a_1 = Companion_instance_60.y48(0);
-            get_dag_reach().h3y([this.r4a_1, this.t4a_1]).k3y(this.u4a_1, this.u4a_1);
+            var round = this.y4a_1.o();
+            this.w4a_1 = Companion_instance_60.b49(0);
+            get_dag_reach().i3y([this.u4a_1, this.w4a_1]).l3y(this.x4a_1, this.x4a_1);
             this.d9_1 = 2;
-            suspendResult = Companion_instance_60.q3z(this.t4a_1, listOf(0), this);
+            suspendResult = Companion_instance_60.t3z(this.w4a_1, listOf(0), this);
             if (suspendResult === get_COROUTINE_SUSPENDED()) {
               return suspendResult;
             }
 
             continue $sm;
           case 2:
-            this.s4a_1 = suspendResult.s(0);
-            this.t4a_1.destroy();
-            if (this.s4a_1 === this.q4a_1) {
+            this.v4a_1 = suspendResult.s(0);
+            this.w4a_1.destroy();
+            if (this.v4a_1 === this.t4a_1) {
               this.d9_1 = 4;
               continue $sm;
             } else {
@@ -60953,11 +61070,11 @@ if (typeof String.prototype.startsWith === 'undefined') {
             }
 
           case 3:
-            this.q4a_1 = this.s4a_1;
+            this.t4a_1 = this.v4a_1;
             this.d9_1 = 1;
             continue $sm;
           case 4:
-            return to_0(this.r4a_1, this.q4a_1);
+            return to_0(this.u4a_1, this.t4a_1);
           case 5:
             throw this.g9_1;
         }
@@ -60975,7 +61092,7 @@ if (typeof String.prototype.startsWith === 'undefined') {
   function Shader(src) {
     this.j3t_1 = src;
   }
-  protoOf(Shader).j49 = function () {
+  protoOf(Shader).m49 = function () {
     var tmp = this.k3t_1;
     if (!(tmp == null))
       return tmp;
@@ -60983,7 +61100,7 @@ if (typeof String.prototype.startsWith === 'undefined') {
       throwUninitializedPropertyAccessException('name');
     }
   };
-  protoOf(Shader).w4a = function () {
+  protoOf(Shader).z4a = function () {
     var tmp = this.l3t_1;
     if (!(tmp == null))
       return tmp;
@@ -60991,7 +61108,7 @@ if (typeof String.prototype.startsWith === 'undefined') {
       throwUninitializedPropertyAccessException('pipeline');
     }
   };
-  protoOf(Shader).x4a = function ($completion) {
+  protoOf(Shader).a4b = function ($completion) {
     var tmp = new $bindCOROUTINE$(this, $completion);
     tmp.f9_1 = Unit_instance;
     tmp.g9_1 = null;
@@ -61002,30 +61119,30 @@ if (typeof String.prototype.startsWith === 'undefined') {
     this.k3t_1 = property.callableName;
     return this;
   };
-  protoOf(Shader).p3z = function (numStates, dpIn, activeBuf, metaBuf, $completion) {
+  protoOf(Shader).s3z = function (numStates, dpIn, activeBuf, metaBuf, $completion) {
     var tmp = new $invokeCFLFixpointCOROUTINE$(this, numStates, dpIn, activeBuf, metaBuf, $completion);
     tmp.f9_1 = Unit_instance;
     tmp.g9_1 = null;
     return tmp.l9();
   };
-  protoOf(Shader).g47 = function (fsa, $completion) {
+  protoOf(Shader).j47 = function (fsa, $completion) {
     var tmp = new $invokeDAGFixpointCOROUTINE$(this, fsa, $completion);
     tmp.f9_1 = Unit_instance;
     tmp.g9_1 = null;
     return tmp.l9();
   };
-  protoOf(Shader).h3y = function (inputs) {
+  protoOf(Shader).i3y = function (inputs) {
     // Inline function 'kotlin.check' call
     if (!!(this.l3t_1 == null)) {
-      var message = "Shader '" + this.j49() + "' was used before bind()";
+      var message = "Shader '" + this.m49() + "' was used before bind()";
       throw IllegalStateException_init_$Create$_0(toString_1(message));
     }
     // Inline function 'kotlin.let' call
     var gce = get_gpu().createCommandEncoder();
     // Inline function 'kotlin.let' call
     var gcpe = gce.beginComputePass();
-    gcpe.setPipeline(this.w4a());
-    gcpe.setBindGroup(0, Companion_instance_60.s48(this.w4a(), this.j49() + '.buffers', inputs.slice()));
+    gcpe.setPipeline(this.z4a());
+    gcpe.setBindGroup(0, Companion_instance_60.v48(this.z4a(), this.m49() + '.buffers', inputs.slice()));
     return new DispatchStrategy(gce, gcpe);
   };
   function packStruct(constants, buffers) {
@@ -61095,7 +61212,7 @@ if (typeof String.prototype.startsWith === 'undefined') {
     var headerBytes = imul(headerInts.p(), 4);
     var payloadBytes = imul(sum(lens), 4);
     var totalBytes = headerBytes + payloadBytes | 0;
-    var metaBuf = Companion_instance_60.f3y(totalBytes, 140);
+    var metaBuf = Companion_instance_60.g3y(totalBytes, 140);
     var tmp = get_gpu().queue;
     // Inline function 'kotlin.apply' call
     var this_2 = new Int32Array(headerInts.p());
@@ -61314,7 +61431,7 @@ if (typeof String.prototype.startsWith === 'undefined') {
     // Inline function 'kotlin.js.asDynamic' call
     arrayCopy(tmp_3, destination, 1, 0, endIndex);
     log('Done');
-    return Companion_instance_60.x48(asList_0(flat));
+    return Companion_instance_60.a49(asList_0(flat));
   }
   function awaitGPUQueue($completion) {
     var tmp = new $awaitGPUQueueCOROUTINE$($completion);
@@ -61322,19 +61439,19 @@ if (typeof String.prototype.startsWith === 'undefined') {
     tmp.g9_1 = null;
     return tmp.l9();
   }
-  function sam$kotlin_Comparator$0_11(function_0) {
-    this.g4b_1 = function_0;
+  function sam$kotlin_Comparator$0_13(function_0) {
+    this.j4b_1 = function_0;
   }
-  protoOf(sam$kotlin_Comparator$0_11).pd = function (a, b) {
-    return this.g4b_1(a, b);
+  protoOf(sam$kotlin_Comparator$0_13).pd = function (a, b) {
+    return this.j4b_1(a, b);
   };
-  protoOf(sam$kotlin_Comparator$0_11).compare = function (a, b) {
+  protoOf(sam$kotlin_Comparator$0_13).compare = function (a, b) {
     return this.pd(a, b);
   };
-  protoOf(sam$kotlin_Comparator$0_11).f3 = function () {
-    return this.g4b_1;
+  protoOf(sam$kotlin_Comparator$0_13).f3 = function () {
+    return this.j4b_1;
   };
-  protoOf(sam$kotlin_Comparator$0_11).equals = function (other) {
+  protoOf(sam$kotlin_Comparator$0_13).equals = function (other) {
     var tmp;
     if (!(other == null) ? isInterface(other, Comparator) : false) {
       var tmp_0;
@@ -61349,7 +61466,7 @@ if (typeof String.prototype.startsWith === 'undefined') {
     }
     return tmp;
   };
-  protoOf(sam$kotlin_Comparator$0_11).hashCode = function () {
+  protoOf(sam$kotlin_Comparator$0_13).hashCode = function () {
     return hashCode_0(this.f3());
   };
   function termBuf$delegate$lambda($this$cache) {
@@ -61392,7 +61509,7 @@ if (typeof String.prototype.startsWith === 'undefined') {
       var tmp$ret$8 = item_1.p();
       destination_1.g(tmp$ret$8);
     }
-    var nt_tm_lens = tmp_0.t3z(destination_1);
+    var nt_tm_lens = tmp_0.w3z(destination_1);
     var tmp_1 = Companion_instance_60;
     // Inline function 'kotlin.collections.scan' call
     var tmp$ret$10;
@@ -61417,8 +61534,8 @@ if (typeof String.prototype.startsWith === 'undefined') {
       tmp$ret$10 = result;
     }
     var tmp$ret$9 = tmp$ret$10;
-    var nt_tm_offsets = tmp_1.t3z(dropLast(tmp$ret$9, 1));
-    var all_tm = Companion_instance_60.t3z(flatten(terminalLists));
+    var nt_tm_offsets = tmp_1.w3z(dropLast(tmp$ret$9, 1));
+    var all_tm = Companion_instance_60.w3z(flatten(terminalLists));
     return packStruct(emptyList(), [nt_tm_lens, nt_tm_offsets, all_tm]);
   }
   function _get_termBuf_$ref_cr9oc9() {
@@ -61555,19 +61672,19 @@ if (typeof String.prototype.startsWith === 'undefined') {
   }
   function scoreSelectGather$lambda($scoreShader, $packets, $model, $prmBuf, $maxSamples) {
     return function () {
-      $scoreShader.h3y([$packets, $model, $prmBuf]).v3z($maxSamples);
+      $scoreShader.i3y([$packets, $model, $prmBuf]).y3z($maxSamples);
       return Unit_instance;
     };
   }
   function scoreSelectGather$lambda_0($prmBuf, $packets, $idxBuf, $scrBuf, $totalGroups) {
     return function () {
-      get_select_top_k().h3y([$prmBuf, $packets, $idxBuf, $scrBuf]).v3z($totalGroups);
+      get_select_top_k().i3y([$prmBuf, $packets, $idxBuf, $scrBuf]).y3z($totalGroups);
       return Unit_instance;
     };
   }
   function scoreSelectGather$lambda_1($prmBuf, $packets, $idxBuf, $bestBuf, $k) {
     return function () {
-      get_gather_top_k().h3y([$prmBuf, $packets, $idxBuf, $bestBuf]).k3y($k);
+      get_gather_top_k().i3y([$prmBuf, $packets, $idxBuf, $bestBuf]).l3y($k);
       return Unit_instance;
     };
   }
@@ -61599,7 +61716,7 @@ if (typeof String.prototype.startsWith === 'undefined') {
   }
   function $tryBootstrappingGPUCOROUTINE$(needsExtraMemory, resultContinuation) {
     CoroutineImpl.call(this, resultContinuation);
-    this.e40_1 = needsExtraMemory;
+    this.h40_1 = needsExtraMemory;
   }
   protoOf($tryBootstrappingGPUCOROUTINE$).l9 = function () {
     var suspendResult = this.f9_1;
@@ -61613,7 +61730,7 @@ if (typeof String.prototype.startsWith === 'undefined') {
             var tmp_0 = navigator.gpu;
             var tmp0_safe_receiver = tmp_0 instanceof GPU ? tmp_0 : null;
             if (tmp0_safe_receiver == null) {
-              this.k40_1 = null;
+              this.n40_1 = null;
               this.d9_1 = 2;
               continue $sm;
             } else {
@@ -61627,19 +61744,19 @@ if (typeof String.prototype.startsWith === 'undefined') {
             }
 
           case 1:
-            this.k40_1 = suspendResult;
+            this.n40_1 = suspendResult;
             this.d9_1 = 2;
             continue $sm;
           case 2:
-            var tmp1_safe_receiver = this.k40_1;
+            var tmp1_safe_receiver = this.n40_1;
             if (tmp1_safe_receiver == null) {
-              this.h40_1 = null;
+              this.k40_1 = null;
               this.d9_1 = 6;
               continue $sm;
             } else {
-              this.i40_1 = tmp1_safe_receiver;
-              var it = this.i40_1;
-              if (this.e40_1) {
+              this.l40_1 = tmp1_safe_receiver;
+              var it = this.l40_1;
+              if (this.h40_1) {
                 var descriptor = {requiredLimits: {maxBufferSize: 2000000000, maxStorageBufferBindingSize: 2000000000, maxStorageBuffersPerShaderStage: 10}};
                 var this_1 = it.requestDevice(descriptor);
                 this.d9_1 = 4;
@@ -61661,21 +61778,21 @@ if (typeof String.prototype.startsWith === 'undefined') {
             }
 
           case 3:
-            this.j40_1 = suspendResult;
+            this.m40_1 = suspendResult;
             this.d9_1 = 5;
             continue $sm;
           case 4:
-            this.j40_1 = suspendResult;
+            this.m40_1 = suspendResult;
             this.d9_1 = 5;
             continue $sm;
           case 5:
-            var ARGUMENT = this.j40_1;
+            var ARGUMENT = this.m40_1;
             set_gpu(ARGUMENT);
-            this.h40_1 = this.i40_1;
+            this.k40_1 = this.l40_1;
             this.d9_1 = 6;
             continue $sm;
           case 6:
-            this.g40_1 = this.h40_1;
+            this.j40_1 = this.k40_1;
             this.e9_1 = 15;
             this.d9_1 = 8;
             continue $sm;
@@ -61695,13 +61812,13 @@ if (typeof String.prototype.startsWith === 'undefined') {
 
           case 8:
             this.e9_1 = 15;
-            var tmpDev = this.g40_1;
+            var tmpDev = this.j40_1;
             if (!(tmpDev == null)) {
               var tmp_3 = get_gpu();
               var this_3 = 'uncapturederror';
               addEventListener(tmp_3, this_3, tryBootstrappingGPU$lambda);
               this.e9_1 = 14;
-              this.f40_1 = listOf_0([get_prefix_sum_p1(), get_prefix_sum_p2(), get_sparse_mat_load(), get_init_lev_chart(), get_init_line_chart(), get_dag_reach(), get_mdpt_count(), get_mdpt_write(), get_line_mdpt_write(), get_cfl_mul_upper(), get_bp_count(), get_bp_write(), get_ls_dense(), get_suffix_ls_dense(), get_ls_cdf(), get_build_root_sizes(), get_enum_words_wor(), get_suffix_enum_words_wor(), get_markov_score(), get_wdfa_score(), get_select_top_k(), get_gather_top_k(), get_suffix_group_select(), get_wdfa_score_raw(), get_active_nt_count(), get_wdfa_frontier_init_v2(), get_wdfa_frontier_count_succ_v2(), get_wdfa_frontier_write_exact_v2(), get_wdfa_frontier_parent_weights_v2(), get_wdfa_frontier_sampled_step_v2(), get_wdfa_frontier_emit_done_packets_v2(), get_wdfa_frontier_pack_packets_v2(), get_select_top_k_unique_v2()]).m();
+              this.i40_1 = listOf_0([get_prefix_sum_p1(), get_prefix_sum_p2(), get_sparse_mat_load(), get_init_lev_chart(), get_init_line_chart(), get_dag_reach(), get_mdpt_count(), get_mdpt_write(), get_line_mdpt_write(), get_cfl_mul_upper(), get_bp_count(), get_bp_write(), get_ls_dense(), get_suffix_ls_dense(), get_ls_cdf(), get_build_root_sizes(), get_enum_words_wor(), get_suffix_enum_words_wor(), get_markov_score(), get_wdfa_score(), get_select_top_k(), get_gather_top_k(), get_suffix_group_select(), get_wdfa_score_raw(), get_active_nt_count(), get_wdfa_frontier_init_v2(), get_wdfa_frontier_count_succ_v2(), get_wdfa_frontier_write_exact_v2(), get_wdfa_frontier_parent_weights_v2(), get_wdfa_frontier_sampled_step_v2(), get_wdfa_frontier_emit_done_packets_v2(), get_wdfa_frontier_pack_packets_v2(), get_select_top_k_unique_v2()]).m();
               this.d9_1 = 9;
               continue $sm;
             } else {
@@ -61712,14 +61829,14 @@ if (typeof String.prototype.startsWith === 'undefined') {
             }
 
           case 9:
-            if (!this.f40_1.n()) {
+            if (!this.i40_1.n()) {
               this.d9_1 = 11;
               continue $sm;
             }
 
-            var element = this.f40_1.o();
+            var element = this.i40_1.o();
             this.d9_1 = 10;
-            suspendResult = element.x4a(this);
+            suspendResult = element.a4b(this);
             if (suspendResult === get_COROUTINE_SUSPENDED()) {
               return suspendResult;
             }
@@ -61785,11 +61902,11 @@ if (typeof String.prototype.startsWith === 'undefined') {
   };
   function $repairCodeCOROUTINE$(cfg, code, ledBuffer, rerankerQuery, requestStarted, resultContinuation) {
     CoroutineImpl.call(this, resultContinuation);
-    this.t40_1 = cfg;
-    this.u40_1 = code;
-    this.v40_1 = ledBuffer;
-    this.w40_1 = rerankerQuery;
-    this.x40_1 = requestStarted;
+    this.w40_1 = cfg;
+    this.x40_1 = code;
+    this.y40_1 = ledBuffer;
+    this.z40_1 = rerankerQuery;
+    this.a41_1 = requestStarted;
   }
   protoOf($repairCodeCOROUTINE$).l9 = function () {
     var suspendResult = this.f9_1;
@@ -61800,16 +61917,16 @@ if (typeof String.prototype.startsWith === 'undefined') {
           case 0:
             this.e9_1 = 2;
             set_timings(LinkedHashMap_init_$Create$());
-            mark_0('preprocessing', this.x40_1);
+            mark_0('preprocessing', this.a41_1);
             var preprocT = Monotonic_instance.zd();
-            var fsa = makeLevFSA(this.u40_1, 5);
+            var fsa = makeLevFSA(this.x40_1, 5);
             log('Made levFSA in ' + Duration__toString_impl_8d916b(ValueTimeMark__elapsedNow_impl_eonqvs(preprocT)));
             var tmp_0 = 0;
-            var tmp_1 = this.u40_1.p();
+            var tmp_1 = this.x40_1.p();
             var tmp_2 = new Int32Array(tmp_1);
             while (tmp_0 < tmp_1) {
               var tmp_3 = tmp_0;
-              var tmp0_elvis_lhs = get_tmMap(this.t40_1).s2(this.u40_1.s(tmp_3));
+              var tmp0_elvis_lhs = get_tmMap(this.w40_1).s2(this.x40_1.s(tmp_3));
               tmp_2[tmp_3] = tmp0_elvis_lhs == null ? 0 : tmp0_elvis_lhs;
               tmp_0 = tmp_0 + 1 | 0;
             }
@@ -61817,7 +61934,7 @@ if (typeof String.prototype.startsWith === 'undefined') {
             var codePoints = tmp_2;
             mark_0('build input FSA', new ValueTimeMark(preprocT));
             this.d9_1 = 1;
-            suspendResult = intersectionPipeline(this.t40_1, fsa, this.v40_1, codePoints, this.w40_1, VOID, this);
+            suspendResult = intersectionPipeline(this.w40_1, fsa, this.y40_1, codePoints, this.z40_1, VOID, this);
             if (suspendResult === get_COROUTINE_SUSPENDED()) {
               return suspendResult;
             }
@@ -61825,7 +61942,7 @@ if (typeof String.prototype.startsWith === 'undefined') {
             continue $sm;
           case 1:
             var words = suspendResult;
-            log('Received: ' + words.p() + ' words in ' + Duration__toString_impl_8d916b(this.x40_1.qp()) + ' (round trip)');
+            log('Received: ' + words.p() + ' words in ' + Duration__toString_impl_8d916b(this.a41_1.qp()) + ' (round trip)');
             return words;
           case 2:
             throw this.g9_1;
@@ -61843,12 +61960,12 @@ if (typeof String.prototype.startsWith === 'undefined') {
   };
   function $intersectionPipelineCOROUTINE$(cfg, fsa, ledBuffer, codePoints, rerankerQuery, chartInitializer, resultContinuation) {
     CoroutineImpl.call(this, resultContinuation);
-    this.g41_1 = cfg;
-    this.h41_1 = fsa;
-    this.i41_1 = ledBuffer;
-    this.j41_1 = codePoints;
-    this.k41_1 = rerankerQuery;
-    this.l41_1 = chartInitializer;
+    this.j41_1 = cfg;
+    this.k41_1 = fsa;
+    this.l41_1 = ledBuffer;
+    this.m41_1 = codePoints;
+    this.n41_1 = rerankerQuery;
+    this.o41_1 = chartInitializer;
   }
   protoOf($intersectionPipelineCOROUTINE$).l9 = function () {
     var suspendResult = this.f9_1;
@@ -61858,37 +61975,37 @@ if (typeof String.prototype.startsWith === 'undefined') {
         switch (tmp) {
           case 0:
             this.e9_1 = 28;
-            if (!(get_tmLst(this.g41_1).p() < 16777216)) {
+            if (!(get_tmLst(this.j41_1).p() < 16777216)) {
               var message = 'Packed repair packets support fewer than 16777216 terminals';
               throw IllegalArgumentException_init_$Create$_0(toString_1(message));
             }
 
-            var _destruct__k2r9zo = to_0(this.h41_1.y15(), get_nonterminals(this.g41_1).p());
-            this.r42_1 = _destruct__k2r9zo.gg();
-            this.s42_1 = _destruct__k2r9zo.hg();
-            log('FSA(|Q|=' + this.r42_1 + ', |\u03B4|=' + this.h41_1.h16().p() + '), ' + calcStats(this.g41_1));
-            this.i43_1 = Monotonic_instance.zd();
+            var _destruct__k2r9zo = to_0(this.k41_1.y15(), get_nonterminals(this.j41_1).p());
+            this.u42_1 = _destruct__k2r9zo.gg();
+            this.v42_1 = _destruct__k2r9zo.hg();
+            log('FSA(|Q|=' + this.u42_1 + ', |\u03B4|=' + this.k41_1.h16().p() + '), ' + calcStats(this.j41_1));
+            this.l43_1 = Monotonic_instance.zd();
             this.d9_1 = 1;
-            suspendResult = Companion_instance_60.z48(this.g41_1, this.h41_1, this);
+            suspendResult = Companion_instance_60.c49(this.j41_1, this.k41_1, this);
             if (suspendResult === get_COROUTINE_SUSPENDED()) {
               return suspendResult;
             }
 
             continue $sm;
           case 1:
-            this.u41_1 = suspendResult;
-            mark_0('pack metadata', new ValueTimeMark(this.i43_1));
+            this.x41_1 = suspendResult;
+            mark_0('pack metadata', new ValueTimeMark(this.l43_1));
             log('Packed metadata in ' + get_timings().s2('pack metadata') + 'ms');
-            this.j42_1 = get_termBuf(this.g41_1);
-            this.r41_1 = Companion_instance_60.m3z(this.j41_1);
-            var totalSize = imul(imul(this.r42_1, this.r42_1), this.s42_1);
-            var activeWords = (this.s42_1 + 31 | 0) >>> 5 | 0;
-            this.t41_1 = Companion_instance_60.n3z(140, totalSize);
-            this.s41_1 = Companion_instance_60.f3y(fromInt(imul(imul(imul(this.r42_1, this.r42_1), activeWords), 4)), 140);
-            log('Buffers: dp=' + this.t41_1.size + 'B (' + totalSize + ' cells), ' + ('active=' + this.s41_1.size + 'B (' + activeWords + ' words/cell), ') + ('word=' + this.r41_1.size + 'B, tm=' + this.j42_1.size + 'B'));
-            this.f43_1 = get_timings();
-            this.e43_1 = 'init chart';
-            this.g43_1 = 'Init chart';
+            this.m42_1 = get_termBuf(this.j41_1);
+            this.u41_1 = Companion_instance_60.p3z(this.m41_1);
+            var totalSize = imul(imul(this.u42_1, this.u42_1), this.v42_1);
+            var activeWords = (this.v42_1 + 31 | 0) >>> 5 | 0;
+            this.w41_1 = Companion_instance_60.q3z(140, totalSize);
+            this.v41_1 = Companion_instance_60.g3y(fromInt(imul(imul(imul(this.u42_1, this.u42_1), activeWords), 4)), 140);
+            log('Buffers: dp=' + this.w41_1.size + 'B (' + totalSize + ' cells), ' + ('active=' + this.v41_1.size + 'B (' + activeWords + ' words/cell), ') + ('word=' + this.u41_1.size + 'B, tm=' + this.m42_1.size + 'B'));
+            this.i43_1 = get_timings();
+            this.h43_1 = 'init chart';
+            this.j43_1 = 'Init chart';
             this.d9_1 = 2;
             suspendResult = awaitGPUQueue(this);
             if (suspendResult === get_COROUTINE_SUSPENDED()) {
@@ -61900,9 +62017,9 @@ if (typeof String.prototype.startsWith === 'undefined') {
             this.d9_1 = 3;
             continue $sm;
           case 3:
-            this.h43_1 = Monotonic_instance.zd();
-            var ntWorkgroups = ((this.s42_1 + 64 | 0) - 1 | 0) / 64 | 0;
-            this.l41_1.h3y([this.t41_1, this.s41_1, this.r41_1, this.u41_1, this.j42_1]).o3z(this.r42_1, this.r42_1, ntWorkgroups);
+            this.k43_1 = Monotonic_instance.zd();
+            var ntWorkgroups = ((this.v42_1 + 64 | 0) - 1 | 0) / 64 | 0;
+            this.o41_1.i3y([this.w41_1, this.v41_1, this.u41_1, this.x41_1, this.m42_1]).r3z(this.u42_1, this.u42_1, ntWorkgroups);
             this.d9_1 = 4;
             suspendResult = awaitGPUQueue(this);
             if (suspendResult === get_COROUTINE_SUSPENDED()) {
@@ -61914,38 +62031,38 @@ if (typeof String.prototype.startsWith === 'undefined') {
             this.d9_1 = 5;
             continue $sm;
           case 5:
-            var ms = convertToInt(_Duration___get_inWholeMilliseconds__impl__msfiry(ValueTimeMark__elapsedNow_impl_eonqvs(this.h43_1)));
-            log(this.g43_1 + ' in ' + ms + 'ms');
-            var this_0 = this.f43_1;
-            var key = this.e43_1;
+            var ms = convertToInt(_Duration___get_inWholeMilliseconds__impl__msfiry(ValueTimeMark__elapsedNow_impl_eonqvs(this.k43_1)));
+            log(this.j43_1 + ' in ' + ms + 'ms');
+            var this_0 = this.i43_1;
+            var key = this.h43_1;
             this_0.i5(key, ms);
-            this.d43_1 = Monotonic_instance.zd();
+            this.g43_1 = Monotonic_instance.zd();
             this.d9_1 = 6;
-            suspendResult = get_cfl_mul_upper().p3z(this.r42_1, this.t41_1, this.s41_1, this.u41_1, this);
+            suspendResult = get_cfl_mul_upper().s3z(this.u42_1, this.w41_1, this.v41_1, this.x41_1, this);
             if (suspendResult === get_COROUTINE_SUSPENDED()) {
               return suspendResult;
             }
 
             continue $sm;
           case 6:
-            mark_0('matrix closure', new ValueTimeMark(this.d43_1));
+            mark_0('matrix closure', new ValueTimeMark(this.g43_1));
             log('Matrix closure reached in: ' + get_timings().s2('matrix closure') + 'ms');
-            this.b43_1 = Monotonic_instance.zd();
-            this.y42_1 = get_bindex(this.g41_1).e1a(get_START_SYMBOL());
+            this.e43_1 = Monotonic_instance.zd();
+            this.b43_1 = get_bindex(this.j41_1).e1a(get_START_SYMBOL());
             var tmp_0 = this;
-            var this_1 = this.h41_1.k16();
+            var this_1 = this.k41_1.k16();
             var destination = ArrayList_init_$Create$_0(this_1.length);
             var inductionVariable = 0;
             var last = this_1.length;
             while (inductionVariable < last) {
               var item = this_1[inductionVariable];
               inductionVariable = inductionVariable + 1 | 0;
-              destination.g(imul(item, this.s42_1) + this.y42_1 | 0);
+              destination.g(imul(item, this.v42_1) + this.b43_1 | 0);
             }
 
-            tmp_0.c43_1 = destination;
+            tmp_0.f43_1 = destination;
             this.d9_1 = 7;
-            suspendResult = Companion_instance_60.q3z(this.t41_1, this.c43_1, this);
+            suspendResult = Companion_instance_60.t3z(this.w41_1, this.f43_1, this);
             if (suspendResult === get_COROUTINE_SUSPENDED()) {
               return suspendResult;
             }
@@ -61953,7 +62070,7 @@ if (typeof String.prototype.startsWith === 'undefined') {
             continue $sm;
           case 7:
             var ARGUMENT = suspendResult;
-            var tmp0 = zip(this.c43_1, ARGUMENT);
+            var tmp0 = zip(this.f43_1, ARGUMENT);
             var destination_0 = ArrayList_init_$Create$();
             var _iterator__ex2g4s = tmp0.m();
             while (_iterator__ex2g4s.n()) {
@@ -61972,19 +62089,19 @@ if (typeof String.prototype.startsWith === 'undefined') {
               destination_1.g(item_0.eg_1);
             }
 
-            tmp_1.z42_1 = destination_1;
-            mark_0('read roots', new ValueTimeMark(this.b43_1));
-            if (this.z42_1.x()) {
-              destroyAll([this.s41_1, this.r41_1, this.u41_1, this.t41_1]);
+            tmp_1.c43_1 = destination_1;
+            mark_0('read roots', new ValueTimeMark(this.e43_1));
+            if (this.c43_1.x()) {
+              destroyAll([this.v41_1, this.u41_1, this.x41_1, this.w41_1]);
               var this_2 = Companion_getInstance_58().l3f_1;
               log('No valid parse found: dpComplete has no entries in final states!');
               return this_2;
             }
 
-            log('Valid parse found: dpComplete has ' + this.z42_1.p() + ' start indices');
-            this.a43_1 = Monotonic_instance.zd();
+            log('Valid parse found: dpComplete has ' + this.c43_1.p() + ' start indices');
+            this.d43_1 = Monotonic_instance.zd();
             this.d9_1 = 8;
-            suspendResult = Companion_instance_60.r3z(this.r42_1, this.s42_1, this.t41_1, this.u41_1, this);
+            suspendResult = Companion_instance_60.u3z(this.u42_1, this.v42_1, this.w41_1, this.x41_1, this);
             if (suspendResult === get_COROUTINE_SUSPENDED()) {
               return suspendResult;
             }
@@ -61992,22 +62109,22 @@ if (typeof String.prototype.startsWith === 'undefined') {
             continue $sm;
           case 8:
             var _destruct__k2r9zo_0 = suspendResult;
-            this.o41_1 = _destruct__k2r9zo_0.gg();
-            this.n41_1 = _destruct__k2r9zo_0.hg();
-            this.m41_1 = _destruct__k2r9zo_0.aq();
-            mark_0('build backpointers', new ValueTimeMark(this.a43_1));
-            var totalExp = numberToInt(this.m41_1.size) / 8 | 0;
+            this.r41_1 = _destruct__k2r9zo_0.gg();
+            this.q41_1 = _destruct__k2r9zo_0.hg();
+            this.p41_1 = _destruct__k2r9zo_0.aq();
+            mark_0('build backpointers', new ValueTimeMark(this.d43_1));
+            var totalExp = numberToInt(this.p41_1.size) / 8 | 0;
             log('Built backpointers in ' + get_timings().s2('build backpointers') + 'ms | expansions=' + totalExp);
             var t2 = Monotonic_instance.zd();
-            var this_3 = this.z42_1;
+            var this_3 = this.c43_1;
             var destination_2 = ArrayList_init_$Create$_0(collectionSizeOrDefault(this_3, 10));
             var _iterator__ex2g4s_1 = this_3.m();
             while (_iterator__ex2g4s_1.n()) {
               var item_1 = _iterator__ex2g4s_1.o();
-              var _destruct__k2r9zo_1 = ensureNotNull(this.h41_1.n16().s2((item_1 - this.y42_1 | 0) / this.s42_1 | 0));
+              var _destruct__k2r9zo_1 = ensureNotNull(this.k41_1.n16().s2((item_1 - this.b43_1 | 0) / this.v42_1 | 0));
               var i = _destruct__k2r9zo_1.gg();
               var j = _destruct__k2r9zo_1.hg();
-              destination_2.g(to_0(item_1, (j + this.j41_1.length | 0) - i | 0));
+              destination_2.g(to_0(item_1, (j + this.m41_1.length | 0) - i | 0));
             }
 
             var statesToDist = destination_2;
@@ -62024,7 +62141,7 @@ if (typeof String.prototype.startsWith === 'undefined') {
 
             var led = minValue;
             var tmp0_0 = fromInt(led);
-            var other = this.i41_1;
+            var other = this.l41_1;
             var maxAcceptedDistance = convertToInt(coerceAtMost_0(add(tmp0_0, fromInt(other)), new Long(2147483647, 0)));
             var tmp_2 = this;
             var destination_3 = ArrayList_init_$Create$();
@@ -62045,26 +62162,26 @@ if (typeof String.prototype.startsWith === 'undefined') {
             }
 
             var tmp_3 = intersectionPipeline$lambda;
-            var this_4 = sortedWith(destination_4, new sam$kotlin_Comparator$0_11(tmp_3));
+            var this_4 = sortedWith(destination_4, new sam$kotlin_Comparator$0_13(tmp_3));
             log('Start indices: total=' + this_4.p() + ', roots=' + this_4.p() + ', LED=' + led + ', window=[' + led + ', ' + maxAcceptedDistance + ']');
-            tmp_2.q42_1 = flatten(this_4);
+            tmp_2.t42_1 = flatten(this_4);
             mark_0('filter roots', new ValueTimeMark(t2));
-            this.e42_1 = (this.h41_1.d14_1 + this.h41_1.c14_1 | 0) + 10 | 0;
-            if (128 < this.e42_1) {
-              destroyAll([this.s41_1, this.r41_1, this.u41_1, this.t41_1, this.o41_1, this.n41_1, this.m41_1]);
+            this.h42_1 = (this.k41_1.d14_1 + this.k41_1.c14_1 | 0) + 10 | 0;
+            if (128 < this.h42_1) {
+              destroyAll([this.v41_1, this.u41_1, this.x41_1, this.w41_1, this.r41_1, this.q41_1, this.p41_1]);
               var this_5 = Companion_getInstance_58().l3f_1;
-              log('Max repair length exceeded 128 (' + this.e42_1 + ')');
+              log('Max repair length exceeded 128 (' + this.h42_1 + ')');
               return this_5;
             }
 
             var lsDenseT = Monotonic_instance.zd();
-            this.t42_1 = Companion_instance_60.s3z(this.r42_1, this.s42_1, this.t41_1, this.u41_1, this.j42_1, this.o41_1, this.n41_1, this.m41_1);
+            this.w42_1 = Companion_instance_60.v3z(this.u42_1, this.v42_1, this.w41_1, this.x41_1, this.m42_1, this.r41_1, this.q41_1, this.p41_1);
             mark_0('build ls dense', new ValueTimeMark(lsDenseT));
-            log('Built lsDense in ' + get_timings().s2('build ls dense') + 'ms (' + this.t42_1.size + 'B)');
-            this.p41_1 = Companion_instance_60.f3y(imul(totalExp, 4), 140);
-            this.v42_1 = get_timings();
-            this.u42_1 = 'build cdf';
-            this.w42_1 = 'Build CDF';
+            log('Built lsDense in ' + get_timings().s2('build ls dense') + 'ms (' + this.w42_1.size + 'B)');
+            this.s41_1 = Companion_instance_60.g3y(imul(totalExp, 4), 140);
+            this.y42_1 = get_timings();
+            this.x42_1 = 'build cdf';
+            this.z42_1 = 'Build CDF';
             this.d9_1 = 9;
             suspendResult = awaitGPUQueue(this);
             if (suspendResult === get_COROUTINE_SUSPENDED()) {
@@ -62076,9 +62193,9 @@ if (typeof String.prototype.startsWith === 'undefined') {
             this.d9_1 = 10;
             continue $sm;
           case 10:
-            this.x42_1 = Monotonic_instance.zd();
-            var ntWorkgroups_0 = ((this.s42_1 + 64 | 0) - 1 | 0) / 64 | 0;
-            get_ls_cdf().h3y([this.t41_1, this.t42_1, this.n41_1, this.p41_1, this.u41_1, this.j42_1, this.o41_1, this.m41_1]).o3z(this.r42_1, this.r42_1, ntWorkgroups_0);
+            this.a43_1 = Monotonic_instance.zd();
+            var ntWorkgroups_0 = ((this.v42_1 + 64 | 0) - 1 | 0) / 64 | 0;
+            get_ls_cdf().i3y([this.w41_1, this.w42_1, this.q41_1, this.s41_1, this.x41_1, this.m42_1, this.r41_1, this.p41_1]).r3z(this.u42_1, this.u42_1, ntWorkgroups_0);
             this.d9_1 = 11;
             suspendResult = awaitGPUQueue(this);
             if (suspendResult === get_COROUTINE_SUSPENDED()) {
@@ -62090,19 +62207,19 @@ if (typeof String.prototype.startsWith === 'undefined') {
             this.d9_1 = 12;
             continue $sm;
           case 12:
-            var ms_0 = convertToInt(_Duration___get_inWholeMilliseconds__impl__msfiry(ValueTimeMark__elapsedNow_impl_eonqvs(this.x42_1)));
-            log(this.w42_1 + ' in ' + ms_0 + 'ms');
-            var this_6 = this.v42_1;
-            var key_0 = this.u42_1;
+            var ms_0 = convertToInt(_Duration___get_inWholeMilliseconds__impl__msfiry(ValueTimeMark__elapsedNow_impl_eonqvs(this.a43_1)));
+            log(this.z42_1 + ' in ' + ms_0 + 'ms');
+            var this_6 = this.y42_1;
+            var key_0 = this.x42_1;
             this_6.i5(key_0, ms_0);
-            this.t42_1.destroy();
-            log('Pairing function construction took: ' + get_timings().s2('build cdf') + 'ms (' + this.p41_1.size + 'B)');
-            this.l42_1 = this.q42_1.p() / 2 | 0;
-            this.w41_1 = Companion_instance_60.f3y(imul(this.l42_1, 4), 140);
-            this.q41_1 = packStruct(listOf_0([0, this.e42_1, this.s42_1, this.r42_1, 65535, 2000000]), [Companion_instance_60.t3z(this.q42_1)]);
-            this.n42_1 = get_timings();
-            this.m42_1 = 'build root sizes';
-            this.o42_1 = 'Build root sizes (roots=' + this.l42_1 + ')';
+            this.w42_1.destroy();
+            log('Pairing function construction took: ' + get_timings().s2('build cdf') + 'ms (' + this.s41_1.size + 'B)');
+            this.o42_1 = this.t42_1.p() / 2 | 0;
+            this.z41_1 = Companion_instance_60.g3y(imul(this.o42_1, 4), 140);
+            this.t41_1 = packStruct(listOf_0([0, this.h42_1, this.v42_1, this.u42_1, 65535, 2000000]), [Companion_instance_60.w3z(this.t42_1)]);
+            this.q42_1 = get_timings();
+            this.p42_1 = 'build root sizes';
+            this.r42_1 = 'Build root sizes (roots=' + this.o42_1 + ')';
             this.d9_1 = 13;
             suspendResult = awaitGPUQueue(this);
             if (suspendResult === get_COROUTINE_SUSPENDED()) {
@@ -62114,8 +62231,8 @@ if (typeof String.prototype.startsWith === 'undefined') {
             this.d9_1 = 14;
             continue $sm;
           case 14:
-            this.p42_1 = Monotonic_instance.zd();
-            get_build_root_sizes().h3y([this.t41_1, this.o41_1, this.n41_1, this.p41_1, this.j42_1, this.w41_1, this.q41_1]).k3y((this.l42_1 + 255 | 0) / 256 | 0);
+            this.s42_1 = Monotonic_instance.zd();
+            get_build_root_sizes().i3y([this.w41_1, this.r41_1, this.q41_1, this.s41_1, this.m42_1, this.z41_1, this.t41_1]).l3y((this.o42_1 + 255 | 0) / 256 | 0);
             this.d9_1 = 15;
             suspendResult = awaitGPUQueue(this);
             if (suspendResult === get_COROUTINE_SUSPENDED()) {
@@ -62127,18 +62244,18 @@ if (typeof String.prototype.startsWith === 'undefined') {
             this.d9_1 = 16;
             continue $sm;
           case 16:
-            var ms_1 = convertToInt(_Duration___get_inWholeMilliseconds__impl__msfiry(ValueTimeMark__elapsedNow_impl_eonqvs(this.p42_1)));
-            log(this.o42_1 + ' in ' + ms_1 + 'ms');
-            var this_7 = this.n42_1;
-            var key_1 = this.m42_1;
+            var ms_1 = convertToInt(_Duration___get_inWholeMilliseconds__impl__msfiry(ValueTimeMark__elapsedNow_impl_eonqvs(this.s42_1)));
+            log(this.r42_1 + ' in ' + ms_1 + 'ms');
+            var this_7 = this.q42_1;
+            var key_1 = this.p42_1;
             this_7.i5(key_1, ms_1);
             var rootCDFTime = Monotonic_instance.zd();
-            this.v41_1 = Companion_instance_60.z47(this.w41_1, this.l42_1);
+            this.y41_1 = Companion_instance_60.c48(this.z41_1, this.o42_1);
             mark_0('prefix root cdf', new ValueTimeMark(rootCDFTime));
-            log('Built root CDF in ' + get_timings().s2('prefix root cdf') + 'ms (' + this.v41_1.size + 'B)');
-            this.k42_1 = Monotonic_instance.zd();
+            log('Built root CDF in ' + get_timings().s2('prefix root cdf') + 'ms (' + this.y41_1.size + 'B)');
+            this.n42_1 = Monotonic_instance.zd();
             this.d9_1 = 17;
-            suspendResult = intersectionPipeline$langIntSize(this.l42_1, this.w41_1, this.v41_1, this);
+            suspendResult = intersectionPipeline$langIntSize(this.o42_1, this.z41_1, this.y41_1, this);
             if (suspendResult === get_COROUTINE_SUSPENDED()) {
               return suspendResult;
             }
@@ -62146,17 +62263,17 @@ if (typeof String.prototype.startsWith === 'undefined') {
             continue $sm;
           case 17:
             var langIntSize = suspendResult;
-            mark_0('read lang size', new ValueTimeMark(this.k42_1));
+            mark_0('read lang size', new ValueTimeMark(this.n42_1));
             var maxSamples = !(get_ngrams() == null) ? new Long(2000000, 0) : new Long(40000, 0);
             var tmp_4 = this;
-            tmp_4.d42_1 = convertToInt(compare(maxSamples, langIntSize) <= 0 ? maxSamples : langIntSize);
-            var pct = this.d42_1 * 100.0 / coerceAtLeast_0(toNumber(langIntSize), 1.0);
-            log('Language saturation: ' + pct + '% (' + this.d42_1 + '/' + langIntSize.toString() + '), maxRepairLen=' + this.e42_1);
-            Companion_instance_60.u3z(this.q41_1, 5, this.d42_1);
-            this.x41_1 = Companion_instance_60.f3y(imul(imul(this.d42_1, this.e42_1), 4), 140);
-            this.g42_1 = get_timings();
-            this.f42_1 = 'enumerate';
-            this.h42_1 = 'Enumerate';
+            tmp_4.g42_1 = convertToInt(compare(maxSamples, langIntSize) <= 0 ? maxSamples : langIntSize);
+            var pct = this.g42_1 * 100.0 / coerceAtLeast_0(toNumber(langIntSize), 1.0);
+            log('Language saturation: ' + pct + '% (' + this.g42_1 + '/' + langIntSize.toString() + '), maxRepairLen=' + this.h42_1);
+            Companion_instance_60.x3z(this.t41_1, 5, this.g42_1);
+            this.a42_1 = Companion_instance_60.g3y(imul(imul(this.g42_1, this.h42_1), 4), 140);
+            this.j42_1 = get_timings();
+            this.i42_1 = 'enumerate';
+            this.k42_1 = 'Enumerate';
             this.d9_1 = 18;
             suspendResult = awaitGPUQueue(this);
             if (suspendResult === get_COROUTINE_SUSPENDED()) {
@@ -62168,8 +62285,8 @@ if (typeof String.prototype.startsWith === 'undefined') {
             this.d9_1 = 19;
             continue $sm;
           case 19:
-            this.i42_1 = Monotonic_instance.zd();
-            get_enum_words_wor().h3y([this.t41_1, this.o41_1, this.n41_1, this.m41_1, this.p41_1, this.j42_1, this.q41_1, this.w41_1, this.v41_1, this.x41_1]).v3z(this.d42_1);
+            this.l42_1 = Monotonic_instance.zd();
+            get_enum_words_wor().i3y([this.w41_1, this.r41_1, this.q41_1, this.p41_1, this.s41_1, this.m42_1, this.t41_1, this.z41_1, this.y41_1, this.a42_1]).y3z(this.g42_1);
             this.d9_1 = 20;
             suspendResult = awaitGPUQueue(this);
             if (suspendResult === get_COROUTINE_SUSPENDED()) {
@@ -62181,17 +62298,17 @@ if (typeof String.prototype.startsWith === 'undefined') {
             this.d9_1 = 21;
             continue $sm;
           case 21:
-            var ms_2 = convertToInt(_Duration___get_inWholeMilliseconds__impl__msfiry(ValueTimeMark__elapsedNow_impl_eonqvs(this.i42_1)));
-            log(this.h42_1 + ' in ' + ms_2 + 'ms');
-            var this_8 = this.g42_1;
-            var key_2 = this.f42_1;
+            var ms_2 = convertToInt(_Duration___get_inWholeMilliseconds__impl__msfiry(ValueTimeMark__elapsedNow_impl_eonqvs(this.l42_1)));
+            log(this.k42_1 + ' in ' + ms_2 + 'ms');
+            var this_8 = this.j42_1;
+            var key_2 = this.i42_1;
             this_8.i5(key_2, ms_2);
-            log('Enumerated ' + this.d42_1 + ' samples in ' + get_timings().s2('enumerate') + 'ms (' + this.x41_1.size + 'B)');
-            this.b42_1 = Monotonic_instance.zd();
-            var decoderTopK = !(this.k41_1 == null) ? 1000 : 290;
+            log('Enumerated ' + this.g42_1 + ' samples in ' + get_timings().s2('enumerate') + 'ms (' + this.a42_1.size + 'B)');
+            this.e42_1 = Monotonic_instance.zd();
+            var decoderTopK = !(this.n41_1 == null) ? 1000 : 290;
             if (!(get_wdfa() == null)) {
               this.d9_1 = 24;
-              suspendResult = wdfaDecoder(this.x41_1, ensureNotNull(get_wdfa()), this.e42_1, this.g41_1, this.d42_1, decoderTopK, this);
+              suspendResult = wdfaDecoder(this.a42_1, ensureNotNull(get_wdfa()), this.h42_1, this.j41_1, this.g42_1, decoderTopK, this);
               if (suspendResult === get_COROUTINE_SUSPENDED()) {
                 return suspendResult;
               }
@@ -62199,14 +62316,14 @@ if (typeof String.prototype.startsWith === 'undefined') {
             } else {
               if (!(get_ngrams() == null)) {
                 this.d9_1 = 23;
-                suspendResult = ngramDecoder(this.x41_1, ensureNotNull(get_ngrams()), this.e42_1, this.g41_1, this.d42_1, decoderTopK, this);
+                suspendResult = ngramDecoder(this.a42_1, ensureNotNull(get_ngrams()), this.h42_1, this.j41_1, this.g42_1, decoderTopK, this);
                 if (suspendResult === get_COROUTINE_SUSPENDED()) {
                   return suspendResult;
                 }
                 continue $sm;
               } else {
                 this.d9_1 = 22;
-                suspendResult = uniformDecoder(this.x41_1, this.g41_1, this.e42_1, this.d42_1, this);
+                suspendResult = uniformDecoder(this.a42_1, this.j41_1, this.h42_1, this.g42_1, this);
                 if (suspendResult === get_COROUTINE_SUSPENDED()) {
                   return suspendResult;
                 }
@@ -62215,31 +62332,31 @@ if (typeof String.prototype.startsWith === 'undefined') {
             }
 
           case 22:
-            this.c42_1 = suspendResult;
+            this.f42_1 = suspendResult;
             this.d9_1 = 25;
             continue $sm;
           case 23:
-            this.c42_1 = suspendResult;
+            this.f42_1 = suspendResult;
             this.d9_1 = 25;
             continue $sm;
           case 24:
-            this.c42_1 = suspendResult;
+            this.f42_1 = suspendResult;
             this.d9_1 = 25;
             continue $sm;
           case 25:
-            var result = this.c42_1;
-            mark_0('decode', new ValueTimeMark(this.b42_1));
-            if (!(this.k41_1 == null)) {
-              this.a42_1 = result.t3f(1000);
-              this.z41_1 = Monotonic_instance.zd();
+            var result = this.f42_1;
+            mark_0('decode', new ValueTimeMark(this.e42_1));
+            if (!(this.n41_1 == null)) {
+              this.d42_1 = result.t3f(1000);
+              this.c42_1 = Monotonic_instance.zd();
               this.d9_1 = 26;
-              suspendResult = RepairReranker_getInstance().l4c(this.k41_1, this.a42_1, this);
+              suspendResult = RepairReranker_getInstance().o4c(this.n41_1, this.d42_1, this);
               if (suspendResult === get_COROUTINE_SUSPENDED()) {
                 return suspendResult;
               }
               continue $sm;
             } else {
-              this.y41_1 = result;
+              this.b42_1 = result;
               this.d9_1 = 27;
               continue $sm;
             }
@@ -62247,14 +62364,14 @@ if (typeof String.prototype.startsWith === 'undefined') {
           case 26:
             var this_9 = suspendResult;
             var tmp_5 = this;
-            var this_10 = this.a42_1.u3f(this_9);
-            mark_0('rerank', new ValueTimeMark(this.z41_1));
-            tmp_5.y41_1 = this_10;
+            var this_10 = this.d42_1.u3f(this_9);
+            mark_0('rerank', new ValueTimeMark(this.c42_1));
+            tmp_5.b42_1 = this_10;
             this.d9_1 = 27;
             continue $sm;
           case 27:
-            var rankedResults = this.y41_1;
-            destroyAll([this.x41_1, this.w41_1, this.v41_1, this.u41_1, this.t41_1, this.s41_1, this.r41_1, this.q41_1, this.p41_1, this.o41_1, this.n41_1, this.m41_1]);
+            var rankedResults = this.b42_1;
+            destroyAll([this.a42_1, this.z41_1, this.y41_1, this.x41_1, this.w41_1, this.v41_1, this.u41_1, this.t41_1, this.s41_1, this.r41_1, this.q41_1, this.p41_1]);
             return rankedResults;
           case 28:
             throw this.g9_1;
@@ -62272,7 +62389,7 @@ if (typeof String.prototype.startsWith === 'undefined') {
   };
   function $readJSIntArrayCOROUTINE$(_this__u8e3s4, resultContinuation) {
     CoroutineImpl.call(this, resultContinuation);
-    this.r43_1 = _this__u8e3s4;
+    this.u43_1 = _this__u8e3s4;
   }
   protoOf($readJSIntArrayCOROUTINE$).l9 = function () {
     var suspendResult = this.f9_1;
@@ -62282,14 +62399,14 @@ if (typeof String.prototype.startsWith === 'undefined') {
         switch (tmp) {
           case 0:
             this.e9_1 = 2;
-            this.s43_1 = Companion_instance_60.f3y(numberToInt(this.r43_1.size), 9);
+            this.v43_1 = Companion_instance_60.g3y(numberToInt(this.u43_1.size), 9);
             var cmd = get_gpu().createCommandEncoder();
-            cmd.copyBufferToBuffer(this.r43_1, 0.0, this.s43_1, 0.0, this.r43_1.size);
+            cmd.copyBufferToBuffer(this.u43_1, 0.0, this.v43_1, 0.0, this.u43_1.size);
             var tmp_0 = get_gpu().queue;
             var this_0 = [cmd.finish()];
             tmp_0.submit(this_0);
             this.d9_1 = 1;
-            var this_1 = this.s43_1.mapAsync(GPUMapMode.READ);
+            var this_1 = this.v43_1.mapAsync(GPUMapMode.READ);
             suspendResult = await_0(this_1, this);
             if (suspendResult === get_COROUTINE_SUSPENDED()) {
               return suspendResult;
@@ -62297,10 +62414,10 @@ if (typeof String.prototype.startsWith === 'undefined') {
 
             continue $sm;
           case 1:
-            var mapped = this.s43_1.getMappedRange();
+            var mapped = this.v43_1.getMappedRange();
             var copied = mapped.slice(0, mapped.byteLength);
-            this.s43_1.unmap();
-            this.s43_1.destroy();
+            this.v43_1.unmap();
+            this.v43_1.destroy();
             return new Int32Array(copied);
           case 2:
             throw this.g9_1;
@@ -62318,10 +62435,10 @@ if (typeof String.prototype.startsWith === 'undefined') {
   };
   function $uniformDecoderCOROUTINE$(outBuf, cfg, maxRepairLen, samplesToDecode, resultContinuation) {
     CoroutineImpl.call(this, resultContinuation);
-    this.b44_1 = outBuf;
-    this.c44_1 = cfg;
-    this.d44_1 = maxRepairLen;
-    this.e44_1 = samplesToDecode;
+    this.e44_1 = outBuf;
+    this.f44_1 = cfg;
+    this.g44_1 = maxRepairLen;
+    this.h44_1 = samplesToDecode;
   }
   protoOf($uniformDecoderCOROUTINE$).l9 = function () {
     var suspendResult = this.f9_1;
@@ -62332,7 +62449,7 @@ if (typeof String.prototype.startsWith === 'undefined') {
           case 0:
             this.e9_1 = 2;
             this.d9_1 = 1;
-            suspendResult = readJSIntArray(this.b44_1, this);
+            suspendResult = readJSIntArray(this.e44_1, this);
             if (suspendResult === get_COROUTINE_SUSPENDED()) {
               return suspendResult;
             }
@@ -62340,9 +62457,9 @@ if (typeof String.prototype.startsWith === 'undefined') {
             continue $sm;
           case 1:
             var ARGUMENT = suspendResult;
-            var this_0 = this.e44_1;
+            var this_0 = this.h44_1;
             log('Using uniform decoder...');
-            return decodePackets(ARGUMENT, this.c44_1, this.d44_1, this_0);
+            return decodePackets(ARGUMENT, this.f44_1, this.g44_1, this_0);
           case 2:
             throw this.g9_1;
         }
@@ -62359,12 +62476,12 @@ if (typeof String.prototype.startsWith === 'undefined') {
   };
   function $ngramDecoderCOROUTINE$(outBuf, ngrams, maxRepairLen, cfg, samplesToDecode, k, resultContinuation) {
     CoroutineImpl.call(this, resultContinuation);
-    this.n44_1 = outBuf;
-    this.o44_1 = ngrams;
-    this.p44_1 = maxRepairLen;
-    this.q44_1 = cfg;
-    this.r44_1 = samplesToDecode;
-    this.s44_1 = k;
+    this.q44_1 = outBuf;
+    this.r44_1 = ngrams;
+    this.s44_1 = maxRepairLen;
+    this.t44_1 = cfg;
+    this.u44_1 = samplesToDecode;
+    this.v44_1 = k;
   }
   protoOf($ngramDecoderCOROUTINE$).l9 = function () {
     var suspendResult = this.f9_1;
@@ -62376,7 +62493,7 @@ if (typeof String.prototype.startsWith === 'undefined') {
             this.e9_1 = 2;
             log('Using n-gram decoder...');
             this.d9_1 = 1;
-            suspendResult = scoreSelectGather(this.n44_1, this.o44_1, get_markov_score(), this.r44_1, this.p44_1, this.s44_1, VOID, this);
+            suspendResult = scoreSelectGather(this.q44_1, this.r44_1, get_markov_score(), this.u44_1, this.s44_1, this.v44_1, VOID, this);
             if (suspendResult === get_COROUTINE_SUSPENDED()) {
               return suspendResult;
             }
@@ -62384,7 +62501,7 @@ if (typeof String.prototype.startsWith === 'undefined') {
             continue $sm;
           case 1:
             var topK = suspendResult;
-            return decodePackets(topK, this.q44_1, this.p44_1);
+            return decodePackets(topK, this.t44_1, this.s44_1);
           case 2:
             throw this.g9_1;
         }
@@ -62401,12 +62518,12 @@ if (typeof String.prototype.startsWith === 'undefined') {
   };
   function $wdfaDecoderCOROUTINE$(outBuf, wdfa, maxRepairLen, cfg, samplesToDecode, k, resultContinuation) {
     CoroutineImpl.call(this, resultContinuation);
-    this.b45_1 = outBuf;
-    this.c45_1 = wdfa;
-    this.d45_1 = maxRepairLen;
-    this.e45_1 = cfg;
-    this.f45_1 = samplesToDecode;
-    this.g45_1 = k;
+    this.e45_1 = outBuf;
+    this.f45_1 = wdfa;
+    this.g45_1 = maxRepairLen;
+    this.h45_1 = cfg;
+    this.i45_1 = samplesToDecode;
+    this.j45_1 = k;
   }
   protoOf($wdfaDecoderCOROUTINE$).l9 = function () {
     var suspendResult = this.f9_1;
@@ -62418,7 +62535,7 @@ if (typeof String.prototype.startsWith === 'undefined') {
             this.e9_1 = 2;
             log('Using WDFA decoder...');
             this.d9_1 = 1;
-            suspendResult = scoreSelectGather(this.b45_1, this.c45_1, get_wdfa_score(), this.f45_1, this.d45_1, this.g45_1, 'WDFA score', this);
+            suspendResult = scoreSelectGather(this.e45_1, this.f45_1, get_wdfa_score(), this.i45_1, this.g45_1, this.j45_1, 'WDFA score', this);
             if (suspendResult === get_COROUTINE_SUSPENDED()) {
               return suspendResult;
             }
@@ -62426,7 +62543,7 @@ if (typeof String.prototype.startsWith === 'undefined') {
             continue $sm;
           case 1:
             var topK = suspendResult;
-            return decodePackets(topK, this.e45_1, this.d45_1);
+            return decodePackets(topK, this.h45_1, this.g45_1);
           case 2:
             throw this.g9_1;
         }
@@ -62443,13 +62560,13 @@ if (typeof String.prototype.startsWith === 'undefined') {
   };
   function $scoreSelectGatherCOROUTINE$(packets, model, scoreShader, maxSamples, stride, k, profileLabel, resultContinuation) {
     CoroutineImpl.call(this, resultContinuation);
-    this.p45_1 = packets;
-    this.q45_1 = model;
-    this.r45_1 = scoreShader;
-    this.s45_1 = maxSamples;
-    this.t45_1 = stride;
-    this.u45_1 = k;
-    this.v45_1 = profileLabel;
+    this.s45_1 = packets;
+    this.t45_1 = model;
+    this.u45_1 = scoreShader;
+    this.v45_1 = maxSamples;
+    this.w45_1 = stride;
+    this.x45_1 = k;
+    this.y45_1 = profileLabel;
   }
   protoOf($scoreSelectGatherCOROUTINE$).l9 = function () {
     var suspendResult = this.f9_1;
@@ -62459,56 +62576,56 @@ if (typeof String.prototype.startsWith === 'undefined') {
         switch (tmp) {
           case 0:
             this.e9_1 = 5;
-            this.a46_1 = Monotonic_instance.zd();
+            this.d46_1 = Monotonic_instance.zd();
             var threads = 65535;
             var tmp_0 = this;
             var tmp_1 = Companion_instance_60;
-            var elements = new Int32Array([this.s45_1, this.u45_1, this.t45_1, threads]);
-            tmp_0.z45_1 = tmp_1.l3y(elements, 72);
+            var elements = new Int32Array([this.v45_1, this.x45_1, this.w45_1, threads]);
+            tmp_0.c46_1 = tmp_1.m3y(elements, 72);
             this.d9_1 = 1;
-            var tmp0_elvis_lhs = this.v45_1;
+            var tmp0_elvis_lhs = this.y45_1;
             var tmp_2 = tmp0_elvis_lhs == null ? 'Score' : tmp0_elvis_lhs;
-            suspendResult = scoreSelectGather$dispatch(this.v45_1, tmp_2, scoreSelectGather$lambda(this.r45_1, this.p45_1, this.q45_1, this.z45_1, this.s45_1), this);
+            suspendResult = scoreSelectGather$dispatch(this.y45_1, tmp_2, scoreSelectGather$lambda(this.u45_1, this.s45_1, this.t45_1, this.c46_1, this.v45_1), this);
             if (suspendResult === get_COROUTINE_SUSPENDED()) {
               return suspendResult;
             }
 
             continue $sm;
           case 1:
-            var totalGroups = (this.s45_1 + 255 | 0) / 256 | 0;
+            var totalGroups = (this.v45_1 + 255 | 0) / 256 | 0;
             var tmp_3 = this;
             var tmp_4 = Companion_instance_60;
             var tmp_5 = 0;
-            var tmp_6 = this.u45_1;
+            var tmp_6 = this.x45_1;
             var tmp_7 = new Int32Array(tmp_6);
             while (tmp_5 < tmp_6) {
               tmp_7[tmp_5] = -1;
               tmp_5 = tmp_5 + 1 | 0;
             }
 
-            tmp_3.y45_1 = tmp_4.l3y(tmp_7, 140);
+            tmp_3.b46_1 = tmp_4.m3y(tmp_7, 140);
             var tmp_8 = this;
             var tmp_9 = Companion_instance_60;
             var tmp_10 = 0;
-            var tmp_11 = this.u45_1;
+            var tmp_11 = this.x45_1;
             var tmp_12 = new Int32Array(tmp_11);
             while (tmp_10 < tmp_11) {
               tmp_12[tmp_10] = 2147483647;
               tmp_10 = tmp_10 + 1 | 0;
             }
 
-            tmp_8.x45_1 = tmp_9.l3y(tmp_12, 140);
+            tmp_8.a46_1 = tmp_9.m3y(tmp_12, 140);
             this.d9_1 = 2;
-            suspendResult = scoreSelectGather$dispatch(this.v45_1, 'Select top-k', scoreSelectGather$lambda_0(this.z45_1, this.p45_1, this.y45_1, this.x45_1, totalGroups), this);
+            suspendResult = scoreSelectGather$dispatch(this.y45_1, 'Select top-k', scoreSelectGather$lambda_0(this.c46_1, this.s45_1, this.b46_1, this.a46_1, totalGroups), this);
             if (suspendResult === get_COROUTINE_SUSPENDED()) {
               return suspendResult;
             }
 
             continue $sm;
           case 2:
-            this.w45_1 = Companion_instance_60.f3y(imul(imul(this.u45_1, this.t45_1), 4), 140);
+            this.z45_1 = Companion_instance_60.g3y(imul(imul(this.x45_1, this.w45_1), 4), 140);
             this.d9_1 = 3;
-            suspendResult = scoreSelectGather$dispatch(this.v45_1, 'Gather top-k', scoreSelectGather$lambda_1(this.z45_1, this.p45_1, this.y45_1, this.w45_1, this.u45_1), this);
+            suspendResult = scoreSelectGather$dispatch(this.y45_1, 'Gather top-k', scoreSelectGather$lambda_1(this.c46_1, this.s45_1, this.b46_1, this.z45_1, this.x45_1), this);
             if (suspendResult === get_COROUTINE_SUSPENDED()) {
               return suspendResult;
             }
@@ -62516,7 +62633,7 @@ if (typeof String.prototype.startsWith === 'undefined') {
             continue $sm;
           case 3:
             this.d9_1 = 4;
-            suspendResult = readJSIntArray(this.w45_1, this);
+            suspendResult = readJSIntArray(this.z45_1, this);
             if (suspendResult === get_COROUTINE_SUSPENDED()) {
               return suspendResult;
             }
@@ -62524,9 +62641,9 @@ if (typeof String.prototype.startsWith === 'undefined') {
             continue $sm;
           case 4:
             var topK = suspendResult;
-            var tmp1_elvis_lhs = this.v45_1;
-            log((tmp1_elvis_lhs == null ? 'Score' : tmp1_elvis_lhs) + '/select/gather read ' + topK.length + ' = ' + this.u45_1 + 'x' + this.t45_1 + 'x4 bytes in ' + Duration__toString_impl_8d916b(ValueTimeMark__elapsedNow_impl_eonqvs(this.a46_1)));
-            destroyAll([this.z45_1, this.y45_1, this.x45_1, this.w45_1]);
+            var tmp1_elvis_lhs = this.y45_1;
+            log((tmp1_elvis_lhs == null ? 'Score' : tmp1_elvis_lhs) + '/select/gather read ' + topK.length + ' = ' + this.x45_1 + 'x' + this.w45_1 + 'x4 bytes in ' + Duration__toString_impl_8d916b(ValueTimeMark__elapsedNow_impl_eonqvs(this.d46_1)));
+            destroyAll([this.c46_1, this.b46_1, this.a46_1, this.z45_1]);
             return topK;
           case 5:
             throw this.g9_1;
@@ -62579,9 +62696,9 @@ if (typeof String.prototype.startsWith === 'undefined') {
   };
   function $intersectionPipeline$langIntSizeCOROUTINE$(numRoots, rootSizes, rootCDF, resultContinuation) {
     CoroutineImpl.call(this, resultContinuation);
-    this.p4b_1 = numRoots;
-    this.q4b_1 = rootSizes;
-    this.r4b_1 = rootCDF;
+    this.s4b_1 = numRoots;
+    this.t4b_1 = rootSizes;
+    this.u4b_1 = rootCDF;
   }
   protoOf($intersectionPipeline$langIntSizeCOROUTINE$).l9 = function () {
     var suspendResult = this.f9_1;
@@ -62591,46 +62708,46 @@ if (typeof String.prototype.startsWith === 'undefined') {
         switch (tmp) {
           case 0:
             this.e9_1 = 5;
-            this.u4b_1 = this.p4b_1 - 1 | 0;
-            if (this.p4b_1 > 0) {
+            this.x4b_1 = this.s4b_1 - 1 | 0;
+            if (this.s4b_1 > 0) {
               this.d9_1 = 1;
-              suspendResult = Companion_instance_60.q3z(this.q4b_1, listOf(this.u4b_1), this);
+              suspendResult = Companion_instance_60.t3z(this.t4b_1, listOf(this.x4b_1), this);
               if (suspendResult === get_COROUTINE_SUSPENDED()) {
                 return suspendResult;
               }
               continue $sm;
             } else {
-              this.v4b_1 = 0;
+              this.y4b_1 = 0;
               this.d9_1 = 2;
               continue $sm;
             }
 
           case 1:
-            this.v4b_1 = suspendResult.s(0);
+            this.y4b_1 = suspendResult.s(0);
             this.d9_1 = 2;
             continue $sm;
           case 2:
-            this.s4b_1 = this.v4b_1;
-            if (this.p4b_1 > 0) {
+            this.v4b_1 = this.y4b_1;
+            if (this.s4b_1 > 0) {
               this.d9_1 = 3;
-              suspendResult = Companion_instance_60.q3z(this.r4b_1, listOf(this.u4b_1), this);
+              suspendResult = Companion_instance_60.t3z(this.u4b_1, listOf(this.x4b_1), this);
               if (suspendResult === get_COROUTINE_SUSPENDED()) {
                 return suspendResult;
               }
               continue $sm;
             } else {
-              this.t4b_1 = 0;
+              this.w4b_1 = 0;
               this.d9_1 = 4;
               continue $sm;
             }
 
           case 3:
-            this.t4b_1 = suspendResult.s(0);
+            this.w4b_1 = suspendResult.s(0);
             this.d9_1 = 4;
             continue $sm;
           case 4:
-            var lastCDF = this.t4b_1;
-            return this.p4b_1 > 0 ? add(intersectionPipeline$langIntSize$u(lastCDF), intersectionPipeline$langIntSize$u(this.s4b_1)) : new Long(0, 0);
+            var lastCDF = this.w4b_1;
+            return this.s4b_1 > 0 ? add(intersectionPipeline$langIntSize$u(lastCDF), intersectionPipeline$langIntSize$u(this.v4b_1)) : new Long(0, 0);
           case 5:
             throw this.g9_1;
         }
@@ -62647,9 +62764,9 @@ if (typeof String.prototype.startsWith === 'undefined') {
   };
   function $scoreSelectGather$dispatchCOROUTINE$($profileLabel, label, block, resultContinuation) {
     CoroutineImpl.call(this, resultContinuation);
-    this.e4c_1 = $profileLabel;
-    this.f4c_1 = label;
-    this.g4c_1 = block;
+    this.h4c_1 = $profileLabel;
+    this.i4c_1 = label;
+    this.j4c_1 = block;
   }
   protoOf($scoreSelectGather$dispatchCOROUTINE$).l9 = function () {
     var suspendResult = this.f9_1;
@@ -62659,15 +62776,15 @@ if (typeof String.prototype.startsWith === 'undefined') {
         switch (tmp) {
           case 0:
             this.e9_1 = 6;
-            if (this.e4c_1 == null) {
-              this.h4c_1 = this.g4c_1();
+            if (this.h4c_1 == null) {
+              this.k4c_1 = this.j4c_1();
               this.d9_1 = 5;
               continue $sm;
             } else {
-              var tmp0 = this.f4c_1;
-              var tmp2 = this.g4c_1;
-              this.i4c_1 = tmp0;
-              this.k4c_1 = tmp2;
+              var tmp0 = this.i4c_1;
+              var tmp2 = this.j4c_1;
+              this.l4c_1 = tmp0;
+              this.n4c_1 = tmp2;
               this.d9_1 = 1;
               suspendResult = awaitGPUQueue(this);
               if (suspendResult === get_COROUTINE_SUSPENDED()) {
@@ -62680,8 +62797,8 @@ if (typeof String.prototype.startsWith === 'undefined') {
             this.d9_1 = 2;
             continue $sm;
           case 2:
-            this.j4c_1 = Monotonic_instance.zd();
-            this.k4c_1();
+            this.m4c_1 = Monotonic_instance.zd();
+            this.n4c_1();
             this.d9_1 = 3;
             suspendResult = awaitGPUQueue(this);
             if (suspendResult === get_COROUTINE_SUSPENDED()) {
@@ -62693,9 +62810,9 @@ if (typeof String.prototype.startsWith === 'undefined') {
             this.d9_1 = 4;
             continue $sm;
           case 4:
-            var ms = convertToInt(_Duration___get_inWholeMilliseconds__impl__msfiry(ValueTimeMark__elapsedNow_impl_eonqvs(this.j4c_1)));
-            log(this.i4c_1 + ' in ' + ms + 'ms');
-            this.h4c_1 = ms;
+            var ms = convertToInt(_Duration___get_inWholeMilliseconds__impl__msfiry(ValueTimeMark__elapsedNow_impl_eonqvs(this.m4c_1)));
+            log(this.l4c_1 + ' in ' + ms + 'ms');
+            this.k4c_1 = ms;
             this.d9_1 = 5;
             continue $sm;
           case 5:
@@ -62852,26 +62969,26 @@ if (typeof String.prototype.startsWith === 'undefined') {
     }
   }
   function PyCompileResult(output) {
-    this.m4c_1 = output;
+    this.p4c_1 = output;
   }
   protoOf(PyCompileResult).toString = function () {
-    return 'PyCompileResult(output=' + this.m4c_1 + ')';
+    return 'PyCompileResult(output=' + this.p4c_1 + ')';
   };
   protoOf(PyCompileResult).hashCode = function () {
-    return getStringHashCode(this.m4c_1);
+    return getStringHashCode(this.p4c_1);
   };
   protoOf(PyCompileResult).equals = function (other) {
     if (this === other)
       return true;
     if (!(other instanceof PyCompileResult))
       return false;
-    if (!(this.m4c_1 === other.m4c_1))
+    if (!(this.p4c_1 === other.p4c_1))
       return false;
     return true;
   };
   function WebWorkerPool$initCold$slambda$slambda(this$0, $slot, resultContinuation) {
-    this.v4c_1 = this$0;
-    this.w4c_1 = $slot;
+    this.y4c_1 = this$0;
+    this.z4c_1 = $slot;
     CoroutineImpl.call(this, resultContinuation);
   }
   protoOf(WebWorkerPool$initCold$slambda$slambda).k33 = function ($this$async, $completion) {
@@ -62892,7 +63009,7 @@ if (typeof String.prototype.startsWith === 'undefined') {
           case 0:
             this.e9_1 = 2;
             this.d9_1 = 1;
-            suspendResult = request(this.v4c_1, this.w4c_1, 'init', VOID, VOID, this);
+            suspendResult = request(this.y4c_1, this.z4c_1, 'init', VOID, VOID, this);
             if (suspendResult === get_COROUTINE_SUSPENDED()) {
               return suspendResult;
             }
@@ -62900,7 +63017,7 @@ if (typeof String.prototype.startsWith === 'undefined') {
             continue $sm;
           case 1:
             var ARGUMENT = suspendResult;
-            throwInfraError(this.v4c_1, ARGUMENT, 'Pyodide worker cold init failed');
+            throwInfraError(this.y4c_1, ARGUMENT, 'Pyodide worker cold init failed');
             return Unit_instance;
           case 2:
             throw this.g9_1;
@@ -62917,8 +63034,8 @@ if (typeof String.prototype.startsWith === 'undefined') {
      while (true);
   };
   protoOf(WebWorkerPool$initCold$slambda$slambda).p32 = function ($this$async, completion) {
-    var i = new WebWorkerPool$initCold$slambda$slambda(this.v4c_1, this.w4c_1, completion);
-    i.x4c_1 = $this$async;
+    var i = new WebWorkerPool$initCold$slambda$slambda(this.y4c_1, this.z4c_1, completion);
+    i.a4d_1 = $this$async;
     return i;
   };
   function WebWorkerPool$initCold$slambda$slambda_0(this$0, $slot, resultContinuation) {
@@ -62928,9 +63045,9 @@ if (typeof String.prototype.startsWith === 'undefined') {
     }, 1);
   }
   function WebWorkerPool$tryInitFromSnapshot$slambda$slambda(this$0, $slot, $snapshot, resultContinuation) {
-    this.g4d_1 = this$0;
-    this.h4d_1 = $slot;
-    this.i4d_1 = $snapshot;
+    this.j4d_1 = this$0;
+    this.k4d_1 = $slot;
+    this.l4d_1 = $snapshot;
     CoroutineImpl.call(this, resultContinuation);
   }
   protoOf(WebWorkerPool$tryInitFromSnapshot$slambda$slambda).k33 = function ($this$async, $completion) {
@@ -62951,7 +63068,7 @@ if (typeof String.prototype.startsWith === 'undefined') {
           case 0:
             this.e9_1 = 2;
             this.d9_1 = 1;
-            suspendResult = request(this.g4d_1, this.h4d_1, 'initSnapshot', VOID, this.i4d_1, this);
+            suspendResult = request(this.j4d_1, this.k4d_1, 'initSnapshot', VOID, this.l4d_1, this);
             if (suspendResult === get_COROUTINE_SUSPENDED()) {
               return suspendResult;
             }
@@ -62959,7 +63076,7 @@ if (typeof String.prototype.startsWith === 'undefined') {
             continue $sm;
           case 1:
             var ARGUMENT = suspendResult;
-            throwInfraError(this.g4d_1, ARGUMENT, 'Pyodide snapshot restore failed');
+            throwInfraError(this.j4d_1, ARGUMENT, 'Pyodide snapshot restore failed');
             return Unit_instance;
           case 2:
             throw this.g9_1;
@@ -62976,8 +63093,8 @@ if (typeof String.prototype.startsWith === 'undefined') {
      while (true);
   };
   protoOf(WebWorkerPool$tryInitFromSnapshot$slambda$slambda).p32 = function ($this$async, completion) {
-    var i = new WebWorkerPool$tryInitFromSnapshot$slambda$slambda(this.g4d_1, this.h4d_1, this.i4d_1, completion);
-    i.j4d_1 = $this$async;
+    var i = new WebWorkerPool$tryInitFromSnapshot$slambda$slambda(this.j4d_1, this.k4d_1, this.l4d_1, completion);
+    i.m4d_1 = $this$async;
     return i;
   };
   function WebWorkerPool$tryInitFromSnapshot$slambda$slambda_0(this$0, $slot, $snapshot, resultContinuation) {
@@ -62987,16 +63104,16 @@ if (typeof String.prototype.startsWith === 'undefined') {
     }, 1);
   }
   function Slot(worker) {
-    this.k4d_1 = worker;
+    this.n4d_1 = worker;
     var tmp = this;
     // Inline function 'kotlin.collections.mutableMapOf' call
-    tmp.l4d_1 = LinkedHashMap_init_$Create$();
+    tmp.o4d_1 = LinkedHashMap_init_$Create$();
   }
   function makeWorker($this, url_0) {
     return ((url) => new Worker(url))(url_0);
   }
   function makeSlot($this) {
-    var worker = makeWorker($this, $this.q4d_1);
+    var worker = makeWorker($this, $this.t4d_1);
     // Inline function 'kotlin.also' call
     var this_0 = new Slot(worker);
     worker.onmessage = WebWorkerPool$makeSlot$lambda(this_0);
@@ -63005,7 +63122,7 @@ if (typeof String.prototype.startsWith === 'undefined') {
   }
   function makeSlots($this) {
     var tmp = 0;
-    var tmp_0 = $this.n4d_1;
+    var tmp_0 = $this.q4d_1;
     // Inline function 'kotlin.arrayOfNulls' call
     var tmp_1 = Array(tmp_0);
     while (tmp < tmp_0) {
@@ -63021,13 +63138,13 @@ if (typeof String.prototype.startsWith === 'undefined') {
     while (inductionVariable < last) {
       var element = slots[inductionVariable];
       inductionVariable = inductionVariable + 1 | 0;
-      element.k4d_1.terminate();
+      element.n4d_1.terminate();
     }
   }
   function resetSlots($this) {
-    terminateSlots($this, $this.r4d_1);
-    $this.r4d_1 = makeSlots($this);
-    $this.p4d_1 = 0;
+    terminateSlots($this, $this.u4d_1);
+    $this.u4d_1 = makeSlots($this);
+    $this.s4d_1 = 0;
   }
   function throwInfraError($this, data, context) {
     var tmp = data.infraError;
@@ -63039,26 +63156,26 @@ if (typeof String.prototype.startsWith === 'undefined') {
   function request($this, slot, op, src, snapshot, $completion) {
     src = src === VOID ? null : src;
     snapshot = snapshot === VOID ? null : snapshot;
-    var _unary__edvuaz = $this.o4d_1;
-    $this.o4d_1 = _unary__edvuaz + 1 | 0;
+    var _unary__edvuaz = $this.r4d_1;
+    $this.r4d_1 = _unary__edvuaz + 1 | 0;
     var id = _unary__edvuaz;
     var deferred = CompletableDeferred();
     // Inline function 'kotlin.collections.set' call
-    slot.l4d_1.i5(id, deferred);
+    slot.o4d_1.i5(id, deferred);
     var msg = {};
     msg.id = id;
     msg.op = op;
-    msg.indexURL = $this.m4d_1;
+    msg.indexURL = $this.p4d_1;
     if (!(src == null))
       msg.src = src;
     if (snapshot != null)
       msg.snapshot = snapshot;
-    slot.k4d_1.postMessage(msg);
+    slot.n4d_1.postMessage(msg);
     return deferred.q20($completion);
   }
   function nextWorkerSlot($this) {
-    var slot = $this.r4d_1[$this.p4d_1];
-    $this.p4d_1 = ($this.p4d_1 + 1 | 0) % $this.r4d_1.length | 0;
+    var slot = $this.u4d_1[$this.s4d_1];
+    $this.s4d_1 = ($this.s4d_1 + 1 | 0) % $this.u4d_1.length | 0;
     return slot;
   }
   function initCold($this, $completion) {
@@ -63110,7 +63227,7 @@ if (typeof String.prototype.startsWith === 'undefined') {
       var data = ev.data;
       var tmp = data.id;
       var id = (!(tmp == null) ? typeof tmp === 'number' : false) ? tmp : THROW_CCE();
-      var deferred = $slot.l4d_1.j5(id);
+      var deferred = $slot.o4d_1.j5(id);
       var tmp_0;
       if (!(deferred == null)) {
         var tmp_1 = data.ok;
@@ -63132,8 +63249,8 @@ if (typeof String.prototype.startsWith === 'undefined') {
       } catch ($p) {
         var _unused_var__etf5q3 = $p;
       }
-      var pending = toList_1($slot.l4d_1.u2());
-      $slot.l4d_1.c4();
+      var pending = toList_1($slot.o4d_1.u2());
+      $slot.o4d_1.c4();
       // Inline function 'kotlin.collections.forEach' call
       var _iterator__ex2g4s = pending.m();
       while (_iterator__ex2g4s.n()) {
@@ -63150,17 +63267,17 @@ if (typeof String.prototype.startsWith === 'undefined') {
     };
   }
   function WebWorkerPool$initCold$slambda(this$0, resultContinuation) {
-    this.a4f_1 = this$0;
+    this.d4f_1 = this$0;
     CoroutineImpl.call(this, resultContinuation);
   }
-  protoOf(WebWorkerPool$initCold$slambda).c4f = function ($this$coroutineScope, $completion) {
+  protoOf(WebWorkerPool$initCold$slambda).f4f = function ($this$coroutineScope, $completion) {
     var tmp = this.p32($this$coroutineScope, $completion);
     tmp.f9_1 = Unit_instance;
     tmp.g9_1 = null;
     return tmp.l9();
   };
   protoOf(WebWorkerPool$initCold$slambda).x9 = function (p1, $completion) {
-    return this.c4f((!(p1 == null) ? isInterface(p1, CoroutineScope) : false) ? p1 : THROW_CCE(), $completion);
+    return this.f4f((!(p1 == null) ? isInterface(p1, CoroutineScope) : false) ? p1 : THROW_CCE(), $completion);
   };
   protoOf(WebWorkerPool$initCold$slambda).l9 = function () {
     var suspendResult = this.f9_1;
@@ -63171,14 +63288,14 @@ if (typeof String.prototype.startsWith === 'undefined') {
           case 0:
             this.e9_1 = 2;
             this.d9_1 = 1;
-            var this_0 = this.a4f_1.r4d_1;
+            var this_0 = this.d4f_1.u4d_1;
             var destination = ArrayList_init_$Create$_0(this_0.length);
             var inductionVariable = 0;
             var last = this_0.length;
             while (inductionVariable < last) {
               var item = this_0[inductionVariable];
               inductionVariable = inductionVariable + 1 | 0;
-              destination.g(async(this.b4f_1, VOID, VOID, WebWorkerPool$initCold$slambda$slambda_0(this.a4f_1, item, null)));
+              destination.g(async(this.e4f_1, VOID, VOID, WebWorkerPool$initCold$slambda$slambda_0(this.d4f_1, item, null)));
             }
 
             suspendResult = awaitAll(destination, this);
@@ -63204,29 +63321,29 @@ if (typeof String.prototype.startsWith === 'undefined') {
      while (true);
   };
   protoOf(WebWorkerPool$initCold$slambda).p32 = function ($this$coroutineScope, completion) {
-    var i = new WebWorkerPool$initCold$slambda(this.a4f_1, completion);
-    i.b4f_1 = $this$coroutineScope;
+    var i = new WebWorkerPool$initCold$slambda(this.d4f_1, completion);
+    i.e4f_1 = $this$coroutineScope;
     return i;
   };
   function WebWorkerPool$initCold$slambda_0(this$0, resultContinuation) {
     var i = new WebWorkerPool$initCold$slambda(this$0, resultContinuation);
     return constructCallableReference(function ($this$coroutineScope, $completion) {
-      return i.c4f($this$coroutineScope, $completion);
+      return i.f4f($this$coroutineScope, $completion);
     }, 1);
   }
   function WebWorkerPool$tryInitFromSnapshot$slambda(this$0, $snapshot, resultContinuation) {
-    this.l4f_1 = this$0;
-    this.m4f_1 = $snapshot;
+    this.o4f_1 = this$0;
+    this.p4f_1 = $snapshot;
     CoroutineImpl.call(this, resultContinuation);
   }
-  protoOf(WebWorkerPool$tryInitFromSnapshot$slambda).c4f = function ($this$coroutineScope, $completion) {
+  protoOf(WebWorkerPool$tryInitFromSnapshot$slambda).f4f = function ($this$coroutineScope, $completion) {
     var tmp = this.p32($this$coroutineScope, $completion);
     tmp.f9_1 = Unit_instance;
     tmp.g9_1 = null;
     return tmp.l9();
   };
   protoOf(WebWorkerPool$tryInitFromSnapshot$slambda).x9 = function (p1, $completion) {
-    return this.c4f((!(p1 == null) ? isInterface(p1, CoroutineScope) : false) ? p1 : THROW_CCE(), $completion);
+    return this.f4f((!(p1 == null) ? isInterface(p1, CoroutineScope) : false) ? p1 : THROW_CCE(), $completion);
   };
   protoOf(WebWorkerPool$tryInitFromSnapshot$slambda).l9 = function () {
     var suspendResult = this.f9_1;
@@ -63237,14 +63354,14 @@ if (typeof String.prototype.startsWith === 'undefined') {
           case 0:
             this.e9_1 = 2;
             this.d9_1 = 1;
-            var this_0 = this.l4f_1.r4d_1;
+            var this_0 = this.o4f_1.u4d_1;
             var destination = ArrayList_init_$Create$_0(this_0.length);
             var inductionVariable = 0;
             var last = this_0.length;
             while (inductionVariable < last) {
               var item = this_0[inductionVariable];
               inductionVariable = inductionVariable + 1 | 0;
-              destination.g(async(this.n4f_1, VOID, VOID, WebWorkerPool$tryInitFromSnapshot$slambda$slambda_0(this.l4f_1, item, this.m4f_1, null)));
+              destination.g(async(this.q4f_1, VOID, VOID, WebWorkerPool$tryInitFromSnapshot$slambda$slambda_0(this.o4f_1, item, this.p4f_1, null)));
             }
 
             suspendResult = awaitAll(destination, this);
@@ -63270,14 +63387,14 @@ if (typeof String.prototype.startsWith === 'undefined') {
      while (true);
   };
   protoOf(WebWorkerPool$tryInitFromSnapshot$slambda).p32 = function ($this$coroutineScope, completion) {
-    var i = new WebWorkerPool$tryInitFromSnapshot$slambda(this.l4f_1, this.m4f_1, completion);
-    i.n4f_1 = $this$coroutineScope;
+    var i = new WebWorkerPool$tryInitFromSnapshot$slambda(this.o4f_1, this.p4f_1, completion);
+    i.q4f_1 = $this$coroutineScope;
     return i;
   };
   function WebWorkerPool$tryInitFromSnapshot$slambda_0(this$0, $snapshot, resultContinuation) {
     var i = new WebWorkerPool$tryInitFromSnapshot$slambda(this$0, $snapshot, resultContinuation);
     return constructCallableReference(function ($this$coroutineScope, $completion) {
-      return i.c4f($this$coroutineScope, $completion);
+      return i.f4f($this$coroutineScope, $completion);
     }, 1);
   }
   function WebWorkerPool$normalizeBlackOutput$lambda(it) {
@@ -63286,7 +63403,7 @@ if (typeof String.prototype.startsWith === 'undefined') {
   }
   function $initCOROUTINE$(_this__u8e3s4, resultContinuation) {
     CoroutineImpl.call(this, resultContinuation);
-    this.w4f_1 = _this__u8e3s4;
+    this.z4f_1 = _this__u8e3s4;
   }
   protoOf($initCOROUTINE$).l9 = function () {
     var suspendResult = this.f9_1;
@@ -63297,7 +63414,7 @@ if (typeof String.prototype.startsWith === 'undefined') {
           case 0:
             this.e9_1 = 4;
             this.d9_1 = 1;
-            suspendResult = tryInitFromSnapshot(this.w4f_1, this);
+            suspendResult = tryInitFromSnapshot(this.z4f_1, this);
             if (suspendResult === get_COROUTINE_SUSPENDED()) {
               return suspendResult;
             }
@@ -63313,7 +63430,7 @@ if (typeof String.prototype.startsWith === 'undefined') {
 
           case 2:
             this.d9_1 = 3;
-            suspendResult = initCold(this.w4f_1, this);
+            suspendResult = initCold(this.z4f_1, this);
             if (suspendResult === get_COROUTINE_SUSPENDED()) {
               return suspendResult;
             }
@@ -63337,9 +63454,9 @@ if (typeof String.prototype.startsWith === 'undefined') {
   };
   function $buildSnapshotCOROUTINE$(_this__u8e3s4, op, label, resultContinuation) {
     CoroutineImpl.call(this, resultContinuation);
-    this.a4e_1 = _this__u8e3s4;
-    this.b4e_1 = op;
-    this.c4e_1 = label;
+    this.d4e_1 = _this__u8e3s4;
+    this.e4e_1 = op;
+    this.f4e_1 = label;
   }
   protoOf($buildSnapshotCOROUTINE$).l9 = function () {
     var suspendResult = this.f9_1;
@@ -63349,15 +63466,15 @@ if (typeof String.prototype.startsWith === 'undefined') {
         switch (tmp) {
           case 0:
             this.e9_1 = 5;
-            this.d4e_1 = makeSlot(this.a4e_1);
-            this.e4e_1 = Unit_instance;
+            this.g4e_1 = makeSlot(this.d4e_1);
+            this.h4e_1 = Unit_instance;
             this.d9_1 = 1;
             continue $sm;
           case 1:
             this.e9_1 = 4;
-            log('Building ' + this.c4e_1 + ' Pyodide worker memory snapshot');
+            log('Building ' + this.f4e_1 + ' Pyodide worker memory snapshot');
             this.d9_1 = 2;
-            suspendResult = request(this.a4e_1, this.d4e_1, this.b4e_1, VOID, VOID, this);
+            suspendResult = request(this.d4e_1, this.g4e_1, this.e4e_1, VOID, VOID, this);
             if (suspendResult === get_COROUTINE_SUSPENDED()) {
               return suspendResult;
             }
@@ -63365,23 +63482,23 @@ if (typeof String.prototype.startsWith === 'undefined') {
             continue $sm;
           case 2:
             var snapshotData = suspendResult;
-            throwInfraError(this.a4e_1, snapshotData, 'Pyodide ' + this.c4e_1 + ' snapshot build failed');
+            throwInfraError(this.d4e_1, snapshotData, 'Pyodide ' + this.f4e_1 + ' snapshot build failed');
             if (snapshotData.snapshot == null)
-              throw RuntimeException_init_$Create$_0('Pyodide ' + this.c4e_1 + ' snapshot build returned no snapshot');
-            log('Built ' + this.c4e_1 + ' Pyodide worker memory snapshot (' + snapshotData.snapshotBytes + ' bytes)');
-            this.e4e_1 = snapshotData;
+              throw RuntimeException_init_$Create$_0('Pyodide ' + this.f4e_1 + ' snapshot build returned no snapshot');
+            log('Built ' + this.f4e_1 + ' Pyodide worker memory snapshot (' + snapshotData.snapshotBytes + ' bytes)');
+            this.h4e_1 = snapshotData;
             this.e9_1 = 5;
             this.d9_1 = 3;
             continue $sm;
           case 3:
-            var tmp_0 = this.e4e_1;
+            var tmp_0 = this.h4e_1;
             this.e9_1 = 5;
-            this.d4e_1.k4d_1.terminate();
+            this.g4e_1.n4d_1.terminate();
             return tmp_0;
           case 4:
             this.e9_1 = 5;
             var t = this.g9_1;
-            this.d4e_1.k4d_1.terminate();
+            this.g4e_1.n4d_1.terminate();
             throw t;
           case 5:
             throw this.g9_1;
@@ -63399,7 +63516,7 @@ if (typeof String.prototype.startsWith === 'undefined') {
   };
   function $tryInitFromSnapshotCOROUTINE$(_this__u8e3s4, resultContinuation) {
     CoroutineImpl.call(this, resultContinuation);
-    this.n4e_1 = _this__u8e3s4;
+    this.q4e_1 = _this__u8e3s4;
   }
   protoOf($tryInitFromSnapshotCOROUTINE$).l9 = function () {
     var suspendResult = this.f9_1;
@@ -63410,17 +63527,17 @@ if (typeof String.prototype.startsWith === 'undefined') {
           case 0:
             this.e9_1 = 9;
             this.e9_1 = 8;
-            if (shouldTryWarmBlackSnapshot(this.n4e_1)) {
+            if (shouldTryWarmBlackSnapshot(this.q4e_1)) {
               this.e9_1 = 3;
               this.d9_1 = 2;
-              suspendResult = buildSnapshot(this.n4e_1, 'snapshot', 'warm', this);
+              suspendResult = buildSnapshot(this.q4e_1, 'snapshot', 'warm', this);
               if (suspendResult === get_COROUTINE_SUSPENDED()) {
                 return suspendResult;
               }
               continue $sm;
             } else {
               this.d9_1 = 1;
-              suspendResult = buildSnapshot(this.n4e_1, 'snapshotBase', 'base', this);
+              suspendResult = buildSnapshot(this.q4e_1, 'snapshotBase', 'base', this);
               if (suspendResult === get_COROUTINE_SUSPENDED()) {
                 return suspendResult;
               }
@@ -63428,11 +63545,11 @@ if (typeof String.prototype.startsWith === 'undefined') {
             }
 
           case 1:
-            this.q4e_1 = suspendResult;
+            this.t4e_1 = suspendResult;
             this.d9_1 = 6;
             continue $sm;
           case 2:
-            this.r4e_1 = suspendResult;
+            this.u4e_1 = suspendResult;
             this.e9_1 = 8;
             this.d9_1 = 5;
             continue $sm;
@@ -63444,7 +63561,7 @@ if (typeof String.prototype.startsWith === 'undefined') {
               var tmp0_elvis_lhs = warmFailure.message;
               log('Warm Pyodide worker memory snapshot failed; trying base snapshot: ' + toString_1(tmp0_elvis_lhs == null ? warmFailure : tmp0_elvis_lhs));
               this.d9_1 = 4;
-              suspendResult = buildSnapshot(this.n4e_1, 'snapshotBase', 'base', this);
+              suspendResult = buildSnapshot(this.q4e_1, 'snapshotBase', 'base', this);
               if (suspendResult === get_COROUTINE_SUSPENDED()) {
                 return suspendResult;
               }
@@ -63454,27 +63571,27 @@ if (typeof String.prototype.startsWith === 'undefined') {
             }
 
           case 4:
-            this.r4e_1 = suspendResult;
+            this.u4e_1 = suspendResult;
             this.d9_1 = 5;
             continue $sm;
           case 5:
             this.e9_1 = 8;
-            this.q4e_1 = this.r4e_1;
+            this.t4e_1 = this.u4e_1;
             this.d9_1 = 6;
             continue $sm;
           case 6:
-            this.p4e_1 = this.q4e_1;
-            var snapshot = this.p4e_1.snapshot;
+            this.s4e_1 = this.t4e_1;
+            var snapshot = this.s4e_1.snapshot;
             this.d9_1 = 7;
-            suspendResult = coroutineScope(WebWorkerPool$tryInitFromSnapshot$slambda_0(this.n4e_1, snapshot, null), this);
+            suspendResult = coroutineScope(WebWorkerPool$tryInitFromSnapshot$slambda_0(this.q4e_1, snapshot, null), this);
             if (suspendResult === get_COROUTINE_SUSPENDED()) {
               return suspendResult;
             }
 
             continue $sm;
           case 7:
-            log('Initialized ' + this.n4e_1.n4d_1 + ' Python Web Workers from ' + this.p4e_1.snapshotKind + ' snapshot');
-            this.o4e_1 = true;
+            log('Initialized ' + this.q4e_1.q4d_1 + ' Python Web Workers from ' + this.s4e_1.snapshotKind + ' snapshot');
+            this.r4e_1 = true;
             this.e9_1 = 9;
             this.d9_1 = 10;
             continue $sm;
@@ -63486,8 +63603,8 @@ if (typeof String.prototype.startsWith === 'undefined') {
               var tmp_2 = this;
               var tmp1_elvis_lhs = t.message;
               log('Pyodide memory snapshot warmup failed; falling back to cold workers: ' + toString_1(tmp1_elvis_lhs == null ? t : tmp1_elvis_lhs));
-              resetSlots(this.n4e_1);
-              tmp_2.o4e_1 = false;
+              resetSlots(this.q4e_1);
+              tmp_2.r4e_1 = false;
               this.d9_1 = 10;
               continue $sm;
             } else {
@@ -63498,7 +63615,7 @@ if (typeof String.prototype.startsWith === 'undefined') {
             throw this.g9_1;
           case 10:
             this.e9_1 = 9;
-            return this.o4e_1;
+            return this.r4e_1;
         }
       } catch ($p) {
         var e = $p;
@@ -63513,8 +63630,8 @@ if (typeof String.prototype.startsWith === 'undefined') {
   };
   function $compileCOROUTINE$(_this__u8e3s4, src, resultContinuation) {
     CoroutineImpl.call(this, resultContinuation);
-    this.f4g_1 = _this__u8e3s4;
-    this.g4g_1 = src;
+    this.i4g_1 = _this__u8e3s4;
+    this.j4g_1 = src;
   }
   protoOf($compileCOROUTINE$).l9 = function () {
     var suspendResult = this.f9_1;
@@ -63525,7 +63642,7 @@ if (typeof String.prototype.startsWith === 'undefined') {
           case 0:
             this.e9_1 = 2;
             this.d9_1 = 1;
-            suspendResult = request(this.f4g_1, nextWorkerSlot(this.f4g_1), 'compile', this.g4g_1, VOID, this);
+            suspendResult = request(this.i4g_1, nextWorkerSlot(this.i4g_1), 'compile', this.j4g_1, VOID, this);
             if (suspendResult === get_COROUTINE_SUSPENDED()) {
               return suspendResult;
             }
@@ -63556,8 +63673,8 @@ if (typeof String.prototype.startsWith === 'undefined') {
   };
   function $formatCOROUTINE$(_this__u8e3s4, src, resultContinuation) {
     CoroutineImpl.call(this, resultContinuation);
-    this.p4g_1 = _this__u8e3s4;
-    this.q4g_1 = src;
+    this.s4g_1 = _this__u8e3s4;
+    this.t4g_1 = src;
   }
   protoOf($formatCOROUTINE$).l9 = function () {
     var suspendResult = this.f9_1;
@@ -63568,7 +63685,7 @@ if (typeof String.prototype.startsWith === 'undefined') {
           case 0:
             this.e9_1 = 2;
             this.d9_1 = 1;
-            suspendResult = request(this.p4g_1, nextWorkerSlot(this.p4g_1), 'format', this.q4g_1, VOID, this);
+            suspendResult = request(this.s4g_1, nextWorkerSlot(this.s4g_1), 'format', this.t4g_1, VOID, this);
             if (suspendResult === get_COROUTINE_SUSPENDED()) {
               return suspendResult;
             }
@@ -63591,8 +63708,8 @@ if (typeof String.prototype.startsWith === 'undefined') {
             }
 
             var tmp1_elvis_lhs = tmp_2;
-            var formatted = tmp1_elvis_lhs == null ? this.q4g_1 : tmp1_elvis_lhs;
-            return normalizeBlackOutput(this.p4g_1, formatted);
+            var formatted = tmp1_elvis_lhs == null ? this.t4g_1 : tmp1_elvis_lhs;
+            return normalizeBlackOutput(this.s4g_1, formatted);
           case 2:
             throw this.g9_1;
         }
@@ -63608,26 +63725,26 @@ if (typeof String.prototype.startsWith === 'undefined') {
      while (true);
   };
   function WebWorkerPool(indexURL, size) {
-    this.m4d_1 = indexURL;
-    this.n4d_1 = size;
-    this.o4d_1 = 1;
-    this.p4d_1 = 0;
-    this.q4d_1 = createPyodideWorkerURL();
-    this.r4d_1 = makeSlots(this);
+    this.p4d_1 = indexURL;
+    this.q4d_1 = size;
+    this.r4d_1 = 1;
+    this.s4d_1 = 0;
+    this.t4d_1 = createPyodideWorkerURL();
+    this.u4d_1 = makeSlots(this);
   }
-  protoOf(WebWorkerPool).r4g = function ($completion) {
+  protoOf(WebWorkerPool).u4g = function ($completion) {
     var tmp = new $initCOROUTINE$(this, $completion);
     tmp.f9_1 = Unit_instance;
     tmp.g9_1 = null;
     return tmp.l9();
   };
-  protoOf(WebWorkerPool).s4g = function (src, $completion) {
+  protoOf(WebWorkerPool).v4g = function (src, $completion) {
     var tmp = new $compileCOROUTINE$(this, src, $completion);
     tmp.f9_1 = Unit_instance;
     tmp.g9_1 = null;
     return tmp.l9();
   };
-  protoOf(WebWorkerPool).t4g = function (src, $completion) {
+  protoOf(WebWorkerPool).w4g = function (src, $completion) {
     var tmp = new $formatCOROUTINE$(this, src, $completion);
     tmp.f9_1 = Unit_instance;
     tmp.g9_1 = null;
@@ -63648,17 +63765,17 @@ if (typeof String.prototype.startsWith === 'undefined') {
   }
   var webWorkerPoolReady;
   function JSTidyPyEditor$Companion$filterCompilerErrors$slambda$launchOne$slambda($s, resultContinuation) {
-    this.c4h_1 = $s;
+    this.f4h_1 = $s;
     CoroutineImpl.call(this, resultContinuation);
   }
-  protoOf(JSTidyPyEditor$Companion$filterCompilerErrors$slambda$launchOne$slambda).e4h = function ($this$async, $completion) {
+  protoOf(JSTidyPyEditor$Companion$filterCompilerErrors$slambda$launchOne$slambda).h4h = function ($this$async, $completion) {
     var tmp = this.p32($this$async, $completion);
     tmp.f9_1 = Unit_instance;
     tmp.g9_1 = null;
     return tmp.l9();
   };
   protoOf(JSTidyPyEditor$Companion$filterCompilerErrors$slambda$launchOne$slambda).x9 = function (p1, $completion) {
-    return this.e4h((!(p1 == null) ? isInterface(p1, CoroutineScope) : false) ? p1 : THROW_CCE(), $completion);
+    return this.h4h((!(p1 == null) ? isInterface(p1, CoroutineScope) : false) ? p1 : THROW_CCE(), $completion);
   };
   protoOf(JSTidyPyEditor$Companion$filterCompilerErrors$slambda$launchOne$slambda).l9 = function () {
     var suspendResult = this.f9_1;
@@ -63669,7 +63786,7 @@ if (typeof String.prototype.startsWith === 'undefined') {
           case 0:
             this.e9_1 = 2;
             this.d9_1 = 1;
-            suspendResult = pythonCompilerOutput(this.c4h_1, this);
+            suspendResult = pythonCompilerOutput(this.f4h_1, this);
             if (suspendResult === get_COROUTINE_SUSPENDED()) {
               return suspendResult;
             }
@@ -63677,7 +63794,7 @@ if (typeof String.prototype.startsWith === 'undefined') {
             continue $sm;
           case 1:
             var ARGUMENT = suspendResult;
-            return to_0(this.c4h_1, ARGUMENT);
+            return to_0(this.f4h_1, ARGUMENT);
           case 2:
             throw this.g9_1;
         }
@@ -63693,14 +63810,14 @@ if (typeof String.prototype.startsWith === 'undefined') {
      while (true);
   };
   protoOf(JSTidyPyEditor$Companion$filterCompilerErrors$slambda$launchOne$slambda).p32 = function ($this$async, completion) {
-    var i = new JSTidyPyEditor$Companion$filterCompilerErrors$slambda$launchOne$slambda(this.c4h_1, completion);
-    i.d4h_1 = $this$async;
+    var i = new JSTidyPyEditor$Companion$filterCompilerErrors$slambda$launchOne$slambda(this.f4h_1, completion);
+    i.g4h_1 = $this$async;
     return i;
   };
   function JSTidyPyEditor$Companion$filterCompilerErrors$slambda$launchOne$slambda_0($s, resultContinuation) {
     var i = new JSTidyPyEditor$Companion$filterCompilerErrors$slambda$launchOne$slambda($s, resultContinuation);
     return constructCallableReference(function ($this$async, $completion) {
-      return i.e4h($this$async, $completion);
+      return i.h4h($this$async, $completion);
     }, 1);
   }
   function invoke$launchOne(iterator, inFlight, $this_coroutineScope) {
@@ -63710,19 +63827,19 @@ if (typeof String.prototype.startsWith === 'undefined') {
     inFlight.kf(async($this_coroutineScope, VOID, VOID, JSTidyPyEditor$Companion$filterCompilerErrors$slambda$launchOne$slambda_0(s, null)));
   }
   function JSTidyPyEditor$Companion$filterCompilerErrors$slambda($this_filterCompilerErrors, $window, $errHst, resultContinuation) {
-    this.n4h_1 = $this_filterCompilerErrors;
-    this.o4h_1 = $window;
-    this.p4h_1 = $errHst;
+    this.q4h_1 = $this_filterCompilerErrors;
+    this.r4h_1 = $window;
+    this.s4h_1 = $errHst;
     CoroutineImpl.call(this, resultContinuation);
   }
-  protoOf(JSTidyPyEditor$Companion$filterCompilerErrors$slambda).u4h = function ($this$coroutineScope, $completion) {
+  protoOf(JSTidyPyEditor$Companion$filterCompilerErrors$slambda).x4h = function ($this$coroutineScope, $completion) {
     var tmp = this.p32($this$coroutineScope, $completion);
     tmp.f9_1 = Unit_instance;
     tmp.g9_1 = null;
     return tmp.l9();
   };
   protoOf(JSTidyPyEditor$Companion$filterCompilerErrors$slambda).x9 = function (p1, $completion) {
-    return this.u4h((!(p1 == null) ? isInterface(p1, CoroutineScope) : false) ? p1 : THROW_CCE(), $completion);
+    return this.x4h((!(p1 == null) ? isInterface(p1, CoroutineScope) : false) ? p1 : THROW_CCE(), $completion);
   };
   protoOf(JSTidyPyEditor$Companion$filterCompilerErrors$slambda).l9 = function () {
     var suspendResult = this.f9_1;
@@ -63732,28 +63849,28 @@ if (typeof String.prototype.startsWith === 'undefined') {
         switch (tmp) {
           case 0:
             this.e9_1 = 4;
-            this.r4h_1 = ArrayList_init_$Create$();
-            this.t4h_1 = this.n4h_1.m();
-            this.s4h_1 = ArrayDeque_init_$Create$();
-            var times = this.o4h_1;
+            this.u4h_1 = ArrayList_init_$Create$();
+            this.w4h_1 = this.q4h_1.m();
+            this.v4h_1 = ArrayDeque_init_$Create$();
+            var times = this.r4h_1;
             var inductionVariable = 0;
             if (inductionVariable < times)
               do {
                 var index = inductionVariable;
                 inductionVariable = inductionVariable + 1 | 0;
-                invoke$launchOne(this.t4h_1, this.s4h_1, this.q4h_1);
+                invoke$launchOne(this.w4h_1, this.v4h_1, this.t4h_1);
               }
                while (inductionVariable < times);
             this.d9_1 = 1;
             continue $sm;
           case 1:
-            if (!!this.s4h_1.x()) {
+            if (!!this.v4h_1.x()) {
               this.d9_1 = 3;
               continue $sm;
             }
 
             this.d9_1 = 2;
-            suspendResult = this.s4h_1.lf().q20(this);
+            suspendResult = this.v4h_1.lf().q20(this);
             if (suspendResult === get_COROUTINE_SUSPENDED()) {
               return suspendResult;
             }
@@ -63769,8 +63886,8 @@ if (typeof String.prototype.startsWith === 'undefined') {
               tmp_0 = true;
             } else {
               var err = errorType + ': ' + getErrorMessage(output);
-              var tmp0 = this.p4h_1;
-              var tmp0_elvis_lhs = this.p4h_1.s2(err);
+              var tmp0 = this.s4h_1;
+              var tmp0_elvis_lhs = this.s4h_1.s2(err);
               var tmp_1;
               if (tmp0_elvis_lhs == null) {
                 tmp_1 = 0;
@@ -63784,14 +63901,14 @@ if (typeof String.prototype.startsWith === 'undefined') {
 
             var ok = tmp_0;
             if (ok) {
-              this.r4h_1.g(s);
+              this.u4h_1.g(s);
             }
 
-            invoke$launchOne(this.t4h_1, this.s4h_1, this.q4h_1);
+            invoke$launchOne(this.w4h_1, this.v4h_1, this.t4h_1);
             this.d9_1 = 1;
             continue $sm;
           case 3:
-            return asSequence_0(this.r4h_1);
+            return asSequence_0(this.u4h_1);
           case 4:
             throw this.g9_1;
         }
@@ -63807,14 +63924,14 @@ if (typeof String.prototype.startsWith === 'undefined') {
      while (true);
   };
   protoOf(JSTidyPyEditor$Companion$filterCompilerErrors$slambda).p32 = function ($this$coroutineScope, completion) {
-    var i = new JSTidyPyEditor$Companion$filterCompilerErrors$slambda(this.n4h_1, this.o4h_1, this.p4h_1, completion);
-    i.q4h_1 = $this$coroutineScope;
+    var i = new JSTidyPyEditor$Companion$filterCompilerErrors$slambda(this.q4h_1, this.r4h_1, this.s4h_1, completion);
+    i.t4h_1 = $this$coroutineScope;
     return i;
   };
   function JSTidyPyEditor$Companion$filterCompilerErrors$slambda_0($this_filterCompilerErrors, $window, $errHst, resultContinuation) {
     var i = new JSTidyPyEditor$Companion$filterCompilerErrors$slambda($this_filterCompilerErrors, $window, $errHst, resultContinuation);
     return constructCallableReference(function ($this$coroutineScope, $completion) {
-      return i.u4h($this$coroutineScope, $completion);
+      return i.x4h($this$coroutineScope, $completion);
     }, 1);
   }
   function JSTidyPyEditor$Companion$handleInput$lambda($pcs, $tokens) {
@@ -63824,10 +63941,10 @@ if (typeof String.prototype.startsWith === 'undefined') {
   }
   function $handleInputCOROUTINE$(_this__u8e3s4, line, cfg, maxResults, resultContinuation) {
     CoroutineImpl.call(this, resultContinuation);
-    this.d4i_1 = _this__u8e3s4;
-    this.e4i_1 = line;
-    this.f4i_1 = cfg;
-    this.g4i_1 = maxResults;
+    this.g4i_1 = _this__u8e3s4;
+    this.h4i_1 = line;
+    this.i4i_1 = cfg;
+    this.j4i_1 = maxResults;
   }
   protoOf($handleInputCOROUTINE$).l9 = function () {
     var suspendResult = this.f9_1;
@@ -63837,13 +63954,13 @@ if (typeof String.prototype.startsWith === 'undefined') {
         switch (tmp) {
           case 0:
             this.e9_1 = 3;
-            var this_0 = this.e4i_1;
+            var this_0 = this.h4i_1;
             var currentLine = toString_1(trim(isCharSequence(this_0) ? this_0 : THROW_CCE()));
             if (isBlank(currentLine) || startsWith(currentLine, '#'))
               return emptyList();
-            this.j4i_1 = new PyCodeSnippet(currentLine);
+            this.m4i_1 = new PyCodeSnippet(currentLine);
             var tmp_0 = this;
-            var this_1 = tokenizeByWhitespace(this.j4i_1.c31());
+            var this_1 = tokenizeByWhitespace(this.m4i_1.c31());
             var destination = ArrayList_init_$Create$_0(collectionSizeOrDefault(this_1, 10));
             var _iterator__ex2g4s = this_1.m();
             while (_iterator__ex2g4s.n()) {
@@ -63851,11 +63968,11 @@ if (typeof String.prototype.startsWith === 'undefined') {
               destination.g(item === '|' ? 'OR' : item);
             }
 
-            tmp_0.i4i_1 = destination;
+            tmp_0.l4i_1 = destination;
             var tmp_1 = this;
-            tmp_1.h4i_1 = LinkedHashMap_init_$Create$();
+            tmp_1.k4i_1 = LinkedHashMap_init_$Create$();
             this.d9_1 = 1;
-            suspendResult = repairCode(this.f4i_1, this.i4i_1, get_LED_BUFFER(), neuralRerankerQuery(this.i4i_1), VOID, this);
+            suspendResult = repairCode(this.i4i_1, this.l4i_1, get_LED_BUFFER(), neuralRerankerQuery(this.l4i_1), VOID, this);
             if (suspendResult === get_COROUTINE_SUSPENDED()) {
               return suspendResult;
             }
@@ -63864,10 +63981,10 @@ if (typeof String.prototype.startsWith === 'undefined') {
           case 1:
             var ARGUMENT = suspendResult;
             var ARGUMENT_0 = pythonRepairs(ARGUMENT);
-            var ARGUMENT_1 = map(ARGUMENT_0, JSTidyPyEditor$Companion$handleInput$lambda(this.j4i_1, this.i4i_1));
+            var ARGUMENT_1 = map(ARGUMENT_0, JSTidyPyEditor$Companion$handleInput$lambda(this.m4i_1, this.l4i_1));
             var ARGUMENT_2 = distinct_0(ARGUMENT_1);
             this.d9_1 = 2;
-            suspendResult = this.d4i_1.k4i(ARGUMENT_2, this.h4i_1, VOID, this);
+            suspendResult = this.g4i_1.n4i(ARGUMENT_2, this.k4i_1, VOID, this);
             if (suspendResult === get_COROUTINE_SUSPENDED()) {
               return suspendResult;
             }
@@ -63875,9 +63992,9 @@ if (typeof String.prototype.startsWith === 'undefined') {
             continue $sm;
           case 2:
             var ARGUMENT_3 = suspendResult;
-            var ARGUMENT_4 = take_0(ARGUMENT_3, this.g4i_1);
+            var ARGUMENT_4 = take_0(ARGUMENT_3, this.j4i_1);
             var this_2 = toList_2(ARGUMENT_4);
-            logRejections(this.h4i_1);
+            logRejections(this.k4i_1);
             return this_2;
           case 3:
             throw this.g9_1;
@@ -63894,7 +64011,7 @@ if (typeof String.prototype.startsWith === 'undefined') {
      while (true);
   };
   function JSTidyPyEditor$handleInputNow$slambda$slambda$slambda(this$0, resultContinuation) {
-    this.t4i_1 = this$0;
+    this.w4i_1 = this$0;
     CoroutineImpl.call(this, resultContinuation);
   }
   protoOf(JSTidyPyEditor$handleInputNow$slambda$slambda$slambda).z31 = function (it, $completion) {
@@ -63915,7 +64032,7 @@ if (typeof String.prototype.startsWith === 'undefined') {
           case 0:
             this.e9_1 = 2;
             this.d9_1 = 1;
-            suspendResult = this.t4i_1.v4i(this.u4i_1, this);
+            suspendResult = this.w4i_1.y4i(this.x4i_1, this);
             if (suspendResult === get_COROUTINE_SUSPENDED()) {
               return suspendResult;
             }
@@ -63938,8 +64055,8 @@ if (typeof String.prototype.startsWith === 'undefined') {
      while (true);
   };
   protoOf(JSTidyPyEditor$handleInputNow$slambda$slambda$slambda).a32 = function (it, completion) {
-    var i = new JSTidyPyEditor$handleInputNow$slambda$slambda$slambda(this.t4i_1, completion);
-    i.u4i_1 = it;
+    var i = new JSTidyPyEditor$handleInputNow$slambda$slambda$slambda(this.w4i_1, completion);
+    i.x4i_1 = it;
     return i;
   };
   function JSTidyPyEditor$handleInputNow$slambda$slambda$slambda_0(this$0, resultContinuation) {
@@ -63953,7 +64070,7 @@ if (typeof String.prototype.startsWith === 'undefined') {
   }
   function JSTidyPyEditor$handleInputNow$slambda$lambda_0($tokens, this$0) {
     return function (repair) {
-      return numberToInt(imul(levenshtein(dropLast($tokens, 1), repair), 10000) + this$0.w4i(repair) * 1000.0);
+      return numberToInt(imul(levenshtein(dropLast($tokens, 1), repair), 10000) + this$0.z4i(repair) * 1000.0);
     };
   }
   function JSTidyPyEditor$handleInputNow$slambda$lambda_1($total) {
@@ -63974,19 +64091,19 @@ if (typeof String.prototype.startsWith === 'undefined') {
     };
   }
   function JSTidyPyEditor$handleInputNow$slambda$slambda($pcs, $tokens, this$0, resultContinuation) {
-    this.f4j_1 = $pcs;
-    this.g4j_1 = $tokens;
-    this.h4j_1 = this$0;
+    this.i4j_1 = $pcs;
+    this.j4j_1 = $tokens;
+    this.k4j_1 = this$0;
     CoroutineImpl.call(this, resultContinuation);
   }
-  protoOf(JSTidyPyEditor$handleInputNow$slambda$slambda).j4j = function (repair, $completion) {
-    var tmp = this.k4j(repair, $completion);
+  protoOf(JSTidyPyEditor$handleInputNow$slambda$slambda).m4j = function (repair, $completion) {
+    var tmp = this.n4j(repair, $completion);
     tmp.f9_1 = Unit_instance;
     tmp.g9_1 = null;
     return tmp.l9();
   };
   protoOf(JSTidyPyEditor$handleInputNow$slambda$slambda).x9 = function (p1, $completion) {
-    return this.j4j(p1 instanceof IndexedValue ? p1 : THROW_CCE(), $completion);
+    return this.m4j(p1 instanceof IndexedValue ? p1 : THROW_CCE(), $completion);
   };
   protoOf(JSTidyPyEditor$handleInputNow$slambda$slambda).l9 = function () {
     var suspendResult = this.f9_1;
@@ -63996,10 +64113,10 @@ if (typeof String.prototype.startsWith === 'undefined') {
         switch (tmp) {
           case 0:
             this.e9_1 = 2;
-            var repairTks = tokenizeByWhitespace(this.i4j_1.q1_1);
+            var repairTks = tokenizeByWhitespace(this.l4j_1.q1_1);
             this.d9_1 = 1;
-            var tmp_0 = levenshteinAlign_0(dropLast(this.g4j_1, 1), repairTks);
-            suspendResult = this.f4j_1.f31(tmp_0, JSTidyPyEditor$handleInputNow$slambda$slambda$slambda_0(this.h4j_1, null), this);
+            var tmp_0 = levenshteinAlign_0(dropLast(this.j4j_1, 1), repairTks);
+            suspendResult = this.i4j_1.f31(tmp_0, JSTidyPyEditor$handleInputNow$slambda$slambda$slambda_0(this.k4j_1, null), this);
             if (suspendResult === get_COROUTINE_SUSPENDED()) {
               return suspendResult;
             }
@@ -64021,15 +64138,15 @@ if (typeof String.prototype.startsWith === 'undefined') {
       }
      while (true);
   };
-  protoOf(JSTidyPyEditor$handleInputNow$slambda$slambda).k4j = function (repair, completion) {
-    var i = new JSTidyPyEditor$handleInputNow$slambda$slambda(this.f4j_1, this.g4j_1, this.h4j_1, completion);
-    i.i4j_1 = repair;
+  protoOf(JSTidyPyEditor$handleInputNow$slambda$slambda).n4j = function (repair, completion) {
+    var i = new JSTidyPyEditor$handleInputNow$slambda$slambda(this.i4j_1, this.j4j_1, this.k4j_1, completion);
+    i.l4j_1 = repair;
     return i;
   };
   function JSTidyPyEditor$handleInputNow$slambda$slambda_0($pcs, $tokens, this$0, resultContinuation) {
     var i = new JSTidyPyEditor$handleInputNow$slambda$slambda($pcs, $tokens, this$0, resultContinuation);
     return constructCallableReference(function (repair, $completion) {
-      return i.j4j(repair, $completion);
+      return i.m4j(repair, $completion);
     }, 1);
   }
   function JSTidyPyEditor$handleInputNow$slambda$lambda_4($errHst, $postProcTimer, $t0, $total) {
@@ -64054,10 +64171,10 @@ if (typeof String.prototype.startsWith === 'undefined') {
     this.i3f_1 = listOf_0(['BOS', 'NEWLINE']);
     this.j3f_1 = listOf_0(['NEWLINE', 'EOS']);
   }
-  protoOf(Companion_61).l4j = function (_this__u8e3s4, errHst, window_0, $completion) {
+  protoOf(Companion_61).o4j = function (_this__u8e3s4, errHst, window_0, $completion) {
     return coroutineScope(JSTidyPyEditor$Companion$filterCompilerErrors$slambda_0(_this__u8e3s4, window_0, errHst, null), $completion);
   };
-  protoOf(Companion_61).k4i = function (_this__u8e3s4, errHst, window_0, $completion, $super) {
+  protoOf(Companion_61).n4i = function (_this__u8e3s4, errHst, window_0, $completion, $super) {
     var tmp;
     if (errHst === VOID) {
       // Inline function 'kotlin.collections.mutableMapOf' call
@@ -64067,7 +64184,7 @@ if (typeof String.prototype.startsWith === 'undefined') {
     }
     errHst = tmp;
     window_0 = window_0 === VOID ? 16 : window_0;
-    return $super === VOID ? this.l4j(_this__u8e3s4, errHst, window_0, $completion) : $super.l4j.call(this, _this__u8e3s4, errHst, window_0, $completion);
+    return $super === VOID ? this.o4j(_this__u8e3s4, errHst, window_0, $completion) : $super.o4j.call(this, _this__u8e3s4, errHst, window_0, $completion);
   };
   protoOf(Companion_61).k3f = function (line, cfg, maxResults, $completion) {
     var tmp = new $handleInputCOROUTINE$(this, line, cfg, maxResults, $completion);
@@ -64088,7 +64205,7 @@ if (typeof String.prototype.startsWith === 'undefined') {
   }
   function JSTidyPyEditor$_get_order_$ref_htyzef() {
     return constructCallableReference(function (p0) {
-      return p0.m4j();
+      return p0.p4j();
     }, 1, 0, 160);
   }
   function JSTidyPyEditor$normalizingConst$delegate$lambda(this$0) {
@@ -64098,7 +64215,7 @@ if (typeof String.prototype.startsWith === 'undefined') {
   }
   function JSTidyPyEditor$_get_normalizingConst_$ref_ismclg() {
     return constructCallableReference(function (p0) {
-      return p0.n4j();
+      return p0.q4j();
     }, 1, 0, 161);
   }
   function JSTidyPyEditor$ngramTensor$delegate$lambda(this$0) {
@@ -64176,13 +64293,13 @@ if (typeof String.prototype.startsWith === 'undefined') {
     }, 1, 0, 163);
   }
   function JSTidyPyEditor$handleInputNow$slambda(this$0, $tokens, $started, $errHst, $workHash, $pcs, $t0, resultContinuation) {
-    this.w4j_1 = this$0;
-    this.x4j_1 = $tokens;
-    this.y4j_1 = $started;
-    this.z4j_1 = $errHst;
-    this.a4k_1 = $workHash;
-    this.b4k_1 = $pcs;
-    this.c4k_1 = $t0;
+    this.z4j_1 = this$0;
+    this.a4k_1 = $tokens;
+    this.b4k_1 = $started;
+    this.c4k_1 = $errHst;
+    this.d4k_1 = $workHash;
+    this.e4k_1 = $pcs;
+    this.f4k_1 = $t0;
     CoroutineImpl.call(this, resultContinuation);
   }
   protoOf(JSTidyPyEditor$handleInputNow$slambda).k33 = function ($this$launch, $completion) {
@@ -64202,11 +64319,11 @@ if (typeof String.prototype.startsWith === 'undefined') {
         switch (tmp) {
           case 0:
             this.e9_1 = 8;
-            this.e4k_1 = {_v: 0};
+            this.h4k_1 = {_v: 0};
             if (get_gpuAvailable()) {
               log('Repairing on GPU...');
               this.d9_1 = 1;
-              suspendResult = repairCode(this.w4j_1.i35(), this.x4j_1, get_LED_BUFFER(), neuralRerankerQuery(this.x4j_1), this.y4j_1, this);
+              suspendResult = repairCode(this.z4j_1.i35(), this.a4k_1, get_LED_BUFFER(), neuralRerankerQuery(this.a4k_1), this.b4k_1, this);
               if (suspendResult === get_COROUTINE_SUSPENDED()) {
                 return suspendResult;
               }
@@ -64214,28 +64331,28 @@ if (typeof String.prototype.startsWith === 'undefined') {
             } else {
               var tmp_0 = this;
               log('Repairing on CPU...');
-              tmp_0.k4k_1 = null;
+              tmp_0.n4k_1 = null;
               this.d9_1 = 2;
               continue $sm;
             }
 
           case 1:
-            this.k4k_1 = suspendResult;
+            this.n4k_1 = suspendResult;
             this.d9_1 = 2;
             continue $sm;
           case 2:
-            this.i4k_1 = this.k4k_1;
-            var tmp0_safe_receiver = this.i4k_1;
+            this.l4k_1 = this.n4k_1;
+            var tmp0_safe_receiver = this.l4k_1;
             var tmp1_elvis_lhs = tmp0_safe_receiver == null ? null : pythonRepairs(tmp0_safe_receiver);
             if (tmp1_elvis_lhs == null) {
               this.d9_1 = 3;
-              suspendResult = sampleGREUntilTimeout(this.x4j_1, this.w4j_1.i35(), this);
+              suspendResult = sampleGREUntilTimeout(this.a4k_1, this.z4j_1.i35(), this);
               if (suspendResult === get_COROUTINE_SUSPENDED()) {
                 return suspendResult;
               }
               continue $sm;
             } else {
-              this.j4k_1 = tmp1_elvis_lhs;
+              this.m4k_1 = tmp1_elvis_lhs;
               this.d9_1 = 4;
               continue $sm;
             }
@@ -64243,29 +64360,29 @@ if (typeof String.prototype.startsWith === 'undefined') {
           case 3:
             var ARGUMENT = suspendResult;
             var ARGUMENT_0 = map(ARGUMENT, JSTidyPyEditor$handleInputNow$slambda$lambda);
-            this.j4k_1 = distinct_0(ARGUMENT_0);
+            this.m4k_1 = distinct_0(ARGUMENT_0);
             this.d9_1 = 4;
             continue $sm;
           case 4:
-            var repairs = this.j4k_1;
+            var repairs = this.m4k_1;
             var tmp_1 = this;
             var tmp_2;
-            if (!(this.i4k_1 == null)) {
+            if (!(this.l4k_1 == null)) {
               tmp_2 = null;
             } else {
-              tmp_2 = JSTidyPyEditor$handleInputNow$slambda$lambda_0(this.x4j_1, this.w4j_1);
+              tmp_2 = JSTidyPyEditor$handleInputNow$slambda$lambda_0(this.a4k_1, this.z4j_1);
             }
 
-            tmp_1.g4k_1 = tmp_2;
-            this.f4k_1 = Monotonic_instance.zd();
-            var it = onEach(repairs, JSTidyPyEditor$handleInputNow$slambda$lambda_1(this.e4k_1));
-            if (this.w4j_1.q39_1) {
-              this.h4k_1 = it;
+            tmp_1.j4k_1 = tmp_2;
+            this.i4k_1 = Monotonic_instance.zd();
+            var it = onEach(repairs, JSTidyPyEditor$handleInputNow$slambda$lambda_1(this.h4k_1));
+            if (this.z4j_1.q39_1) {
+              this.k4k_1 = it;
               this.d9_1 = 6;
               continue $sm;
             } else {
               this.d9_1 = 5;
-              suspendResult = Companion_getInstance_61().k4i(it, this.z4j_1, VOID, this);
+              suspendResult = Companion_getInstance_61().n4i(it, this.c4k_1, VOID, this);
               if (suspendResult === get_COROUTINE_SUSPENDED()) {
                 return suspendResult;
               }
@@ -64273,17 +64390,17 @@ if (typeof String.prototype.startsWith === 'undefined') {
             }
 
           case 5:
-            this.h4k_1 = suspendResult;
+            this.k4k_1 = suspendResult;
             this.d9_1 = 6;
             continue $sm;
           case 6:
-            var compilerFilteredRepairs = this.h4k_1;
+            var compilerFilteredRepairs = this.k4k_1;
             this.d9_1 = 7;
             var tmp_3 = withIndex_0(compilerFilteredRepairs);
             var tmp_4 = JSTidyPyEditor$handleInputNow$slambda$lambda_2;
-            var tmp_5 = JSTidyPyEditor$handleInputNow$slambda$lambda_3(this.g4k_1);
-            var tmp_6 = JSTidyPyEditor$handleInputNow$slambda$slambda_0(this.b4k_1, this.x4j_1, this.w4j_1, null);
-            suspendResult = this.w4j_1.u33(tmp_3, this.a4k_1, tmp_4, tmp_5, tmp_6, VOID, VOID, VOID, JSTidyPyEditor$handleInputNow$slambda$lambda_4(this.z4j_1, this.f4k_1, this.c4k_1, this.e4k_1), '\u274C Current line invalid, possible fixes:\n\n', this);
+            var tmp_5 = JSTidyPyEditor$handleInputNow$slambda$lambda_3(this.j4k_1);
+            var tmp_6 = JSTidyPyEditor$handleInputNow$slambda$slambda_0(this.e4k_1, this.a4k_1, this.z4j_1, null);
+            suspendResult = this.z4j_1.u33(tmp_3, this.d4k_1, tmp_4, tmp_5, tmp_6, VOID, VOID, VOID, JSTidyPyEditor$handleInputNow$slambda$lambda_4(this.c4k_1, this.i4k_1, this.f4k_1, this.h4k_1), '\u274C Current line invalid, possible fixes:\n\n', this);
             if (suspendResult === get_COROUTINE_SUSPENDED()) {
               return suspendResult;
             }
@@ -64306,8 +64423,8 @@ if (typeof String.prototype.startsWith === 'undefined') {
      while (true);
   };
   protoOf(JSTidyPyEditor$handleInputNow$slambda).p32 = function ($this$launch, completion) {
-    var i = new JSTidyPyEditor$handleInputNow$slambda(this.w4j_1, this.x4j_1, this.y4j_1, this.z4j_1, this.a4k_1, this.b4k_1, this.c4k_1, completion);
-    i.d4k_1 = $this$launch;
+    var i = new JSTidyPyEditor$handleInputNow$slambda(this.z4j_1, this.a4k_1, this.b4k_1, this.c4k_1, this.d4k_1, this.e4k_1, this.f4k_1, completion);
+    i.g4k_1 = $this$launch;
     return i;
   };
   function JSTidyPyEditor$handleInputNow$slambda_0(this$0, $tokens, $started, $errHst, $workHash, $pcs, $t0, resultContinuation) {
@@ -64325,8 +64442,8 @@ if (typeof String.prototype.startsWith === 'undefined') {
   }
   function $formatCodeAsyncCOROUTINE$(_this__u8e3s4, code, resultContinuation) {
     CoroutineImpl.call(this, resultContinuation);
-    this.t4k_1 = _this__u8e3s4;
-    this.u4k_1 = code;
+    this.w4k_1 = _this__u8e3s4;
+    this.x4k_1 = code;
   }
   protoOf($formatCodeAsyncCOROUTINE$).l9 = function () {
     var suspendResult = this.f9_1;
@@ -64347,7 +64464,7 @@ if (typeof String.prototype.startsWith === 'undefined') {
           case 1:
             var ARGUMENT = suspendResult;
             this.d9_1 = 2;
-            suspendResult = ARGUMENT.t4g(this.u4k_1, this);
+            suspendResult = ARGUMENT.w4g(this.x4k_1, this);
             if (suspendResult === get_COROUTINE_SUSPENDED()) {
               return suspendResult;
             }
@@ -64360,7 +64477,7 @@ if (typeof String.prototype.startsWith === 'undefined') {
               log(this_0);
             }
 
-            tmp_0.v4k_1 = this_0;
+            tmp_0.y4k_1 = this_0;
             this.e9_1 = 4;
             this.d9_1 = 5;
             continue $sm;
@@ -64372,7 +64489,7 @@ if (typeof String.prototype.startsWith === 'undefined') {
               var tmp_2 = this;
               var tmp0_elvis_lhs = t.message;
               log('Worker formatting failed: ' + toString_1(tmp0_elvis_lhs == null ? t : tmp0_elvis_lhs));
-              tmp_2.v4k_1 = this.t4k_1.w4k(this.u4k_1);
+              tmp_2.y4k_1 = this.w4k_1.z4k(this.x4k_1);
               this.d9_1 = 5;
               continue $sm;
             } else {
@@ -64383,7 +64500,7 @@ if (typeof String.prototype.startsWith === 'undefined') {
             throw this.g9_1;
           case 5:
             this.e9_1 = 4;
-            return this.v4k_1;
+            return this.y4k_1;
         }
       } catch ($p) {
         var e = $p;
@@ -64398,7 +64515,7 @@ if (typeof String.prototype.startsWith === 'undefined') {
   };
   function $initPyodideCOROUTINE$(_this__u8e3s4, resultContinuation) {
     CoroutineImpl.call(this, resultContinuation);
-    this.f4l_1 = _this__u8e3s4;
+    this.i4l_1 = _this__u8e3s4;
   }
   protoOf($initPyodideCOROUTINE$).l9 = function () {
     var suspendResult = this.f9_1;
@@ -64408,14 +64525,14 @@ if (typeof String.prototype.startsWith === 'undefined') {
         switch (tmp) {
           case 0:
             this.e9_1 = 7;
-            this.g4l_1 = {_v: 'Python runtime'};
+            this.j4l_1 = {_v: 'Python runtime'};
             this.e9_1 = 6;
             var tmp_0 = document.querySelector("script[src*='pyodide.js']");
             var scriptTag = substringBefore(ensureNotNull((tmp_0 instanceof HTMLScriptElement ? tmp_0 : THROW_CCE()).getAttribute('src')), 'pyodide.js');
-            this.i4l_1 = startPyodideWorkers(scriptTag);
+            this.l4l_1 = startPyodideWorkers(scriptTag);
             var config = {};
             config.indexURL = scriptTag;
-            this.j4l_1 = get_jsPyEditor();
+            this.m4l_1 = get_jsPyEditor();
             this.d9_1 = 1;
             var this_0 = window.loadPyodide(config);
             suspendResult = await_0(this_0, this);
@@ -64426,9 +64543,9 @@ if (typeof String.prototype.startsWith === 'undefined') {
             continue $sm;
           case 1:
             var ARGUMENT = suspendResult;
-            this.j4l_1.v39_1 = ARGUMENT;
+            this.m4l_1.v39_1 = ARGUMENT;
             setPythonRuntimeStatus('pyWorkerStatus', 'warming', 'Python runtime ready; workers loading');
-            initPyodide$statusLoading(this.g4l_1, 'blackStatus', 'Python formatter');
+            initPyodide$statusLoading(this.j4l_1, 'blackStatus', 'Python formatter');
             this.d9_1 = 2;
             suspendResult = installVendoredBlack(get_jsPyEditor().v39_1, this);
             if (suspendResult === get_COROUTINE_SUSPENDED()) {
@@ -64438,40 +64555,40 @@ if (typeof String.prototype.startsWith === 'undefined') {
             continue $sm;
           case 2:
             var testStr = '1+1';
-            var beautified = get_jsPyEditor().w4k(testStr);
+            var beautified = get_jsPyEditor().z4k(testStr);
             log('Main-thread Black test => ' + beautified);
             if (!(beautified === '1 + 1'))
               throw RuntimeException_init_$Create$_0("Black sanity check returned '" + beautified + "'");
             setPythonRuntimeStatus('blackStatus', 'warming', 'Python formatter ready; worker formatter loading');
-            log(get_jsPyEditor().k4l('1+'));
-            this.g4l_1._v = 'Python workers';
+            log(get_jsPyEditor().n4l('1+'));
+            this.j4l_1._v = 'Python workers';
             this.d9_1 = 3;
-            suspendResult = this.i4l_1.q20(this);
+            suspendResult = this.l4l_1.q20(this);
             if (suspendResult === get_COROUTINE_SUSPENDED()) {
               return suspendResult;
             }
 
             continue $sm;
           case 3:
-            this.h4l_1 = suspendResult;
-            this.g4l_1._v = 'Python workers';
+            this.k4l_1 = suspendResult;
+            this.j4l_1._v = 'Python workers';
             this.d9_1 = 4;
-            suspendResult = this.h4l_1.s4g('1+', this);
+            suspendResult = this.k4l_1.v4g('1+', this);
             if (suspendResult === get_COROUTINE_SUSPENDED()) {
               return suspendResult;
             }
 
             continue $sm;
           case 4:
-            var ARGUMENT_0 = suspendResult.m4c_1;
+            var ARGUMENT_0 = suspendResult.p4c_1;
             var workerCompileReady = getErrorType(ARGUMENT_0) === 'SyntaxError';
             log('Worker compile ready => ' + workerCompileReady);
             if (!workerCompileReady)
               throw RuntimeException_init_$Create$_0('Worker compile sanity check failed');
             initPyodide$statusReady('pyWorkerStatus', 'Python workers');
-            this.g4l_1._v = 'Python formatter';
+            this.j4l_1._v = 'Python formatter';
             this.d9_1 = 5;
-            suspendResult = this.h4l_1.t4g('x=1', this);
+            suspendResult = this.k4l_1.w4g('x=1', this);
             if (suspendResult === get_COROUTINE_SUSPENDED()) {
               return suspendResult;
             }
@@ -64492,7 +64609,7 @@ if (typeof String.prototype.startsWith === 'undefined') {
             var tmp_1 = this.g9_1;
             if (tmp_1 instanceof Error) {
               var e = this.g9_1;
-              var tmp_2 = this.g4l_1._v;
+              var tmp_2 = this.j4l_1._v;
               var tmp0_elvis_lhs = e.message;
               markPythonRuntimeStatusesNotReadyError(tmp_2 + ' failed: ' + (tmp0_elvis_lhs == null ? e.toString() : tmp0_elvis_lhs));
               var tmp1_elvis_lhs = e.message;
@@ -64542,14 +64659,14 @@ if (typeof String.prototype.startsWith === 'undefined') {
     var tmp_4 = this;
     tmp_4.x39_1 = lazy(JSTidyPyEditor$cme$delegate$lambda);
   }
-  protoOf(JSTidyPyEditor).m4j = function () {
+  protoOf(JSTidyPyEditor).p4j = function () {
     var tmp0 = this.o39_1;
     var tmp = KProperty1;
     // Inline function 'kotlin.getValue' call
     getPropertyCallableRef('order', 1, tmp, JSTidyPyEditor$_get_order_$ref_htyzef(), null);
     return tmp0.p2();
   };
-  protoOf(JSTidyPyEditor).n4j = function () {
+  protoOf(JSTidyPyEditor).q4j = function () {
     var tmp0 = this.p39_1;
     var tmp = KProperty1;
     // Inline function 'kotlin.getValue' call
@@ -64590,29 +64707,29 @@ if (typeof String.prototype.startsWith === 'undefined') {
     }
     return setCompletionsAndShow(dropLast(drop(destination, 2), 2));
   };
-  protoOf(JSTidyPyEditor).w4i = function (text) {
+  protoOf(JSTidyPyEditor).z4i = function (text) {
     // Inline function 'kotlin.collections.sumOf' call
     var sum = 0;
-    var _iterator__ex2g4s = windowed_0(plus_4(plus_4(Companion_getInstance_61().i3f_1, text), Companion_getInstance_61().j3f_1), this.m4j(), 1).m();
+    var _iterator__ex2g4s = windowed_0(plus_4(plus_4(Companion_getInstance_61().i3f_1, text), Companion_getInstance_61().j3f_1), this.p4j(), 1).m();
     while (_iterator__ex2g4s.n()) {
       var element = _iterator__ex2g4s.o();
       var tmp = sum;
       var tmp0_elvis_lhs = this.n39_1.s2(element);
       // Inline function 'kotlin.math.ln' call
-      var x = (tmp0_elvis_lhs == null ? 1.0 : tmp0_elvis_lhs) / this.n4j();
+      var x = (tmp0_elvis_lhs == null ? 1.0 : tmp0_elvis_lhs) / this.q4j();
       sum = tmp + Math.log(x);
     }
     return -sum;
   };
-  protoOf(JSTidyPyEditor).l4l = function (_this__u8e3s4) {
+  protoOf(JSTidyPyEditor).o4l = function (_this__u8e3s4) {
     return replace(replace(_this__u8e3s4, 'NUMBER', '1'), 'STRING', '""');
   };
-  protoOf(JSTidyPyEditor).k4l = function (code) {
+  protoOf(JSTidyPyEditor).n4l = function (code) {
     var tmp;
     try {
       if (this.v39_1 == null)
         throw Exception_init_$Create$_0('Pyodide not initialized');
-      var src = this.l4l(code);
+      var src = this.o4l(code);
       var tmp_0 = btoa(src);
       var encoded = (!(tmp_0 == null) ? typeof tmp_0 === 'string' : false) ? tmp_0 : THROW_CCE();
       var pyCode = trimIndent('\n        import sys, traceback, io, base64, textwrap\n        _out = io.StringIO()\n        sys.stdout = sys.stderr = _out\n        try:\n            _src = base64.b64decode("' + encoded + '").decode("utf-8")\n            _src = textwrap.dedent(_src)\n            compile(_src, "test_compile.py", "exec")\n        except Exception:\n            traceback.print_exc()\n        _result = _out.getvalue()\n    ');
@@ -64627,13 +64744,13 @@ if (typeof String.prototype.startsWith === 'undefined') {
     }
     return tmp;
   };
-  protoOf(JSTidyPyEditor).v4i = function (code, $completion) {
+  protoOf(JSTidyPyEditor).y4i = function (code, $completion) {
     var tmp = new $formatCodeAsyncCOROUTINE$(this, code, $completion);
     tmp.f9_1 = Unit_instance;
     tmp.g9_1 = null;
     return tmp.l9();
   };
-  protoOf(JSTidyPyEditor).w4k = function (code) {
+  protoOf(JSTidyPyEditor).z4k = function (code) {
     var tmp;
     try {
       if (this.v39_1 == null)
@@ -64673,11 +64790,11 @@ if (typeof String.prototype.startsWith === 'undefined') {
     getPropertyCallableRef('cme', 1, tmp, JSTidyPyEditor$_get_cme_$ref_5c9nh2(), null);
     return tmp0.p2();
   };
-  protoOf(JSTidyPyEditor).m4l = function (range) {
+  protoOf(JSTidyPyEditor).p4l = function (range) {
     return this.l3b().setSelection(this.l3b().posFromIndex(range.f1_1), this.l3b().posFromIndex(range.g1_1));
   };
   protoOf(JSTidyPyEditor).n35 = function (range) {
-    return this.m4l(range);
+    return this.p4l(range);
   };
   protoOf(JSTidyPyEditor).a3i = function (started) {
     // Inline function 'kotlin.js.asDynamic' call
@@ -64752,7 +64869,7 @@ if (typeof String.prototype.startsWith === 'undefined') {
     var errHst = LinkedHashMap_init_$Create$();
     if (!containsUnk && contains_9(get_language(this.i35()), tokens)) {
       // Inline function 'kotlin.let' call
-      var tcm = this.k4l(pcs.o30_1);
+      var tcm = this.n4l(pcs.o30_1);
       var tmp_1;
       // Inline function 'kotlin.text.isEmpty' call
       var this_3 = getErrorType(tcm);
@@ -64819,7 +64936,7 @@ if (typeof String.prototype.startsWith === 'undefined') {
     var this_0 = _this__u8e3s4.d1();
     // Inline function 'kotlin.comparisons.compareByDescending' call
     var tmp = logRejections$lambda;
-    var tmp$ret$1 = new sam$kotlin_Comparator$0_12(tmp);
+    var tmp$ret$1 = new sam$kotlin_Comparator$0_14(tmp);
     var tmp_0 = sortedWith(this_0, tmp$ret$1);
     var summary = joinToString_1(tmp_0, '\n', VOID, VOID, VOID, VOID, logRejections$lambda_0(pad));
     log('Rejection histogram:\n' + summary);
@@ -64942,19 +65059,19 @@ if (typeof String.prototype.startsWith === 'undefined') {
     tmp.g9_1 = null;
     return tmp.l9();
   }
-  function sam$kotlin_Comparator$0_12(function_0) {
-    this.g4m_1 = function_0;
+  function sam$kotlin_Comparator$0_14(function_0) {
+    this.j4m_1 = function_0;
   }
-  protoOf(sam$kotlin_Comparator$0_12).pd = function (a, b) {
-    return this.g4m_1(a, b);
+  protoOf(sam$kotlin_Comparator$0_14).pd = function (a, b) {
+    return this.j4m_1(a, b);
   };
-  protoOf(sam$kotlin_Comparator$0_12).compare = function (a, b) {
+  protoOf(sam$kotlin_Comparator$0_14).compare = function (a, b) {
     return this.pd(a, b);
   };
-  protoOf(sam$kotlin_Comparator$0_12).f3 = function () {
-    return this.g4m_1;
+  protoOf(sam$kotlin_Comparator$0_14).f3 = function () {
+    return this.j4m_1;
   };
-  protoOf(sam$kotlin_Comparator$0_12).equals = function (other) {
+  protoOf(sam$kotlin_Comparator$0_14).equals = function (other) {
     var tmp;
     if (!(other == null) ? isInterface(other, Comparator) : false) {
       var tmp_0;
@@ -64969,7 +65086,7 @@ if (typeof String.prototype.startsWith === 'undefined') {
     }
     return tmp;
   };
-  protoOf(sam$kotlin_Comparator$0_12).hashCode = function () {
+  protoOf(sam$kotlin_Comparator$0_14).hashCode = function () {
     return hashCode_0(this.f3());
   };
   function pythonRepairs$lambda(it) {
@@ -64997,17 +65114,17 @@ if (typeof String.prototype.startsWith === 'undefined') {
     };
   }
   function startPyodideWorkers$slambda($indexURL, resultContinuation) {
-    this.p4m_1 = $indexURL;
+    this.s4m_1 = $indexURL;
     CoroutineImpl.call(this, resultContinuation);
   }
-  protoOf(startPyodideWorkers$slambda).t4m = function ($this$async, $completion) {
+  protoOf(startPyodideWorkers$slambda).w4m = function ($this$async, $completion) {
     var tmp = this.p32($this$async, $completion);
     tmp.f9_1 = Unit_instance;
     tmp.g9_1 = null;
     return tmp.l9();
   };
   protoOf(startPyodideWorkers$slambda).x9 = function (p1, $completion) {
-    return this.t4m((!(p1 == null) ? isInterface(p1, CoroutineScope) : false) ? p1 : THROW_CCE(), $completion);
+    return this.w4m((!(p1 == null) ? isInterface(p1, CoroutineScope) : false) ? p1 : THROW_CCE(), $completion);
   };
   protoOf(startPyodideWorkers$slambda).l9 = function () {
     var suspendResult = this.f9_1;
@@ -65018,11 +65135,11 @@ if (typeof String.prototype.startsWith === 'undefined') {
           case 0:
             this.e9_1 = 3;
             this.e9_1 = 2;
-            this.s4m_1 = new WebWorkerPool(this.p4m_1, 16);
-            var it = this.s4m_1;
+            this.v4m_1 = new WebWorkerPool(this.s4m_1, 16);
+            var it = this.v4m_1;
             log('Started 16 Python Web Workers');
             this.d9_1 = 1;
-            suspendResult = it.r4g(this);
+            suspendResult = it.u4g(this);
             if (suspendResult === get_COROUTINE_SUSPENDED()) {
               return suspendResult;
             }
@@ -65030,7 +65147,7 @@ if (typeof String.prototype.startsWith === 'undefined') {
             continue $sm;
           case 1:
             log('Initialized 16 Python Web Workers');
-            this.r4m_1 = this.s4m_1;
+            this.u4m_1 = this.v4m_1;
             this.e9_1 = 3;
             this.d9_1 = 4;
             continue $sm;
@@ -65052,7 +65169,7 @@ if (typeof String.prototype.startsWith === 'undefined') {
             throw this.g9_1;
           case 4:
             this.e9_1 = 3;
-            return this.r4m_1;
+            return this.u4m_1;
         }
       } catch ($p) {
         var e = $p;
@@ -65066,19 +65183,19 @@ if (typeof String.prototype.startsWith === 'undefined') {
      while (true);
   };
   protoOf(startPyodideWorkers$slambda).p32 = function ($this$async, completion) {
-    var i = new startPyodideWorkers$slambda(this.p4m_1, completion);
-    i.q4m_1 = $this$async;
+    var i = new startPyodideWorkers$slambda(this.s4m_1, completion);
+    i.t4m_1 = $this$async;
     return i;
   };
   function startPyodideWorkers$slambda_0($indexURL, resultContinuation) {
     var i = new startPyodideWorkers$slambda($indexURL, resultContinuation);
     return constructCallableReference(function ($this$async, $completion) {
-      return i.t4m($this$async, $completion);
+      return i.w4m($this$async, $completion);
     }, 1);
   }
   function $installVendoredBlackCOROUTINE$(pyodide, resultContinuation) {
     CoroutineImpl.call(this, resultContinuation);
-    this.v4l_1 = pyodide;
+    this.y4l_1 = pyodide;
   }
   protoOf($installVendoredBlackCOROUTINE$).l9 = function () {
     var suspendResult = this.f9_1;
@@ -65088,7 +65205,7 @@ if (typeof String.prototype.startsWith === 'undefined') {
         switch (tmp) {
           case 0:
             this.e9_1 = 3;
-            var tmp_0 = this.v4l_1.runPython("import importlib.util; importlib.util.find_spec('black') is not None");
+            var tmp_0 = this.y4l_1.runPython("import importlib.util; importlib.util.find_spec('black') is not None");
             var alreadyInstalled = (!(tmp_0 == null) ? typeof tmp_0 === 'boolean' : false) ? tmp_0 : THROW_CCE();
             if (alreadyInstalled)
               return Unit_instance;
@@ -65117,11 +65234,11 @@ if (typeof String.prototype.startsWith === 'undefined') {
             continue $sm;
           case 2:
             var buffer = suspendResult;
-            var tmp_2 = this.v4l_1.runPython('import site; site.getsitepackages()[0]');
+            var tmp_2 = this.y4l_1.runPython('import site; site.getsitepackages()[0]');
             var sitePackages = (!(tmp_2 == null) ? typeof tmp_2 === 'string' : false) ? tmp_2 : THROW_CCE();
             var options = {};
             options.extractDir = sitePackages;
-            this.v4l_1.unpackArchive(buffer, 'zip', options);
+            this.y4l_1.unpackArchive(buffer, 'zip', options);
             return Unit_instance;
           case 3:
             throw this.g9_1;
@@ -65139,7 +65256,7 @@ if (typeof String.prototype.startsWith === 'undefined') {
   };
   function $pythonCompilerOutputCOROUTINE$(code, resultContinuation) {
     CoroutineImpl.call(this, resultContinuation);
-    this.e4m_1 = code;
+    this.h4m_1 = code;
   }
   protoOf($pythonCompilerOutputCOROUTINE$).l9 = function () {
     var suspendResult = this.f9_1;
@@ -65160,14 +65277,14 @@ if (typeof String.prototype.startsWith === 'undefined') {
           case 1:
             var ARGUMENT = suspendResult;
             this.d9_1 = 2;
-            suspendResult = ARGUMENT.s4g(this.e4m_1, this);
+            suspendResult = ARGUMENT.v4g(this.h4m_1, this);
             if (suspendResult === get_COROUTINE_SUSPENDED()) {
               return suspendResult;
             }
 
             continue $sm;
           case 2:
-            this.f4m_1 = suspendResult.m4c_1;
+            this.i4m_1 = suspendResult.p4c_1;
             this.e9_1 = 4;
             this.d9_1 = 5;
             continue $sm;
@@ -65180,7 +65297,7 @@ if (typeof String.prototype.startsWith === 'undefined') {
               var tmp0_elvis_lhs = t.message;
               log('Python compiler unavailable: ' + toString_1(tmp0_elvis_lhs == null ? t : tmp0_elvis_lhs));
               var tmp1_elvis_lhs = t.message;
-              tmp_1.f4m_1 = '__TIDYPARSE_COMPILER_INFRA_ERROR__: ' + toString_1(tmp1_elvis_lhs == null ? t : tmp1_elvis_lhs) + '\n';
+              tmp_1.i4m_1 = '__TIDYPARSE_COMPILER_INFRA_ERROR__: ' + toString_1(tmp1_elvis_lhs == null ? t : tmp1_elvis_lhs) + '\n';
               this.d9_1 = 5;
               continue $sm;
             } else {
@@ -65191,7 +65308,7 @@ if (typeof String.prototype.startsWith === 'undefined') {
             throw this.g9_1;
           case 5:
             this.e9_1 = 4;
-            return this.f4m_1;
+            return this.i4m_1;
         }
       } catch ($p) {
         var e = $p;
@@ -65593,19 +65710,19 @@ if (typeof String.prototype.startsWith === 'undefined') {
     // Inline function 'kotlin.js.unsafeCast' call
     return new Int32Array(size);
   }
-  function sam$kotlin_Comparator$0_13(function_0) {
-    this.v4o_1 = function_0;
+  function sam$kotlin_Comparator$0_15(function_0) {
+    this.y4o_1 = function_0;
   }
-  protoOf(sam$kotlin_Comparator$0_13).pd = function (a, b) {
-    return this.v4o_1(a, b);
+  protoOf(sam$kotlin_Comparator$0_15).pd = function (a, b) {
+    return this.y4o_1(a, b);
   };
-  protoOf(sam$kotlin_Comparator$0_13).compare = function (a, b) {
+  protoOf(sam$kotlin_Comparator$0_15).compare = function (a, b) {
     return this.pd(a, b);
   };
-  protoOf(sam$kotlin_Comparator$0_13).f3 = function () {
-    return this.v4o_1;
+  protoOf(sam$kotlin_Comparator$0_15).f3 = function () {
+    return this.y4o_1;
   };
-  protoOf(sam$kotlin_Comparator$0_13).equals = function (other) {
+  protoOf(sam$kotlin_Comparator$0_15).equals = function (other) {
     var tmp;
     if (!(other == null) ? isInterface(other, Comparator) : false) {
       var tmp_0;
@@ -65620,7 +65737,7 @@ if (typeof String.prototype.startsWith === 'undefined') {
     }
     return tmp;
   };
-  protoOf(sam$kotlin_Comparator$0_13).hashCode = function () {
+  protoOf(sam$kotlin_Comparator$0_15).hashCode = function () {
     return hashCode_0(this.f3());
   };
   function RepairReranker$tokenIds$delegate$lambda() {
@@ -65634,14 +65751,14 @@ if (typeof String.prototype.startsWith === 'undefined') {
   function RepairReranker$preload$slambda(resultContinuation) {
     CoroutineImpl.call(this, resultContinuation);
   }
-  protoOf(RepairReranker$preload$slambda).f4p = function ($this$async, $completion) {
+  protoOf(RepairReranker$preload$slambda).i4p = function ($this$async, $completion) {
     var tmp = this.p32($this$async, $completion);
     tmp.f9_1 = Unit_instance;
     tmp.g9_1 = null;
     return tmp.l9();
   };
   protoOf(RepairReranker$preload$slambda).x9 = function (p1, $completion) {
-    return this.f4p((!(p1 == null) ? isInterface(p1, CoroutineScope) : false) ? p1 : THROW_CCE(), $completion);
+    return this.i4p((!(p1 == null) ? isInterface(p1, CoroutineScope) : false) ? p1 : THROW_CCE(), $completion);
   };
   protoOf(RepairReranker$preload$slambda).l9 = function () {
     var suspendResult = this.f9_1;
@@ -65676,13 +65793,13 @@ if (typeof String.prototype.startsWith === 'undefined') {
   };
   protoOf(RepairReranker$preload$slambda).p32 = function ($this$async, completion) {
     var i = new RepairReranker$preload$slambda(completion);
-    i.e4p_1 = $this$async;
+    i.h4p_1 = $this$async;
     return i;
   };
   function RepairReranker$preload$slambda_0(resultContinuation) {
     var i = new RepairReranker$preload$slambda(resultContinuation);
     return constructCallableReference(function ($this$async, $completion) {
-      return i.f4p($this$async, $completion);
+      return i.i4p($this$async, $completion);
     }, 1);
   }
   function RepairReranker$rerank$lambda($scores) {
@@ -65694,14 +65811,14 @@ if (typeof String.prototype.startsWith === 'undefined') {
   function RepairReranker$net$slambda(resultContinuation) {
     CoroutineImpl.call(this, resultContinuation);
   }
-  protoOf(RepairReranker$net$slambda).f4p = function ($this$async, $completion) {
+  protoOf(RepairReranker$net$slambda).i4p = function ($this$async, $completion) {
     var tmp = this.p32($this$async, $completion);
     tmp.f9_1 = Unit_instance;
     tmp.g9_1 = null;
     return tmp.l9();
   };
   protoOf(RepairReranker$net$slambda).x9 = function (p1, $completion) {
-    return this.f4p((!(p1 == null) ? isInterface(p1, CoroutineScope) : false) ? p1 : THROW_CCE(), $completion);
+    return this.i4p((!(p1 == null) ? isInterface(p1, CoroutineScope) : false) ? p1 : THROW_CCE(), $completion);
   };
   protoOf(RepairReranker$net$slambda).l9 = function () {
     var suspendResult = this.f9_1;
@@ -65736,18 +65853,18 @@ if (typeof String.prototype.startsWith === 'undefined') {
   };
   protoOf(RepairReranker$net$slambda).p32 = function ($this$async, completion) {
     var i = new RepairReranker$net$slambda(completion);
-    i.o4p_1 = $this$async;
+    i.r4p_1 = $this$async;
     return i;
   };
   function RepairReranker$net$slambda_0(resultContinuation) {
     var i = new RepairReranker$net$slambda(resultContinuation);
     return constructCallableReference(function ($this$async, $completion) {
-      return i.f4p($this$async, $completion);
+      return i.i4p($this$async, $completion);
     }, 1);
   }
   function $preloadAvailableCOROUTINE$(_this__u8e3s4, resultContinuation) {
     CoroutineImpl.call(this, resultContinuation);
-    this.x4p_1 = _this__u8e3s4;
+    this.a4q_1 = _this__u8e3s4;
   }
   protoOf($preloadAvailableCOROUTINE$).l9 = function () {
     var suspendResult = this.f9_1;
@@ -65759,14 +65876,14 @@ if (typeof String.prototype.startsWith === 'undefined') {
             this.e9_1 = 3;
             this.e9_1 = 2;
             this.d9_1 = 1;
-            suspendResult = net(this.x4p_1, this);
+            suspendResult = net(this.a4q_1, this);
             if (suspendResult === get_COROUTINE_SUSPENDED()) {
               return suspendResult;
             }
 
             continue $sm;
           case 1:
-            this.y4p_1 = true;
+            this.b4q_1 = true;
             this.e9_1 = 3;
             this.d9_1 = 4;
             continue $sm;
@@ -65776,10 +65893,10 @@ if (typeof String.prototype.startsWith === 'undefined') {
             if (tmp_0 instanceof Error) {
               var t = this.g9_1;
               var tmp_1 = this;
-              this.x4p_1.b3f_1 = null;
+              this.a4q_1.b3f_1 = null;
               var tmp0_elvis_lhs = t.message;
               log('Reranker initialization failed: ' + toString_1(tmp0_elvis_lhs == null ? t : tmp0_elvis_lhs));
-              tmp_1.y4p_1 = false;
+              tmp_1.b4q_1 = false;
               this.d9_1 = 4;
               continue $sm;
             } else {
@@ -65790,7 +65907,7 @@ if (typeof String.prototype.startsWith === 'undefined') {
             throw this.g9_1;
           case 4:
             this.e9_1 = 3;
-            return this.y4p_1;
+            return this.b4q_1;
         }
       } catch ($p) {
         var e = $p;
@@ -65805,9 +65922,9 @@ if (typeof String.prototype.startsWith === 'undefined') {
   };
   function $rerankOrOriginalCOROUTINE$(_this__u8e3s4, query, candidates, resultContinuation) {
     CoroutineImpl.call(this, resultContinuation);
-    this.h4q_1 = _this__u8e3s4;
-    this.i4q_1 = query;
-    this.j4q_1 = candidates;
+    this.k4q_1 = _this__u8e3s4;
+    this.l4q_1 = query;
+    this.m4q_1 = candidates;
   }
   protoOf($rerankOrOriginalCOROUTINE$).l9 = function () {
     var suspendResult = this.f9_1;
@@ -65818,13 +65935,13 @@ if (typeof String.prototype.startsWith === 'undefined') {
           case 0:
             this.e9_1 = 4;
             this.e9_1 = 3;
-            if (this.j4q_1.p() <= 1) {
-              this.l4q_1 = toList_1(get_indices(this.j4q_1));
+            if (this.m4q_1.p() <= 1) {
+              this.o4q_1 = toList_1(get_indices(this.m4q_1));
               this.d9_1 = 2;
               continue $sm;
             } else {
               this.d9_1 = 1;
-              suspendResult = rerank(this.h4q_1, this.i4q_1, this.j4q_1, this);
+              suspendResult = rerank(this.k4q_1, this.l4q_1, this.m4q_1, this);
               if (suspendResult === get_COROUTINE_SUSPENDED()) {
                 return suspendResult;
               }
@@ -65832,11 +65949,11 @@ if (typeof String.prototype.startsWith === 'undefined') {
             }
 
           case 1:
-            this.l4q_1 = suspendResult;
+            this.o4q_1 = suspendResult;
             this.d9_1 = 2;
             continue $sm;
           case 2:
-            this.k4q_1 = this.l4q_1;
+            this.n4q_1 = this.o4q_1;
             this.e9_1 = 4;
             this.d9_1 = 5;
             continue $sm;
@@ -65848,7 +65965,7 @@ if (typeof String.prototype.startsWith === 'undefined') {
               var tmp_1 = this;
               var tmp0_elvis_lhs = t.message;
               log('Reranker unavailable, keeping decoder order: ' + toString_1(tmp0_elvis_lhs == null ? t : tmp0_elvis_lhs));
-              tmp_1.k4q_1 = toList_1(get_indices(this.j4q_1));
+              tmp_1.n4q_1 = toList_1(get_indices(this.m4q_1));
               this.d9_1 = 5;
               continue $sm;
             } else {
@@ -65859,7 +65976,7 @@ if (typeof String.prototype.startsWith === 'undefined') {
             throw this.g9_1;
           case 5:
             this.e9_1 = 4;
-            return this.k4q_1;
+            return this.n4q_1;
         }
       } catch ($p) {
         var e = $p;
@@ -65874,9 +65991,9 @@ if (typeof String.prototype.startsWith === 'undefined') {
   };
   function $rerankCOROUTINE$(_this__u8e3s4, query, candidates, resultContinuation) {
     CoroutineImpl.call(this, resultContinuation);
-    this.c4n_1 = _this__u8e3s4;
-    this.d4n_1 = query;
-    this.e4n_1 = candidates;
+    this.f4n_1 = _this__u8e3s4;
+    this.g4n_1 = query;
+    this.h4n_1 = candidates;
   }
   protoOf($rerankCOROUTINE$).l9 = function () {
     var suspendResult = this.f9_1;
@@ -65886,21 +66003,21 @@ if (typeof String.prototype.startsWith === 'undefined') {
         switch (tmp) {
           case 0:
             this.e9_1 = 3;
-            this.f4n_1 = Monotonic_instance.zd();
+            this.i4n_1 = Monotonic_instance.zd();
             var tmp_0 = this;
-            var tmp0_elvis_lhs = encodeTokens(this.c4n_1, this.d4n_1, 100);
+            var tmp0_elvis_lhs = encodeTokens(this.f4n_1, this.g4n_1, 100);
             var tmp_1;
             if (tmp0_elvis_lhs == null) {
-              var this_0 = toList_1(get_indices(this.e4n_1));
+              var this_0 = toList_1(get_indices(this.h4n_1));
               log('Reranker skipped: query has tokens outside s2pg');
               return this_0;
             } else {
               tmp_1 = tmp0_elvis_lhs;
             }
 
-            tmp_0.h4n_1 = tmp_1;
+            tmp_0.k4n_1 = tmp_1;
             var tmp_2 = this;
-            var this_1 = get_indices(this.e4n_1);
+            var this_1 = get_indices(this.h4n_1);
             var destination = ArrayList_init_$Create$_0(collectionSizeOrDefault(this_1, 10));
             var inductionVariable = this_1.f1_1;
             var last = this_1.g1_1;
@@ -65909,11 +66026,11 @@ if (typeof String.prototype.startsWith === 'undefined') {
                 var item = inductionVariable;
                 inductionVariable = inductionVariable + 1 | 0;
                 var candidate = item;
-                destination.g(encodeTokens_0(RepairReranker_getInstance(), this.e4n_1, candidate, 110));
+                destination.g(encodeTokens_0(RepairReranker_getInstance(), this.h4n_1, candidate, 110));
               }
                while (!(item === last));
-            tmp_2.g4n_1 = destination;
-            var tmp0 = this.g4n_1;
+            tmp_2.j4n_1 = destination;
+            var tmp0 = this.j4n_1;
             var tmp$ret$0;
             l$ret$1: do {
               var index = 0;
@@ -65932,11 +66049,11 @@ if (typeof String.prototype.startsWith === 'undefined') {
             var missingIdx = tmp$ret$0;
             if (missingIdx >= 0) {
               log('Reranker skipped: candidate ' + missingIdx + ' has tokens outside s2pg');
-              return toList_1(get_indices(this.e4n_1));
+              return toList_1(get_indices(this.h4n_1));
             }
 
             this.d9_1 = 1;
-            suspendResult = net(this.c4n_1, this);
+            suspendResult = net(this.f4n_1, this);
             if (suspendResult === get_COROUTINE_SUSPENDED()) {
               return suspendResult;
             }
@@ -65945,7 +66062,7 @@ if (typeof String.prototype.startsWith === 'undefined') {
           case 1:
             var net_0 = suspendResult;
             this.d9_1 = 2;
-            suspendResult = scoreEncoded(this.c4n_1, net_0, this.h4n_1, filterNotNull(this.g4n_1), this);
+            suspendResult = scoreEncoded(this.f4n_1, net_0, this.k4n_1, filterNotNull(this.j4n_1), this);
             if (suspendResult === get_COROUTINE_SUSPENDED()) {
               return suspendResult;
             }
@@ -65953,10 +66070,10 @@ if (typeof String.prototype.startsWith === 'undefined') {
             continue $sm;
           case 2:
             var scores = suspendResult;
-            var tmp_3 = get_indices(this.e4n_1);
+            var tmp_3 = get_indices(this.h4n_1);
             var tmp_4 = RepairReranker$rerank$lambda(scores);
-            var order = sortedWith(tmp_3, new sam$kotlin_Comparator$0_13(tmp_4));
-            log('Reranked ' + this.e4n_1.p() + ' repairs in ' + Duration__toString_impl_8d916b(ValueTimeMark__elapsedNow_impl_eonqvs(this.f4n_1)));
+            var order = sortedWith(tmp_3, new sam$kotlin_Comparator$0_15(tmp_4));
+            log('Reranked ' + this.h4n_1.p() + ' repairs in ' + Duration__toString_impl_8d916b(ValueTimeMark__elapsedNow_impl_eonqvs(this.i4n_1)));
             return order;
           case 3:
             throw this.g9_1;
@@ -65974,7 +66091,7 @@ if (typeof String.prototype.startsWith === 'undefined') {
   };
   function $loadNetCOROUTINE$(_this__u8e3s4, resultContinuation) {
     CoroutineImpl.call(this, resultContinuation);
-    this.q4n_1 = _this__u8e3s4;
+    this.t4n_1 = _this__u8e3s4;
   }
   protoOf($loadNetCOROUTINE$).l9 = function () {
     var suspendResult = this.f9_1;
@@ -65984,8 +66101,8 @@ if (typeof String.prototype.startsWith === 'undefined') {
         switch (tmp) {
           case 0:
             this.e9_1 = 4;
-            this.r4n_1 = Monotonic_instance.zd();
-            var moduleUrl_0 = moduleUrl(this.q4n_1);
+            this.u4n_1 = Monotonic_instance.zd();
+            var moduleUrl_0 = moduleUrl(this.t4n_1);
             this.d9_1 = 1;
             var this_0 = Function('url', 'return import(url)')(moduleUrl_0);
             suspendResult = await_0(this_0, this);
@@ -66006,9 +66123,9 @@ if (typeof String.prototype.startsWith === 'undefined') {
               tmp_1 = tmp0_elvis_lhs;
             }
 
-            tmp_0.s4n_1 = tmp_1;
+            tmp_0.v4n_1 = tmp_1;
             this.d9_1 = 2;
-            suspendResult = loadWeights(this.q4n_1, this);
+            suspendResult = loadWeights(this.t4n_1, this);
             if (suspendResult === get_COROUTINE_SUSPENDED()) {
               return suspendResult;
             }
@@ -66017,7 +66134,7 @@ if (typeof String.prototype.startsWith === 'undefined') {
           case 2:
             var weights = suspendResult;
             this.d9_1 = 3;
-            var this_1 = this.s4n_1(get_gpu(), weights);
+            var this_1 = this.v4n_1(get_gpu(), weights);
             suspendResult = await_0(this_1, this);
             if (suspendResult === get_COROUTINE_SUSPENDED()) {
               return suspendResult;
@@ -66026,7 +66143,7 @@ if (typeof String.prototype.startsWith === 'undefined') {
             continue $sm;
           case 3:
             var net = suspendResult;
-            log('Loaded reranker in ' + Duration__toString_impl_8d916b(ValueTimeMark__elapsedNow_impl_eonqvs(this.r4n_1)));
+            log('Loaded reranker in ' + Duration__toString_impl_8d916b(ValueTimeMark__elapsedNow_impl_eonqvs(this.u4n_1)));
             return net;
           case 4:
             throw this.g9_1;
@@ -66044,7 +66161,7 @@ if (typeof String.prototype.startsWith === 'undefined') {
   };
   function $loadWeightsCOROUTINE$(_this__u8e3s4, resultContinuation) {
     CoroutineImpl.call(this, resultContinuation);
-    this.b4o_1 = _this__u8e3s4;
+    this.e4o_1 = _this__u8e3s4;
   }
   protoOf($loadWeightsCOROUTINE$).l9 = function () {
     var suspendResult = this.f9_1;
@@ -66072,7 +66189,7 @@ if (typeof String.prototype.startsWith === 'undefined') {
             }
 
             var loaded = tmp_0;
-            return materializeF32Safetensors(this.b4o_1, loaded);
+            return materializeF32Safetensors(this.e4o_1, loaded);
           case 2:
             throw this.g9_1;
         }
@@ -66089,10 +66206,10 @@ if (typeof String.prototype.startsWith === 'undefined') {
   };
   function $scoreEncodedCOROUTINE$(_this__u8e3s4, net, query, docs, resultContinuation) {
     CoroutineImpl.call(this, resultContinuation);
-    this.k4o_1 = _this__u8e3s4;
-    this.l4o_1 = net;
-    this.m4o_1 = query;
-    this.n4o_1 = docs;
+    this.n4o_1 = _this__u8e3s4;
+    this.o4o_1 = net;
+    this.p4o_1 = query;
+    this.q4o_1 = docs;
   }
   protoOf($scoreEncodedCOROUTINE$).l9 = function () {
     var suspendResult = this.f9_1;
@@ -66102,35 +66219,35 @@ if (typeof String.prototype.startsWith === 'undefined') {
         switch (tmp) {
           case 0:
             this.e9_1 = 4;
-            this.s4o_1 = buildQueryInput(this.k4o_1, this.m4o_1);
-            this.r4o_1 = int32Array(this.k4o_1, 212);
-            this.o4o_1 = new Float32Array(this.n4o_1.p());
-            this.u4o_1 = int32Array(this.k4o_1, 13568);
-            this.t4o_1 = int32Array(this.k4o_1, 13568);
-            this.p4o_1 = 0;
+            this.v4o_1 = buildQueryInput(this.n4o_1, this.p4o_1);
+            this.u4o_1 = int32Array(this.n4o_1, 212);
+            this.r4o_1 = new Float32Array(this.q4o_1.p());
+            this.x4o_1 = int32Array(this.n4o_1, 13568);
+            this.w4o_1 = int32Array(this.n4o_1, 13568);
+            this.s4o_1 = 0;
             this.d9_1 = 1;
             continue $sm;
           case 1:
-            if (!(this.p4o_1 < this.n4o_1.p())) {
+            if (!(this.s4o_1 < this.q4o_1.p())) {
               this.d9_1 = 3;
               continue $sm;
             }
 
             var tmp_0 = this;
-            var b = this.n4o_1.p() - this.p4o_1 | 0;
-            tmp_0.q4o_1 = Math.min(64, b);
-            zero(this.k4o_1, this.u4o_1);
-            zero(this.k4o_1, this.t4o_1);
+            var b = this.q4o_1.p() - this.s4o_1 | 0;
+            tmp_0.t4o_1 = Math.min(64, b);
+            zero(this.n4o_1, this.x4o_1);
+            zero(this.n4o_1, this.w4o_1);
             var inductionVariable = 0;
             if (inductionVariable < 64)
               do {
                 var row = inductionVariable;
                 inductionVariable = inductionVariable + 1 | 0;
-                writeDocumentRow(this.k4o_1, this.u4o_1, this.t4o_1, row, this.m4o_1, row < this.q4o_1 ? this.n4o_1.s(this.p4o_1 + row | 0) : '');
+                writeDocumentRow(this.n4o_1, this.x4o_1, this.w4o_1, row, this.p4o_1, row < this.t4o_1 ? this.q4o_1.s(this.s4o_1 + row | 0) : '');
               }
                while (inductionVariable < 64);
             this.d9_1 = 2;
-            var this_0 = this.l4o_1(this.u4o_1, this.t4o_1, this.s4o_1, this.r4o_1);
+            var this_0 = this.o4o_1(this.x4o_1, this.w4o_1, this.v4o_1, this.u4o_1);
             suspendResult = await_0(this_0, this);
             if (suspendResult === get_COROUTINE_SUSPENDED()) {
               return suspendResult;
@@ -66139,23 +66256,23 @@ if (typeof String.prototype.startsWith === 'undefined') {
             continue $sm;
           case 2:
             var result = suspendResult;
-            var chunkScores = unpackScores(this.k4o_1, result);
+            var chunkScores = unpackScores(this.n4o_1, result);
             var inductionVariable_0 = 0;
-            var last = this.q4o_1;
+            var last = this.t4o_1;
             if (inductionVariable_0 < last)
               do {
                 var i = inductionVariable_0;
                 inductionVariable_0 = inductionVariable_0 + 1 | 0;
-                var tmp_1 = this.p4o_1 + i | 0;
+                var tmp_1 = this.s4o_1 + i | 0;
                 var tmp_2 = chunkScores[i];
-                this.o4o_1[tmp_1] = numberToDouble(isNumber(tmp_2) ? tmp_2 : THROW_CCE());
+                this.r4o_1[tmp_1] = numberToDouble(isNumber(tmp_2) ? tmp_2 : THROW_CCE());
               }
                while (inductionVariable_0 < last);
-            this.p4o_1 = this.p4o_1 + this.q4o_1 | 0;
+            this.s4o_1 = this.s4o_1 + this.t4o_1 | 0;
             this.d9_1 = 1;
             continue $sm;
           case 3:
-            return this.o4o_1;
+            return this.r4o_1;
           case 4:
             throw this.g9_1;
         }
@@ -66189,7 +66306,7 @@ if (typeof String.prototype.startsWith === 'undefined') {
     tmp.g9_1 = null;
     return tmp.l9();
   };
-  protoOf(RepairReranker).l4c = function (query, candidates, $completion) {
+  protoOf(RepairReranker).o4c = function (query, candidates, $completion) {
     var tmp = new $rerankOrOriginalCOROUTINE$(this, query, candidates, $completion);
     tmp.f9_1 = Unit_instance;
     tmp.g9_1 = null;

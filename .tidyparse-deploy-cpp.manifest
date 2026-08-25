@@ -1,0 +1,7 @@
+clangd-manifest.json
+clangd.js
+clangd.wasm.gz
+cpp.html
+examples/c/cpp_statements.tidy
+tidyparse-cpp.js
+tidyparse-cpp.js.map

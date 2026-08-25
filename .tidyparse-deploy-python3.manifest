@@ -1,10 +1,15 @@
+licenses/ruff/LICENSE
+licenses/typeshed/LICENSE
 python-runner-worker.js
+python3-repair/python_4grams.txt
+python3-repair/reranker_2000.q8.safetensors
+python3-repair/wdfa.bin
 python3.css
 python3.html
+tidyparse-python-repair.js
+tidyparse-python-repair.js.map
 tidyparse-python.js
 tidyparse-python.js.map
-ty-LICENSE
 ty-wasm-loader.js
 ty_wasm.js
 ty_wasm_bg.wasm
-typeshed-LICENSE
